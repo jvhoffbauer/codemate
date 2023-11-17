@@ -1,12 +1,14 @@
 from codemate import schemas
 from fastapi import FastAPI
+from codemate.rag import run_retriever
 
 app = FastAPI()
 
 
 @app.post("/suggestion")
 def echo_input(data: schemas.SuggestionRequest) -> schemas.Suggestion:
-    return schemas.Suggestion(code='-' * 8 + '\n' + data.context + '\n' + '-' * 8)
+    result = run_retriever(data.context)
+    return schemas.Suggestion(code='-' * 8 + '\n' + result + '\n' + '-' * 8)
 
 
 def main():
