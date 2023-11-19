@@ -115,7 +115,7 @@ function getWebviewContent() {
             </script>
         </head>
         <body>
-            <h2>Context</h2>
+            <h2>The following code snippet could help you:</h2>
             <p><code id="context"></code></p>
         </body>
         </html>
