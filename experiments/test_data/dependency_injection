@@ -1,0 +1,146 @@
+from typing import Annotated
+from fastapi import APIRouter, Depends, HTTPException, status
+from pydantic import BaseModel
+from prompto_server.agent.base_agent import BaseAgent
+from prompto_server.db import PersistedMessage
+from uuid import UUID
+from dependency_injector.wiring import Provide, inject
+from prompto_server.db.chat_history import FeedbackType
+from prompto_server.db.session import Session
+from prompto_server.routers.auth import current_user
+from prompto_server import Container
+from prompto_server.services.chat_service import AgentType, ChatService
+from prompto_server.services.exceptions import NotFoundException
+
+router = APIRouter(tags=["chat"])
+
+
+class ChatRequest(BaseModel):
+    id: str | None = None
+    message: str
+
+
+class ChatResponse(BaseModel):
+    history_id: UUID
+    messages: list[PersistedMessage]
+
+
+@router.post("/chat/create")
+@inject
+async def create_chat(
+    chat_rq: ChatRequest,
+    session: Annotated[Session, Depends(current_user)],
+    chat_service: ChatService = Depends(Provide[Container.chat_service]),
+) -> ChatResponse:
+    # Login Guard
+    if not session:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized"
+        )
+
+    if chat_rq.id:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="ID should not be provided when creating new chat",
+        )
+
+    agent: BaseAgent = chat_service.receive_agent(AgentType.DEBUG)
+
+    if chat_rq.message.startswith("llm"):
+        agent = chat_service.receive_agent(AgentType.PROMPTO)
+        chat_rq.message = chat_rq.message[3:]
+
+    try:
+        history = await agent.create_chat(session, chat_rq.message)  # TODO Remove cut
+    except Exception:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error while generating response.",
+        )
+
+    return ChatResponse(
+        history_id=history.history_id,
+        messages=history.messages,
+    )
+
+
+class ChatRequest(BaseModel):
+    id: str | None = None
+    message: str
+
+
+@router.post("/chat/continue")
+@inject
+async def continue_chat(
+    chat_rq: ChatRequest,
+    session: Annotated[Session, Depends(current_user)],
+    chat_service=Depends(Provide[Container.chat_service]),
+) -> ChatResponse:
+    # Login Guard
+    if not session:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized"
+        )
+
+    if not chat_rq.id:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="ID should be provided when continuing chat",
+        )
+
+    agent: BaseAgent = chat_service.receive_agent(AgentType.DEBUG)
+    history = await agent.continue_chat(session, chat_rq.id, chat_rq.message)
+
+    # Create response
+    return ChatResponse(
+        history_id=history.history_id,
+        messages=history.messages,
+    )
+
+
+class FeedbackRequest(BaseModel):
+    history_id: UUID
+    message_id: UUID
+    feedback_type: FeedbackType
+
+
+class FeedbackResponse(BaseModel):
+    history_id: UUID
+    message_id: UUID
+    feedback_type: FeedbackType
+
+
+@router.post(
+    "/chat/feedback",
+    response_model=FeedbackResponse,
+    responses={404: {"description": "Message not found"}},
+)
+@inject
+async def feedback(
+    feedback_rq: FeedbackRequest,
+    session: Annotated[Session, Depends(current_user)],
+    chat_service=Annotated[ChatService, Depends(Provide[Container.chat_service])],
+):
+    # Login Guard
+    if not session:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized"
+        )
+
+    try:
+        await chat_service.feedback(
+            session.uuid,
+            feedback_rq.history_id,
+            feedback_rq.message_id,
+            feedback_rq.feedback_type,
+        )
+    except NotFoundException:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Message not found"
+        )
+
+    return FeedbackResponse(
+        history_id=feedback_rq.history_id,
+        message_id=feedback_rq.message_id,
+        feedback_type=feedback_rq.feedback_type,
+    )
