@@ -1,0 +1,15 @@
+from pydantic import BaseModel
+import datetime
+
+
+class SchedulingTimeRequest(BaseModel):
+    # Battery charge in percentage [0-1] once the drive starts 
+    battery_charge: float
+
+    # When the car will start to drive
+    drive_start_time: datetime.datetime
+
+[CURSOR]
+class SchedulingTimeResponse(BaseModel):
+    # When the car should charge
+    recommended_starting_time: datetime.datetime
