@@ -92,7 +92,7 @@ async def continue_chat(
     history = await agent.continue_chat(session, chat_rq.id, chat_rq.message)
 
     # Create response
-    return ChatResponse(
+    return ChatResponse( [CURSOR]
         history_id=history.history_id,
         messages=history.messages,
     )

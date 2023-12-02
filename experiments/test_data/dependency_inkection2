@@ -51,7 +51,7 @@ def login(state: str, config=Depends(Provide[Container.config])) -> RedirectResp
         "client_id": "prompto",
         "redirect_uri": config["oidc"]["redirect_url"],
         "state": state,
-        "nonce": "123123",  # TODO implement using nonce
+        "nonce": "123123",  # TODO implement using nonce [CURSOR]
     }
     auth_server_url = config["oidc"]["auth_url"] + "?" + urlencode(params)
     return RedirectResponse(url=auth_server_url)
