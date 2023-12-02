@@ -37,14 +37,9 @@
 		}
 	},
 	"mounts": [
-		"type=bind,source=/scratch1/redditqa,target=/scratch1/redditqa",
-		"type=bind,source=/scratch1/redditqa/hf_cache,target=/hf_cache",
 		"type=bind,source=/home/jhoffbauer/.ssh,target=/root/.ssh"
 	],
 	"containerEnv": {
-		"WANDB_API_KEY": "${localEnv:WANDB_API_KEY}",
-		"HUGGINGFACE_TOKEN": "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",
-		"OPENAI_API_KEY": "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"
 	},
 	"shutdownAction": "none"
 }
