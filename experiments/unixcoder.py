@@ -1,9 +1,9 @@
-# Copyright (c) Microsoft Corporation. 
-# Licensed under the MIT license.
-
 import torch
 import torch.nn as nn
 from transformers import RobertaTokenizer, RobertaModel, RobertaConfig
+from langchain_core.embeddings import Embeddings
+from tqdm import tqdm
+
 
 class UniXcoder(nn.Module):
     def __init__(self, model_name):
@@ -252,3 +252,30 @@ class Beam(object):
             sentence.append(tokens)
         return sentence
         
+
+class UnixcoderEmbeddings(Embeddings):
+    """Interface for embedding models."""
+
+    def __init__(self): 
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.model = UniXcoder("microsoft/unixcoder-base")
+        self.model = self.model.to(self.device)
+
+    def embed_documents(self, texts):
+        """Embed search docs."""
+        print(f"Embedding documents: {len(texts)}")
+        embeddings = []
+        for text in tqdm(texts):
+            embedding = self.embed_query(text) 
+            embeddings.append(embedding)
+
+        return embeddings
+        
+    def embed_query(self, text: str):
+        """Embed query text."""
+        input_ids = self.model.tokenizer.encode(text, return_tensors="pt").to(self.device)
+        if input_ids.shape[1] >= self.model.config.max_position_embeddings - 4:
+            input_ids = input_ids[:, :self.model.config.max_position_embeddings - 4]
+        _, embedding = self.model(input_ids)
+        embedding = embedding.squeeze(0).tolist()
+        return embedding
