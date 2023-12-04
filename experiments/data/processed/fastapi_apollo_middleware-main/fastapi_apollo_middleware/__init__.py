@@ -1,2 +1,0 @@
-from fastapi_apollo_middleware.middleware import FastAPIApolloMiddleware
-from fastapi_apollo_middleware._version import __author__, __version__

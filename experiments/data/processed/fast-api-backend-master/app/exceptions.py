@@ -1,2 +1,0 @@
-class WrongElementException(Exception):
-    pass
