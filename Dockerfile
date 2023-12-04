@@ -33,10 +33,10 @@ RUN pip install protobuf==3.20.*
 RUN pip install openai
 RUN pip install tiktoken
 RUN pip install langchain 
-RUN pip install faiss
+#RUN pip install faiss
 
-RUN git clone https://github.com/EleutherAI/lm-evaluation-harness
-RUN pip install -e lm-evaluation-harness
+#RUN git clone https://github.com/EleutherAI/lm-evaluation-harness
+#RUN pip install -e lm-evaluation-harness
 
 # RUN git clone https://github.com/timdettmers/bitsandbytes.git
 # # CUDA_VERSIONS in {110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 120}
@@ -59,7 +59,7 @@ ENV HUGGINGFACE_TOKEN=$HUGGINGFACE_TOKEN
 COPY . /code
 
 # Install a useful helper to check bitsandbytes installation. Only works at runtime.
-RUN wget https://gist.githubusercontent.com/TimDettmers/1f5188c6ee6ed69d211b7fe4e381e713/raw/4d17c3d09ccdb57e9ab7eca0171f2ace6e4d2858/check_bnb_install.py 
+#RUN wget https://gist.githubusercontent.com/TimDettmers/1f5188c6ee6ed69d211b7fe4e381e713/raw/4d17c3d09ccdb57e9ab7eca0171f2ace6e4d2858/check_bnb_install.py 
 
 # Set the working directory
 WORKDIR /code

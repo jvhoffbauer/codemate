@@ -37,7 +37,8 @@
 		}
 	},
 	"mounts": [
-		"type=bind,source=/home/jhoffbauer/.ssh,target=/root/.ssh"
+		"type=bind,source=/home/JanVincent.Hoffbauer/.ssh,target=/root/.ssh",
+		"type=bind,source=/home/JanVincent.Hoffbauer,target=/hf_cache"
 	],
 	"containerEnv": {
 	},
