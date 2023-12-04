@@ -6,8 +6,8 @@ MODEL_NAME_OR_PATH = "TheBloke/vicuna-33B-GPTQ"
 MODEL_BASENAME = "vicuna-33b-GPTQ-4bit--1g.act.order"
 DEVICE = "cuda:0"
 
-app = Potassium("my_app")[CURSOR]
-
+app = Potassium("my_app") 
+[CURSOR]
 @app.init
 def init() -> dict:
     """Initialize the application with the model and tokenizer."""
