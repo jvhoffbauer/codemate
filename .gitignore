@@ -1,4 +1,13 @@
+# IDE
 codemate-extension.code-workspace
+.vscode
+
+# OS
 .DS_Store
+
+# Python
 .venv
 __pycache__
+
+# Credentials
+.env
