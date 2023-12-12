@@ -12,25 +12,27 @@ security = HTTPBasic()
 
 
 def auth_user(
-    credentials: HTTPBasicCredentials = Depends(security)
+    credentials: HTTPBasicCredentials = Depends(security),
 ) -> HTTPBasicCredentials:
-    if (credentials.username, credentials.password) != ('user', 'password'):
+    if (credentials.username, credentials.password) != ("user", "password"):
         raise HTTPException(
             status_code=HTTP_401_UNAUTHORIZED,
             detail="Incorrect username or password",
-            headers={'WWW-Authenticate': 'Basic'},
+            headers={"WWW-Authenticate": "Basic"},
         )
     return credentials
 
 
 @pytest.fixture
 def body():
-    return json_dumps({
-        'id': 1,
-        'jsonrpc': '2.0',
-        'method': 'probe',
-        'params': {},
-    })
+    return json_dumps(
+        {
+            "id": 1,
+            "jsonrpc": "2.0",
+            "method": "probe",
+            "params": {},
+        }
+    )
 
 
 @pytest.fixture
@@ -42,24 +44,24 @@ def ep(ep_path):
 
     @ep.method()
     def probe() -> str:
-        return 'ok'
+        return "ok"
 
     return ep
 
 
 def test_method_auth(ep, raw_request, body):
-    resp = raw_request(body, auth=('user', 'password'))
+    resp = raw_request(body, auth=("user", "password"))
     assert resp.status_code == 200
-    assert resp.json() == {'id': 1, 'jsonrpc': '2.0', 'result': 'ok'}
+    assert resp.json() == {"id": 1, "jsonrpc": "2.0", "result": "ok"}
 
 
 def test_method_wrong_auth(ep, raw_request, body):
-    resp = raw_request(body, auth=('user', 'wrong-password'))
+    resp = raw_request(body, auth=("user", "wrong-password"))
     assert resp.status_code == 401
-    assert resp.json() == {'detail': 'Incorrect username or password'}
+    assert resp.json() == {"detail": "Incorrect username or password"}
 
 
 def test_method_no_auth(ep, raw_request, body):
     resp = raw_request(body)
     assert resp.status_code == 401
-    assert resp.json() == {'detail': 'Not authenticated'}
+    assert resp.json() == {"detail": "Not authenticated"}

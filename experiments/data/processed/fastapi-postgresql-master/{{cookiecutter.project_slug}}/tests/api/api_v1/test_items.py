@@ -5,7 +5,9 @@ from app.core.config import settings
 from tests.utils.item import create_random_item
 
 
-def test_create_item(client: TestClient, superuser_token_headers: dict, db: Session) -> None:
+def test_create_item(
+    client: TestClient, superuser_token_headers: dict, db: Session
+) -> None:
     data = {"title": "Foo", "description": "Fighters"}
     response = client.post(
         f"{settings.API_STR}{settings.API_V1_STR}/items/",
@@ -20,7 +22,9 @@ def test_create_item(client: TestClient, superuser_token_headers: dict, db: Sess
     assert "owner_id" in content
 
 
-def test_read_item(client: TestClient, superuser_token_headers: dict, db: Session) -> None:
+def test_read_item(
+    client: TestClient, superuser_token_headers: dict, db: Session
+) -> None:
     item = create_random_item(db)
     response = client.get(
         f"{settings.API_STR}{settings.API_V1_STR}/items/{item.id}",

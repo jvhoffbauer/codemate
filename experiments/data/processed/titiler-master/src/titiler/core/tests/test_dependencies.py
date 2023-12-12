@@ -141,7 +141,6 @@ def test_default():
 
     @dataclass
     class dep(dependencies.DefaultDependency):
-
         v: int
 
     # make sure we can unpack the class

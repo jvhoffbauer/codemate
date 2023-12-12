@@ -10,6 +10,7 @@ LOGGER = logging.getLogger(__name__)
 GEONAMES_URL = "http://api.geonames.org/countryInfoJSON"
 GEONAMES_BACKUP_PATH = "geonames_population_mappings.json"
 
+
 # Fetching of the populations.
 def fetch_populations(save=False):
     """
@@ -28,17 +29,23 @@ def fetch_populations(save=False):
 
     # Fetch the countries.
     try:
-        countries = requests.get(GEONAMES_URL, params={"username": "dperic"}, timeout=1.25).json()[
-            "geonames"
-        ]
+        countries = requests.get(
+            GEONAMES_URL, params={"username": "dperic"}, timeout=1.25
+        ).json()["geonames"]
         # Go through all the countries and perform the mapping.
         for country in countries:
-            mappings.update({country["countryCode"]: int(country["population"]) or None})
+            mappings.update(
+                {country["countryCode"]: int(country["population"]) or None}
+            )
 
         if mappings and save:
-            LOGGER.info(f"Saving population data to {app.io.save(GEONAMES_BACKUP_PATH, mappings)}")
+            LOGGER.info(
+                f"Saving population data to {app.io.save(GEONAMES_BACKUP_PATH, mappings)}"
+            )
     except (json.JSONDecodeError, KeyError, requests.exceptions.Timeout) as err:
-        LOGGER.warning(f"Error pulling population data. {err.__class__.__name__}: {err}")
+        LOGGER.warning(
+            f"Error pulling population data. {err.__class__.__name__}: {err}"
+        )
         mappings = app.io.load(GEONAMES_BACKUP_PATH)
         LOGGER.info(f"Using backup data from {GEONAMES_BACKUP_PATH}")
     # Finally, return the mappings.
@@ -48,6 +55,7 @@ def fetch_populations(save=False):
 
 # Mapping of alpha-2 codes country codes to population.
 POPULATIONS = fetch_populations()
+
 
 # Retrieving.
 def country_population(country_code, default=None):

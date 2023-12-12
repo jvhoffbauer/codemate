@@ -26,8 +26,9 @@ from core.config import settings
 
 
 class RedisCli(object):
-
-    def __init__(self, *, host: str, port: int, password: str, db: int, socket_timeout: int = 5):
+    def __init__(
+        self, *, host: str, port: int, password: str, db: int, socket_timeout: int = 5
+    ):
         # redis对象 在 @app.on_event("startup") 中连接创建
         self._redis_client = None
         self.host = host
@@ -48,7 +49,7 @@ class RedisCli(object):
                 password=self.password,
                 db=self.db,
                 socket_timeout=self.socket_timeout,
-                decode_responses=True  # 解码
+                decode_responses=True,  # 解码
             )
             if not self._redis_client.ping():
                 logger.info("连接redis超时")
@@ -77,7 +78,7 @@ redis_client: Redis = RedisCli(
     port=settings.REDIS_PORT,
     password=settings.REDIS_PASSWORD,
     db=settings.REDIS_DB,
-    socket_timeout=settings.REDIS_TIMEOUT
+    socket_timeout=settings.REDIS_TIMEOUT,
 )
 
 # 只允许导出 redis_client 实例化对象

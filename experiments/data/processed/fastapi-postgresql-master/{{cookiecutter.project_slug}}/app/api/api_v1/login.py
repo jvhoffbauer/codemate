@@ -21,14 +21,22 @@ def login_access_token(
     db: Session = Depends(deps.get_db), form_data: OAuth2PasswordRequestForm = Depends()
 ):
     """OAuth2 compatible token login, get an access token for future requests."""
-    user = crud.user.authenticate(db, email=form_data.username, password=form_data.password)
+    user = crud.user.authenticate(
+        db, email=form_data.username, password=form_data.password
+    )
     if not user:
         raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST, detail="Incorrect email or password."
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Incorrect email or password.",
         )
     elif not crud.user.is_active(user):
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Inactive user.")
-    return {"access_token": security.create_access_token(str(user.id)), "token_type": "bearer"}
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, detail="Inactive user."
+        )
+    return {
+        "access_token": security.create_access_token(str(user.id)),
+        "token_type": "bearer",
+    }
 
 
 @router.post("/test-token", response_model=schemas.User)
@@ -44,22 +52,35 @@ def recover_password(*, db: Session = Depends(deps.get_db), email: EmailStr):
     user = crud.user.get_by_email(db, email=email)
     password_reset_token = generate_password_reset_token(email=email)
     if user:
-        send_reset_password_email(email_to=user.email, email=email, token=password_reset_token)
-    return {"msg": "If this email is registered within our system, you'll get an recovery email."}
+        send_reset_password_email(
+            email_to=user.email, email=email, token=password_reset_token
+        )
+    return {
+        "msg": "If this email is registered within our system, you'll get an recovery email."
+    }
 
 
 @router.post("/reset-password", response_model=schemas.Msg)
 def reset_password(
-    *, db: Session = Depends(deps.get_db), token: str = Body(), new_password: str = Body()
+    *,
+    db: Session = Depends(deps.get_db),
+    token: str = Body(),
+    new_password: str = Body()
 ):
     email = verify_password_reset_token(token)
     if not email:
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid token.")
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid token."
+        )
     user = crud.user.get_by_email(db, email=email)
     if not user:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found.")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="User not found."
+        )
     if not crud.user.is_active(user):
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Inactive user.")
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, detail="Inactive user."
+        )
     user.hashed_password = get_password_hash(new_password)
     db.add(user)
     db.commit()

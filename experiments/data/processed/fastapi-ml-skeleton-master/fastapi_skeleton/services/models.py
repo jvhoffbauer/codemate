@@ -1,5 +1,3 @@
-
-
 from typing import List
 
 import joblib
@@ -7,13 +5,11 @@ import numpy as np
 from loguru import logger
 
 from fastapi_skeleton.core.messages import NO_VALID_PAYLOAD
-from fastapi_skeleton.models.payload import (HousePredictionPayload,
-                                             payload_to_list)
+from fastapi_skeleton.models.payload import HousePredictionPayload, payload_to_list
 from fastapi_skeleton.models.prediction import HousePredictionResult
 
 
 class HousePriceModel(object):
-
     RESULT_UNIT_FACTOR = 100000
 
     def __init__(self, path):

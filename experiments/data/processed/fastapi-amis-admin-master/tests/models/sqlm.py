@@ -39,7 +39,9 @@ class Category(PkModelMixin, CreateTimeModelMixin, table=True):
 
 class ArticleTagLink(SQLModel, table=True):
     tag_id: Optional[int] = Field(default=None, foreign_key="tag.id", primary_key=True)
-    article_id: Optional[int] = Field(default=None, foreign_key="article.id", primary_key=True)
+    article_id: Optional[int] = Field(
+        default=None, foreign_key="article.id", primary_key=True
+    )
 
 
 class Tag(PkModelMixin, CreateTimeModelMixin, table=True):
@@ -49,7 +51,9 @@ class Tag(PkModelMixin, CreateTimeModelMixin, table=True):
         sa_column=Column(String(255), unique=True, index=True, nullable=False),
     )
 
-    articles: List["Article"] = Relationship(back_populates="tags", link_model=ArticleTagLink)
+    articles: List["Article"] = Relationship(
+        back_populates="tags", link_model=ArticleTagLink
+    )
 
 
 class ArticleContent(PkModelMixin, table=True):
@@ -59,13 +63,19 @@ class ArticleContent(PkModelMixin, table=True):
 
 class Article(PkModelMixin, CreateTimeModelMixin, table=True):
     title: str = Field(title="ArticleTitle", max_length=200)
-    description: str = Field(default="", title="ArticleDescription", sa_column=Column(Text))
+    description: str = Field(
+        default="", title="ArticleDescription", sa_column=Column(Text)
+    )
     status: int = Field(None, title="status")
 
-    category_id: Optional[int] = Field(default=None, foreign_key="category.id", title="CategoryId")
+    category_id: Optional[int] = Field(
+        default=None, foreign_key="category.id", title="CategoryId"
+    )
     category: Optional[Category] = Relationship(back_populates="articles")
 
-    content_id: Optional[int] = Field(default=None, foreign_key="articlecontent.id", title="ArticleContentId")
+    content_id: Optional[int] = Field(
+        default=None, foreign_key="articlecontent.id", title="ArticleContentId"
+    )
     content: Optional[ArticleContent] = Relationship(back_populates="article")
 
     user_id: Optional[int] = Field(default=None, foreign_key="user.id", title="Author")

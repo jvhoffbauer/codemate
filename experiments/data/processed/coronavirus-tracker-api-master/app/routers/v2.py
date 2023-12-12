@@ -37,7 +37,9 @@ async def get_latest(
 
 
 # pylint: disable=unused-argument,too-many-arguments,redefined-builtin
-@V2.get("/locations", response_model=LocationsResponse, response_model_exclude_unset=True)
+@V2.get(
+    "/locations", response_model=LocationsResponse, response_model_exclude_unset=True
+)
 async def get_locations(
     request: Request,
     source: Sources = "jhu",
@@ -76,7 +78,8 @@ async def get_locations(
             pass
         if not locations:
             raise HTTPException(
-                404, detail=f"Source `{source}` does not have the desired location data.",
+                404,
+                detail=f"Source `{source}` does not have the desired location data.",
             )
 
     # Return final serialized data.
@@ -99,7 +102,7 @@ async def get_location_by_id(
     Getting specific location by id.
     """
     location = await request.state.source.get(id)
-    
+
     return {"location": location.serialize(timelines)}
 
 

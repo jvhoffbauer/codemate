@@ -13,6 +13,7 @@
 
 """
 from typing import Any, Union, Optional
+
 #
 from jose import jwt
 from fastapi import Header, Depends, Request
@@ -24,7 +25,7 @@ from core.config import settings
 
 
 def check_jwt_token(
-        token: Optional[str] = Header(..., description="登录token")
+    token: Optional[str] = Header(..., description="登录token")
 ) -> Union[str, Any]:
     """
     解析验证token  默认验证headers里面为token字段的数据
@@ -36,8 +37,7 @@ def check_jwt_token(
 
     try:
         payload = jwt.decode(
-            token,
-            settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
+            token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
         )
         return payload
     except jwt.ExpiredSignatureError:
@@ -46,9 +46,7 @@ def check_jwt_token(
         raise custom_exc.TokenAuthError()
 
 
-def get_current_user(
-        token: Optional[str] = Depends(check_jwt_token)
-) -> User:
+def get_current_user(token: Optional[str] = Depends(check_jwt_token)) -> User:
     """
     根据header中token 获取当前用户
     :param db:

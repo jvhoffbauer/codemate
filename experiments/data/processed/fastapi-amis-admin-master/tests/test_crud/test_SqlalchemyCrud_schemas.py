@@ -10,7 +10,9 @@ from fastapi_amis_admin.utils.pydantic import ORMModelMixin, model_fields
 from tests.conftest import async_db as db
 
 
-async def test_schema_update(app: FastAPI, async_client: AsyncClient, fake_users, models):
+async def test_schema_update(
+    app: FastAPI, async_client: AsyncClient, fake_users, models
+):
     class UserUpdate(BaseModel):
         password: str = None
 
@@ -119,7 +121,9 @@ async def test_schema_read(app: FastAPI, async_client: AsyncClient, fake_users, 
 
 
 # todo perfect;test more comparison operators
-async def test_schema_filter(app: FastAPI, async_client: AsyncClient, fake_users, models):
+async def test_schema_filter(
+    app: FastAPI, async_client: AsyncClient, fake_users, models
+):
     class UserFilter(BaseModel):
         id: int = None
         username: str = None
@@ -152,7 +156,9 @@ async def test_schema_filter(app: FastAPI, async_client: AsyncClient, fake_users
     assert items
 
 
-async def test_schema_read_relationship(app: FastAPI, async_client: AsyncClient, fake_articles, fake_article_tags, models):
+async def test_schema_read_relationship(
+    app: FastAPI, async_client: AsyncClient, fake_articles, fake_article_tags, models
+):
     category_schema = TableModelParser.get_table_model_schema(models.Category)
     content_schema = TableModelParser.get_table_model_schema(models.ArticleContent)
     user_schema = TableModelParser.get_table_model_schema(models.User)
@@ -197,7 +203,9 @@ async def test_schema_read_relationship(app: FastAPI, async_client: AsyncClient,
     assert items["tags"][0]["id"] == 1
 
 
-async def test_schema_update_relationship(app: FastAPI, async_client: AsyncClient, fake_articles, async_session, models):
+async def test_schema_update_relationship(
+    app: FastAPI, async_client: AsyncClient, fake_articles, async_session, models
+):
     content_schema = TableModelParser.get_table_model_schema(models.ArticleContent)
 
     class ArticleUpdate(BaseModel):
@@ -230,7 +238,9 @@ async def test_schema_update_relationship(app: FastAPI, async_client: AsyncClien
 
     res = await async_client.put(
         "/article/item/1",
-        json={"content": {"id": 2, "content": "new_content"}},  # will be ignored by `update_exclude`
+        json={
+            "content": {"id": 2, "content": "new_content"}
+        },  # will be ignored by `update_exclude`
     )
     assert res.json()["data"] == 1
     content = await async_session.get(models.ArticleContent, 1, with_for_update=True)

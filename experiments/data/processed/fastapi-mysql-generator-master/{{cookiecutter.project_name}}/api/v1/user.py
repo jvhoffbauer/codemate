@@ -31,8 +31,8 @@ router = APIRouter()
 
 @router.post("/login", summary="用户登录认证", name="登录")
 def login_access_token(
-        *,
-        req: sys_user_schema.UserPhoneAuth,
+    *,
+    req: sys_user_schema.UserPhoneAuth,
 ) -> Any:
     """
     简单实现登录
@@ -61,10 +61,7 @@ def login_access_token(
 
 
 @router.get("/user/info", summary="获取用户信息", name="获取用户信息", description="此API没有验证权限")
-def get_user_info(
-        *,
-        current_user: User = Depends(deps.get_current_user)
-) -> Any:
+def get_user_info(*, current_user: User = Depends(deps.get_current_user)) -> Any:
     """
     获取用户信息 这个路由分组没有验证权限
     :param current_user:

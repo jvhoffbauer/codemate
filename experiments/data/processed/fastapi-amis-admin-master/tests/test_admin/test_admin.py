@@ -34,7 +34,10 @@ async def test_PageSchemaAdmin(site: AdminSite):
 
     ins = site.get_admin_or_create(TmpAdmin1)
 
-    assert isinstance(ins.page_schema, amis.PageSchema) and ins.page_schema.label == "page_label"
+    assert (
+        isinstance(ins.page_schema, amis.PageSchema)
+        and ins.page_schema.label == "page_label"
+    )
 
     @site.register_admin
     class TmpAdmin2(admin.PageSchemaAdmin):
@@ -42,7 +45,10 @@ async def test_PageSchemaAdmin(site: AdminSite):
 
     ins = site.get_admin_or_create(TmpAdmin2)
 
-    assert isinstance(ins.page_schema, amis.PageSchema) and ins.page_schema.label == "page_label"
+    assert (
+        isinstance(ins.page_schema, amis.PageSchema)
+        and ins.page_schema.label == "page_label"
+    )
 
 
 async def test_LinkAdmin(site: AdminSite):
@@ -60,7 +66,10 @@ async def test_IframeAdmin(site: AdminSite):
         src = "https://docs.amis.work"
 
     ins = site.get_admin_or_create(TmpAdmin)
-    assert isinstance(ins.page_schema.schema_, amis.Iframe) and ins.page_schema.schema_.src == "https://docs.amis.work"
+    assert (
+        isinstance(ins.page_schema.schema_, amis.Iframe)
+        and ins.page_schema.schema_.src == "https://docs.amis.work"
+    )
 
 
 async def test_RouterAdmin(site: AdminSite, async_client: AsyncClient):
@@ -134,7 +143,10 @@ async def test_TemplateAdmin(site: AdminSite, async_client: AsyncClient, tmpdir)
     ins = site.get_admin_or_create(TmpAdmin)
     assert ins.page_path == "/index"
     assert ins.page_schema.url == ins.router_path + ins.page_path
-    assert isinstance(ins.page_schema.schema_, amis.Iframe) and ins.page_schema.schema_.src == ins.page_schema.url
+    assert (
+        isinstance(ins.page_schema.schema_, amis.Iframe)
+        and ins.page_schema.schema_.src == ins.page_schema.url
+    )
     site.register_router()
 
     # test jinja2 html

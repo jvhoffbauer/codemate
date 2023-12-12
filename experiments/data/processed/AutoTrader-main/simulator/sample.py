@@ -5,19 +5,23 @@ import pandas as pd
 file_names = ["JUNIORBEES"]
 
 for file_name in file_names:
-    output_dir_day_wise = f'simulator/output2/{file_name}_day_wise_only.csv'
-    output_dir_order_wise = f'simulator/output2/{file_name}_order_wise_only.csv'
+    output_dir_day_wise = f"simulator/output2/{file_name}_day_wise_only.csv"
+    output_dir_order_wise = f"simulator/output2/{file_name}_order_wise_only.csv"
 
-    with open(output_dir_day_wise, 'w') as file_object:
+    with open(output_dir_day_wise, "w") as file_object:
         writer_object = writer(file_object)
-        writer_object.writerow(['Date', 'Cash Available', 'Cash Invested', 'Open', 'High', 'Low', 'Close'])
+        writer_object.writerow(
+            ["Date", "Cash Available", "Cash Invested", "Open", "High", "Low", "Close"]
+        )
 
-    with open(output_dir_order_wise, 'w') as file_object:
+    with open(output_dir_order_wise, "w") as file_object:
         writer_object = writer(file_object)
-        writer_object.writerow(['OrderID', 'Buy Date', 'Buy Price', 'Sell Date', 'Sell Price'])
+        writer_object.writerow(
+            ["OrderID", "Buy Date", "Buy Price", "Sell Date", "Sell Price"]
+        )
 
     # CSV to DataFrame
-    df = pd.read_csv(f'simulator/Input/{file_name}.csv', header=None)
+    df = pd.read_csv(f"simulator/Input/{file_name}.csv", header=None)
     date_price_list: list = df.values.tolist()
 
     # date_price_list.reverse()
@@ -50,12 +54,14 @@ for file_name in file_names:
                         "sell_price": NIFTY_BEES_CTP * SELLING_MARGIN,
                         "units": UNITS,
                         "profit": 0,
-                        "sold": False
+                        "sold": False,
                     }
 
             for o_id, order in orders.items():
                 if order["sold"] is False and NIFTY_BEES_CTP >= order["sell_price"]:
-                    TURNOVER = (order["sell_price"] * order["units"]) + (order["buy_price"] * order["units"])
+                    TURNOVER = (order["sell_price"] * order["units"]) + (
+                        order["buy_price"] * order["units"]
+                    )
                     STT = int(TURNOVER * 0.001)
                     ETC = int(TURNOVER * 0.000035)
                     DPC = 16
@@ -63,10 +69,14 @@ for file_name in file_names:
                     STAMP = int(TURNOVER * 0.00015)
                     GST = 0.18 * (SEBI + ETC)
                     TOTAL = STT + ETC + DPC + SEBI + STAMP + GST
-                    equity_margin = equity_margin + (order["sell_price"] * order["units"]) - TOTAL
+                    equity_margin = (
+                        equity_margin + (order["sell_price"] * order["units"]) - TOTAL
+                    )
                     order["sold"] = True
                     order["sell_date"] = date
-                    order["profit"] = (order["units"] * (order["sell_price"] - order["buy_price"])) - TOTAL
+                    order["profit"] = (
+                        order["units"] * (order["sell_price"] - order["buy_price"])
+                    ) - TOTAL
                     orders[o_id] = order
 
             # Update LTP on Open or Close.
@@ -78,22 +88,38 @@ for file_name in file_names:
             if order["sold"] is False:
                 invested = invested + NIFTY_BEES_CTP * order["units"]
 
-        with open(output_dir_day_wise, 'a') as file_object:
+        with open(output_dir_day_wise, "a") as file_object:
             writer_object = writer(file_object)
             # if not prev_date or prev_date != date[:4]:
             writer_object.writerow([date, equity_margin, invested, *date_prices[1:5]])
             prev_date = date[:4]
 
     for oid, order in orders.items():
-        with open(output_dir_order_wise, 'a') as file_object:
+        with open(output_dir_order_wise, "a") as file_object:
             writer_object = writer(file_object)
-            if order['sold']:
+            if order["sold"]:
                 writer_object.writerow(
-                    [oid, order['buy_date'], order['buy_price'], order['sell_date'], order['sell_price'],
-                     order["units"], order["profit"]])
+                    [
+                        oid,
+                        order["buy_date"],
+                        order["buy_price"],
+                        order["sell_date"],
+                        order["sell_price"],
+                        order["units"],
+                        order["profit"],
+                    ]
+                )
             else:
                 writer_object.writerow(
-                    [oid, order['buy_date'], order['buy_price'], "na", order['sell_price'], order["units"]])
+                    [
+                        oid,
+                        order["buy_date"],
+                        order["buy_price"],
+                        "na",
+                        order["sell_price"],
+                        order["units"],
+                    ]
+                )
 
 
 # Volatility matters. Best return comes in juniorbees, followed by niftybees, followed by goldbees.

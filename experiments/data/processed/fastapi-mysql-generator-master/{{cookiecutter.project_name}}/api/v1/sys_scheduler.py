@@ -31,32 +31,41 @@ async def get_scheduled_syncs():
     schedules = []
     for job in schedule.get_jobs():
         schedules.append(
-            {"job_id": job.id, "func_name": job.func_ref, "func_args": job.args, "cron_model": str(job.trigger),
-             "next_run": str(job.next_run_time)}
+            {
+                "job_id": job.id,
+                "func_name": job.func_ref,
+                "func_args": job.args,
+                "cron_model": str(job.trigger),
+                "next_run": str(job.next_run_time),
+            }
         )
 
     return resp.ok(data=schedules)
 
 
 @router.get("/jobs/once", summary="获取指定的job信息", name="获取指定定时任务")
-async def get_target_sync(
-        job_id: str = Query(..., title="任务id")
-):
+async def get_target_sync(job_id: str = Query(..., title="任务id")):
     job = schedule.get_job(job_id=job_id)
 
     if not job:
         return resp.fail(resp.DataNotFound.set_msg(f"not found job {job_id}"))
 
     return resp.ok(
-        data={"job_id": job.id, "func_name": job.func_ref, "func_args": job.args, "cron_model": str(job.trigger),
-              "next_run": str(job.next_run_time)})
+        data={
+            "job_id": job.id,
+            "func_name": job.func_ref,
+            "func_args": job.args,
+            "cron_model": str(job.trigger),
+            "next_run": str(job.next_run_time),
+        }
+    )
 
 
 @router.post("/job/schedule", summary="开始job调度", name="启动定时任务")
 async def add_job_to_scheduler(
-        *,
-        seconds: int = Body(120, title="循环间隔时间/秒,默认120s", embed=True),
-        job_id: str = Body(..., title="任务id", embed=True),
+    *,
+    seconds: int = Body(120, title="循环间隔时间/秒,默认120s", embed=True),
+    job_id: str = Body(..., title="任务id", embed=True),
 ):
     """
     简易的任务调度演示 可自行参考文档 https://apscheduler.readthedocs.io/en/stable/
@@ -72,20 +81,19 @@ async def add_job_to_scheduler(
     if res:
         return resp.fail(resp.InvalidRequest.set_msg(f"{job_id} job already exists"))
 
-    schedule_job = schedule.add_job(demo_task,
-                                    'interval',
-                                    args=(job_id,),
-                                    seconds=seconds,  # 循环间隔时间 秒
-                                    id=job_id,  # job ID
-                                    next_run_time=datetime.now()  # 立即执行
-                                    )
+    schedule_job = schedule.add_job(
+        demo_task,
+        "interval",
+        args=(job_id,),
+        seconds=seconds,  # 循环间隔时间 秒
+        id=job_id,  # job ID
+        next_run_time=datetime.now(),  # 立即执行
+    )
     return resp.ok(data={"id": schedule_job.id})
 
 
 @router.post("/job/del", summary="移除任务", name="删除定时任务")
-async def remove_schedule(
-        job_id: str = Body(..., title="job_id", embed=True)
-):
+async def remove_schedule(job_id: str = Body(..., title="job_id", embed=True)):
     res = schedule.get_job(job_id=job_id)
     if not res:
         return resp.fail(resp.DataNotFound.set_msg(f"not found job {job_id}"))

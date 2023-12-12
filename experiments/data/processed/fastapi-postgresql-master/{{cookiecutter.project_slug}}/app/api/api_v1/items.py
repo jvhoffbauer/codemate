@@ -24,7 +24,9 @@ def read_items(
     if crud.user.is_superuser(user):
         items = crud.item.get_multi(db, skip=skip, limit=limit)
     else:
-        items = crud.item.get_multi_by_owner(db, owner_id=user.id, skip=skip, limit=limit)
+        items = crud.item.get_multi_by_owner(
+            db, owner_id=user.id, skip=skip, limit=limit
+        )
     return items
 
 

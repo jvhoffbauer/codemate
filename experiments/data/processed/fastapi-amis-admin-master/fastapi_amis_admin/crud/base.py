@@ -30,16 +30,30 @@ class RouterMixin:
         if self.router is None:
             if self.router_prefix is None:
                 self.router_prefix = f"/{self.__class__.__name__}"
-            self.router = APIRouter(prefix=self.router_prefix, tags=[self.router_prefix[1:]])
+            self.router = APIRouter(
+                prefix=self.router_prefix, tags=[self.router_prefix[1:]]
+            )
         if self.router_permission_depend is not None:
             self.router.dependencies.insert(0, Depends(self.router_permission_depend))
         return self.router
 
     def error_no_router_permission(self, request: Request):
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="No router permissions")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="No router permissions"
+        )
 
 
-class BaseCrud(RouterMixin, Generic[SchemaModelT, SchemaListT, SchemaFilterT, SchemaCreateT, SchemaReadT, SchemaUpdateT]):
+class BaseCrud(
+    RouterMixin,
+    Generic[
+        SchemaModelT,
+        SchemaListT,
+        SchemaFilterT,
+        SchemaCreateT,
+        SchemaReadT,
+        SchemaUpdateT,
+    ],
+):
     schema_model: Type[SchemaModelT] = None
     schema_list: Type[SchemaListT] = None
     schema_filter: Type[SchemaFilterT] = None
@@ -69,7 +83,9 @@ class BaseCrud(RouterMixin, Generic[SchemaModelT, SchemaListT, SchemaFilterT, Sc
         schema_list: Type[SchemaListT] = None,
         schema_filter: Type[SchemaFilterT] = None,
         schema_create: Type[SchemaCreateT] = None,
-        schema_read: Type[SchemaReadT] = None,  # default is None, means not use read route.
+        schema_read: Type[
+            SchemaReadT
+        ] = None,  # default is None, means not use read route.
         schema_update: Type[SchemaUpdateT] = None,
         list_per_page_max: int = None,
         depends_list: List[Depends] = None,
@@ -79,10 +95,16 @@ class BaseCrud(RouterMixin, Generic[SchemaModelT, SchemaListT, SchemaFilterT, Sc
         depends_delete: List[Depends] = None,
     ) -> "BaseCrud":
         self.schema_list = schema_list or self.schema_list or self._create_schema_list()
-        self.schema_filter = schema_filter or self.schema_filter or self._create_schema_filter()
-        self.schema_create = schema_create or self.schema_create or self._create_schema_create()
+        self.schema_filter = (
+            schema_filter or self.schema_filter or self._create_schema_filter()
+        )
+        self.schema_create = (
+            schema_create or self.schema_create or self._create_schema_create()
+        )
         self.schema_read = schema_read or self.schema_read or self._create_schema_read()
-        self.schema_update = schema_update or self.schema_update or self._create_schema_update()
+        self.schema_update = (
+            schema_update or self.schema_update or self._create_schema_update()
+        )
         self.list_per_page_max = list_per_page_max or self.list_per_page_max
         self.paginator = Paginator(perPageMax=self.list_per_page_max)
         self.router.add_api_route(
@@ -98,7 +120,9 @@ class BaseCrud(RouterMixin, Generic[SchemaModelT, SchemaListT, SchemaFilterT, Sc
                 "/item/{item_id}",
                 self.route_read,
                 methods=["GET"],
-                response_model=BaseApiOut[Union[self.schema_read, List[self.schema_read]]],
+                response_model=BaseApiOut[
+                    Union[self.schema_read, List[self.schema_read]]
+                ],
                 dependencies=depends_read,
                 name=CrudEnum.read,
             )
@@ -132,7 +156,9 @@ class BaseCrud(RouterMixin, Generic[SchemaModelT, SchemaListT, SchemaFilterT, Sc
         return self.schema_model
 
     def _create_schema_filter(self) -> Type[SchemaFilterT]:
-        return create_model_by_model(self.schema_list, f"{self.schema_name_prefix}Filter", set_none=True)
+        return create_model_by_model(
+            self.schema_list, f"{self.schema_name_prefix}Filter", set_none=True
+        )
 
     def _create_schema_read(self) -> Optional[Type[SchemaReadT]]:
         return None
@@ -189,10 +215,14 @@ class BaseCrud(RouterMixin, Generic[SchemaModelT, SchemaListT, SchemaFilterT, Sc
     ) -> bool:
         return True
 
-    async def has_create_permission(self, request: Request, obj: Optional[SchemaCreateT], **kwargs) -> bool:
+    async def has_create_permission(
+        self, request: Request, obj: Optional[SchemaCreateT], **kwargs
+    ) -> bool:
         return True
 
-    async def has_read_permission(self, request: Request, item_id: Optional[List[str]], **kwargs) -> bool:
+    async def has_read_permission(
+        self, request: Request, item_id: Optional[List[str]], **kwargs
+    ) -> bool:
         return True
 
     async def has_update_permission(
@@ -204,7 +234,9 @@ class BaseCrud(RouterMixin, Generic[SchemaModelT, SchemaListT, SchemaFilterT, Sc
     ) -> bool:
         return True
 
-    async def has_delete_permission(self, request: Request, item_id: Optional[List[str]], **kwargs) -> bool:
+    async def has_delete_permission(
+        self, request: Request, item_id: Optional[List[str]], **kwargs
+    ) -> bool:
         return True
 
     def error_data_handle(self, request: Request):

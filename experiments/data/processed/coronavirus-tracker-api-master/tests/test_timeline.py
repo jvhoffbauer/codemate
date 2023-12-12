@@ -31,7 +31,14 @@ def test_timeline_class():
     # validate serialize
     check_serialize = {
         "latest": 7,
-        "timeline": OrderedDict([("1/22/20", 2), ("1/23/20", 3), ("1/24/20", 5), ("1/25/20", 7),]),
+        "timeline": OrderedDict(
+            [
+                ("1/22/20", 2),
+                ("1/23/20", 3),
+                ("1/24/20", 5),
+                ("1/25/20", 7),
+            ]
+        ),
     }
 
     assert dict(history_data.serialize()) == check_serialize

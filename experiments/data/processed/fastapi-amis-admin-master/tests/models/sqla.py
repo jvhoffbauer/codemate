@@ -51,7 +51,9 @@ class ArticleTagLink(Base):
     __pydantic_model__ = ArticleTagLinkSchema
 
     tag_id = Column(Integer, ForeignKey("tag.id"), primary_key=True, default=None)
-    article_id = Column(Integer, ForeignKey("article.id"), primary_key=True, default=None)
+    article_id = Column(
+        Integer, ForeignKey("article.id"), primary_key=True, default=None
+    )
 
 
 class Tag(PkModelMixin, CreateTimeModelMixin):

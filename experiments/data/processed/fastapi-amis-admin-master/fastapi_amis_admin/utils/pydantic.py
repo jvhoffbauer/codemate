@@ -40,16 +40,24 @@ if PYDANTIC_V2:
     ) -> Type[BaseModel]:
         if kwargs.pop("orm_mode", False):
             kwargs.setdefault("from_attributes", True)
-        __config__ = marge_model_config(AllowExtraModelMixin, {"extra": extra, **kwargs})
+        __config__ = marge_model_config(
+            AllowExtraModelMixin, {"extra": extra, **kwargs}
+        )
         __validators__ = None
 
         if set_none:
-            __validators__ = {"root_validator_skip_blank": model_validator(mode="before")(root_validator_skip_blank)}
+            __validators__ = {
+                "root_validator_skip_blank": model_validator(mode="before")(
+                    root_validator_skip_blank
+                )
+            }
             for f in fields:
                 f.field_info.annotation = Optional[f.field_info.annotation]
                 f.field_info.default = None
         field_params = {f.name: (f.field_info.annotation, f.field_info) for f in fields}
-        model: Type[BaseModel] = create_model(name, __config__=__config__, __validators__=__validators__, **field_params)
+        model: Type[BaseModel] = create_model(
+            name, __config__=__config__, __validators__=__validators__, **field_params
+        )
         return model
 
     def model_update_forward_refs(model: Type[BaseModel]):
@@ -77,10 +85,14 @@ if PYDANTIC_V2:
     def model_config(model: Type[BaseModel]) -> Union[type, Dict[str, Any]]:
         return model.model_config
 
-    def marge_model_config(model: Type[BaseModel], update: Dict[str, Any]) -> Union[type, Dict[str, Any]]:
+    def marge_model_config(
+        model: Type[BaseModel], update: Dict[str, Any]
+    ) -> Union[type, Dict[str, Any]]:
         return {**model.model_config, **update}
 
-    def model_config_attr(model: Type[BaseModel], name: str, default: Any = None) -> Any:
+    def model_config_attr(
+        model: Type[BaseModel], name: str, default: Any = None
+    ) -> Any:
         return model.model_config.get(name, default)
 
 else:
@@ -113,10 +125,16 @@ else:
         extra: str = "ignore",
         **kwargs,
     ) -> Type[BaseModel]:
-        __config__ = marge_model_config(AllowExtraModelMixin, {"extra": extra, **kwargs})
+        __config__ = marge_model_config(
+            AllowExtraModelMixin, {"extra": extra, **kwargs}
+        )
         __validators__ = None
         if set_none:
-            __validators__ = {"root_validator_skip_blank": root_validator(pre=True, allow_reuse=True)(root_validator_skip_blank)}
+            __validators__ = {
+                "root_validator_skip_blank": root_validator(pre=True, allow_reuse=True)(
+                    root_validator_skip_blank
+                )
+            }
             for f in fields:
                 f.required = False
                 f.allow_none = True
@@ -142,10 +160,14 @@ else:
     def model_config(model: Type[BaseModel]) -> Union[type, Dict[str, Any]]:
         return model.Config
 
-    def marge_model_config(model: Type[BaseModel], update: Dict[str, Any]) -> Union[type, Dict[str, Any]]:
+    def marge_model_config(
+        model: Type[BaseModel], update: Dict[str, Any]
+    ) -> Union[type, Dict[str, Any]]:
         return type("Config", (model.Config,), update)
 
-    def model_config_attr(model: Type[BaseModel], name: str, default: Any = None) -> Any:
+    def model_config_attr(
+        model: Type[BaseModel], name: str, default: Any = None
+    ) -> Any:
         return getattr(model.Config, name, default)
 
 
@@ -178,7 +200,9 @@ def scalar_sequence_inner_type(tp: Any) -> Any:
     origin = get_origin(tp)
     if origin is None:
         return Any
-    elif is_union(origin) or origin is Annotated:  # Return the type of the first element
+    elif (
+        is_union(origin) or origin is Annotated
+    ):  # Return the type of the first element
         return scalar_sequence_inner_type(get_args(tp)[0])
     args = get_args(tp)
     return annotation_outer_type(args[0]) if args else Any
@@ -233,5 +257,11 @@ def create_model_by_model(
         keys &= include
     if exclude:
         keys -= exclude
-    fields = {name: create_cloned_field(field) for name, field in fields.items() if name in keys}
-    return create_model_by_fields(name, list(fields.values()), set_none=set_none, **kwargs)
+    fields = {
+        name: create_cloned_field(field)
+        for name, field in fields.items()
+        if name in keys
+    }
+    return create_model_by_fields(
+        name, list(fields.values()), set_none=set_none, **kwargs
+    )

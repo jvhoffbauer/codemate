@@ -1,7 +1,11 @@
 from logging import Filter
 from typing import TYPE_CHECKING, Optional
 
-from asgi_correlation_id.context import celery_current_id, celery_parent_id, correlation_id
+from asgi_correlation_id.context import (
+    celery_current_id,
+    celery_parent_id,
+    correlation_id,
+)
 
 if TYPE_CHECKING:
     from logging import LogRecord
@@ -17,12 +21,17 @@ def _trim_string(string: Optional[str], string_length: Optional[int]) -> Optiona
 class CorrelationIdFilter(Filter):
     """Logging filter to attached correlation IDs to log records"""
 
-    def __init__(self, name: str = '', uuid_length: Optional[int] = None, default_value: Optional[str] = None):
+    def __init__(
+        self,
+        name: str = "",
+        uuid_length: Optional[int] = None,
+        default_value: Optional[str] = None,
+    ):
         super().__init__(name=name)
         self.uuid_length = uuid_length
         self.default_value = default_value
 
-    def filter(self, record: 'LogRecord') -> bool:
+    def filter(self, record: "LogRecord") -> bool:
         """
         Attach a correlation ID to the log record.
 
@@ -40,12 +49,17 @@ class CorrelationIdFilter(Filter):
 
 
 class CeleryTracingIdsFilter(Filter):
-    def __init__(self, name: str = '', uuid_length: Optional[int] = None, default_value: Optional[str] = None):
+    def __init__(
+        self,
+        name: str = "",
+        uuid_length: Optional[int] = None,
+        default_value: Optional[str] = None,
+    ):
         super().__init__(name=name)
         self.uuid_length = uuid_length
         self.default_value = default_value
 
-    def filter(self, record: 'LogRecord') -> bool:
+    def filter(self, record: "LogRecord") -> bool:
         """
         Append a parent- and current ID to the log record.
 

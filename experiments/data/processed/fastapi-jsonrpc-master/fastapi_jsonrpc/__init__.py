@@ -5,7 +5,12 @@ import logging
 import typing
 from collections import ChainMap, defaultdict
 from collections.abc import Coroutine
-from contextlib import AsyncExitStack, AbstractAsyncContextManager, asynccontextmanager, contextmanager
+from contextlib import (
+    AsyncExitStack,
+    AbstractAsyncContextManager,
+    asynccontextmanager,
+    contextmanager,
+)
 from types import FunctionType
 from typing import List, Union, Any, Callable, Type, Optional, Dict, Sequence
 
@@ -22,11 +27,23 @@ from fastapi.dependencies.models import Dependant
 from fastapi.encoders import jsonable_encoder
 from fastapi.params import Depends
 from fastapi import FastAPI, Body
-from fastapi.dependencies.utils import solve_dependencies, get_dependant, get_flat_dependant, \
-    get_parameterless_sub_dependant
+from fastapi.dependencies.utils import (
+    solve_dependencies,
+    get_dependant,
+    get_flat_dependant,
+    get_parameterless_sub_dependant,
+)
 from fastapi.exceptions import RequestValidationError, HTTPException
 from fastapi.routing import APIRoute, APIRouter, serialize_response
-from pydantic import BaseModel, ValidationError, StrictStr, Field, create_model, schema_of, ConfigDict
+from pydantic import (
+    BaseModel,
+    ValidationError,
+    StrictStr,
+    Field,
+    create_model,
+    schema_of,
+    ConfigDict,
+)
 from starlette.background import BackgroundTasks
 from starlette.concurrency import run_in_threadpool
 from starlette.requests import Request
@@ -40,6 +57,7 @@ logger = logging.getLogger(__name__)
 try:
     from functools import cached_property
 except ImportError:
+
     class cached_property:  # noqa
         def __init__(self, func):
             self.__doc__ = getattr(func, "__doc__")
@@ -51,9 +69,12 @@ except ImportError:
             value = obj.__dict__[self.func.__name__] = self.func(obj)
             return value
 
+
 try:
     import sentry_sdk
-    from sentry_sdk.utils import transaction_from_function as sentry_transaction_from_function
+    from sentry_sdk.utils import (
+        transaction_from_function as sentry_transaction_from_function,
+    )
 except ImportError:
     sentry_sdk = None
     sentry_transaction_from_function = None
@@ -62,6 +83,7 @@ except ImportError:
 try:
     from fastapi._compat import _normalize_errors  # noqa
 except ImportError:
+
     def _normalize_errors(errors: Sequence[Any]) -> List[Dict[str, Any]]:
         return errors
 
@@ -71,7 +93,7 @@ class Params(fastapi.params.Body):
         self,
         default: Any,
         *,
-        media_type: str = 'application/json',
+        media_type: str = "application/json",
         title: str = None,
         description: str = None,
         gt: float = None,
@@ -89,7 +111,7 @@ class Params(fastapi.params.Body):
             default,
             embed=False,
             media_type=media_type,
-            alias='params',
+            alias="params",
             title=title,
             description=description,
             gt=gt,
@@ -110,19 +132,20 @@ components = {}
 
 def component_name(name: str, module: str = None):
     """OpenAPI components must be unique by name"""
+
     def decorator(obj):
         assert issubclass(obj, BaseModel)
         opts = {
-            '__base__': tuple(obj.mro()[1:]),  # remove self from __base__
-            '__module__': module or obj.__module__,
+            "__base__": tuple(obj.mro()[1:]),  # remove self from __base__
+            "__module__": module or obj.__module__,
             **{
                 field_name: (field.annotation, field)
                 for field_name, field in obj.model_fields.items()
             },
         }
         if obj.model_config:
-            opts.pop('__base__')
-            opts['__config__'] = obj.model_config
+            opts.pop("__base__")
+            opts["__config__"] = obj.model_config
 
         # re-create model to ensure given name will be applied to json schema
         # since Pydantic 2.0 model json schema generated at class creation process
@@ -142,23 +165,24 @@ def component_name(name: str, module: str = None):
             return components[key]
         components[key] = obj
         return obj
+
     return decorator
 
 
 def is_scope_child(owner: type, child: type):
     return (
         (
-            owner.__dict__.get(child.__name__) is child or
-            owner.__dict__.get(child.__name__) is Optional[child]
-        ) and
-        child.__qualname__ == owner.__qualname__ + '.' + child.__name__ and
-        child.__module__ == owner.__module__
+            owner.__dict__.get(child.__name__) is child
+            or owner.__dict__.get(child.__name__) is Optional[child]
+        )
+        and child.__qualname__ == owner.__qualname__ + "." + child.__name__
+        and child.__module__ == owner.__module__
     )
 
 
 def rename_if_scope_child_component(owner: type, child, postfix: str):
     if is_scope_child(owner, child):
-        child = component_name(f'{owner.__name__}.{postfix}', owner.__module__)(child)
+        child = component_name(f"{owner.__name__}.{postfix}", owner.__module__)(child)
     return child
 
 
@@ -219,25 +243,25 @@ class BaseError(Exception):
 
     def get_resp(self) -> dict:
         error = {
-            'code': self.CODE,
-            'message': self.MESSAGE,
+            "code": self.CODE,
+            "message": self.MESSAGE,
         }
 
         resp_data = self.get_resp_data()
         if resp_data:
-            error['data'] = resp_data
+            error["data"] = resp_data
 
         resp = {
-            'jsonrpc': '2.0',
-            'error': error,
-            'id': None,
+            "jsonrpc": "2.0",
+            "error": error,
+            "id": None,
         }
 
         return jsonable_encoder(resp)
 
     @classmethod
     def get_error_model(cls):
-        if cls.__dict__.get('error_model') is not None:
+        if cls.__dict__.get("error_model") is not None:
             return cls.error_model
         cls.error_model = cls.build_error_model()
         return cls.error_model
@@ -245,12 +269,12 @@ class BaseError(Exception):
     @classmethod
     def build_error_model(cls):
         if cls.ErrorModel is not None:
-            return rename_if_scope_child_component(cls, cls.ErrorModel, 'Error')
+            return rename_if_scope_child_component(cls, cls.ErrorModel, "Error")
         return None
 
     @classmethod
     def get_data_model(cls):
-        if cls.__dict__.get('data_model') is not None:
+        if cls.__dict__.get("data_model") is not None:
             return cls.data_model
         cls.data_model = cls.build_data_model()
         return cls.data_model
@@ -258,7 +282,7 @@ class BaseError(Exception):
     @classmethod
     def build_data_model(cls):
         if cls.DataModel is not None:
-            return rename_if_scope_child_component(cls, cls.DataModel, 'Data')
+            return rename_if_scope_child_component(cls, cls.DataModel, "Data")
 
         error_model = cls.get_error_model()
         if error_model is None:
@@ -270,11 +294,9 @@ class BaseError(Exception):
             errors_annotation = Optional[errors_annotation]
             default_value = None
 
-        field_definitions = {
-            'errors': (errors_annotation, default_value)
-        }
+        field_definitions = {"errors": (errors_annotation, default_value)}
 
-        name = f'_ErrorData[{error_model.__name__}]'
+        name = f"_ErrorData[{error_model.__name__}]"
         _ErrorData = create_model(
             name,
             __base__=(BaseModel,),
@@ -287,7 +309,7 @@ class BaseError(Exception):
 
     @classmethod
     def get_resp_model(cls):
-        if cls.__dict__.get('resp_model') is not None:
+        if cls.__dict__.get("resp_model") is not None:
             return cls.resp_model
         cls.resp_model = cls.build_resp_model()
         return cls.resp_model
@@ -295,8 +317,16 @@ class BaseError(Exception):
     @classmethod
     def build_resp_model(cls):
         fields_definition = {
-            'code': (int, Field(cls.CODE, frozen=True, json_schema_extra={'example': cls.CODE})),
-            'message': (str, Field(cls.MESSAGE, frozen=True, json_schema_extra={'example': cls.MESSAGE})),
+            "code": (
+                int,
+                Field(cls.CODE, frozen=True, json_schema_extra={"example": cls.CODE}),
+            ),
+            "message": (
+                str,
+                Field(
+                    cls.MESSAGE, frozen=True, json_schema_extra={"example": cls.MESSAGE}
+                ),
+            ),
         }
 
         data_model = cls.get_data_model()
@@ -306,7 +336,7 @@ class BaseError(Exception):
                 data_model = Optional[data_model]
                 data_model_default_value = None
 
-            fields_definition['data'] = (data_model, data_model_default_value)
+            fields_definition["data"] = (data_model, data_model_default_value)
 
         name = cls._component_name or cls.__name__
 
@@ -318,18 +348,18 @@ class BaseError(Exception):
         )
         _JsonRpcErrorModel = component_name(name, cls.__module__)(_JsonRpcErrorModel)
 
-        @component_name(f'_ErrorResponse[{name}]', cls.__module__)
+        @component_name(f"_ErrorResponse[{name}]", cls.__module__)
         class _ErrorResponseModel(BaseModel):
-            jsonrpc: Literal['2.0'] = Field('2.0', json_schema_extra={'example': '2.0'})
-            id: Union[StrictStr, int] = Field(None, json_schema_extra={'example': 0})
+            jsonrpc: Literal["2.0"] = Field("2.0", json_schema_extra={"example": "2.0"})
+            id: Union[StrictStr, int] = Field(None, json_schema_extra={"example": 0})
             error: _JsonRpcErrorModel
 
-            model_config = ConfigDict(extra='forbid')
+            model_config = ConfigDict(extra="forbid")
 
         return _ErrorResponseModel
 
 
-@component_name('_Error')
+@component_name("_Error")
 class ErrorModel(BaseModel):
     loc: List[Union[str, int]]
     msg: str
@@ -339,12 +369,14 @@ class ErrorModel(BaseModel):
 
 class ParseError(BaseError):
     """Invalid JSON was received by the server"""
+
     CODE = -32700
     MESSAGE = "Parse error"
 
 
 class InvalidRequest(BaseError):
     """The JSON sent is not a valid Request object"""
+
     CODE = -32600
     MESSAGE = "Invalid Request"
     error_model = ErrorModel
@@ -352,12 +384,14 @@ class InvalidRequest(BaseError):
 
 class MethodNotFound(BaseError):
     """The method does not exist / is not available"""
+
     CODE = -32601
     MESSAGE = "Method not found"
 
 
 class InvalidParams(BaseError):
     """Invalid method parameter(s)"""
+
     CODE = -32602
     MESSAGE = "Invalid params"
     error_model = ErrorModel
@@ -365,6 +399,7 @@ class InvalidParams(BaseError):
 
 class InternalError(BaseError):
     """Internal JSON-RPC error"""
+
     CODE = -32603
     MESSAGE = "Internal error"
 
@@ -382,57 +417,61 @@ async def call_sync_async(call, *args, **kwargs):
 
 
 def errors_responses(errors: Sequence[Type[BaseError]] = None):
-    responses = {'default': {}}
+    responses = {"default": {}}
 
     if errors:
         # Swagger UI 5.0 and above allow use only int status_codes and in _valid range_
         # generate fake status codes for each error
         for fake_status_code, error_cls in enumerate(errors, start=210):
             responses[fake_status_code] = {
-                'model': error_cls.get_resp_model(),
-                'description': error_cls.get_description(),
+                "model": error_cls.get_resp_model(),
+                "description": error_cls.get_description(),
             }
 
     return responses
 
 
-@component_name(f'_Request')
+@component_name(f"_Request")
 class JsonRpcRequest(BaseModel):
-    jsonrpc: Literal['2.0'] = Field('2.0', json_schema_extra={'example': '2.0'})
-    id: Union[StrictStr, int] = Field(None, json_schema_extra={'example': 0})
+    jsonrpc: Literal["2.0"] = Field("2.0", json_schema_extra={"example": "2.0"})
+    id: Union[StrictStr, int] = Field(None, json_schema_extra={"example": 0})
     method: StrictStr
     params: dict = Field(default_factory=dict)
 
-    model_config = ConfigDict(extra='forbid')
+    model_config = ConfigDict(extra="forbid")
 
 
-@component_name(f'_Response')
+@component_name(f"_Response")
 class JsonRpcResponse(BaseModel):
-    jsonrpc: Literal['2.0'] = Field('2.0', json_schema_extra={'example': '2.0'})
-    id: Union[StrictStr, int] = Field(None, json_schema_extra={'example': 0})
+    jsonrpc: Literal["2.0"] = Field("2.0", json_schema_extra={"example": "2.0"})
+    id: Union[StrictStr, int] = Field(None, json_schema_extra={"example": 0})
     result: dict
 
-    model_config = ConfigDict(extra='forbid', json_schema_serialization_defaults_required=True)
+    model_config = ConfigDict(
+        extra="forbid", json_schema_serialization_defaults_required=True
+    )
 
 
 def invalid_request_from_validation_error(exc: ValidationError) -> InvalidRequest:
-    return InvalidRequest(data={'errors': exc.errors(include_url=False)})
+    return InvalidRequest(data={"errors": exc.errors(include_url=False)})
 
 
-def invalid_params_from_validation_error(exc: typing.Union[ValidationError, RequestValidationError]) -> InvalidParams:
+def invalid_params_from_validation_error(
+    exc: typing.Union[ValidationError, RequestValidationError]
+) -> InvalidParams:
     errors = []
 
     for err in exc.errors():
-        err.pop('url', None)
+        err.pop("url", None)
 
-        if err['loc'][:1] == ('body',):
-            err['loc'] = err['loc'][1:]
+        if err["loc"][:1] == ("body",):
+            err["loc"] = err["loc"][1:]
         else:
-            assert err['loc']
-            err['loc'] = (f"<{err['loc'][0]}>",) + err['loc'][1:]
+            assert err["loc"]
+            err["loc"] = (f"<{err['loc'][0]}>",) + err["loc"][1:]
         errors.append(err)
 
-    return InvalidParams(data={'errors': errors})
+    return InvalidParams(data={"errors": errors})
 
 
 def fix_query_dependencies(dependant: Dependant):
@@ -486,10 +525,11 @@ def make_request_model(name, module, body_params: List[ModelField]):
     if len(whole_params_list):
         if len(whole_params_list) > 1:
             raise RuntimeError(
-                f"Only one 'Params' allowed: "
-                f"params={whole_params_list}"
+                f"Only one 'Params' allowed: " f"params={whole_params_list}"
             )
-        body_params_list = [p for p in body_params if not isinstance(p.field_info, Params)]
+        body_params_list = [
+            p for p in body_params if not isinstance(p.field_info, Params)
+        ]
         if body_params_list:
             raise RuntimeError(
                 f"No other params allowed when 'Params' used: "
@@ -497,47 +537,57 @@ def make_request_model(name, module, body_params: List[ModelField]):
             )
 
     if whole_params_list:
-        assert whole_params_list[0].alias == 'params'
+        assert whole_params_list[0].alias == "params"
         params_field = whole_params_list[0]
-        params_annotation, params_field_info = params_field.field_info.annotation, params_field.field_info
+        params_annotation, params_field_info = (
+            params_field.field_info.annotation,
+            params_field.field_info,
+        )
     else:
         fields = {
             param.name: (param.field_info.annotation, param.field_info)
             for param in body_params
         }
         _JsonRpcRequestParams = create_model(
-            f'_Params[{name}]',
+            f"_Params[{name}]",
             __base__=(BaseModel,),
             __module__=module,
             **fields,
         )
-        _JsonRpcRequestParams = component_name(f'_Params[{name}]', module)(_JsonRpcRequestParams)
+        _JsonRpcRequestParams = component_name(f"_Params[{name}]", module)(
+            _JsonRpcRequestParams
+        )
 
         params_annotation = _JsonRpcRequestParams
         params_field_info = ...
 
     _Request = create_model(
-        f'_Request[{name}]',
-        __config__=ConfigDict(extra='forbid'),
+        f"_Request[{name}]",
+        __config__=ConfigDict(extra="forbid"),
         __module__=module,
-        jsonrpc=(Literal['2.0'], Field('2.0', json_schema_extra={'example': '2.0'})),
-        id=(Union[StrictStr, int], Field(None, json_schema_extra={'example': 0})),
-        method=(StrictStr, Field(name, frozen=True, json_schema_extra={'example': name})),
-        params=(params_annotation, params_field_info)
+        jsonrpc=(Literal["2.0"], Field("2.0", json_schema_extra={"example": "2.0"})),
+        id=(Union[StrictStr, int], Field(None, json_schema_extra={"example": 0})),
+        method=(
+            StrictStr,
+            Field(name, frozen=True, json_schema_extra={"example": name}),
+        ),
+        params=(params_annotation, params_field_info),
     )
-    _Request = component_name(f'_Request[{name}]', module)(_Request)
+    _Request = component_name(f"_Request[{name}]", module)(_Request)
 
     return _Request
 
 
 def make_response_model(name, module, result_model):
-    @component_name(f'_Response[{name}]', module)
+    @component_name(f"_Response[{name}]", module)
     class _Response(BaseModel):
-        jsonrpc: Literal['2.0'] = Field('2.0', json_schema_extra={'example': '2.0'})
-        id: Union[StrictStr, int] = Field(None, json_schema_extra={'example': 0})
+        jsonrpc: Literal["2.0"] = Field("2.0", json_schema_extra={"example": "2.0"})
+        id: Union[StrictStr, int] = Field(None, json_schema_extra={"example": 0})
         result: result_model
 
-        model_config = ConfigDict(extra='forbid', json_schema_serialization_defaults_required=True)
+        model_config = ConfigDict(
+            extra="forbid", json_schema_serialization_defaults_required=True
+        )
 
     return _Response
 
@@ -545,13 +595,13 @@ def make_response_model(name, module, result_model):
 class JsonRpcContext:
     def __init__(
         self,
-        entrypoint: 'Entrypoint',
+        entrypoint: "Entrypoint",
         raw_request: Any,
         http_request: Request,
         background_tasks: BackgroundTasks,
         http_response: Response,
         json_rpc_request_class: Type[JsonRpcRequest] = JsonRpcRequest,
-        method_route: typing.Optional['MethodRoute'] = None,
+        method_route: typing.Optional["MethodRoute"] = None,
     ):
         self.entrypoint: Entrypoint = entrypoint
         self.raw_request: Any = raw_request
@@ -584,11 +634,11 @@ class JsonRpcContext:
                 is_unhandled_exception = True
 
         if raw_response is not None:
-            raw_response.pop('id', None)
-            if isinstance(self.raw_request, dict) and 'id' in self.raw_request:
-                raw_response['id'] = self.raw_request.get('id')
-            elif 'error' in raw_response:
-                raw_response['id'] = None
+            raw_response.pop("id", None)
+            if isinstance(self.raw_request, dict) and "id" in self.raw_request:
+                raw_response["id"] = self.raw_request.get("id")
+            elif "error" in raw_response:
+                raw_response["id"] = None
 
         self._raw_response = raw_response
         self.exception = exception
@@ -635,7 +685,9 @@ class JsonRpcContext:
                     self.on_raw_response(exc)
                 else:
                     self.on_raw_response(resp)
-            if self.exception is not None and (reraise or isinstance(self.exception, HTTPException)):
+            if self.exception is not None and (
+                reraise or isinstance(self.exception, HTTPException)
+            ):
                 raise self.exception
 
         if self.exception is not None and self.is_unhandled_exception:
@@ -644,7 +696,9 @@ class JsonRpcContext:
     def _make_sentry_event_processor(self):
         def event_processor(event, _):
             if self.method_route is not None:
-                event['transaction'] = sentry_transaction_from_function(self.method_route.func)
+                event["transaction"] = sentry_transaction_from_function(
+                    self.method_route.func
+                )
             return event
 
         return event_processor
@@ -658,18 +712,20 @@ class JsonRpcContext:
                 scope.add_event_processor(self._make_sentry_event_processor())
                 yield
 
-    async def enter_middlewares(self, middlewares: Sequence['JsonRpcMiddleware']):
+    async def enter_middlewares(self, middlewares: Sequence["JsonRpcMiddleware"]):
         for mw in middlewares:
             cm = mw(self)
             if not isinstance(cm, AbstractAsyncContextManager):
-                raise RuntimeError("JsonRpcMiddleware(context) must return AsyncContextManager")
+                raise RuntimeError(
+                    "JsonRpcMiddleware(context) must return AsyncContextManager"
+                )
             await self.exit_stack.enter_async_context(cm)
             await self.exit_stack.enter_async_context(self._handle_exception())
 
 
 JsonRpcMiddleware = Callable[[JsonRpcContext], AbstractAsyncContextManager]
 
-_jsonrpc_context = contextvars.ContextVar('_fastapi_jsonrpc__jsonrpc_context')
+_jsonrpc_context = contextvars.ContextVar("_fastapi_jsonrpc__jsonrpc_context")
 
 
 def get_jsonrpc_context() -> JsonRpcContext:
@@ -677,17 +733,17 @@ def get_jsonrpc_context() -> JsonRpcContext:
 
 
 def get_jsonrpc_request_id() -> Optional[Union[str, int]]:
-    return get_jsonrpc_context().raw_request.get('id')
+    return get_jsonrpc_context().raw_request.get("id")
 
 
 def get_jsonrpc_method() -> Optional[str]:
-    return get_jsonrpc_context().raw_request.get('method')
+    return get_jsonrpc_context().raw_request.get("method")
 
 
 class MethodRoute(APIRoute):
     def __init__(
         self,
-        entrypoint: 'Entrypoint',
+        entrypoint: "Entrypoint",
         path: str,
         func: Union[FunctionType, Coroutine],
         *,
@@ -701,7 +757,7 @@ class MethodRoute(APIRoute):
         **kwargs,
     ):
         name = name or func.__name__
-        result_model = result_model or func.__annotations__.get('return')
+        result_model = result_model or func.__annotations__.get("return")
 
         _, path_format, _ = compile_path(path)
         func_dependant = get_dependant(path=path_format, call=func)
@@ -725,7 +781,7 @@ class MethodRoute(APIRoute):
         super().__init__(
             path,
             endpoint,
-            methods=['POST'],
+            methods=["POST"],
             name=name,
             response_class=response_class,
             response_model=_Response,
@@ -747,7 +803,7 @@ class MethodRoute(APIRoute):
         self.app = request_response(self.handle_http_request)
         self.request_class = request_class
         self.result_model = result_model
-        self.params_model = _Request.model_fields['params'].annotation
+        self.params_model = _Request.model_fields["params"].annotation
         self.errors = errors or []
 
     def __hash__(self):
@@ -781,12 +837,18 @@ class MethodRoute(APIRoute):
             response = self.response_class(content=resp, background=background_tasks)
         else:
             try:
-                resp = await self.handle_body(http_request, background_tasks, sub_response, body)
+                resp = await self.handle_body(
+                    http_request, background_tasks, sub_response, body
+                )
             except NoContent:
                 # no content for successful notifications
-                response = Response(media_type='application/json', background=background_tasks)
+                response = Response(
+                    media_type="application/json", background=background_tasks
+                )
             else:
-                response = self.response_class(content=resp, background=background_tasks)
+                response = self.response_class(
+                    content=resp, background=background_tasks
+                )
 
         response.headers.raw.extend(sub_response.headers.raw)
         if sub_response.status_code:
@@ -814,13 +876,16 @@ class MethodRoute(APIRoute):
             dependency_cache = None
 
         resp = await self.handle_req_to_resp(
-            http_request, background_tasks, sub_response, body,
+            http_request,
+            background_tasks,
+            sub_response,
+            body,
             dependency_cache=dependency_cache,
             shared_dependencies_error=shared_dependencies_error,
         )
 
         # No response for successful notifications
-        has_content = 'error' in resp or 'id' in resp
+        has_content = "error" in resp or "id" in resp
         if not has_content:
             raise NoContent
 
@@ -833,7 +898,7 @@ class MethodRoute(APIRoute):
         sub_response: Response,
         req: Any,
         dependency_cache: dict = None,
-        shared_dependencies_error: BaseError = None
+        shared_dependencies_error: BaseError = None,
     ) -> dict:
         async with JsonRpcContext(
             entrypoint=self.entrypoint,
@@ -850,7 +915,10 @@ class MethodRoute(APIRoute):
                 raise MethodNotFound
 
             resp = await self.handle_req(
-                http_request, background_tasks, sub_response, ctx,
+                http_request,
+                background_tasks,
+                sub_response,
+                ctx,
                 dependency_cache=dependency_cache,
                 shared_dependencies_error=shared_dependencies_error,
             )
@@ -865,7 +933,7 @@ class MethodRoute(APIRoute):
         sub_response: Response,
         ctx: JsonRpcContext,
         dependency_cache: dict = None,
-        shared_dependencies_error: BaseError = None
+        shared_dependencies_error: BaseError = None,
     ):
         await ctx.enter_middlewares(self.middlewares)
 
@@ -888,13 +956,15 @@ class MethodRoute(APIRoute):
         )
 
         if errors:
-            raise invalid_params_from_validation_error(RequestValidationError(_normalize_errors(errors)))
+            raise invalid_params_from_validation_error(
+                RequestValidationError(_normalize_errors(errors))
+            )
 
         result = await call_sync_async(self.func, **values)
 
         response = {
-            'jsonrpc': '2.0',
-            'result': result,
+            "jsonrpc": "2.0",
+            "result": result,
         }
 
         # noinspection PyTypeChecker
@@ -938,7 +1008,7 @@ class RequestShadow(Request):
 class EntrypointRoute(APIRoute):
     def __init__(
         self,
-        entrypoint: 'Entrypoint',
+        entrypoint: "Entrypoint",
         path: str,
         *,
         name: str = None,
@@ -948,7 +1018,7 @@ class EntrypointRoute(APIRoute):
         request_class: Type[JsonRpcRequest] = JsonRpcRequest,
         **kwargs,
     ):
-        name = name or 'entrypoint'
+        name = name or "entrypoint"
 
         _, path_format, _ = compile_path(path)
 
@@ -961,7 +1031,9 @@ class EntrypointRoute(APIRoute):
             common_dependant = get_flat_dependant(common_dependant, skip_repeats=True)
 
             if common_dependant.body_params:
-                _Request = make_request_model(name, entrypoint.callee_module, common_dependant.body_params)
+                _Request = make_request_model(
+                    name, entrypoint.callee_module, common_dependant.body_params
+                )
 
         # This is only necessary for generating OpenAPI
         def endpoint(__request__: _Request):
@@ -972,7 +1044,7 @@ class EntrypointRoute(APIRoute):
         super().__init__(
             path,
             endpoint,
-            methods=['POST'],
+            methods=["POST"],
             name=name,
             response_class=response_class,
             response_model=JsonRpcResponse,
@@ -983,7 +1055,9 @@ class EntrypointRoute(APIRoute):
         flat_dependant = get_flat_dependant(self.dependant, skip_repeats=True)
 
         if len(flat_dependant.body_params) > 1:
-            body_params = [p for p in flat_dependant.body_params if p.type_ is not _Request]
+            body_params = [
+                p for p in flat_dependant.body_params if p.type_ is not _Request
+            ]
             raise RuntimeError(
                 f"Entrypoint shared dependencies can't use 'Body' parameters: "
                 f"params={body_params}"
@@ -1005,7 +1079,9 @@ class EntrypointRoute(APIRoute):
         self.dependant.header_params.extend(common_dependant.header_params)
         self.dependant.cookie_params.extend(common_dependant.cookie_params)
         self.dependant.dependencies.extend(common_dependant.dependencies)
-        self.dependant.security_requirements.extend(common_dependant.security_requirements)
+        self.dependant.security_requirements.extend(
+            common_dependant.security_requirements
+        )
 
         self.app = request_response(self.handle_http_request)
         self.entrypoint = entrypoint
@@ -1017,10 +1093,7 @@ class EntrypointRoute(APIRoute):
         return hash(self.path)
 
     def __eq__(self, other):
-        return (
-            isinstance(other, EntrypointRoute)
-            and self.path == other.path
-        )
+        return isinstance(other, EntrypointRoute) and self.path == other.path
 
     async def solve_shared_dependencies(
         self,
@@ -1029,7 +1102,7 @@ class EntrypointRoute(APIRoute):
         sub_response: Response,
     ) -> dict:
         # Must not be empty, otherwise FastAPI re-creates it
-        dependency_cache = {(lambda: None, ('',)): 1}
+        dependency_cache = {(lambda: None, ("",)): 1}
         if self.dependencies:
             _, errors, _, _, _ = await solve_dependencies(
                 request=http_request,
@@ -1041,7 +1114,9 @@ class EntrypointRoute(APIRoute):
                 dependency_cache=dependency_cache,
             )
             if errors:
-                raise invalid_params_from_validation_error(RequestValidationError(_normalize_errors(errors)))
+                raise invalid_params_from_validation_error(
+                    RequestValidationError(_normalize_errors(errors))
+                )
         return dependency_cache
 
     async def parse_body(self, http_request) -> Any:
@@ -1051,9 +1126,17 @@ class EntrypointRoute(APIRoute):
             raise ParseError()
 
         if isinstance(body, list) and not body:
-            raise InvalidRequest(data={'errors': [
-                {'loc': (), 'type': 'value_error.empty', 'msg': "rpc call with an empty array"}
-            ]})
+            raise InvalidRequest(
+                data={
+                    "errors": [
+                        {
+                            "loc": (),
+                            "type": "value_error.empty",
+                            "msg": "rpc call with an empty array",
+                        }
+                    ]
+                }
+            )
 
         return body
 
@@ -1071,12 +1154,18 @@ class EntrypointRoute(APIRoute):
             response = self.response_class(content=resp, background=background_tasks)
         else:
             try:
-                resp = await self.handle_body(http_request, background_tasks, sub_response, body)
+                resp = await self.handle_body(
+                    http_request, background_tasks, sub_response, body
+                )
             except NoContent:
                 # no content for successful notifications
-                response = Response(media_type='application/json', background=background_tasks)
+                response = Response(
+                    media_type="application/json", background=background_tasks
+                )
             else:
-                response = self.response_class(content=resp, background=background_tasks)
+                response = self.response_class(
+                    content=resp, background=background_tasks
+                )
 
         response.headers.raw.extend(sub_response.headers.raw)
         if sub_response.status_code:
@@ -1115,7 +1204,10 @@ class EntrypointRoute(APIRoute):
         for req in req_list:
             job = await scheduler.spawn(
                 self.handle_req_to_resp(
-                    http_request, background_tasks, sub_response, req,
+                    http_request,
+                    background_tasks,
+                    sub_response,
+                    req,
                     dependency_cache=dependency_cache,
                     shared_dependencies_error=shared_dependencies_error,
                 )
@@ -1126,7 +1218,7 @@ class EntrypointRoute(APIRoute):
 
         for resp in await asyncio.gather(*job_list):
             # No response for successful notifications
-            has_content = 'error' in resp or 'id' in resp
+            has_content = "error" in resp or "id" in resp
             if not has_content:
                 continue
 
@@ -1149,7 +1241,7 @@ class EntrypointRoute(APIRoute):
         sub_response: Response,
         req: Any,
         dependency_cache: dict = None,
-        shared_dependencies_error: BaseError = None
+        shared_dependencies_error: BaseError = None,
     ) -> dict:
         async with JsonRpcContext(
             entrypoint=self.entrypoint,
@@ -1157,12 +1249,15 @@ class EntrypointRoute(APIRoute):
             http_request=http_request,
             background_tasks=background_tasks,
             http_response=sub_response,
-            json_rpc_request_class=self.request_class
+            json_rpc_request_class=self.request_class,
         ) as ctx:
             await ctx.enter_middlewares(self.entrypoint.middlewares)
 
             resp = await self.handle_req(
-                http_request, background_tasks, sub_response, ctx,
+                http_request,
+                background_tasks,
+                sub_response,
+                ctx,
                 dependency_cache=dependency_cache,
                 shared_dependencies_error=shared_dependencies_error,
             )
@@ -1177,10 +1272,10 @@ class EntrypointRoute(APIRoute):
         sub_response: Response,
         ctx: JsonRpcContext,
         dependency_cache: dict = None,
-        shared_dependencies_error: BaseError = None
+        shared_dependencies_error: BaseError = None,
     ):
         http_request_shadow = RequestShadow(http_request)
-        http_request_shadow.scope['path'] = self.path + '/' + ctx.request.method
+        http_request_shadow.scope["path"] = self.path + "/" + ctx.request.method
 
         for route in self.entrypoint.routes:  # type: MethodRoute
             match, child_scope = route.matches(http_request_shadow.scope)
@@ -1188,7 +1283,10 @@ class EntrypointRoute(APIRoute):
                 # http_request is a transport layer and it is common for all JSON-RPC requests in a batch
                 ctx.method_route = route
                 return await route.handle_req(
-                    http_request_shadow, background_tasks, sub_response, ctx,
+                    http_request_shadow,
+                    background_tasks,
+                    sub_response,
+                    ctx,
                     dependency_cache=dependency_cache,
                     shared_dependencies_error=shared_dependencies_error,
                 )
@@ -1201,7 +1299,11 @@ class Entrypoint(APIRouter):
     entrypoint_route_class = EntrypointRoute
 
     default_errors: List[Type[BaseError]] = [
-        InvalidParams, MethodNotFound, ParseError, InvalidRequest, InternalError,
+        InvalidParams,
+        MethodNotFound,
+        ParseError,
+        InvalidRequest,
+        InternalError,
     ]
 
     def __init__(
@@ -1243,10 +1345,7 @@ class Entrypoint(APIRouter):
         return hash(self.entrypoint_route.path)
 
     def __eq__(self, other):
-        return (
-            isinstance(other, Entrypoint)
-            and self.routes == other.routes
-        )
+        return isinstance(other, Entrypoint) and self.routes == other.routes
 
     @property
     def common_dependencies(self):
@@ -1302,10 +1401,10 @@ class Entrypoint(APIRouter):
     ) -> None:
         name = name or func.__name__
         tags = list(self.entrypoint_route.tags)
-        tags.extend(kwargs.pop('tags', ()))
+        tags.extend(kwargs.pop("tags", ()))
         route = self.method_route_class(
             self,
-            self.entrypoint_route.path + '/' + name,
+            self.entrypoint_route.path + "/" + name,
             func,
             name=name,
             request_class=self.request_class,
@@ -1336,7 +1435,9 @@ class API(FastAPI):
         openrpc_url: Optional[str] = "/openrpc.json",
         **kwargs,
     ):
-        self.fastapi_jsonrpc_components_fine_names = fastapi_jsonrpc_components_fine_names
+        self.fastapi_jsonrpc_components_fine_names = (
+            fastapi_jsonrpc_components_fine_names
+        )
         self.openrpc_schema = None
         self.openrpc_url = openrpc_url
         super().__init__(*args, **kwargs)
@@ -1351,106 +1452,122 @@ class API(FastAPI):
                     update_refs(v)
                 return
 
-            if '$ref' not in value:
+            if "$ref" not in value:
                 for v in value.values():
                     update_refs(v)
                 return
 
-            ref = value['$ref']
+            ref = value["$ref"]
             if ref.startswith(REF_PREFIX):
                 *_, schema = ref.split(REF_PREFIX)
                 new_schema = old2new_schema_name.get(schema, schema)
                 if new_schema != schema:
-                    ref = f'{REF_PREFIX}{new_schema}'
-                    value['$ref'] = ref
+                    ref = f"{REF_PREFIX}{new_schema}"
+                    value["$ref"] = ref
 
         # restore components fine names
         old2new_schema_name = {}
 
         fine_schema = {}
-        for key, schema in data['components']['schemas'].items():
-            fine_schema_name = schema['title']
+        for key, schema in data["components"]["schemas"].items():
+            fine_schema_name = schema["title"]
             old2new_schema_name[key] = fine_schema_name
             fine_schema[fine_schema_name] = schema
-        data['components']['schemas'] = fine_schema
+        data["components"]["schemas"] = fine_schema
 
         update_refs(data)
 
     def openapi(self):
         result = super().openapi()
 
-        if self.fastapi_jsonrpc_components_fine_names and 'components' in result:
+        if self.fastapi_jsonrpc_components_fine_names and "components" in result:
             self._restore_json_schema_fine_component_names(result)
 
         for route in self.routes:
-            if isinstance(route, (EntrypointRoute, MethodRoute, )):
+            if isinstance(
+                route,
+                (
+                    EntrypointRoute,
+                    MethodRoute,
+                ),
+            ):
                 route: Union[EntrypointRoute, MethodRoute]
-                for media_type in result['paths'][route.path]:
-                    result['paths'][route.path][media_type]['responses'].pop('default', None)
+                for media_type in result["paths"][route.path]:
+                    result["paths"][route.path][media_type]["responses"].pop(
+                        "default", None
+                    )
         return result
 
     def get_openrpc(self):
         methods_spec = []
         schemas_spec = {}
         errors_by_code = defaultdict(set)
-        ref_template = '#/components/schemas/{model}'
+        ref_template = "#/components/schemas/{model}"
 
         for route in self.routes:
             if not isinstance(route, MethodRoute):
                 continue
 
-            params_schema = route.params_model.model_json_schema(ref_template=ref_template)
+            params_schema = route.params_model.model_json_schema(
+                ref_template=ref_template
+            )
 
             if isinstance(route.result_model, BaseModel):
-                result_schema = route.result_model.model_json_schema(ref_template=ref_template)
+                result_schema = route.result_model.model_json_schema(
+                    ref_template=ref_template
+                )
             else:
-                result_model = create_model(f'{route.name}_Result', result=(route.result_model or Any, ...))
-                result_schema = result_model.model_json_schema(ref_template=ref_template)
+                result_model = create_model(
+                    f"{route.name}_Result", result=(route.result_model or Any, ...)
+                )
+                result_schema = result_model.model_json_schema(
+                    ref_template=ref_template
+                )
 
             for error in route.errors:
                 errors_by_code[error.CODE].add(error)
 
             method_spec = {
-                'name': route.name,
-                'params': [
+                "name": route.name,
+                "params": [
                     {
-                        'name': param_name,
-                        'schema': param_schema,
-                        'required': param_name in params_schema.get('required', []),
+                        "name": param_name,
+                        "schema": param_schema,
+                        "required": param_name in params_schema.get("required", []),
                     }
-                    for param_name, param_schema in params_schema['properties'].items()
+                    for param_name, param_schema in params_schema["properties"].items()
                 ],
-                'result': {
-                    'name': result_schema['title'],
-                    'schema': result_schema['properties']['result'],
+                "result": {
+                    "name": result_schema["title"],
+                    "schema": result_schema["properties"]["result"],
                 },
-                'tags': [
+                "tags": [
                     {
-                        'name': tag,
+                        "name": tag,
                     }
                     for tag in route.tags
                 ],
-                'errors': [
+                "errors": [
                     {
-                        '$ref': f'#/components/errors/{code}',
+                        "$ref": f"#/components/errors/{code}",
                     }
                     for code in sorted({error.CODE for error in route.errors})
                 ],
             }
             if route.summary:
-                method_spec['summary'] = route.summary
+                method_spec["summary"] = route.summary
 
             methods_spec.append(method_spec)
-            schemas_spec.update(params_schema.get('$defs', {}))
-            schemas_spec.update(result_schema.get('$defs', {}))
+            schemas_spec.update(params_schema.get("$defs", {}))
+            schemas_spec.update(result_schema.get("$defs", {}))
 
         errors_spec = {}
         for code, errors in errors_by_code.items():
             assert errors
             first, *_ = errors
             spec = {
-                'code': code,
-                'message': first.MESSAGE,
+                "code": code,
+                "message": first.MESSAGE,
             }
 
             error_models = []
@@ -1466,27 +1583,29 @@ class API(FastAPI):
                     # Data schemes of multiple error objects with same code
                     # are merged together in a single schema
                     error_models.sort(key=lambda m: m.__name__)
-                    error_schema = pydantic.TypeAdapter(Union[tuple(error_models)]).json_schema(
+                    error_schema = pydantic.TypeAdapter(
+                        Union[tuple(error_models)]
+                    ).json_schema(
                         ref_template=ref_template,
                     )
-                    error_schema['title'] = f'ERROR_{code}'
+                    error_schema["title"] = f"ERROR_{code}"
 
-                schemas_spec.update(error_schema.pop('$defs', {}))
-                spec['data'] = error_schema
+                schemas_spec.update(error_schema.pop("$defs", {}))
+                spec["data"] = error_schema
 
             errors_spec[str(code)] = spec
 
         return {
-            'openrpc': '1.2.6',
-            'info': {
-                'version': self.version,
-                'title': self.title,
+            "openrpc": "1.2.6",
+            "info": {
+                "version": self.version,
+                "title": self.title,
             },
-            'servers': self.servers,
-            'methods': methods_spec,
-            'components': {
-                'schemas': schemas_spec,
-                'errors': errors_spec,
+            "servers": self.servers,
+            "methods": methods_spec,
+            "components": {
+                "schemas": schemas_spec,
+                "errors": errors_spec,
             },
         }
 
@@ -1494,7 +1613,10 @@ class API(FastAPI):
         if self.openrpc_schema is None:
             self.openrpc_schema = self.get_openrpc()
 
-        if self.fastapi_jsonrpc_components_fine_names and 'components' in self.openrpc_schema:
+        if (
+            self.fastapi_jsonrpc_components_fine_names
+            and "components" in self.openrpc_schema
+        ):
             self._restore_json_schema_fine_component_names(self.openrpc_schema)
 
         return self.openrpc_schema
@@ -1514,16 +1636,15 @@ class API(FastAPI):
     def bind_entrypoint(self, ep: Entrypoint):
         ep.bind_dependency_overrides_provider(self)
         self.routes.extend(ep.routes)
-        self.on_event('shutdown')(ep.shutdown)
+        self.on_event("shutdown")(ep.shutdown)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import uvicorn
 
     app = API()
 
-    api_v1 = Entrypoint('/api/v1/jsonrpc')
-
+    api_v1 = Entrypoint("/api/v1/jsonrpc")
 
     class MyError(BaseError):
         CODE = 5000
@@ -1532,16 +1653,14 @@ if __name__ == '__main__':
         class DataModel(BaseModel):
             details: str
 
-
     @api_v1.method(errors=[MyError])
     def echo(
-        data: str = Body(..., examples=['123']),
+        data: str = Body(..., examples=["123"]),
     ) -> str:
-        if data == 'error':
-            raise MyError(data={'details': 'error'})
+        if data == "error":
+            raise MyError(data={"details": "error"})
         else:
             return data
-
 
     app.bind_entrypoint(api_v1)
 

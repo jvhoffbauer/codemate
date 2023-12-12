@@ -15,6 +15,7 @@ from . import LocationService
 
 LOGGER = logging.getLogger("services.location.nyt")
 
+
 class NYTLocationService(LocationService):
     """
     Service for retrieving locations from New York Times (https://github.com/nytimes/covid-19-data).
@@ -36,7 +37,10 @@ class NYTLocationService(LocationService):
 # ---------------------------------------------------------------
 
 # Base URL for fetching category.
-BASE_URL = "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv"
+BASE_URL = (
+    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv"
+)
+
 
 def get_grouped_locations_dict(data):
     """
@@ -103,7 +107,9 @@ async def get_locations():
             # Make location history for confirmed and deaths from dates.
             # List is tuples of (date, amount) in order of increasing dates.
             confirmed_list = histories["confirmed"]
-            confirmed_history = {date: int(amount or 0) for date, amount in confirmed_list}
+            confirmed_history = {
+                date: int(amount or 0) for date, amount in confirmed_list
+            }
 
             deaths_list = histories["deaths"]
             deaths_history = {date: int(amount or 0) for date, amount in deaths_list}
@@ -114,18 +120,23 @@ async def get_locations():
                     id=idx,
                     state=county_state[1],
                     county=county_state[0],
-                    coordinates=Coordinates(None, None),  # NYT does not provide coordinates
-                    last_updated=datetime.utcnow().isoformat() + "Z",  # since last request
+                    coordinates=Coordinates(
+                        None, None
+                    ),  # NYT does not provide coordinates
+                    last_updated=datetime.utcnow().isoformat()
+                    + "Z",  # since last request
                     timelines={
                         "confirmed": Timeline(
                             timeline={
-                                datetime.strptime(date, "%Y-%m-%d").isoformat() + "Z": amount
+                                datetime.strptime(date, "%Y-%m-%d").isoformat()
+                                + "Z": amount
                                 for date, amount in confirmed_history.items()
                             }
                         ),
                         "deaths": Timeline(
                             timeline={
-                                datetime.strptime(date, "%Y-%m-%d").isoformat() + "Z": amount
+                                datetime.strptime(date, "%Y-%m-%d").isoformat()
+                                + "Z": amount
                                 for date, amount in deaths_history.items()
                             }
                         ),

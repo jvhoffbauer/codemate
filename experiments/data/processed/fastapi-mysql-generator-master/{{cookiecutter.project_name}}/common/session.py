@@ -43,7 +43,7 @@ db = PooledMySQLDatabase(
     user=settings.MYSQL_USERNAME,
     host=settings.MYSQL_HOST,
     password=settings.MYSQL_PASSWORD,
-    port=settings.MYSQL_PORT
+    port=settings.MYSQL_PORT,
 )
 
 db._state = PeeweeConnectionState()
@@ -88,7 +88,7 @@ def paginator(query: ModelSelect, page: int, page_size: int, order_by: str = "id
         "count": count,
         "current_page": page,
         "pre_page": page - 1 if page > 1 else page,
-        "next_page": page if page == total_pages else page + 1
+        "next_page": page if page == total_pages else page + 1,
     }
 
     return list(query.dicts()), paginate

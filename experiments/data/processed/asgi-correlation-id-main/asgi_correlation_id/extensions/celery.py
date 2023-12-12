@@ -11,7 +11,10 @@ if TYPE_CHECKING:
 uuid_hex_generator: Callable[[], str] = lambda: uuid4().hex
 
 
-def load_correlation_ids(header_key: str = 'CORRELATION_ID', generator: Callable[[], str] = uuid_hex_generator) -> None:
+def load_correlation_ids(
+    header_key: str = "CORRELATION_ID",
+    generator: Callable[[], str] = uuid_hex_generator,
+) -> None:
     """
     Transfer correlation IDs from a HTTP request to a Celery worker,
     when spawned from a request.
@@ -36,7 +39,7 @@ def load_correlation_ids(header_key: str = 'CORRELATION_ID', generator: Callable
             headers[header_key] = cid
 
     @task_prerun.connect(weak=False)
-    def load_correlation_id(task: 'Task', **kwargs: Any) -> None:
+    def load_correlation_id(task: "Task", **kwargs: Any) -> None:
         """
         Set correlation ID from header if it exists.
 
@@ -63,7 +66,7 @@ def load_correlation_ids(header_key: str = 'CORRELATION_ID', generator: Callable
 
 
 def load_celery_current_and_parent_ids(
-    header_key: str = 'CELERY_PARENT_ID',
+    header_key: str = "CELERY_PARENT_ID",
     generator: Callable[[], str] = uuid_hex_generator,
     use_internal_celery_task_id: bool = False,
 ) -> None:
@@ -76,7 +79,9 @@ def load_celery_current_and_parent_ids(
     from asgi_correlation_id.context import celery_current_id, celery_parent_id
 
     @before_task_publish.connect(weak=False)
-    def publish_task_from_worker_or_request(headers: Dict[str, str], **kwargs: Any) -> None:
+    def publish_task_from_worker_or_request(
+        headers: Dict[str, str], **kwargs: Any
+    ) -> None:
         """
         Transfer the current ID to the next Celery worker, by adding
         it as a header.
@@ -88,7 +93,7 @@ def load_celery_current_and_parent_ids(
             headers[header_key] = current
 
     @task_prerun.connect(weak=False)
-    def worker_prerun(task_id: str, task: 'Task', **kwargs: Any) -> None:
+    def worker_prerun(task_id: str, task: "Task", **kwargs: Any) -> None:
         """
         Set current ID, and parent ID if it exists.
         """

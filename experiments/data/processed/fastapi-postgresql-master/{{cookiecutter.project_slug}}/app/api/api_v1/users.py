@@ -55,7 +55,9 @@ def create_user_open(
 
 
 @router.post(
-    "", response_model=schemas.User, dependencies=[Depends(deps.get_current_active_superuser)]
+    "",
+    response_model=schemas.User,
+    dependencies=[Depends(deps.get_current_active_superuser)],
 )
 def create_user(
     *,

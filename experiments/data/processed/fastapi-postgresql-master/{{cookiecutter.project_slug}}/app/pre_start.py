@@ -39,7 +39,10 @@ def init() -> None:
     except Exception as e:
         logger.error(e)
         raise e
-    if os.environ.get("RUN_MIGRATION") and os.environ["RUN_MIGRATION"].lower() == "false":
+    if (
+        os.environ.get("RUN_MIGRATION")
+        and os.environ["RUN_MIGRATION"].lower() == "false"
+    ):
         logger.info("Skipping migrations")
     else:
         logger.info("Running migrations")

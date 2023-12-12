@@ -65,7 +65,9 @@ class Badge(AmisNode):
     """Subscript"""
 
     mode: str = "dot"  # Corner type, can be dot/text/ribbon
-    text: Union[int, str] = None  # Corner text, supports strings and numbers, invalid when mode='dot'
+    text: Union[
+        int, str
+    ] = None  # Corner text, supports strings and numbers, invalid when mode='dot'
     size: int = None  # Angular size
     level: str = None  # The level of the corner label, which can be info/success/warning/danger, after setting the
     # background color of the corner label is different
@@ -90,7 +92,9 @@ class Page(AmisNode):
     remark: RemarkT = None  # A prompt icon will appear near the title, and the content will be prompted when the
     # mouse is placed on it.
     aside: SchemaNode = None  # Add content to the sidebar area of the page
-    asideResizor: bool = None  # whether the width of the sidebar area of the page can be adjusted
+    asideResizor: bool = (
+        None  # whether the width of the sidebar area of the page can be adjusted
+    )
     asideMinWidth: int = None  # The minimum width of the sidebar area of the page
     asideMaxWidth: int = None  # The maximum width of the sidebar area of the page
     toolbar: SchemaNode = None  # Add content to the upper right corner of the page. It should be noted that when
@@ -100,17 +104,23 @@ class Page(AmisNode):
     cssVars: dict = None  # Custom CSS variables, please refer to styles
     css: str = None  # Custom CSS styles, please refer to used theme styles
     mobileCSS: str = None  # Custom mobile CSS styles, please refer to used theme styles
-    toolbarClassName: str = None  # "v-middle wrapper text-right bg-light bb" # Toolbar dom class name
+    toolbarClassName: str = (
+        None  # "v-middle wrapper text-right bg-light bb" # Toolbar dom class name
+    )
     bodyClassName: str = None  # "wrapper" # Body dom class name
     asideClassName: str = None  # "w page-aside-region bg-auto" # Aside dom class name
     headerClassName: str = None  # "bg-light bb wrapper" # Header area dom class name
     initApi: API = None  # The api that Page uses to get initial data. The returned data can be used at the entire
     # page level.
     initFetch: bool = None  # True # whether to start pulling initApi
-    initFetchOn: Expression = None  # whether to start pulling initApi, configure by expression
+    initFetchOn: Expression = (
+        None  # whether to start pulling initApi, configure by expression
+    )
     interval: int = None  # refresh time (minimum 1000)
     silentPolling: bool = None  # False # whether to show the loading animation when the configuration is refreshed
-    stopAutoRefreshWhen: Expression = None  # Configure the conditions for stopping refresh through expressions
+    stopAutoRefreshWhen: Expression = (
+        None  # Configure the conditions for stopping refresh through expressions
+    )
     regions: List[str] = None
 
     def amis_html(
@@ -125,7 +135,11 @@ class Page(AmisNode):
     ):
         """Render html template"""
         template_path = template_path or self.__default_template_path__
-        theme_css = f'<link href="{cdn}/{pkg}/sdk/{theme}.css" rel="stylesheet"/>' if theme != "cxd" else ""
+        theme_css = (
+            f'<link href="{cdn}/{pkg}/sdk/{theme}.css" rel="stylesheet"/>'
+            if theme != "cxd"
+            else ""
+        )
         return amis_templates(template_path).safe_substitute(
             {
                 "AmisSchemaJson": self.amis_json(),
@@ -188,7 +202,9 @@ class Panel(AmisNode):
     type: str = "panel"  # Specify as the Panel renderer
     className: str = None  # "panel-default" # The class name of the outer Dom
     headerClassName: str = None  # "panel-heading" # The class name of the header area
-    footerClassName: str = None  # "panel-footer bg-light lter wrapper" # The class name of the footer area
+    footerClassName: str = (
+        None  # "panel-footer bg-light lter wrapper" # The class name of the footer area
+    )
     actionsClassName: str = None  # "panel-footer" # The class name of the actions area
     bodyClassName: str = None  # "panel-body" # The class name of the body area
     title: SchemaNode = None  # title
@@ -222,7 +238,9 @@ class Tabs(AmisNode):
     # sidebar
     tabsClassName: str = None  # Class name of Tabs Dom
     tabs: List[Item] = None  # tabs content
-    source: str = None  # tabs associated data, tabs can be generated repeatedly after association
+    source: str = (
+        None  # tabs associated data, tabs can be generated repeatedly after association
+    )
     toolbar: SchemaNode = None  # toolbar in tabs
     toolbarClassName: str = None  # The class name of the toolbar in the tabs
     mountOnEnter: bool = None  # False # Render only when the tab is clicked
@@ -238,14 +256,18 @@ class Tabs(AmisNode):
     showTip: bool = None  # False # whether to support tips
     showTipClassName: str = None  # "'' " # Tip class
     editable: bool = None  # False # whether to edit the tag name
-    sidePosition: str = None  # "left" # In sidebar mode, the position of the tab bar is left / right
+    sidePosition: str = (
+        None  # "left" # In sidebar mode, the position of the tab bar is left / right
+    )
 
 
 class Portlet(Tabs):
     """Portal column"""
 
     class Item(Tabs.Item):
-        toolbar: SchemaNode = None  # The toolbar in tabs, which changes with tab switching
+        toolbar: SchemaNode = (
+            None  # The toolbar in tabs, which changes with tab switching
+        )
 
     type: str = "portlet"  # specify as portlet renderer
     contentClassName: str = None  # Class name of Tabs content Dom
@@ -274,7 +296,9 @@ class Action(AmisNode):
     size: str = None  # Button size, support: xs, sm, md, lg.
     icon: str = None  # Set the icon, eg fa fa-plus.
     iconClassName: str = None  # Add a class name to the icon.
-    rightIcon: str = None  # Set the icon to the right of the button text, eg fa fa-plus.
+    rightIcon: str = (
+        None  # Set the icon to the right of the button text, eg fa fa-plus.
+    )
     rightIconClassName: str = None  # Add a class name to the right icon.
     active: bool = None  # whether the button is highlighted.
     activeLevel: str = None  # The style when the button is highlighted, the configuration supports the same level.
@@ -289,10 +313,14 @@ class Action(AmisNode):
     # the object type: the fields are title and content. Available ${xxx} values.
     tooltipPlacement: str = None  # If tooltip or disabledTip is configured, specify the location of the prompt
     # information, and you can configure top, bottom, left, and right.
-    close: Union[bool, str] = None  # When the action is configured in the actions of the dialog or drawer, configure
+    close: Union[
+        bool, str
+    ] = None  # When the action is configured in the actions of the dialog or drawer, configure
     # it to true to close the current dialog or drawer after the operation. When the value is a string and is the
     # name of the ancestor layer popup, the ancestor popup will be closed.
-    required: List[str] = None  # Configure an array of strings, specifying that the form items with the specified
+    required: List[
+        str
+    ] = None  # Configure an array of strings, specifying that the form items with the specified
     # field name must pass validation before performing operations in the form primary:bool=None
     onClick: str = None  # The custom click event defines the click event through onClick in the form of a string,
     # which will be converted into a JavaScript function
@@ -318,12 +346,16 @@ class ActionType:
 
     class Dialog(Action):
         actionType: str = "dialog"  # Show a popup when clicked
-        dialog: Union["Dialog", "Service", SchemaNode]  # Specify the content of the pop-up box, the format can refer to Dialog
+        dialog: Union[
+            "Dialog", "Service", SchemaNode
+        ]  # Specify the content of the pop-up box, the format can refer to Dialog
         nextCondition: bool = None  # Can be used to set the condition of the next data, the default is true.
 
     class Drawer(Action):
         actionType: str = "drawer"  # Show a sidebar when clicked
-        drawer: Union["Drawer", "Service", SchemaNode]  # Specify the content of the popup box, the format can refer to Drawer
+        drawer: Union[
+            "Drawer", "Service", SchemaNode
+        ]  # Specify the content of the popup box, the format can refer to Drawer
 
     class Copy(Action):
         actionType: str = "copy"  # Copy a piece of content to the clipboard
@@ -361,7 +393,9 @@ class ActionType:
         items: List[ToastItem] = None  # List of ToastItems
         position: str = None  # display position,
         # available 'top-right', 'top-center', 'top-left', 'bottom-center', 'bottom-left', 'bottom-right', 'center'
-        closeButton: bool = None  # default False, whether to display the close button, not in mobile
+        closeButton: bool = (
+            None  # default False, whether to display the close button, not in mobile
+        )
         showIcon: bool = None  # default = True, whether to display the icon
         timeout: int = None  # default 5000
 
@@ -377,16 +411,24 @@ class PageSchema(AmisNode):
     # and pageA is configured at this time, then this page will be hit only when the page address is /folder/pageA.
     # When the path starts with / such as: /crud/list, the parent path will not be spliced. In addition, routes with
     # parameters such as /crud/view/:id are supported. This value can be obtained from the page through ${params.id}.
-    schema_: Union[Page, "Iframe"] = Field(None, alias="schema")  # The configuration of the page, please go to the
+    schema_: Union[Page, "Iframe"] = Field(
+        None, alias="schema"
+    )  # The configuration of the page, please go to the
     # page page for specific configuration
     schemaApi: API = None  # If you want to pull through the interface, please configure. The return path is
     # json>data. Only one of schema and schemaApi can be selected.
     link: str = None  # If you want to configure an external link menu, you only need to configure link.
-    redirect: str = None  # Jump, when hitting the current page, jump to the target page.
+    redirect: str = (
+        None  # Jump, when hitting the current page, jump to the target page.
+    )
     rewrite: str = None  # Change to rendering pages of other paths, the page address will not be modified in this way.
-    isDefaultPage: Union[bool, str] = None  # Useful when you need a custom 404 page, don't have multiple such pages,
+    isDefaultPage: Union[
+        bool, str
+    ] = None  # Useful when you need a custom 404 page, don't have multiple such pages,
     # because only the first one will be useful.
-    visible: Union[bool, str] = None  # Some pages may not want to appear in the menu, you can configure it to false, and the
+    visible: Union[
+        bool, str
+    ] = None  # Some pages may not want to appear in the menu, you can configure it to false, and the
     # route with parameters does not need to be configured, it is directly invisible.
     className: str = None  # Menu class name.
     children: List["PageSchema"] = None  # Submenu
@@ -395,17 +437,33 @@ class PageSchema(AmisNode):
 
     # chrome, simple, strong, tiled, sidebar, collapse
 
-    def as_page_body(self, group_extra: Dict[str, Any] = None, item_extra: Dict[str, Any] = None):
+    def as_page_body(
+        self, group_extra: Dict[str, Any] = None, item_extra: Dict[str, Any] = None
+    ):
         if self.children:
-            exclude = {"type", "url", "schema_", "schemaApi", "link", "redirect", "rewrite", "isDefaultPage", "children"}
+            exclude = {
+                "type",
+                "url",
+                "schema_",
+                "schemaApi",
+                "link",
+                "redirect",
+                "rewrite",
+                "isDefaultPage",
+                "children",
+            }
             if self.tabsMode is None:
                 body = App(pages=[PageSchema(children=self.children)])
             elif self.tabsMode == TabsModeEnum.collapse:
                 body = (
-                    CollapseGroup.parse_obj(self.dict(exclude=exclude, exclude_defaults=True))
+                    CollapseGroup.parse_obj(
+                        self.dict(exclude=exclude, exclude_defaults=True)
+                    )
                     .update_from_kwargs(
                         body=[
-                            CollapseGroup.CollapseItem.parse_obj(item.dict(exclude=exclude, exclude_defaults=True))
+                            CollapseGroup.CollapseItem.parse_obj(
+                                item.dict(exclude=exclude, exclude_defaults=True)
+                            )
                             .update_from_kwargs(
                                 header=item.label,
                                 body=item.as_page_body(group_extra, item_extra),
@@ -422,7 +480,9 @@ class PageSchema(AmisNode):
                     .update_from_kwargs(
                         mountOnEnter=True,
                         tabs=[
-                            Tabs.Item.parse_obj(item.dict(exclude=exclude, exclude_defaults=True))
+                            Tabs.Item.parse_obj(
+                                item.dict(exclude=exclude, exclude_defaults=True)
+                            )
                             .update_from_kwargs(
                                 title=item.label,
                                 tab=item.as_page_body(group_extra, item_extra),
@@ -461,7 +521,9 @@ class App(Page):
     asideBefore: str = None  # The front area on the page menu.
     asideAfter: str = None  # The front area under the page menu.
     footer: str = None  # The page.
-    pages: List[PageSchema] = None  # Array<page configuration> specific page configuration.
+    pages: List[
+        PageSchema
+    ] = None  # Array<page configuration> specific page configuration.
     # Usually in an array, the first layer of the array is a group, generally you only need to configure the label set,
     # if you don't want to group, don't configure it directly, the real page should be configured in the second
     # layer, that is, in the children of the first layer.
@@ -512,7 +574,9 @@ class Service(AmisNode):
     # messages.fetchSuccess: str = None # Toast prompt text when the interface request is successful
     # messages.fetchFailed: str = "Initialization failed" # Toast prompt text when interface request fails
     interval: int = None  # Polling interval (minimum 3000)
-    silentPolling: bool = None  # False # whether to display the loading animation during polling
+    silentPolling: bool = (
+        None  # False # whether to display the loading animation during polling
+    )
     stopAutoRefreshWhen: Expression = None  # Configure the condition to stop polling
 
 
@@ -530,12 +594,16 @@ class Nav(AmisNode):
         activeOn: Expression = None  # whether to highlight the condition, leaving it blank will automatically
         # analyze the link address
         defer: bool = None  # mark whether it is a lazy add-in
-        deferApi: API = None  # Can not be configured, if the configuration priority is higher
+        deferApi: API = (
+            None  # Can not be configured, if the configuration priority is higher
+        )
 
     type: str = "nav"  # specify as Nav renderer
     className: str = None  # The class name of the outer Dom
     stacked: bool = True  # Set to false to display in the form of tabs
-    source: API = None  # Navigation can be created dynamically via variable or API interface
+    source: API = (
+        None  # Navigation can be created dynamically via variable or API interface
+    )
     deferApi: API = None  # The interface used to delay loading option details. It can be left unconfigured,
     # and the public source interface cannot be configured.
     itemActions: SchemaNode = None  # More operations related configuration
@@ -587,7 +655,9 @@ class Validation(BaseAmisModel):
     maximum: int = None  # Maximum value.
     minimum: int = None  # Minimum value.
     equals: str = None  # The current value must be exactly equal to xxx.
-    equalsField: str = None  # The current value must be the same as the xxx variable value.
+    equalsField: str = (
+        None  # The current value must be the same as the xxx variable value.
+    )
     isJson: bool = None  # Is it a valid Json string.
     isUrlPath: bool = None  # is the url path.
     isPhoneNumber: bool = None  # Is it a legal phone number
@@ -606,14 +676,22 @@ class FormItem(AmisNode):
         silent: bool = None  # Whether to display a data format error message. The default value is true
         fillMappinng: SchemaNode = None  # Auto-fill/reference input data mapping configuration, key-value pair form,
         # value support variable acquisition and expression
-        trigger: str = None  # ShowSuggestion to true, the reference input support way of trigger,
+        trigger: str = (
+            None  # ShowSuggestion to true, the reference input support way of trigger,
+        )
         # currently supports change "value change" | focus "form focus"
         mode: str = None  # When showSuggestion is true, refer to the popOver mode: dialog, drawer, popOver
         labelField: str = None  # When showSuggestion is true, set the popup dialog,drawer,popOver picker's labelField
         position: str = None  # If showSuggestion is true, set the popOver location as shown in the input mode Popover
-        size: str = None  # If showSuggestion is true, set the value as shown in dialog mode
-        columns: List["TableColumn"] = None  # When showSuggestion is true, the data display column configuration
-        filter: SchemaNode = None  # When showSuggestion is true, data query filter condition
+        size: str = (
+            None  # If showSuggestion is true, set the value as shown in dialog mode
+        )
+        columns: List[
+            "TableColumn"
+        ] = None  # When showSuggestion is true, the data display column configuration
+        filter: SchemaNode = (
+            None  # When showSuggestion is true, data query filter condition
+        )
 
     type: str = "input-text"  # Specify the form item type
     className: str = None  # The outermost class name of the form
@@ -628,22 +706,38 @@ class FormItem(AmisNode):
     inline: bool = None  # whether it is inline mode
     submitOnChange: bool = None  # whether to submit the current form when the value of the form item changes.
     disabled: bool = None  # whether the current form item is disabled
-    disabledOn: Expression = None  # The condition for whether the current form item is disabled
+    disabledOn: Expression = (
+        None  # The condition for whether the current form item is disabled
+    )
     visible: bool = None  # whether the current form item is disabled or not
-    visibleOn: Expression = None  # The condition for whether the current form item is disabled
+    visibleOn: Expression = (
+        None  # The condition for whether the current form item is disabled
+    )
     required: bool = None  # whether it is required.
     requiredOn: Expression = None  # Use an expression to configure whether the current form item is required.
-    validations: Union[Validation, Expression] = None  # Validation of the form item value format, multiple settings
+    validations: Union[
+        Validation, Expression
+    ] = None  # Validation of the form item value format, multiple settings
     # are supported, and multiple rules are separated by commas.
     validateApi: API = None  # Form validation interface
-    copyable: Union[bool, dict] = None  # whether to copy boolean or {icon: string, content:string}
-    autoFill: AutoFill = None  # Data entry configuration, automatic filling or reference entry
+    copyable: Union[
+        bool, dict
+    ] = None  # whether to copy boolean or {icon: string, content:string}
+    autoFill: AutoFill = (
+        None  # Data entry configuration, automatic filling or reference entry
+    )
     static: bool = None  # 2.4.0 Whether the current form item is static display,
-    staticOn: Expression = None  # 2.4.0 The condition for whether the current form item is static display
+    staticOn: Expression = (
+        None  # 2.4.0 The condition for whether the current form item is static display
+    )
     # the current support static display of the form item
     staticClassName: str = None  # 2.4.0 The class name for static display
-    staticLabelClassName: str = None  # 2.4.0 The class name of the Label for static display
-    staticInputClassName: str = None  # 2.4.0 The class name of value when static display
+    staticLabelClassName: str = (
+        None  # 2.4.0 The class name of the Label for static display
+    )
+    staticInputClassName: str = (
+        None  # 2.4.0 The class name of value when static display
+    )
     staticSchema: Union[str, list] = None  # SchemaNode
 
 
@@ -691,11 +785,15 @@ class Form(AmisNode):
 
     type: str = "form"  # "form" specifies the Form renderer
     name: str = None  # After setting a name, it is convenient for other components to communicate with it
-    mode: DisplayModeEnum = None  # Form display mode, can be: normal, horizontal or inline
+    mode: DisplayModeEnum = (
+        None  # Form display mode, can be: normal, horizontal or inline
+    )
     horizontal: Horizontal = None  # Useful when mode is horizontal,
     # Used to control label {"left": "col-sm-2", "right": "col-sm-10", "offset": "col-sm-offset-2"}
     title: Optional[str] = None  # Title of the Form
-    submitText: Optional[str] = None  # "Submit" # Default submit button name, if it is set to empty, the default
+    submitText: Optional[
+        str
+    ] = None  # "Submit" # Default submit button name, if it is set to empty, the default
     # button can be removed.
     className: str = None  # The class name of the outer Dom
     body: List[Union[FormItem, SchemaNode]] = None  # Form item collection
@@ -707,25 +805,35 @@ class Form(AmisNode):
     panelClassName: str = None  # The class name of the outer panel
     api: API = None  # The api that Form uses to save data.
     initApi: API = None  # The api that Form uses to get initial data.
-    rules: list = None  # Form combination validation rules Array<{rule:string;message:string}>
+    rules: list = (
+        None  # Form combination validation rules Array<{rule:string;message:string}>
+    )
     interval: int = None  # refresh time (minimum 3000)
     silentPolling: bool = None  # False # whether to show the loading animation when the configuration is refreshed
-    stopAutoRefreshWhen: str = None  # Configure the condition for stopping refresh by expression
+    stopAutoRefreshWhen: str = (
+        None  # Configure the condition for stopping refresh by expression
+    )
     initAsyncApi: API = None  # The api that Form uses to obtain initial data, which is different from initApi,
     # will keep polling and request this interface until the returned finished attribute is true.
     initFetch: bool = None  # After initApi or initAsyncApi is set, the request will be sent by default, and if it is
     # set to false, the interface will not be requested at the beginning
     initFetchOn: str = None  # Use expression to configure
-    initFinishedField: Optional[str] = None  # After setting initAsyncApi, by default, the data.finished of the
+    initFinishedField: Optional[
+        str
+    ] = None  # After setting initAsyncApi, by default, the data.finished of the
     # returned data will be used to judge whether it is completed.
     # Can also be set to other xxx, it will be obtained from data.xxx
-    initCheckInterval: int = None  # After setting initAsyncApi, the default pull interval
+    initCheckInterval: int = (
+        None  # After setting initAsyncApi, the default pull interval
+    )
     asyncApi: API = None  # After setting this property, after the form is submitted and sent to save the interface,
     # it will continue to poll and request the interface, and it will not end until the returned finished property is
     # true.
     checkInterval: int = None  # The time interval for polling requests, the default is 3 seconds. Setting asyncApi
     # is valid
-    finishedField: Optional[str] = None  # Set this property if the field name that decides to end is not finished,
+    finishedField: Optional[
+        str
+    ] = None  # Set this property if the field name that decides to end is not finished,
     # such as is_success
     submitOnChange: bool = None  # Form modification is submitted
     submitOnInit: bool = None  # Submit once initially
@@ -745,7 +853,9 @@ class Form(AmisNode):
     canAccessSuperData: bool = None  # Specify whether the upper layer data can be automatically obtained and mapped
     # to the form item
     persistData: str = None  # Specify a unique key to configure whether to enable local caching for the current form
-    clearPersistDataAfterSubmit: bool = None  # Specify whether to clear the local cache after the form is submitted
+    clearPersistDataAfterSubmit: bool = (
+        None  # Specify whether to clear the local cache after the form is submitted
+    )
     # successfully
     preventEnterSubmit: bool = None  # Disable EnterSubmit form submission
     trimValues: bool = None  # trim each value of the current form item
@@ -759,8 +869,12 @@ class Form(AmisNode):
     # does not need to be sent in the form with hidden fields or explicit mapping.
     static: bool = None  # false # 2.4.0. The entire form is displayed statically.
     # For details, please refer to the:https://aisuda.bce.baidu.com/amis/examples/form/switchDisplay.
-    staticClassName: str = None  # 2.4.0. The name of the class used when the form is statically displayed
-    labelAlign: Literal["right", "left"] = None  # "right"  # 表单项标签对齐方式，默认右对齐，仅在 mode为horizontal 时生效
+    staticClassName: str = (
+        None  # 2.4.0. The name of the class used when the form is statically displayed
+    )
+    labelAlign: Literal[
+        "right", "left"
+    ] = None  # "right"  # 表单项标签对齐方式，默认右对齐，仅在 mode为horizontal 时生效
     labelWidth: Union[int, str] = None  # 表单项标签自定义宽度
     persistDataKeys: List[str] = None  # 指指定只有哪些 key 缓存
     closeDialogOnSubmit: bool = None  # 提交的时候是否关闭弹窗
@@ -784,7 +898,9 @@ class InputSubForm(FormItem):
     itemsClassName: str = None  # "``" # Value wrapping element CSS class name
     form: Form = None  # Subform configuration, same as Form
     addButtonText: str = None  # "``" # Customize the text of the new item
-    showErrorMsg: bool = None  # True # whether to display the error message in the lower left corner
+    showErrorMsg: bool = (
+        None  # True # whether to display the error message in the lower left corner
+    )
 
 
 class Button(FormItem):
@@ -795,7 +911,9 @@ class Button(FormItem):
     url: str = None  # Click the jump address, specify the behavior of this attribute button is consistent with the
     # a link
     size: str = None  # Set button size 'xs'|'sm'|'md'|'lg'
-    actionType: str = None  # Set the button type 'button'|'reset'|'submit'| 'clear'| 'url'
+    actionType: str = (
+        None  # Set the button type 'button'|'reset'|'submit'| 'clear'| 'url'
+    )
     level: LevelEnum = None  # Set button style 'link'|'primary'|'enhance'|'secondary'|'info'|'success'|'warning
     # '|'danger'|'light'| 'dark'|'default'
     tooltip: Union[str, dict] = None  # Bubble tip content TooltipObject
@@ -815,10 +933,16 @@ class InputFormula(FormItem):
     header: str = None  # Editor header title, if not set, the form item labelfield is used by default
     evalMode: bool = None  # default True, Expression mode or template mode (False),
     # template mode requires the expression to be written between ${and }.
-    variables: List[dict] = None  # Available variables, {label: string; value: string; children?: any[]; tag?: string}
-    variableMode: Literal["tabs", "tree", "list"] = "list"  # Can be configured as tabs or tree ,
+    variables: List[
+        dict
+    ] = None  # Available variables, {label: string; value: string; children?: any[]; tag?: string}
+    variableMode: Literal[
+        "tabs", "tree", "list"
+    ] = "list"  # Can be configured as tabs or tree ,
     # defaults to a list, which supports grouping.
-    inputMode: Literal["button", "input-button", "input-group"] = None  # Display mode of the control
+    inputMode: Literal[
+        "button", "input-button", "input-group"
+    ] = None  # Display mode of the control
     icon: str = None  # fa icon
     btnLabel: str = None  # The button text, which inputModetakesbutton
     level: LevelEnum = LevelEnum.default  # button stlye
@@ -873,7 +997,9 @@ class Radios(FormItem):
     source: API = None  # Dynamic option group
     labelField: bool = None  # "label" # option label field
     valueField: bool = None  # "value" # option value field
-    columnsCount: int = None  # 1 # options are displayed in several columns, default is one column
+    columnsCount: int = (
+        None  # 1 # options are displayed in several columns, default is one column
+    )
     inline: bool = None  # True # whether to display as one line
     selectFirst: bool = None  # False # whether to select the first one by default
     autoFill: dict = None  # autofill
@@ -884,7 +1010,9 @@ class ChartRadios(Radios):
 
     type: str = "chart-radios"
     config: dict = None  # echart chart configuration
-    showTooltipOnHighlight: bool = None  # False # whether to show tooltip when highlighted
+    showTooltipOnHighlight: bool = (
+        None  # False # whether to show tooltip when highlighted
+    )
     chartValueField: str = None  # "value" # Chart value field name
 
 
@@ -899,7 +1027,9 @@ class Checkboxes(FormItem):
     valueField: str = None  # "value" # option value field
     joinValues: bool = None  # True # join values
     extractValue: bool = None  # False # extract value
-    columnsCount: int = None  # 1 # options are displayed in several columns, default is one column
+    columnsCount: int = (
+        None  # 1 # options are displayed in several columns, default is one column
+    )
     checkAll: bool = None  # False # whether to support select all
     inline: bool = None  # True # whether to display as one line
     defaultCheckAll: bool = None  # False # whether to check all by default
@@ -933,12 +1063,16 @@ class InputColor(FormItem):
 
     type: str = "input-color"
     format: str = None  # "hex" # Please choose hex, hls, rgb or rgba.
-    presetColors: List[str] = None  # "Selector preset color value" # The default color at the bottom of the selector,
+    presetColors: List[
+        str
+    ] = None  # "Selector preset color value" # The default color at the bottom of the selector,
     # if the array is empty, the default color will not be displayed
     allowCustomColor: bool = None  # True # When false, only colors can be selected, use presetColors to set the
     # color selection range
     clearable: bool = None  # "label" # whether to display the clear button
-    resetValue: str = None  # "" # After clearing, the form item value is adjusted to this value
+    resetValue: str = (
+        None  # "" # After clearing, the form item value is adjusted to this value
+    )
 
 
 class Combo(FormItem):
@@ -951,7 +1085,9 @@ class Combo(FormItem):
     # items[x].columnClassName: str = None # The class name of the column, which can be used to configure the column
     # width. The default is evenly distributed. items[x].unique: bool = None # Set whether the current column value
     # is unique, that is, repeated selection is not allowed.
-    noBorder: bool = False  # whether to display a border for a single group of form items
+    noBorder: bool = (
+        False  # whether to display a border for a single group of form items
+    )
     scaffold: dict = {}  # initial value for a single set of form items
     multiple: bool = False  # whether to select multiple
     multiLine: bool = False  # The default is to display a row horizontally, after setting it will be displayed
@@ -984,7 +1120,9 @@ class Combo(FormItem):
     typeSwitchable: bool = False  # whether to switch conditions, use with conditions
     strictMode: bool = True  # The default is strict mode. When set to false, when other form items are updated,
     # the form items in them can also be obtained in time, otherwise they will not.
-    syncFields: List[str] = []  # Configure sync fields. Only valid when strictMode is false.
+    syncFields: List[
+        str
+    ] = []  # Configure sync fields. Only valid when strictMode is false.
     # If the Combo level is deep, the data from the bottom layer may be out of sync. But configuring this property
     # for combo can be synchronized. Input format: ["os"]
     nullable: bool = False  # Allow null, if the validator is configured in the sub-form item, and it is a single
@@ -1045,7 +1183,9 @@ class ConditionBuilder(FormItem):
         # the interface will be called, and the update options will be returned according to the interface.
 
     type: str = "condition-builder"
-    fields: List[Field] = None  # It is an array type, each member represents an optional field, supports multiple
+    fields: List[
+        Field
+    ] = None  # It is an array type, each member represents an optional field, supports multiple
     # layers, configuration example
     className: str = None  # Outer dom class name
     fieldClassName: str = None  # The class name of the input field
@@ -1062,7 +1202,9 @@ class Editor(FormItem):
     # javascript, json, less, lua, markdown, msdax, objective-c, php, plaintext, postiats, powershell,
     # pug, python, r, razor, ruby, sb, scss, shell, sol, sql, swift, typescript, vb, xml, yaml
     size: str = None  # "md" # Editor height, the value can be md, lg, xl, xxl
-    allowFullscreen: bool = None  # False # whether to display the full screen mode switch
+    allowFullscreen: bool = (
+        None  # False # whether to display the full screen mode switch
+    )
     options: dict = None  # Other configurations of the monaco editor, such as whether to display line numbers, etc.,
     # please refer to here, but readOnly cannot be set, read-only mode needs to use disabled: true
 
@@ -1076,7 +1218,9 @@ class DiffEditor(FormItem):
     # bat, c, coffeescript, cpp, csharp, css, dockerfile, fsharp, go, handlebars, html, ini, java,
     # javascript, json, less, lua, markdown, msdax, objective-c, php, plaintext, postiats, powershell,
     # pug, python, r, razor, ruby, sb, scss, shell, sol, sql, swift, typescript, vb, xml, yaml
-    diffValue: Template = None  # the diff value or reference to other data entry like '${value1}'
+    diffValue: Template = (
+        None  # the diff value or reference to other data entry like '${value1}'
+    )
 
 
 class Formula(AmisNode):
@@ -1106,8 +1250,12 @@ class DropDownButton(AmisNode):
     buttons: List[Button] = []  # List of buttons
     iconOnly: bool = None  # default False, show only icon
     defaultIsOpened: bool = None  # default False, whether to open by default
-    closeOnOutside: bool = None  # default True, Click whether to collapse the outer area
-    closeOnClick: bool = None  # default False, automatically close dropdown menu after button click
+    closeOnOutside: bool = (
+        None  # default True, Click whether to collapse the outer area
+    )
+    closeOnClick: bool = (
+        None  # default False, automatically close dropdown menu after button click
+    )
     trigger: TriggerEnum = TriggerEnum.click  # trigger method
     hideCaret: bool = None  # default False, Hide drop down icon
 
@@ -1120,7 +1268,9 @@ class EachLoop(AmisNode):
     name: str = None  # Data field name
     source: str = None  # Data mapping source
     items: dict = None  # {"type": "tpl", "tpl": "< span ..."}
-    placeholder: str = None  # placeholder text when valuevalue does not exist or is an empty array
+    placeholder: str = (
+        None  # placeholder text when valuevalue does not exist or is an empty array
+    )
 
 
 class GridNav(AmisNode):
@@ -1136,7 +1286,9 @@ class GridNav(AmisNode):
         text: str = None  # default '', list item text
         badge: Badge = None  # Bade Schema, list item badge
         link: str = None  # default '', Internal page path or external URL address, takes precedence over clickAction
-        blank: bool = None  # default False, Whether a new page is opened, valid when link is url
+        blank: bool = (
+            None  # default False, Whether a new page is opened, valid when link is url
+        )
         clickAction: Action = None  # ActionSchema
 
     type: str = "grid-nav"
@@ -1148,9 +1300,13 @@ class GridNav(AmisNode):
     center: bool = None  # default False, whether to center the content of the list item
     border: bool = None  # default False, whether to show the list item border
     gutter: int = None  # default -, px, the spacing between list items
-    reverse: bool = None  # default False, whether to swap the position of the icon and text
+    reverse: bool = (
+        None  # default False, whether to swap the position of the icon and text
+    )
     iconRatio: int = None  # default 60, Icon width ratio, in %
-    direction: Literal["horizontal", "vertical"] = "vertical"  # The direction in which the list items are arranged
+    direction: Literal[
+        "horizontal", "vertical"
+    ] = "vertical"  # The direction in which the list items are arranged
     columnNum: int = None  # default 4,
     options: List[OptionsItem] = None  # the option items
 
@@ -1172,7 +1328,9 @@ class CollapseGroup(AmisNode):
         body: Union[str, SchemaNode] = None  # default -, content
 
     type: str = "collapse-group"
-    activeKey: Union[str, int, List[Union[int, str]]] = None  # Initialize the key to activate the panel
+    activeKey: Union[
+        str, int, List[Union[int, str]]
+    ] = None  # Initialize the key to activate the panel
     disabled: bool = None  # default False
     accordion: bool = None  # default False, accordion mode
     expandIcon: SchemaNode = None  # Custom toggle icon
@@ -1210,8 +1368,12 @@ class InputFile(FormItem):
     receiver: API = None  # Upload file interface
     accept: str = None  # "text/plain" # Only plain text is supported by default. To support other types,
     # please configure this property as the file suffix .xxx
-    asBase64: bool = None  # False # Assign the file to the current component in the form of base64
-    asBlob: bool = None  # False # Assign the file to the current component in binary form
+    asBase64: bool = (
+        None  # False # Assign the file to the current component in the form of base64
+    )
+    asBlob: bool = (
+        None  # False # Assign the file to the current component in binary form
+    )
     maxSize: int = None  # There is no limit by default, when set, the file size larger than this value will not be
     # allowed to upload. unit is B
     maxLength: int = None  # There is no limit by default. When set, only the specified number of files can be
@@ -1226,10 +1388,14 @@ class InputFile(FormItem):
     # 'Uploading', error: 'Upload error', uploaded: 'Uploaded',ready: ''}
     fileField: str = None  # "file" # You can ignore this attribute if you don't want to store it yourself.
     nameField: str = None  # "name" # Which field is returned by the interface to identify the file name
-    valueField: str = None  # "value" # The value of the file is identified by that field.
+    valueField: str = (
+        None  # "value" # The value of the file is identified by that field.
+    )
     urlField: str = None  # "url" # The field name of the file download address.
     btnLabel: str = None  # The text of the upload button
-    downloadUrl: Union[bool, str] = None  # Version 1.1.6 supports post:http://xxx.com/${value}
+    downloadUrl: Union[
+        bool, str
+    ] = None  # Version 1.1.6 supports post:http://xxx.com/${value}
     # When the file path is displayed by default, it will support direct download. It can support adding a prefix
     # such as: http://xx.dom/filename= . If you don't want this, you can set the current configuration item to false.
     useChunk: bool = None  # The server where amis is located limits the file upload size to no more than 10M,
@@ -1238,7 +1404,9 @@ class InputFile(FormItem):
     startChunkApi: API = None  # startChunkApi
     chunkApi: API = None  # chunkApi
     finishChunkApi: API = None  # finishChunkApi
-    autoFill: Dict[str, str] = None  # After the upload is successful, the value returned by the upload interface can
+    autoFill: Dict[
+        str, str
+    ] = None  # After the upload is successful, the value returned by the upload interface can
     # be filled into a form item by configuring autoFill (not supported under non-form)
 
 
@@ -1344,7 +1512,9 @@ class InputImage(FormItem):
     fileField: str = None  # "file" # You can ignore this attribute if you don't want to store it yourself.
     crop: Union[bool, CropInfo] = None  # Used to set whether to support cropping.
     cropFormat: str = None  # "image/png" # crop file format
-    cropQuality: int = None  # 1 # The quality of the crop file format, for jpeg/webp, between 0 and 1
+    cropQuality: int = (
+        None  # 1 # The quality of the crop file format, for jpeg/webp, between 0 and 1
+    )
     limit: Limit = None  # Limit the size of the image, beyond which it will not be allowed to upload.
     frameImage: str = None  # Default placeholder image address
     fixedSize: bool = None  # whether to enable fixed size, if enabled, set fixedSizeClassName at the same time
@@ -1352,7 +1522,9 @@ class InputImage(FormItem):
     # For example, h-30, that is, the height of the picture frame is h-30, AMIS will automatically set the zoom ratio
     # to the width of the position occupied by the default image, and the final uploaded image will be scaled
     # accordingly according to this size.
-    autoFill: Dict[str, str] = None  # After the upload is successful, the value returned by the upload interface can
+    autoFill: Dict[
+        str, str
+    ] = None  # After the upload is successful, the value returned by the upload interface can
     # be filled into a form item by configuring autoFill (not supported under non-form)
     initAutoFill: bool = None  # False  # 表单反显时是否执行 autoFill
     uploadBtnText: Union[str, SchemaNode] = None  # 上传按钮文案。支持tpl、schema形式配置。
@@ -1368,7 +1540,9 @@ class LocationPicker(FormItem):
     ak: str = ...  # ak # registered address of Baidu map: http://lbsyun.baidu.com/
     clearable: bool = None  # False # whether the input box can be cleared
     placeholder: str = None  # "Please select a location" # Default prompt
-    coordinatesType: str = None  # "bd09" # Default is Baidu coordinates, can be set to 'gcj02'
+    coordinatesType: str = (
+        None  # "bd09" # Default is Baidu coordinates, can be set to 'gcj02'
+    )
 
 
 class InputNumber(FormItem):
@@ -1399,8 +1573,12 @@ class Picker(FormItem):
     joinValues: bool = None  # True # join values
     extractValue: bool = None  # False # extract value
     autoFill: dict = None  # autofill
-    modalMode: Literal["dialog", "drawer"] = None  # "dialog" # Set dialog or drawer to configure the popup mode.
-    pickerSchema: Union["CRUD", SchemaNode] = None  # "{mode: 'list', listItem: {title: '${label}'}}"
+    modalMode: Literal[
+        "dialog", "drawer"
+    ] = None  # "dialog" # Set dialog or drawer to configure the popup mode.
+    pickerSchema: Union[
+        "CRUD", SchemaNode
+    ] = None  # "{mode: 'list', listItem: {title: '${label}'}}"
     # That is to use the rendering of the List type to display the list information. More configuration reference CRUD
     embed: bool = None  # False # whether to use embedded mode
 
@@ -1447,12 +1625,16 @@ class InputText(FormItem):
     valueField: str = None  # option value field "value"
     joinValues: bool = None  # True # join values
     extractValue: bool = None  # extract value
-    addOn: SchemaNode = None  # Input box add-ons, such as with a prompt text, or with a submit button.
+    addOn: SchemaNode = (
+        None  # Input box add-ons, such as with a prompt text, or with a submit button.
+    )
     trimContents: bool = None  # whether to remove leading and trailing blank text.
     creatable: bool = None  # whether it can be created, the default is yes, unless it is set to false, only the
     # value in the option can be selected
     clearable: bool = None  # whether it can be cleared
-    resetValue: str = None  # Set the value given by this configuration item after clearing.
+    resetValue: str = (
+        None  # Set the value given by this configuration item after clearing.
+    )
     prefix: str = None  # prefix
     suffix: str = None  # suffix
     showCounter: bool = None  # whether to show the counter
@@ -1475,7 +1657,9 @@ class InputRichText(FormItem):
     videoReceiver: API = None  # '' # Default video save API
     size: str = None  # The size of the box, which can be set to md or lg
     options: dict = None  # Need to refer to tinymce or froala documentation
-    buttons: List[str] = None  # froala dedicated, configure the displayed buttons, tinymce can set the toolbar
+    buttons: List[
+        str
+    ] = None  # froala dedicated, configure the displayed buttons, tinymce can set the toolbar
     # string through the previous options
     vendor: str = None  # "vendor": "froala" , configure to use froala editor
 
@@ -1488,7 +1672,9 @@ class InputRating(FormItem):
     count: int = None  # default 5, amount of total stars
     readOnly: bool = None  # default False, is it read only
     allowClear: bool = None  # default True, allow clearing after another click
-    colors: Union[str, dict] = None  # default {'2': '#abadb1', '3': '#787b81', '5': '#ffa900' }, The color in which
+    colors: Union[
+        str, dict
+    ] = None  # default {'2': '#abadb1', '3': '#787b81', '5': '#ffa900' }, The color in which
     # the stars are displayed. If a string is passed in, there is only one color.
     # If an dict is passed in, each level can be customized.
     # The key name is the limit value of the segment, and the key value is the corresponding class name.
@@ -1513,7 +1699,9 @@ class InputRange(FormItem):
     marks: Union[str, dict] = None  # Tick Marks, Support Custom Styles, Set Percentages
     # { [number | string]: ReactNode }or{ [number | string]: { style: CSSProperties, label: ReactNode } }
     tooltipVisible: bool = None  # default False, whether to show slider labels
-    tooltipPlacement: PlacementEnum = None  # defualt 'top', tooltip placement 'top'|'right'|'bottom'|'left'
+    tooltipPlacement: PlacementEnum = (
+        None  # defualt 'top', tooltip placement 'top'|'right'|'bottom'|'left'
+    )
     multiple: bool = None  # default False, support selection range
     joinValues: bool = None  # default True, show step size
     delimiter: str = None  # dfeault ',', value delimiter
@@ -1537,9 +1725,13 @@ class Timeline(AmisNode):
     type: str = "timeline"
     items: List[TimelineItem] = None  # default [], Nodes
     source: API = None  # Data source, you can obtain current variables through data mapping, or configure API objects
-    mode: Literal["left", "right", "alternate"] = "right"  # Position of the text relative to the timeline,
+    mode: Literal[
+        "left", "right", "alternate"
+    ] = "right"  # Position of the text relative to the timeline,
     # only supported when direction=vertical
-    direction: Literal["vertical", "horizontal"] = "vertical"  # Direction of the Timeline
+    direction: Literal[
+        "vertical", "horizontal"
+    ] = "vertical"  # Direction of the Timeline
     reverse: bool = None  # default False, Reverse chronological order
 
 
@@ -1558,11 +1750,17 @@ class Steps(AmisNode):
     steps: List[StepItem] = None  # default [], List of Steps
     source: API = None  # Data source, you can obtain current variables through data mapping, or configure API objects
     name: str = None  # Associated context variable
-    value: Union[int, str, None] = None  # default -, Set the default value, expressions are not supported
+    value: Union[
+        int, str, None
+    ] = None  # default -, Set the default value, expressions are not supported
     status: Union[StepStatusEnum, dict] = None  # default -, State of the steps
     className: str = None  # Custom CSS class name
-    mode: Literal["vertical", "horizontal"] = "horizontal"  # Specifies the step bar direction.
-    labelPlacement: Literal["vertical", "horizontal"] = "horizontal"  # Specify the label placement position.
+    mode: Literal[
+        "vertical", "horizontal"
+    ] = "horizontal"  # Specifies the step bar direction.
+    labelPlacement: Literal[
+        "vertical", "horizontal"
+    ] = "horizontal"  # Specify the label placement position.
     # The default is to place it horizontally to the right of the icon, and optional (vertical) below the icon.
     progressDot: bool = None  # Default False, show dotted step bar
 
@@ -1576,17 +1774,29 @@ class TooltipWrapper(AmisNode):
     body: SchemaNode = None  # Content container
     wrapperComponent: str = None  # "div" | "span"
     inline: bool = None  # default False, whether the content area is displayed inline
-    rootClose: bool = None  # default True, whether to click the non-content area to close the prompt
+    rootClose: bool = (
+        None  # default True, whether to click the non-content area to close the prompt
+    )
     mouseEnterDelay: int = None  # default 0, Floating layer delay display time, in ms
     mouseLeaveDelay: int = None  # default 300, Floating layer delay hiding time, in ms
-    trigger: Union[TriggerEnum, List[TriggerEnum]] = None  # default 'hover', Floating layer trigger mode, support array writing
+    trigger: Union[
+        TriggerEnum, List[TriggerEnum]
+    ] = None  # default 'hover', Floating layer trigger mode, support array writing
     # "hover" | "click" | "focus" | List["hover", "click", "focus"]
     disabled: bool = None  # default False, whether to disable overlay prompts
-    enterable: bool = None  # default True, whether the mouse can move into the floating layer
-    showArrow: bool = None  # default True, whether to display the overlay pointing arrow
-    offset: Tuple[int, int] = None  # default [0, 0], relative offset of the position of the text prompt, in px
+    enterable: bool = (
+        None  # default True, whether the mouse can move into the floating layer
+    )
+    showArrow: bool = (
+        None  # default True, whether to display the overlay pointing arrow
+    )
+    offset: Tuple[
+        int, int
+    ] = None  # default [0, 0], relative offset of the position of the text prompt, in px
     tooltipTheme: Literal["light", "dark"] = "light"  # default light, Theme style
-    placement: PlacementEnum = PlacementEnum.top  # text prompts position of the floating layer
+    placement: PlacementEnum = (
+        PlacementEnum.top
+    )  # text prompts position of the floating layer
     content: str = None  # default '',  Text prompt content
     title: str = None  # default '', tooltip title
 
@@ -1596,7 +1806,9 @@ class InputTag(FormItem):
 
     type: str = "input-tag"
     options: List[Union[str, dict]] = None  # default option group
-    optionsTip: List[Union[str, dict]] = None  # default "Your most recent tags", option hint
+    optionsTip: List[
+        Union[str, dict]
+    ] = None  # default "Your most recent tags", option hint
     source: API = None  # default 	Dynamic option group
     delimiter: str = None  # default False, delimiter option
     labelField: str = None  # default "label", option label field
@@ -1607,10 +1819,14 @@ class InputTag(FormItem):
     resetValue: str = None  # default "", Set the value given by this configuration item after deletion.
     max: int = None  # Maximum number of tags allowed to be added
     maxTagLength: int = None  # Maximum text length for a single label
-    maxTagCount: int = None  # The maximum number of labels to be displayed. If the number is exceeded,
+    maxTagCount: int = (
+        None  # The maximum number of labels to be displayed. If the number is exceeded,
+    )
     # it will be displayed in the form of a floating layer.
     # It will only take effect when the multi-selection mode is enabled.
-    overflowTagPopover: TooltipWrapper = None  # default {"placement": "top", "trigger": "hover", "showArrow": false,
+    overflowTagPopover: TooltipWrapper = (
+        None  # default {"placement": "top", "trigger": "hover", "showArrow": false,
+    )
     # "offset": [0, -10]}	Store the configuration properties of the floating layer,
     # please refer to Tooltip for detailed configuration
     enableBatchAdd: bool = None  # default 	False, whether to enable batch add mode
@@ -1656,9 +1872,13 @@ class Select(FormItem):
     # association can be a tree).
     searchResultMode: str = None  # If the value of selectMode is not set, it can be configured separately. Refer to
     # selectMode to determine the display form of search results.
-    columns: List[dict] = None  # When the display form is table, it can be used to configure which columns are
+    columns: List[
+        dict
+    ] = None  # When the display form is table, it can be used to configure which columns are
     # displayed, which is similar to the columns configuration in table, but only has the display function.
-    leftOptions: List[dict] = None  # Used to configure the left option set when the display form is associated.
+    leftOptions: List[
+        dict
+    ] = None  # Used to configure the left option set when the display form is associated.
     leftMode: str = None  # When the display form is associated, it is used to configure the left selection form,
     # support list or tree. Default is list.
     rightMode: str = None  # When the display form is associated, it is used to configure the right selection form,
@@ -1689,7 +1909,9 @@ class NestedSelect(Select):
     # node will be included in the value, otherwise only the value of the parent node will be retained.
     onlyChildren: bool = None  # False # For multiple selections, whether to add only its child nodes to the value
     # when the parent node is selected.
-    searchPromptText: str = None  # "Enter content to search" # Search box placeholder text
+    searchPromptText: str = (
+        None  # "Enter content to search" # Search box placeholder text
+    )
     noResultsText: str = None  # "No results found" # Text if no results
     hideNodePathLabel: bool = None  # False # whether to hide the path label information of the selected node in the
     # selection box
@@ -1703,7 +1925,9 @@ class Breadcrumb(AmisNode):
         label: str = None  # label text
         href: str = None  # link
         icon: str = None  # fa icon
-        dropdown: List = None  # list of breadcrumbitems as dropdown, needs label, href, icon
+        dropdown: List = (
+            None  # list of breadcrumbitems as dropdown, needs label, href, icon
+        )
 
     type: str = "breadcrumb"
     className: str = None  # The outer class name
@@ -1782,7 +2006,9 @@ class Cards(AmisNode):
     placeholder: str = None  # default 'No data', placeholder
     className: str = None  # The outer CSS class name
     headerClassName: str = None  # default 'amis-grid-header', Top outer CSS class name
-    footerClassName: str = None  # default 'amis-grid-footer', Bottom outer CSS class name
+    footerClassName: str = (
+        None  # default 'amis-grid-footer', Bottom outer CSS class name
+    )
     itemClassName: str = None  # default 'col-sm-4 col-md-3', Card CSS class name
     card: Card = None  # configured card object for repeat
 
@@ -1795,9 +2021,13 @@ class ListDisplay(AmisNode):
         titleClassName: str = None  # title class name
         subTitle: Template = None  # subtitle
         avatar: Template = None  # picture
-        avatarClassName: str = None  # default "thumb-sm avatar m-r", Image CSS class name
+        avatarClassName: str = (
+            None  # default "thumb-sm avatar m-r", Image CSS class name
+        )
         desc: Template = None  # Description
-        body: List = None  # Content container, mainly used to place non-form item components
+        body: List = (
+            None  # Content container, mainly used to place non-form item components
+        )
         actions: List[Action] = None  # action buttons area
         actionsPosition: Literal["left", "right"] = "right"  # button position
 
@@ -1807,7 +2037,9 @@ class ListDisplay(AmisNode):
     placeholder: str = None  # default 'No data', placeholder
     className: str = None  # The outer CSS class name
     headerClassName: str = None  # default 'amis-grid-header', Top outer CSS class name
-    footerClassName: str = None  # default 'amis-grid-footer', Bottom outer CSS class name
+    footerClassName: str = (
+        None  # default 'amis-grid-footer', Bottom outer CSS class name
+    )
     listItem: ListItem = None  # configured list object for repeat
 
 
@@ -1885,9 +2117,13 @@ class InputDate(FormItem):
     embed: bool = None  # False # whether to inline mode
     timeConstraints: dict = None  # True # Please refer to: react-datetime
     closeOnSelect: bool = None  # False # whether to close the selection box immediately after clicking the date
-    schedules: Union[list, str] = None  # The schedule is displayed in the calendar, static data can be set or data
+    schedules: Union[
+        list, str
+    ] = None  # The schedule is displayed in the calendar, static data can be set or data
     # can be taken from the context, className refers to the background color
-    scheduleClassNames: List[str] = None  # "['bg-warning','bg-danger','bg-success','bg-info','bg-secondary']"
+    scheduleClassNames: List[
+        str
+    ] = None  # "['bg-warning','bg-danger','bg-success','bg-info','bg-secondary']"
     # The color of the event displayed in the calendar, refer to the background color
     scheduleAction: SchemaNode = None  # Custom schedule display
     largeMode: bool = None  # False # zoom mode
@@ -1905,7 +2141,9 @@ class InputQuarterRange(FormItem):
     type: str = "input-quarter-range"
     format: str = None  # Default X, date picker value format
     inputFormat: str = None  # Default 'YYYY-DD', date picker display format
-    placeholder: str = None  # Default 'Please select a quarterly range', placeholder text
+    placeholder: str = (
+        None  # Default 'Please select a quarterly range', placeholder text
+    )
     minDate: str = None  # Limit the minimum date and time, the usage is the same as the limit range
     maxDate: str = None  # Limit the maximum date and time, the usage is the same as the limit range
     minDuration: str = None  # Limit the minimum span, such as: 2quarter
@@ -1913,7 +2151,9 @@ class InputQuarterRange(FormItem):
     utc: bool = None  # Default False, save UTC value
     clearable: bool = None  # Default True, Is it clearable
     embed: bool = None  # Default False, inline mode
-    animation: bool = None  # Default True, Whether to enable cursor animation, needs min amis 2.2.0
+    animation: bool = (
+        None  # Default True, Whether to enable cursor animation, needs min amis 2.2.0
+    )
 
 
 class Calendar(FormItem):
@@ -1922,12 +2162,16 @@ class Calendar(FormItem):
     class CalendarItem(AmisNode):
         startTime: str  # ISO 8601 string
         endTime: str  # ISO 8601 string
-        content: Union[str, int, dict] = None  # Any, static data or get data from the context
+        content: Union[
+            str, int, dict
+        ] = None  # Any, static data or get data from the context
         className: str = None  # css background
 
     type: str = "calendar"
     schedules: Union[List[CalendarItem], str] = None  # List of schedule items
-    scheduleClassNames: List[str] = None  # default ['bg-warning', 'bg-danger', 'bg-success', 'bg-info', 'bg-secondary']
+    scheduleClassNames: List[
+        str
+    ] = None  # default ['bg-warning', 'bg-danger', 'bg-success', 'bg-info', 'bg-secondary']
     # color of the event displayed in the calendar, refer to the background color
 
     scheduleAction: SchemaNode = None  # custom schedule display
@@ -1974,7 +2218,9 @@ class InputDatetimeRange(InputTimeRange):
     """Date time range"""
 
     type: str = "input-datetime-range"
-    ranges: Union[str, List[str]] = None  # "yesterday,7daysago,prevweek,thismonth,prevmonth,prevquarter" date range
+    ranges: Union[
+        str, List[str]
+    ] = None  # "yesterday,7daysago,prevweek,thismonth,prevmonth,prevquarter" date range
     # shortcut keys, Optional: today,yesterday,1dayago,7daysago,30daysago,90daysago,prevweek,thismonth,thisquarter,
     # prevmonth,prevquarter
     minDate: str = None  # Limit the minimum date and time, the usage is the same as the limit range
@@ -1999,17 +2245,23 @@ class InputMonthRange(InputDateRange):
 class Transfer(FormItem):
     """Shuttle"""
 
-    type: Literal["transfer", "transfer-picker", "tabs-transfer", "tabs-transfer-picker"] = "transfer"
+    type: Literal[
+        "transfer", "transfer-picker", "tabs-transfer", "tabs-transfer-picker"
+    ] = "transfer"
     options: OptionsNode = None  # option group
     source: API = None  # Dynamic option group
     delimiter: str = None  # "False" # splicer
     joinValues: bool = None  # True # join values
     extractValue: bool = None  # False # extract value
     searchable: bool = None  # False When set to true, it means that options can be retrieved by entering partial content.
-    searchApi: API = None  # If you want to retrieve through the interface, you can set an api.
+    searchApi: API = (
+        None  # If you want to retrieve through the interface, you can set an api.
+    )
     statistics: bool = None  # True # whether to display statistics
     selectTitle: str = None  # "Please select" # Title text on the left
-    resultTitle: str = None  # "current selection" # title text of the result on the right
+    resultTitle: str = (
+        None  # "current selection" # title text of the result on the right
+    )
     sortable: bool = None  # False # The result can be sorted by drag and drop
     selectMode: str = None  # "list" # Optional: list, table, tree, chained, associated. They are: list form,
     # table form, tree selection form, Cascade selection form, association selection form (the difference from
@@ -2017,9 +2269,13 @@ class Transfer(FormItem):
     # side of the association can be a tree).
     searchResultMode: str = None  # If the value of selectMode is not set, it can be configured separately. Refer to
     # selectMode to determine the display form of search results.
-    columns: List[dict] = None  # When the display form is table, it can be used to configure which columns are
+    columns: List[
+        dict
+    ] = None  # When the display form is table, it can be used to configure which columns are
     # displayed, which is similar to the columns configuration in table, but only has the display function.
-    leftOptions: List[dict] = None  # Used to configure the left option set when the display form is associated.
+    leftOptions: List[
+        dict
+    ] = None  # Used to configure the left option set when the display form is associated.
     leftMode: str = None  # When the display form is associated, it is used to configure the left selection form,
     # support list or tree. Default is list.
     rightMode: str = None  # When the display form is associated, it is used to configure the right selection form,
@@ -2072,7 +2328,9 @@ class InputTree(FormItem):
     hideRoot: bool = None  # True # Set to false if you want to show a top-level node
     rootLabel: bool = None  # "top level" # Useful when hideRoot is not false, used to set the text of the top level node.
     showIcon: bool = None  # True # whether to show the icon
-    showRadio: bool = None  # False # whether to show radio buttons, multiple is false is valid.
+    showRadio: bool = (
+        None  # False # whether to show radio buttons, multiple is false is valid.
+    )
     initiallyOpen: bool = None  # True # Set whether to expand all levels by default.
     unfoldedLevel: int = None  # 0 # Set the default unfolded level, which only takes effect when initiallyOpen is
     # not true.
@@ -2082,7 +2340,9 @@ class InputTree(FormItem):
     onlyChildren: bool = None  # False # For multiple selections, whether to add only its child nodes to the value
     # when the parent node is selected.
     rootCreatable: bool = None  # False # whether top-level nodes can be created
-    rootCreateTip: str = None  # "Add a first-level node" # Create a hovering tip for a top-level node
+    rootCreateTip: str = (
+        None  # "Add a first-level node" # Create a hovering tip for a top-level node
+    )
     minLength: int = None  # Minimum number of selected nodes
     maxLength: int = None  # Maximum number of nodes selected
     treeContainerClassName: str = None  # tree outermost container class name
@@ -2128,7 +2388,9 @@ class Image(AmisNode):
     enlargeAble: bool = None  # Support zoom in preview
     enlargeTitle: str = None  # enlarge the title of the preview
     enlargeCaption: str = None  # Description of the enlarged preview
-    thumbMode: str = None  # "contain" # preview mode, optional: 'w-full','h-full','contain','cover'
+    thumbMode: str = (
+        None  # "contain" # preview mode, optional: 'w-full','h-full','contain','cover'
+    )
     thumbRatio: str = None  # "1:1" # Preview ratio, optional: '1:1','4:3','16:9'
     imageMode: str = None  # "thumb" Image display mode, optional: 'thumb', 'original' ie: thumbnail mode or original
     # image mode
@@ -2146,7 +2408,9 @@ class Images(AmisNode):
     src: str = None  # Preview image address, support data mapping to obtain image variables in the object
     originalSrc: str = None  # Original image address, support data mapping to obtain image variables in the object
     enlargeAble: bool = None  # Support zoom in preview
-    thumbMode: str = None  # "contain" # preview mode, optional: 'w-full','h-full','contain','cover'
+    thumbMode: str = (
+        None  # "contain" # preview mode, optional: 'w-full','h-full','contain','cover'
+    )
     thumbRatio: str = None  # "1:1" # Preview ratio, optional: '1:1','4:3','16:9'
 
 
@@ -2172,9 +2436,13 @@ class Carousel(AmisNode):
     duration: str = None  # "0.5s" # Switch animation duration
     width: str = None  # "auto" # width
     height: str = None  # "200px" # height
-    controls: List[str] = None  # "['dots','arrows']" # Display left and right arrows, bottom dot index
+    controls: List[
+        str
+    ] = None  # "['dots','arrows']" # Display left and right arrows, bottom dot index
     controlsTheme: str = None  # "light" # Left and right arrows, bottom dot index color, default light, and dark mode
-    animation: str = None  # "fade" # Switch animation effect, default fade, and slide mode
+    animation: str = (
+        None  # "fade" # Switch animation effect, default fade, and slide mode
+    )
     thumbMode: str = None  # "cover"|"contain" # The default zoom mode of the picture
 
 
@@ -2200,35 +2468,59 @@ class CRUD(AmisNode):
 
     type: str = "crud"  # type specifies the CRUD renderer
     mode: str = None  # "table" # "table" , "cards" or "list"
-    title: str = None  # "" # Can be set to empty, when set to empty, there is no title bar
+    title: str = (
+        None  # "" # Can be set to empty, when set to empty, there is no title bar
+    )
     className: str = None  # The class name of the outer Dom of the table
     api: API = None  # The api that CRUD uses to get list data.
     loadDataOnce: bool = None  # whether to load all data at once (front-end paging)
-    loadDataOnceFetchOnFilter: bool = None  # True # When loadDataOnce is turned on, whether to re-request the api
+    loadDataOnceFetchOnFilter: bool = (
+        None  # True # When loadDataOnce is turned on, whether to re-request the api
+    )
     # when filtering
     source: str = None  # The data mapping interface returns the value of a field. If it is not set, the ${items} or
     # ${rows} returned by the interface will be used by default. It can also be set to the content of the upper data
     # source.
-    filter: Union[SchemaNode, Form] = None  # Set the filter, when the form is submitted, it will bring the data to
+    filter: Union[
+        SchemaNode, Form
+    ] = None  # Set the filter, when the form is submitted, it will bring the data to
     # the current mode refresh list.
-    filterTogglable: bool = None  # False # whether the filter can be displayed or hidden
-    filterDefaultVisible: bool = None  # True # Set whether the filter is visible by default.
+    filterTogglable: bool = (
+        None  # False # whether the filter can be displayed or hidden
+    )
+    filterDefaultVisible: bool = (
+        None  # True # Set whether the filter is visible by default.
+    )
     initFetch: bool = None  # True # whether to pull data during initialization, only for the case with filter,
     # without filter, data will be pulled initially
     interval: int = None  # refresh time (minimum 1000)
-    silentPolling: bool = None  # Configure whether to hide the loading animation when refreshing
-    stopAutoRefreshWhen: str = None  # Configure the condition for stopping refresh by expression
-    stopAutoRefreshWhenModalIsOpen: bool = None  # Turn off auto refresh when there is a popup, close the popup and
+    silentPolling: bool = (
+        None  # Configure whether to hide the loading animation when refreshing
+    )
+    stopAutoRefreshWhen: str = (
+        None  # Configure the condition for stopping refresh by expression
+    )
+    stopAutoRefreshWhenModalIsOpen: bool = (
+        None  # Turn off auto refresh when there is a popup, close the popup and
+    )
     # restore
     syncLocation: bool = None  # False # whether to synchronize the parameters of the filter conditions to the
     # address bar, !!! After opening, the data type may be changed, and it cannot pass the fastpi data verification
     draggable: bool = None  # whether it can be sorted by dragging
-    itemDraggableOn: bool = None  # Use expressions to configure whether drag and drop sorting is possible
+    itemDraggableOn: bool = (
+        None  # Use expressions to configure whether drag and drop sorting is possible
+    )
     saveOrderApi: API = None  # Save order api.
     quickSaveApi: API = None  # API for batch saving after quick editing.
-    quickSaveItemApi: API = None  # API to use when quick edit is configured to save in time.
-    bulkActions: List[Action] = None  # Batch operation list, after configuration, the table can be selected.
-    defaultChecked: bool = None  # When batch operations are available, whether to check all by default.
+    quickSaveItemApi: API = (
+        None  # API to use when quick edit is configured to save in time.
+    )
+    bulkActions: List[
+        Action
+    ] = None  # Batch operation list, after configuration, the table can be selected.
+    defaultChecked: bool = (
+        None  # When batch operations are available, whether to check all by default.
+    )
     messages: Messages = None  # Override the message prompt, if not specified, the message returned by the api will
     # be used
     primaryField: str = None  # Set the ID field name. 'id'
@@ -2238,20 +2530,30 @@ class CRUD(AmisNode):
     pageField: str = None  # Set the pagination page number field name. "page"
     perPageField: str = None  # "perPage" # Set the field name of how many pieces of data are displayed on one page.
     # Note: Best used with defaultParams, see example below.
-    perPageAvailable: List[int] = None  # [5, 10, 20, 50, 100] # Set how many data drop-down boxes can be displayed
+    perPageAvailable: List[
+        int
+    ] = None  # [5, 10, 20, 50, 100] # Set how many data drop-down boxes can be displayed
     # on one page.
     orderField: str = None  # Set the field name used to determine the position. After setting, the new order will be
     # assigned to this field.
     hideQuickSaveBtn: bool = None  # Hide the top quick save prompt
-    autoJumpToTopOnPagerChange: bool = None  # whether to automatically jump to the top when splitting pages.
-    syncResponse2Query: bool = None  # True # Synchronize the returned data to the filter.
+    autoJumpToTopOnPagerChange: bool = (
+        None  # whether to automatically jump to the top when splitting pages.
+    )
+    syncResponse2Query: bool = (
+        None  # True # Synchronize the returned data to the filter.
+    )
     keepItemSelectionOnPageChange: bool = None  # True
     # Retain item selection. After the default paging and searching, the user-selected item will be cleared. After
     # this option is enabled, the user's selection will be retained, enabling cross-page batch operations.
     labelTpl: str = None  # Single description template, keepItemSelectionOnPageChange
     # When set to true, all selected items will be listed. This option can be used to customize the entry display copy.
-    headerToolbar: list = None  # ['bulkActions','pagination'] # Top toolbar configuration
-    footerToolbar: list = None  # ['statistics','pagination'] # Bottom toolbar configuration
+    headerToolbar: list = (
+        None  # ['bulkActions','pagination'] # Top toolbar configuration
+    )
+    footerToolbar: list = (
+        None  # ['statistics','pagination'] # Bottom toolbar configuration
+    )
     alwaysShowPagination: bool = None  # whether to always show pagination
     affixHeader: bool = None  # True # whether to fix the header (under table)
     autoGenerateFilter: bool = None  # whether to open the query area, after it is enabled, the query condition form
@@ -2268,7 +2570,9 @@ class CRUD(AmisNode):
 class TableColumn(AmisNode):
     """Column configuration"""
 
-    type: str = None  # Literal['text','audio','image','link','tpl','mapping','carousel','date',
+    type: str = (
+        None  # Literal['text','audio','image','link','tpl','mapping','carousel','date',
+    )
     # 'progress','status','switch','list','json','operation','tag']
     label: Template = None  # header text content
     name: str = None  # Associate data by name
@@ -2276,9 +2580,13 @@ class TableColumn(AmisNode):
     fixed: str = None  # whether to fix the current column left|right|none
     popOver: Union[bool, dict] = None  # popover
     quickEdit: Union[bool, dict] = None  # quick edit
-    copyable: Union[bool, dict] = None  # whether to copy boolean or {icon: string, content:string}
+    copyable: Union[
+        bool, dict
+    ] = None  # whether to copy boolean or {icon: string, content:string}
     sortable: bool = None  # False # whether it is sortable
-    searchable: Union[bool, SchemaNode] = None  # False # whether to quickly search boolean|Schema
+    searchable: Union[
+        bool, SchemaNode
+    ] = None  # False # whether to quickly search boolean|Schema
     width: Union[int, str] = None  # column width
     remark: RemarkT = None  # prompt message
     breakpoint: str = None  # *,ls. When there are too many columns, the content cannot be displayed completely,
@@ -2286,7 +2594,9 @@ class TableColumn(AmisNode):
     filterable: Union[bool, Dict[str, Any]] = None  # filter configuration
     toggled: bool = None  # whether to expand by default, in the column configuration, you can configure toggled to
     # false to not display this column by default
-    backgroundScale: int = None  # Can be used to automatically assign color scales based on data control
+    backgroundScale: int = (
+        None  # Can be used to automatically assign color scales based on data control
+    )
 
 
 class ColumnOperation(TableColumn):
@@ -2319,30 +2629,42 @@ class Table(AmisNode):
 
     type: str = "table"  # Specify as table renderer
     title: str = None  # title
-    source: str = None  # "${items}" # Data source, bind the current environment variable
+    source: str = (
+        None  # "${items}" # Data source, bind the current environment variable
+    )
     affixHeader: bool = None  # True # whether to fix the header
-    columnsTogglable: Union[bool, str] = None  # "auto" # Display column display switch, automatic: it is
+    columnsTogglable: Union[
+        bool, str
+    ] = None  # "auto" # Display column display switch, automatic: it is
     # automatically turned on when the number of columns is greater than or equal to 5
     placeholder: str = None  # "No data" # Text prompt when there is no data
     className: str = None  # "panel-default" # Outer CSS class name
     tableClassName: str = None  # "table-db table-striped" # table CSS class name
     headerClassName: str = None  # "Action.md-table-header" # Top outer CSS class name
-    footerClassName: str = None  # "Action.md-table-footer" # Bottom outer CSS class name
+    footerClassName: str = (
+        None  # "Action.md-table-footer" # Bottom outer CSS class name
+    )
     toolbarClassName: str = None  # "Action.md-table-toolbar" # Toolbar CSS class name
-    columns: List[Union[TableColumn, SchemaNode]] = None  # Used to set column information
+    columns: List[
+        Union[TableColumn, SchemaNode]
+    ] = None  # Used to set column information
     combineNum: int = None  # Automatically combine cells
     itemActions: List[Action] = None  # Floating row action button group
     itemCheckableOn: Expression = None  # Configure the condition for whether the current row can be checked, use an
     # expression
     itemDraggableOn: Expression = None  # To configure whether the current row can be dragged or not, use an expression
-    checkOnItemClick: bool = None  # False # whether clicking on the data row can check the current row
+    checkOnItemClick: bool = (
+        None  # False # whether clicking on the data row can check the current row
+    )
     rowClassName: str = None  # Add CSS class name to row
     rowClassNameExpr: Template = None  # Add CSS class name to row via template
     prefixRow: list = None  # top summary row
     affixRow: list = None  # Bottom summary row
     itemBadge: "Badge" = None  # Row badge configuration
     autoFillHeight: bool = None  # Content area adaptive height
-    footable: Union[bool, dict] = None  # When there are too many columns, the content cannot be fully displayed.
+    footable: Union[
+        bool, dict
+    ] = None  # When there are too many columns, the content cannot be fully displayed.
     # Some information can be displayed at the bottom, allowing users to expand to view the details. The
     # configuration is very simple, just turn on the footable attribute, and add a breakpoint attribute to the column
     # you want to display at the bottom as *.
@@ -2359,15 +2681,21 @@ class Chart(AmisNode):
     body: SchemaNode = None  # Content container
     api: API = None  # Configuration item interface address
     source: dict = None  # Get the variable value in the data chain as configuration through data mapping
-    initFetch: bool = None  # whether to request the interface when the component is initialized
+    initFetch: bool = (
+        None  # whether to request the interface when the component is initialized
+    )
     interval: int = None  # refresh time (minimum 1000)
-    config: Union[dict, str] = None  # Set the configuration item of eschars, when it is string, you can set
+    config: Union[
+        dict, str
+    ] = None  # Set the configuration item of eschars, when it is string, you can set
     # configuration items such as function
     style: dict = None  # Set the style of the root element
     width: str = None  # Set the width of the root element
     height: str = None  # Set the height of the root element
     replaceChartOption: bool = None  # False # Does each update completely overwrite the configuration item or append it?
-    trackExpression: str = None  # Update the chart when the value of this expression changes
+    trackExpression: str = (
+        None  # Update the chart when the value of this expression changes
+    )
 
 
 class Code(AmisNode):
@@ -2388,7 +2716,9 @@ class Json(AmisNode):
 
     type: str = "json"  # "json" if in Table, Card and List; "static-json" if used for static display in Form
     className: str = None  # Outer CSS class name
-    value: Union[dict, str] = None  # json value, if it is string, it will be parsed automatically
+    value: Union[
+        dict, str
+    ] = None  # json value, if it is string, it will be parsed automatically
     source: str = None  # Get the value in the data chain through the data map
     placeholder: str = None  # placeholder text
     levelExpand: int = None  # 1 # Default expanded level
@@ -2404,7 +2734,9 @@ class Link(AmisNode):
     body: str = None  # Text inside the tag
     href: str = None  # link address
     blank: bool = None  # whether to open in a new tab
-    htmlTarget: str = None  # The target of the a tag, which takes precedence over the blank attribute
+    htmlTarget: str = (
+        None  # The target of the a tag, which takes precedence over the blank attribute
+    )
     title: str = None  # the title of the a tag
     disabled: bool = None  # disable hyperlinks
     icon: str = None  # Hyperlink icon to enhance display
@@ -2441,7 +2773,9 @@ class Property(AmisNode):
     contentStyle: dict = None  # style of attribute value
     column: int = None  # 3 # several columns per row
     mode: str = None  # 'table' # Display mode, currently only 'table' and 'simple'
-    separator: str = None  # ',' # Separator between attribute name and value in 'simple' mode
+    separator: str = (
+        None  # ',' # Separator between attribute name and value in 'simple' mode
+    )
     source: Template = None  # data source
     title: str = None  # title
     items: List[Item] = None  # data items
@@ -2458,7 +2792,9 @@ class QRCode(AmisNode):
     codeSize: int = None  # 128 # The width and height of the QR code
     backgroundColor: str = None  # "#fff" # QR code background color
     foregroundColor: str = None  # "#000" # QR code foreground color
-    level: str = None  # "L" # QR code complexity level, there are four types ('L' 'M' 'Q' 'H')
+    level: str = (
+        None  # "L" # QR code complexity level, there are four types ('L' 'M' 'Q' 'H')
+    )
 
 
 class Barcode(AmisNode):
@@ -2496,7 +2832,9 @@ class Color(AmisNode):
     value: str = None  # The value of the color CSS code
     className: str = None  # The class name of the outer Dom
     defaultColor: str = None  # "#ccc" default color value
-    showValue: bool = None  # default True, whether to display the color value on the right
+    showValue: bool = (
+        None  # default True, whether to display the color value on the right
+    )
 
 
 class Progress(AmisNode):
@@ -2507,11 +2845,15 @@ class Progress(AmisNode):
     showLabel: bool = None  # default True, whether to show progress text
     stripe: bool = None  # default False
     animate: bool = None  # default False
-    map: Union[str, List[str], List[Dict]] = None  # progress colormap, as dict = {value:number, color:string}
+    map: Union[
+        str, List[str], List[Dict]
+    ] = None  # progress colormap, as dict = {value:number, color:string}
     # default ['bg-danger', 'bg-warning', 'bg-info', 'bg-success', 'bg-success']
     threshold: Union[Dict, List] = None  # default -,
     # {value: template , color?: template } | List[{value: template , color?: template }]
-    showThresholdText: bool = None  # default False, whether to display the threshold (scale) value
+    showThresholdText: bool = (
+        None  # default False, whether to display the threshold (scale) value
+    )
     valueTpl: str = None  # default ${value}%, custom formatted content
     strokeWidth: int = None  # default 10 by circle, 6 with dashboard
     gapDegree: int = None  # default 75, angle of the missing corner of the instrument panel, the value can be 0 ~ 295
@@ -2520,30 +2862,46 @@ class Progress(AmisNode):
 
 class PaginationWrapper(AmisNode):
     type: str = "pagination-wrapper"
-    showPageInput: bool = None  # default False, whether to display the quick jump input box
+    showPageInput: bool = (
+        None  # default False, whether to display the quick jump input box
+    )
     maxButtons: int = None  # default 5, Maximum number of pagination buttons to display
     inputName: str = None  # default 'items', input field name
     outputName: str = None  # default 'items', output field name
     perPage: int = None  # default 10, Display multiple pieces of data per page
-    position: Literal["top", "none", "bottom"] = "top"  # Pagination display position, if it is configured as none,
+    position: Literal[
+        "top", "none", "bottom"
+    ] = "top"  # Pagination display position, if it is configured as none,
     # you need to configure the pagination component in the content area, otherwise it will not be displayed
     body: SchemaNode = None  # Display content
 
 
 class Pagination(AmisNode):
     type: str = "pagination"
-    mode: Literal["simple", "normal"] = "normal"  # The mini version/simple version only displays left and right arrows,
+    mode: Literal[
+        "simple", "normal"
+    ] = "normal"  # The mini version/simple version only displays left and right arrows,
     # used with hasNext
-    layout: Union[str, List[str]] = None  # default 'pager', Adjust the paging structure layout by controlling
+    layout: Union[
+        str, List[str]
+    ] = None  # default 'pager', Adjust the paging structure layout by controlling
     # the order of the layout properties
     maxButtons: int = None  # default 10, Display multiple pieces of data per page
-    lastPage: int = None  # lastPage will be recalculated when the total number of entries is set
+    lastPage: int = (
+        None  # lastPage will be recalculated when the total number of entries is set
+    )
     total: int = None  # total number of pages
     activePage: int = None  # default 1, current page number
     perPage: int = None  # default 10, Display multiple pieces of data per page
-    showPerPage: bool = None  # default False, whether to display the perPage switcher layout
-    perPageAvailable: List[int] = None  # default [10, 20, 50, 100], how many lines can be displayed per page
-    showPageInput: bool = None  # default False, whether to display the quick jump input box layout
+    showPerPage: bool = (
+        None  # default False, whether to display the perPage switcher layout
+    )
+    perPageAvailable: List[
+        int
+    ] = None  # default [10, 20, 50, 100], how many lines can be displayed per page
+    showPageInput: bool = (
+        None  # default False, whether to display the quick jump input box layout
+    )
     disabled: bool = None  # default False, is pagination disabled
 
 
@@ -2570,7 +2928,9 @@ class Wrapper(AmisNode):
     className: str = None  # The class name of the outer Dom
     style: Union[str, dict] = None  # Custom style (inline style), highest priority
     body: SchemaNode = None  # Display content
-    size: Union[str, SizeEnum] = None  # Specify the wrapper size, support: xs, sm, md, lg
+    size: Union[
+        str, SizeEnum
+    ] = None  # Specify the wrapper size, support: xs, sm, md, lg
 
 
 class WebComponent(AmisNode):
@@ -2586,7 +2946,9 @@ class UUIDField(AmisNode):
 
     type: str = "uuid"
     name: str = None  # The field name
-    length: int = None  # if set, generates short random numbers, if not set it generates a UUID
+    length: int = (
+        None  # if set, generates short random numbers, if not set it generates a UUID
+    )
 
 
 class SearchBox(AmisNode):
@@ -2651,13 +3013,21 @@ class Dialog(AmisNode):
     type: str = "dialog"  # Specify as Dialog renderer
     title: SchemaNode = None  # Popup layer title
     body: SchemaNode = None  # Add content to the Dialog content area
-    size: Union[str, SizeEnum] = None  # Specify the dialog size, support: xs, sm, md, lg, xl, full
-    bodyClassName: str = None  # "modal-body" # The style class name of the Dialog body area
+    size: Union[
+        str, SizeEnum
+    ] = None  # Specify the dialog size, support: xs, sm, md, lg, xl, full
+    bodyClassName: str = (
+        None  # "modal-body" # The style class name of the Dialog body area
+    )
     closeOnEsc: bool = None  # False # whether to support pressing Esc to close Dialog
-    showCloseButton: bool = None  # True # whether to show the close button in the upper right corner
+    showCloseButton: bool = (
+        None  # True # whether to show the close button in the upper right corner
+    )
     showErrorMsg: bool = None  # True # whether to display the error message in the lower left corner of the popup
     disabled: bool = None  # False # If this property is set, the Dialog is read-only and has no submit operation.
-    actions: List[Action] = None  # If you want to not display the bottom button, you can configure: [] "[Confirm]
+    actions: List[
+        Action
+    ] = None  # If you want to not display the bottom button, you can configure: [] "[Confirm]
     # and [Cancel]"
     data: dict = None  # Support data mapping, if not set, it will inherit the data in the context of the trigger
     # button by default.
@@ -2672,12 +3042,16 @@ class Drawer(AmisNode):
     body: SchemaNode = None  # Add content to the Drawer content area
     size: Union[str, SizeEnum] = None  # Specify Drawer size, support: xs, sm, md, lg
     position: str = None  # 'left' # position
-    bodyClassName: str = None  # "modal-body" # The style class name of the Drawer body area
+    bodyClassName: str = (
+        None  # "modal-body" # The style class name of the Drawer body area
+    )
     closeOnEsc: bool = None  # False # whether to support pressing Esc to close Drawer
     closeOnOutside: bool = None  # False # whether to close the Drawer when clicking outside the content area
     overlay: bool = None  # True # whether to display the overlay
     resizable: bool = None  # False # whether the size of the Drawer can be changed by dragging and dropping
-    actions: List[Action] = None  # Can not be set, there are only two buttons by default. "[Confirm] and [Cancel]"
+    actions: List[
+        Action
+    ] = None  # Can not be set, there are only two buttons by default. "[Confirm] and [Cancel]"
     data: dict = None  # Support data mapping, if not set, it will inherit the data in the context of the trigger
     # button by default.
     className: str = None  # Drawer 最外层容器的样式类名
@@ -2750,8 +3124,12 @@ class Audio(AmisNode):
     src: str = None  # audio address
     loop: bool = None  # False # whether to loop playback
     autoPlay: bool = None  # False # whether to play automatically
-    rates: List[float] = None  # "[]" # Configurable audio playback speed such as: [1.0, 1.5, 2.0]
-    controls: List[str] = None  # "['rates','play','time','process','volume']" # Internal module customization
+    rates: List[
+        float
+    ] = None  # "[]" # Configurable audio playback speed such as: [1.0, 1.5, 2.0]
+    controls: List[
+        str
+    ] = None  # "['rates','play','time','process','volume']" # Internal module customization
 
 
 class Status(AmisNode):
@@ -2779,7 +3157,9 @@ class Tasks(AmisNode):
     className: str = None  # The class name of the outer Dom
     tableClassName: str = None  # class name of table Dom
     items: List[Item] = None  # task list
-    checkApi: API = None  # Return the task list, please refer to items for the returned data.
+    checkApi: API = (
+        None  # Return the task list, please refer to items for the returned data.
+    )
     submitApi: API = None  # API used for submitting tasks
     reSubmitApi: API = None  # If the task fails and can be retried, this API will be used when submitting
     interval: int = None  # 3000 # When there is a task in progress, it will be checked again at regular intervals,
@@ -2790,11 +3170,19 @@ class Tasks(AmisNode):
     remarkLabel: RemarkT = None  # "Remark" # Remark column description
     btnText: str = None  # "Online" # Action button text
     retryBtnText: str = None  # "Retry" # Retry action button text
-    btnClassName: str = None  # "btn-sm btn-default" # Configure the container button className
-    retryBtnClassName: str = None  # "btn-sm btn-danger" # Configure container retry button className
-    statusLabelMap: List[str] = None  # Status display corresponding class name configuration
+    btnClassName: str = (
+        None  # "btn-sm btn-default" # Configure the container button className
+    )
+    retryBtnClassName: str = (
+        None  # "btn-sm btn-danger" # Configure container retry button className
+    )
+    statusLabelMap: List[
+        str
+    ] = None  # Status display corresponding class name configuration
     # "["label-warning", "label-info", "label-success", "label-danger", "label-default", "label-danger"]"
-    statusTextMap: List[str] = None  # "["Not started", "Ready", "In progress", "Error", "Completed", "Error"]" #
+    statusTextMap: List[
+        str
+    ] = None  # "["Not started", "Ready", "In progress", "Error", "Completed", "Error"]" #
     # Status display corresponding text display configuration
 
 
@@ -2810,14 +3198,18 @@ class Wizard(AmisNode):
         initFetch: bool = None  # whether the current step data initialization interface is initially fetched.
         initFetchOn: Expression = None  # whether the current step data initialization interface is initially fetched
         # is determined by an expression.
-        body: List[FormItem] = None  # The form item collection of the current step, please refer to FormItem.
+        body: List[
+            FormItem
+        ] = None  # The form item collection of the current step, please refer to FormItem.
 
     type: str = "wizard"  # Specify as Wizard component
     mode: str = None  # "horizontal" # Display mode, choose: horizontal or vertical
     api: API = None  # The interface saved in the last step.
     initApi: API = None  # Initialize data interface
     initFetch: API = None  # whether to fetch data initially.
-    initFetchOn: Expression = None  # whether to pull data initially, configure by expression
+    initFetchOn: Expression = (
+        None  # whether to pull data initially, configure by expression
+    )
     actionPrevLabel: str = None  # "Previous" # Previous button text
     actionNextLabel: str = None  # "Next" # Next button text
     actionNextSaveLabel: str = None  # "Save and Next" # Save and Next button text

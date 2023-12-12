@@ -20,6 +20,7 @@ from . import LocationService
 LOGGER = logging.getLogger("services.location.jhu")
 PID = os.getpid()
 
+
 class JhuLocationService(LocationService):
     """
     Service for retrieving locations from Johns Hopkins CSSE (https://github.com/CSSEGISandData/COVID-19).
@@ -83,7 +84,9 @@ async def get_category(category):
 
         for item in data:
             # Filter out all the dates.
-            dates = dict(filter(lambda element: date_util.is_date(element[0]), item.items()))
+            dates = dict(
+                filter(lambda element: date_util.is_date(element[0]), item.items())
+            )
 
             # Make location history from dates.
             history = {date: int(float(amount or 0)) for date, amount in dates.items()}
@@ -95,17 +98,19 @@ async def get_category(category):
             country = item["Country/Region"]
 
             # Normalize the item and append to locations.
-            locations.append({
-                "country": country,
-                "country_code": countries.country_code(country),
-                "province": item["Province/State"],
-                "coordinates": {
-                    "lat": item["Lat"], 
-                    "long": item["Long"],
-                },
-                "history": history,
-                "latest": int(latest or 0),
-            })
+            locations.append(
+                {
+                    "country": country,
+                    "country_code": countries.country_code(country),
+                    "province": item["Province/State"],
+                    "coordinates": {
+                        "lat": item["Lat"],
+                        "long": item["Long"],
+                    },
+                    "history": history,
+                    "latest": int(latest or 0),
+                }
+            )
         LOGGER.debug(f"{data_id} Data normalized")
 
         # Latest total.
@@ -176,24 +181,29 @@ async def get_locations():
                 id=index,
                 country=location["country"],
                 province=location["province"],
-                coordinates=Coordinates(latitude=coordinates["lat"], longitude=coordinates["long"]),
+                coordinates=Coordinates(
+                    latitude=coordinates["lat"], longitude=coordinates["long"]
+                ),
                 last_updated=datetime.utcnow().isoformat() + "Z",
                 timelines={
                     "confirmed": Timeline(
                         timeline={
-                            datetime.strptime(date, "%m/%d/%y").isoformat() + "Z": amount
+                            datetime.strptime(date, "%m/%d/%y").isoformat()
+                            + "Z": amount
                             for date, amount in timelines["confirmed"].items()
                         }
                     ),
                     "deaths": Timeline(
                         timeline={
-                            datetime.strptime(date, "%m/%d/%y").isoformat() + "Z": amount
+                            datetime.strptime(date, "%m/%d/%y").isoformat()
+                            + "Z": amount
                             for date, amount in timelines["deaths"].items()
                         }
                     ),
                     "recovered": Timeline(
                         timeline={
-                            datetime.strptime(date, "%m/%d/%y").isoformat() + "Z": amount
+                            datetime.strptime(date, "%m/%d/%y").isoformat()
+                            + "Z": amount
                             for date, amount in timelines["recovered"].items()
                         }
                     ),

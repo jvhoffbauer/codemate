@@ -19,43 +19,67 @@ def ep(ep_path):
     @contextlib.asynccontextmanager
     async def mw_first(ctx: jsonrpc.JsonRpcContext):
         nonlocal _calls
-        _calls[ctx.raw_request.get('id')].append((
-            'mw_first', 'enter', ctx.raw_request, ctx.raw_response, sys.exc_info()[0]
-        ))
+        _calls[ctx.raw_request.get("id")].append(
+            ("mw_first", "enter", ctx.raw_request, ctx.raw_response, sys.exc_info()[0])
+        )
         try:
             yield
         finally:
-            _calls[ctx.raw_response.get('id')].append((
-                'mw_first', 'exit', ctx.raw_request, ctx.raw_response, sys.exc_info()[0]
-            ))
+            _calls[ctx.raw_response.get("id")].append(
+                (
+                    "mw_first",
+                    "exit",
+                    ctx.raw_request,
+                    ctx.raw_response,
+                    sys.exc_info()[0],
+                )
+            )
 
     @contextlib.asynccontextmanager
     async def mw_exception_exit(ctx: jsonrpc.JsonRpcContext):
         nonlocal _calls
-        _calls[ctx.raw_request.get('id')].append((
-            'mw_exception_exit', 'enter', ctx.raw_request, ctx.raw_response, sys.exc_info()[0]
-        ))
+        _calls[ctx.raw_request.get("id")].append(
+            (
+                "mw_exception_exit",
+                "enter",
+                ctx.raw_request,
+                ctx.raw_response,
+                sys.exc_info()[0],
+            )
+        )
         # noinspection PyUnreachableCode
         try:
             yield
         finally:
-            _calls[ctx.raw_response.get('id')].append((
-                'mw_exception_exit', 'exit', ctx.raw_request, ctx.raw_response, sys.exc_info()[0]
-            ))
+            _calls[ctx.raw_response.get("id")].append(
+                (
+                    "mw_exception_exit",
+                    "exit",
+                    ctx.raw_request,
+                    ctx.raw_response,
+                    sys.exc_info()[0],
+                )
+            )
             raise RuntimeError(unique_marker)
 
     @contextlib.asynccontextmanager
     async def mw_last(ctx: jsonrpc.JsonRpcContext):
         nonlocal _calls
-        _calls[ctx.raw_request.get('id')].append((
-            'mw_last', 'enter', ctx.raw_request, ctx.raw_response, sys.exc_info()[0]
-        ))
+        _calls[ctx.raw_request.get("id")].append(
+            ("mw_last", "enter", ctx.raw_request, ctx.raw_response, sys.exc_info()[0])
+        )
         try:
             yield
         finally:
-            _calls[ctx.raw_response.get('id')].append((
-                'mw_last', 'exit', ctx.raw_request, ctx.raw_response, sys.exc_info()[0]
-            ))
+            _calls[ctx.raw_response.get("id")].append(
+                (
+                    "mw_last",
+                    "exit",
+                    ctx.raw_request,
+                    ctx.raw_response,
+                    sys.exc_info()[0],
+                )
+            )
 
     ep = jsonrpc.Entrypoint(
         ep_path,
@@ -64,7 +88,7 @@ def ep(ep_path):
 
     @ep.method()
     def probe(
-        data: str = Body(..., examples=['123']),
+        data: str = Body(..., examples=["123"]),
     ) -> str:
         return data
 
@@ -74,80 +98,88 @@ def ep(ep_path):
 
 
 def test_ep_exception(ep, method_request, assert_log_errors):
-    resp = method_request('probe', {'data': 'one'}, request_id=111)
-    assert resp == {'id': 111, 'jsonrpc': '2.0', 'error': {'code': -32603, 'message': 'Internal error'}}
+    resp = method_request("probe", {"data": "one"}, request_id=111)
+    assert resp == {
+        "id": 111,
+        "jsonrpc": "2.0",
+        "error": {"code": -32603, "message": "Internal error"},
+    }
     assert ep.calls == {
         111: [
             (
-                'mw_first',
-                'enter',
+                "mw_first",
+                "enter",
                 {
-                    'id': 111,
-                    'jsonrpc': '2.0',
-                    'method': 'probe',
-                    'params': {'data': 'one'},
+                    "id": 111,
+                    "jsonrpc": "2.0",
+                    "method": "probe",
+                    "params": {"data": "one"},
                 },
                 None,
                 None,
             ),
             (
-                'mw_exception_exit',
-                'enter',
+                "mw_exception_exit",
+                "enter",
                 {
-                    'id': 111,
-                    'jsonrpc': '2.0',
-                    'method': 'probe',
-                    'params': {'data': 'one'}
+                    "id": 111,
+                    "jsonrpc": "2.0",
+                    "method": "probe",
+                    "params": {"data": "one"},
                 },
                 None,
                 None,
             ),
             (
-                'mw_last',
-                'enter',
+                "mw_last",
+                "enter",
                 {
-                    'id': 111,
-                    'jsonrpc': '2.0',
-                    'method': 'probe',
-                    'params': {'data': 'one'},
+                    "id": 111,
+                    "jsonrpc": "2.0",
+                    "method": "probe",
+                    "params": {"data": "one"},
                 },
                 None,
                 None,
             ),
             (
-                'mw_last',
-                'exit',
+                "mw_last",
+                "exit",
                 {
-                    'id': 111,
-                    'jsonrpc': '2.0',
-                    'method': 'probe',
-                    'params': {'data': 'one'},
+                    "id": 111,
+                    "jsonrpc": "2.0",
+                    "method": "probe",
+                    "params": {"data": "one"},
                 },
-                {'id': 111, 'jsonrpc': '2.0', 'result': 'one'},
+                {"id": 111, "jsonrpc": "2.0", "result": "one"},
                 None,
             ),
             (
-                'mw_exception_exit',
-                'exit',
+                "mw_exception_exit",
+                "exit",
                 {
-                    'id': 111,
-                    'jsonrpc': '2.0',
-                    'method': 'probe',
-                    'params': {'data': 'one'}
+                    "id": 111,
+                    "jsonrpc": "2.0",
+                    "method": "probe",
+                    "params": {"data": "one"},
                 },
-                {'id': 111, 'jsonrpc': '2.0', 'result': 'one'},
+                {"id": 111, "jsonrpc": "2.0", "result": "one"},
                 None,
             ),
             (
-                'mw_first',
-                'exit',
+                "mw_first",
+                "exit",
                 {
-                    'id': 111,
-                    'jsonrpc': '2.0',
-                    'method': 'probe',
-                    'params': {'data': 'one'}
+                    "id": 111,
+                    "jsonrpc": "2.0",
+                    "method": "probe",
+                    "params": {"data": "one"},
                 },
-                {'id': 111, 'jsonrpc': '2.0', 'error': {'code': -32603, 'message': 'Internal error'}},
+                {
+                    "id": 111,
+                    "jsonrpc": "2.0",
+                    "error": {"code": -32603, "message": "Internal error"},
+                },
                 RuntimeError,
             ),
         ]

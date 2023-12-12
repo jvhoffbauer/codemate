@@ -27,7 +27,9 @@ def event_counter():
 @pytest.fixture(autouse=True)
 def app_routes(app: FastAPI, models):
     user_schema = TableModelParser.get_table_model_schema(models.User)
-    user_crud = SqlalchemyCrud(models.User, db.engine).register_crud(schema_read=user_schema)
+    user_crud = SqlalchemyCrud(models.User, db.engine).register_crud(
+        schema_read=user_schema
+    )
     app.include_router(user_crud.router)
 
 
@@ -51,7 +53,9 @@ async def test_create_event(async_client: AsyncClient, event_counter, models):
     assert event_counter.after == event_counter.before
 
 
-async def test_update_event(async_client: AsyncClient, fake_users, event_counter, models):
+async def test_update_event(
+    async_client: AsyncClient, fake_users, event_counter, models
+):
     @event.listens_for(models.User, "before_update")
     def receive_before_update(mapper, connection, target):
         "listen for the 'before_update' event"
@@ -77,7 +81,9 @@ async def test_update_event(async_client: AsyncClient, fake_users, event_counter
     assert event_counter.after == event_counter.before
 
 
-async def test_delete_event(async_client: AsyncClient, fake_users, event_counter, models):
+async def test_delete_event(
+    async_client: AsyncClient, fake_users, event_counter, models
+):
     @event.listens_for(models.User, "before_delete")
     def receive_before_delete(mapper, connection, target):
         "listen for the 'before_delete' event"

@@ -22,7 +22,9 @@ class TmpAdmin(admin.FormAdmin):
 class TmpAdmin1(TmpAdmin):
     schema = LoginSchema
 
-    async def handle(self, request: Request, data: BaseModel, **kwargs) -> BaseApiOut[Any]:
+    async def handle(
+        self, request: Request, data: BaseModel, **kwargs
+    ) -> BaseApiOut[Any]:
         ret = data.dict()
         return BaseApiOut(data={**ret, "extra": "success"})
 
@@ -72,7 +74,9 @@ async def test_form_admin_route_init(site: AdminSite, async_client: AsyncClient)
     # test form amis json
     res = await async_client.post(ins.router_path + ins.page_path)
     assert res.json()["data"]["body"]["type"] == "form"
-    assert res.json()["data"]["body"]["initApi"]["url"] == ins.router_path + ins.form_path
+    assert (
+        res.json()["data"]["body"]["initApi"]["url"] == ins.router_path + ins.form_path
+    )
     assert res.text.find("username") and res.text.find("password")
     # test form api init
     data = {"username": "admin", "password": "admin"}

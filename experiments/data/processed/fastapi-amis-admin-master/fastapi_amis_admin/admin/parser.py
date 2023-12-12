@@ -2,7 +2,11 @@ import datetime
 from enum import Enum
 from typing import Any, Generator, Iterable, Type, TypeVar, Union
 
-from fastapi._compat import Undefined, field_annotation_is_scalar_sequence, field_annotation_is_sequence
+from fastapi._compat import (
+    Undefined,
+    field_annotation_is_scalar_sequence,
+    field_annotation_is_sequence,
+)
 from pydantic import BaseModel, Json
 from pydantic.utils import deep_update, smart_deepcopy
 
@@ -59,8 +63,12 @@ class AmisParser:
         elif formitem.type == "input-file" and not getattr(formitem, "receiver", None):
             formitem.receiver = self.file_receiver
         elif formitem.type == "input-rich-text":
-            formitem.receiver = getattr(formitem, "receiver", None) or self.image_receiver
-            formitem.videoReceiver = getattr(formitem, "videoReceiver", None) or self.file_receiver
+            formitem.receiver = (
+                getattr(formitem, "receiver", None) or self.image_receiver
+            )
+            formitem.videoReceiver = (
+                getattr(formitem, "videoReceiver", None) or self.file_receiver
+            )
         if formitem.type in {"input-image", "input-file"}:
             # Add manual input file link component.
             formitem = amis.Group(
@@ -75,7 +83,9 @@ class AmisParser:
             )
         return formitem
 
-    def as_form_item(self, modelfield: ModelField, set_default: bool = False, is_filter: bool = False) -> FormItem:
+    def as_form_item(
+        self, modelfield: ModelField, set_default: bool = False, is_filter: bool = False
+    ) -> FormItem:
         """
         Get amis form item from pydantic field.
         Args:
@@ -87,12 +97,18 @@ class AmisParser:
 
         """
         formitem = self._get_form_item_from_kwargs(modelfield, is_filter=is_filter)
-        formitem = self.update_common_attrs(modelfield, formitem, set_default=set_default, is_filter=is_filter)
+        formitem = self.update_common_attrs(
+            modelfield, formitem, set_default=set_default, is_filter=is_filter
+        )
         return self._wrap_form_item(formitem)
 
-    def as_table_column(self, modelfield: ModelField, quick_edit: bool = False) -> TableColumn:
+    def as_table_column(
+        self, modelfield: ModelField, quick_edit: bool = False
+    ) -> TableColumn:
         column = self._get_table_column_from_kwargs(modelfield)
-        column = self.update_common_attrs(modelfield, column, set_default=False, is_filter=False)
+        column = self.update_common_attrs(
+            modelfield, column, set_default=False, is_filter=False
+        )
         column.sortable = True
         if column.type in ["switch", "mapping"]:
             column.sortable = False
@@ -106,7 +122,9 @@ class AmisParser:
                 column.quickEdit.update({"mode": "inline"})
         return column
 
-    def as_amis_form(self, model: Type[BaseModel], set_default: bool = False, is_filter: bool = False) -> Form:
+    def as_amis_form(
+        self, model: Type[BaseModel], set_default: bool = False, is_filter: bool = False
+    ) -> Form:
         """Get amis form from pydantic model.
         Args:
             model: Pydantic model
@@ -143,15 +161,25 @@ class AmisParser:
             if set_default and modelfield.default is not Undefined:
                 item.value = modelfield.default
         item.name = modelfield.alias
-        item.label = _(field_info.title) if field_info.title else _(modelfield.name)  # The use of I18N
+        item.label = (
+            _(field_info.title) if field_info.title else _(modelfield.name)
+        )  # The use of I18N
         label_name = "labelRemark" if isinstance(item, FormItem) else "remark"
         if getattr(item, label_name, None) is None:
-            label = Remark(content=_(field_info.description)) if field_info.description else None  # The use of I18N
+            label = (
+                Remark(content=_(field_info.description))
+                if field_info.description
+                else None
+            )  # The use of I18N
             setattr(item, label_name, label)
         return item
 
-    def _get_form_item_from_kwargs(self, modelfield: ModelField, is_filter: bool = False) -> FormItem:
-        formitem = self.get_field_amis_extra(modelfield, ["amis_form_item", "amis_filter_item"][is_filter])
+    def _get_form_item_from_kwargs(
+        self, modelfield: ModelField, is_filter: bool = False
+    ) -> FormItem:
+        formitem = self.get_field_amis_extra(
+            modelfield, ["amis_form_item", "amis_filter_item"][is_filter]
+        )
         # List type parse to InputArray
         outer_type = field_outer_type(modelfield) or modelfield.type_
         if field_annotation_is_sequence(outer_type):
@@ -161,7 +189,9 @@ class AmisParser:
                 return formitem
             # Parse the internal type of the list.
             type_ = scalar_sequence_inner_type(outer_type)
-            kwargs = self.get_field_amis_form_item_type(type_=type_, is_filter=is_filter)
+            kwargs = self.get_field_amis_form_item_type(
+                type_=type_, is_filter=is_filter
+            )
             update = formitem.items.amis_dict() if formitem.items else {}
             if update:
                 kwargs = deep_update(kwargs, update)
@@ -205,9 +235,15 @@ class AmisParser:
         elif issubclass(type_, datetime.time):
             kwargs["type"] = "time"
         elif issubclass(type_, Enum):
-            items = type_.choices if issubclass(type_, Choices) else [(m.value, m.value) for m in type_]
+            items = (
+                type_.choices
+                if issubclass(type_, Choices)
+                else [(m.value, m.value) for m in type_]
+            )
             kwargs["type"] = "mapping"
-            kwargs["filterable"] = {"options": [{"label": v, "value": k} for k, v in items]}
+            kwargs["filterable"] = {
+                "options": [{"label": v, "value": k} for k, v in items]
+            }
             kwargs["map"] = {
                 k: f"<span class='label label-{label.value}'>{v}</span>"
                 for (k, v), label in zip(items, cyclic_generator(LabelEnum))
@@ -222,14 +258,20 @@ class AmisParser:
             }
         return kwargs
 
-    def get_field_amis_form_item_type(self, type_: Any, is_filter: bool, required: bool = False) -> dict:
+    def get_field_amis_form_item_type(
+        self, type_: Any, is_filter: bool, required: bool = False
+    ) -> dict:
         """Get amis form item type from pydantic model field type."""
         kwargs = {}
         type_ = annotation_outer_type(type_)
         if type_ in {str, Any}:
             kwargs["type"] = "input-text"
         elif issubclass(type_, Enum):
-            items = type_.choices if issubclass(type_, Choices) else [(m.value, m.value) for m in type_]
+            items = (
+                type_.choices
+                if issubclass(type_, Choices)
+                else [(m.value, m.value) for m in type_]
+            )
             kwargs.update(
                 {
                     "type": "select",
@@ -247,7 +289,9 @@ class AmisParser:
                 kwargs["type"] = "input-datetime-range"
                 kwargs["format"] = "YYYY-MM-DD HH:mm:ss"
                 # 给筛选的 DateTimeRange 添加 today 标签
-                kwargs["ranges"] = "today,yesterday,7daysago,prevweek,thismonth,prevmonth,prevquarter"
+                kwargs[
+                    "ranges"
+                ] = "today,yesterday,7daysago,prevweek,thismonth,prevmonth,prevquarter"
             elif issubclass(type_, datetime.date):
                 kwargs["type"] = "input-date-range"
                 kwargs["format"] = "YYYY-MM-DD"

@@ -31,11 +31,13 @@ def _get_current_user(
         token_data = schemas.TokenPayload(**payload)
     except jwt.ExpiredSignatureError:
         raise HTTPException(
-            status_code=status.HTTP_403_FORBIDDEN, detail="Token expired. Please log in again."
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Token expired. Please log in again.",
         )
     except (jwt.JWTError, pydantic.ValidationError):
         raise HTTPException(
-            status_code=status.HTTP_403_FORBIDDEN, detail="Could not validate credentials."
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Could not validate credentials.",
         )
     current_user = crud.user.get(db, id=token_data.sub)
     if not current_user:
@@ -46,7 +48,9 @@ def _get_current_user(
     return current_user
 
 
-def get_current_active_user(current_user: models.User = Depends(_get_current_user)) -> models.User:
+def get_current_active_user(
+    current_user: models.User = Depends(_get_current_user),
+) -> models.User:
     if not crud.user.is_active(current_user):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,

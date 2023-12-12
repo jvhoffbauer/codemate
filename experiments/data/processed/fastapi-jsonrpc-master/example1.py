@@ -5,12 +5,12 @@ from fastapi import Body
 
 app = jsonrpc.API()
 
-api_v1 = jsonrpc.Entrypoint('/api/v1/jsonrpc')
+api_v1 = jsonrpc.Entrypoint("/api/v1/jsonrpc")
 
 
 class MyError(jsonrpc.BaseError):
     CODE = 5000
-    MESSAGE = 'My error'
+    MESSAGE = "My error"
 
     class DataModel(BaseModel):
         details: str
@@ -18,10 +18,10 @@ class MyError(jsonrpc.BaseError):
 
 @api_v1.method(errors=[MyError])
 def echo(
-    data: str = Body(..., examples=['123']),
+    data: str = Body(..., examples=["123"]),
 ) -> str:
-    if data == 'error':
-        raise MyError(data={'details': 'error'})
+    if data == "error":
+        raise MyError(data={"details": "error"})
     else:
         return data
 
@@ -29,6 +29,7 @@ def echo(
 app.bind_entrypoint(api_v1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import uvicorn
-    uvicorn.run('example1:app', port=5000, debug=True, access_log=False)
+
+    uvicorn.run("example1:app", port=5000, debug=True, access_log=False)

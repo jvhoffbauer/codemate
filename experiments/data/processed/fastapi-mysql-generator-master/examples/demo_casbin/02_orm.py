@@ -17,9 +17,9 @@ pip install casbin_sqlalchemy_adapter
 import casbin
 import casbin_sqlalchemy_adapter
 
-adapter = casbin_sqlalchemy_adapter.Adapter('sqlite:///test.db')
+adapter = casbin_sqlalchemy_adapter.Adapter("sqlite:///test.db")
 
-e = casbin.Enforcer('./model.conf', adapter, True)
+e = casbin.Enforcer("./model.conf", adapter, True)
 
 sub = "nick"  # the user that wants to access a resource.
 obj = "data1"  # the resource that is going to be accessed.
@@ -36,4 +36,3 @@ print(res)
 # else:
 #     # deny the request, show an error
 #     print("拒绝")
-

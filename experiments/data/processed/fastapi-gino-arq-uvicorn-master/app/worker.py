@@ -10,10 +10,14 @@ from .application import db
 from .settings.arq import settings
 from .settings.globals import ARQ_BACKGROUND_FUNCTIONS, DATABASE_CONFIG
 
-FUNCTIONS: list = [
-    import_string(background_function)
-    for background_function in list(ARQ_BACKGROUND_FUNCTIONS)
-] if ARQ_BACKGROUND_FUNCTIONS is not None else list()
+FUNCTIONS: list = (
+    [
+        import_string(background_function)
+        for background_function in list(ARQ_BACKGROUND_FUNCTIONS)
+    ]
+    if ARQ_BACKGROUND_FUNCTIONS is not None
+    else list()
+)
 
 
 async def startup(ctx):

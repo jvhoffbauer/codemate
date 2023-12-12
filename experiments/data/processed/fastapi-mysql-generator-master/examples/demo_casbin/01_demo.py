@@ -16,7 +16,7 @@
 
 import casbin
 
-e = casbin.Enforcer('./model.conf', "./policy.csv", True)
+e = casbin.Enforcer("./model.conf", "./policy.csv", True)
 
 sub = "nick"  # the user that wants to access a resource.
 obj = "data1"  # the resource that is going to be accessed.

@@ -4,10 +4,13 @@ from uuid import UUID, uuid4
 import pytest
 from celery import shared_task
 
-from asgi_correlation_id.extensions.celery import load_celery_current_and_parent_ids, load_correlation_ids
+from asgi_correlation_id.extensions.celery import (
+    load_celery_current_and_parent_ids,
+    load_correlation_ids,
+)
 from tests.conftest import default_app
 
-logger = logging.getLogger('asgi_correlation_id')
+logger = logging.getLogger("asgi_correlation_id")
 
 pytestmark = pytest.mark.asyncio
 
@@ -18,37 +21,39 @@ load_celery_current_and_parent_ids()
 
 @shared_task
 def task1():
-    logger.info('test1')
+    logger.info("test1")
     task2.delay()
 
 
 @shared_task()
 def task2():
-    logger.info('test2')
+    logger.info("test2")
     task3.delay()
 
 
 @shared_task()
 def task3():
-    logger.info('test3')
+    logger.info("test3")
 
 
-async def test_endpoint_to_worker_to_worker(client, caplog, celery_session_app, celery_session_worker):
+async def test_endpoint_to_worker_to_worker(
+    client, caplog, celery_session_app, celery_session_worker
+):
     """
     We expect:
         - The correlation ID to persist from the endpoint to the final worker
         - The current ID of the first worker to be added as the parent ID of the second worker
     """
 
-    @default_app.get('/celery-test', status_code=200)
+    @default_app.get("/celery-test", status_code=200)
     async def test_view():
-        logger.debug('Test view')
+        logger.debug("Test view")
         task1.delay().get(timeout=10)
 
-    caplog.set_level('DEBUG')
+    caplog.set_level("DEBUG")
 
     cid = uuid4().hex
-    await client.get('celery-test', headers={'X-Request-ID': cid})
+    await client.get("celery-test", headers={"X-Request-ID": cid})
 
     # Check the view record
     assert caplog.records[0].correlation_id == cid
@@ -70,14 +75,16 @@ async def test_endpoint_to_worker_to_worker(client, caplog, celery_session_app, 
         last_current_id = record.celery_current_id
 
 
-async def test_worker_to_worker_to_worker(caplog, celery_session_app, celery_session_worker):
+async def test_worker_to_worker_to_worker(
+    caplog, celery_session_app, celery_session_worker
+):
     """
     We expect:
         - A correlation ID to be generated in the first worker and persisted to the final worker
         - The current ID of the first worker to be added as the
             parent ID of the second worker, and the same for 2 and 3
     """
-    caplog.set_level('DEBUG')
+    caplog.set_level("DEBUG")
 
     # Trigger task
     task1.delay().get(timeout=10)

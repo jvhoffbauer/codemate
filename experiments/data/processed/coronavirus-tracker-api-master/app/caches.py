@@ -21,7 +21,7 @@ else:
 
 @functools.lru_cache()
 def get_cache(namespace) -> Union[aiocache.RedisCache, aiocache.SimpleMemoryCache]:
-    """Retunr """
+    """Retunr"""
     if REDIS_URL:
         LOGGER.info("using RedisCache")
         return aiocache.RedisCache(

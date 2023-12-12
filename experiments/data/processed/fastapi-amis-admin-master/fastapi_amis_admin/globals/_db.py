@@ -4,7 +4,12 @@ from sqlalchemy_database import AsyncDatabase, Database
 from typing_extensions import overload
 
 from fastapi_amis_admin.globals._sites import exists_site, get_site
-from fastapi_amis_admin.globals.core import DEFAULT_ALIAS, exists_global, get_global, set_global
+from fastapi_amis_admin.globals.core import (
+    DEFAULT_ALIAS,
+    exists_global,
+    get_global,
+    set_global,
+)
 
 SYNC_DB_NAME = "sync_db"
 ASYNC_DB_NAME = "async_db"
@@ -42,7 +47,9 @@ def get_db(*, alias: str = DEFAULT_ALIAS, is_async: bool = True) -> AsyncDatabas
     ...
 
 
-def get_db(*, alias: str = DEFAULT_ALIAS, is_async: bool = False) -> Union[Database, AsyncDatabase]:
+def get_db(
+    *, alias: str = DEFAULT_ALIAS, is_async: bool = False
+) -> Union[Database, AsyncDatabase]:
     """Get database"""
     if is_async:
         return get_async_db(alias=alias)

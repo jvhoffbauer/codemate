@@ -30,7 +30,9 @@ def get_global(name: str, *, alias: str = DEFAULT_ALIAS) -> Any:
     if (name, alias) not in __globals__:
         if alias == DEFAULT_ALIAS and _exists_faa_global(name):
             return getattr(__faa_globals__, name)
-        raise ValueError(f"global[{name},{alias}] not found, please call `set_global` first")
+        raise ValueError(
+            f"global[{name},{alias}] not found, please call `set_global` first"
+        )
     return __globals__[(name, alias)]
 
 
@@ -50,7 +52,9 @@ def set_global(
 
 def exists_global(name: str, *, alias: str = DEFAULT_ALIAS) -> bool:
     """Judge whether the global variable exists"""
-    return (name, alias) in __globals__ or (alias == DEFAULT_ALIAS and _exists_faa_global(name))
+    return (name, alias) in __globals__ or (
+        alias == DEFAULT_ALIAS and _exists_faa_global(name)
+    )
 
 
 def _exists_faa_global(name: str) -> bool:

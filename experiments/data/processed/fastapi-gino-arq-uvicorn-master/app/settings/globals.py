@@ -11,9 +11,7 @@ config: Config = Config(p if p.exists() else None)
 
 DATABASE: str = config("DATABASE", cast=str)
 DB_USER: Optional[str] = config("DB_USER", cast=str, default=None)
-DB_PASSWORD: Optional[Secret] = config(
-    "DB_PASSWORD", cast=Secret, default=None
-)
+DB_PASSWORD: Optional[Secret] = config("DB_PASSWORD", cast=Secret, default=None)
 DB_HOST: str = config("DB_HOST", cast=str, default="localhost")
 DB_PORT: int = config("DB_PORT", cast=int, default=5432)
 DATABASE_CONFIG: DatabaseURL = DatabaseURL(

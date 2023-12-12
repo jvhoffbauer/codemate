@@ -11,7 +11,7 @@ from asgi_correlation_id.extensions.sentry import get_sentry_extension
 if TYPE_CHECKING:
     from starlette.types import ASGIApp, Message, Receive, Scope, Send
 
-logger = logging.getLogger('asgi_correlation_id')
+logger = logging.getLogger("asgi_correlation_id")
 
 
 def is_valid_uuid4(uuid_: str) -> bool:
@@ -24,13 +24,15 @@ def is_valid_uuid4(uuid_: str) -> bool:
         return False
 
 
-FAILED_VALIDATION_MESSAGE = 'Generated new request ID (%s), since request header value failed validation'
+FAILED_VALIDATION_MESSAGE = (
+    "Generated new request ID (%s), since request header value failed validation"
+)
 
 
 @dataclass
 class CorrelationIdMiddleware:
-    app: 'ASGIApp'
-    header_name: str = 'X-Request-ID'
+    app: "ASGIApp"
+    header_name: str = "X-Request-ID"
     update_request_header: bool = True
 
     # ID-generating callable
@@ -42,11 +44,11 @@ class CorrelationIdMiddleware:
     # ID transformer - can be used to clean/mutate IDs
     transformer: Optional[Callable[[str], str]] = field(default=lambda a: a)
 
-    async def __call__(self, scope: 'Scope', receive: 'Receive', send: 'Send') -> None:
+    async def __call__(self, scope: "Scope", receive: "Receive", send: "Send") -> None:
         """
         Load request ID from headers if present. Generate one otherwise.
         """
-        if scope['type'] not in ('http', 'websocket'):
+        if scope["type"] not in ("http", "websocket"):
             await self.app(scope, receive, send)
             return
 
@@ -80,8 +82,8 @@ class CorrelationIdMiddleware:
         correlation_id.set(id_value)
         self.sentry_extension(id_value)
 
-        async def handle_outgoing_request(message: 'Message') -> None:
-            if message['type'] == 'http.response.start' and correlation_id.get():
+        async def handle_outgoing_request(message: "Message") -> None:
+            if message["type"] == "http.response.start" and correlation_id.get():
                 headers = MutableHeaders(scope=message)
                 headers.append(self.header_name, correlation_id.get())
 

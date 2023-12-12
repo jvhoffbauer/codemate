@@ -227,7 +227,9 @@ if IS_PYDANTIC_V2:
         fields_values: Dict[str, Any] = {}
         defaults: Dict[
             str, Any
-        ] = {}  # keeping this separate from `fields_values` helps us compute `_fields_set`
+        ] = (
+            {}
+        )  # keeping this separate from `fields_values` helps us compute `_fields_set`
         for name, field in cls.model_fields.items():
             if field.alias and field.alias in values:
                 fields_values[name] = values.pop(field.alias)
@@ -533,10 +535,7 @@ else:
     def sqlmodel_init(*, self: "SQLModel", data: Dict[str, Any]) -> None:
         values, fields_set, validation_error = validate_model(self.__class__, data)
         # Only raise errors if not a SQLModel model
-        if (
-            not is_table_model_class(self.__class__)  # noqa
-            and validation_error
-        ):
+        if not is_table_model_class(self.__class__) and validation_error:  # noqa
             raise validation_error
         if not is_table_model_class(self.__class__):
             object.__setattr__(self, "__dict__", values)

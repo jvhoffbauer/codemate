@@ -91,9 +91,13 @@ class SqlalchemySelector(Generic[TableModelT]):
     model: Type[TableModelT] = None  # SQLModel,DeclarativeMeta,InspectTable
     fields: List[SqlaField] = []  # Need to query the field from the database
     list_filter: List[SqlaField] = []  # Query filterable fields
-    exclude: List[SqlaInsAttr] = []  # Model fields that do not need to be queried. It is not recommended to use.
+    exclude: List[
+        SqlaInsAttr
+    ] = []  # Model fields that do not need to be queried. It is not recommended to use.
     ordering: List[Union[SqlaField, UnaryExpression]] = []  # Default sort field
-    link_models: Dict[str, Tuple[Type[Table], Column, Column]] = None  # Link table information
+    link_models: Dict[
+        str, Tuple[Type[Table], Column, Column]
+    ] = None  # Link table information
     """Relate information of the target model with the current model.
     - The Data structure is: {Target table name: (link model table,
         Column in the link model table associated with the current model,
@@ -106,18 +110,26 @@ class SqlalchemySelector(Generic[TableModelT]):
     """
     pk_name: str = "id"  # Primary key name
 
-    def __init__(self, model: Type[TableModelT] = None, fields: List[SqlaField] = None) -> None:
+    def __init__(
+        self, model: Type[TableModelT] = None, fields: List[SqlaField] = None
+    ) -> None:
         self.model = model or self.model
         assert self.model, "model is None"
-        assert hasattr(self.model, "__table__"), "model must be has __table__ attribute."
-        self.pk_name: str = self.pk_name or self.model.__table__.primary_key.columns.keys()[0]
+        assert hasattr(
+            self.model, "__table__"
+        ), "model must be has __table__ attribute."
+        self.pk_name: str = (
+            self.pk_name or self.model.__table__.primary_key.columns.keys()[0]
+        )
         self.pk: InstrumentedAttribute = self.model.__dict__[self.pk_name]
         self.parser = TableModelParser(self.model)
         fields = fields or self.fields or self.model_insfields
         exclude = self.parser.filter_insfield(self.exclude)
         self.fields = [
             sqlfield
-            for sqlfield in self.parser.filter_insfield(fields + [self.pk], save_class=(Label,))
+            for sqlfield in self.parser.filter_insfield(
+                fields + [self.pk], save_class=(Label,)
+            )
             if sqlfield not in exclude
         ]
         assert self.fields, "fields is None"
@@ -137,14 +149,18 @@ class SqlalchemySelector(Generic[TableModelT]):
     def _filter_entities(self) -> Dict[str, Union[InstrumentedAttribute, Label]]:
         return {
             self.parser.get_alias(sqlfield): sqlfield
-            for sqlfield in self.parser.filter_insfield(self.list_filter, save_class=(Label,))
+            for sqlfield in self.parser.filter_insfield(
+                self.list_filter, save_class=(Label,)
+            )
         }
 
     async def get_select(self, request: Request) -> Select:
         return select(*self._select_entities.values())
 
     def _calc_ordering(self, orderBy, orderDir):
-        sqlfield = self._select_entities.get(orderBy, self._filter_entities.get(orderBy))
+        sqlfield = self._select_entities.get(
+            orderBy, self._filter_entities.get(orderBy)
+        )
         order = None
         if sqlfield is not None:
             order = sqlfield.desc() if orderDir == "desc" else sqlfield.asc()
@@ -195,7 +211,9 @@ class SqlalchemySelector(Generic[TableModelT]):
                     )
                 )
                 if op == "not_in":
-                    return self.pk.not_in(select(pk_col).where(link_col.in_(link_item_id)))
+                    return self.pk.not_in(
+                        select(pk_col).where(link_col.in_(link_item_id))
+                    )
                 else:
                     return self.pk.in_(select(pk_col).where(link_col.in_(link_item_id)))
         return None
@@ -217,7 +235,9 @@ class SqlalchemySelector(Generic[TableModelT]):
                 if operator in ["like", "not_like"] and value.find("%") == -1:
                     return operator, (f"%{value}%",)
                 elif operator in ["in_", "not_in"]:
-                    return operator, (list(map(python_type_parse, set(value.split(",")))),)
+                    return operator, (
+                        list(map(python_type_parse, set(value.split(",")))),
+                    )
                 elif operator == "between":
                     value = value.split(",")[:2]
                     if len(value) < 2:
@@ -230,14 +250,24 @@ class SqlalchemySelector(Generic[TableModelT]):
         for k, v in data.items():
             sqlfield = self._filter_entities.get(k)
             if sqlfield is not None:
-                operator, val = self._parser_query_value(v, python_type_parse=get_python_type_parse(sqlfield))
+                operator, val = self._parser_query_value(
+                    v, python_type_parse=get_python_type_parse(sqlfield)
+                )
                 if operator:
                     lst.append(getattr(sqlfield, operator)(*val))
         return lst
 
 
 class SqlalchemyCrud(
-    BaseCrud[SchemaModelT, SchemaListT, SchemaFilterT, SchemaCreateT, SchemaReadT, SchemaUpdateT], SqlalchemySelector[TableModelT]
+    BaseCrud[
+        SchemaModelT,
+        SchemaListT,
+        SchemaFilterT,
+        SchemaCreateT,
+        SchemaReadT,
+        SchemaUpdateT,
+    ],
+    SqlalchemySelector[TableModelT],
 ):
     engine: SqlalchemyDatabase = None  # sqlalchemy engine
     create_fields: List[SqlaInsAttr] = []  # Create item data field
@@ -262,7 +292,9 @@ class SqlalchemyCrud(
         assert self.engine, "engine is None"
         self.db = get_engine_db(self.engine)
         SqlalchemySelector.__init__(self, model, fields)
-        schema_model: Type[SchemaModelT] = self.schema_model or TableModelParser.get_table_model_schema(model)
+        schema_model: Type[
+            SchemaModelT
+        ] = self.schema_model or TableModelParser.get_table_model_schema(model)
         BaseCrud.__init__(self, schema_model, router)
         # if self.readonly_fields:
         #     logging.warning(
@@ -299,7 +331,9 @@ class SqlalchemyCrud(
         # Modify the modelfields if necessary
         for modelfield in modelfields:
             type_ = annotation_outer_type(modelfield.type_)
-            if field_annotation_is_scalar(modelfield.type_) and issubclass(type_, (Enum, bool, str)):
+            if field_annotation_is_scalar(modelfield.type_) and issubclass(
+                type_, (Enum, bool, str)
+            ):
                 continue
             if PYDANTIC_V2:
                 modelfield.field_info.annotation = str
@@ -330,9 +364,11 @@ class SqlalchemyCrud(
         # Set the update fields to the model insfields if not provided
         self.update_fields = self.update_fields or self.model_insfields
         # Exclude certain fields if specified
-        exclude = {k for k, v in ValueItems.merge(self.update_exclude, {}).items() if not isinstance(v, (dict, list, set))} or {
-            self.pk_name
-        }
+        exclude = {
+            k
+            for k, v in ValueItems.merge(self.update_exclude, {}).items()
+            if not isinstance(v, (dict, list, set))
+        } or {self.pk_name}
         # Filter out any non-model fields from the update fields
         modelfields = self.parser.filter_modelfield(self.update_fields, exclude=exclude)
         # Create the schema using the model fields
@@ -346,9 +382,11 @@ class SqlalchemyCrud(
         # Set the create fields to the model insfields if not provided
         self.create_fields = self.create_fields or self.model_insfields
         # Exclude certain fields if specified
-        exclude = {k for k, v in ValueItems.merge(self.create_exclude, {}).items() if not isinstance(v, (dict, list, set))} or {
-            self.pk_name
-        }
+        exclude = {
+            k
+            for k, v in ValueItems.merge(self.create_exclude, {}).items()
+            if not isinstance(v, (dict, list, set))
+        } or {self.pk_name}
         # Filter out any non-model fields from the create fields
         modelfields = self.parser.filter_modelfield(self.create_fields, exclude=exclude)
         # Create the schema using the model fields
@@ -388,15 +426,21 @@ class SqlalchemyCrud(
         """Parse the database data query result dictionary into schema_list."""
         return self.schema_list.parse_obj(values)
 
-    def _fetch_item_scalars(self, session: Session, item_id: Iterable[str]) -> List[TableModelT]:
-        sel = select(self.model).where(self.pk.in_(list(map(get_python_type_parse(self.pk), item_id))))
+    def _fetch_item_scalars(
+        self, session: Session, item_id: Iterable[str]
+    ) -> List[TableModelT]:
+        sel = select(self.model).where(
+            self.pk.in_(list(map(get_python_type_parse(self.pk), item_id)))
+        )
         return session.scalars(sel).all()
 
     async def fetch_items(self, *item_id: str) -> List[TableModelT]:
         """Fetch the database data by id."""
         return await self.db.async_run_sync(self._fetch_item_scalars, item_id)
 
-    def _create_items(self, session: Session, items: List[Dict[str, Any]]) -> List[TableModelT]:
+    def _create_items(
+        self, session: Session, items: List[Dict[str, Any]]
+    ) -> List[TableModelT]:
         if not items:
             return []
         objs = [self.create_item(item) for item in items]
@@ -404,7 +448,9 @@ class SqlalchemyCrud(
         session.flush()
         return objs
 
-    async def create_items(self, request: Request, items: List[SchemaCreateT]) -> List[TableModelT]:
+    async def create_items(
+        self, request: Request, items: List[SchemaCreateT]
+    ) -> List[TableModelT]:
         """Create multiple database data."""
         items = [await self.on_create_pre(request, obj) for obj in items]
         return await self.db.async_run_sync(self._create_items, items)
@@ -413,17 +459,23 @@ class SqlalchemyCrud(
         items = self._fetch_item_scalars(session, item_id)
         return [self.read_item(obj) for obj in items]
 
-    async def read_items(self, request: Request, item_id: List[str]) -> List[SchemaReadT]:
+    async def read_items(
+        self, request: Request, item_id: List[str]
+    ) -> List[SchemaReadT]:
         """Fetch the database data by id."""
         return await self.db.async_run_sync(self._read_items, item_id)
 
-    def _update_items(self, session: Session, item_id: List[str], values: Dict[str, Any]) -> List[TableModelT]:
+    def _update_items(
+        self, session: Session, item_id: List[str], values: Dict[str, Any]
+    ) -> List[TableModelT]:
         items = self._fetch_item_scalars(session, item_id)
         for item in items:
             self.update_item(item, values)
         return items
 
-    async def update_items(self, request: Request, item_id: List[str], values: Dict[str, Any]) -> List[TableModelT]:
+    async def update_items(
+        self, request: Request, item_id: List[str], values: Dict[str, Any]
+    ) -> List[TableModelT]:
         """Update the database data by id."""
         return await self.db.async_run_sync(self._update_items, item_id, values)
 
@@ -433,7 +485,9 @@ class SqlalchemyCrud(
             self.delete_item(item)
         return items
 
-    async def delete_items(self, request: Request, item_id: List[str]) -> List[TableModelT]:
+    async def delete_items(
+        self, request: Request, item_id: List[str]
+    ) -> List[TableModelT]:
         """Delete the database data by id."""
         return await self.db.async_run_sync(self._delete_items, item_id)
 
@@ -443,7 +497,9 @@ class SqlalchemyCrud(
             return self.model.__name__
         return super().schema_name_prefix
 
-    async def on_create_pre(self, request: Request, obj: SchemaCreateT, **kwargs) -> Dict[str, Any]:
+    async def on_create_pre(
+        self, request: Request, obj: SchemaCreateT, **kwargs
+    ) -> Dict[str, Any]:
         data = obj.dict(by_alias=True)  # exclude=set(self.pk)
         if self.pk_name in data and not data.get(self.pk_name):
             del data[self.pk_name]
@@ -457,13 +513,25 @@ class SqlalchemyCrud(
         **kwargs,
     ) -> Dict[str, Any]:
         data = obj.dict(exclude=self.update_exclude, exclude_unset=True, by_alias=True)
-        data = {key: val for key, val in data.items() if val is not None or field_allow_none(model_fields(self.model)[key])}
+        data = {
+            key: val
+            for key, val in data.items()
+            if val is not None or field_allow_none(model_fields(self.model)[key])
+        }
         return data
 
-    async def on_filter_pre(self, request: Request, obj: Optional[SchemaFilterT], **kwargs) -> Dict[str, Any]:
-        return obj and {k: v for k, v in obj.dict(exclude_unset=True, by_alias=True).items() if v is not None}
+    async def on_filter_pre(
+        self, request: Request, obj: Optional[SchemaFilterT], **kwargs
+    ) -> Dict[str, Any]:
+        return obj and {
+            k: v
+            for k, v in obj.dict(exclude_unset=True, by_alias=True).items()
+            if v is not None
+        }
 
-    async def on_list_after(self, request: Request, result: Result, data: ItemListSchema, **kwargs) -> ItemListSchema:
+    async def on_list_after(
+        self, request: Request, result: Result, data: ItemListSchema, **kwargs
+    ) -> ItemListSchema:
         """Parse the database data query result dictionary into schema_list."""
         data.items = self.parser.conv_row_to_dict(result.all())
         data.items = [self.list_item(item) for item in data.items]
@@ -490,7 +558,9 @@ class SqlalchemyCrud(
             sel: self.AnnotatedSelect,  # type: ignore
         ):
             item_id = list(map(get_python_type_parse(self.pk), item_id))
-            filtered_id = await self.db.async_scalars(sel.where(self.pk.in_(item_id)).with_only_columns(self.pk))
+            filtered_id = await self.db.async_scalars(
+                sel.where(self.pk.in_(item_id)).with_only_columns(self.pk)
+            )
             return filtered_id.all()
 
         return depend
@@ -513,12 +583,16 @@ class SqlalchemyCrud(
                     sel = sel.filter(*self.calc_filter_clause(data.filters))
             if paginator.show_total:
                 data.total = await self.db.async_scalar(
-                    select(func.count("*")).select_from(sel.with_only_columns(self.pk).subquery())
+                    select(func.count("*")).select_from(
+                        sel.with_only_columns(self.pk).subquery()
+                    )
                 )
             orderBy = self._calc_ordering(paginator.orderBy, paginator.orderDir)
             if orderBy:
                 sel = sel.order_by(*orderBy)
-            sel = sel.limit(paginator.perPage).offset((paginator.page - 1) * paginator.perPage)
+            sel = sel.limit(paginator.perPage).offset(
+                (paginator.page - 1) * paginator.perPage
+            )
             result = await self.db.async_execute(sel)
             return BaseApiOut(data=await self.on_list_after(request, result, data))
 
@@ -541,7 +615,11 @@ class SqlalchemyCrud(
                 return self.error_execute_sql(request=request, error=error)
             result = len(items)
             if result == 1:  # if only one item, return the first item
-                result = await self.db.async_run_sync(lambda _: parse_obj_to_schema(items[0], self.schema_model, refresh=True))
+                result = await self.db.async_run_sync(
+                    lambda _: parse_obj_to_schema(
+                        items[0], self.schema_model, refresh=True
+                    )
+                )
             return BaseApiOut(data=result)
 
         return route

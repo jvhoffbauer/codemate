@@ -12,7 +12,6 @@ from common import custom_exc
 
 
 class UserLogic(object):
-
     @staticmethod
     def user_login_logic(phone: int, password: str):
         user = User.single_by_phone(phone=phone)

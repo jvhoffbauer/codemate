@@ -68,4 +68,3 @@ class UserInfo(BaseModel):
     role: str
     nickname: str
     avatar: AnyHttpUrl
-

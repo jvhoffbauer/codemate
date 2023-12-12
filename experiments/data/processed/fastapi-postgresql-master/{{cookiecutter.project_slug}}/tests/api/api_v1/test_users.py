@@ -7,9 +7,12 @@ from app.schemas.user import UserCreate
 from tests.utils import random_email, random_lower_string
 
 
-def test_get_users_superuser_me(client: TestClient, superuser_token_headers: dict[str, str]):
+def test_get_users_superuser_me(
+    client: TestClient, superuser_token_headers: dict[str, str]
+):
     response = client.get(
-        f"{settings.API_STR}{settings.API_V1_STR}/users/me", headers=superuser_token_headers
+        f"{settings.API_STR}{settings.API_V1_STR}/users/me",
+        headers=superuser_token_headers,
     )
     assert response.status_code == 200
     current_user = response.json()
@@ -19,9 +22,12 @@ def test_get_users_superuser_me(client: TestClient, superuser_token_headers: dic
     assert current_user["email"] == settings.FIRST_SUPERUSER
 
 
-def test_get_users_normal_user_me(client: TestClient, normal_user_token_headers: dict[str, str]):
+def test_get_users_normal_user_me(
+    client: TestClient, normal_user_token_headers: dict[str, str]
+):
     response = client.get(
-        f"{settings.API_STR}{settings.API_V1_STR}/users/me", headers=normal_user_token_headers
+        f"{settings.API_STR}{settings.API_V1_STR}/users/me",
+        headers=normal_user_token_headers,
     )
     assert response.status_code == 200
     current_user = response.json()
@@ -36,7 +42,12 @@ def test_superuser_create_user_new_email(
 ):
     email = random_email()
     password = random_lower_string()
-    data = {"email": email, "password": password, "is_superuser": True, "is_active": False}
+    data = {
+        "email": email,
+        "password": password,
+        "is_superuser": True,
+        "is_active": False,
+    }
     response = client.post(
         f"{settings.API_STR}{settings.API_V1_STR}/users",
         headers=superuser_token_headers,
@@ -54,7 +65,12 @@ def test_superuser_create_user_new_email(
 def test_create_user_new_email(client: TestClient, db: Session):
     email = random_email()
     password = random_lower_string()
-    data = {"email": email, "password": password, "is_superuser": True, "is_active": False}
+    data = {
+        "email": email,
+        "password": password,
+        "is_superuser": True,
+        "is_active": False,
+    }
     response = client.post(
         f"{settings.API_STR}{settings.API_V1_STR}/users/open",
         json=data,
@@ -68,7 +84,9 @@ def test_create_user_new_email(client: TestClient, db: Session):
     assert user.is_active
 
 
-def test_get_existing_user(client: TestClient, superuser_token_headers: dict, db: Session):
+def test_get_existing_user(
+    client: TestClient, superuser_token_headers: dict, db: Session
+):
     username = random_email()
     password = random_lower_string()
     user_in = UserCreate(email=username, password=password)
@@ -115,7 +133,8 @@ def test_retrieve_users(client: TestClient, superuser_token_headers: dict, db: S
     crud.user.create(db, obj_in=user_in2)
 
     response = client.get(
-        f"{settings.API_STR}{settings.API_V1_STR}/users", headers=superuser_token_headers
+        f"{settings.API_STR}{settings.API_V1_STR}/users",
+        headers=superuser_token_headers,
     )
     all_users = response.json()
 

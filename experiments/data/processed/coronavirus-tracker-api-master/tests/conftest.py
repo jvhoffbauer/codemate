@@ -57,8 +57,7 @@ class DateTimeStrpTime:
 
 
 class FakeRequestsGetResponse:
-    """Fake instance of a response from `aiohttp.ClientSession.get`.
-    """
+    """Fake instance of a response from `aiohttp.ClientSession.get`."""
 
     def __init__(self, url, filename, state):
         self.url = url
@@ -75,7 +74,9 @@ class FakeRequestsGetResponse:
         state = state.lower()
 
         # Determine filepath.
-        filepath = os.path.join(os.path.dirname(__file__), "example_data/{}.csv".format(state))
+        filepath = os.path.join(
+            os.path.dirname(__file__), "example_data/{}.csv".format(state)
+        )
 
         # Return fake response.
         print("Try to read {}".format(filepath))
@@ -114,8 +115,7 @@ async def mock_client_session():
 
 @asynccontextmanager
 async def mocked_session_get(*args, **kwargs):
-    """Mock response from client_session.get.
-    """
+    """Mock response from client_session.get."""
 
     url = args[0]
     filename = url.split("/")[-1]
@@ -127,8 +127,7 @@ async def mocked_session_get(*args, **kwargs):
 
 
 def mocked_strptime_isoformat(*args, **kwargs):
-    """Mock return value from datetime.strptime().isoformat().
-    """
+    """Mock return value from datetime.strptime().isoformat()."""
 
     date = args[0]
     strformat = args[1]

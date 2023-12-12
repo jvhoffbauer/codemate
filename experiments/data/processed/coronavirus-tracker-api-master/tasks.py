@@ -33,7 +33,9 @@ def fmt(ctx, targets="."):
 
 
 @invoke.task
-def check(ctx, fmt=False, sort=False, diff=False):  # pylint: disable=redefined-outer-name
+def check(
+    ctx, fmt=False, sort=False, diff=False
+):  # pylint: disable=redefined-outer-name
     """Check code format and import order."""
     if not any([fmt, sort]):
         fmt = True

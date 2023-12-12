@@ -39,7 +39,9 @@ def fake_users(models):
             id=i,
             username=f"User_{i}",
             password=f"password_{i}",
-            create_time=datetime.datetime.strptime(f"2022-01-0{i} 00:00:00", "%Y-%m-%d %H:%M:%S"),
+            create_time=datetime.datetime.strptime(
+                f"2022-01-0{i} 00:00:00", "%Y-%m-%d %H:%M:%S"
+            ),
             address=["address_1", "address_2"],
             attach={"attach_1": "attach_1", "attach_2": "attach_2"},
         )
@@ -53,7 +55,9 @@ def fake_users(models):
 @pytest.fixture(autouse=True)
 def app_routes(app: FastAPI, models):
     user_schema = TableModelParser.get_table_model_schema(models.User)
-    user_crud = SqlalchemyCrud(models.User, db.engine).register_crud(schema_read=user_schema)
+    user_crud = SqlalchemyCrud(models.User, db.engine).register_crud(
+        schema_read=user_schema
+    )
 
     app.include_router(user_crud.router)
 
@@ -141,7 +145,9 @@ def test_route_update(client: TestClient, fake_users, models):
     assert count == 3
     db.session.expire_all()  # Make the instance expire, because when creating the user,
     # the user object attributes have been cached, so you need to expire.
-    for user in db.session.scalars(select(models.User).where(models.User.id.in_([1, 2, 4]))):
+    for user in db.session.scalars(
+        select(models.User).where(models.User.id.in_([1, 2, 4]))
+    ):
         assert user.password == "new_password"
 
 
@@ -186,5 +192,7 @@ def test_route_list(client: TestClient, fake_users):
     res = client.post("/User/list", json={"username": "[~]User_%"})
     assert len(res.json()["data"]["items"]) == 5
 
-    res = client.post("/User/list", json={"create_time": "[-]2022-01-02 00:00:00,2022-01-04 01:00:00"})
+    res = client.post(
+        "/User/list", json={"create_time": "[-]2022-01-02 00:00:00,2022-01-04 01:00:00"}
+    )
     assert len(res.json()["data"]["items"]) == 3

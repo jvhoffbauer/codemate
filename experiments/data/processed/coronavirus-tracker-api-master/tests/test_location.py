@@ -53,7 +53,11 @@ def test_location_class(
         province,
         coords,
         now,
-        {"confirmed": confirmed, "deaths": deaths, "recovered": recovered,},
+        {
+            "confirmed": confirmed,
+            "deaths": deaths,
+            "recovered": recovered,
+        },
     )
 
     assert location_obj.country_code == country_code

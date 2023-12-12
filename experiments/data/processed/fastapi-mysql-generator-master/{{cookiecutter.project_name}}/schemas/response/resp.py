@@ -41,23 +41,27 @@ PermissionDenied: Resp = Resp(1008, "权限拒绝", http_status.HTTP_403_FORBIDD
 ServerError: Resp = Resp(5000, "服务器繁忙", http_status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
-def ok(*, data: Union[list, dict, str] = None, pagination: dict = None, msg: str = "success") -> Response:
+def ok(
+    *,
+    data: Union[list, dict, str] = None,
+    pagination: dict = None,
+    msg: str = "success"
+) -> Response:
     return JSONResponse(
         status_code=http_status.HTTP_200_OK,
-        content=jsonable_encoder({
-            'status': 200,
-            'msg': msg,
-            'data': data,
-            'pagination': pagination
-        })
+        content=jsonable_encoder(
+            {"status": 200, "msg": msg, "data": data, "pagination": pagination}
+        ),
     )
 
 
 def fail(resp: Resp) -> Response:
     return JSONResponse(
         status_code=resp.code,
-        content=jsonable_encoder({
-            'status': resp.status,
-            'msg': resp.msg,
-        })
+        content=jsonable_encoder(
+            {
+                "status": resp.status,
+                "msg": resp.msg,
+            }
+        ),
     )

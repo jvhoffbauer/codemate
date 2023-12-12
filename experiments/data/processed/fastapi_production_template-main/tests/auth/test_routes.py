@@ -21,7 +21,9 @@ async def test_register(client: TestClient) -> None:
 
 
 @pytest.mark.asyncio
-async def test_register_email_taken(client: TestClient, monkeypatch: pytest.MonkeyPatch) -> None:
+async def test_register_email_taken(
+    client: TestClient, monkeypatch: pytest.MonkeyPatch
+) -> None:
     from src.auth.dependencies import service
 
     async def fake_getter(*args, **kwargs):

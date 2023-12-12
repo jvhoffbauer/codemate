@@ -5,7 +5,12 @@ from fastapi.encoders import jsonable_encoder
 from app.core.security import get_password_hash, verify_password
 from app.crud.base import CRUDBase
 from app.models.user import User
-from app.schemas.user import UserAdminCreate, UserCreate, UserUpdate, UserUpdateHashedPassword
+from app.schemas.user import (
+    UserAdminCreate,
+    UserCreate,
+    UserUpdate,
+    UserUpdateHashedPassword,
+)
 
 
 class CRUDUser(CRUDBase[User, UserCreate, UserUpdate]):
@@ -30,11 +35,15 @@ class CRUDUser(CRUDBase[User, UserCreate, UserUpdate]):
             )
         return super().update(db, db_obj=db_obj, obj_in=obj_in)
 
-    def authenticate(self, db: Session, *, email: EmailStr, password: str) -> User | None:
+    def authenticate(
+        self, db: Session, *, email: EmailStr, password: str
+    ) -> User | None:
         user = self.get_by_email(db, email=email)
         if not user:
             return None
-        if not verify_password(plain_password=password, hashed_password=user.hashed_password):
+        if not verify_password(
+            plain_password=password, hashed_password=user.hashed_password
+        ):
             return None
         return user
 

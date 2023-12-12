@@ -26,7 +26,9 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     def get(self, db: Session, id: Any) -> ModelType | None:
         return db.query(self.model).filter(self.model.id == id).first()
 
-    def get_multi(self, db: Session, *, skip: int = 0, limit: int = 100) -> list[ModelType]:
+    def get_multi(
+        self, db: Session, *, skip: int = 0, limit: int = 100
+    ) -> list[ModelType]:
         limit = min(500, limit)  # don't allow for arbitrarily large queries
         return db.query(self.model).offset(skip).limit(limit).all()
 
@@ -38,13 +40,17 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         db.refresh(db_obj)
         return db_obj
 
-    def update(self, db: Session, *, db_obj: ModelType, obj_in: UpdateSchemaType) -> ModelType:
+    def update(
+        self, db: Session, *, db_obj: ModelType, obj_in: UpdateSchemaType
+    ) -> ModelType:
         update_data = obj_in.dict(exclude_unset=True)
         for field in update_data:
             if hasattr(db_obj, field):
                 setattr(db_obj, field, update_data[field])
             else:
-                raise AttributeError(f"{self.model.__name__} does't have field '{field}'")
+                raise AttributeError(
+                    f"{self.model.__name__} does't have field '{field}'"
+                )
         db.add(db_obj)
         db.commit()
         db.refresh(db_obj)

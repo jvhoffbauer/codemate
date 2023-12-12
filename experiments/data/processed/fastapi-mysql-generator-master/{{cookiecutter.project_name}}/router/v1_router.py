@@ -17,6 +17,7 @@ https://fastapi.tiangolo.com/tutorial/bigger-applications/#import-fastapi
 """
 
 from fastapi import APIRouter
+
 # from common.deps import check_authority
 
 from api.v1.user import router as user_router

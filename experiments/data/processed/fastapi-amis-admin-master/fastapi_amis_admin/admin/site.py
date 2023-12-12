@@ -48,7 +48,9 @@ class ReDocsAdmin(admin.IframeAdmin):
 
 
 class HomeAdmin(admin.PageAdmin):
-    page_schema = PageSchema(label=_("Home"), icon="fa fa-home", url="/home", isDefaultPage=True, sort=100)
+    page_schema = PageSchema(
+        label=_("Home"), icon="fa fa-home", url="/home", isDefaultPage=True, sort=100
+    )
     page_path = "/home"
 
     async def get_page(self, request: Request) -> Page:
@@ -60,7 +62,9 @@ class HomeAdmin(admin.PageAdmin):
                 items=[
                     Property.Item(label="title", content=self.site.settings.site_title),
                     Property.Item(label="version", content=self.site.settings.version),
-                    Property.Item(label="language", content=self.site.settings.language),
+                    Property.Item(
+                        label="language", content=self.site.settings.language
+                    ),
                     Property.Item(label="debug", content=str(self.site.settings.debug)),
                 ],
             ),
@@ -71,11 +75,19 @@ class HomeAdmin(admin.PageAdmin):
                 items=[
                     Property.Item(label="system", content=platform.system()),
                     Property.Item(label="python", content=platform.python_version()),
-                    Property.Item(label="version", content=fastapi_amis_admin.__version__),
+                    Property.Item(
+                        label="version", content=fastapi_amis_admin.__version__
+                    ),
                     Property.Item(label="license", content="Apache2.0"),
-                    Property.Item(label="amis-cdn", content=self.site.settings.amis_cdn),
-                    Property.Item(label="amis-pkg", content=self.site.settings.amis_pkg),
-                    Property.Item(label="amis-theme", content=self.site.settings.amis_theme),
+                    Property.Item(
+                        label="amis-cdn", content=self.site.settings.amis_cdn
+                    ),
+                    Property.Item(
+                        label="amis-pkg", content=self.site.settings.amis_pkg
+                    ),
+                    Property.Item(
+                        label="amis-theme", content=self.site.settings.amis_theme
+                    ),
                 ],
             ),
         ]
@@ -96,7 +108,9 @@ class FileAdmin(admin.RouterAdmin):
         self.static_path = self.mount_staticfile()
 
     def get_filename(self, file: UploadFile):
-        filename = str(uuid.uuid4()).replace("-", "") + os.path.splitext(file.filename)[1]
+        filename = (
+            str(uuid.uuid4()).replace("-", "") + os.path.splitext(file.filename)[1]
+        )
         return Path().joinpath(time.strftime("%Y%m"), filename).as_posix()
 
     def mount_staticfile(self) -> str:
@@ -108,7 +122,9 @@ class FileAdmin(admin.RouterAdmin):
         return self.site.router_path + self.file_path
 
     def register_router(self):
-        @self.router.post(self.file_path, response_model=BaseApiOut[self.UploadOutSchema])
+        @self.router.post(
+            self.file_path, response_model=BaseApiOut[self.UploadOutSchema]
+        )
         async def file_upload(file: UploadFile = File(...)):
             filename = self.get_filename(file)
             file_path = Path(self.file_directory) / filename
@@ -120,7 +136,9 @@ class FileAdmin(admin.RouterAdmin):
                 async with aiofiles.open(file_path, "wb") as f:
                     await f.write(res)
                 return BaseApiOut(
-                    data=self.UploadOutSchema(filename=filename, url=f"{self.static_path}/{filename}"),
+                    data=self.UploadOutSchema(
+                        filename=filename, url=f"{self.static_path}/{filename}"
+                    ),
                 )
 
             except Exception as e:

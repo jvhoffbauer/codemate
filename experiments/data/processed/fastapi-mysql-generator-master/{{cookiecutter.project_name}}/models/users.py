@@ -13,6 +13,7 @@
 
 from common.session import BaseModel, paginator
 from peewee import CharField, IntegerField
+
 # from playhouse.shortcuts import model_to_dict, dict_to_model
 
 
@@ -20,6 +21,7 @@ class User(BaseModel):
     """
     用户表
     """
+
     id = IntegerField()
     name = CharField()
     email = CharField()
@@ -29,12 +31,17 @@ class User(BaseModel):
     password = CharField()
 
     class Meta:
-        table_name = 'users'
+        table_name = "users"
 
     @classmethod
     def single_by_id(cls, uid: int):
-        db = User.undelete().select(User.id, User.name, User.email, User.phone, User.username, User.avatar).\
-            where(User.id == uid)
+        db = (
+            User.undelete()
+            .select(
+                User.id, User.name, User.email, User.phone, User.username, User.avatar
+            )
+            .where(User.id == uid)
+        )
         return db.first()
 
     @classmethod
@@ -49,11 +56,16 @@ class User(BaseModel):
 
     @classmethod
     def fetch_all(cls, page: int = 1, page_size: int = 10):
-        db = User.undelete().select(User.name, User.email, User.phone, User.username, User.avatar, User.created_at,
-                                    User.deleted_at)
+        db = User.undelete().select(
+            User.name,
+            User.email,
+            User.phone,
+            User.username,
+            User.avatar,
+            User.created_at,
+            User.deleted_at,
+        )
 
         user_list, paginate = paginator(db, page, page_size, "id desc")
 
         return user_list, paginate
-
-

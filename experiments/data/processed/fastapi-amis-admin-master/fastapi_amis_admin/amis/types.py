@@ -46,7 +46,9 @@ class AmisNode(BaseAmisModel):
     name: str = None  # In other components, when used as a variable map
     value: Any = None  # The value of the component
     onEvent: dict = None
-    events: Dict[str, Any] = None  # Specifies the amis behavior triggered by the component
+    events: Dict[
+        str, Any
+    ] = None  # Specifies the amis behavior triggered by the component
 
 
 SchemaNode = Union[str, AmisNode, List[AmisNode], Dict[str, Any], List[Dict[str, Any]]]
@@ -56,7 +58,9 @@ class AmisAPI(BaseAmisModel):
     url: str  # Current interface API address
     method: str = None  # 'GET' # Request method: get, post, put, delete
     data: Union[str, dict] = None  # The requested data body, supports data mapping
-    dataType: str = None  # The default is json and can be configured as form or form-data.
+    dataType: str = (
+        None  # The default is json and can be configured as form or form-data.
+    )
     # When data contains files, it will automatically use form-data (multipart/form-data) format.
     # When configured as form, the format is application/x-www-form-urlencoded.
     qsOptions: Union[str, dict] = None  # Useful when dataType is form or form-data.
@@ -68,7 +72,9 @@ class AmisAPI(BaseAmisModel):
     # the same request will not be repeated, but the cached request response data will be obtained.
     requestAdaptor: str = None  # Send adapter, API configuration of amis, if you can't configure the request
     # structure you want, you can configure the requestAdaptor send adapter
-    responseData: Dict[str, Any] = None  # If the data structure returned by the interface is not as expected, it can
+    responseData: Dict[
+        str, Any
+    ] = None  # If the data structure returned by the interface is not as expected, it can
     # be modified by configuring responseData, which also supports data mapping. The data that can be used for
     # mapping is the actual data of the interface (the data part returned by the interface), plus the api variable.
     # Among them, api.query is the query parameter sent by the interface, and api.body is the original data of the
@@ -77,8 +83,12 @@ class AmisAPI(BaseAmisModel):
     # append, set to true to completely replace.
     adaptor: str = None  # Receive adapter, if the interface return does not meet the requirements, you can configure
     # an adapter to handle it as required by amis.  Also supports Function or string function body format
-    responseType: str = None  # Return type, if it is a download, it needs to be set to 'blob'
-    autoRefresh: bool = None  # Configure whether to automatically refresh the interface.
+    responseType: str = (
+        None  # Return type, if it is a download, it needs to be set to 'blob'
+    )
+    autoRefresh: bool = (
+        None  # Configure whether to automatically refresh the interface.
+    )
     trackExpression: str = None  # Configure the tracking variable expression. When automatic refresh is enabled,
     # the default is the url of the api to automatically track variable changes. If you want to monitor variables
     # outside the url, configure traceExpression.
@@ -99,9 +109,15 @@ Template = Union[str, Tpl]
 class Event(BaseAmisModel):
     actionType: str = None  # Action name
     args: dict = None  # Action parameter {key:value}, support data mapping
-    preventDefault: Union[bool, Expression] = None  # "False" # Prevent event default behavior, > 1.10.0 and above
+    preventDefault: Union[
+        bool, Expression
+    ] = None  # "False" # Prevent event default behavior, > 1.10.0 and above
     # support expressions
-    stopPropagation: Union[bool, Expression] = None  # "False" # Stop subsequent action execution, > 1.10.0 and above
+    stopPropagation: Union[
+        bool, Expression
+    ] = None  # "False" # Stop subsequent action execution, > 1.10.0 and above
     # supports expressions
-    expression: Union[bool, Expression] = None  # Execution condition, not set means default execution
+    expression: Union[
+        bool, Expression
+    ] = None  # Execution condition, not set means default execution
     outputVar: str = None  # output data variable name

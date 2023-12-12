@@ -62,9 +62,7 @@ def superuser_token_headers(client: TestClient) -> dict:
     :return:
     """
     return user_authentication_headers(
-        client=client,
-        email="admin@admin.com",
-        password="admin"
+        client=client, email="admin@admin.com", password="admin"
     )
 
 
@@ -76,7 +74,5 @@ def ordinary_token_headers(client: TestClient) -> dict:
     :return:
     """
     return user_authentication_headers(
-        client=client,
-        email="test@test.com",
-        password="test"
+        client=client, email="test@test.com", password="test"
     )

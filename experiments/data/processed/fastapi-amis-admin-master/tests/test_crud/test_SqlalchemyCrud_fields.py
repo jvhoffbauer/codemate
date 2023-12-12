@@ -38,7 +38,9 @@ async def test_pk_name(app: FastAPI, async_client: AsyncClient, fake_users, mode
     assert users[2]["username"] == "User_4"
 
 
-async def test_update_exclude(app: FastAPI, async_client: AsyncClient, fake_users, models):
+async def test_update_exclude(
+    app: FastAPI, async_client: AsyncClient, fake_users, models
+):
     class UserCrud(SqlalchemyCrud):
         router_prefix = "/user"
         update_exclude = {"username"}
@@ -60,7 +62,9 @@ async def test_update_exclude(app: FastAPI, async_client: AsyncClient, fake_user
     assert res.json()["data"] == 1
 
 
-async def test_update_fields(app: FastAPI, async_client: AsyncClient, fake_users, models):
+async def test_update_fields(
+    app: FastAPI, async_client: AsyncClient, fake_users, models
+):
     class UserCrud(SqlalchemyCrud):
         router_prefix = "/user"
         update_fields = [models.User.username]
@@ -141,7 +145,9 @@ async def test_create_fields(app: FastAPI, async_client: AsyncClient, models):
     assert data["password"] == ""
 
 
-async def test_list_filter_relationship(app: FastAPI, async_client: AsyncClient, fake_articles, models):
+async def test_list_filter_relationship(
+    app: FastAPI, async_client: AsyncClient, fake_articles, models
+):
     class ArticleCrud(SqlalchemyCrud):
         router_prefix = "/article"
         list_filter = [
@@ -254,7 +260,9 @@ async def test_fields(app: FastAPI, async_client: AsyncClient, fake_articles, mo
     assert items[0]["pwd"] == "password_2"
 
 
-async def test_read_fields(app: FastAPI, async_client: AsyncClient, fake_articles, models):
+async def test_read_fields(
+    app: FastAPI, async_client: AsyncClient, fake_articles, models
+):
     class ArticleCrud(SqlalchemyCrud):
         router_prefix = "/article"
         read_fields = [
@@ -280,13 +288,17 @@ async def test_read_fields(app: FastAPI, async_client: AsyncClient, fake_article
     assert items["description"] == "Description_1"
 
 
-async def test_read_fields_relationship(app: FastAPI, async_client: AsyncClient, fake_articles, fake_article_tags, models):
+async def test_read_fields_relationship(
+    app: FastAPI, async_client: AsyncClient, fake_articles, fake_article_tags, models
+):
     class ArticleCrud(SqlalchemyCrud):
         router_prefix = "/article"
         read_fields = [
             models.Article.title,
             models.Article.description,
-            PropertyField(name="category", type_=CategorySchema),  # Relationship attribute
+            PropertyField(
+                name="category", type_=CategorySchema
+            ),  # Relationship attribute
             # Article.category,  # Relationship todo support
             PropertyField(name="content_text", type_=str),  # property attribute
             PropertyField(name="tags", type_=List[TagSchema]),  # property attribute
@@ -312,18 +324,24 @@ async def test_read_fields_relationship(app: FastAPI, async_client: AsyncClient,
     assert items["tags"][0]["name"] == "Tag_1"
 
 
-async def test_update_fields_relationship(app: FastAPI, async_client: AsyncClient, fake_articles, async_session, models):
+async def test_update_fields_relationship(
+    app: FastAPI, async_client: AsyncClient, fake_articles, async_session, models
+):
     class ArticleCrud(SqlalchemyCrud):
         router_prefix = "/article"
         update_exclude = {"content": {"id"}}
         update_fields = [
             models.Article.description,
-            PropertyField(name="content", type_=ArticleContentSchema),  # Relationship attribute
+            PropertyField(
+                name="content", type_=ArticleContentSchema
+            ),  # Relationship attribute
         ]
         read_fields = [
             models.Article.title,
             models.Article.description,
-            PropertyField(name="content", type_=ArticleContentSchema),  # Relationship attribute
+            PropertyField(
+                name="content", type_=ArticleContentSchema
+            ),  # Relationship attribute
         ]
 
     ins = ArticleCrud(models.Article, db.engine).register_crud()

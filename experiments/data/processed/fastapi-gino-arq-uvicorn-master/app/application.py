@@ -8,9 +8,7 @@ from starlette.datastructures import Secret
 from .settings.globals import DATABASE_CONFIG, SENTRY_DSN
 
 if isinstance(SENTRY_DSN, Secret) and SENTRY_DSN.__str__() not in ("None", ""):
-    initialize_sentry(
-        dsn=SENTRY_DSN.__str__(), integrations=[SqlalchemyIntegration()]
-    )
+    initialize_sentry(dsn=SENTRY_DSN.__str__(), integrations=[SqlalchemyIntegration()])
 
 app: FastAPI = FastAPI()
 db: MetaData = Gino(app, dsn=DATABASE_CONFIG.url)

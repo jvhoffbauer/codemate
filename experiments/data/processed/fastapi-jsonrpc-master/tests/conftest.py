@@ -13,25 +13,24 @@ import fastapi_jsonrpc as jsonrpc
 
 # Workaround for osx systems
 # https://stackoverflow.com/questions/58597334/unittest-performance-issue-when-using-requests-mock-on-osx
-if platform.system() == 'Darwin':
+if platform.system() == "Darwin":
     import socket
-    socket.gethostbyname = lambda x: '127.0.0.1'
+
+    socket.gethostbyname = lambda x: "127.0.0.1"
 
 
-pytest_plugins = 'pytester'
+pytest_plugins = "pytester"
 
 
 @pytest.fixture(autouse=True)
 def check_no_errors(caplog):
     yield
-    for when in ('setup', 'call'):
+    for when in ("setup", "call"):
         messages = [
             x.message for x in caplog.get_records(when) if x.levelno >= logging.ERROR
         ]
         if messages:
-            pytest.fail(
-                f"error messages encountered during testing: {messages!r}"
-            )
+            pytest.fail(f"error messages encountered during testing: {messages!r}")
 
 
 @pytest.fixture
@@ -44,7 +43,9 @@ def assert_log_errors(caplog):
                 error_messages.append(error)
                 error_raises.append(None)
             else:
-                assert isinstance(error, RaisesContext), "errors-element must be string or pytest.raises(...)"
+                assert isinstance(
+                    error, RaisesContext
+                ), "errors-element must be string or pytest.raises(...)"
                 assert error_raises[-1] is None
                 error_raises[-1] = error
 
@@ -58,7 +59,7 @@ def assert_log_errors(caplog):
                     raise record.exc_info[1]
 
         # clear caplog records
-        for when in ('setup', 'call'):
+        for when in ("setup", "call"):
             del caplog.get_records(when)[:]
         caplog.clear()
 
@@ -67,7 +68,7 @@ def assert_log_errors(caplog):
 
 @pytest.fixture
 def ep_path():
-    return '/api/v1/jsonrpc'
+    return "/api/v1/jsonrpc"
 
 
 @pytest.fixture
@@ -89,21 +90,23 @@ def app_client(app):
 
 @pytest.fixture
 def raw_request(app_client, ep_path):
-    def requester(body, path_postfix='', auth=None):
+    def requester(body, path_postfix="", auth=None):
         resp = app_client.post(
             url=ep_path + path_postfix,
             content=body,
             auth=auth,
         )
         return resp
+
     return requester
 
 
 @pytest.fixture
 def json_request(raw_request):
-    def requester(data, path_postfix=''):
+    def requester(data, path_postfix=""):
         resp = raw_request(json_dumps(data), path_postfix=path_postfix)
         return resp.json()
+
     return requester
 
 
@@ -116,37 +119,50 @@ def add_path_postfix(request):
 def method_request(json_request, add_path_postfix):
     def requester(method, params, request_id=0):
         if add_path_postfix:
-            path_postfix = '/' + method
+            path_postfix = "/" + method
         else:
-            path_postfix = ''
-        return json_request({
-            'id': request_id,
-            'jsonrpc': '2.0',
-            'method': method,
-            'params': params,
-        }, path_postfix=path_postfix)
+            path_postfix = ""
+        return json_request(
+            {
+                "id": request_id,
+                "jsonrpc": "2.0",
+                "method": method,
+                "params": params,
+            },
+            path_postfix=path_postfix,
+        )
+
     return requester
 
 
 @pytest.fixture
 def openapi_compatible():
-    supported_openapi_versions = [packaging.version.parse("3.0.2"), packaging.version.parse("3.1.0")]
+    supported_openapi_versions = [
+        packaging.version.parse("3.0.2"),
+        packaging.version.parse("3.1.0"),
+    ]
 
     if packaging.version.parse(pydantic.VERSION) >= packaging.version.parse("1.10.0"):
+
         def _openapi_compatible(value: dict):
-            assert packaging.version.parse(value['openapi']) in supported_openapi_versions
-            value['openapi'] = ANY
+            assert (
+                packaging.version.parse(value["openapi"]) in supported_openapi_versions
+            )
+            value["openapi"] = ANY
             return value
+
     else:
+
         def _openapi_compatible(obj: dict):
             for k, v in obj.items():
                 if isinstance(v, dict):
                     obj[k] = _openapi_compatible(obj[k])
-            if 'const' in obj and 'default' in obj:
-                del obj['default']
+            if "const" in obj and "default" in obj:
+                del obj["default"]
 
-            assert packaging.version.parse(obj['openapi']) in supported_openapi_versions
-            obj['openapi'] = ANY
+            assert packaging.version.parse(obj["openapi"]) in supported_openapi_versions
+            obj["openapi"] = ANY
 
             return obj
+
     return _openapi_compatible

@@ -16,7 +16,7 @@ def test_invoke_list():
 @pytest.mark.skipif(reason="Minor marker differences", condition=PYTHON_VERSION != 3.8)
 def test_requirements_txt():
     """Validate that requirements.txt and requirements-dev.txt
-       are up2date with Pipefile"""
+    are up2date with Pipefile"""
     temp_output_dir = "tests/temp_output"
     req_test_file_path = "{}/test-requirements.txt".format(temp_output_dir)
     req_dev_test_file_path = "{}/test-requirements-dev.txt".format(temp_output_dir)

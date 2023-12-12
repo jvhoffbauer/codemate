@@ -25,4 +25,4 @@ def set_transaction_id(correlation_id: str) -> None:
     from sentry_sdk import configure_scope
 
     with configure_scope() as scope:
-        scope.set_tag('transaction_id', correlation_id)
+        scope.set_tag("transaction_id", correlation_id)

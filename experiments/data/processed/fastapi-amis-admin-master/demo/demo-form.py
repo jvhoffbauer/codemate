@@ -15,7 +15,11 @@ from fastapi_amis_admin.models.fields import Field
 app = FastAPI()
 
 # 创建AdminSite实例
-site = AdminSite(settings=Settings(database_url_async="sqlite+aiosqlite:///amisadmin.db", language="zh_CN"))
+site = AdminSite(
+    settings=Settings(
+        database_url_async="sqlite+aiosqlite:///amisadmin.db", language="zh_CN"
+    )
+)
 
 
 # 注册FormAdmin
@@ -31,7 +35,9 @@ class UserLoginFormAdmin(admin.FormAdmin):
         password: str = Field(..., title="密码")
 
     # 处理表单提交数据
-    async def handle(self, request: Request, data: BaseModel, **kwargs) -> BaseApiOut[Any]:
+    async def handle(
+        self, request: Request, data: BaseModel, **kwargs
+    ) -> BaseApiOut[Any]:
         if data.username == "amisadmin" and data.password == "amisadmin":
             return BaseApiOut(msg="登录成功!", data={"token": "xxxxxx"})
         return BaseApiOut(status=-1, msg="用户名或密码错误!")

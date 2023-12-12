@@ -37,8 +37,6 @@ class Model(models.Model):
     def all(cls) -> QuerySet[Self] | list[Self]:
         return cls.objects.all()
 
-
-
     @classmethod
     def get(cls, pk) -> Self:
         return cls.objects.get(pk=pk)
@@ -86,7 +84,11 @@ class Model(models.Model):
                 setattr(self, field, obj[field])
 
     def incr(self, field, value=1):
-        return self.__class__.objects.filter(id=self.id).update(**{field: F(field) + value})
+        return self.__class__.objects.filter(id=self.id).update(
+            **{field: F(field) + value}
+        )
 
     def decr(self, field, value=1):
-        return self.__class__.objects.filter(id=self.id).update(**{field: F(field) - value})
+        return self.__class__.objects.filter(id=self.id).update(
+            **{field: F(field) - value}
+        )

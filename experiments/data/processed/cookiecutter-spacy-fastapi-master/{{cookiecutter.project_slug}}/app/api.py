@@ -61,11 +61,14 @@ async def extract_entities(body: RecordsRequest = Body(..., example=example_requ
 @app.post(
     "/entities_by_type", response_model=RecordsEntitiesByTypeResponse, tags=["NER"]
 )
-async def extract_entities_by_type(body: RecordsRequest = Body(..., example=example_request)):
+async def extract_entities_by_type(
+    body: RecordsRequest = Body(..., example=example_request)
+):
     """Extract Named Entities from a batch of Records separated by entity label.
-        This route can be used directly as a Cognitive Skill in Azure Search
-        For Documentation on integration with Azure Search, see here:
-        https://docs.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface"""
+    This route can be used directly as a Cognitive Skill in Azure Search
+    For Documentation on integration with Azure Search, see here:
+    https://docs.microsoft.com/en-us/azure/search/cognitive-search-custom-skill-interface
+    """
 
     res = []
     documents = []

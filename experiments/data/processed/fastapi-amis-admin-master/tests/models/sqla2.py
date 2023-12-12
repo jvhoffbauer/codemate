@@ -33,7 +33,9 @@ class User(PkModelMixin, CreateTimeModelMixin):
     __tablename__ = "user"
     __pydantic_model__ = UserSchemaBase
 
-    username: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    username: Mapped[str] = mapped_column(
+        String(100), unique=True, index=True, nullable=False
+    )
     password: Mapped[str] = mapped_column(String(100), default="")
     address: Mapped[list] = mapped_column(JSON, default=[])
     attach: Mapped[dict] = mapped_column(JSON, default={})
@@ -44,24 +46,34 @@ class Category(PkModelMixin, CreateTimeModelMixin):
     __tablename__ = "category"
     __pydantic_model__ = CategorySchema
 
-    name: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(
+        String(100), unique=True, index=True, nullable=False
+    )
     description: Mapped[str] = mapped_column(String(100), default="")
-    articles: Mapped[List["Article"]] = relationship("Article", back_populates="category")
+    articles: Mapped[List["Article"]] = relationship(
+        "Article", back_populates="category"
+    )
 
 
 class ArticleTagLink(Base):
     __tablename__ = "article_tag_link"
     __pydantic_model__ = ArticleTagLinkSchema
 
-    tag_id: Mapped[int] = mapped_column(Integer, ForeignKey("tag.id"), primary_key=True, default=None)
-    article_id: Mapped[int] = mapped_column(Integer, ForeignKey("article.id"), primary_key=True, default=None)
+    tag_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("tag.id"), primary_key=True, default=None
+    )
+    article_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("article.id"), primary_key=True, default=None
+    )
 
 
 class Tag(PkModelMixin, CreateTimeModelMixin):
     __tablename__ = "tag"
     __pydantic_model__ = TagSchema
 
-    name: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(
+        String(255), unique=True, index=True, nullable=False
+    )
     articles: Mapped[List["Article"]] = relationship(
         "Article",
         back_populates="tags",
@@ -84,7 +96,9 @@ class Article(PkModelMixin, CreateTimeModelMixin):
     __tablename__ = "article"
     __pydantic_model__ = ArticleSchema
 
-    title: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    title: Mapped[str] = mapped_column(
+        String(100), unique=True, index=True, nullable=False
+    )
     description: Mapped[str] = mapped_column(String(100))
     status: Mapped[int] = mapped_column(Integer, default=0)
 
@@ -92,7 +106,9 @@ class Article(PkModelMixin, CreateTimeModelMixin):
     category: Mapped[Category] = relationship("Category", back_populates="articles")
 
     content_id: Mapped[int] = mapped_column(Integer, ForeignKey("article_content.id"))
-    content: Mapped[ArticleContent] = relationship("ArticleContent", back_populates="article")
+    content: Mapped[ArticleContent] = relationship(
+        "ArticleContent", back_populates="article"
+    )
 
     user_id: Mapped[int] = mapped_column(Integer, ForeignKey("user.id"))
     user: Mapped[User] = relationship("User", back_populates="articles")

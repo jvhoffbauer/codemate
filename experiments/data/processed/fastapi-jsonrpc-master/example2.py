@@ -11,6 +11,7 @@ logger = logging.getLogger(__name__)
 
 # database models
 
+
 class User:
     def __init__(self, name):
         self.name = name
@@ -35,14 +36,14 @@ class Account:
 # fake database
 
 users = {
-    '1': User('user1'),
-    '2': User('user2'),
+    "1": User("user1"),
+    "2": User("user2"),
 }
 
 accounts = {
-    '1.1': Account('1.1', users['1'], 100, 'USD'),
-    '1.2': Account('1.2', users['1'], 200, 'EUR'),
-    '2.1': Account('2.1', users['2'], 300, 'USD'),
+    "1.1": Account("1.1", users["1"], 100, "USD"),
+    "1.2": Account("1.2", users["1"], 200, "EUR"),
+    "2.1": Account("2.1", users["2"], 300, "USD"),
 }
 
 
@@ -56,27 +57,30 @@ def get_account_by_id(account_id) -> Account:
 
 # schemas
 
+
 class Balance(BaseModel):
     """Account balance"""
+
     amount: int = Field(..., examples=[100])
-    currency: str = Field(..., examples=['USD'])
+    currency: str = Field(..., examples=["USD"])
 
 
 # errors
 
+
 class AuthError(jsonrpc.BaseError):
     CODE = 7000
-    MESSAGE = 'Auth error'
+    MESSAGE = "Auth error"
 
 
 class AccountNotFound(jsonrpc.BaseError):
     CODE = 6000
-    MESSAGE = 'Account not found'
+    MESSAGE = "Account not found"
 
 
 class NotEnoughMoney(jsonrpc.BaseError):
     CODE = 6001
-    MESSAGE = 'Not enough money'
+    MESSAGE = "Not enough money"
 
     class DataModel(BaseModel):
         balance: Balance
@@ -84,11 +88,12 @@ class NotEnoughMoney(jsonrpc.BaseError):
 
 # dependencies
 
+
 def get_auth_user(
     # this will become the header-parameter of json-rpc method that uses this dependency
     auth_token: str = Header(
         None,
-        alias='user-auth-token',
+        alias="user-auth-token",
     ),
 ) -> User:
     if not auth_token:
@@ -102,7 +107,7 @@ def get_auth_user(
 
 def get_account(
     # this will become the parameter of the json-rpc method that uses this dependency
-    account_id: str = Body(..., example='1.1'),
+    account_id: str = Body(..., example="1.1"),
     user: User = Depends(get_auth_user),
 ) -> Account:
     try:
@@ -118,13 +123,14 @@ def get_account(
 
 # JSON-RPC middlewares
 
+
 @asynccontextmanager
 async def logging_middleware(ctx: jsonrpc.JsonRpcContext):
-    logger.info('Request: %r', ctx.raw_request)
+    logger.info("Request: %r", ctx.raw_request)
     try:
         yield
     finally:
-        logger.info('Response: %r', ctx.raw_response)
+        logger.info("Response: %r", ctx.raw_response)
 
 
 # JSON-RPC entrypoint
@@ -136,7 +142,7 @@ api_v1 = jsonrpc.Entrypoint(
     # Swagger shows for entrypoint common parameters gathered by dependencies and common_dependencies:
     #    - json-rpc-parameter 'account_id'
     #    - header parameter 'user-auth-token'
-    '/api/v1/jsonrpc',
+    "/api/v1/jsonrpc",
     errors=common_errors,
     middlewares=[logging_middleware],
     # this dependencies called once for whole json-rpc batch request
@@ -147,6 +153,7 @@ api_v1 = jsonrpc.Entrypoint(
 
 
 # JSON-RPC methods of this entrypoint
+
 
 # this json-rpc method has one json-rpc-parameter 'account_id' and one header parameter 'user-auth-token'
 @api_v1.method()
@@ -166,7 +173,7 @@ def withdraw(
     amount: int = Body(..., gt=0, example=10),
 ) -> Balance:
     if account.amount - amount < 0:
-        raise NotEnoughMoney(data={'balance': get_balance(account)})
+        raise NotEnoughMoney(data={"balance": get_balance(account)})
     account.amount -= amount
     return get_balance(account)
 
@@ -177,6 +184,7 @@ app = jsonrpc.API()
 app.bind_entrypoint(api_v1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import uvicorn
-    uvicorn.run('example2:app', port=5000, debug=True, access_log=False)
+
+    uvicorn.run("example2:app", port=5000, debug=True, access_log=False)

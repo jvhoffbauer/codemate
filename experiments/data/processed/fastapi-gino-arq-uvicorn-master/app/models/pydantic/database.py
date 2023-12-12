@@ -7,19 +7,11 @@ from starlette.datastructures import Secret
 
 
 class DatabaseURL(BaseModel):
-    drivername: str = Schema(
-        ..., alias="driver", description="The database driver."
-    )
+    drivername: str = Schema(..., alias="driver", description="The database driver.")
     host: str = Schema("localhost", description="Server host.")
-    port: Optional[Union[str, int]] = Schema(
-        None, description="Server access port."
-    )
-    username: Optional[str] = Schema(
-        None, alias="user", description="Username"
-    )
-    password: Optional[Union[str, Secret]] = Schema(
-        None, description="Password"
-    )
+    port: Optional[Union[str, int]] = Schema(None, description="Server access port.")
+    username: Optional[str] = Schema(None, alias="user", description="Username")
+    password: Optional[Union[str, Secret]] = Schema(None, description="Password")
     database: str = Schema(..., description="Database name.")
     url: Optional[URL] = None
 

@@ -19,13 +19,19 @@ def _get_auth_header_from_credentials(
     return {"Authorization": f"Bearer {access_token}"}
 
 
-def get_auth_header(*, client: TestClient, email: EmailStr, password: str) -> dict[str, str]:
-    return _get_auth_header_from_credentials(client, {"username": email, "password": password})
+def get_auth_header(
+    *, client: TestClient, email: EmailStr, password: str
+) -> dict[str, str]:
+    return _get_auth_header_from_credentials(
+        client, {"username": email, "password": password}
+    )
 
 
 def get_superuser_auth_header(client: TestClient) -> dict[str, str]:
     return get_auth_header(
-        client=client, email=settings.FIRST_SUPERUSER, password=settings.FIRST_SUPERUSER_PASSWORD
+        client=client,
+        email=settings.FIRST_SUPERUSER,
+        password=settings.FIRST_SUPERUSER_PASSWORD,
     )
 
 

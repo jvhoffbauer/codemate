@@ -11,18 +11,18 @@ def ep(ep_path):
     _common_counter = 0
 
     async def get_shared_counter(
-        shared: str = Header('shared'),
+        shared: str = Header("shared"),
     ) -> str:
         nonlocal _shared_counter
         _shared_counter += 1
-        yield f'{shared}-{_shared_counter}'
+        yield f"{shared}-{_shared_counter}"
 
     async def get_common_counter(
         common: str = Body(...),
     ) -> str:
         nonlocal _common_counter
         _common_counter += 1
-        yield f'{common}-{_common_counter}'
+        yield f"{common}-{_common_counter}"
 
     ep = jsonrpc.Entrypoint(
         ep_path,
@@ -41,39 +41,41 @@ def ep(ep_path):
 
 
 def test_single(method_request):
-    resp1 = method_request('probe', {'common': 'one'}, request_id=111)
-    resp2 = method_request('probe', {'common': 'two'}, request_id=222)
-    resp3 = method_request('probe', {'common': 'three'}, request_id=333)
+    resp1 = method_request("probe", {"common": "one"}, request_id=111)
+    resp2 = method_request("probe", {"common": "two"}, request_id=222)
+    resp3 = method_request("probe", {"common": "three"}, request_id=333)
     assert [resp1, resp2, resp3] == [
-        {'id': 111, 'jsonrpc': '2.0', 'result': ['shared-1', 'one-1']},
-        {'id': 222, 'jsonrpc': '2.0', 'result': ['shared-2', 'two-2']},
-        {'id': 333, 'jsonrpc': '2.0', 'result': ['shared-3', 'three-3']},
+        {"id": 111, "jsonrpc": "2.0", "result": ["shared-1", "one-1"]},
+        {"id": 222, "jsonrpc": "2.0", "result": ["shared-2", "two-2"]},
+        {"id": 333, "jsonrpc": "2.0", "result": ["shared-3", "three-3"]},
     ]
 
 
 def test_batch(json_request):
-    resp = json_request([
-        {
-            'id': 111,
-            'jsonrpc': '2.0',
-            'method': 'probe',
-            'params': {'common': 'one'},
-        },
-        {
-            'id': 222,
-            'jsonrpc': '2.0',
-            'method': 'probe',
-            'params': {'common': 'two'},
-        },
-        {
-            'id': 333,
-            'jsonrpc': '2.0',
-            'method': 'probe',
-            'params': {'common': 'three'},
-        },
-    ])
+    resp = json_request(
+        [
+            {
+                "id": 111,
+                "jsonrpc": "2.0",
+                "method": "probe",
+                "params": {"common": "one"},
+            },
+            {
+                "id": 222,
+                "jsonrpc": "2.0",
+                "method": "probe",
+                "params": {"common": "two"},
+            },
+            {
+                "id": 333,
+                "jsonrpc": "2.0",
+                "method": "probe",
+                "params": {"common": "three"},
+            },
+        ]
+    )
     assert resp == [
-        {'id': 111, 'jsonrpc': '2.0', 'result': ['shared-1', 'one-1']},
-        {'id': 222, 'jsonrpc': '2.0', 'result': ['shared-1', 'two-2']},
-        {'id': 333, 'jsonrpc': '2.0', 'result': ['shared-1', 'three-3']},
+        {"id": 111, "jsonrpc": "2.0", "result": ["shared-1", "one-1"]},
+        {"id": 222, "jsonrpc": "2.0", "result": ["shared-1", "two-2"]},
+        {"id": 333, "jsonrpc": "2.0", "result": ["shared-1", "three-3"]},
     ]

@@ -281,7 +281,6 @@ class MosaicTilerFactory(BaseTilerFactory):
                     reader_options={**reader_params},
                     **backend_params,
                 ) as src_dst:
-
                     if strict_zoom and (z < src_dst.minzoom or z > src_dst.maxzoom):
                         raise HTTPException(
                             400,

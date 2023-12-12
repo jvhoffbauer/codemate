@@ -14,6 +14,7 @@ from . import LocationService
 
 LOGGER = logging.getLogger("services.location.csbs")
 
+
 class CSBSLocationService(LocationService):
     """
     Service for retrieving locations from csbs
@@ -31,8 +32,10 @@ class CSBSLocationService(LocationService):
 
         return locations[loc_id]
 
+
 # Base URL for fetching data
 BASE_URL = "https://facts.csbs.org/covid-19/covid19_county.csv"
+
 
 @cached(cache=TTLCache(maxsize=1, ttl=1800))
 async def get_locations():
@@ -82,12 +85,15 @@ async def get_locations():
                     state=state,
                     county=county,
                     coordinates=Coordinates(item["Latitude"], item["Longitude"]),
-                    last_updated=datetime.strptime(last_update, "%Y-%m-%d %H:%M").isoformat() + "Z",
+                    last_updated=datetime.strptime(
+                        last_update, "%Y-%m-%d %H:%M"
+                    ).isoformat()
+                    + "Z",
                     confirmed=int(item["Confirmed"] or 0),
                     deaths=int(item["Death"] or 0),
                 )
             )
-        
+
         LOGGER.info(f"{data_id} Data normalized")
         # save the results to distributed cache
         # TODO: fix json serialization

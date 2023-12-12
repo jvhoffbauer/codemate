@@ -11,7 +11,9 @@ from tests.conftest import async_db as db
 @pytest.fixture(autouse=True)
 def app_routes(app: FastAPI, models):
     user_schema = TableModelParser.get_table_model_schema(models.User)
-    user_crud = SqlalchemyCrud(models.User, db.engine).register_crud(schema_read=user_schema)
+    user_crud = SqlalchemyCrud(models.User, db.engine).register_crud(
+        schema_read=user_schema
+    )
 
     app.include_router(user_crud.router)
 
@@ -122,7 +124,9 @@ async def test_route_update(async_client: AsyncClient, fake_users, models):
     count = res.json()["data"]
     assert count == 3
     db.session.expire_all()
-    for user in await db.session.scalars(select(models.User).where(models.User.id.in_([1, 2, 4]))):
+    for user in await db.session.scalars(
+        select(models.User).where(models.User.id.in_([1, 2, 4]))
+    ):
         assert user.password == "new_password"
         assert user.address == ["address_3"]
         assert user.attach == {"attach_3": "attach_3"}
@@ -172,5 +176,7 @@ async def test_route_list(async_client: AsyncClient, fake_users):
     res = await async_client.post("/User/list", json={"username": "[~]User_%"})
     assert len(res.json()["data"]["items"]) == 5
 
-    res = await async_client.post("/User/list", json={"create_time": "[-]2022-01-02 00:00:00,2022-01-04 01:00:00"})
+    res = await async_client.post(
+        "/User/list", json={"create_time": "[-]2022-01-02 00:00:00,2022-01-04 01:00:00"}
+    )
     assert len(res.json()["data"]["items"]) == 3
