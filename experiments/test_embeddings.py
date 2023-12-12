@@ -1,6 +1,4 @@
 import dotenv
-dotenv.load_dotenv("../backend/.env")
-
 import os
 import pandas as pd
 from langchain.vectorstores import Chroma
@@ -8,6 +6,9 @@ from tqdm import tqdm
 from unixcoder import UnixcoderEmbeddings
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
+
+
+dotenv.load_dotenv("../backend/.env")
 
 
 CONTEXT_LENGTH = 10
@@ -18,9 +19,9 @@ def main():
 
     vector_dbs = {
         "unixcoder": Chroma(persist_directory="embeddings/unixcoder", embedding_function=UnixcoderEmbeddings()),
-        #"reacc": Chroma(persist_directory="embeddings/reacc-py-retriever", embedding_function=HuggingFaceEmbeddings(model_name="microsoft/reacc-py-retriever", model_kwargs={'device': 'cuda:0'})),
+        "reacc": Chroma(persist_directory="embeddings/reacc-py-retriever", embedding_function=HuggingFaceEmbeddings(model_name="microsoft/reacc-py-retriever", model_kwargs={'device': 'cuda:0'})),
         "cocosoda": Chroma(persist_directory="embeddings/cocosoda", embedding_function=HuggingFaceEmbeddings(model_name="DeepSoftwareAnalytics/CoCoSoDa", model_kwargs={'device': 'cuda:0'})),
-        #"openai": Chroma(persist_directory="./openai_embeddings", embedding_function=OpenAIEmbeddings())
+        "openai": Chroma(persist_directory="embeddings/openai", embedding_function=OpenAIEmbeddings())
     }
 
     rows = []
@@ -43,15 +44,19 @@ def main():
             retrieved_snippets[name] = result
         print(f"Processed {filename} with {vector_dbs.keys()}")
 
-        # Create the result row 
-        row = {}
-        row["filename"] = filename
-        row["example"] = test_snippet
+        # Create the result rows
         for name, snippets in retrieved_snippets.items():
             for i, snippet in enumerate(snippets):
-                row[f"{name} #{i}"] = snippet
 
-        rows.append(row)
+                row = {
+                    "filename": filename,
+                    "model_name": name,
+                    "index": i,
+                    "query": test_snippet,
+                    "found_snippet": snippet
+                }
+                rows.append(row)
+
 
 
     df = pd.DataFrame(rows)
@@ -59,7 +64,7 @@ def main():
     print(df.head(1))
     html = df.to_html(
         escape=False, 
-        formatters = {'example': format_code, **{column: format_code for column in df.columns if "#" in column}}, 
+        formatters={'query': format_code, 'found_snippet': format_code}, 
         index=False
     )
     with open("out/comparison.html", "w") as f:
@@ -72,7 +77,7 @@ def format_code(code):
     # Make code block
     code = f'<pre><code style="background-color: #333">{code}</code></pre>'
     # Make leftbound 
-    code = f'<div style="text-align: left; width: 450px; word-wrap: break-word; white-space: normal; overflow: hidden; background-color: #333">{code}</div>'
+    code = f'<div style="text-align: left; width: 600px; word-wrap: break-word; white-space: normal; overflow: hidden; background-color: #333">{code}</div>'
     return code
 
 

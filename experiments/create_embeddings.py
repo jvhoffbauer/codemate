@@ -83,33 +83,37 @@ def embedd(embedding_function, chunks, persist_directory):
 def main():
     chunks = load_chunks()
 
-    # db_unix = embedd(
-    #     embedding_function=UnixcoderEmbeddings(), 
-    #     persist_directory="embeddings/unixcoder",
-    #     chunks=chunks
-    # )
+    # Unixcoder
+    embedd(
+        embedding_function=UnixcoderEmbeddings(), 
+        persist_directory="embeddings/unixcoder",
+        chunks=chunks
+    )
     
-    # db_openai = embedd(
-    #   embedding_function=OpenAIEmbeddings(), 
-    #   persist_directory="embeddings/openai",
-    #   chunks=chunks
-    # )
+    # OpenAI
+    embedd(
+      embedding_function=OpenAIEmbeddings(), 
+      persist_directory="embeddings/openai",
+      chunks=chunks
+    )
 
-    # db_reacc = embedd(
-    #     embedding_function=HuggingFaceEmbeddings(
-    #         model_name="microsoft/reacc-py-retriever", 
-    #         model_kwargs={'device': 'cuda:0'}, 
-    #         encode_kwargs={"show_progress_bar": True}
-    #     ), 
-    #     persist_directory="embeddings/reacc-py-retriever",
-    #     chunks=chunks
-    # )
+    # Reacc
+    embedd(
+        embedding_function=HuggingFaceEmbeddings(
+            model_name="microsoft/reacc-py-retriever", 
+            model_kwargs={'device': 'cuda:0'}, 
+            encode_kwargs={"show_progress_bar": True}
+        ), 
+        persist_directory="embeddings/reacc-py-retriever",
+        chunks=chunks
+    )
 
+    # Cocosoda
     tokenizer_cocosoda = AutoTokenizer.from_pretrained("DeepSoftwareAnalytics/CoCoSoDa")
     chunks_cocosoda = chunks
     for c in chunks_cocosoda:
         c.page_content = tokenizer_cocosoda.decode(tokenizer_cocosoda.encode(c.page_content)[:1025][1:-1])
-    db_cocosoda = embedd(
+    embedd(
         embedding_function=HuggingFaceEmbeddings(
             model_name="DeepSoftwareAnalytics/CoCoSoDa", 
             model_kwargs={'device': 'cuda:0'},
