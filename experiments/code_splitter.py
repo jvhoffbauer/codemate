@@ -1,8 +1,11 @@
-import black
+import logging
 from typing import List
-from tree_sitter import Language, Parser
-from langchain.text_splitter import TextSplitter
 
+import black
+from langchain.text_splitter import TextSplitter
+from tree_sitter import Language, Parser
+
+logger = logging.getLogger(__name__)
 
 TAB_WIDTH = 4
 
@@ -39,8 +42,10 @@ class PythonCodeSplitter(TextSplitter):
         tree = get_parser().parse(bytes(text, "utf8"))
         nodes = list(iter_nodes(tree))
 
+        # if any(node.type == "ERROR" for node, _, _ in nodes):
+        #     raise SyntaxError(f"Syntax error in code at {node}: {node.text}")
         if any(node.type == "ERROR" for node, _, _ in nodes):
-            raise SyntaxError(f"Syntax error in code at {node}: {node.text}")
+            logger.warning(f"Syntax error in code at '{text[:100]}'...")
 
         chunks = []
         for node, depth, _ in nodes:
