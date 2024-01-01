@@ -11,3 +11,6 @@ __pycache__
 
 # Credentials
 .env
+
+# Tree sitter build
+tree-sitter-languages/build/
