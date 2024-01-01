@@ -32,7 +32,8 @@
 				"ms-python.isort",
 				"esbenp.prettier-vscode",
 				"ms-python.python",
-				"ms-python.vscode-pylance"
+				"ms-python.vscode-pylance",
+				"george-alisson.html-preview-vscode"
 			]
 		}
 	},
@@ -40,7 +41,6 @@
 		"type=bind,source=/home/JanVincent.Hoffbauer/.ssh,target=/root/.ssh",
 		"type=bind,source=/home/JanVincent.Hoffbauer,target=/hf_cache"
 	],
-	"containerEnv": {
-	},
+	"containerEnv": {},
 	"shutdownAction": "none"
 }
