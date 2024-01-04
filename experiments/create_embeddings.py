@@ -97,7 +97,7 @@ def main():
             model_kwargs={"load_in_8bit": True},
         ),
         persist_directory="embeddings/e5_code_splitter",
-        chunks=chunks_code_splitter,
+        chunks=[c for c in chunks_code_splitter if len(c.page_content) < 4000],
     )
 
     # chunks = load_chunks()

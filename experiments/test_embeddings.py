@@ -26,13 +26,13 @@ def main():
             persist_directory="embeddings/openai_code_splitter",
             embedding_function=OpenAIEmbeddings(),
         ),
-        # "e5_code_splitter": Chroma(
-        #     persist_directory="embeddings/e5_code_splitter",
-        #     embedding_function=HuggingFaceEmbeddings(
-        #         model_name="intfloat/e5-mistral-7b-instruct",
-        #         model_kwargs={"device": "cuda:0"},
-        #     ),
-        # ),
+        "e5_code_splitter": Chroma(
+            persist_directory="embeddings/e5_code_splitter",
+            embedding_function=HuggingFaceEmbeddings(
+                model_name="intfloat/e5-mistral-7b-instruct",
+                model_kwargs={"device": "cuda:0"},
+            ),
+        ),
         # "unixcoder": Chroma(
         #     persist_directory="embeddings/unixcoder",
         #     embedding_function=UnixcoderEmbeddings(),
