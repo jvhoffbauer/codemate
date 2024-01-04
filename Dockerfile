@@ -33,6 +33,8 @@ RUN pip install protobuf==3.20.*
 RUN pip install openai
 RUN pip install tiktoken
 RUN pip install langchain 
+RUN pip install sentence-transformers
+RUN pip install chromadb
 #RUN pip install faiss
 
 #RUN git clone https://github.com/EleutherAI/lm-evaluation-harness
