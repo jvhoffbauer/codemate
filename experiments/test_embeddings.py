@@ -1,7 +1,9 @@
+import html
 import os
 
 import dotenv
 import pandas as pd
+from code_splitter import PythonCodeSplitter
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
@@ -11,8 +13,7 @@ from unixcoder import UnixcoderEmbeddings
 dotenv.load_dotenv("../backend/.env")
 
 
-CONTEXT_LENGTH = 10
-TOP_K = 3
+TOP_K = 1
 
 
 def main():
@@ -21,18 +22,37 @@ def main():
             persist_directory="embeddings/unixcoder_code_splitter",
             embedding_function=UnixcoderEmbeddings(),
         ),
-        "unixcoder": Chroma(
-            persist_directory="embeddings/unixcoder",
-            embedding_function=UnixcoderEmbeddings(),
+        "openai_code_splitter": Chroma(
+            persist_directory="embeddings/openai_code_splitter",
+            embedding_function=OpenAIEmbeddings(),
         ),
-        # "reacc": Chroma(persist_directory="embeddings/reacc-py-retriever", embedding_function=HuggingFaceEmbeddings(model_name="microsoft/reacc-py-retriever", model_kwargs={'device': 'cuda:0'})),
-        # "cocosoda": Chroma(persist_directory="embeddings/cocosoda", embedding_function=HuggingFaceEmbeddings(model_name="DeepSoftwareAnalytics/CoCoSoDa", model_kwargs={'device': 'cuda:0'})),
-        # "openai_code_splitter": Chroma(
-        #     persist_directory="embeddings/openai_code_splitter",
-        #     embedding_function=OpenAIEmbeddings(),
+        # "e5_code_splitter": Chroma(
+        #     persist_directory="embeddings/e5_code_splitter",
+        #     embedding_function=HuggingFaceEmbeddings(
+        #         model_name="intfloat/e5-mistral-7b-instruct",
+        #         model_kwargs={"device": "cuda:0"},
+        #     ),
+        # ),
+        # "unixcoder": Chroma(
+        #     persist_directory="embeddings/unixcoder",
+        #     embedding_function=UnixcoderEmbeddings(),
         # ),
         # "openai": Chroma(
         #     persist_directory="embeddings/openai", embedding_function=OpenAIEmbeddings()
+        # ),
+        # "reacc": Chroma(
+        #     persist_directory="embeddings/reacc-py-retriever",
+        #     embedding_function=HuggingFaceEmbeddings(
+        #         model_name="microsoft/reacc-py-retriever",
+        #         model_kwargs={"device": "cuda:0"},
+        #     ),
+        # ),
+        # "cocosoda": Chroma(
+        #     persist_directory="embeddings/cocosoda",
+        #     embedding_function=HuggingFaceEmbeddings(
+        #         model_name="DeepSoftwareAnalytics/CoCoSoDa",
+        #         model_kwargs={"device": "cuda:0"},
+        #     ),
         # ),
     }
 
@@ -42,16 +62,15 @@ def main():
         with open(os.path.join("test_data", filename)) as f:
             test_snippet = f.read()
 
-        lines = test_snippet.split("\n")
-        cursor_index = [i for i, line in enumerate(lines) if "[CURSOR]" in line][0]
-        lines = lines[
-            max(0, cursor_index - CONTEXT_LENGTH) : cursor_index + CONTEXT_LENGTH + 1
-        ]
-        snippet_test_cursor = "\n".join(lines).replace("[CURSOR]", "")
+        splitter = PythonCodeSplitter(
+            enabled_node_types=["function_definition", "decorated_definition"]
+        )
+        parts = splitter.split_text(test_snippet)
+        longest_part = max(parts, key=lambda x: len(x))
 
         retrieved_snippets = {}
         for name, vector_db in vector_dbs.items():
-            result = vector_db.similarity_search(snippet_test_cursor, k=TOP_K)
+            result = vector_db.similarity_search(longest_part, k=TOP_K)
             result = [r.page_content[:2000] for r in result]
             retrieved_snippets[name] = result
         print(f"Processed {filename} with {vector_dbs.keys()}")
@@ -63,7 +82,7 @@ def main():
                     "filename": filename,
                     "model_name": name,
                     "index": i,
-                    "query": test_snippet,
+                    "query": longest_part,
                     "found_snippet": snippet,
                 }
                 rows.append(row)
@@ -84,7 +103,7 @@ def format_code(code):
     # Add line breaks
     code = code.replace("\n", "<br>")
     # Make code block
-    code = f'<pre><code style="background-color: #333">{code}</code></pre>'
+    code = f'<pre><code style="background-color: #333">{code.replace("img", "-img")}</code></pre>'
     # Make leftbound
     code = f'<div style="text-align: left; width: 600px; word-wrap: break-word; white-space: normal; overflow: hidden; background-color: #333">{code}</div>'
     return code
