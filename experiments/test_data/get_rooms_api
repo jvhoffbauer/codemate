@@ -1,9 +1,15 @@
+from app import models, schemas
+from fastapi import APIRouter, Request
+
+router = APIRouter(prefix="/api")
+
+
 @router.get("/rooms/{room_id}")
-def get_room(request: Request, room_id: str) -> schemas.room:
+def get_room(request: Request, room_id: str) -> schemas.room:  # CURSOR
     """Get room info"""
     user = request.state.user
     room = models.get_room(room_id)
-    return schemas.Room(    [CURSOR]
+    return schemas.Room(
         id=room.room_id,
         start_time=room.start_time,
         end_time=room.get_end_time(),

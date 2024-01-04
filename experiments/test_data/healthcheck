@@ -4,5 +4,5 @@ router = APIRouter(tags=["health"])
 
 
 @router.get("/health", responses={200: {"description": "Health check"}})
-def health():
-    return {"status": "ok"}[CURSOR]
+def health():  
+    return {"status": "ok"}

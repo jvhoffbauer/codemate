@@ -1,0 +1,25 @@
+import datetime
+import logging as log
+import uuid
+from http import client
+from typing import Annotated
+from urllib.parse import urlencode, urlparse
+
+import requests
+from dependency_injector.wiring import Provide, inject
+from fastapi import APIRouter, Cookie, Depends, HTTPException, status
+from fastapi.responses import RedirectResponse
+from jwt import decode
+from prompto_server import Container
+from prompto_server.db.session import Session
+from pydantic import BaseModel
+from starlette.responses import FileResponse
+
+router = APIRouter(
+    tags=["authentication"],
+)
+
+
+@router.get("/auth/whoami", responses={401: {"description": "Unauthorized"}})
+def whoami(session: Annotated[Session, Depends(current_user)]) -> WhoamiResponse:
+    return WhoamiResponse(username=session.username, expires=session.expires)

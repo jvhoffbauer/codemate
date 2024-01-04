@@ -3,10 +3,9 @@ import logging
 import langcodes
 from fastapi import APIRouter, Request
 from fastapi_camelcase import CamelModel
-from google.cloud import translate_v3 as translate
-
 from fluento import config, models, schemas
 from fluento.wrapper import mixpanel
+from google.cloud import translate_v3 as translate
 
 router = APIRouter(prefix="/api/translation")
 logger = logging.getLogger(__name__)
@@ -56,4 +55,4 @@ def call_translate(
         request=request,
     )
 
-    return schemas.TranslationResult(translation=translation) [CURSOR]
+    return schemas.TranslationResult(translation=translation)

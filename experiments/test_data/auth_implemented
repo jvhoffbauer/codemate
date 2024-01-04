@@ -1,3 +1,4 @@
+from app import models
 from fastapi import HTTPException, Request
 from firebase_admin import auth as firebase_auth
 from firebase_admin.auth import (
@@ -8,10 +9,8 @@ from firebase_admin.auth import (
     UserDisabledError,
 )
 
-from app import models
-
 PUBLIC_ROUTES = [
-    "/api/auth/signup", [CURSOR]
+    "/api/auth/signup",
 ]
 
 
@@ -35,7 +34,7 @@ class FirebaseAuthMiddleware:
                 raise HTTPException(status_code=400, detail="Missing auth token")
 
             # Try to verify the token and get the user
-            try: [CURSOR]
+            try:
                 user = firebase_auth.verify_id_token(authorization_header)
                 request.state.firebase_user = user
                 request.state.user = models.get_user(user["uid"])

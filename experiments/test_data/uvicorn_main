@@ -1,5 +1,11 @@
+import uvicorn
+
+
 def main():
     uvicorn.run(
-        "fluento.main:app", port=5001, reload=True, workers=1, timeout_keep_alive=30
+        "fluento.main:app",
+        port=5001,
+        reload=True,
+        workers=1,
+        timeout_keep_alive=30,
     )
-[CURSOR]
