@@ -1,18 +1,19 @@
-from codemate import schemas
+import uvicorn
 from fastapi import FastAPI
-from backend.codemate.retrieval import run_retriever
+
+from codemate import schemas
+from codemate.retrieval import retrieve
 
 app = FastAPI()
 
 
 @app.post("/suggestion")
 def echo_input(data: schemas.SuggestionRequest) -> schemas.Suggestion:
-    result = run_retriever(data.context)
-    return schemas.Suggestion(code='-' * 8 + '\n' + result + '\n' + '-' * 8)
+    result = retrieve(data.context, data.cursor_line, data.cursor_column)
+    return result
 
 
 def main():
-    import uvicorn
     uvicorn.run("codemate.main:app", port=8080, reload=True)
 
 
