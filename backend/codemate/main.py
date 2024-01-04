@@ -1,6 +1,6 @@
 from codemate import schemas
 from fastapi import FastAPI
-from codemate.rag import run_retriever
+from backend.codemate.retrieval import run_retriever
 
 app = FastAPI()
 

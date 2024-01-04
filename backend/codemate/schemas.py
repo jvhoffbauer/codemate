@@ -5,5 +5,5 @@ class SuggestionRequest(CamelModel):
     context: str
 
 
-class Suggestion(CamelModel): 
+class Suggestion(CamelModel):
     code: str
