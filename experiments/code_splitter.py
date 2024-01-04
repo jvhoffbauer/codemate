@@ -27,10 +27,28 @@ class PythonCodeSplitter(TextSplitter):
      Optionally, applies black formatting to the code before splitting.
     """
 
-    def __init__(self, min_block_lines=10, apply_black=True):
+    def __init__(
+        self,
+        enabled_node_types=None,
+        min_block_lines=10,
+        apply_black=True,
+        skip_syntax_errors=False,
+    ):
         super().__init__()
+
+        # Handle default values
+        if enabled_node_types is None:
+            enabled_node_types = [
+                "function_definition",
+                "class_definition",
+                "block",
+            ]
+
+        # Store parameters
+        self.enabled_node_types = enabled_node_types
         self.min_block_lines = min_block_lines
         self.apply_black = apply_black
+        self.skip_syntax_errors = skip_syntax_errors
 
     def split_text(self, text: str) -> List[str]:
         """
@@ -46,16 +64,20 @@ class PythonCodeSplitter(TextSplitter):
         #     raise SyntaxError(f"Syntax error in code at {node}: {node.text}")
         if any(node.type == "ERROR" for node, _, _ in nodes):
             logger.warning(f"Syntax error in code at '{text[:100]}'...")
+            if self.skip_syntax_errors:
+                return []
 
         chunks = []
         for node, depth, _ in nodes:
             node_text = lambda: get_node_text_with_indent(node, depth)
-            if node.type == "function_definition":
-                chunks.append(node_text())
-            elif node.type == "class_definition":
-                chunks.append(node_text())
-            elif node.type == "block":
-                if len(node.text.decode().split("\n")) > self.min_block_lines:
+            if node.type in self.enabled_node_types:
+                # Add the node text to the chunks
+                if node.type != "block":
+                    chunks.append(node_text())
+                elif (
+                    node.type == "block"
+                    and len(node.text.decode().split("\n")) > self.min_block_lines
+                ):
                     chunks.append(node_text())
 
         # Remove duplicates
