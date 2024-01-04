@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from transformers import RobertaTokenizer, RobertaModel, RobertaConfig
 from langchain_core.embeddings import Embeddings
 from tqdm import tqdm
+from transformers import RobertaConfig, RobertaModel, RobertaTokenizer
 
 
 class UniXcoder(nn.Module):
@@ -262,7 +262,7 @@ class UnixcoderEmbeddings(Embeddings):
         self.model = self.model.to(self.device)
 
     def embed_documents(self, texts):
-        """Embed search docs."""
+        """Embed texts"""
         print(f"Embedding documents: {len(texts)}")
         embeddings = []
         for text in tqdm(texts):
