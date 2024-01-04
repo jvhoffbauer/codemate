@@ -3,24 +3,16 @@ import os
 import dotenv
 import torch
 from code_splitter import PythonCodeSplitter
+from direct_hf_embedding import DirectHfEmbedding
 from langchain.docstore.document import Document
-from langchain.embeddings.huggingface import HuggingFaceEmbeddings
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.text_splitter import (
-    CharacterTextSplitter,
-    Language,
-    RecursiveCharacterTextSplitter,
-)
 from langchain.vectorstores import Chroma
 from tqdm import tqdm
-from transformers import AutoTokenizer
-from unixcoder import UnixcoderEmbeddings
 
 dotenv.load_dotenv("../backend/.env")
 print(f"Has GPU: {torch.cuda.is_available()}")
 
 
-def load_chunks(use_code_splitter=True):
+def load_chunks():
     # Load the files
     all_files = []
     for root, dirs, files in os.walk("data/processed/", topdown=True):
@@ -48,38 +40,21 @@ def load_chunks(use_code_splitter=True):
 
     print(f"Has {len(texts)} documents, e.g. {str(texts[0])[:50]}")
 
-    if use_code_splitter:
-        splitters = [PythonCodeSplitter(min_block_lines=10, apply_black=True)]
-    else:
-        splitters = [
-            CharacterTextSplitter(
-                chunk_size=1000,
-                chunk_overlap=100,
-                separator="\n",
-                is_separator_regex=False,
-            ),
-            CharacterTextSplitter(
-                chunk_size=500,
-                chunk_overlap=100,
-                separator="\n\n",
-                is_separator_regex=False,
-            ),
-            RecursiveCharacterTextSplitter.from_language(
-                language=Language.PYTHON, chunk_size=200, chunk_overlap=50
-            ),
-            RecursiveCharacterTextSplitter.from_language(
-                language=Language.PYTHON, chunk_size=400, chunk_overlap=100
-            ),
-        ]
+    splitters = [
+        PythonCodeSplitter(
+            enabled_node_types=["function_definition", "decorated_definition"],
+            apply_black=True,
+            skip_syntax_errors=True,
+        )
+    ]
     chunks = [splitter.split_documents(texts) for splitter in tqdm(splitters)]
 
     print("Lengths:", [len(chunk) for chunk in chunks])
 
     chunks = [chunk for sublist in chunks for chunk in sublist]
 
-    # approx_tokens = sum([len(t.page_content) for t in chunks])
-
-    # print(f"Embedding cost with OpenAI: {round(approx_tokens / 1000 * 0.0001, 2)}$")
+    approx_tokens = sum([len(t.page_content) for t in chunks])
+    print(f"Embedding cost with OpenAI: {round(approx_tokens / 1000 * 0.0001, 2)}$")
     print(f"Number of chunks: {len(chunks)}")
 
     for i in [0, 1000, 5000, 10000, 20000, 30000, 40000]:
@@ -99,7 +74,7 @@ def embedd(embedding_function, chunks, persist_directory):
 
 
 def main():
-    chunks_code_splitter = load_chunks(use_code_splitter=True)
+    chunks_code_splitter = load_chunks()
 
     # # Unixcoder
     # embedd(
@@ -108,10 +83,20 @@ def main():
     #     chunks=chunks_code_splitter,
     # )
 
-    # Unixcoder
+    # # OpenAI
+    # embedd(
+    #     embedding_function=OpenAIEmbeddings(),
+    #     persist_directory="embeddings/openai_code_splitter",
+    #     chunks=chunks_code_splitter,
+    # )
+
+    # E5 Mistral7B Instruct
     embedd(
-        embedding_function=OpenAIEmbeddings(),
-        persist_directory="embeddings/openai_code_splitter",
+        embedding_function=DirectHfEmbedding(
+            model_name="intfloat/e5-mistral-7b-instruct",
+            model_kwargs={"load_in_8bit": True},
+        ),
+        persist_directory="embeddings/e5_code_splitter",
         chunks=chunks_code_splitter,
     )
 
