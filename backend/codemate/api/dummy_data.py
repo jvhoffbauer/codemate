@@ -1,4 +1,4 @@
-from codemate import schemas
+from codemate.api import schemas
 
 suggestions = schemas.Suggestion(
     examples=[
