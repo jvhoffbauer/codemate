@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import { Suggestion, Example } from './ApiBindings';
-import { Eta } from "eta"
+import { Eta } from "eta";
 
 
 // A webview panel to show code suggestions
@@ -21,7 +21,7 @@ function createWebview(context: vscode.ExtensionContext) {
     );
 
     // Create the template engine
-    eta = new Eta({ views: context.asAbsolutePath('src/templates') })
+    eta = new Eta({ views: context.asAbsolutePath('src/templates') });
 
     // Render the webview with the welcome message
     const html = eta.render("view_welcome", {});

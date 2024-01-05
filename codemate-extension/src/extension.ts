@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
     createWebview(context);
 }
 
-async function updateCursorPosition(event: any) {
+async function updateCursorPosition() {
     const editor = vscode.window.activeTextEditor;
 
     if (editor) {

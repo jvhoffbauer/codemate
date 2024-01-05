@@ -54,4 +54,4 @@ async function fetchData(context: string, line: number, column: number) {
 }
 
 export default fetchData;
-export { Suggestion, Example }
+export { Suggestion, Example };
