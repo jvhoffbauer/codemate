@@ -1,0 +1,8 @@
+from fastapi import APIRouter
+
+router = APIRouter(prefix="/api")
+
+
+@router.get("/login")
+def health():
+    return None

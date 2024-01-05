@@ -13,40 +13,33 @@ from unixcoder import UnixcoderEmbeddings
 dotenv.load_dotenv("../backend/.env")
 
 
-TOP_K = 1
+TOP_K = 3
 
 
 def main():
     vector_dbs = {
-        "unixcoder_code_splitter": Chroma(
-            persist_directory="embeddings/unixcoder_code_splitter",
+        "unixcoder": Chroma(
+            persist_directory="embeddings/unixcoder",
             embedding_function=UnixcoderEmbeddings(),
         ),
-        "openai_code_splitter": Chroma(
-            persist_directory="embeddings/openai_code_splitter",
+        "openai": Chroma(
+            persist_directory="embeddings/openai",
             embedding_function=OpenAIEmbeddings(),
         ),
-        "e5_code_splitter": Chroma(
-            persist_directory="embeddings/e5_code_splitter",
-            embedding_function=HuggingFaceEmbeddings(
-                model_name="intfloat/e5-mistral-7b-instruct",
-                model_kwargs={"device": "cuda:0"},
-            ),
-        ),
-        # "unixcoder": Chroma(
-        #     persist_directory="embeddings/unixcoder",
-        #     embedding_function=UnixcoderEmbeddings(),
-        # ),
-        # "openai": Chroma(
-        #     persist_directory="embeddings/openai", embedding_function=OpenAIEmbeddings()
-        # ),
-        # "reacc": Chroma(
-        #     persist_directory="embeddings/reacc-py-retriever",
+        # "e5_code": Chroma(
+        #     persist_directory="embeddings/e5",
         #     embedding_function=HuggingFaceEmbeddings(
-        #         model_name="microsoft/reacc-py-retriever",
+        #         model_name="intfloat/e5-mistral-7b-instruct",
         #         model_kwargs={"device": "cuda:0"},
         #     ),
         # ),
+        "reacc": Chroma(
+            persist_directory="embeddings/reacc-py-retriever",
+            embedding_function=HuggingFaceEmbeddings(
+                model_name="microsoft/reacc-py-retriever",
+                model_kwargs={"device": "cuda:0"},
+            ),
+        ),
         # "cocosoda": Chroma(
         #     persist_directory="embeddings/cocosoda",
         #     embedding_function=HuggingFaceEmbeddings(
@@ -57,7 +50,6 @@ def main():
     }
 
     rows = []
-
     for filename in os.listdir("test_data"):
         with open(os.path.join("test_data", filename)) as f:
             test_snippet = f.read()
@@ -90,6 +82,8 @@ def main():
     df = pd.DataFrame(rows)
     print(df.columns)
     print(df.head(1))
+    print(f"#rows = {df.shape[0]}")
+    # Save html
     html = df.to_html(
         escape=False,
         formatters={"query": format_code, "found_snippet": format_code},
@@ -97,6 +91,10 @@ def main():
     )
     with open("out/comparison.html", "w") as f:
         f.write(html)
+    # Save excel for labelling
+    df.sample(frac=1, random_state=42).sort_values(by=["filename"]).to_excel(
+        "out/comparison_labelling.xlsx", index=False
+    )
 
 
 def format_code(code):

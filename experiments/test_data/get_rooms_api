@@ -5,7 +5,7 @@ router = APIRouter(prefix="/api")
 
 
 @router.get("/rooms/{room_id}")
-def get_room(request: Request, room_id: str) -> schemas.room:  # CURSOR
+def get_room(request: Request, room_id: str) -> schemas.room:
     """Get room info"""
     user = request.state.user
     room = models.get_room(room_id)
