@@ -1,11 +1,12 @@
-from fastapi_camelcase import CamelModel
 from typing import List
+
+from fastapi_camelcase import CamelModel
 
 
 class SuggestionRequest(CamelModel):
-    editor_text: str
-    cursor_line: int
-    cursor_column: int
+    text: str
+    line: int
+    column: int
 
 
 class Example(CamelModel):

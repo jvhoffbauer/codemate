@@ -9,7 +9,7 @@ app = FastAPI()
 
 @app.post("/suggestion")
 def echo_input(data: schemas.SuggestionRequest) -> schemas.Suggestion:
-    result = retrieve(data.context, data.cursor_line, data.cursor_column)
+    result = retrieve(data.text, data.line, data.column)
     return result
 
 
