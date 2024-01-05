@@ -1,6 +1,5 @@
 import * as vscode from 'vscode';
 import { Suggestion, Example } from './ApiBindings';
-import {sprightly} from "sprightly"
 import { Eta } from "eta"
 
 
