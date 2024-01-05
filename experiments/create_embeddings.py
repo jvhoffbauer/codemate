@@ -5,8 +5,11 @@ import torch
 from code_splitter import PythonCodeSplitter
 from direct_hf_embedding import DirectHfEmbedding
 from langchain.docstore.document import Document
+from langchain.embeddings import HuggingFaceEmbeddings, OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from tqdm import tqdm
+from transformers import AutoTokenizer
+from unixcoder import UnixcoderEmbeddings
 
 dotenv.load_dotenv("../backend/.env")
 print(f"Has GPU: {torch.cuda.is_available()}")
@@ -74,48 +77,32 @@ def embedd(embedding_function, chunks, persist_directory):
 
 
 def main():
-    chunks_code_splitter = load_chunks()
+    chunks = load_chunks()
 
-    # # Unixcoder
-    # embedd(
-    #     embedding_function=UnixcoderEmbeddings(),
-    #     persist_directory="embeddings/unixcoder_code_splitter",
-    #     chunks=chunks_code_splitter,
-    # )
-
-    # # OpenAI
-    # embedd(
-    #     embedding_function=OpenAIEmbeddings(),
-    #     persist_directory="embeddings/openai_code_splitter",
-    #     chunks=chunks_code_splitter,
-    # )
-
-    # E5 Mistral7B Instruct
-    embedd(
-        embedding_function=DirectHfEmbedding(
-            model_name="intfloat/e5-mistral-7b-instruct",
-            model_kwargs={"load_in_8bit": True},
-        ),
-        persist_directory="embeddings/e5_code_splitter",
-        chunks=[c for c in chunks_code_splitter if len(c.page_content) < 4000],
-    )
-
-    # chunks = load_chunks()
-    #
     # # Unixcoder
     # embedd(
     #     embedding_function=UnixcoderEmbeddings(),
     #     persist_directory="embeddings/unixcoder",
     #     chunks=chunks,
     # )
-    #
+
     # # OpenAI
     # embedd(
     #     embedding_function=OpenAIEmbeddings(),
     #     persist_directory="embeddings/openai",
     #     chunks=chunks,
     # )
-    #
+
+    # # E5 Mistral7B Instruct
+    # embedd(
+    #     embedding_function=DirectHfEmbedding(
+    #         model_name="intfloat/e5-mistral-7b-instruct",
+    #         model_kwargs={"load_in_8bit": True},
+    #     ),
+    #     persist_directory="embeddings/e5",
+    #     chunks=[c for c in chunks if len(c.page_content) < 4000],
+    # )
+
     # # Reacc
     # embedd(
     #     embedding_function=HuggingFaceEmbeddings(
@@ -126,23 +113,23 @@ def main():
     #     persist_directory="embeddings/reacc-py-retriever",
     #     chunks=chunks,
     # )
-    #
-    # # Cocosoda
-    # tokenizer_cocosoda = AutoTokenizer.from_pretrained("DeepSoftwareAnalytics/CoCoSoDa")
-    # chunks_cocosoda = chunks
-    # for c in chunks_cocosoda:
-    #     c.page_content = tokenizer_cocosoda.decode(
-    #         tokenizer_cocosoda.encode(c.page_content)[:1025][1:-1]
-    #     )
-    # embedd(
-    #     embedding_function=HuggingFaceEmbeddings(
-    #         model_name="DeepSoftwareAnalytics/CoCoSoDa",
-    #         model_kwargs={"device": "cuda:0"},
-    #         encode_kwargs={"show_progress_bar": True},
-    #     ),
-    #     persist_directory="embeddings/cocosoda",
-    #     chunks=chunks_cocosoda,
-    # )
+
+    # Cocosoda
+    tokenizer_cocosoda = AutoTokenizer.from_pretrained("DeepSoftwareAnalytics/CoCoSoDa")
+    chunks_cocosoda = chunks
+    for c in chunks_cocosoda:
+        c.page_content = tokenizer_cocosoda.decode(
+            tokenizer_cocosoda.encode(c.page_content)[:1025][1:-1]
+        )
+    embedd(
+        embedding_function=HuggingFaceEmbeddings(
+            model_name="DeepSoftwareAnalytics/CoCoSoDa",
+            model_kwargs={"device": "cuda:0"},
+            encode_kwargs={"show_progress_bar": True},
+        ),
+        persist_directory="embeddings/cocosoda",
+        chunks=chunks_cocosoda,
+    )
 
 
 if __name__ == "__main__":
