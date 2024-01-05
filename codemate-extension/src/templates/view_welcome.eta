@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            white-space: 'pre';
+        }
+        code {
+            display: block;
+            white-space: pre-wrap   
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CodeMate for VSCode! 🚀</h1>
+
+    <h3>How it works</h3>
+    <span>
+        Place your cursor anywhere in a function of your FastAPI project and 
+        CodeMate will show you helpful examples in this window. 
+    </span>
+
+    <h3>Learn more</h3>
+    <span>
+        Authored by <a href="https://jvhoffbauer.com">jvhoffbauer</a> and supervised by <a href="">Lukas Böhme</a> and <a href="">Toni Mattis</a>.
+    </span>
+    <span>
+        This project was developed as part of the Future of Programming course at <a href="https://hpi.de">HPI</a>. 
+    </span>
+    <span>
+        Find the code on 
+        <a href="https://github.com/jvhoffbauer/codemate">GitHub</a>.
+    </span>
+</body>
+</html>

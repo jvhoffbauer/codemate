@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 0px 40px;
+            white-space: 'pre';
+        }
+        code {
+            display: block;
+            white-space: pre-wrap;
+            padding: 0px 8px;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .example-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .examples-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CodeMate 🚀</h1>
+
+    <span>The following code snippet could help you:</span>
+    <div class="examples-box">
+        <% it.suggestion.examples.forEach(function(example, index) { %>
+            <span class="example-header">
+                <h3>Example #<%= index + 1 %></h3>
+                <span>
+                    in repository 
+                    <a href="<%= example.source %>">
+                        <%= example.source.replace("https://github.com/", "") %> 
+                    </a>
+                    with <%= example.stars %> ⭐
+                </span>
+            </span>
+            <code><%= example.text %></code>
+        <% }) %>
+    </div>
+</body>
+</html>
