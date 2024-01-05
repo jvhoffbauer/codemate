@@ -35,6 +35,8 @@ RUN pip install tiktoken
 RUN pip install langchain 
 RUN pip install sentence-transformers
 RUN pip install chromadb
+RUN pip install black
+RUN pip install tree_sitter
 #RUN pip install faiss
 
 #RUN git clone https://github.com/EleutherAI/lm-evaluation-harness
