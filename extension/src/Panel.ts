@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { Suggestion, Example } from './ApiBindings';
+import { Suggestion } from './ApiBindings';
 import { Eta } from "eta";
 
 
@@ -34,8 +34,12 @@ function updateWebview(suggestion: Suggestion) {
     }
 
     // Render the webview with the new suggestion
-    const html = eta.render("view_examples", {suggestion: suggestion});
-    panel.webview.html = html;
+    if (suggestion.examples.length === 0) {
+        panel.webview.html = eta.render("view_empty", {});
+    } else {
+        panel.webview.html = eta.render("view_examples", {suggestion: suggestion});
+    }
+    
 }
 
 export { createWebview, updateWebview};

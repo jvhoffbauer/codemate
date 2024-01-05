@@ -33,21 +33,9 @@
 <body>
     <h1>CodeMate 🚀</h1>
 
-    <span>The following code snippet could help you:</span>
-    <div class="examples-box">
-        <% it.suggestion.examples.forEach(function(example, index) { %>
-            <span class="example-header">
-                <h3>Example #<%= index + 1 %></h3>
-                <span>
-                    in repository 
-                    <a href="<%= example.source %>">
-                        <%= example.source.replace("https://github.com/", "") %> 
-                    </a>
-                    with <%= example.stars %> ⭐
-                </span>
-            </span>
-            <code><%= example.text %></code>
-        <% }) %>
-    </div>
+    <span>
+        Place your cursor anywhere in a function of your FastAPI project and 
+        CodeMate will show you helpful examples in this window. 
+    </span>
 </body>
 </html>
