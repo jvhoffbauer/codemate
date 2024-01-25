@@ -3,7 +3,7 @@
 CodeMate is a VSCode extension that helps you find helpful examples while you code using AI
 
 <p align="center">
-    <img src="./demo_screenshot.png" width="60%" style="margin-left: auto; margin-right: auto" /> 
+    <img src="./demo_screenshot.png" width="90%" style="margin-left: auto; margin-right: auto" /> 
 </p>
 
 ## Setup
