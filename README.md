@@ -8,14 +8,15 @@ CodeMate is a VSCode extension that helps you find helpful examples while you co
 
 ## Setup
 
-First, you need to start the Python backend and then the TypeScript VSCode extension. 
+First, you need to start the Python backend and then the TypeScript VSCode extension.
 
 ### Prerequisites
 
 To run this app locally, you need
-* Python 3.11 or above
-* An OpenAI API key (get it here [here](https://platform.openai.com/api-keys))
-* VSCode installed locally 
+
+-   Python 3.11 or above
+-   An OpenAI API key (get it here [here](https://platform.openai.com/api-keys) or reach out to me if you're testing)
+-   VSCode installed locally
 
 ### Backend
 
@@ -28,14 +29,14 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Start the backend 
+Start the backend
 
 ```
 export OPENAI_API_KEY="YOUR_API_KEY"
 python3 -m codemate.api.main
 ```
 
-### Frontend 
+### Frontend
 
 Install dependencies
 
@@ -44,7 +45,7 @@ cd extension
 npm i
 ```
 
-Open the extension's code in VSCode 
+Open the extension's code in VSCode
 
 ```
 cd extension
@@ -53,17 +54,16 @@ code .
 
 And launch the application using the run button (config "Run Extension") ![Run Button](./run_button.png)
 
-## How things work 
+## How things work
 
-### Embedding your own data 
+### Embedding your own data
 
 #### Download repositories from github.com
 
 #### Preprocess and format them
 
-#### Embedd them 
+#### Embedd them
 
-### RAG explained 
+### RAG explained
 
-### VSCode Extension explained 
-
+### VSCode Extension explained
