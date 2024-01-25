@@ -1,1 +1,1 @@
-# codemate
+# CodeMate 🚀
