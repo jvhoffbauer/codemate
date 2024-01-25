@@ -21,6 +21,7 @@
 	"runArgs": [
 		"--gpus",
 		"all"
+		//"device=1"
 	],
 	"customizations": {
 		"vscode": {

@@ -50,7 +50,7 @@ RUN pip install tree_sitter
 # #RUN cd bitsandbytes && git checkout b844e104b79ddc06161ff975aa93ffa9a7ec4801
 # RUN cd bitsandbytes && make cuda11x
 # RUN cd bitsandbytes && python3 setup.py install
-RUN pip install bitsandbytes
+# RUN pip install bitsandbytes
 # #RUN python3 check_bnb_install.py
 
 ENV HF_DATASETS_CACHE="/hf_cache/datasets"
@@ -58,9 +58,6 @@ ENV HUGGINGFACE_HUB_CACHE="/hf_cache/hub"
 
 ARG HUGGINGFACE_TOKEN
 ENV HUGGINGFACE_TOKEN=$HUGGINGFACE_TOKEN
-
-# Copy the code
-COPY . /code
 
 # Install a useful helper to check bitsandbytes installation. Only works at runtime.
 #RUN wget https://gist.githubusercontent.com/TimDettmers/1f5188c6ee6ed69d211b7fe4e381e713/raw/4d17c3d09ccdb57e9ab7eca0171f2ace6e4d2858/check_bnb_install.py 
