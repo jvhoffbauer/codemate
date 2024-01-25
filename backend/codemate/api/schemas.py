@@ -12,7 +12,6 @@ class SuggestionRequest(CamelModel):
 class Example(CamelModel):
     text: str
     source: str
-    stars: int
 
 
 class Suggestion(CamelModel):

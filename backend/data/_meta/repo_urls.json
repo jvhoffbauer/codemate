@@ -1,0 +1,22 @@
+{
+    "AutoTrader": "https://github.com/rushout09/AutoTrader/blob/main/",
+    "fastapi_production_template": "https://github.com/szto/fastapi_production_template/blob/main/",
+    "full-stack-fastapi-postgresql": "https://github.com/tiangolo/full-stack-fastapi-postgresql/blob/master/",
+    "uvicorn-gunicorn-fastapi-docker": "https://github.com/apachecn-archive/uvicorn-gunicorn-fastapi-docker/blob/master/",
+    "fastapi": "https://github.com/fehmikahraman/fastapi-socmedapi/blob/master/",
+    "cookiecutter-spacy-fastapi": "https://github.com/microsoft/cookiecutter-spacy-fastapi/blob/master/",
+    "tifa": "https://github.com/yu-iskw/dbt-artifacts-loader/blob/master/",
+    "fastapi-microservices": "https://github.com/ADv0rnik/fastapi-microservices/blob/main/",
+    "minimal-fastapi-postgres-template": "https://github.com/kaitok/minimal-fastapi-postgres-template/blob/main/",
+    "fastapi-ml-skeleton": "https://github.com/abodacs/fastapi-ml-skeleton/blob/master/",
+    "fastapi-jsonrpc": "https://github.com/cdeshapriya/fastapi-jsonrpc/blob/master/",
+    "fastapi-postgresql": "https://github.com/tiangolo/full-stack-fastapi-postgresql/blob/master/",
+    "fastapi-amis-admin": "https://github.com/ywzhaiqi/fastapi-amis-admin_demo/blob/master/",
+    "asgi-correlation-id": "https://github.com/Grustamli/asgi-correlation-id/blob/main/",
+    "fastapi-mysql-generator": "https://github.com/youth1996/fastapi-mysql-generator/blob/master/",
+    "titiler": "https://github.com/UNDP-Data/titiler-aks/blob/master/",
+    "fastapi-gino-arq-uvicorn": "https://github.com/donniexyz/fastapi-gino-arq-uvicorn/blob/master/",
+    "full-stack-fastapi-couchbase": "https://github.com/tiangolo/full-stack-fastapi-couchbase/blob/master/",
+    "sqlmodel": "https://github.com/Modif93/fastapi-sqlmodel-template/blob/main/",
+    "coronavirus-tracker-api": "https://github.com/mikeyhodl/coronavirus-tracker-api/blob/master/"
+}
