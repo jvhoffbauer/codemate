@@ -1,14 +1,12 @@
-import html
 import os
 
 import dotenv
 import pandas as pd
-from code_splitter import PythonCodeSplitter
-from langchain.embeddings.huggingface import HuggingFaceEmbeddings
-from langchain.embeddings.openai import OpenAIEmbeddings
+from codemate.code2text import llm_code_description
+from codemate.embedding.code_splitter import PythonCodeSplitter
+from codemate.embedding.unixcoder import UnixcoderEmbeddings
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
-from tqdm import tqdm
-from unixcoder import UnixcoderEmbeddings
 
 dotenv.load_dotenv("../backend/.env")
 
@@ -22,10 +20,20 @@ def main():
             persist_directory="embeddings/unixcoder",
             embedding_function=UnixcoderEmbeddings(),
         ),
-        "openai": Chroma(
-            persist_directory="embeddings/openai",
+        "openai_text": Chroma(
+            persist_directory="embeddings/openai_text",
             embedding_function=OpenAIEmbeddings(),
         ),
+        # "unixcoder-poj104": Chroma(
+        #     embedding_function=UnixcoderEmbeddings(
+        #         model_name="/workspaces/codemate/unixcoder-poj104-model"
+        #     ),
+        #     persist_directory="embeddings/unixcoder-poj104",
+        # ),
+        # "openai": Chroma(
+        #     persist_directory="embeddings/openai",
+        #     embedding_function=OpenAIEmbeddings(),
+        # ),
         # "e5_code": Chroma(
         #     persist_directory="embeddings/e5",
         #     embedding_function=HuggingFaceEmbeddings(
@@ -33,13 +41,13 @@ def main():
         #         model_kwargs={"device": "cuda:0"},
         #     ),
         # ),
-        "reacc": Chroma(
-            persist_directory="embeddings/reacc-py-retriever",
-            embedding_function=HuggingFaceEmbeddings(
-                model_name="microsoft/reacc-py-retriever",
-                model_kwargs={"device": "cuda:0"},
-            ),
-        ),
+        # "reacc": Chroma(
+        #     persist_directory="embeddings/reacc-py-retriever",
+        #     embedding_function=HuggingFaceEmbeddings(
+        #         model_name="microsoft/reacc-py-retriever",
+        #         model_kwargs={"device": "cuda:0"},
+        #     ),
+        # ),
         # "cocosoda": Chroma(
         #     persist_directory="embeddings/cocosoda",
         #     embedding_function=HuggingFaceEmbeddings(
@@ -49,9 +57,11 @@ def main():
         # ),
     }
 
+    pipe = llm_code_description.get_pipeline()
+
     rows = []
-    for filename in os.listdir("test_data"):
-        with open(os.path.join("test_data", filename)) as f:
+    for filename in os.listdir("data/test_data"):
+        with open(os.path.join("data/test_data", filename)) as f:
             test_snippet = f.read()
 
         splitter = PythonCodeSplitter(
@@ -60,12 +70,28 @@ def main():
         parts = splitter.split_text(test_snippet)
         longest_part = max(parts, key=lambda x: len(x))
 
+        text_description = llm_code_description.explain_code(longest_part, pipe)
+
         retrieved_snippets = {}
         for name, vector_db in vector_dbs.items():
-            result = vector_db.similarity_search(longest_part, k=TOP_K)
-            result = [r.page_content[:2000] for r in result]
-            retrieved_snippets[name] = result
-        print(f"Processed {filename} with {vector_dbs.keys()}")
+            textmode = "text" in name
+            query = longest_part if not textmode else text_description
+            result = vector_db.similarity_search(query, k=TOP_K)
+            result_o = [
+                r.page_content[:2000] if not textmode else r.metadata["original_code"]
+                for r in result
+            ]
+            retrieved_snippets[name] = result_o
+
+            if textmode:
+                print(f"Processed {filename} with {name}")
+                print(f"{name} uses text mode")
+                print(f"Query: \n{query}\n====>\n{result[0].page_content}")
+                print("------")
+                print(f"Result: \n{longest_part}\n====>\n{result_o[0]}")
+                print("-----------------------------------")
+
+        print(f"Done processing {filename} with {vector_dbs.keys()}")
 
         # Create the result rows
         for name, snippets in retrieved_snippets.items():

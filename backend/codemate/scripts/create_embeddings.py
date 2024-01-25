@@ -1,134 +1,112 @@
+import argparse
 import os
+import shutil
 
 import dotenv
 import torch
-from code_splitter import PythonCodeSplitter
-from direct_hf_embedding import DirectHfEmbedding
-from langchain.docstore.document import Document
+from codemate.embedding.direct_hf_embedding import DirectHfEmbedding
+from codemate.embedding.unixcoder import UnixcoderEmbeddings
+from codemate.scripts.create_chunks import load_chunks
 from langchain.embeddings import HuggingFaceEmbeddings, OpenAIEmbeddings
 from langchain.vectorstores import Chroma
-from tqdm import tqdm
-from transformers import AutoTokenizer
-from unixcoder import UnixcoderEmbeddings
 
 dotenv.load_dotenv("../backend/.env")
 print(f"Has GPU: {torch.cuda.is_available()}")
 
 
-def load_chunks():
-    # Load the files
-    all_files = []
-    for root, dirs, files in os.walk("data/processed/", topdown=True):
-        files = [
-            os.path.join(root, f)
-            for f in files
-            if f.endswith(".py") or f.endswith(".md")
-        ]
-        all_files += files
+def embedd(embedding_name, chunks, chunks_text, drop):
+    """Embedd the given chunks with the given embedding function.
 
-    print(f"Has {len(all_files)} files, e.g.: {all_files[0]}")
+    Args:
+        embedding_name (str): name of the emebddings
+        chunks: List of chunks where page_content is the code
+        chunks_text: List of chunks where page_content is the description
+        drop: whether to drop the existing embedding
 
-    # Read the files and create documents
-    texts = []
-    for file in all_files:
-        with open(file) as f:
-            try:
-                file_content = f.read()
-                if file_content:
-                    texts.append(
-                        Document(page_content=file_content, metadata={"filename": file})
-                    )
-            except Exception as e:
-                print(f"Error reading file {file}: {e}")
+    Returns:
+        created vectorstore
+    """
+    # Get args
+    is_text = embedding_name.endswith("_text")
+    persist_directory = f"embeddings/{embedding_name}"
+    embedding_function = get_embedding_function(embedding_name)
 
-    print(f"Has {len(texts)} documents, e.g. {str(texts[0])[:50]}")
+    print(f"Embedding {len(chunks)} chunks with {embedding_name}")
+    print(f"  Persisting to {os.path.abspath(persist_directory)}")
+    print(f"  Is text: {is_text}")
+    print(f"  Embedding function: {embedding_function}")
 
-    splitters = [
-        PythonCodeSplitter(
-            enabled_node_types=["function_definition", "decorated_definition"],
-            apply_black=True,
-            skip_syntax_errors=True,
-        )
-    ]
-    chunks = [splitter.split_documents(texts) for splitter in tqdm(splitters)]
+    # Drop existing embedding if necessary
+    if drop and os.path.exists(persist_directory):
+        print(f"Dropping existing embedding in {persist_directory}")
+        shutil.rmtree(persist_directory)
 
-    print("Lengths:", [len(chunk) for chunk in chunks])
-
-    chunks = [chunk for sublist in chunks for chunk in sublist]
-
-    approx_tokens = sum([len(t.page_content) for t in chunks])
-    print(f"Embedding cost with OpenAI: {round(approx_tokens / 1000 * 0.0001, 2)}$")
-    print(f"Number of chunks: {len(chunks)}")
-
-    for i in [0, 1000, 5000, 10000, 20000, 30000, 40000]:
-        if i >= len(chunks):
-            break
-        print(chunks[i].page_content)
-        print("-" * 80)
-
-    return chunks
-
-
-def embedd(embedding_function, chunks, persist_directory):
+    # Create the embedding with the given function
+    os.makedirs(persist_directory, exist_ok=True)
     db = Chroma.from_documents(
-        chunks, embedding_function, persist_directory=persist_directory
+        chunks if not is_text else chunks_text,
+        embedding_function,
+        persist_directory=persist_directory,
     )
     return db
 
 
-def main():
-    chunks = load_chunks()
+def get_embedding_function(embedding_name):
+    """Return the embedding function for the given name.
 
-    # # Unixcoder
-    # embedd(
-    #     embedding_function=UnixcoderEmbeddings(),
-    #     persist_directory="embeddings/unixcoder",
-    #     chunks=chunks,
-    # )
+    Args:
+        embedding_name (str): name of the emebddings
 
-    # # OpenAI
-    # embedd(
-    #     embedding_function=OpenAIEmbeddings(),
-    #     persist_directory="embeddings/openai",
-    #     chunks=chunks,
-    # )
+    Raises:
+        ValueError: occurs when the embedding name is unknown
 
-    # # E5 Mistral7B Instruct
-    # embedd(
-    #     embedding_function=DirectHfEmbedding(
-    #         model_name="intfloat/e5-mistral-7b-instruct",
-    #         model_kwargs={"load_in_8bit": True},
-    #     ),
-    #     persist_directory="embeddings/e5",
-    #     chunks=[c for c in chunks if len(c.page_content) < 4000],
-    # )
-
-    # # Reacc
-    # embedd(
-    #     embedding_function=HuggingFaceEmbeddings(
-    #         model_name="microsoft/reacc-py-retriever",
-    #         model_kwargs={"device": "cuda:0"},
-    #         encode_kwargs={"show_progress_bar": True},
-    #     ),
-    #     persist_directory="embeddings/reacc-py-retriever",
-    #     chunks=chunks,
-    # )
-
-    # Cocosoda
-    tokenizer_cocosoda = AutoTokenizer.from_pretrained("DeepSoftwareAnalytics/CoCoSoDa")
-    chunks_cocosoda = chunks
-    for c in chunks_cocosoda:
-        c.page_content = tokenizer_cocosoda.decode(
-            tokenizer_cocosoda.encode(c.page_content)[:1025][1:-1]
+    Returns:
+        Embedding function to use when embedding the chunks
+    """
+    # Get embedding function
+    if embedding_name == "unixcoder":
+        embedding_function = UnixcoderEmbeddings()
+    elif embedding_name == "unixcoder-poj104":
+        embedding_function = UnixcoderEmbeddings(
+            model_name="/workspaces/codemate/unixcoder-poj104-model"
         )
-    embedd(
-        embedding_function=HuggingFaceEmbeddings(
-            model_name="DeepSoftwareAnalytics/CoCoSoDa",
+    elif embedding_name in ["openai", "openai_text"]:
+        embedding_function = OpenAIEmbeddings()
+    elif embedding_name in ["e5", "e5_text"]:
+        embedding_function = DirectHfEmbedding(
+            model_name="intfloat/e5-mistral-7b-instruct",
+            model_kwargs={"load_in_8bit": True},
+        )
+    elif embedding_name == "reacc":
+        embedding_function = HuggingFaceEmbeddings(
+            model_name="microsoft/reacc-py-retriever",
             model_kwargs={"device": "cuda:0"},
             encode_kwargs={"show_progress_bar": True},
-        ),
-        persist_directory="embeddings/cocosoda",
-        chunks=chunks_cocosoda,
+        )
+
+    # Raise error if embedding name is unknown
+    if embedding_function is None:
+        raise ValueError(f"Unknown embedding name: {embedding_name}")
+
+    return embedding_function
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--embedding_name", type=str, required=True)
+    parser.add_argument("--drop", action="store_true", default=False)
+    args = parser.parse_args()
+
+    # Load chunks from disk
+    chunks = load_chunks("data/chunks")
+    chunks_text = None  # load_chunks("data/chunks_text")
+
+    # Run embedding
+    embedd(
+        embedding_name=args.embedding_name,
+        chunks=chunks,
+        chunks_text=chunks_text,
+        drop=args.drop,
     )
 
 
