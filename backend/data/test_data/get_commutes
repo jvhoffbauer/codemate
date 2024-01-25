@@ -1,0 +1,22 @@
+from datetime import datetime
+from fastapi import APIRouter
+from firestore import db
+from schemas import CommuteEntity
+import datetime
+
+router = APIRouter(
+    prefix='/commutes',
+    tags=['commutes']
+)
+
+@router.get("/", response_model=list[CommuteEntity])
+async def get_commutes() -> list[CommuteEntity]:
+    """
+    Get all the commutes (not user specific yet)
+    """
+    
+    # Get all the commutes
+    commutes = db.collection('commutes').stream()
+
+    # Return the commutes
+    return [commute.to_dict() for commute in commutes]

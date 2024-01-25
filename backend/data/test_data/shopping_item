@@ -1,0 +1,14 @@
+async def update_shopping_item_status(item_id: int, update_item: schemas.UpdateItem, session: Session):
+    try:
+        item = session.exec(select(ShoppingList).where(ShoppingList.id == item_id)).first()
+        if not item:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Item not found")
+        item.is_purchased = update_item.is_purchased
+        item.purchased_by = update_item.purchased_by
+        session.add(item)
+        session.commit()
+        session.refresh(item)
+        return item.model_dump()
+    except Exception as e:
+        session.rollback()
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))

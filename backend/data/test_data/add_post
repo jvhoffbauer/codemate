@@ -1,0 +1,29 @@
+import os
+
+import uvicorn
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from fastapi_blog.core import get_context, init_db, teardown_db
+from fastapi_blog.models import (
+    database,
+    fetch_last_post_id,
+    fetch_post,
+    fetch_posts,
+    fetch_posts_by_tag,
+    fetch_tag,
+    fetch_tags,
+)
+
+templates = Jinja2Templates(directory="fastapi_blog/templates")
+
+
+app = get_app()
+
+
+@app.get("/post/{post_id:int}", response_class=HTMLResponse)
+async def post(request: Request, post_id: int):
+    post = await fetch_post(post_id)
+    context = get_context(request, post=post)
+    return templates.TemplateResponse("post.html", context)
