@@ -4,5 +4,5 @@ router = APIRouter(prefix="/api")
 
 
 @router.get("/login")
-def health():
+def login():
     return None
