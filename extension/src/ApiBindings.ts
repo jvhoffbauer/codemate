@@ -10,7 +10,6 @@ interface SuggestionRequest {
 interface Example {
     text: string;
     source: string;
-    stars: number;
 }
 
 interface Suggestion {

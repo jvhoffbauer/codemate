@@ -43,7 +43,6 @@
                     <a href="<%= example.source %>">
                         <%= example.source.replace("https://github.com/", "") %> 
                     </a>
-                    with <%= example.stars %> ⭐
                 </span>
             </span>
             <code><%= example.text %></code>
