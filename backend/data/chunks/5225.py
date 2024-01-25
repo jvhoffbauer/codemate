@@ -1,0 +1,3 @@
+@group_worker.command("test")
+def test_worker():
+    ...

@@ -1,0 +1,3 @@
+@group_worker.command("pg_to_es")
+def pg_to_es():
+    ...

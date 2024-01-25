@@ -1,0 +1,3 @@
+@overload
+def select(__ent0: _TCCA[_T0]) -> SelectOfScalar[_T0]:
+    ...

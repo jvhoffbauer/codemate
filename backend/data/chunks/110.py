@@ -1,0 +1,3 @@
+@overload
+def select(__ent0: _TScalar_0) -> SelectOfScalar[_TScalar_0]:  # type: ignore
+    ...

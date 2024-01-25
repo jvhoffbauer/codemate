@@ -1,0 +1,3 @@
+@sio.on("connect")
+async def on_connect(sid, environ, auth):
+    ...

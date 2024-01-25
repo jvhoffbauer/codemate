@@ -1,0 +1,3 @@
+@overload
+def get_db(*, alias: str = DEFAULT_ALIAS) -> Database:
+    ...
