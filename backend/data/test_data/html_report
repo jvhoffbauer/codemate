@@ -1,0 +1,43 @@
+@router.get("/conversation_report")
+def get_feedback_dashboard(
+    is_admin: Annotated[bool, Depends(ensure_admin_account)],
+    start: str | None = None,
+    end: str | None = None,
+    user_email: str | None = None,
+    has_text: bool | None = None,
+    did_join: bool | None = None,
+):
+    # Parse arguments
+    if start:
+        start = datetime.datetime.strptime(start, "%Y-%m-%d")
+    if end:
+        end = datetime.datetime.strptime(end, "%Y-%m-%d")
+    if has_text:
+        has_text = has_text in ["true", "True", "1"]
+    if did_join:
+        did_join = did_join in ["true", "True", "1"]
+
+    # Defaults
+    if not start:
+        start = last_monday(last_week_if_today=False)
+
+    feedbacks = get_feedbacks(
+        start=start,
+        end=end,
+        user_email=user_email,
+        has_text=has_text,
+        did_join=did_join,
+    )
+
+    format_dict = (
+        lambda d: f'<div style="white-space:pre-wrap">{html.escape(json.dumps(d, indent=4, default=str))}</div>'
+    )
+    return HTMLResponse(
+        pd.DataFrame(feedbacks).to_html(
+            escape=False,
+            formatters={
+                "type_counts": format_dict,
+                "examples": format_dict,
+            },
+        )
+    )
