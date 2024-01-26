@@ -1,0 +1,1 @@
+{"original_code": "    def init_scheduler(self) -> None:\n        \"\"\"\n        \u521d\u59cb\u5316 apscheduler\n        :return:\n        \"\"\"\n        job_stores = {\"default\": SQLAlchemyJobStore(url=\"sqlite:///jobs.sqlite\")}\n        self._schedule = AsyncIOScheduler(jobstores=job_stores)\n        self._schedule.start()"}

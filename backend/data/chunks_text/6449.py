@@ -1,0 +1,1 @@
+- Retrieves the ID of a JSON RPC request from its context using the `get_jsonrpc_context()` function and accessing the 'id' key in the raw request dictionary. - Returns an optional value that can be either a string or integer representing the ID of the request. - Useful for handling requests with multiple concurrent executions by uniquely identifying each one.

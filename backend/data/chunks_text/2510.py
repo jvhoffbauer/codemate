@@ -1,0 +1,1 @@
+- This function tests a route that accepts a tuple of models as input using Flask's `client` object to simulate HTTP requests. - The request body is a list of dictionaries representing two model instances with keys 'x' and 'y'. - The expected status code for this request is 200 (OK), and the returned JSON should be identical to the original request body.

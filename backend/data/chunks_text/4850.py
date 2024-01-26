@@ -1,0 +1,5 @@
+- Creates a new user using FastAPI's `@router.post` decorator and returns the newly created user as JSON response (`response_model`)
+- Validates that the provided username is unique by checking against existing users in the database (`crud.user.get`)
+- If the username is not unique, raises an error with a custom message (`HTTPException`)
+- Otherwise, creates or updates the user record based on whether it already exists (`crud.user.upsert`)
+- Sends a welcome email to the new user's email address (if configured and provided) using a helper function called `send_new_account_email`.

@@ -1,0 +1,1 @@
+- Sends a POST request to `/a/compute` with JSON body containing keys 'a' and 'b'. - Asserts that the status code of the response is 200 (OK), otherwise displays the text content of the response. - Extracts the JSON payload from the successful response and stores it in a variable called `data`.

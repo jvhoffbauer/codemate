@@ -1,0 +1,1 @@
+- Initializes an `AsyncDatabase` object and yields it for use in other functions within a coroutine context. - Frees up the connection pool resources by closing the database when the function exits its scope or is explicitly called using the `await` keyword.

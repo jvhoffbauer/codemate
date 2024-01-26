@@ -1,0 +1,1 @@
+{"original_code": "def match_pydantic_error_url(error_type: str) -> Any:\n    from dirty_equals import IsStr\n\n    return IsStr(regex=rf\"^https://errors\\.pydantic\\.dev/.*/v/{error_type}\")"}

@@ -1,0 +1,4 @@
+- Creates a random item in the database using `create_random_item`.
+- Retrieves the created item with its ID using GET request to `/items/{item_id}`.
+- Verifies that the status code is 200 (OK).
+- Extracts and asserts the values of the retrieved item's fields against their corresponding values in the database.

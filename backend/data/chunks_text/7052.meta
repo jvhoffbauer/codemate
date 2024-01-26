@@ -1,0 +1,1 @@
+{"original_code": "    @validator(\"EMAILS_FROM_NAME\")\n    def get_project_name(cls, v: str | None, values: dict[str, Any]) -> str:\n        if not v:\n            return values[\"PROJECT_NAME\"]\n        return v"}

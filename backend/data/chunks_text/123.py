@@ -1,0 +1,3 @@
+- Defines an overloaded function called `select` with three arguments: a container (`__ent0`) of type `_TCCA[_T0]`, an element (`entity_1`) of type `_TScalar_1`, and another container (`__ent2`) of type `_TCCA[_T2]`.
+- Returns a new object of type `Select[Tuple[_T0, _TScalar_1, _T2]]`. This is a generic class that represents a selection operation on multiple containers. The specific types involved are `_T0`, `_TScalar_1`, and `_T2`.
+- The implementation details for this version of `select` are not shown in the provided snippet.

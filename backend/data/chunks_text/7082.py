@@ -1,0 +1,1 @@
+- This function tests getting an access token by making a POST request to the `/api/v1/login/access-token` endpoint with the superuser's credentials as JSON data. - The response status code is checked and should be 200 (OK). - The presence of the 'access_token' key in the response JSON is verified, along with its non-empty value.

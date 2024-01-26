@@ -1,0 +1,2 @@
+- Defines a function `is_superuser` that takes a `UserInDB` object as an argument (represents a database model for users)
+- Checks if the value of `RoleEnum.superuser` (an enum representing superuser role) exists within the list of admin roles (stored in `user.admin_roles`) after converting enums to strings using `utils.ensure_enums_to_strs()`. If found, returns True; otherwise False.

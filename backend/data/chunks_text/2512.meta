@@ -1,0 +1,1 @@
+{"original_code": "def test_tuple_form_valid():\n    response = client.post(\"/tuple-form/\", data={\"values\": (\"1\", \"2\")})\n    assert response.status_code == 200, response.text\n    assert response.json() == [1, 2]"}

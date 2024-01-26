@@ -1,0 +1,5 @@
+- This method checks whether a user has permission to perform a specific action on an object (e.g., delete, update).
+- It first calls another helper method `has_page_permission` to check general page permissions. If the user doesn't have those permissions, they don't have this action permission either.
+- For certain actions like deleting or updating multiple objects at once ("bulk"), it also checks for bulk delete/update permissions using separate methods.
+- The other action types (creating and reading) simply call their own corresponding permission helpers with no arguments.
+- If none of these conditions are met, the default behavior is to assume that the user has permission to perform the action.

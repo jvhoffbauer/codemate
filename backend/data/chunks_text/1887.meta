@@ -1,0 +1,1 @@
+{"original_code": "    async def body(self) -> bytes:\n        if not hasattr(self, \"_body\"):\n            body = await super().body()\n            if \"gzip\" in self.headers.getlist(\"Content-Encoding\"):\n                body = gzip.decompress(body)\n            self._body = body\n        return self._body"}

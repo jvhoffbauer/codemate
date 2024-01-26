@@ -1,0 +1,1 @@
+{"original_code": "def process_tag(*, env: dict):\n    use_env = {**os.environ, **env}\n    script = \"scripts/test.sh\"\n    if build_push:\n        script = \"scripts/build-push.sh\"\n    return_code = subprocess.call([\"bash\", script], env=use_env)\n    if return_code != 0:\n        sys.exit(return_code)"}

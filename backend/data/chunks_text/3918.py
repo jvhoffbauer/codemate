@@ -1,0 +1,1 @@
+- Sends a GET request to `/items/` with multiple query parameters (`q`) set to values `'baz'` and `'foobar'`. - Asserts that the server returns an HTTP status code of 200 OK and displays its text content if it doesn't. - Parses the JSON response body and asserts that it contains an array containing both provided query parameter values.

@@ -1,0 +1,5 @@
+- Creates a new user with username 'create' and password 'password'.
+- Retrieves the newly created user from the database using its ID.
+- Deletes the user from the database to clean up after testing.
+- Creates three more users in bulk through a single API request.
+- Verifies that the number of returned users matches the expected value (in this case, 4).

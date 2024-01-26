@@ -1,0 +1,3 @@
+- Retrieves public data for an item with ID 'bar' using a Pytest fixture `TestClient`.
+- Sends GET request to '/items/bar/public' endpoint and checks status code is 200.
+- Parses JSON response and asserts that expected keys ('name', 'description', 'price') are present with correct values.

@@ -1,0 +1,5 @@
+- This function takes a callable (a function or method) as input and returns its type annotations using Python's built-in `inspect` module.
+- It first gets the original signature of the callable using `inspect.signature`.
+- Then it creates a new dictionary called `globalns`, which contains all the globally defined variables that are used inside the callable. If there is no such dictionary available on the callable object itself, it falls back to an empty dictionary.
+- For each parameter in the original signature, it creates a new `Parameter` object with updated information based on the original one. The updates include setting the `annotation` attribute to the result of calling another helper function `get_typed_annotation` with the original annotation and the `globalns` dictionary passed as arguments.
+- Finally, it constructs a new `Signature` object from the list of updated parameters and returns it.

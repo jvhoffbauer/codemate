@@ -1,0 +1,3 @@
+- Defines a function `between` that takes three arguments: an expression (either a column or literal), and two bounds (lower and upper).
+- Returns a binary expression of boolean type using SQLAlchemy's built-in `between()` method with optional symmetry flag.
+- The function is typed using Python's typing module to ensure correct argument types are passed.

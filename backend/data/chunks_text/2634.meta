@@ -1,0 +1,1 @@
+{"original_code": "def test_response():\n    response = client.get(\"/items/\")\n    assert response.json() == {\"id\": \"foo\"}"}

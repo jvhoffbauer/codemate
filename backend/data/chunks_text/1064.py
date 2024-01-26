@@ -1,0 +1,3 @@
+- Initializes class attributes based on optional arguments passed during instantiation
+- Stores original path for later usage in method overrides
+- Calculates and saves cache key for efficient caching of responses

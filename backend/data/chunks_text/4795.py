@@ -1,0 +1,1 @@
+- Defines a function `is_active` that takes a parameter `user`, which is an instance of the `UserInDB` class. - The function returns True if the `disabled` attribute of the `user` object is False (i.e., the user is not disabled), and False otherwise.

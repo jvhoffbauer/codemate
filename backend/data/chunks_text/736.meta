@@ -1,0 +1,1 @@
+{"original_code": "async def startup(ctx):\n    \"\"\"\n    Binds a connection set to the db object.\n    \"\"\"\n    await db.set_bind(DATABASE_CONFIG.url)"}

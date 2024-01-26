@@ -1,0 +1,3 @@
+1. This function creates a new Kite Connect session using the `requests` library to send an HTTP POST request to the Kite Connect server with required parameters such as API key, request token, and checksum generated from them. The response is parsed into a dictionary and checked for success status (HTTP 200). If successful, the access token is saved locally and returned along with live stock price of specified instrument. Otherwise, error message is logged.
+2. Checksum generation follows SHA-256 algorithm on concatenated string of API key, request token, and secret key.
+3. Session creation endpoint is defined at `https://kitesandbox.com/connect/session`.

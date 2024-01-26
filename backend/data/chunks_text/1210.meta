@@ -1,0 +1,1 @@
+{"original_code": "async def read_item_name(item_id: str):\n    return items[item_id]"}

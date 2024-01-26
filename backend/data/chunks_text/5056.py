@@ -1,0 +1,1 @@
+- Defines a GET route for `/test_1_plus_1/:result`, where `:result` is a path parameter that will be passed as an integer to the function. - The function takes in the value of `:result` and returns a dictionary with a key "result" containing a boolean indicating whether `result + 1` equals 2 (i.e., whether `result` itself equals 1).

@@ -1,0 +1,1 @@
+- Defines a method `no_params` using Pytest Fixture Annotations (PFA) syntax in pytest-mock library for mocking dependencies and stubbing functions. - The method returns a string value without taking any parameters as input.

@@ -1,0 +1,1 @@
+{"original_code": "def upsert(\n    bucket: Bucket,\n    *,\n    id: str,\n    doc_in: ItemCreate,\n    owner_username: str,\n    persist_to=0,\n    ttl=0,\n):\n    doc_id = get_doc_id(id)\n    doc = ItemInDB(**doc_in.dict(), id=id, owner_username=owner_username)\n    return utils.upsert(\n        bucket=bucket, doc_id=doc_id, doc_in=doc, persist_to=persist_to, ttl=ttl\n    )"}

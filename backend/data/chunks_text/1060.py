@@ -1,0 +1,6 @@
+- This function takes two arguments `required_params` which is a list of model fields that are required to be present in the request body, and `received_body` which can either be a dictionary containing all the parameters passed in the request body or an instance of FastAPI's built-in `FormData`.
+- The function returns a tuple consisting of a dictionary called `values`, which contains the parsed values from the request body, and a list called `errors`, which contains any validation errors encountered during parsing.
+- If there are required parameters, the first one is selected using indexing, and its information such as alias, embedding status, etc., is obtained. Based on whether the parameter has an alias or not, it is added to the `received_body` dictionary appropriately.
+- Each required parameter is then processed separately by iterating over them. Its location in the request body is determined based on whether it has an alias or not, and its value is extracted accordingly.
+- Validation is performed on each value using the corresponding model field's validate method, and any errors encountered during this step are appended to the `errors` list.
+- Finally, the validated values are stored in the `values` dictionary under their respective names.

@@ -1,0 +1,4 @@
+- This function defines a pytest fixture called `client`, which creates an instance of FastAPI's built-in testing client (TestClient).
+- It then runs three tests using Pytest's parametrize decorator to pass in different arguments for each test case.
+- Each test sends a GET request with optional headers and checks that the server returns the correct status code and JSON response body.
+- The last test has a duplicate header key, but the behavior is currently unclear due to a potential bug in FastAPI's handling of multiple headers with the same name.

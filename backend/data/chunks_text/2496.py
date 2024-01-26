@@ -1,0 +1,1 @@
+- Attempts to create a FastAPI application and define an endpoint that returns a list of instances of `NonPydanticModel`, which is not a subclass of Pydantic's BaseModel. - Raises a `FastAPIError` exception because using non-Pydantic models as response schemas is currently unsupported in FastAPI.

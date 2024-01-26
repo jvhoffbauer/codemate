@@ -1,0 +1,2 @@
+- Loads a pretrained machine learning model stored in a local file using `joblib.load()`.
+- Assigns the loaded model to an instance variable called `self.model`.

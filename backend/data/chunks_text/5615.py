@@ -1,0 +1,5 @@
+- Defines a `route_create` method that returns a callable function (a FastAPI route).
+- The `route` function is an asynchronous view function that handles HTTP requests for creating new resources.
+- It takes two arguments: a `Request` object and a JSON body containing either a single resource or a list of resources to create.
+- If the user doesn't have permission to create resources, it returns an error response with no router permission.
+- Otherwise, it creates the resources using the `create_items` method and returns a success response with the number of created items or the first item in case there was only one.

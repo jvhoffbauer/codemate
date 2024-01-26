@@ -1,0 +1,3 @@
+- Defines a GET request for the path `"/path/param-lt0"` with an optional query parameter named `item_id`.
+- The value of `item_id` is required to be less than zero, as specified by the `Path` decorator's `lt` argument.
+- Returns the value of `item_id`, which will raise a `ValueError` if it violates the constraint imposed by the `Path` decorator.

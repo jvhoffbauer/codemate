@@ -1,0 +1,1 @@
+{"original_code": "def get_db(\n    *, alias: str = DEFAULT_ALIAS, is_async: bool = False\n) -> Union[Database, AsyncDatabase]:\n    \"\"\"Get database\"\"\"\n    if is_async:\n        return get_async_db(alias=alias)\n    return get_sync_db(alias=alias)"}

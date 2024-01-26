@@ -1,0 +1,3 @@
+- Defines an asynchronous function `create_shop()` that accepts two arguments, `data` and `included`.
+- The `Shop` object is passed in the request body using the `Body` decorator with a customized `media_type`.
+- An optional list of `Product` objects can also be provided in the request body through the `included` parameter, again using the `Body` decorator with default value set to an empty list and customized `media_type`.

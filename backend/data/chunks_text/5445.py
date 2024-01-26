@@ -1,0 +1,3 @@
+- This function returns a list of assets that intersect with a specific Mercator tile based on its zoom level (z), column (x), and row (y).
+- It uses dependencies to retrieve necessary parameters for reading the data from the specified path using the selected dataset reader and backend.
+- The function wraps the `rasterio.DatasetReader` object in an environment provided by `rasterio.Env`, allowing for customization of various settings such as CRS or nodata values.

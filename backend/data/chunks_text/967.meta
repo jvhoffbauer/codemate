@@ -1,0 +1,1 @@
+{"original_code": "    def with_info_plain_validator_function(  # type: ignore[misc]\n        function: Callable[..., Any],\n        *,\n        ref: Union[str, None] = None,\n        metadata: Any = None,\n        serialization: Any = None,\n    ) -> Any:\n        return {}"}

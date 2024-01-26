@@ -1,0 +1,1 @@
+{"original_code": "    def requester(body, path_postfix=\"\", auth=None):\n        resp = app_client.post(\n            url=ep_path + path_postfix,\n            content=body,\n            auth=auth,\n        )\n        return resp"}

@@ -1,0 +1,3 @@
+- Defines a GET route at root URL (/) using FastAPI's `@app.get()` decorator
+- Uses two dependencies, `dep1` and `dep2`, both of which are retrieved using FastAPI's `Depends()` function
+- Returns an object containing the values of both dependencies as key-value pairs in JSON format

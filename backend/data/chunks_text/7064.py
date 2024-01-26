@@ -1,0 +1,1 @@
+- Defines a fixture named `client` for use in all tests within this session (i.e., across multiple modules). - Uses the `TestClient` class from Flask's testing module to create an instance of our app and make requests against it during test execution. - Yields the created `client` object, making it available to other fixtures or functions that request it using `@pytest.fixture`.

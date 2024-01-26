@@ -1,0 +1,1 @@
+{"original_code": "        @app.post(\"/example/\")\n        def example(item: Item = Body(example={\"data\": \"Data in Body example\"})):\n            return item"}

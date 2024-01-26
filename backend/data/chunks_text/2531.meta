@@ -1,0 +1,1 @@
+{"original_code": "@native_prefix_route.websocket(\"/\")\nasync def router_native_prefix_ws(websocket: WebSocket):\n    await websocket.accept()\n    await websocket.send_text(\"Hello, router with native prefix!\")\n    await websocket.close()"}

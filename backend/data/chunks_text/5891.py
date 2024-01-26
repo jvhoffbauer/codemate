@@ -1,0 +1,4 @@
+1. This function is a method of an asynchronous class called `APIResource`. It's triggered when a list operation (e.g., GET /items/) completes successfully and returns a `Result` object containing the response body.
+2. The function takes several arguments including the original request, the parsed result, and a schema used to validate the input/output format. It also accepts keyword arguments passed by other methods that call this one.
+3. Inside the function, we first retrieve the list of fields that should be excluded from the output using another asynchronous method `get_deny_fields()`, which checks whether the user has permission to access those fields based on some criteria (not shown here).
+4. We then invoke the parent implementation of `on_list_after()` to perform any default processing before returning the modified list with filtered items. Note that we use the `async` and `await` keywords because Pydantic supports coroutines since version 1.8.

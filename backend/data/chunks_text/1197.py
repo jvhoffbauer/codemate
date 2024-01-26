@@ -1,0 +1,2 @@
+- Defines a GET request endpoint for `/items/`.
+- Returns an array containing one object with a key-value pair of 'name' and 'Foo'.

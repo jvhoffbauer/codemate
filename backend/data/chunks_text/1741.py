@@ -1,0 +1,2 @@
+- Defines a function named `get_items` that takes in five arguments of different data types (string, integer, floating point number, boolean, and byte array)
+- Returns a tuple containing all the input parameters passed to the function

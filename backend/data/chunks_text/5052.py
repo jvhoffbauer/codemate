@@ -1,0 +1,4 @@
+- Defines a Flask Blueprint named `bp`.
+- Registers an asynchronous function called `test_celery_async()` with the route "/test_celery_asyncio_cpu_bound".
+- Uses Celery to send an asynchronous task named "test_celery_asyncio_cpu_bound" without any arguments using the `send_task()` method.
+- Returns a string "ok" indicating successful execution of the endpoint.

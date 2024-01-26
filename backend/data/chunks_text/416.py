@@ -1,0 +1,1 @@
+- Creates a new SQLite database and table named `hero` with columns for ID, name, secret name, and age using Python's built-in sqlite3 module. - Uses PRAGMA to retrieve information about the newly created table. - Executes CREATE TABLE statement with specified column names and data types. - Sets primary key constraint on the ID column.

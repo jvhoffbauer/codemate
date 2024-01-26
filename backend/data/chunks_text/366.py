@@ -1,0 +1,1 @@
+- Tests deprecation warning for using `Item.from_orm()` to convert a subclass instance (SubItem) into an Item object due to inheritance changes in ORM. - Asserts that the converted Item object contains the expected name attribute from the original SubItem instance but no longer includes the deprecated password attribute inherited from its parent class.

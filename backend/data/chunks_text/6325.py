@@ -1,0 +1,4 @@
+- Updates the password of the currently logged in user using their `UserUpdatePasswordRequest`.
+- Hashes the new password and sets it as the updated value for the user's hashed_password field.
+- Saves the changes to the database using the dependency injected `AsyncSession`.
+- Commits the changes to the database and returns the updated user object.

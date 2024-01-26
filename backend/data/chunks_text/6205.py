@@ -1,0 +1,1 @@
+- This function is a view that handles GET requests to the `/recovered` endpoint. - It retrieves data related to recovered COVID-19 cases using the `get_category()` asynchronous function, which we assume is defined elsewhere in our application. - The returned value is the `recovered_data`, which can be used by the FastAPI framework to render an HTTP response.

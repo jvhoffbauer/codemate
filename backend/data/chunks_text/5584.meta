@@ -1,0 +1,1 @@
+{"original_code": "    def read_item(self, obj: TableModelT) -> SchemaReadT:\n        \"\"\"read database data and parse to schema_read\"\"\"\n        return parse_obj_to_schema(obj, self.schema_read)"}

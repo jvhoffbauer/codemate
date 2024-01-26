@@ -1,0 +1,1 @@
+{"original_code": "def body():\n    return json_dumps(\n        {\n            \"id\": 1,\n            \"jsonrpc\": \"2.0\",\n            \"method\": \"probe\",\n            \"params\": {},\n        }\n    )"}

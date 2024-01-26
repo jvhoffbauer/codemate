@@ -1,0 +1,4 @@
+- This function adds a non-field parameter to a dependency using its name and annotation type.
+- It checks the annotation type against various classes related to requests, responses, security scopes, background tasks, and connections in Starlette framework.
+- If the annotation is compatible with any of these types, it sets the corresponding attribute on the dependency object (e.g., request_param_name).
+- The function returns `True` if the parameter was added successfully or `None` otherwise.

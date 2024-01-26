@@ -1,0 +1,1 @@
+{"original_code": "def test_celery(\n    msg: Msg, current_user: UserInDB = Depends(get_current_active_superuser)\n):\n    \"\"\"\n    Test Celery worker.\n    \"\"\"\n    celery_app.send_task(\"app.worker.test_celery\", args=[msg.msg])\n    return {\"msg\": \"Word received\"}"}

@@ -1,0 +1,1 @@
+{"original_code": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()"}

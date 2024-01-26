@@ -1,0 +1,1 @@
+- This method, `get_resp_data()`, is a member function of an unspecified class (represented by'self'). - It returns the value stored in the instance variable `raw_data`. - The returned data represents the raw response received from some external resource or service.

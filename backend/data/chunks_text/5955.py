@@ -1,0 +1,3 @@
+- Defines a function `app` that returns an instance of FastAPI with Middleware added using `FastAPI.add_middleware`.
+- The middleware used is `BaseHTTPMiddleware`, which is provided by SQLAlchemy's Async ORM (async_db).
+- This middleware is dispatched asynchronously using `async_db.asgi_dispatch`.

@@ -1,0 +1,1 @@
+{"original_code": "        @classmethod\n        def __get_validators__(cls) -> Iterable[Callable[..., Any]]:\n            yield cls.validate"}

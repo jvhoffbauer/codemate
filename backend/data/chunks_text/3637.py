@@ -1,0 +1,3 @@
+- Sets environment variable ADMIN_EMAIL to 'admin@example.com' using Python's built-in `os.environ` dictionary (accessed via `monkeypatch`)
+- Imports and tests a Flask application defined in `docs_src/settings/tutorial001.py`, which is part of our documentation source tree
+- Uses Pytest's `TestClient` class to simulate HTTP requests against this application, retrieving its configuration settings as JSON output

@@ -1,0 +1,3 @@
+- Generates an OpenAPI (Swagger) JSON schema for a FastAPI application using Pytest and Uvicorn as testing frameworks and web server respectively.
+- The `test_openapi_schema` function tests that the generated schema is correct by making a GET request to the `/openapi.json` endpoint and checking its status code and content against expected values.
+- The schema includes definitions for the main API endpoints, their parameters, responses, and error types, as well as global components such as schemas and headers.

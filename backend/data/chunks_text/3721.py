@@ -1,0 +1,1 @@
+- Uses `pytest-mock` to simulate a GET request for user ID 1 using FastAPI's built-in testing client. - Asserts that the status code is 200 and saves the response text for debugging purposes. - Extracts the JSON body of the response and asserts that it contains both an 'email' and 'id' key.

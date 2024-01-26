@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\")\nasync def read_items(\n    strange_header: Annotated[str | None, Header(convert_underscores=False)] = None\n):\n    return {\"strange_header\": strange_header}"}

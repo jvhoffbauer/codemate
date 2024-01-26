@@ -1,0 +1,2 @@
+- Defines a method named `my_method__with_errors` that returns `None`.
+- The double underscore in the name indicates that it is a private or internal method, not meant to be called from outside the class.

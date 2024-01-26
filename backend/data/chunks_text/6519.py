@@ -1,0 +1,1 @@
+- Defines a fixture named `ep` that takes an argument `ep_path`. - Uses the `jsonrpc.Entrypoint()` function to create and return an instance of an entrypoint object, which is used for communicating with JSON RPC servers. - The `ep_path` parameter passed to this fixture represents the path or URL where the JSON RPC server can be found.

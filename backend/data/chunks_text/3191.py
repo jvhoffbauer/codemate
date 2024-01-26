@@ -1,0 +1,3 @@
+- Tests that creating a `ModelWithAlias` instance with an alias raises a `ValidationError`.
+- Uses PyTest's `pytest.raises()` context manager to assert that a specific exception is raised during execution of the tested function (in this case, `ModelWithAlias.__init__()`).
+- The error message for the expected exception is not explicitly checked in this test; it would be covered by another test or assumed to match the default validation error message provided by Django Rest Framework.

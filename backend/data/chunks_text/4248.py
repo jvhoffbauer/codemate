@@ -1,0 +1,1 @@
+- This test case uses `docs_src.dependency_testing.tutorial001_py310` module to make a GET request with query parameter 'q' set to 'foo'. - The expected status code is 200 and the response body contains a message and parameters object that includes the original query parameter value passed in the URL.

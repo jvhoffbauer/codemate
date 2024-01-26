@@ -1,0 +1,5 @@
+- This function creates a new `models.User` object with the provided email and password (which is not actually hashed).
+- The newly created user is added to the database session using `db.add()`.
+- The changes are committed to the database using `db.commit()`, which also returns a commit object that can be used for further operations if needed.
+- After committing, we refresh the state of the user in memory by calling `db.refresh()`. This ensures that any changes made during the transaction are reflected in our local variables.
+- Finally, the updated user object is returned from the function.

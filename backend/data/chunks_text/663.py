@@ -1,0 +1,3 @@
+- Defines a function `get_sentry_extension()` that returns a callable called `set_transaction_id`.
+- Imports `sentry_sdk` and `asgi_correlation_id.extensions.sentry`, but suppresses warnings with `noqa`.
+- Checks for the presence of `sentry_sdk` using a try/except block to handle potential ImportErrors. If it's present, returns `set_transaction_id`; otherwise, returns a lambda function that does nothing (i.e., doesn't modify the transaction ID).

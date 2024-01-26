@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, date, strformat):\n        self.date = date\n        self.strformat = strformat"}

@@ -1,0 +1,3 @@
+- Sends a GET request to "/path/bool/1" using Flask's built-in `client` object
+- Asserts that the status code of the response is 200 (OK)
+- Unpacks and asserts that the JSON value returned by the server is equivalent to the Python boolean `True`

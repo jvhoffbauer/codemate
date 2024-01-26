@@ -1,0 +1,8 @@
+- This function overrides the `__new__` method of metaclasses used by Python enums.
+- It iterates through all attributes defined within an enum class and checks whether they are lists or tuples with at least two elements, where the last element is either a Promise object or a string. If so, it extracts the first n-1 elements into a new list called 'value', and the last element ('label') separately. Otherwise, it sets 'label' equal to the attribute name with underscores replaced by spaces and capitalized.
+- The extracted labels are stored in a list called 'labels'.
+- The original dictionary containing the enum definitions is modified using `dict.__setitem__()`, which avoids triggering defensive mechanisms against multiple assignments to the same variable.
+- A new instance of the enum class is created using `super().__new__()`.
+- A dictionary called '_value2label_map_' is initialized with keys corresponding to the values of enum members and values being their respective labels from the 'labels' list.
+- An accessor property called 'label' is added to each enum instance, which returns the label associated with its value.
+- Finally, the `enum.unique()` decorator is applied to the newly created enum class to ensure unique names for its constants.

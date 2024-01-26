@@ -1,0 +1,1 @@
+- Defines a function named `valid1` with no arguments or return value (pass statement)

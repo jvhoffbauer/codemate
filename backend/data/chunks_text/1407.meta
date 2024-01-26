@@ -1,0 +1,1 @@
+{"original_code": "@app.exception_handler(RequestValidationError)\nasync def validation_exception_handler(request, exc):\n    print(f\"OMG! The client sent invalid data!: {exc}\")\n    return await request_validation_exception_handler(request, exc)"}

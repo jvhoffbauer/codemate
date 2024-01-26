@@ -1,0 +1,1 @@
+- Tests if a query parameter that is not declared in the function signature can be passed and handled correctly by returning the default value ("foo bar"). - Uses Flask's built-in `client` object to simulate an HTTP request with the specified URL, headers, and parameters. - Asserts that the expected status code (200) and JSON response are returned by the server.

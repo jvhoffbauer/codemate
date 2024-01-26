@@ -1,0 +1,1 @@
+{"original_code": "@router.delete(\"/users/{id}\", tags=[\"Users\"], response_model=User)\nasync def delete_user(id: int):\n    user: ORMUser = await ORMUser.get(id)\n    return await user.delete()"}

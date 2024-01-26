@@ -1,0 +1,1 @@
+{"original_code": "        def __modify_schema__(cls, field_schema: Dict[str, Any]) -> None:\n            field_schema.update({\"type\": \"string\", \"format\": \"binary\"})"}

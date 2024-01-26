@@ -1,0 +1,1 @@
+{"original_code": "async def get_user_by_id(user_id: int) -> dict[str, Any] | None:\n    select_query = select(auth_user).where(auth_user.c.id == user_id)\n\n    return await fetch_one(select_query)"}

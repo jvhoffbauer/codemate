@@ -1,0 +1,1 @@
+- Defines a class method `undelete()` that returns a SQLAlchemy query object to select all records where the `deleted_at` column is null, which represents logically deleted records in a database table with soft deletion functionality implemented using SQLAlchemy's ORM.

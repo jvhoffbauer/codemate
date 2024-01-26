@@ -1,0 +1,3 @@
+- This method `__dict__` is used to access an object's attributes as if they were variables in a dictionary.
+- In this case, we are spoofing (simulating) the behavior of `asyncpg.pgroto.pgproto.UUID`, which raises a `TypeError` when its `__dict__` is accessed without it being present.
+- By implementing our own version of `__dict__` that also raises a `TypeError`, we can prevent accidental attempts to access non-existent attributes on objects where we want to enforce strict control over their properties.

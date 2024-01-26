@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/model/{name}\", response_model=ModelA)\nasync def get_model_a(name: str, model_c=Depends(get_model_c)):\n    return {\"name\": name, \"description\": \"model-a-desc\", \"model_b\": model_c}"}

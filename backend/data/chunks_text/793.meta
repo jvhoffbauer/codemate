@@ -1,0 +1,1 @@
+{"original_code": "    def client(self):\n        return httpx.AsyncClient(base_url=self.BASE_URL, timeout=10.0)"}

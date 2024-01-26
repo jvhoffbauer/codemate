@@ -1,0 +1,1 @@
+{"original_code": "def test_client():\n    app = get_app()\n    with TestClient(app) as test_client:\n        yield test_client"}

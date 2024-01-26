@@ -1,0 +1,4 @@
+- Tests a JSON RPC request with an extra parameter'some_extra'
+- Uses `json_request()` function to make the request and store response in variable `resp`
+- Asserts that the response is an error message due to invalid request containing extra input ('some_extra')
+- Verifies that the history of `echo` object (mock) remains empty as it was not called during this request

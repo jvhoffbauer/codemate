@@ -1,0 +1,1 @@
+- Tests API endpoints using Flask's built-in `client` object to simulate requests and responses. - Uses JSON data for POST request in first test case. - Asserts that all tests return a status code of 200 (OK) with expected text as fallback.

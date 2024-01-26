@@ -1,0 +1,3 @@
+- Defines a method named `probe1` using the `@ep.method()` decorator in an Epistasis framework experiment.
+- Takes a single argument, `data`, which is expected to be a list of Balance objects.
+- Returns the same input list (i.e., no transformation or computation).

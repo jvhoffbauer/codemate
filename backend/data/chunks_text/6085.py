@@ -1,0 +1,5 @@
+- Generates a list of fake articles and passes it to `fake_article_tags`.
+- Creates a list of Tag objects with IDs from 1 to 5 and adds them to the session using `add_all`.
+- Adds ArticleTagLinks between each generated article (ID from 1 to 5) and its corresponding Tag object (ID from 1 to 5).
+- Commits changes made during this function call.
+- Returns the list of created Tags as output.

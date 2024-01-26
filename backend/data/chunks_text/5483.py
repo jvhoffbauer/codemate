@@ -1,0 +1,5 @@
+- Tests the `GET /cog/point` endpoint with a specific URL and coordinates
+- Mocks the RasterIO open function to simulate file reading for testing purposes
+- Asserts that the expected status code (200) is returned by the server
+- Verifies that the correct Content-Type header is set in the response
+- Extracts the JSON response body and checks if it contains the expected coordinates

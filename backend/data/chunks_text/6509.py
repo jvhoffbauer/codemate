@@ -1,0 +1,2 @@
+- Defines an asynchronous method called `tagged_method` that takes a dictionary argument named `data`.
+- Returns a new dictionary object.

@@ -1,0 +1,1 @@
+- Enables coercion of query parameters to their respective types (e.g., int for integers). - Excludes unset fields from serialized responses by default using `response_model_exclude_unset`. - Returns an item with a set "aliased_name" and "price".

@@ -1,0 +1,1 @@
+{"original_code": "    def _create_schema_read(self) -> Optional[Type[SchemaReadT]]:\n        return None"}

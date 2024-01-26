@@ -1,0 +1,3 @@
+- This is a unit test for `docs_src/tutorial/connect/insert.py`, specifically for the function `tutorial001_py310`.
+- It uses the `hypothesis` library's `clear_sqlmodel` fixture to clear any existing SQLAlchemy metadata and session bindings before running the test.
+- The test imports the module being tested, sets up some variables (such as the database URL), creates an engine using SQLAlchemy's `create_engine()` method, patches the built-in `print()` function to capture its output in a list of strings called `calls`, runs the main function of the module under test, and checks that the captured print statements match what was expected based on the implementation of `tutorial001_py310`.

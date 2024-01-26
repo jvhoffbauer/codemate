@@ -1,0 +1,2 @@
+- Initializes a new context variable for the given `item` with a name that includes its global scope and sets it to an initial value of `None`.
+- Adds this newly created context variable to a dictionary called `_vars`, which is likely used to keep track of all defined variables within the class instance.

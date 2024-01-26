@@ -1,0 +1,3 @@
+- This function, named `_get_model_config`, takes a parameter `model` of type `BaseModel`.
+- It returns the value stored in the attribute `model_config` of the given `model` object.
+- The returned value is assigned to the variable `Any`, which means that it can be any data type (e.g., dictionary, list).

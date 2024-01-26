@@ -1,0 +1,2 @@
+- Defines a function `probe_error` that raises a custom error with a unique marker (stored in variable `unique_marker`) using Python's built-in `RuntimeError`.
+- The returned value of this function is not used, as it simply serves to raise an exception for testing purposes.

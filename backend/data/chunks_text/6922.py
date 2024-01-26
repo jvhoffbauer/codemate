@@ -1,0 +1,1 @@
+- Defines an asynchronous function named `shutdown` that takes a `Context` object (`ctx`) as its argument. - Prints "end" to the console when called, indicating that the bot is shutting down or exiting gracefully.

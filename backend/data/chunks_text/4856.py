@@ -1,0 +1,5 @@
+- Creates a new user without requiring authentication (logged in).
+- Only allowed if open registration is enabled by configuration setting `config.USERS_OPEN_REGISTRATION`.
+- Checks if the provided username already exists in the database using `crud.user.get()`.
+- If the username doesn't exist yet, creates a new user object using `crud.user.upsert()`, passing it the input data from the request body.
+- Sends an optional welcome email to the newly created user's email address, as configured by `config.EMAILS_ENABLED`.

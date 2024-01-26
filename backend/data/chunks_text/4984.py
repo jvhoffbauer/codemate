@@ -1,0 +1,3 @@
+- This function sets up Django's environment and executes a command using `execute_from_command_line()`.
+- It assumes that the project is named 'tifa', and the settings module is located in a file called'settings.py'.
+- The `os.environ.setdefault()` method ensures that the DJANGO_SETTINGS_MODULE variable is set, even if it hasn't been defined yet.

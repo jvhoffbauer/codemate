@@ -1,0 +1,3 @@
+- Tests if GET request to /c returns a status code of 200 and JSON body containing 'c'
+- Uses Flask's built-in testing client (client) to simulate HTTP requests
+- Asserts that expected conditions are met using Python's unittest module

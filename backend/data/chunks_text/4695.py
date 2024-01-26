@@ -1,0 +1,1 @@
+- Tests that making a POST request to `/files/` without any body data results in a HTTP status code of 422 (Unprocessable Entity) and an error message indicating that the 'file' field is required. - Uses Pytest fixtures to automatically create a new instance of FastAPI's built-in testing client for each test case. - Imports necessary modules from Pytest and FastAPI.

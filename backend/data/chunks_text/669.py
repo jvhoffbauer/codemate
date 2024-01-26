@@ -1,0 +1,2 @@
+- Sets the correlation ID for a given Celery task based on a header value or generates a new one if not present
+- Uses Sentry extension to associate errors with the set/generated correlation ID

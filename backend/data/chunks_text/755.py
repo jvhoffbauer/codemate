@@ -1,0 +1,9 @@
+- Defines an asynchronous function `extract_entities()` that takes a `RecordsRequest` object with a default value and an example.
+- Initializes an empty list `res` to store the response data.
+- Creates an empty list `documents` to hold dictionaries representing each record's ID and text content.
+- Loops through the values (records) provided by the request body and adds them to the `documents` list.
+- Calls the `extract_entities()` method on the `extractor` object passed into this function, passing it the `documents` list.
+- Initializes another empty list `res` to store the final response data.
+- Loops through the results returned by the `extract_entities()` call and creates a dictionary for each entity found, including its ID and a nested dictionary containing the extracted named entities.
+- Adds these dictionaries to the `res` list.
+- Returns a dictionary with a single key, `values`, which contains the `res` list.

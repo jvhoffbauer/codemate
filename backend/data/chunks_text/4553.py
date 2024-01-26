@@ -1,0 +1,3 @@
+- Tests reading system status without authentication token using a `TestClient`.
+- Verifies that the server returns HTTP status code 401 and an error message in the response body.
+- Confirms that the WWW-Authenticate header is set to Bearer.

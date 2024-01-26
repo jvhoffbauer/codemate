@@ -1,0 +1,1 @@
+- Defines a method called `raw_response` that takes in a dictionary as an argument (called `value`) and passes it to another method named `on_raw_response`. - This method is used for handling raw HTTP responses without any parsing or transformation. - It allows developers to customize how their application handles raw response data from external services or APIs.

@@ -1,0 +1,3 @@
+- Defines a fixture named `json_request` that takes another fixture called `raw_request`.
+- The `requester` function is defined as an inner function and returns the JSON response from calling `raw_request` with the given data and optional path postfix.
+- The `json_request` fixture returns the `requester` function for use in tests.

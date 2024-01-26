@@ -1,0 +1,1 @@
+- Endpoint for creating a new user with PUT request method (POST in this case). - Request body is parsed using `UserCreate` model and passed to function as argument named `user`. - Function returns newly created user object, which is automatically converted to JSON format based on `response_model` annotation.

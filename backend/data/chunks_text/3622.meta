@@ -1,0 +1,1 @@
+{"original_code": "    def router_shutdown() -> None:\n        state.router_shutdown = True"}

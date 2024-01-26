@@ -1,0 +1,3 @@
+- Retrieves the default OpenAPI document for the FastAPI application using `get_client()`.
+- Verifies that both `GET /docs` and `GET /redoc` return a successful HTTP status code (200) with appropriate content types.
+- Fetches the raw JSON representation of the OpenAPI specification from `GET /openapi.json`, verifying its structure matches the expected format.

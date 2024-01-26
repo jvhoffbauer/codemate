@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's query parameter decorator to accept an optional `q` parameter with default value and minimum length constraints.
+- Returns a dictionary containing either all items or filtered items based on the `q` parameter.

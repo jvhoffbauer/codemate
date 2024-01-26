@@ -1,0 +1,1 @@
+- Defines a fixture named `client` using pytest's built-in `fixture()` decorator. - The `get_client()` function is defined as the implementation of this fixture, which returns an instance of Flask's `TestClient`. - Imports the necessary module and class (`app`) to create the test client for our application.

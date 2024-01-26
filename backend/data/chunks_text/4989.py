@@ -1,0 +1,1 @@
+- This function is a wrapper around Django's built-in `get_object_or_404` function. - It tries to retrieve an object from the given queryset using the provided filter arguments and keywords. - If the object cannot be found due to a TypeError, ValueError or ValidationError raised by Django's ORM, it raises a custom HTTP 404 error instead of the default one.

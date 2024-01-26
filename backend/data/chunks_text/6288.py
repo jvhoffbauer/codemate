@@ -1,0 +1,5 @@
+- Creates a temporary file path using `tmp_path` and `name`.
+- Asserts that the created file doesn't exist yet.
+- Calls `app.io.save` function to save the given `content` with optional keyword arguments (`**kwargs`) into the created file at the specified location.
+- Asserts that the returned value of `app.io.save` is equal to the created file path.
+- Asserts that the created file exists now.

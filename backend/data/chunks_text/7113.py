@@ -1,0 +1,3 @@
+- Initializes an asynchronous scheduler using `apscheduler` and `SQLAlchemyJobStore`.
+- Sets up a default job store with a SQLite database at `jobs.sqlite`.
+- Starts the scheduler to begin executing scheduled tasks.

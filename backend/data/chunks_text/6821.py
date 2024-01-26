@@ -1,0 +1,3 @@
+- Retrieves a specific user with the given ID from the database using SQLAlchemy's `session`.
+- Checks whether the requested user is equal to the currently logged in user (retrieved through FastAPI's dependency injection). If so, returns the user without further checks.
+- If the requesting user is not the same as the one being retrieved and they don't have superuser permissions, raises an exception with a custom error message. Otherwise, returns the user normally.

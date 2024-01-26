@@ -1,0 +1,3 @@
+- Defines a GET request for an item with ID `item_id`.
+- Returns a JSON response containing the requested item's ID.
+- Uses FastAPI's decorator syntax to register the endpoint and pass in arguments using path parameters (`{item_id}`).

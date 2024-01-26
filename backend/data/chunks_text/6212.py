@@ -1,0 +1,3 @@
+- This function retrieves a specific location with the given ID from the current data source (default is JHU).
+- It returns an object containing the serialized representation of the location, optionally including historical data if requested via the `timelines` parameter.
+- The function takes two positional arguments (ID and optional source), as well as one keyword argument (optional timeline flag).

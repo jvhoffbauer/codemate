@@ -1,0 +1,1 @@
+- Tests if a hidden query parameter can be passed and retrieved from the server's response using Flask's `client` object in Python's unittest framework. - Asserts that the HTTP status code is 200 (OK) and checks the JSON response body for the expected value of the hidden query parameter.

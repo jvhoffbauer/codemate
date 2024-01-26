@@ -1,0 +1,6 @@
+- Defines a function `build` that builds documentation using MkDocs.
+- Retrieves an environment variable called `INSIDERS_FILE`.
+- Prints the value of the retrieved environment variable for debugging purposes.
+- Checks whether the current execution environment is an insider's one by calling `is_mkdocs_insiders()`, which is not shown in this snippet. If it is, prints a message indicating so.
+- Calls the `subprocess.run()` method to execute the command'mkdocs build', passing the arguments as positional parameters and raising an exception (checked) if the process fails.
+- Displays a success message with Typer's secho().

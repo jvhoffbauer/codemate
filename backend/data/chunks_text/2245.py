@@ -1,0 +1,1 @@
+- Tests that a POST request to the "/no-duplicates" endpoint with an invalid body (lacking the "item2" field) returns a HTTP status code of 422 and an error message containing a missing field requirement for "item2". - The error message is formatted according to both current and future versions of Pydantic's JSON serialization format.

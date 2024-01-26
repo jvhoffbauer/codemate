@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\")\nasync def read_items(\n    q: Union[str, None] = Query(\n        default=None, min_length=3, max_length=50, pattern=\"^fixedquery$\"\n    ),\n):\n    results = {\"items\": [{\"item_id\": \"Foo\"}, {\"item_id\": \"Bar\"}]}\n    if q:\n        results.update({\"q\": q})\n    return results"}

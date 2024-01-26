@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with optional parameters `perPageMax` and `perPageDefault`. - Sets the values for `perPageMax` and `perPageDefault` attributes respectively. - Default value for `perPageMax` is not specified (None), while default value for `perPageDefault` is set to 10.

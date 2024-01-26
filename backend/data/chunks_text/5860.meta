@@ -1,0 +1,1 @@
+{"original_code": "async def request_validation_exception_handler(\n    request: Request, exc: RequestValidationError\n):\n    \"\"\"Request parameter validation exception\"\"\"\n    return make_error_response(\n        status=HTTP_422_UNPROCESSABLE_ENTITY,\n        msg=_(\"Request parameter validation exception\"),\n        body=exc.body,\n        errors=exc.errors(),\n    )"}

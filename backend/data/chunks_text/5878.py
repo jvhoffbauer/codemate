@@ -1,0 +1,8 @@
+- This function named `get_permission_fields` returns a dictionary containing field names and labels based on specified permissions.
+- It takes an argument `action`, which represents the type of permission being requested ("list", "filter", "create", "read", or "update").
+- The function defines a dictionary called `info` that maps each possible action to its corresponding schema and label prefix, as well as the associated permission enum value.
+- If the provided action is not found in this dictionary, it returns an empty dictionary.
+- For the given action, the function retrieves the relevant schema, prefix, and permission enum value from the `info` dictionary.
+- It then initializes two dictionaries, `perm_fields_exclude` and `perm_fields`, which contain lists of excluded and included fields, respectively. These are used to further refine the list of returned fields based on specific permission requirements.
+- The function creates sets representing the excluded and included fields using these dictionaries.
+- Finally, it calls another helper function `get_schema_fields_name_label` with the appropriate arguments to generate the final list of field names and labels based on the selected schema, prefix, exclusion/inclusion criteria, and other options.

@@ -1,0 +1,3 @@
+- This function takes a JWT (JSON Web Token) as input and verifies its authenticity using Flask-JWT-Extended library's `jwt.decode()`.
+- The token is decoded with the secret key specified in the configuration file `config.py`, and the algorithm used for encryption is HS256.
+- If the verification succeeds, the username associated with this reset request is returned; otherwise, it returns `None`.

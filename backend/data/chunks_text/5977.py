@@ -1,0 +1,1 @@
+- Tests the `validator_skip_blank()` function with an enum type that has a blank member (`BLANK`) and a string input of empty value (''). - Asserts that the returned value is still an empty string, indicating that the blank member was skipped by the validation process.

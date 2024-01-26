@@ -1,0 +1,4 @@
+- Initializes a new instance of the class with a function as an argument (`func`)
+- Sets `func` to be stored in the `func` attribute of the object
+- Initializes `attrname` and `__doc__` attributes to their default values
+- Acquires a lock using the `RLock` class for synchronization purposes

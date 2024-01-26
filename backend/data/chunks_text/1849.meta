@@ -1,0 +1,1 @@
+{"original_code": "@app.on_event(\"shutdown\")\ndef shutdown_event():\n    with open(\"log.txt\", mode=\"a\") as log:\n        log.write(\"Application shutdown\")"}

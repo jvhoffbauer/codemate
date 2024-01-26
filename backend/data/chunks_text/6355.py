@@ -1,0 +1,5 @@
+- Tests refreshing an access token using the `refresh_token` endpoint provided by Flask-JWT-Extended
+- Retrieves a refresh token from logging in with default user credentials
+- Makes a POST request to the `refresh_token` endpoint with the retrieved refresh token as payload
+- Asserts that the status code is OK (200) and extracts the new access token from the JSON response
+- Verifies that the extracted access token contains expected fields such as 'token_type', 'access_token', 'expires_at', etc.

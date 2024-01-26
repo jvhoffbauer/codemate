@@ -1,0 +1,1 @@
+- Tests if sending an invalid X-Token header in a GET request to /items returns a HTTP status code of 400 Bad Request and an error message detailing that the X-Token header is invalid. - Uses Flask's built-in `client` object to simulate making a request from outside the application. - Asserts that the expected HTTP status code and error message are returned by the server.

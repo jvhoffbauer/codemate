@@ -1,0 +1,1 @@
+{"original_code": "def create_hero(*, session: Session = Depends(get_session), hero: HeroCreate):\n    db_hero = Hero.model_validate(hero)\n    session.add(db_hero)\n    session.commit()\n    session.refresh(db_hero)\n    return db_hero"}

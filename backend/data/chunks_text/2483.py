@@ -1,0 +1,5 @@
+- Defines a function `test_openapi_schema` to test the OpenAPI schema of the FastAPI application.
+- Makes an HTTP GET request to the `/openapi.json` endpoint using the `client` object and asserts that the status code is 200 with the expected text in case of failure.
+- Verifies that the JSON response matches the expected structure defined by the OpenAPI specification for version 3.1.0 (OpenAPI Specification - v3.x).
+- The API endpoints `/a` and `/b` are tested for their responses in case of errors (HTTP status code 500) and successes (HTTP status code 200), including the content types and schemas used.
+- The components section of the OpenAPI specification includes two custom schemas named 'Error' and 'JsonApiError'. These schemas define the required fields and data types for error messages returned from the server.

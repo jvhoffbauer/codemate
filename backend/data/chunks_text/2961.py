@@ -1,0 +1,3 @@
+- Defines a GET endpoint for retrieving a callable dependency with a query parameter `value`.
+- Uses FastAPI's `Depends()` decorator to pass a callable function as a dependency, which is called before executing the endpoint handler.
+- The returned value from the callable function is passed as an argument to the endpoint handler (in this case, assigned to the variable `value`).

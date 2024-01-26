@@ -1,0 +1,3 @@
+- Tests if user with username 'jessica' can retrieve their own information using a token as authentication
+- Sends GET request to '/users/me' endpoint with 'jessica' as the token parameter
+- Asserts that status code is 200 and returns JSON object containing expected 'username' value for current user

@@ -1,0 +1,1 @@
+{"original_code": "    def probe(\n        data: List[str] = Body(..., examples=[\"111\", \"222\"]),\n        amount: int = Body(..., gt=5, examples=[10]),\n    ) -> List[int]:\n        del data, amount\n        return [1, 2, 3]"}

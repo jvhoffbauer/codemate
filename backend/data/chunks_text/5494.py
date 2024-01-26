@@ -1,0 +1,1 @@
+- This function is a wrapper around `read_json_ fixture()`, which reads JSON files from fixtures directory. - It modifies the structure of the returned dictionary by replacing absolute file paths with relative ones based on the location of the original JSON file. - The modified dictionary is then passed to the constructor of `MosaicJSON` class as arguments (keyword style).

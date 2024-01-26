@@ -1,0 +1,1 @@
+{"original_code": "    def build_error_model(cls):\n        if cls.ErrorModel is not None:\n            return rename_if_scope_child_component(cls, cls.ErrorModel, \"Error\")\n        return None"}

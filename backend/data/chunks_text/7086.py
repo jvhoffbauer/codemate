@@ -1,0 +1,3 @@
+- This function takes three arguments `client`, `email`, and `password`.
+- It returns a dictionary containing an authentication header using the provided credentials from the given test client instance.
+- The helper method `_get_auth_header_from_credentials()` is used to extract the necessary headers for authorization based on the input credentials.

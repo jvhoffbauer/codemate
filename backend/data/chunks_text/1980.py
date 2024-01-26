@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_user_item` that takes two arguments `item_id` and `needy`.
+- Creates a dictionary called `item` with keys 'item_id' and 'needy', where their respective values are passed in through the arguments.
+- Returns the `item` dictionary.

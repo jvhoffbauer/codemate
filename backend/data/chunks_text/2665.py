@@ -1,0 +1,3 @@
+- Defines a FastAPI route with GET method and custom endpoint name `"/response_model-no_annotation-return_exact_dict"`
+- Specifies that the returned value should conform to the User model using the `response_model` parameter, but without explicitly defining it in the function signature (i.e., no annotation)
+- Returns a dictionary containing two keys ('name' and'surname') with their respective values ('John' and 'Doe'), which will be automatically converted into a User object by FastAPI based on its schema definition

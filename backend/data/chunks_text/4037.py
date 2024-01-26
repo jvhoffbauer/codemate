@@ -1,0 +1,1 @@
+- This function uses `@needs_py310` decorator to ensure Python version is at least 3.10. - It creates a new item using POST request with GeoJSON format data and sets Content-Type header accordingly. - The function asserts that HTTP status code of the response is 200 (OK) and saves the response text for debugging purposes if needed.

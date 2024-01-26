@@ -1,0 +1,3 @@
+- Creates a new `ApiClient` object with the given Flask app and staff instance as arguments.
+- Generates a JSON Web Token (JWT) containing an "admin" claim with expiration time of one day.
+- Adds the JWT to the authorization header of the `ApiClient`.

@@ -1,0 +1,3 @@
+- This method creates multiple records at once using the `create_items()` method from the parent class (presumably a generic CRUD handler).
+- It first retrieves a list of fields that should be excluded based on the user's permissions ("create" permission), and applies this exclusion to each input record before passing it along to the parent method.
+- The modified list is then passed back as the result of the method call.

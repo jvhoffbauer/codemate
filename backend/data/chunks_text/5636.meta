@@ -1,0 +1,1 @@
+{"original_code": "    def _create_schema_filter(self) -> Type[SchemaFilterT]:\n        return create_model_by_model(\n            self.schema_list, f\"{self.schema_name_prefix}Filter\", set_none=True\n        )"}

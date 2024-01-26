@@ -1,0 +1,4 @@
+- Defines a function `check()` that takes optional arguments for formatting (`fmt`) and sorting (`sort`) checks, as well as a flag to show differences between current and expected formats (`diff`).
+- If neither `fmt` nor `sort` is set, both are enabled by default.
+- The function defines lists of arguments for running Black and Isort with their respective flags, including an option to display diffs when requested.
+- The commands are executed in parallel using shell pipelining (`&`) unless there's already another command being run.

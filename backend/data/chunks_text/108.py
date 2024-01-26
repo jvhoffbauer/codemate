@@ -1,0 +1,1 @@
+- Defines a function named `select` that takes an argument of type `_TCCA[_T0]`, where `_TCCA` is a generic constraint and `_T0` represents any type. - The returned value is of type `SelectOfScalar[_T0]`. This indicates that the function returns a selection object for scalar values based on some condition or criteria, with a specific type parameter `_T0`.

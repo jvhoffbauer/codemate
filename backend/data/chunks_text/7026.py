@@ -1,0 +1,3 @@
+- Updates current authenticated user's information using PATCH request method.
+- Uses FastAPI dependency injection to retrieve database session and current active user from token authentication middleware.
+- Calls CRUD operation `crud.user.update()` with updated user data (provided in `user_in`) and existing user object retrieved from database. Returns updated user object as JSON response.

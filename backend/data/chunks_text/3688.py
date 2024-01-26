@@ -1,0 +1,3 @@
+- This test checks if a user with token 'jessica' can access item 'bar'.
+- The `@needs_py39` decorator ensures that this test is run on Python 3.9 or higher.
+- If the request succeeds, an HTTP status code of 200 and the requested item should be returned in JSON format. Otherwise, a 404 error (HTTP status code) and an appropriate error message ("Item not found") should be returned as JSON.

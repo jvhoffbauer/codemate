@@ -1,0 +1,3 @@
+- Defines a method called `router_prefix()` for the current class (presumably a subclass of Pydantic's BaseModel)
+- The method returns an string that starts with a forward slash and is equal to the name of the schema model, converted to lowercase and replaced by underscores instead of spaces
+- This prefix will be used as part of the URL path when creating API endpoints using FastAPI's routers

@@ -1,0 +1,1 @@
+{"original_code": "def test_prediction_no_payload(test_client) -> None:\n    model_path = config.DEFAULT_MODEL_PATH\n\n    hpm = HousePriceModel(model_path)\n    with pytest.raises(ValueError):\n        result = hpm.predict(None)\n        assert isinstance(result, HousePredictionResult)"}

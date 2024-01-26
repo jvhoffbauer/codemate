@@ -1,0 +1,3 @@
+- Tests if passing an integer `0` as a path parameter for `/path/param-lt-gt-int/{item_id}` results in a HTTP status code of `422 Bad Request`.
+- Verifies that the JSON response contains an error message with details about why the request was rejected, specifically that the input (i.e., `0`) should be greater than the limit value (i.e., `1`). This error message conforms to the OpenAPI specification's schema for validation errors ("IsDict" and "match_pydantic_error_url").
+- Also checks for compatibility with older versions of Pydantic by including a fallback case for the deprecated error format ("IsDict" and "{...}").

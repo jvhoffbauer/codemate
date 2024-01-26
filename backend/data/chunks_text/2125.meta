@@ -1,0 +1,1 @@
+{"original_code": "def get_path_param_id(item_id: Optional[str] = Path()):\n    return item_id"}

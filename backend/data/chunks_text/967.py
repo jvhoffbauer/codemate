@@ -1,0 +1,2 @@
+- Defines a decorator called `with_info_plain_validator_function` that takes in a callable as an argument and returns another callable. (type hinting is ignored for simplicity)
+- Allows optional arguments for reference, metadata, and serialization. These are not explained further here but can be assumed to provide additional context or formatting options for validation results.

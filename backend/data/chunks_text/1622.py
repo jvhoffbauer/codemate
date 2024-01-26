@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with optional arguments for query string (q), number of items to skip (skip), and maximum number of items to return (limit). - Assigns values to attributes `q`, `skip`, and `limit`. - Accepts either a string or `None` as the value for argument `q`.

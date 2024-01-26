@@ -1,0 +1,3 @@
+1. Defines a function `route` that takes four arguments: `Request`, `sel` (a Select object), `paginator` (an instance of Paginator), and `filters` (optional body parameters for filtering).
+2. Checks whether the user has permission to access this list using `has_list_permission`. If not, returns an error response.
+3. Initializes an empty `ItemListSchema` with no items, sets its query parameter from the request's URL params, and prepares it for filtering.

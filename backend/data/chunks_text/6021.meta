@@ -1,0 +1,1 @@
+{"original_code": "    @site.register_admin\n    class TmpAdmin2(admin.PageSchemaAdmin):\n        page_schema = amis.PageSchema(label=\"page_label\", isDefaultPage=True, sort=100)"}

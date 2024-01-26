@@ -1,0 +1,1 @@
+- Tests a custom middleware exception by creating an oversized file and sending it via POST request to the "/middleware" endpoint using FastAPI's built-in `client`. - Asserts that the server returns a HTTP status code of 422 and a JSON error message containing details about the custom exception ("ContentSizeLimitExceeded").

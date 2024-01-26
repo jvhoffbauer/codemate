@@ -1,0 +1,1 @@
+{"original_code": "    def load_translations(self, translations: Dict[str, GNUTranslations]):\n        for language, trans in translations.items():\n            if language in self._locales:\n                self._locales[language].add(trans)\n            else:\n                self._locales[language] = {trans}"}

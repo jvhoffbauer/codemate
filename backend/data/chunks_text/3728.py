@@ -1,0 +1,4 @@
+- Tests creating a new user using Pydantic v1 and FastAPI's built-in `Client` class to make requests.
+- Asserts that the status code is 200 for successful creation and checks if email matches returned JSON.
+- Also asserts that an ID field was added to the JSON response.
+- Makes another POST request with same user details to check for duplicate error (status code 400).

@@ -1,0 +1,4 @@
+- This function is a GET request for an item with the specified `item_id`.
+- The `Path` decorator extracts the `item_id` from the URL path and converts it to an integer using the `Annotated` class.
+- The `Query` decorator allows passing optional query parameters (in this case, `q`) through the URL query string.
+- The resulting dictionary `results` contains both the extracted `item_id` and any passed `q` parameter.

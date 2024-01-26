@@ -1,0 +1,3 @@
+- Retrieves statistical information for a given dataset using RasterIO library and returns it in JSON format via FastAPI framework.
+- Dependencies are passed to the function through arguments, including path dependency, band expression parameters, dataset parameters, image parameters, statistics parameters, histogram parameters, and environment dependency.
+- The `response_model` parameter is used to specify the expected output schema of the API endpoint.

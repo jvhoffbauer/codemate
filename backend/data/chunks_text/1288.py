@@ -1,0 +1,1 @@
+- This endpoint accepts a list of binary data (multiple files) using FastAPI's `File` parameter decorator, which is bound to the `files` argument. - The function returns a dictionary containing the sizes of each uploaded file.

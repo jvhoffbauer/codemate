@@ -1,0 +1,1 @@
+{"original_code": "    def router_prefix(self):\n        if issubclass(self.__class__.__base__, ModelAdmin):\n            return f\"/{self.__class__.__name__}\"\n        return f\"/{self.model.__name__}\""}

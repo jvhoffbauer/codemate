@@ -1,0 +1,4 @@
+- This function tests different combinations of overriding URL paths and headers at level 5 using PyTest's `parametrize` decorator.
+- It creates a base URL with default values for each level, then adds or removes segments based on the provided boolean parameters.
+- The final URL is passed to Flask's `client.get` method to make an HTTP request, which returns a JSON response containing the value 'foo'.
+- The function asserts that the correct header is set based on the level number, and checks whether certain headers are present depending on their corresponding boolean parameter.

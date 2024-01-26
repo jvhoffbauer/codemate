@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with several arguments passed in. - Sets attributes for the link model, PK admin, display admin, and column references for both the link and displayed items. - Asserts that certain required attributes are not null before setting them. - Defines an initial path for the view based on the name of the displayed model.

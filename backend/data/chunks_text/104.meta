@@ -1,0 +1,1 @@
+{"original_code": "def within_group(\n    element: FunctionElement[_T], *order_by: Union[_ColumnExpressionArgument[Any], Any]\n) -> WithinGroup[_T]:\n    return sqlalchemy.within_group(element, *order_by)  # type: ignore[arg-type]"}

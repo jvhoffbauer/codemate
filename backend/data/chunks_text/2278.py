@@ -1,0 +1,2 @@
+- Defines a function `get_validlist_exclude_unset()` that returns a list of `Item` objects with aliased names and optional attributes (price and owner IDs)
+- The returned list contains three items with different sets of attributes, demonstrating flexibility in defining custom object structures using this approach

@@ -1,0 +1,4 @@
+- Defines an asynchronous function `read_items()`.
+- Accepts a single argument `q`, which is annotated with both `Query()` and `List[str]`. This allows for either a list of strings or a single string to be passed in.
+- If a list is provided, it's used directly as the value for the 'q' parameter in a dictionary called `query_items`.
+- If a single string is provided, it's wrapped in a list before being added to `query_items`.

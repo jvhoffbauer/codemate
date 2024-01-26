@@ -1,0 +1,3 @@
+- This function is asynchronous and takes an `item_id` parameter of type string.
+- It raises a `HTTPException` with status code 403 (Forbidden) and custom error message when the provided `item_id` doesn't match the expected value ("plumbus").
+- If the condition passes, it returns a dictionary containing both the original `item_id` and a new key-value pair for the updated name.

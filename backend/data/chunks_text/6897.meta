@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/heartbeat\", response_model=HearbeatResult, name=\"heartbeat\")\ndef get_hearbeat() -> HearbeatResult:\n    heartbeat = HearbeatResult(is_alive=True)\n    return heartbeat"}

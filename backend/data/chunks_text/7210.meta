@@ -1,0 +1,1 @@
+{"original_code": "def _alchemy_encoder(obj):\n    \"\"\"\n    \u5904\u7406\u5e8f\u5217\u5316\u4e2d\u7684\u65f6\u95f4\u548c\u5c0f\u6570\n    :param obj:\n    :return:\n    \"\"\"\n    if isinstance(obj, datetime.date):\n        return obj.strftime(\"%Y-%m-%d %H:%M:%S\")\n    elif isinstance(obj, decimal.Decimal):\n        return float(obj)"}

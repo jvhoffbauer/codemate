@@ -1,0 +1,5 @@
+- Tests updating an existing article's properties and relationship using SQLAlchemy Crud API and FastAPI's built-in testing client (AsyncClient).
+- Defines a custom Update model for the Article entity that includes optional fields for Title, Description, and Content (a relationship to the ArticleContent entity).
+- Registers the crud object as a router under /article and adds exclude rules for the Content field during updates.
+- Verifies that the OpenAPI documentation correctly reflects the updated schema, including the new relationships between entities.
+- Makes actual requests to the server to verify successful updates of both simple properties and complex relationships.

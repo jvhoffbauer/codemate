@@ -1,0 +1,2 @@
+- Defines a view function `read_items` that takes in an HTTP request object (`Request`) as its argument
+- Returns a JSON response with a key-value pair containing the strings 'hello' and 'world'

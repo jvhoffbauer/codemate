@@ -1,0 +1,3 @@
+- Creates all tables in the database using SQLAlchemy's `create_all()` method and yields control back to the caller.
+- Does not return any value (specified by `Generator[None, None, None]`) since it is a generator function that performs side effects.
+- Drops all tables from the database using SQLAlchemy's `drop_all()` method after yielding control back to the caller. This ensures that the database is reset to its initial state before each test run.

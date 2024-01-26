@@ -1,0 +1,2 @@
+- Tests that sending an invalid request with incorrect parameter type (int instead of dict) results in a JSONRPC error response with appropriate error message and data.
+- Verifies that the `echo()` function is not called during the validation process for incorrect requests.

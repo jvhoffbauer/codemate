@@ -1,0 +1,3 @@
+- This is a class method of Pydantic's `BaseModel`, called `__get_pydantic_core_schema__`. It takes two arguments - `source` and `handler`.
+- The purpose of this method is to provide a custom schema for a specific type using the `handler` function.
+- By wrapping our validation logic in `with_info_plain_validator_function()`, we can add additional information about errors during validation to the error message returned by Pydantic.

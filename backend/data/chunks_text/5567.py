@@ -1,0 +1,3 @@
+- Calculates ordering based on user input (`orderBy`, `orderDir`) and internal configuration (`self.ordering`) using a helper function `_select_entities`.
+- If `orderBy` or `self.ordering` are not found, returns an empty list for no ordering.
+- Converts descending sorting to ascending by negating the SQL field's direction.

@@ -1,0 +1,3 @@
+- Tests if a required body parameter is missing when embedding an object in request body without providing content for it (returns HTTP status code 422)
+- Uses Flask's built-in `client` to simulate sending a POST request with missing body parameter and asserts that server returns error status code 422
+- Does not provide any specific implementation details, just high-level functionality description

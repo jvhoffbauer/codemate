@@ -1,0 +1,3 @@
+- Defines a class method `create()` that is asynchronous (async).
+- Initializes an instance of Redis client using `aioredis.Redis()`, passing in the host URI from settings.
+- Returns a new object of this class with the initialized Redis pool passed to its constructor.

@@ -1,0 +1,1 @@
+- Defines a function `test_token()` that takes a dependency `models.User` from the `Depends` decorator, which retrieves the currently authenticated user using `deps.get_current_active_user`. - The function returns the authenticated user as its output, allowing it to be used in other functions or endpoints that require authentication and authorization checks.

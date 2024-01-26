@@ -1,0 +1,3 @@
+- Retrieves a ModelField object from a given TableModel based on its alias
+- Searches through all fields of the specified TableModel using `TableModelParser.get_table_model_fields()` and returns the first one with an alias matching the input argument
+- Returns None if no such field is found

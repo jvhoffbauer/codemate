@@ -1,0 +1,3 @@
+1. Retrieves either the list filter or selected entity fields to determine which attributes should be filtered.
+2. Filters out any ModelField objects that represent a Django model's attribute, except for Label instances. This ensures that only non-ModelField objects are included in the filtering process.
+3. Converts scalar types of certain ModelFields into strings before creating the final Schema object. This allows for more flexible filtering options when working with enumerated values, boolean flags, and string representations of other data types.

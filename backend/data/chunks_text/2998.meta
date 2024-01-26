@@ -1,0 +1,1 @@
+{"original_code": "async def router_depends(commons: dict = Depends(common_parameters)):\n    return {\"in\": \"router-depends\", \"params\": commons}"}

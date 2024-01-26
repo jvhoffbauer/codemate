@@ -1,0 +1,5 @@
+- Creates a new user with a randomly generated username and password using `UserCreate`.
+- Saves the user to the default database using `crud.user.upsert`.
+- Retrieves the newly created user from the database using `crud.user.get`.
+- Calls `crud.user.is_superuser` on the retrieved user to check if it's superuser or not.
+- Asserts that the returned value of `crud.user.is_superuser` is false for this normal user.

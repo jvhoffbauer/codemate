@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(name=\"html\")\ndef get_html():\n    from docs_src.websockets.tutorial003_py39 import html\n\n    return html"}

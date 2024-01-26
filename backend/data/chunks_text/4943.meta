@@ -1,0 +1,1 @@
+{"original_code": "def task_cpu_bound():\n    return \"good result\""}

@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(params=[False, True])\ndef add_path_postfix(request):\n    return request.param"}

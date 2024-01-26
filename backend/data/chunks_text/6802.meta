@@ -1,0 +1,1 @@
+{"original_code": "def test_email(\n    email_to: EmailStr,\n    current_user: models.User = Depends(deps.get_current_active_superuser),\n) -> Any:\n    \"\"\"\n    Test emails.\n    \"\"\"\n    send_test_email(email_to=email_to)\n    return {\"msg\": \"Test email sent\"}"}

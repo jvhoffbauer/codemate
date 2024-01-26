@@ -1,0 +1,3 @@
+- Tests if web socket requests are properly handled by checking for expected headers and sending/receiving messages.
+- Expects that these requests should not be handled (improvement needed).
+- Uses `TestClient` from FastAPI's testing module to simulate a web socket connection and send/receive messages.

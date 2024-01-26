@@ -1,0 +1,3 @@
+- Defines a dataclass called `FactoryExtension` with an abstract method `register`.
+- The metaclass is set to `abc.ABCMeta`, making this class an ABC (Abstract Base Class).
+- This class is used as an extension for a base tile factory and allows registration of new factories through its `register()` method.

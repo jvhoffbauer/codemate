@@ -1,0 +1,3 @@
+- Defines a method `assemble_cors_origins` that takes a variable `v` of type string or list of strings as input.
+- Checks whether `v` is a string starting with "[". If yes, it splits the string by comma and strips whitespace from each element to create a list of CORS origins. Otherwise, it returns `v` directly without any modification.
+- Raises an error if `v` cannot be converted into either a string or a list of strings.

@@ -1,0 +1,3 @@
+- Defines a class method `model_validate()` in SQLAlchemy's `SQLModel` base class that validates an object of type `Any`.
+- Takes optional arguments for strict validation mode, using attributes instead of fields, passing additional context to validate against, and providing updates to merge with existing data during validation.
+- Delegates the actual validation process to another function called `sqlmodel_validate()`, which is part of the `sqlmodel` library used by `SQLModel`.

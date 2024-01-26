@@ -1,0 +1,1 @@
+{"original_code": "            @self.router.get(\"/{param2}\")\n            def route1(param1: int = Path(...), param2: str = Path(...)):\n                \"\"\"return param.\"\"\"\n                return {\"value\": param2}"}

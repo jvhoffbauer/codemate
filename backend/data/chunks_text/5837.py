@@ -1,0 +1,7 @@
+- This function takes a `Type` object representing a Pydantic model field and returns a dictionary with configuration options for rendering it as an AMIStig UI component.
+- It first extracts the outer type of the input `Type`, which can be either `str` or `Any`. If so, no further action is taken.
+- For boolean types, it sets up a switch component with disabled state and filterable options.
+- For date/time types, it sets up corresponding components.
+- For enumerated types, it creates mapping and map configurations based on enum choices.
+- For nested sequences like lists or tuples, it sets up each component with tpl configuration to display item values.
+- The `field_annotation_is_scalar_sequence()` helper function checks whether the sequence has scalar elements instead of nested structures.

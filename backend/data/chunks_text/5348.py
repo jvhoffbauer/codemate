@@ -1,0 +1,3 @@
+- Defines a function named `_endpoint` that takes an optional argument `params`, which is dependent on the `Dependencies` class called `datasetParams`.
+- The purpose of this function is to simply return the value of the `params` argument, implying it will be used as input for some other operation or endpoint in the application.
+- This function follows PEP8 style guidelines with snake case naming and docstring documentation.

@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def src(self):\n        return self.app.site.router_path + self.app.site.fastapi.redoc_url"}

@@ -1,0 +1,2 @@
+- Defines a function `generate_operation_summary` that takes two optional arguments `route` and `method`.
+- If the summary of the given `route` is available, returns it directly. Otherwise, generates a default operation name by replacing underscores with spaces in the `name` property of the `route`, converts to title case.

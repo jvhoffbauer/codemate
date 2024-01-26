@@ -1,0 +1,1 @@
+- Retrieves information about the currently logged in user using FastAPI's `HTTPAuthorizationCredentials` decorator and Pydantic's `Security` middleware for OAuth2 authentication. - Returns a JSON response containing the authorization scheme (e.g., 'Bearer') and the encoded access token as base64 string ('credentials').

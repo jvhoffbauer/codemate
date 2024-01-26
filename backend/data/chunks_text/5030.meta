@@ -1,0 +1,1 @@
+{"original_code": "    async def validation_handler(request: Request, exc: ValidationError):\n        return JSONResponse(\n            status_code=400,\n            content={\n                \"message\": \"\u53c2\u6570\u9519\u8bef\",\n                \"errors\": exc.errors(),\n            },\n        )"}

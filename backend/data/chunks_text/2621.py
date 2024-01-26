@@ -1,0 +1,1 @@
+- Defines a function named `get_a()` that returns a dictionary with one key-value pair containing the string 'A' as its value and an unnamed key (represented by curly braces) as its key.

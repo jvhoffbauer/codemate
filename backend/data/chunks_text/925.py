@@ -1,0 +1,1 @@
+- Defines a function called `decorator` that takes in a decorated callable (a function with a decorator applied to it) as an argument and returns it. - Inside the function, adds an event handler for a specific event type using the `self.add_event_handler()` method of some object `self`. - Returns the original decorated callable without modifying its behavior or functionality.

@@ -1,0 +1,3 @@
+- Defines an endpoint `/a/{id}` using FastAPI's decorator syntax
+- Returns JSON API format with error handling for status code 422 (Unprocessable Entity), as specified in the `responses` dictionary
+- The function body is currently empty and marked as uncovered by test coverage tools

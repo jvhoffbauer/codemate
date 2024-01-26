@@ -1,0 +1,5 @@
+- Resets a user's password using a provided token and new password
+- Verifies the validity of the password reset token using `verify_password_reset_token` function
+- Retrieves the user associated with the email from the database using `crud.user.get_by_email`
+- Checks if the user is active before updating their password to prevent unauthorized access
+- Hashes the new password using `get_password_hash` and updates it for the user in the database

@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` with optional arguments for `item_id`, `q`, and `size`.
+- Uses Pydantic's `Path` and `Query` classes to validate input types and ranges.
+- Returns a dictionary called `results` containing either just the `item_id` or both `item_id` and `q` (if provided). The `size` argument is not used in this implementation but can be added later if needed.

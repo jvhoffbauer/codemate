@@ -1,0 +1,4 @@
+- Retrieves a specific column from an SQLAlchemy table based on either a `SqlaInsAttr` object or a string representing the column name.
+- If the input is a `InstrumentedAttribute`, it accesses the corresponding column through its parent class's table and key attributes.
+- Otherwise, it directly retrieves the column using the table's columns dictionary with the given column name as the key.
+- Returns `None` if the specified column cannot be found in the table.

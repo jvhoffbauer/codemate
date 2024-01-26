@@ -1,0 +1,1 @@
+{"original_code": "    @classmethod\n    def valid_url_(cls, url: str):\n        return url[:-1] if url.endswith(\"/\") else url"}

@@ -1,0 +1,3 @@
+- Defines an overloaded function `get_db()`.
+- The function has a default parameter `alias=DEFAULT_ALIAS`, which can be passed as an argument to specify a particular database connection.
+- If no `alias` is provided, the function returns the default database connection (specified by `DEFAULT_ALIAS`) using ellipsis notation for method body omission.

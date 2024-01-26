@@ -1,0 +1,1 @@
+- Tests GET request to endpoint `"/path/param-le-ge"` with query parameter `"2"` for both `le` and `ge`. - Verifies that status code is 200 (OK) and returns value of 2 in JSON format as expected.

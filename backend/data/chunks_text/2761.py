@@ -1,0 +1,3 @@
+- Tests a GET request to the `/response_model_union-no_annotation-return_Model1` endpoint using Flask's built-in testing client (client)
+- Asserts that the status code of the response is 200 and saves its text for debugging purposes if necessary
+- Deserializes the JSON response into a dictionary and asserts that it contains specific keys with expected values

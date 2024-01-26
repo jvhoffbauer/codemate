@@ -1,0 +1,3 @@
+- Defines a function named `request_validation_exception_handler` that takes two arguments - `Request` and `RequestValidationError`.
+- Logs an error message with details about the invalid request parameters using the `logger` module.
+- Returns a customized HTTP response status code (`resp_4001`) with an error message generated from the validation errors. Alternatively, returns a built-in Flask-RESTful exception class (`resp.Fail`) with a customized error message set by passing the validation errors to it.

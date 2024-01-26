@@ -1,0 +1,1 @@
+{"original_code": "async def unicorn_exception_handler(request: Request, exc: UnicornException):\n    return JSONResponse(\n        status_code=418,\n        content={\"message\": f\"Oops! {exc.name} did something. There goes a rainbow...\"},\n    )"}

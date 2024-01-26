@@ -1,0 +1,3 @@
+- Defines an asynchronous function `delete_user` that takes a parameter `id`.
+- Retrieves the user with ID `id` using SQLAlchemy's `ORMUser.get` method and assigns it to the variable `user`.
+- Deletes the retrieved user using SQLAlchemy's `delete` method and returns its result.

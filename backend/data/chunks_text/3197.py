@@ -1,0 +1,1 @@
+- Defines a function called `custom_enum_encoder` that takes an argument of type `Enum`. - Returns the lowercase value of the enumerated constant passed as an argument to the function. This can be used in JSON serialization/deserialization for converting enum values into their string representations while preserving case sensitivity.

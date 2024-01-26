@@ -1,0 +1,1 @@
+- Creates a new instance of `FastAPIPlus`, optionally passing in a list of dependencies to be injected into routes and views using dependency injection. - If no dependencies are provided, an empty list is used as the default value. - Calls a function called `setup_error_handlers()` to set up error handling for the application. - Returns the newly created `FastAPIPlus` object.

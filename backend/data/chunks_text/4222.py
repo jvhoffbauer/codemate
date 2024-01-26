@@ -1,0 +1,2 @@
+- Tests GET request to /users endpoint with default parameters (None for q, skip=5, limit=10) using Flask's built-in testing client
+- Asserts that status code is 200 and expected JSON response is returned from server

@@ -1,0 +1,1 @@
+{"original_code": "def get_graphql_sponsor_edges(*, settings: Settings, after: Union[str, None] = None):\n    data = get_graphql_response(settings=settings, query=sponsors_query, after=after)\n    graphql_response = SponsorsResponse.model_validate(data)\n    return graphql_response.data.user.sponsorshipsAsMaintainer.edges"}

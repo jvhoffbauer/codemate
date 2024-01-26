@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_read_item_public_data(client: TestClient):\n    response = client.get(\"/items/bar/public\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\n        \"name\": \"Bar\",\n        \"description\": \"The Bar fighters\",\n        \"price\": 62,\n    }"}

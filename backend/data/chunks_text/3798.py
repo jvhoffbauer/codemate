@@ -1,0 +1,1 @@
+- Tests if GET request to /portal endpoint returns a successful HTTP status code (200) and checks that the JSON response contains the expected message.

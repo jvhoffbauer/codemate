@@ -1,0 +1,3 @@
+- Retrieves an item with ID 'item2' using a GET request to '/items/' endpoint
+- Verifies that the server returns a successful HTTP status code (200) and checks the response body for correctness
+- Extracts JSON data from the response and asserts its values against expected ones

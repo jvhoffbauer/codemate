@@ -1,0 +1,3 @@
+- Creates all necessary database tables and constraints using SQLAlchemy's `SQLModel.metadata.create_all()`.
+- Enables safe creation of tables by setting `checkfirst=False`, which prevents errors if the table already exists.
+- Generates PostgreSQL DDL statements for creating custom enum types named `myenum1` and `myenum2`. These enums are defined as enumerated values with labels 'A', 'B', 'C', and 'D'. The generated SQL is printed to standard output via `capsys.readouterr()`.

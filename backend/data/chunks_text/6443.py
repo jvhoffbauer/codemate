@@ -1,0 +1,3 @@
+- Defines a function called `_make_sentry_event_processor()` that returns an inner function called `event_processor()`.
+- The `event_processor()` takes two arguments (an event and an unused parameter named '_') but ignores the second argument.
+- If the `method_route` attribute of the object calling this method is not null, it sets the 'transaction' field in the event to be returned by `sentry_transaction_from_function()`, which retrieves transaction information from the decorated function.

@@ -1,0 +1,2 @@
+- Generates a new password and creates/updates a user in the database based on their email address
+- Returns an authentication header dictionary containing the necessary tokens for authenticating requests using the generated password and email

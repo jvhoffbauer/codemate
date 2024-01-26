@@ -1,0 +1,1 @@
+{"original_code": "def test_no_token():\n    response = client.get(\"/items\")\n    assert response.status_code == 401, response.text\n    assert response.json() == {\"detail\": \"Not authenticated\"}"}

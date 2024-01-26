@@ -1,0 +1,3 @@
+- Defines an asynchronous function `b()`.
+- The function body is empty, indicated by the `pass` statement.
+- The decorator `pragma: no cover` tells tools like coverage to ignore this function when generating test coverage reports. This can be useful for functions that are not intended to be tested or have already been covered in other tests.

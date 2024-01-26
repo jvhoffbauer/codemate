@@ -1,0 +1,1 @@
+- Tests the `POST /mosaicjson/validate` endpoint using Flask's built-in testing client (`app`) and JSON data from a fixture file (`read_json_fixture()`). - Asserts that the first request returns HTTP status code 200, indicating success. - Makes another request with invalid JSON data and asserts that it returns HTTP status code 422, indicating an error due to validation failure.

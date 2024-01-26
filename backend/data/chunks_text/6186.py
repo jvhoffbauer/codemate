@@ -1,0 +1,4 @@
+- Defines a function called `data_source` that takes in a parameter named `source`.
+- Docstrings provide documentation for functions and classes, this one explains what the function does and returns.
+- Uses a dictionary (`DATA_SOURCES`) to store different services based on their lowercase name as keys.
+- Returns the requested service from the dictionary using its key (the lowercased version of the input `source`).

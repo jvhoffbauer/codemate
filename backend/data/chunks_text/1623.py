@@ -1,0 +1,3 @@
+- This function is a FastAPI route with the `GET /items/` endpoint.
+- It uses dependency injection to pass in query parameters (`commons`) from the request using the `Depends()` decorator.
+- The function returns a dictionary containing either just the requested "items", or both the "items" and any specified "query" parameter ("q").

@@ -1,0 +1,3 @@
+- Enables redirection of trailing slashes using `FastAPI` and `APIRouter`.
+- Defines a simple route that returns a string message when accessed.
+- Tests the redirect functionality by making requests with and without trailing slashes, verifying status codes.

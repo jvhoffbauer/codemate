@@ -1,0 +1,3 @@
+- Initializes a new instance of the class with an `AdminApp` object as its argument
+- Sets the value of the `app` attribute to the provided `AdminApp` object and raises an AssertionError if it's `None`
+- Enforces that the `AdminApp` object passed in is not `None`, ensuring proper usage within the context of the application

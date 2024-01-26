@@ -1,0 +1,1 @@
+{"original_code": "async def remove_schedule(job_id: str = Body(..., title=\"job_id\", embed=True)):\n    res = schedule.get_job(job_id=job_id)\n    if not res:\n        return resp.fail(resp.DataNotFound.set_msg(f\"not found job {job_id}\"))\n\n    schedule.remove_job(job_id)\n\n    return resp.ok()"}

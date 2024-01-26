@@ -1,0 +1,3 @@
+- Defines a GET endpoint for `/foo`.
+- Uses FastAPI's dependency injection to pass in two arguments (`client_key` and `client_tag`) from functions `_get_client_key()` and `_get_client_tag()`, respectively.
+- Returns a dictionary containing both passed arguments as values.

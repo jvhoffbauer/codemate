@@ -1,0 +1,1 @@
+- Listens to the `set` event of a SQLAlchemy model's `username` attribute using Flask-Login's `@event.listens_for()` decorator. - Checks that the target object is an instance of the `User` model defined by SQLAlchemy. - Takes three arguments (the target object, new and old values, and the initiating function) and asserts that the first argument is an instance of the `User` model.

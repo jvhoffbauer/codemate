@@ -1,0 +1,1 @@
+- Tests if `annotation_outer_type()` correctly identifies the outer type of a dictionary with string keys and integer values using the `Dict[str, int]` type hint. - Asserts that the returned outer type is equal to the built-in Python `dict`.

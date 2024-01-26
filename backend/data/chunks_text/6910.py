@@ -1,0 +1,3 @@
+- This method is a private (underscore prefixed) function called `_predict`.
+- It takes in a list of features as an argument and returns a numpy array containing predictions made by the model using those features.
+- The logging module's debug level is used to log that predicting is happening for debugging purposes.

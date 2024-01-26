@@ -1,0 +1,3 @@
+- This method is called `set_msg` and takes a single argument `msg`.
+- It sets the value of the instance variable `self.msg` to the passed in message `msg`, and then returns `self`.
+- The purpose of this method is to allow for chaining of method calls by returning `self`.

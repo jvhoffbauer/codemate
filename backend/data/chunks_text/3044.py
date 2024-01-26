@@ -1,0 +1,2 @@
+- Defines a function named `get_a_a()` that returns a dictionary with a single key-value pair containing a message string.
+- The value of the message is hardcoded as "Hello A A".

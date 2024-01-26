@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/apis\", response_model=PublicAPIsResponse)\nasync def get_public_apis() -> PublicAPIsResponse:\n    cg_client = Client()\n\n    return await cg_client.get_public_apis()"}

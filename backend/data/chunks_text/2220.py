@@ -1,0 +1,3 @@
+- Defines a function `foo` that takes an argument of type `Items`.
+- The body of the function returns the attribute `items` of the object passed as argument to the function.
+- In other words, this function simply returns all elements contained in the input collection (`Items`) without modifying it.

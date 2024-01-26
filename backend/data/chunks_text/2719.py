@@ -1,0 +1,3 @@
+- Defines a GET endpoint with the path `/response_model_union-no_annotation-return_model1`.
+- Specifies that the endpoint should return an object of type Union[User, Item]. This means it can either return a User or an Item object.
+- The function returns a specific instance of the User class (DBUser), which is assigned to the variable 'user' in the request body when the API is called.

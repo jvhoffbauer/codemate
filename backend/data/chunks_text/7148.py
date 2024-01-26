@@ -1,0 +1,3 @@
+- Endpoint for removing a scheduled task with provided ID
+- Retrieves the specified job from the scheduler using its ID and checks if it exists
+- Removes the retrieved job from the scheduler using its ID

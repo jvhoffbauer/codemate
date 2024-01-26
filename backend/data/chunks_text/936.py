@@ -1,0 +1,3 @@
+- Returns an alias for the field, if it exists, otherwise returns the original name of the field
+- The `@property` decorator allows us to define a getter method that can be accessed like an attribute (i.e., without parentheses after the object reference)
+- Uses the `field_info` property of the model class to access information about the specific field being accessed

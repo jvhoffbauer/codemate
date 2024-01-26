@@ -1,0 +1,3 @@
+- Defines a GET endpoint at the root URL of the application (/) using FastAPI's decorator syntax (@app.get).
+- Returns a JSON response with the values passed to the Depends() function, which is used for dependency injection in FastAPI. In this case, it's an instance of the DatasetParams class defined elsewhere in the program.
+- The response_class parameter specifies that the response should be serialized as JSON using the built-in JSONResponse class provided by FastAPI.

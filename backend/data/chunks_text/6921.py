@@ -1,0 +1,1 @@
+- This function is asynchronous and takes a `Context` object (`ctx`) as an argument. - It prints "start" to the console when called, indicating that it's being executed during bot startup. - Its purpose is likely to perform some initial setup tasks for the bot before connecting to Discord and starting to handle commands.

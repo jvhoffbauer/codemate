@@ -1,0 +1,1 @@
+- Tests if passing an invalid tuple format to `/tuple-form/` endpoint returns a HTTP status code of 422 (Unprocessable Entity) and displays an error message in the response body. - First test case checks for an incorrect number of elements in the tuple. - Second test case checks for an empty string as one of the values in the tuple.

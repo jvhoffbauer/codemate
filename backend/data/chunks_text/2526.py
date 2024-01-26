@@ -1,0 +1,3 @@
+- Defines a websocket route with a dynamic path parameter and optional query parameters using FastAPI's `Router`.
+- Accepts incoming connections from clients via the defined route.
+- Sends back the received path parameter and any provided query parameter to the client over the established connection before closing it.

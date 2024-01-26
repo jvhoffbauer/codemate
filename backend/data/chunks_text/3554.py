@@ -1,0 +1,3 @@
+- Defines a function `test_app()` to test our Flask application's endpoint at `/foo`.
+- Uses the `client` object provided by Flask TestClient to make an HTTP GET request to the specified URL.
+- Asserts that the status code of the response is equal to 200 (OK) and saves the text content for debugging purposes if the assertion fails.

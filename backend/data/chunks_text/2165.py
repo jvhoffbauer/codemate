@@ -1,0 +1,1 @@
+- Defines a function `get_query_type` that takes an integer argument `query`. - Returns a string representation of the query using formatted strings, including the literal text "foo bar".

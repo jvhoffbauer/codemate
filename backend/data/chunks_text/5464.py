@@ -1,0 +1,4 @@
+- Defines a function `mock_RequestGet()` to simulate requests using Python's built-in library `unittest.mock`.
+- Checks if the input URL starts with a specific domain (`"https://myurl.com/"`).
+- Extracts the filename from the URL path and reads its contents from a local file in the `DATA_DIR`.
+- Returns an instance of `MockResponse`, which is used by other functions that make network requests through `requests.get()`. This allows us to test those functions without actually making external API calls.

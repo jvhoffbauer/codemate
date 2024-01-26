@@ -1,0 +1,1 @@
+{"original_code": "    def __repr_args__(self) -> Sequence[Tuple[Optional[str], Any]]:\n        # Don't show SQLAlchemy private attributes\n        return [\n            (k, v)\n            for k, v in super().__repr_args__()\n            if not (isinstance(k, str) and k.startswith(\"_sa_\"))\n        ]"}

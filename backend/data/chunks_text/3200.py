@@ -1,0 +1,2 @@
+- Tests encoding a Pydantic model with a `PureWindowsPath` field using JSON encoder (`jsonable_encoder`)
+- Verifies that the encoded output is in the expected format for Windows paths, i.e., backslashes instead of forward slashes

@@ -1,0 +1,3 @@
+- Defines a function `get_site()` that takes an optional keyword argument `alias`.
+- If no value is provided for `alias`, sets it to a default value called `DEFAULT_ALIAS`.
+- Returns the global variable with name `SITE_NAME` and optionally specified `alias`.

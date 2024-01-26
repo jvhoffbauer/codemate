@@ -1,0 +1,2 @@
+- Deprecated endpoint for retrieving a list of items with IDs (deprecated as new API version is available at /items/)
+- Returns JSON response containing an array of dictionaries, each representing an item with its unique identifier ("item_id")

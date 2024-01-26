@@ -1,0 +1,1 @@
+- Private method `_model_rebuild` takes a type of BaseModel as an argument and updates forward references within that model using the `update_forward_refs` function. - This method is likely used to rebuild models after they have been modified or loaded from disk, ensuring that any dependencies between related models are properly updated.

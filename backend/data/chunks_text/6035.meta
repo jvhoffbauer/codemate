@@ -1,0 +1,1 @@
+{"original_code": "    @site.register_admin\n    class TmpAdmin(admin.TemplateAdmin):\n        page_path = \"/index\"\n        templates = Jinja2Templates(directory=str(tmpdir))\n        template_name = \"index.html\"\n\n        async def get_page(self, request: Request) -> Dict[str, Any]:\n            return {\"username\": \"hello\"}"}

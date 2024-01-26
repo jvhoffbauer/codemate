@@ -1,0 +1,1 @@
+{"original_code": "def cov_tmp_path(tmp_path: Path):\n    yield tmp_path\n    for coverage_path in tmp_path.glob(\".coverage*\"):\n        coverage_destiny_path = top_level_path / coverage_path.name\n        shutil.copy(coverage_path, coverage_destiny_path)"}

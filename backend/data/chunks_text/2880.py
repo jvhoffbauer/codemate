@@ -1,0 +1,5 @@
+- Defines a function `put_user` with two positional arguments and one keyword argument
+- The first argument is named `user_id` of type string
+- The second argument is optional (default value provided) and named `name`, also of type string
+- A dependency called `db` is passed to the function using the `Depends()` decorator from FastAPI's database module
+- Inside the function, the user ID is used as an index in the dictionary returned by the `get_database()` function to store the user's name

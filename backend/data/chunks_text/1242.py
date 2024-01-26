@@ -1,0 +1,1 @@
+- Defines an asynchronous function `login` that takes two arguments `username` and `password`, both of type string and decorated with the `Form()` validator from Pydantic's Form class. - The function returns a dictionary containing just the `username`. This is likely used to authenticate the user in some way (e.g., by checking against a database).

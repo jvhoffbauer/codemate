@@ -1,0 +1,2 @@
+- Initializes a new instance of the class with specified latitude and longitude values assigned to corresponding attributes.
+- Follows Python's object-oriented programming principles by defining an `__init__()` method that takes in arguments for initializing object properties.

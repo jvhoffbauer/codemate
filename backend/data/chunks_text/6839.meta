@@ -1,0 +1,1 @@
+{"original_code": "    def get_project_name(cls, v: Optional[str], values: Dict[str, Any]) -> str:\n        if not v:\n            return values[\"PROJECT_NAME\"]\n        return v"}

@@ -1,0 +1,3 @@
+- Tests a GET request to the `/simple_include` endpoint using Flask's built-in testing client (client)
+- Asserts that the status code is 200 and saves the text for debugging purposes
+- Verifies that the JSON response contains expected keys ('baz','ref') with their respective values

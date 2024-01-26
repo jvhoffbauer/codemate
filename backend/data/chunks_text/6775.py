@@ -1,0 +1,3 @@
+- This function takes a password reset token as input and returns the email associated with it if the token is valid, otherwise returns `None`.
+- It uses Flask's built-in JWT (JSON Web Token) library to decode the token and extract its payload, which includes an 'email' field containing the user's email address.
+- The SECRET_KEY setting from the project's configuration file is used as the secret key for signing/verifying the tokens.

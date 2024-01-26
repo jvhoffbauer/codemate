@@ -1,0 +1,1 @@
+- Tests the `/query/int/default` endpoint with query parameter 'foo' (which cannot be parsed as an int) using Pytest and Flask-Restful's built-in testing client. - Expects HTTP status code 422 (Unprocessable Entity). - Verifies that the JSON response contains an error message indicating that input should be a valid integer and is unable to parse the given value ('foo') as such.

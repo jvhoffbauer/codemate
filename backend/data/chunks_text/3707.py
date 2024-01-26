@@ -1,0 +1,3 @@
+- Creates a new user with email and password using POST request to /users endpoint
+- Verifies that status code is 200 (success), extracts JSON response, checks if email matches input, and verifies presence of 'id' key
+- Makes another POST request with same user details to verify uniqueness constraint on email field

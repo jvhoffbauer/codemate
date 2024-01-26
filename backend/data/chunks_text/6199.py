@@ -1,0 +1,3 @@
+- Retrieves data for three specific categories (confirmed, deaths, and recovered) using `await get_category()`.
+- Combines the retrieved data into a dictionary with keys corresponding to each category.
+- Includes a separate key called 'latest' that contains the most recent values for each of the three categories.

@@ -1,0 +1,3 @@
+- Sends a POST request to `/files/` with an empty body for file and fileb fields
+- Asserts that the status code is 422 (Unprocessable Entity) and checks the error message using pydantic's validation errors
+- The error message contains two missing field errors for both 'file' and 'fileb', indicating they are required but not provided in the request body

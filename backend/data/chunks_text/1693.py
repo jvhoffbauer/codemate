@@ -1,0 +1,4 @@
+- Creates a dictionary `content` with a key-value pair for storing message data.
+- Initializes an instance of `JSONResponse`, passing in the `content` dictionary as its argument.
+- Sets a cookie named 'fakesession' and assigns it a value 'fake-cookie-session-value'.
+- Returns the `response` object containing both the JSON response and the set cookie.

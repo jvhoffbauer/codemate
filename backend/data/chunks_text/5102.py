@@ -1,0 +1,3 @@
+- Defines a GET route for the root URL of the application (/)
+- Returns an HTML response using FastAPI's `templates` module to render a template called "index.html". The rendered content is returned as an instance of `HTMLResponse`.
+- Includes the current HTTP request object in the rendering context under the key `request`, which can be used within the template to access request details such as headers and query parameters. This feature allows dynamic generation of content based on user input or other variables.

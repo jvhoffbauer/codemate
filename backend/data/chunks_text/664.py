@@ -1,0 +1,3 @@
+- Defines a function `set_transaction_id` that takes a string argument `correlation_id`.
+- Sets the transaction ID for an event using the `configure_scope` context manager provided by Sentry SDK.
+- Adds a tag named "transaction_id" to the event's scope with the value of the passed `correlation_id`. This allows easy correlation between logs and Sentry events.

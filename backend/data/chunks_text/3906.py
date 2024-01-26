@@ -1,0 +1,1 @@
+- Tests that passing a query parameter with a hyphenated name ("item-query") works correctly and is properly handled by the server, returning all items containing the string "fixedquery". - Verifies that the returned JSON includes both the original list of items as well as the specified query term in a separate "q" field for easy filtering or further processing.

@@ -1,0 +1,1 @@
+- Imports `TestClient` class from a specific module within the project's documentation sources (docs_src). - Retrieves an instance of Flask application called 'app'. - Returns an initialized `TestClient` object with the retrieved Flask application context.

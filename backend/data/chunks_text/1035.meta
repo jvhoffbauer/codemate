@@ -1,0 +1,1 @@
+{"original_code": "        @classmethod\n        def __get_pydantic_core_schema__(\n            cls, source: Type[Any], handler: Callable[[Any], CoreSchema]\n        ) -> CoreSchema:\n            return with_info_plain_validator_function(cls._validate)"}

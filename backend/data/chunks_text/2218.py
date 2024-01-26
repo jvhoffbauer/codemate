@@ -1,0 +1,3 @@
+- Defines a function named `post_third` that takes an argument of type `Item`.
+- The function returns the value passed as an argument (`item1`) without any further processing or modification.
+- This function is marked with the `pragma: nocover` directive, indicating that it should not be included in automated test coverage reports because its purpose is to demonstrate how to use another part of the module and is not intended for production usage.

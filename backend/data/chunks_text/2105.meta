@@ -1,0 +1,1 @@
+{"original_code": "def event_callback(event: Event):\n    pass  # pragma: nocover"}

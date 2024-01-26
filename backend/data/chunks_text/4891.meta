@@ -1,0 +1,1 @@
+{"original_code": "def ensure_couchbase_username_password(*, cluster_url, username, password):\n    if setup_couchbase_username_password(\n        cluster_url=cluster_url, username=username, password=password\n    ):\n        return True\n    return check_couchbase_username_password(\n        cluster_url=cluster_url, username=username, password=password\n    )"}

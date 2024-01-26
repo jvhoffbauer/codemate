@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(autouse=True)\ndef reset_state_and_db():\n    global fake_database\n    global state\n    fake_database = initial_fake_database.copy()\n    state = initial_state.copy()"}

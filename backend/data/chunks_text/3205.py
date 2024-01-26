@@ -1,0 +1,3 @@
+- Tests if Pydantic version 2 is required for this function using `@needs_pydanticv2`.
+- Creates a dictionary with a key "value" and value as a decimal number (2).
+- Asserts that when passing this dictionary to `jsonable_encoder()`, it returns an equivalent dictionary but with the decimal number replaced by its integer representation (2).

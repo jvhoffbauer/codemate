@@ -1,0 +1,3 @@
+- Defines a decorator named `Depends` that accepts two optional arguments: `dependency` and `use_cache`.
+- The `dependency` argument expects an instance of `Annotated`, which can either be a callable or `None`. If provided, it should be treated as a dependable callable like a function.
+- The `use_cache` argument defaults to `True` and determines whether the result of calling the dependency should be cached and reused within the current request. Setting it to `False` ensures that the dependency is called every time it is referenced within the same request.

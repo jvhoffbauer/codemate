@@ -1,0 +1,2 @@
+- Registers a custom admin interface for an app called 'tmp' using Django-Amis (a library for building complex forms and interfaces)
+- Sets the URL of the external documentation to be displayed in an iframe within this admin interface, allowing easy access to reference materials while working on related tasks

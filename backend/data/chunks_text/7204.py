@@ -1,0 +1,4 @@
+- Tests whether regular users can set permissions using `test_ordinary_add_auth` function in Flask's built-in testing framework (unittest)
+- Makes a POST request to the `/add/auth` endpoint with an authority ID of '100', path '/add/auth', and method 'POST'
+- Uses the `ordinary_token_headers` dictionary as authentication headers for the request
+- Asserts that the status code is 200 and the returned JSON contains error code 4003, indicating permission denied for non-admin users

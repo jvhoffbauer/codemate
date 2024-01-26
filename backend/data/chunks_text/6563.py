@@ -1,0 +1,5 @@
+- Defines a fixture `ep` that creates an instance of `jsonrpc.Entrypoint`.
+- Sets up two dependency functions `get_shared_counter` and `get_common_counter`, which increment their respective counters each time they are called.
+- Passes these dependency functions to the constructor of `Entrypoint` as arguments for `dependencies` and `common_dependencies`.
+- Registers a method named 'probe' with both dependency functions passed in as arguments using the `Depends` decorator.
+- Returns the created entrypoint object from the fixture function.

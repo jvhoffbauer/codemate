@@ -1,0 +1,3 @@
+- Defines a function called `route_with_server_error()`.
+- Inside this function, raises a `RuntimeError` with an error message "Oops!" using the `raise` keyword in Python. This is equivalent to throwing an exception or raising an error.
+- In other words, this function intentionally causes a server error by raising an unexpected runtime error that should be handled by appropriate error handling mechanisms outside of this function.

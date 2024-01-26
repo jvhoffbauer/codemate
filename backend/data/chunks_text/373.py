@@ -1,0 +1,2 @@
+- Tests that two instances of `Default` with different values are not equal using Python's built-in `assert` statement.
+- Uses the `-> None` type annotation to indicate that this function doesn't return anything and sets its return type explicitly for clarity.

@@ -1,0 +1,3 @@
+- This function is a unit test for an application using Flask's built-in testing client (client).
+- It makes a GET request to the root URL ("/") and stores the response in a variable called'response'.
+- The function asserts that the JSON response contains a key named'msg' with value 'Hello World', and also checks the content type header of the response matches the expected JSON format ('application/json').

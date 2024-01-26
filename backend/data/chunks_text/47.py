@@ -1,0 +1,3 @@
+- Defines a function `set_config_value()` that takes three arguments: `model`, `parameter`, and `value`.
+- The `model` argument can be either an instance or a class of SQLModel (an ORM for Python).
+- Inside the function, it sets the value of the specified `parameter` in the `model_config` dictionary of the given `model` to the provided `value`. Note that we're ignoring the literal check warning here because `model_config` is defined as a class attribute with optional values, so it may not exist on all instances of `model`.

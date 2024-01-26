@@ -1,0 +1,1 @@
+{"original_code": "async def hidden_header(\n    hidden_header: Optional[str] = Header(default=None, include_in_schema=False)\n):\n    return {\"hidden_header\": hidden_header}"}

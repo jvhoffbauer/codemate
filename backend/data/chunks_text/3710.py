@@ -1,0 +1,1 @@
+- This function is an automated test using Pytest and FastAPI to check if a non-existent user (ID=999) returns a HTTP status code of 404 Not Found. - It uses two decorators `@needs_py310` and `@needs_pydanticv1` for compatibility checks on Python versions and Pydantic library respectively.

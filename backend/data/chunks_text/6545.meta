@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method()\n    def convert_error() -> int:\n        raise MyErrorToConvert()"}

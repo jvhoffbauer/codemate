@@ -1,0 +1,3 @@
+- Registers an endpoint for validating COG files using `rioxarray-cogeo` library
+- Takes in a `BaseTilerFactory`, which is likely used by FastAPI to create tile servers
+- Defines a function called `validate()` that takes two arguments - `src_path` and `strict`. The former represents the path of the COG file being validated while the latter specifies whether warnings should be treated as errors or not. This function returns the result of calling `cog_info()` from `rioxarray-cogeo` with these arguments passed on.

@@ -1,0 +1,4 @@
+- Generates an OpenAPI schema for a FastAPI application using Pytest and `TestClient`.
+- The generated schema includes information about endpoints, responses, parameters, and error handling.
+- The schema is versioned according to the OpenAPI specification (v3.1.0).
+- The schema defines custom components such as validation errors specific to HTTP requests.

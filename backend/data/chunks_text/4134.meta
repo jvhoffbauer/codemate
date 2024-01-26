@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(name=\"client\")\ndef get_client():\n    from docs_src.header_params.tutorial002_py310 import app\n\n    client = TestClient(app)\n    return client"}

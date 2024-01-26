@@ -1,0 +1,1 @@
+{"original_code": "@bp.get(\"/test_1_plus_1/{result}\")\ndef test_1_plus_1(result: int):\n    return {\"result\": result == 2}"}

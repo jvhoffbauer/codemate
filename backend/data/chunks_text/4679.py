@@ -1,0 +1,1 @@
+- This function tests the POST request to create a new file with JSON body containing a 'file' field. - It asserts that the status code is 422 (Unprocessable Entity) and checks the error message returned by Flask-RESTful's `abort(422)`. - The expected error message is checked using Pytest-mock's `IsDict` fixture which matches against both Pydantic v1 and v2 error formats.

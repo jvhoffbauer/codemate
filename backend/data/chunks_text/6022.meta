@@ -1,0 +1,1 @@
+{"original_code": "async def test_LinkAdmin(site: AdminSite):\n    @site.register_admin\n    class TmpAdmin(admin.LinkAdmin):\n        link = \"https://docs.amis.work\"\n\n    ins = site.get_admin_or_create(TmpAdmin)\n    assert ins.page_schema.link == \"https://docs.amis.work\""}

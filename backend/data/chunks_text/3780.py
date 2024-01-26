@@ -1,0 +1,1 @@
+- Sends a POST request to `"/index-weights/"`, passing in JSON data containing key-value pairs for weights with indices of '2' and '3'. - Asserts that the server returns an HTTP status code of 200 (OK), and checks the response body against the original input data using the `response.json()` method.

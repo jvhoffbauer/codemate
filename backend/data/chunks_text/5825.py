@@ -1,0 +1,5 @@
+- Initializes a new instance of the class with provided `Settings`, optional `FastAPI` and/or `SqlalchemyDatabase`.
+- Imports and initializes `Auth` object from `fastapi_user_auth` package (if available).
+- Creates an instance of `AmisParser` with specified image and file receivers.
+- Sets up `FastAPI` application with debug mode enabled by default, but disables OpenAPI, docs and redoc URLs in release builds.
+- If `Engine` is provided, sets it as the database connection for this app; otherwise creates one using either async or sync SQLAlchemy based on availability of `database_url_async`.

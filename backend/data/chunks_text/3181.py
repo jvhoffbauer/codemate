@@ -1,0 +1,1 @@
+- Tests encoding of a `DictablePerson` and its associated `DictablePet`, verifying that nested objects are also encoded correctly. - Demonstrates use of the `include` and `exclude` parameters to selectively encode or omit fields from the output JSON. - Shows how empty values for these parameters result in different behavior (empty dictionary vs. Including all fields).

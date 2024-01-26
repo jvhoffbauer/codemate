@@ -1,0 +1,1 @@
+{"original_code": "async def valid_user_create(user: AuthUser) -> AuthUser:\n    if await service.get_user_by_email(user.email):\n        raise EmailTaken()\n\n    return user"}

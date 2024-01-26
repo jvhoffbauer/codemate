@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `main()`.
+- The function returns a dictionary with a single key-value pair containing the string 'Hello World'.
+- This is likely used in an asyncio application to provide a simple response message when requested by another part of the system.

@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/tiles/{z}/{x}/{y}\")\n    async def tiles(\n        z: int = Path(..., ge=0, le=30, description=\"Mercator tiles's zoom level\"),\n        x: int = Path(..., description=\"Mercator tiles's column\"),\n        y: int = Path(..., description=\"Mercator tiles's row\"),\n    ):\n        \"\"\"tiles.\"\"\"\n        return \"yeah\""}

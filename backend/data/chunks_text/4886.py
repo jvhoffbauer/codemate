@@ -1,0 +1,3 @@
+- Initializes Couchbase Services by making a POST request to `http://<CLUSTER_URL>/node/controller/setupServices`.
+- Specifies which services should be enabled ("kv", "index", "fts", and "n1ql").
+- Returns True if the operation was successful (HTTP status code 200), or False if the operation failed due to an error message containing "cannot change node services after cluster is provisioned".

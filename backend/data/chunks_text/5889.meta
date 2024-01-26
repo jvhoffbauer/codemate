@@ -1,0 +1,1 @@
+{"original_code": "    async def has_field_permission(\n        self, request: Request, field: str, action: str = \"\"\n    ) -> bool:\n        \"\"\"\u5224\u65ad\u7528\u6237\u662f\u5426\u6709\u5b57\u6bb5\u6743\u9650\"\"\"\n        return True"}

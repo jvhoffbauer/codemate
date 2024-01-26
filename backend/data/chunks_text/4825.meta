@@ -1,0 +1,1 @@
+{"original_code": "def search(bucket: Bucket, *, query_string: str, skip=0, limit=100):\n    docs = utils.search_get_docs(\n        bucket=bucket,\n        query_string=query_string,\n        index_name=full_text_index_name,\n        doc_model=ItemInDB,\n        skip=skip,\n        limit=limit,\n    )\n    return docs"}

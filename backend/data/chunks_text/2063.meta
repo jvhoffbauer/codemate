@@ -1,0 +1,1 @@
+{"original_code": "def langs_json():\n    langs = []\n    for lang_path in get_lang_paths():\n        if lang_path.is_dir():\n            langs.append(lang_path.name)\n    print(json.dumps(langs))"}

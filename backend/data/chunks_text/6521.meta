@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\ndef app(ep):\n    app = jsonrpc.API()\n    app.bind_entrypoint(ep)\n    return app"}

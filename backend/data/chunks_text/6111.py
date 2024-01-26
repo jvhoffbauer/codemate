@@ -1,0 +1,3 @@
+- Defines a function named `receive_after_insert` that takes three arguments (`mapper`, `connection`, and `target`) when called by SQLAlchemy's event system.
+- Asserts that the type of `target` is `models.User`. This ensures that this function will be executed only when an instance of `models.User` is inserted into the database using SQLAlchemy.
+- Increments a global variable named `event_counter.after` by one each time this function is executed. This can be used to keep track of how many times the `after_insert` event has been triggered in total.

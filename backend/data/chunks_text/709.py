@@ -1,0 +1,3 @@
+- Tests whether the middleware preserves existing headers (in this case cookies) when setting new ones with the same name.
+- Uses `pytest.mark.parametrize` to run the test for each application under test.
+- Verifies that both original cookies are present in the response headers using string search.

@@ -1,0 +1,5 @@
+- Creates a new `Item` object from user input using FastAPI's Pydantic model validation and mapping to SQLAlchemy ORM objects (`ItemIn`)
+- Sets the owner of the new item as the currently logged in user (`CurrentUser`)
+- Adds the newly created item to the database session and commits changes
+- Refreshes the item object with its updated state after commit
+- Returns the newly created item as response body

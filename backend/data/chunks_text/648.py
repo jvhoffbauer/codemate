@@ -1,0 +1,6 @@
+- Defines a `Model` class using SQLAlchemy's `SQLModel`.
+- The `dec` field is defined as a `Decimal` type with maximum of 4 digits and 2 decimal places.
+- Creates two instances of the model with valid decimal values (3.14 and 69.42).
+- Raises a validation error for an invalid decimal value that exceeds the maximum number of digits allowed (3.142).
+- Raises a validation error for an invalid decimal value that has more than 2 decimal places (0.069).
+- Raises a validation error for an invalid decimal value that exceeds the maximum allowable range (420).

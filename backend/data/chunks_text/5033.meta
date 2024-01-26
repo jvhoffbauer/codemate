@@ -1,0 +1,1 @@
+{"original_code": "def create_bp(dependencies: list = None) -> FastAPIPlus:\n    if not dependencies:\n        dependencies = []\n    app = FastAPIPlus(dependencies=dependencies)\n    setup_error_handlers(app)\n    return app"}

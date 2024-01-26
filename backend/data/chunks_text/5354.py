@@ -1,0 +1,8 @@
+- Defines a function `test_algo` that tests dependencies for an algorithm in Titler's core module.
+- Imports and uses `default_algorithms`, which is assumed to be a list of available algorithms.
+- Creates a FastAPI application with a dependency on `PostProcessParams`.
+- Defines an endpoint that returns parameters based on the requested algorithm.
+- Tests the endpoint without any query parameter, expecting no result.
+- Tests the endpoint with an invalid algorithm name (`hillshad`) and expects a 422 status code.
+- Tests the endpoint with a valid algorithm name (`hillshade`) and expected parameters.
+- Tests the endpoint with customized algorithm parameters passed through query string.

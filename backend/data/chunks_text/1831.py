@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with an empty list called `active_connections`. This list will be used to keep track of all active WebSocket connections. - The type hint specifies that this list should contain instances of the built-in Python class `WebSocket`, which is provided by the asyncio library for handling WebSocket communication in asynchronous applications.

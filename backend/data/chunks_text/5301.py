@@ -1,0 +1,3 @@
+- Defines an asynchronous function named `route1`.
+- The docstring provides a brief description of what this function does.
+- Returns a string value "I am tired".

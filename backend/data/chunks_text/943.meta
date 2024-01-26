@@ -1,0 +1,1 @@
+{"original_code": "        def type_(self) -> Any:\n            return self.field_info.annotation"}

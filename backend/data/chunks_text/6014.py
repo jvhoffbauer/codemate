@@ -1,0 +1,2 @@
+- Defines an asynchronous function named `test__get_page_as_app` that takes a single argument, `site`, of type `AdminSite`.
+- The body of the function is empty (i.e., it contains no statements).

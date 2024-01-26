@@ -1,0 +1,3 @@
+- Defines a custom encoder for `datetime` objects using PyDantic's `Config` attribute
+- Creates two classes that inherit from this base model with different configuration settings (no config changes in first example)
+- Tests encoding of both models to ensure that the custom encoder is applied correctly

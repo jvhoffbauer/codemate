@@ -1,0 +1,3 @@
+- Initializes a custom OAuth2 dependency using Starlette's built-in OAuth2 support.
+- Takes several arguments including authorization URL, token URL, refresh URL, security scheme name, scopes, description, and whether to automatically error on missing auth headers.
+- Creates an instance of OAuthFlowsModel with the given parameters and passes it to the parent class constructor.

@@ -1,0 +1,3 @@
+- This function is a FastAPI route with the `GET` method and path `/items/`.
+- It uses dependency injection to pass in a `CommonsQueryParams` object, which contains query parameters like `q`, `skip`, and `limit`.
+- The function returns a dictionary containing either just the `items` list (if no query parameter was passed) or both the `items` list and any query parameters that were passed (stored in the `response` dictionary).

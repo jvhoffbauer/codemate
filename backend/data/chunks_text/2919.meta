@@ -1,0 +1,1 @@
+{"original_code": "def get_user(required_scopes: SecurityScopes):\n    return \"john\", required_scopes.scopes"}

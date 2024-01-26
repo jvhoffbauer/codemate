@@ -1,0 +1,5 @@
+- This function takes a `Type[BaseModel]` as input, which is a Pydantic model class, and returns a dictionary containing the names and labels of its fields.
+- The function allows customization through several optional arguments:
+  - `prefix` adds a string to the beginning of each label.
+  - `exclude_required` excludes required fields from the output.
+  - `exclude` and `include` allow filtering by specific field names. If `__all__` is included in either list, all fields are returned/filtered respectively.

@@ -1,0 +1,1 @@
+{"original_code": "    def to_result(self):\n        rv = {\"detail\": self.detail}\n        if self.code:\n            rv[\"code\"] = self.code\n        if self.biz_code:\n            rv[\"biz_code\"] = self.biz_code\n        if self.errors:\n            rv[\"errors\"] = self.errors\n        return ORJSONResponse(rv, status_code=self.status_code)"}

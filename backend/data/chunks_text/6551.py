@@ -1,0 +1,2 @@
+- Defines a function named `probe` that returns a string (type annotation).
+- The body of the function raises a custom exception called `HTTPException` with status code 401 (Unauthorized).

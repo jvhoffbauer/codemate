@@ -1,0 +1,3 @@
+- Defines a function `get_exclude_unset_none` that returns an instance of `ModelDefaults`.
+- The returned object has two attributes `x` and `y`, where `x` is set to `None` and `y` is set to the string value "y".
+- This function can be used as a default argument for a model's constructor or other methods that accept defaults. By excluding unset values (i.e., `None`) from being included in the defaults, this helps prevent unexpected behavior when using those defaults.

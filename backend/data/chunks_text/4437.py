@@ -1,0 +1,1 @@
+- Tests that sending a GET request to `/items/` without headers returns a 422 status code and an error message containing details about missing header fields 'X-Token' and 'X-Key'. The error message is in the format of either Pydantic v1 or v2 (depending on which version is being used).

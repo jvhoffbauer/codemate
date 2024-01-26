@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/path/{item_id}\")\ndef get_id(item_id):\n    return item_id"}

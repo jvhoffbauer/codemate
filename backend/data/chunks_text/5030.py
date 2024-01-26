@@ -1,0 +1,1 @@
+- Defines a function `validation_handler` that takes in a request and an exception of type `ValidationError`. - Returns a JSON response with HTTP status code 400 (Bad Request) containing an error message and a dictionary of errors extracted from the `ValidationError` object using its `errors()` method.

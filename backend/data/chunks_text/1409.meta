@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/{item_id}\")\nasync def read_item(item_id: int):\n    if item_id == 3:\n        raise HTTPException(status_code=418, detail=\"Nope! I don't like 3.\")\n    return {\"item_id\": item_id}"}

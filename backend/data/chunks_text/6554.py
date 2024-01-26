@@ -1,0 +1,3 @@
+- Defines a middleware function named `middleware` that takes in a single argument, `_ctx`, of type `JsonRpcContext`.
+- Raises an HTTP exception with status code 401 (unauthorized).
+- Yields control to the next middleware or handler using the `yield` keyword. However, this line is commented out and marked as unreachable by the `noinspection PyUnreachableCode` decorator, indicating that it will never be executed.

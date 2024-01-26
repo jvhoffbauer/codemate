@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/valid\", response_model=Item)\ndef get_valid():\n    return {\"name\": \"valid\", \"price\": 1.0}"}

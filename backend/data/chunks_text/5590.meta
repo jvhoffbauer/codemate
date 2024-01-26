@@ -1,0 +1,1 @@
+{"original_code": "    def _create_items(\n        self, session: Session, items: List[Dict[str, Any]]\n    ) -> List[TableModelT]:\n        if not items:\n            return []\n        objs = [self.create_item(item) for item in items]\n        session.add_all(objs)\n        session.flush()\n        return objs"}

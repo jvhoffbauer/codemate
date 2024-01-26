@@ -1,0 +1,4 @@
+- Defines a function called `callback` that returns no value (`None`)
+- Checks whether MkDocs Insiders mode is enabled using the `is_mkdocs_insiders()` function
+- If Insiders mode is enabled, sets an environment variable named `INSIDERS_FILE` to point to a local file containing custom configuration for MkDocs Insiders builds
+- Sets another environment variable named `DYLD_FALLBACK_LIBRARY_PATH` specifically for macOS systems running MkDocs Insiders with Homebrew installed and Cairo graphics library dependencies required by some plugins

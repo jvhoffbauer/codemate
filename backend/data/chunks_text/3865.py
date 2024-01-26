@@ -1,0 +1,3 @@
+- This function tests that a PUT request with a valid JSON body is handled correctly by the server and returns the updated item object in the response.
+- The expected status code for this request is 200 (OK).
+- The returned JSON should contain the original item ID, as well as any changes made to the importance level and nested item and user objects. Other fields are left unchanged or set to their defaults.

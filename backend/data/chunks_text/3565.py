@@ -1,0 +1,3 @@
+- Defines a new endpoint `"/items-list/"`, which is accessed using HTTP POST method.
+- Accepts an argument `item` of type list, containing objects of class `Item`.
+- Returns the same list passed as an argument to the function.

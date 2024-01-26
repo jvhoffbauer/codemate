@@ -1,0 +1,4 @@
+- Defines a function `cookie_example_examples()` that takes an optional argument `data`.
+- The `Cookie` class is used to set up the type hint for `data`, which can be either a string or `None`.
+- If `data` is not provided (i.e., it's `None`), then its value will be taken from the `default` parameter of the `Cookie` object. This defaults to `None`.
+- Two additional parameters are passed to the `Cookie` constructor - `example` and `examples`. These provide a customized error message when the user provides invalid input during runtime. In this case, if the user passes in an incorrect string as `data`, they will receive an error message with one of the two options specified by `example` and `examples`.

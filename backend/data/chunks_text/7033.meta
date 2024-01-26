@@ -1,0 +1,1 @@
+{"original_code": "def update_user(\n    *,\n    db: Session = Depends(deps.get_db),\n    user: models.User = Depends(get_user),\n    user_in: schemas.UserUpdate,\n):\n    \"\"\"Update a user.\"\"\"\n    return crud.user.update(db, db_obj=user, obj_in=user_in)"}

@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_item` that takes a required integer argument `item_id`. - Returns a dictionary with a key "item_id" and its corresponding value, which is the input `item_id`.

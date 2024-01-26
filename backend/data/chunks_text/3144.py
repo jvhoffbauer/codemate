@@ -1,0 +1,2 @@
+- Defines a custom error handler for Django Rest Framework that handles ServerError exceptions (i.e., internal server errors)
+- Returns a JSON response with status code 500 and an error message of "server-error" to indicate a server-side issue occurred during request processing

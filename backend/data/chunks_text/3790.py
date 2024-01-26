@@ -1,0 +1,3 @@
+- This function is a unit test for the Flask application using the `unittest` module's `TestCase`.
+- It sends an HTTP GET request to the root URL ("/") of version 1 (`"/v1/"`) and asserts that the status code returned by the server is 200 OK. If not, it prints the error message along with the text received in the response body.
+- The expected response body is also checked against the actual one; if they don't match, another failure message will be printed. In this case, we expect the string "Hello, World from Flask!".

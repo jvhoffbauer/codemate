@@ -1,0 +1,3 @@
+1. This function adds a new scheduling task using APScheduler library in Python. It takes two optional arguments `seconds` and `job_id`. The former specifies the loop interval time in seconds (default is 120 seconds). The latter is the unique identifier for the scheduled task.
+2. If the specified job ID already exists, an error message will be returned. Otherwise, a new scheduling job with the given parameters will be added to the scheduler.
+3. The `demo_task()` function is not shown here but it's assumed that this function performs some specific tasks as required by the user.

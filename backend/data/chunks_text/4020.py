@@ -1,0 +1,1 @@
+- Sends a POST request to the `/items/` endpoint with a GeoJSON payload containing a key-value pair for 'name' and 'price'. - Sets the `Content-Type` header to `application/geo+json`. - Asserts that the server returns an HTTP status code of 200 (OK) and checks the response body if needed.

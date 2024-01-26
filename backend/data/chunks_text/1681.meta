@@ -1,0 +1,1 @@
+{"original_code": "def custom_generate_unique_id(route: APIRoute):\n    return f\"{route.tags[0]}-{route.name}\""}

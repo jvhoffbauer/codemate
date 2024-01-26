@@ -1,0 +1,1 @@
+{"original_code": "def cast(\n    expression: Union[_ColumnExpressionOrLiteralArgument[Any], Any],\n    type_: \"_TypeEngineArgument[_T]\",\n) -> Cast[_T]:\n    return sqlalchemy.cast(expression, type_)  # type: ignore[arg-type]"}

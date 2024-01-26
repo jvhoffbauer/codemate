@@ -1,0 +1,1 @@
+{"original_code": "async def redirect_typer():\n    return RedirectResponse(\"https://typer.tiangolo.com\")"}

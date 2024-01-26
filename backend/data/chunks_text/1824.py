@@ -1,0 +1,1 @@
+- Sends a personalized message to a specific user's web socket connection using Asyncio and Websockets libraries in Python. - Takes a message string as an argument and sends it over the specified WebSocket connection using the `send_text()` method of the WebSocket object. - Returns immediately without waiting for a response from the server or client.

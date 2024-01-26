@@ -1,0 +1,1 @@
+{"original_code": "    def _post_process(self, prediction: np.ndarray) -> HousePredictionResult:\n        logger.debug(\"Post-processing prediction.\")\n        result = prediction.tolist()\n        human_readable_unit = result[0] * self.RESULT_UNIT_FACTOR\n        hpp = HousePredictionResult(median_house_value=human_readable_unit)\n        return hpp"}

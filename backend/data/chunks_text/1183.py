@@ -1,0 +1,3 @@
+- This function is a GET endpoint for retrieving a list of slow users from the database using FastAPI and SQLAlchemy ORM (crud).
+- It takes two query parameters `skip` and `limit`, which are used to paginate the results returned by the database.
+- The function also includes a global variable called `sleep_time` that simulates a long processing request by sleeping for a specified amount of time before returning the result.

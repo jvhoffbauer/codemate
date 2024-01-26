@@ -1,0 +1,3 @@
+- Defines a function called `set_cookie` that takes an optional argument of type `Response`.
+- Inside the function, sets a cookie named 'cookie-name' with value 'cookie-value' using the `set_cookie()` method provided by Flask's `Response` object.
+- Returns an empty dictionary as the function output.

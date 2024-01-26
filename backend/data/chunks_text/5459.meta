@@ -1,0 +1,1 @@
+{"original_code": "    def parse_cors_origin(cls, v):\n        \"\"\"Parse CORS origins.\"\"\"\n        return [origin.strip() for origin in v.split(\",\")]"}

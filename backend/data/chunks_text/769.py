@@ -1,0 +1,3 @@
+- Defines a new route `/healthcheck` for checking application status
+- Returns a JSON response with key'status' and value 'ok', indicating that the app is healthy
+- The decorator `include_in_schema=False` prevents this endpoint from being included in Swagger documentation (optional feature of FastAPI)

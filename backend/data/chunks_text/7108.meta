@@ -1,0 +1,1 @@
+{"original_code": "    @classmethod\n    def undelete(cls):\n        # for logic delete\n        return cls.select().where(SQL(\"deleted_at is NULL\"))"}

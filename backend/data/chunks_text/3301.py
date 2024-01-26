@@ -1,0 +1,3 @@
+- Defines a GET request endpoint at the root URL (/) using FastAPI's decorator syntax (@app.get)
+- Accepts an integer parameter named foo with a minimum length of 1 specified by the Query() and min_length=1 arguments from Pydantic's Annotated class
+- The function body is empty for this example, but would typically contain some logic to process or return data based on the received parameters

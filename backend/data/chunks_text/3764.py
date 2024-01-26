@@ -1,0 +1,1 @@
+- This function tests the `GET /items/{id}` endpoint with an item ID of 'item1'. - It checks that the HTTP status code is 200 and saves the response text for debugging purposes. - The JSON response body is compared to expected values using Python's built-in `assert` statement.

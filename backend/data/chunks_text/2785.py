@@ -1,0 +1,1 @@
+- Tests if GET request to `/items/{item_id}` with item ID 'item01' returns a successful HTTP status code (200) and contains expected JSON object in response body.

@@ -1,0 +1,1 @@
+- Defines a function called `no_alias_dict()` that returns a dictionary with one key-value pair, where the value is 'Foo' and the key is 'name'. - The use of the keyword argument `nonlocal` in this context is not necessary as there are no nested functions or loops to potentially create aliasing issues. Therefore, it can be omitted for simplicity and clarity.

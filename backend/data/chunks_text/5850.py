@@ -1,0 +1,2 @@
+- Registers a static file directory with FastAPI's built-in `StaticFiles` middleware for serving files at a specific URL path (`self.site.router_path + self.file_path`) and maps it to its corresponding local directory (`self.file_directory`)
+- Returns the mounted URL path for use in other parts of the application or configuration

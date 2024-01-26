@@ -1,0 +1,1 @@
+- Tests if an incorrect authorization scheme (in this case, 'notreally') is provided in the Authorization header of a GET request to '/users/me'. - Verifies that the server returns a HTTP status code of 403 Forbidden and a JSON error message containing 'Invalid authentication credentials' when an invalid authorization scheme or credentials are provided.

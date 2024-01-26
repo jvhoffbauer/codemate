@@ -1,0 +1,3 @@
+- Defines a GET endpoint with specific path and annotations for request and response models
+- Returns a dictionary representing a user object (defined by User model), but also includes additional data not part of that model (named 'Item')
+- The returned dictionary is automatically transformed into JSON format according to the defined response model (User)

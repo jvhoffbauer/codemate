@@ -1,0 +1,4 @@
+- Defines an asynchronous function `read_user_item()` that takes four arguments: `item_id`, `needy`, `skip`, and `limit`.
+- The default values for `skip` (zero) and `limit` (None) are provided.
+- An object called `item` is created with keys 'item_id', 'needy','skip', and 'limit' set to their respective argument values.
+- This object is returned by the function.

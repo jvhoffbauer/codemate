@@ -1,0 +1,3 @@
+- Checks if schema for reading is defined and returns None otherwise
+- Creates a Dialog object with View as its title, an eye icon, and a form returned by `get_read_form()` function
+- Returns the created Action object of type Dialog

@@ -1,0 +1,3 @@
+- Defines a cached property called `router_path` for the current object (presumably a class or instance).
+- The function returns the concatenation of three URL components: the site's base URL, its path, and the prefix of the current router being used by this object.
+- Caching is implemented using the `@cached_property` decorator from Python's built-in functools module, which means that subsequent calls to this method will be faster because the result is stored in memory instead of recomputed each time.

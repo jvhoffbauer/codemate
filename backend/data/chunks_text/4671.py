@@ -1,0 +1,3 @@
+- Sends a POST request to `/files/` with no file attached and an invalid token (`data={'token': 'foo'}`)
+- Asserts that the server returns a HTTP status code of 422 Unprocessable Entity and displays an error message in JSON format using Pytest-mock's mock server (`assert response.status_code == 422, response.text`)
+- Verifies that the error message returned by the server is correct according to Pydantic validation rules for missing fields ('File' and 'fileB') (`assert response.json() ==...`)

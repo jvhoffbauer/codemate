@@ -1,0 +1,1 @@
+{"original_code": "def test_query_frozenset_query_1_query_1_query_2():\n    response = client.get(\"/query/frozenset/?query=1&query=1&query=2\")\n    assert response.status_code == 200\n    assert response.json() == \"1,2\""}

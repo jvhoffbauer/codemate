@@ -1,0 +1,4 @@
+- This function updates a user's information in Couchbase Sync Gateway using PUT request with JSON body.
+- The URL is constructed based on the host, port, database, and username provided by the `UserSyncIn` object.
+- If password is included in the input object, it is sent as part of the payload; otherwise, it is excluded to maintain security.
+- The status code of the HTTP response is checked for success (200/201).

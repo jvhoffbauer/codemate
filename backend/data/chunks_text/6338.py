@@ -1,0 +1,4 @@
+- Creates a new asynchronous event loop using `asyncio.new_event_loop()`.
+- Sets this newly created event loop as the default one for the current thread using `asyncio.set_event_Loop()`.
+- Yields control back to the caller, allowing other coroutines or tasks to run on the same event loop.
+- Closes the event loop when all coroutines and tasks have completed execution using `loop.close()`.

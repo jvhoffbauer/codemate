@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\n    \"/response_model_union-no_annotation-return_model2\",\n    response_model=Union[User, Item],\n)\ndef response_model_union_no_annotation_return_model2():\n    return Item(name=\"Foo\", price=42.0)"}

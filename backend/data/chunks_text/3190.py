@@ -1,0 +1,2 @@
+- Tests encoding of a `ModelWithConfig` object with its config attribute using JSON encoder (`jsonable_encoder`) and asserts that the resulting dictionary has the expected format, where the key is 'role' and value is 'admin'.
+- The `ModelWithConfig` class takes an enum type called `RoleEnum`, which represents different user roles in this case ('admin', 'user'). This allows for more fine-grained access control based on specific user permissions.

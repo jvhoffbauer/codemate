@@ -1,0 +1,1 @@
+- This function is an asynchronous method that retrieves items owned by the currently authenticated user using FastAPI's security middleware and Pydantic's `Annotated` decorator to automatically inject the current user into the function signature. - The returned list contains a single item with an ID of "Foo" and an owner username matching the current user.

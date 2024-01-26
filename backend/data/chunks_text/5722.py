@@ -1,0 +1,2 @@
+- Initializes `RouterAdmin` and sets its page path based on the module and class name of this object (if no custom page path was provided).
+- Also initializes `PageSchemaAdmin`, which appears to be a subclass of `RouterAdmin`. This may provide additional functionality related to handling schema definitions for pages or resources.

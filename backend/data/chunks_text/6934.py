@@ -1,0 +1,2 @@
+- Defines an asynchronous function `health()` that takes a dependency of `AsyncSession` from `get_session`.
+- Uses `try...except` to handle two types of exceptions - `asyncio.TimeoutError` and `socket.gaierror`. If either exception is raised, it returns a response with status code 503 indicating service unavailable. Otherwise, it executes a SQL query using `await session.execute("SELECT 1")`, waits for its completion using `asyncio.wait_for()`, and then returns a response with status code 204 indicating no content.

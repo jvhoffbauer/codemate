@@ -1,0 +1,3 @@
+- Creates a SQLAlchemy database and defines tables for teams, heroes, and links between them
+- Populates the database with two teams (Preventers and Z-Force), three heroes (Deadpool, Rusty Man, Spider Boy), and links between some of those heroes and their respective teams
+- Queries the Preventers team to display which heroes are currently being trained by that team

@@ -1,0 +1,1 @@
+{"original_code": "@needs_pydanticv2\ndef test_model_field_default_required():\n    # For coverage\n    field_info = FieldInfo(annotation=str)\n    field = ModelField(name=\"foo\", field_info=field_info)\n    assert field.default is Undefined"}

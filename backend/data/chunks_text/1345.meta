@@ -1,0 +1,1 @@
+{"original_code": "async def read_items(\n    strange_header: Annotated[\n        Union[str, None], Header(convert_underscores=False)\n    ] = None,\n):\n    return {\"strange_header\": strange_header}"}

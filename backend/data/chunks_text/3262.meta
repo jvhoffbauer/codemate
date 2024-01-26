@@ -1,0 +1,1 @@
+{"original_code": "def test_redoc():\n    response = client.get(\"/redoc\")\n    assert response.status_code == 200, response.text\n    assert response.headers[\"content-type\"] == \"text/html; charset=utf-8\"\n    assert \"redoc@next\" in response.text"}

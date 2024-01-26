@@ -1,0 +1,2 @@
+- Defines an asynchronous function `models()` that takes a request object as input and returns a module using Python's built-in `importlib` module with the name of the requested model appended to 'tests.models.'
+- The returned module is then assigned to the variable `sqla`. This could be used in tests where multiple SQLAlchemy models are being tested, allowing for easier organization and separation of concerns.

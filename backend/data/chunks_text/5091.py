@@ -1,0 +1,3 @@
+- Defines a parameterized test using `pytest.mark.parametrize`.
+- Tests three different paths with varying success conditions (200 OK and response body content).
+- Uses a fixture to provide an instance of the Flask app's client for making HTTP requests.

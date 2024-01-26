@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/users/{id}\")\ndef read_user(segment: str, id: str):\n    return {\"segment\": segment, \"id\": id}"}

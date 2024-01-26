@@ -1,0 +1,1 @@
+{"original_code": "    def src(self):\n        return self.app.site.router_path + self.app.site.fastapi.docs_url"}

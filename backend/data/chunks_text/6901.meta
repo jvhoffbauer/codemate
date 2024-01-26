@@ -1,0 +1,1 @@
+{"original_code": "def start_app_handler(app: FastAPI) -> Callable:\n    def startup() -> None:\n        logger.info(\"Running app start handler.\")\n        _startup_model(app)\n\n    return startup"}

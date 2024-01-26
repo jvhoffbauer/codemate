@@ -1,0 +1,5 @@
+- Creates an access token with a JWT (JSON Web Token) using Flask-JWT-Extended library's `create_access_token()` function.
+- Copies the input dictionary `data` and updates it with an 'exp' key containing the expiration time and a'sub' key containing the subject of the token.
+- If no `expires_delta` is provided, sets the expiration time to be 15 minutes from current UTC time; otherwise, uses the specified delta.
+- Encodes the updated dictionary into a JWT string using the secret key defined in the configuration file.
+- Returns the generated JWT string as output.

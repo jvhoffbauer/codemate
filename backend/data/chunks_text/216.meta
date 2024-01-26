@@ -1,0 +1,1 @@
+{"original_code": "def test_startup():\n    app_mod.engine = create_engine(\"sqlite://\")\n    app_mod.on_startup()\n    insp: Inspector = inspect(app_mod.engine)\n    assert insp.has_table(str(app_mod.Hero.__tablename__))"}

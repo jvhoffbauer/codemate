@@ -1,0 +1,3 @@
+- Tests closing a websocket connection due to invalid data by raising `WebSocketDisconnect`.
+- Uses PyTest's built-in `TestClient` for testing FastAPI applications and connects to an endpoint that returns a websocket stream.
+- Passes in query parameters (`q` and `token`) as part of the URL, but these are ignored since they don't have any effect on this specific test case.

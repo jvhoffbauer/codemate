@@ -1,0 +1,1 @@
+{"original_code": "    @asynccontextmanager\n    async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:\n        state.app_startup = True\n        yield\n        state.app_shutdown = True"}

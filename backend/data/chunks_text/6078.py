@@ -1,0 +1,5 @@
+- Defines a fixture named `fake_categories` using PyTest's `@pytest.fixture` decorator.
+- The fixture takes two arguments: an asynchronous SQLAlchemy session (`async_session`) and a reference to the Category model class (`models`).
+- Inside the fixture, it creates five new Category objects with incrementing IDs and names based on their indexes.
+- It adds these categories to the database session using `async_session.add_all`, then commits the changes using `await async_session.commit`.
+- Finally, it returns the list of newly created categories so they can be used by other tests that require them.

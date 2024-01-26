@@ -1,0 +1,1 @@
+{"original_code": "    async def get_common_counter(\n        common: str = Body(...),\n    ) -> str:\n        nonlocal _common_counter\n        _common_counter += 1\n        yield f\"{common}-{_common_counter}\""}

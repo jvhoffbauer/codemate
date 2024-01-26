@@ -1,0 +1,2 @@
+- Defines an asynchronous function `create_user` that takes a parameter of type `UserIn`.
+- Returns a new instance of the base user class based on the input `UserIn` object.

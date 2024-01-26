@@ -1,0 +1,1 @@
+{"original_code": "def read_model():\n    return Model(alias=\"Foo\")"}

@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/timed\")\nasync def timed():\n    return {\"message\": \"It's the time of my life\"}"}

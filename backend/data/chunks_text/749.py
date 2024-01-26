@@ -1,0 +1,2 @@
+- Defines an abstract base class `Base` for database models using SQLAlchemy's `db.Model`.
+- Sets up two columns `created_on` and `updated_on`, both of type `DateTime`, with default values set to current UTC time (using `datetime.utcnow`) and a server-side default value also set to current UTC time (using `db.func.now()`). The `updated_on` column is additionally configured to update automatically when the row is modified (using `onupdate=datetime.utcnow`).

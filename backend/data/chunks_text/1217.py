@@ -1,0 +1,2 @@
+- Defines a GET request for the `"/portal"` endpoint with an optional query parameter `teleport`.
+- If `teleport` is true, returns a redirect to a YouTube video; otherwise, returns a JSON response containing a message about the portal.

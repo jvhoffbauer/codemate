@@ -1,0 +1,2 @@
+- Tests deprecation warning for `Item.parse_obj()` method using PyTest's `pytest.warns()` context manager
+- Creates a new instance of `Item` class from a dictionary and asserts that its 'name' attribute is equal to 'Hello'

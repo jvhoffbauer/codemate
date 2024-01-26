@@ -1,0 +1,4 @@
+- Creates a new STAC item based on user inputs using the `create_stac_item` function from the library.
+- Allows customization of various attributes such as datetime, extensions, collection, etc. Using query parameters.
+- Adds optional properties like projection, raster stats, EO data, and limits array sizes for raster stats calculation.
+- Returns the resulting dictionary representation of the created STAC item.

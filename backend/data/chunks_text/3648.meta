@@ -1,0 +1,1 @@
+{"original_code": "def test_post_users():\n    response = client.post(\n        \"/users/\", json={\"username\": \"Foo\", \"email\": \"foo@example.com\"}\n    )\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"message\": \"User received\"}"}

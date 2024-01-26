@@ -1,0 +1,1 @@
+- Tests if GET request to "/a/b/override" returns expected content and header values using Flask's built-in testing client. - Uses a context manager (with statement) to ensure that the client is properly closed after use, preventing resource leaks.

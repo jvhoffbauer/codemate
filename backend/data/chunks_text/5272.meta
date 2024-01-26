@@ -1,0 +1,1 @@
+{"original_code": "    def list(self) -> List[str]:\n        \"\"\"List registered Algorithm.\"\"\"\n        return list(self.data.keys())"}

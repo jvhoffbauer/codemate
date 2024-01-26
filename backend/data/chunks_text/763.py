@@ -1,0 +1,3 @@
+- Configures SQLAlchemy context without creating an engine for offline migration execution
+- Emits SQL statements to script output during context.execute() calls instead of executing them against a database
+- Allows running migrations without requiring a database connection or driver (DBAPI)

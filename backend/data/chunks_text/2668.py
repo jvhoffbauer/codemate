@@ -1,0 +1,3 @@
+- Defines a function called `response_model_no_annotation_return_invalid_dict()`.
+- The function returns a dictionary with one key-value pair, where the value is a string 'John'.
+- Since there are no type annotations for the keys and values in the returned dictionary, FastAPI will raise a warning during startup about using unannotated fields. This can lead to issues with introspection and autocompletion of the API endpoints. It's recommended to always use type annotations for better documentation and tooling support.

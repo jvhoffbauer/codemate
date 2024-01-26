@@ -1,0 +1,4 @@
+- Defines a function `create_user` that takes two arguments: a SQLAlchemy session and an object representing the data to be inserted into the database (`UserCreate`)
+- Creates a new `User` object from the input data using `User.from_orm`, updating its password hash with the result of `get_password_hash`
+- Adds the newly created object to the session, commits the changes, and refreshes it to ensure all relationships are loaded
+- Returns the persisted `User` object

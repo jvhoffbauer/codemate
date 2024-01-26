@@ -1,0 +1,3 @@
+- Tests a WebSocket connection using `client.websocket_connect()`.
+- Sends and receives messages using `send_text()` and `receive_text()`, respectively.
+- Raises an exception (`WebSocketDisconnect`) when closing the connection without sending a close frame.

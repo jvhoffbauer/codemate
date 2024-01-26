@@ -1,0 +1,3 @@
+- Tests updating a hero with an ID that doesn't exist in the database (ID=9000)
+- Sends a PATCH request to the /heroes endpoint with new name data
+- Asserts that the server returns a HTTP status code of 404, indicating that the resource was not found

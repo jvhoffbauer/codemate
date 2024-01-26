@@ -1,0 +1,1 @@
+- Defines a fixture named `client` using the `pytest.fixture()` decorator. - Imports the Flask application object (`app`) from a specific module in the project's documentation sources. - Creates an instance of the Flask test client (`TestClient`) with the imported application and returns it as the value of the fixture.

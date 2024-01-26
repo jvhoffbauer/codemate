@@ -1,0 +1,1 @@
+{"original_code": "def test_dummy_webhook():\n    # Just for coverage\n    new_subscription(body={}, token=\"Bearer 123\")"}

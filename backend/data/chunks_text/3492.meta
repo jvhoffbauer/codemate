@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/invalidnone\", response_model=Item)\ndef get_invalid_none():\n    return None"}

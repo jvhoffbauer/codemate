@@ -1,0 +1,3 @@
+- This test case checks if a broken YAML input raises a validation error during item creation using Pydantic's YAML support (introduced in version 2).
+- The provided YAML data contains duplicate keys ('x') for the 'tags' field, which is not allowed by Pydantic's schema validation.
+- The expected behavior is that the server returns an HTTP status code of 422 (Unprocessable Entity) and a JSON response containing an error message ("Invalid YAML").

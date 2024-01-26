@@ -1,0 +1,1 @@
+- This endpoint returns an object with both a counter and a subcounter value. - The `subcount` parameter is retrieved from the `Depends()` function called `super_dep`, which likely contains logic for getting or calculating this value. - The `count` parameter is also obtained using another `Depends()` function named `dep_counter`.

@@ -1,0 +1,1 @@
+{"original_code": "@app.websocket(\"/\", dependencies=[create_dependency(\"index\")])\nasync def index(websocket: WebSocket, deps: DepList):\n    await websocket.accept()\n    await websocket.send_text(json.dumps(deps))\n    await websocket.close()"}

@@ -1,0 +1,1 @@
+{"original_code": "    @app.on_event(\"shutdown\")\n    async def shutdown_connect():\n        \"\"\"\n        \u5173\u95ed\n        :return:\n        \"\"\"\n        schedule.shutdown()\n\n        if not db.is_closed():\n            db.close()"}

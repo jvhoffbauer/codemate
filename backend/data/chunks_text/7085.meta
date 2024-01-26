@@ -1,0 +1,1 @@
+{"original_code": "def _get_auth_header_from_credentials(\n    client: TestClient,\n    login_data: dict[str, str],\n) -> dict[str, str]:\n    response = client.post(settings.API_LOGIN_STR, data=login_data)\n    tokens = response.json()\n    access_token = tokens[\"access_token\"]\n    return {\"Authorization\": f\"Bearer {access_token}\"}"}

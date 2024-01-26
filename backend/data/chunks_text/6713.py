@@ -1,0 +1,4 @@
+- Defines a function `probe` that takes an HTTP response object and optional request body as arguments
+- Sets a cookie with key "probe-cookie" and value from the request body in the HTTP response
+- Changes the status code of the HTTP response to 404
+- Returns the request body (which may contain the string "123") for further processing or testing purposes

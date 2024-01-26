@@ -1,0 +1,1 @@
+{"original_code": "@needs_pydanticv1\ndef test_inexistent_user(client):\n    response = client.get(\"/users/999\")\n    assert response.status_code == 404, response.text"}

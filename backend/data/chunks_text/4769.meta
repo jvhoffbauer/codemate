@@ -1,0 +1,1 @@
+{"original_code": "def getenv_boolean(var_name, default_value=False):\n    result = default_value\n    env_value = os.getenv(var_name)\n    if env_value is not None:\n        result = env_value.upper() in (\"TRUE\", \"1\")\n    return result"}

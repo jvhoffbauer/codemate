@@ -1,0 +1,1 @@
+{"original_code": "def _shutdown_model(app: FastAPI) -> None:\n    app.state.model = None"}

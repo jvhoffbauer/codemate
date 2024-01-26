@@ -1,0 +1,2 @@
+- Defines a function named `non_operation` that takes no arguments (no parameters)
+- The body of the function returns a dictionary with a single key-value pair containing a string message ("Hello World")

@@ -1,0 +1,3 @@
+- This function tests updating an item with a query parameter `q="bar"` in its body using PUT request.
+- The updated item's name and price are provided as JSON data in the request body.
+- The expected status code is 200 (OK) and the returned JSON contains the updated item object along with the original query parameter value.

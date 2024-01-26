@@ -1,0 +1,5 @@
+- Tests registration and unregistration of an `AdminSite` for a custom application (`BlogApp`) with its own `UserAdmin`.
+- Verifies that the registered `AdminSite` has access to the database connection and SQLAlchemy engine.
+- Confirms that the registered `AdminSite` contains the correct model administrator instance (`ins`) and can retrieve it using `get_admin_or_create()`.
+- Checks if the registered `AdminSite`'s model administrator is still available after calling `register_router()`, which should not affect existing registrations.
+- Demonstrates how to unregister an entire application from the `AdminSite` by passing `register=False` when retrieving it again. The second call to `get_admin_or_create()` returns `None` since the application was previously removed.

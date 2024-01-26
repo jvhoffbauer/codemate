@@ -1,0 +1,3 @@
+- Tests if a POST request with no Content-Type header returns JSON data with default values for missing fields (in this case, description and tax)
+- Uses `TestClient` from Flask's testing module to simulate HTTP requests against our app
+- Asserts that the status code is 200 and checks the response body using both string representation and JSON parsing

@@ -1,0 +1,3 @@
+- Retrieves a specific instance of a model with the given ID from the database using SQLAlchemy's `Session`.
+- Queries the specified model (defined in `self.model`) and filters it based on the primary key column (also defined in `self.model`) being equal to the provided `id`.
+- Returns the first matching result as an optional object of type `ModelType`, which is also defined in `self.model`.

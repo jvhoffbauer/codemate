@@ -1,0 +1,1 @@
+- Defines an asynchronous function called `test_view` that returns a dictionary with a key-value pair of 'test':'test'. - Logs a debug message to the logger using the built-in Python logging module.

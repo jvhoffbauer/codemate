@@ -1,0 +1,1 @@
+{"original_code": "def query_or_cookie_extractor(\n    q: Annotated[str, Depends(query_extractor)],\n    last_query: Annotated[str | None, Cookie()] = None,\n):\n    if not q:\n        return last_query\n    return q"}

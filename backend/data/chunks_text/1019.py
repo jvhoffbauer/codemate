@@ -1,0 +1,4 @@
+- Extracts security definitions and requirements from a `Dependent` object with Flask-RESTful's `flat` dependency injection feature
+- Encodes each security scheme as JSON using Pydantic's `jsonable_encoder()` function to generate an OpenAPI schema compatible with Swagger UI
+- Creates a dictionary of all unique security schemes (identified by their names) and stores them under the corresponding keys in the `securityDefinitions` property of the generated API specification
+- For each security requirement associated with a specific endpoint, adds its name (i.e., the security scheme used) and list of required scopes to a separate list called `operationSecurity`, which is later included in the `securityRequirements` property of that same endpoint's definition

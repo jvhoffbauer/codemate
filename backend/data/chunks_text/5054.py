@@ -1,0 +1,1 @@
+- Raises a ZeroDivisionError exception when executed, which is caught by Sentry and reported as an error event to the Sentry server for further analysis and handling. - Demonstrates how Flask-Sentry integration can be used to handle exceptions in Flask applications and send detailed reports of errors to Sentry for debugging purposes.

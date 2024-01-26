@@ -1,0 +1,4 @@
+- Defines a function `query_examples()` that takes an optional argument `data`.
+- The `default` value of `data` is set to `None`, which means it will have this value if no other value is provided when calling the function.
+- If `data` is not specified in the function call, two example values ("json_schema_query1" and "json_schema_query2") are shown using the `examples` parameter.
+- Additionally, there are two predefined examples for `data` called "Query One" and "Query Two". These can be accessed through the `openapi_examples` dictionary, where each key corresponds to a name (e.g., "Query One"), and its corresponding value contains additional information such as summary, description, and actual value.

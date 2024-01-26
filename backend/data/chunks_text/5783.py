@@ -1,0 +1,3 @@
+- Overrides `get_page()` method of Django's built-in `ModelAdmin`.
+- Retrieves the current page object using `super().get_page()`.
+- Sets the body content of the page to be the result of calling `get_list_table()` on the current instance (i.e., this class). This is likely a custom list table implementation for displaying data from the model being administered by this admin class.

@@ -1,0 +1,1 @@
+{"original_code": "async def read_user_item(item_id: str, needy: str):\n    item = {\"item_id\": item_id, \"needy\": needy}\n    return item"}

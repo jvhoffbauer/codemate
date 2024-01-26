@@ -1,0 +1,4 @@
+- Creates a new item with title and description using POST request to /users/{user_id}/items/ endpoint
+- Verifies successful creation by checking status code, JSON data structure, and presence of ID and owner_ID fields
+- Retrieves the created user's details from GET request to /users/{user_id} endpoint
+- Checks whether the newly created item is present in the list of items returned by GET request to /users/{user_id} endpoint

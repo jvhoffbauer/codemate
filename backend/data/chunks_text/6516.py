@@ -1,0 +1,7 @@
+- Defines a private method `_assert_log_errors` that takes one or more arguments representing log messages or PyTest's `pytest.raises` context managers.
+- Initializes empty lists to store message strings and `RaisesContext` objects respectively.
+- Loops through each argument and checks its type; adds it to either list depending on whether it's a string or an instance of `RaisesContext`.
+- Retrieves all logs at ERROR level from the capture fixture (`caplog`) and stores them in a list called `error_records`.
+- Asserts that the list of messages extracted from these logs matches the list of input message strings.
+- Zips together the `error_records` and the `RaisesContext` objects and raises exceptions using their exc_info tuples. This ensures that the expected exception types are raised during test execution.
+- Clears the captured logs by deleting them from specific stages ('setup', 'call') and clearing the entire cache.

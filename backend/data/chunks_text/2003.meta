@@ -1,0 +1,1 @@
+{"original_code": "@router.post(\"/\")\nasync def update_admin():\n    return {\"message\": \"Admin getting schwifty\"}"}

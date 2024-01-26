@@ -1,0 +1,3 @@
+- Defines a GET endpoint at the root URL (/) using FastAPI's decorator syntax (@app.get)
+- Accepts an optional parameter, `params`, which is passed through a dependency function (Dependencies) that returns an instance of ImageRenderingParams from another module called dependencies
+- Returns the value of the `params` object as the response body

@@ -1,0 +1,1 @@
+{"original_code": "def test_get_with_body():\n    body = {\"name\": \"Foo\", \"description\": \"Some description\", \"price\": 5.5}\n    response = client.request(\"GET\", \"/product\", json=body)\n    assert response.json() == body"}

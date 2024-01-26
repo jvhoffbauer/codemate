@@ -1,0 +1,3 @@
+- Overrides `get_list_columns()` method of parent class to modify list of table columns returned by it
+- Iterates through all columns using a generator expression from the modified list and checks whether their name is present in a dictionary called `toggled_columns`. If found, sets its toggled property to false.
+- Returns the modified list with updated toggle statuses for some columns.

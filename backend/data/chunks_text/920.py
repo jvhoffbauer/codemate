@@ -1,0 +1,3 @@
+- Defines a function called `decorator` that takes in a parameter `func`, which is of type `DecoratedCallable`.
+- Inside the function, it adds an API websocket route using the `self.add_api_websocket_route()` method provided by some library or framework (not specified). The parameters passed to this method are `path`, `func`, `name`, and `dependencies`.
+- After adding the route, the function returns the original function `func`. This allows us to use the decorated function as we normally would, but with the added functionality of registering it as a web socket endpoint.

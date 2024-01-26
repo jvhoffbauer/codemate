@@ -1,0 +1,2 @@
+- Defines a GET request for `"/items/valid"` endpoint with a response model of type `Item`.
+- Returns an instance of `Item` class with aliased name "valid" and fixed price value of 1.0.

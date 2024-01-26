@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\")\nasync def read_items(\n    hidden_query: Annotated[str | None, Query(include_in_schema=False)] = None\n):\n    if hidden_query:\n        return {\"hidden_query\": hidden_query}\n    else:\n        return {\"hidden_query\": \"Not found\"}"}

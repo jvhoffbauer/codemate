@@ -1,0 +1,3 @@
+- This function is a unit test for the `GET /items/` endpoint using Flask's built-in testing client (client).
+- It asserts that the status code of the response is 200 and saves the text in case an error occurs.
+- The JSON returned by the server should be equal to a list containing one item with an ID of 'Foo'.

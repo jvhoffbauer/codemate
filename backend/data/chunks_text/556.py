@@ -1,0 +1,5 @@
+- Imports `test_tutorial` function and necessary modules for testing SQLModel's relationship attributes feature in a tutorial example.
+- Sets up SQLAlchemy engine with an in-memory SQLite database URL.
+- Calls the main function of the tutorial module to execute its contents.
+- Creates an SQLAlchemy inspector object to check if tables were created successfully.
+- Asserts that all required tables have been created by checking their existence using the inspector object.

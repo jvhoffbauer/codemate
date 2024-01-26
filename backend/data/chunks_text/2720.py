@@ -1,0 +1,3 @@
+- Defines a function named `response_model_union_no_annotation_return_model1`.
+- The function returns an instance of `DBUser`, which is assumed to be a custom model representing user data, with fields for name, surname, and password hash.
+- This implementation assumes that the OpenAPI specification allows union types without explicit annotations in returned models (i.e., it's automatically inferred).

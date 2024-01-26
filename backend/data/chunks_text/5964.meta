@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(params=models_params_list, ids=models_params_list)\nasync def models(request) -> sqla:\n    return importlib.import_module(f\"tests.models.{request.param}\")"}

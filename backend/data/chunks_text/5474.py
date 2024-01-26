@@ -1,0 +1,4 @@
+- Tests WMTS endpoints using a patched rasterio library for easier testing
+- Retrieves WMTSCapabilities XML document with URL and tile matrix set to default values
+- Verifies HTTP status code, content type, cache control header, and presence of expected text in response body
+- Retrieves modified WMTSCapabilities XML document with customized tile scale and format parameters

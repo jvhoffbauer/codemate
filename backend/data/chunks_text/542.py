@@ -1,0 +1,8 @@
+- Imports `tutorial001` module from `docs_src/tutorial/relationship_attributes/back_populates` and assigns it to a variable named `mod`.
+- Sets SQLAlchemy's connection URL for the `mod` object using the `sqlite_url` attribute.
+- Creates an engine instance using the `create_engine()` function provided by SQLAlchemy.
+- Initializes a list called `calls` that will be used later in testing.
+- Retrieves the built-in print function and replaces it temporarily with a custom implementation that records each call made to it during execution of the tests. This is done using Python's unittest.mock library.
+- Wraps the main function of the `tutorial001` module inside a context manager that raises a SAWarning warning if encountered.
+- Runs the tests while capturing all print statements into the `calls` list.
+- Asserts that the captured print statements match the expected output defined in the `expected_calls` constant.

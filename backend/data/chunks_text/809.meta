@@ -1,0 +1,1 @@
+{"original_code": "async def validate_admin_access(\n    token: JWTData | None = Depends(parse_jwt_user_data_optional),\n) -> None:\n    if token and token.is_admin:\n        return\n\n    raise AuthorizationFailed()"}

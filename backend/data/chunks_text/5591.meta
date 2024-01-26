@@ -1,0 +1,1 @@
+{"original_code": "    async def create_items(\n        self, request: Request, items: List[SchemaCreateT]\n    ) -> List[TableModelT]:\n        \"\"\"Create multiple database data.\"\"\"\n        items = [await self.on_create_pre(request, obj) for obj in items]\n        return await self.db.async_run_sync(self._create_items, items)"}

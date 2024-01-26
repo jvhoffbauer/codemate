@@ -1,0 +1,1 @@
+{"original_code": "def test_invalid_response_model():\n    with pytest.raises(FastAPIError):\n        from docs_src.response_model.tutorial003_04 import app\n\n        assert app  # pragma: no cover"}

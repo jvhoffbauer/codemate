@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\n# TODO: pv2 add version with Pydantic v2\n@needs_pydanticv1\ndef test_read_items(client):\n    response = client.get(\"/items/\")\n    assert response.status_code == 200, response.text\n    data = response.json()\n    assert data\n    first_item = data[0]\n    assert \"title\" in first_item\n    assert \"description\" in first_item"}

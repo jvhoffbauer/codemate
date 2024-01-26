@@ -1,0 +1,3 @@
+- This function is a FastAPI route with an HTTP POST method and path `"/form/python-list"`.
+- The parameter `items` is bound to the request body using the `Form()` parser, which converts form data into Python native types like lists.
+- If the request contains a list of values in the "items" field of the form, this function returns that list; otherwise it returns an empty list.

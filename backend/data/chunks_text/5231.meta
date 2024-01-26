@@ -1,0 +1,1 @@
+{"original_code": "    def __getitem__(self, key):\n        \"\"\"Return value.\"\"\"\n        return self.__dict__[key]"}

@@ -1,0 +1,4 @@
+- Defines a function `test_openapi_schema` to test the OpenAPI schema of our FastAPI application.
+- Makes an HTTP GET request to the `/openapi.json` endpoint using the `client` object provided by PyTest and checks if the status code is 200. If not, it asserts with the error message from the response text.
+- Parses the JSON response and compares it against expected values for the root keys (OpenAPI version, info dictionary, paths dictionary).
+- Checks that the `PUT /items/{item_id}` path has the correct summary, operation ID, parameter(s), responses, and content types. The `HTTPValidationError` schema is referenced in the `422` response's content type.

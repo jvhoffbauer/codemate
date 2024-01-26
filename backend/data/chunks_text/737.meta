@@ -1,0 +1,1 @@
+{"original_code": "async def shutdown(ctx):\n    \"\"\"\n    Pops the bind on the db object.\n    \"\"\"\n    await db.pop_bind().close()"}

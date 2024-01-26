@@ -1,0 +1,3 @@
+- Tests if a ResponseModel endpoint returns an error when provided invalid model data for both Model1 and Model2 annotations
+- Uses PyTest's `with pytest.raises()` to raise a custom exception (`ResponseValidationError`) and check its message
+- Makes a GET request to the specified URL using Flask-Restful's built-in `client` object

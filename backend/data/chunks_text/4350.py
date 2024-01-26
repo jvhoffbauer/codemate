@@ -1,0 +1,3 @@
+- Tests the generation of OpenAPI schema for a FastAPI application using `TestClient`.
+- Asserts that the status code is 200 and checks the content of the JSON response against expected values.
+- Verifies that the generated schema includes information about endpoints, responses, and request parameters.

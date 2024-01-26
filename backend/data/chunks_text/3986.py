@@ -1,0 +1,2 @@
+- Defines a function `get_client()` that returns an instance of `TestClient` for the Flask application defined in `docs_src/path_operation_advanced_configuration/tutorial007_pv1`.
+- Imports the necessary components from the specified location to create and return the `TestClient` object.

@@ -1,0 +1,3 @@
+- Listens for the `set` event on a Django model instance of type `models.User`.
+- Accepts four arguments: target (the object being updated), value (new value being set), old (previous value before update), and initiator (object that initiated the update).
+- Asserts that the target is an instance of `models.User`, raising an exception if not.

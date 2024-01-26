@@ -1,0 +1,1 @@
+{"original_code": "    async def _call(self, admin: ModelAdmin, request: Request, sel: Select) -> Select:\n        if not self.filters:\n            return sel\n        return sel.filter(*self.filters)"}

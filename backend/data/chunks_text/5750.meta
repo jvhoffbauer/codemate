@@ -1,0 +1,1 @@
+{"original_code": "    def route_init(self):\n        async def route(request: Request):\n            return await self.get_init_data(request)\n\n        return route"}

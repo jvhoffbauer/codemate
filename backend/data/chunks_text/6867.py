@@ -1,0 +1,2 @@
+- Retrieves user information for a regular (non-admin) user using their authentication token and the API endpoint `GET /api/v1/users/me`.
+- Verifies that the response contains the expected fields, including email address, active status, and non-administrative privileges.

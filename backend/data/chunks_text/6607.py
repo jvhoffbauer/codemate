@@ -1,0 +1,3 @@
+- Tests that a JSON RPC request with missing parameters results in an error response containing a 'Missing' type error and a message indicating the parameter is required.
+- The `assert` statement checks if the expected error response matches what was received from the server.
+- The `echo` function is not called since there are errors in the request parameters.

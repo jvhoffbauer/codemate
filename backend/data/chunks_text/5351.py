@@ -1,0 +1,4 @@
+- Tests the `/` endpoint of a FastAPI application that uses the `deps` module to pass dependencies, specifically an instance of `ImageRenderingParams`.
+- Verifies that by default, the `add_mask` parameter in the returned JSON object is set to true.
+- Confirms that passing `return_mask=False` as a query parameter disables mask rendering and sets `add_mask` to false in the returned JSON object.
+- Demonstrates that passing `return_mask=True` as a query parameter enables mask rendering and sets `add_mask` to true in the returned JSON object.

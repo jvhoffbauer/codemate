@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, value, status_code=200, next_page=None):\n        self.value = value\n        self.status_code = status_code\n        self.nex_page = next_page"}

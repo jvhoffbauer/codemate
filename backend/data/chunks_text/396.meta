@@ -1,0 +1,1 @@
+{"original_code": "def sqlite_dump(sql: TypeEngine, *args, **kwargs):\n    dialect = sql.compile(dialect=sqlite_engine.dialect)\n    sql_str = str(dialect).rstrip()\n    if sql_str:\n        print(sql_str + \";\")"}

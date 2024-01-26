@@ -1,0 +1,2 @@
+- Generates an access token and a refresh token for the given subject (user) using `create_jwt_token()`.
+- Returns an instance of `AccessTokenResponse`, which contains the generated tokens along with their expiration times and issuance times. The response also includes the token type ("Bearer").

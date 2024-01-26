@@ -1,0 +1,4 @@
+- Defines a function `load_correlation_ids` that transfers correlation IDs from an HTTP request to a Celery worker when spawned from a request.
+- Uses the `asgi_correlation_id` package to manage correlation IDs.
+- Sets up callback functions using Celery signals (`before_task_publish`, `task_prerun`, and `task_postrun`) to transfer and set correlation IDs between the request and Celery worker threads.
+- Cleans up context variables at the end of each task to prevent value reuse in subsequent tasks.

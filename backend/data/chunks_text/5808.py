@@ -1,0 +1,6 @@
+- Initializes a new instance of `PageAdmin` and `AdminGroup`, which are both classes from Flask-Admin library for managing database tables in web applications.
+- Retrieves the current application (`app`) passed as an argument to this constructor method.
+- Sets up the engine object used by SQLAlchemy ORM to interact with the database. If it's not already set, it gets it from the main application.
+- Gets the connection object using the `get_engine_db()` function provided by Flask-SQLAlchemy extension. This is also cached if it hasn't been initialized yet.
+- Creates an empty dictionary called `_registered` that will store instances of registered admin objects.
+- Initializes a boolean flag called `__register_lock`. It'll be useful later when registering multiple admin objects at once.

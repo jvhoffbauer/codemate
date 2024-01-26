@@ -1,0 +1,1 @@
+{"original_code": "def col(column_expression: _T) -> Mapped[_T]:\n    if not isinstance(column_expression, (ColumnClause, Column, InstrumentedAttribute)):\n        raise RuntimeError(f\"Not a SQLAlchemy column: {column_expression}\")\n    return column_expression  # type: ignore"}

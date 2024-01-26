@@ -1,0 +1,2 @@
+- This function tests the Swagger UI HTML endpoint by making a GET request to `/docs`.
+- It asserts that the status code is 200 and checks if specific URLs for required resources are included in the response text.

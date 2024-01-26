@@ -1,0 +1,3 @@
+- Defines a dataclass called `AssetsParams` that inherits from `DefaultDependency`.
+- Contains a single field named `assets`, which is a list of strings representing asset names.
+- Allows querying this parameter using FastAPI's `Query` decorator with customizable options such as a default value (None), a descriptive title, and an example dictionary to provide usage guidance.

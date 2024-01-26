@@ -1,0 +1,1 @@
+{"original_code": "@dataclass\nclass Item:\n    name: str\n    date: datetime\n    price: Optional[float] = None\n    owner_ids: Optional[List[int]] = None"}

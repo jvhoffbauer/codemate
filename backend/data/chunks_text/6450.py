@@ -1,0 +1,2 @@
+- Retrieves the value of the'method' key from the raw JSON RPC request object using the `get_jsonrpc_context()` function and returns it as an optional string.
+- The returned method name can be used to determine which specific action or operation is being requested by the client in a JSON RPC call.

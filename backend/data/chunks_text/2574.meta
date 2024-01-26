@@ -1,0 +1,1 @@
+{"original_code": "def test_cookie_is_set_once():\n    direct_response = client.get(\"/directCookie\")\n    indirect_response = client.get(\"/indirectCookie\")\n    assert (\n        direct_response.headers[\"set-cookie\"] == indirect_response.headers[\"set-cookie\"]\n    )"}

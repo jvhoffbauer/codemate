@@ -1,0 +1,2 @@
+- This function listens to the `before_delete` event of SQLAlchemy's User model using Flask-Login's `@event.listens_for()`.
+- It checks if the object being deleted is indeed an instance of the User class (using Python's built-in `isinstance()`) and increments a counter variable called `event_counter.before` by one.

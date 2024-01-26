@@ -1,0 +1,1 @@
+{"original_code": "        async def root(f: UploadFile = File()):\n            return f  # pragma: nocover"}

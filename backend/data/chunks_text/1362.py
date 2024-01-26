@@ -1,0 +1,2 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Includes an optional query parameter named `strange_header`, which can be either a string or `None`. The `Header` function from Pydantic is used to parse and validate this header with custom options such as converting underscores to camelCase. If the header is not provided, it will have a value of `None`.

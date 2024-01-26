@@ -1,0 +1,1 @@
+{"original_code": "    def __post_init__(self):\n        \"\"\"Post Init.\"\"\"\n        if self.width and self.height:\n            self.max_size = None"}

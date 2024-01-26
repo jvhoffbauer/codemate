@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_create_db_and_table(clear_sqlmodel):\n    from docs_src.tutorial.create_db_and_table import tutorial003_py310 as mod\n\n    mod.sqlite_url = \"sqlite://\"\n    mod.engine = create_engine(mod.sqlite_url)\n    mod.create_db_and_tables()\n    insp: Inspector = inspect(mod.engine)\n    assert insp.has_table(str(mod.Hero.__tablename__))"}

@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\ndef probe(ep):\n    @ep.method()\n    def probe(\n        jsonrpc_request_id: int = Depends(get_jsonrpc_request_id),\n    ) -> int:\n        return jsonrpc_request_id\n\n    return ep"}

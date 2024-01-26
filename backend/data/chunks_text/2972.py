@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_synchronous_method_gen_dependency()`.
+- Takes a positional argument `value` with default value provided by the dependency `Depends(methods_dependency.synchronous_gen)`, which is a synchronous generator method from another module called `methods_dependency`.
+- Returns the value passed to it, allowing for easy usage in other functions that require this specific type of dependency.

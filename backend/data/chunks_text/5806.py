@@ -1,0 +1,4 @@
+- This method is called `get_page_schema_child` and takes a string argument `unique_id`. It returns a tuple containing either a PageSchemaAdminT object (which represents an admin page schema) and its corresponding parent AdminGroup or a tuple with both values set to `None`.
+- The method iterates through all of the current object's children using the `_children` attribute. If it finds a match based on the provided `unique_id`, it immediately returns that child and itself as the parent.
+- If the child turns out to be an AdminGroup instead, the method recursively calls itself with the same arguments until it reaches a leaf node or encounters another AdminGroup. In this case, it returns the found child and its own parent.
+- If no matching child is found after exhausting all possible paths, the method returns a tuple with both values set to `None`.

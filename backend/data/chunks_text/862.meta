@@ -1,0 +1,1 @@
+{"original_code": "    def render(self, content: Any) -> bytes:\n        assert orjson is not None, \"orjson must be installed to use ORJSONResponse\"\n        return orjson.dumps(\n            content, option=orjson.OPT_NON_STR_KEYS | orjson.OPT_SERIALIZE_NUMPY\n        )"}

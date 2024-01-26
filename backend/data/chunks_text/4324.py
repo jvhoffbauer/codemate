@@ -1,0 +1,2 @@
+- Imports `test_main` function from a specific module in the `docs_src` directory for testing an app with Python version >= 3.10
+- Calls various test functions within `test_main` to verify different scenarios, such as creating existing and new items, reading non-existent and valid items, and handling bad tokens

@@ -1,0 +1,1 @@
+{"original_code": "def test_filter_second_level_model():\n    response = client.get(\"/pets/1\")\n    assert response.json() == {\n        \"name\": \"Nibbler\",\n        \"owner\": {\"email\": \"johndoe@example.com\"},\n    }"}

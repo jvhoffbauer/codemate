@@ -1,0 +1,4 @@
+- Defines a model validator that modifies input data before it's saved to the database (mode='before')
+- The `set_null_microseconds` function is a class method that takes a dictionary of data as an argument and returns a modified version with null microseconds for any datetime fields
+- Iterates over all keys in the input dictionary using a dictionary comprehension, checks whether each key is a datetime object, and replaces its microsecond value with zero if found
+- Merges the original dictionary with the updated one containing null microseconds for datetime fields

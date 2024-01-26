@@ -1,0 +1,1 @@
+{"original_code": "    def feed(self, tile):\n        \"\"\"Add data to tile.\"\"\"\n        if self.tile is None:\n            self.tile = tile\n\n        pidex = self.tile.mask & ~tile.mask\n\n        mask = numpy.where(pidex, tile.mask, self.tile.mask)\n        self.tile = numpy.ma.where(pidex, tile, self.tile)\n        self.tile.mask = mask"}

@@ -1,0 +1,2 @@
+- Defines a function `get_bool_id` that takes an argument `item_id` of type boolean
+- The function returns the value of `item_id` as it is, without any modification or conversion (i.e., identity function)

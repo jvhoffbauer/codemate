@@ -1,0 +1,2 @@
+- Creates a new user with email 'deadpool@example.com' and password 'chimichangas4life'.
+- Retrieves the newly created user by ID to ensure it was successfully added to the database.

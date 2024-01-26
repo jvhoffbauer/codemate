@@ -1,0 +1,1 @@
+{"original_code": "def test_basic(probe, json_request):\n    resp = json_request(\n        {\n            \"id\": 123,\n            \"jsonrpc\": \"2.0\",\n            \"method\": \"probe\",\n            \"params\": {},\n        }\n    )\n    assert resp == {\"id\": 123, \"jsonrpc\": \"2.0\", \"result\": \"probe\"}"}

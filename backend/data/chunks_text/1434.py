@@ -1,0 +1,1 @@
+- This function tests the `/` endpoint by making a GET request using Flask's built-in testing client, and asserts that the status code is 200 and the JSON response contains the expected message.

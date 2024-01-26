@@ -1,0 +1,1 @@
+{"original_code": "    def model_config_attr(\n        model: Type[BaseModel], name: str, default: Any = None\n    ) -> Any:\n        return model.model_config.get(name, default)"}

@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/multiple` using FastAPI's decorator syntax
+- Accepts a query parameter named `foo`, which is annotated as a string with a minimum length of 1 using Pydantic's `Query()` function and FastAPI's `Annotated[]` wrapper
+- Returns a JSON response containing the value of the `foo` parameter in a dictionary called "foo"

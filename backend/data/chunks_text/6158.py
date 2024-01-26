@@ -1,0 +1,3 @@
+- Generates a `requirements.txt` file using Pipenv's `lock` command and saves it to the current directory.
+- Also generates a separate `requirements-dev.txt` file containing development dependencies, again saved to the current directory.
+- Uses Fabric's built-in `Context` object (`ctx`) to execute each requirement generation step sequentially via list comprehension with `ctx.run()`.

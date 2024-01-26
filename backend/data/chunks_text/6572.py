@@ -1,0 +1,3 @@
+- Defines a decorator `ep` that takes an instance of `Endpoint` as argument and returns another decorated class with two methods, `probe1` and `probe2`.
+- Both methods take a list of `Balance` objects as input and return the same list without any modification (i.e., they are simple pass-through functions).
+- The use of this decorator would be to apply some common logic or validation before executing these methods in the actual endpoint implementation. For example, checking if the user has sufficient permissions to access certain resources represented by the `data` parameter.

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/{item_id}\")\nasync def read_items(item_id: str):\n    return items[item_id]"}

@@ -1,0 +1,1 @@
+{"original_code": "    def main(cm=Depends(dependencies.ColorMapParams)):\n        \"\"\"return cmap.\"\"\"\n        return cm"}

@@ -1,0 +1,1 @@
+- Defines a function `setup_memory_quota()` that takes several arguments related to Elasticsearch configuration and authentication details. - Makes an API request using the Requests library to set up memory quotas for the default pool in Elasticsearch. - Returns True if the request is successful (HTTP status code 200), otherwise False.

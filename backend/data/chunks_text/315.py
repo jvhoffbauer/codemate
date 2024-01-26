@@ -1,0 +1,2 @@
+- Retrieves a list of two Hero objects from the database using SQLAlchemy's `Session`, where their age is greater than 32 and skips one result (using `offset`)
+- Prints the resulting list to the console

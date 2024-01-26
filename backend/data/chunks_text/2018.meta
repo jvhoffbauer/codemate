@@ -1,0 +1,1 @@
+{"original_code": "def get_headers():\n    content = {\"message\": \"Hello World\"}\n    headers = {\"X-Cat-Dog\": \"alone in the world\", \"Content-Language\": \"en-US\"}\n    return JSONResponse(content=content, headers=headers)"}

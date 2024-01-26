@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/hidden_query\")\nasync def hidden_query(\n    hidden_query: Optional[str] = Query(default=None, include_in_schema=False)\n):\n    return {\"hidden_query\": hidden_query}"}

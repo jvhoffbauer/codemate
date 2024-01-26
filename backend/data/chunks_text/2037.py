@@ -1,0 +1,1 @@
+- This function recursively resolves file paths and adds them to a `Files` object based on input items provided by the user (either as strings or nested dictionaries). - It handles both simple string inputs and more complex dictionary structures with lists of values. - If an unexpected type is encountered during parsing, it raises a `ValueError`.

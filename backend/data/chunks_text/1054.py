@@ -1,0 +1,3 @@
+- Adds a new parameter to one of four possible locations based on its `ParamType`
+- Takes two arguments representing the existing model field and dependent object that will use this parameter
+- Uses type annotations and assertions for type checking and error handling

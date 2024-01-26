@@ -1,0 +1,3 @@
+- Defines a fixture named `state` that returns an instance of the `State` class using Python's context manager syntax (`__enter__` and `__exit__`)
+- The returned object can be used in test functions decorated with `@pytest.mark.usefixtures("state")` to provide a consistent environment for testing
+- Fixtures are reusable resources that can be shared between multiple tests, reducing duplication and setup/teardown time

@@ -1,0 +1,1 @@
+{"original_code": "@app.put(\"/items/{item_id}\")\nasync def update_item(item_id: int, item: Annotated[Item, Body(embed=True)]):\n    results = {\"item_id\": item_id, \"item\": item}\n    return results"}

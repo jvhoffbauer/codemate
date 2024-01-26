@@ -1,0 +1,3 @@
+- Endpoint `POST /files/` creates one or more files and returns a dictionary with their sizes.
+- The request body contains a list of binary data (`File()`) which is automatically converted to a list of bytes using Pydantic's `Annotated[]`.
+- The function processes each byte array, calculates its length, and adds it to a list that is returned as part of the response JSON.

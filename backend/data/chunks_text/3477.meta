@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/\", openapi_extra={\"x-custom-extension\": \"value\"})\ndef route_with_extras():\n    return {}"}

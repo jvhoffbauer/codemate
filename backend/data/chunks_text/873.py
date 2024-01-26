@@ -1,0 +1,1 @@
+- Generates a unique ID for an API route based on its name and path format using regular expressions to replace non-word characters with underscores. - Includes the first HTTP method of the route in the ID, converted to lowercase. - Raises an AssertionError if there are no methods defined for the route (should not happen).

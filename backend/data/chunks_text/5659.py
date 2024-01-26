@@ -1,0 +1,2 @@
+- Defines a method called `amis_dict()` in the current class (presumably a subclass of Django's AdminModelAdmin).
+- Returns an instance of Python's built-in dictionary object created from the current object using the `dict()` function with two arguments: `exclude_none=True` and `by_alias=True`. These arguments are passed to the constructor of the returned dictionary object. The former excludes keys that have None values, while the latter uses field aliases instead of attribute names as keys if available.

@@ -1,0 +1,3 @@
+- Imports a specific function `get_client()` from a file named 'tutorial001_03_an_py39' located in the directory 'docs_src/request_files/'
+- Creates an instance of FlaskTestClient called 'client' using the imported application object 'app'
+- Returns the created 'client' for use elsewhere in the program

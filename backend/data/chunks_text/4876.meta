@@ -1,0 +1,1 @@
+{"original_code": "def ensure_create_primary_index(bucket: Bucket):\n    manager = bucket.bucket_manager()\n    return manager.n1ql_index_create_primary(ignore_exists=True)"}

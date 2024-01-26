@@ -1,0 +1,1 @@
+{"original_code": "def dependency_list() -> List[str]:\n    return []"}

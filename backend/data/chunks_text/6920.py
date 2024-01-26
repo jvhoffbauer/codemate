@@ -1,0 +1,2 @@
+- Defines an asynchronous function `test_task` that takes a string argument `word`.
+- Uses the `asyncio` module to wait for 10 seconds using `asyncio.sleep()`, then returns a formatted message with the input `word`.

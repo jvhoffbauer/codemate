@@ -1,0 +1,3 @@
+- Tests if getting items with an invalid X-Key header results in a HTTP 400 Bad Request error and returns an error message containing 'X-Key header invalid'.
+- Uses the `TestClient` class from FastAPI's testing module to simulate requests to the server.
+- Verifies that the status code of the response is equal to 400 (Bad Request) using the `assert` statement. The text of the response is also checked for debugging purposes.

@@ -1,0 +1,1 @@
+{"original_code": "def test_async_raise_raises():\n    with pytest.raises(AsyncDependencyError):\n        client.get(\"/async_raise\")\n    assert state[\"/async_raise\"] == \"asyncgen raise finalized\"\n    assert \"/async_raise\" in errors\n    errors.clear()"}

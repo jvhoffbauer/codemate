@@ -1,0 +1,3 @@
+- Defines a fixture named `client` for use in tests within this module (file).
+- Uses the `TestClient` class from Flask's testing utilities to create an instance of our app and return it as a generator, allowing us to yield its value for use by other fixtures or test functions.
+- The `with` statement ensures that the `TestClient` is properly disposed of after each test run, preventing resource leaks.

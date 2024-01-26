@@ -1,0 +1,1 @@
+{"original_code": "def test_no_response_model_annotation_return_invalid_dict():\n    with pytest.raises(ResponseValidationError) as excinfo:\n        client.get(\"/no_response_model-annotation-return_invalid_dict\")\n    assert \"missing\" in str(excinfo.value)"}

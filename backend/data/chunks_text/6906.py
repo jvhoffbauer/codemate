@@ -1,0 +1,3 @@
+- Initializes a new instance of the class with a specified `path`.
+- Sets the value of the `path` attribute to the provided argument.
+- Calls the private method `_load_local_model()` to load the model from the local file system at the given `path`.

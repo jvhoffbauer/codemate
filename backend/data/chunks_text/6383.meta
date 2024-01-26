@@ -1,0 +1,1 @@
+{"original_code": "@api_v1.method(errors=[NotEnoughMoney])\ndef withdraw(\n    account: Account = Depends(get_account),\n    amount: int = Body(..., gt=0, example=10),\n) -> Balance:\n    if account.amount - amount < 0:\n        raise NotEnoughMoney(data={\"balance\": get_balance(account)})\n    account.amount -= amount\n    return get_balance(account)"}

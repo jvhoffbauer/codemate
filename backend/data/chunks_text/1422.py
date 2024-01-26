@@ -1,0 +1,3 @@
+- Defines a GET request for retrieving an item header with ID `item_id`.
+- Raises a customized HTTPException with specific status code and detailed message when requested item is not found in dictionary `items`.
+- Includes a custom header named 'X-Error' to provide additional information about the error.

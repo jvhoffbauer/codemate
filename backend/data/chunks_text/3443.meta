@@ -1,0 +1,1 @@
+{"original_code": "def test_default_placeholder_equals():\n    placeholder_1 = Default(\"a\")\n    placeholder_2 = Default(\"a\")\n    assert placeholder_1 == placeholder_2\n    assert placeholder_1.value == placeholder_2.value"}

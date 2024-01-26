@@ -1,0 +1,1 @@
+- This function is a route decorator for an HTTP GET request to `"/items"` endpoint. - It returns an HTML response with some static content using FastAPI's built-in `HTMLResponse()`. - The returned HTML can be customized as per requirement and displayed directly by the client without any further processing on server side.

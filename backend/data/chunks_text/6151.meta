@@ -1,0 +1,1 @@
+{"original_code": "def fmt(ctx, targets=\".\"):\n    \"\"\"Format python source code & sort imports.\"\"\"\n    print(\"formatting ...\")\n    args = [\"black\", targets]\n    ctx.run(\" \".join(args))"}

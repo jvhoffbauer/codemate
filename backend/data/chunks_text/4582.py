@@ -1,0 +1,3 @@
+- Tests authentication with an access token that doesn't include a username (scope is just `me`)
+- Expects HTTP status code 401 and error message "Could not validate credentials" in response body
+- Verifies WWW-Authenticate header contains expected Bearer scheme and scope value

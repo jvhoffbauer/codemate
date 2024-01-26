@@ -1,0 +1,3 @@
+- Imports `create_access_token()` function from tutorial on securing APIs with PyOxmiorc and FastAPI (docs_src.security.tutorial005_py310)
+- Creates an access token using `create_access_token()`, passing in a dictionary of data to include in the token
+- Asserts that the resulting access token is not None or empty

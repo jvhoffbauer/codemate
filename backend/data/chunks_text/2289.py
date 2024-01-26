@@ -1,0 +1,3 @@
+- Defines a GET request for URLs with path parameter `/int/:param`, where `:param` is expected to be an integer (type hint)
+- Uses FastAPI's built-in dependency injection system to automatically convert the path parameter from string to integer (Path())
+- Returns a JSON response containing the converted integer value in a dictionary keyed as "int"

@@ -1,0 +1,1 @@
+- Defines a fixture named `session` that is scoped to the entire test session (i.e., all tests in this file and subdirectories). - Uses the `setup_db` fixture to create a new database connection, which will be shared among all tests using this fixture. - Yields the `session` object for use within each test function that uses this fixture.

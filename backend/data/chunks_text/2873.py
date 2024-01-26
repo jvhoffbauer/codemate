@@ -1,0 +1,1 @@
+- Tests whether `__repr__()` method of `Body` class returns a string representation with the value passed as an argument when it is initialized. - Verifies that the returned string starts and ends with parentheses, and contains the name of the class (`Body`) followed by the value in quotes inside the parentheses.

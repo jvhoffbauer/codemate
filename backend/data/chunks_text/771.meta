@@ -1,0 +1,1 @@
+{"original_code": "    @model_validator(mode=\"after\")\n    def validate_sentry_non_local(self) -> \"Config\":\n        if self.ENVIRONMENT.is_deployed and not self.SENTRY_DSN:\n            raise ValueError(\"Sentry is not set\")\n\n        return self"}

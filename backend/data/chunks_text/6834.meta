@@ -1,0 +1,1 @@
+{"original_code": "    @validator(\"SENTRY_DSN\", pre=True)\n    def sentry_dsn_can_be_blank(cls, v: str) -> Optional[str]:\n        if len(v) == 0:\n            return None\n        return v"}

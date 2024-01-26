@@ -1,0 +1,1 @@
+{"original_code": "def invoice_notification(body: InvoiceEvent):\n    pass  # pragma: nocover"}

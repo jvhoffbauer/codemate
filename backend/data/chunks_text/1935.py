@@ -1,0 +1,3 @@
+- This function is a FastAPI route with GET method and no parameters (decorated by `@app.get()`)
+- It returns a file using `response_class=FileResponse`, which allows streaming large files without loading them into memory at once
+- The path to the file to be returned is stored in the variable `some_file_path`

@@ -1,0 +1,1 @@
+{"original_code": "        @app.get(\"/header_example_examples/\")\n        def header_example_examples(\n            data: Union[str, None] = Header(\n                default=None,\n                example=\"header_overridden\",\n                examples=[\"header1\", \"header2\"],\n            ),\n        ):\n            return data"}

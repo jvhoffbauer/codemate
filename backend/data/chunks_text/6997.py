@@ -1,0 +1,1 @@
+- Initializes a new instance of this class with the specified `ModelType`. - Calls the constructor of its parent (`super()`) and passes it the given `ModelType`. - Prepares the object to work with the provided machine learning model for further operations.

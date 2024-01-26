@@ -1,0 +1,4 @@
+- Creates a new `Page` object with title and body content using constructor method
+- Converts the `Page` object to JSON format and compares it with expected string (assertion)
+- Extracts dictionary representation of `Page` object and checks if keys match expected values (assertion)
+- Compares HTML output of `Page` object with expected JSON string using BeautifulSoup library for parsing (assertion)

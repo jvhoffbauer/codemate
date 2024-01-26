@@ -1,0 +1,1 @@
+{"original_code": "async def register_user(\n    auth_data: AuthUser = Depends(valid_user_create),\n) -> dict[str, str]:\n    user = await service.create_user(auth_data)\n    return {\n        \"email\": user[\"email\"],\n    }"}

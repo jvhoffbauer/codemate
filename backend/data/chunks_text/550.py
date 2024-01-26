@@ -1,0 +1,7 @@
+- Imports `tutorial001_py39` module from `docs_src/tutorial/relationship_attributes/back_populates` directory and assigns it to a variable named `mod`.
+- Sets SQLAlchemy's connection URL for testing purposes using `sqlite://` protocol.
+- Creates an engine instance using `create_engine()` function provided by SQLAlchemy library.
+- Initializes a list called `calls` which will be used later in tests.
+- Retrieves the built-in print function and replaces it temporarily with a custom implementation that saves each printed statement into the `calls` list.
+- Warns about SAWarnings during execution of `mod.main()` method.
+- Asserts that the `calls` list contains expected output statements after executing `mod.main()` method.

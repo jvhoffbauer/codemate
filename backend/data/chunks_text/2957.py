@@ -1,0 +1,1 @@
+- This method is called `synchronous`, indicating that it executes synchronously (i.e., sequentially). - It takes a single argument `value` of type `str`. - The method returns the input string `value` without any modifications.

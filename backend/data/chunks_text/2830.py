@@ -1,0 +1,1 @@
+- Mocks `multipart.multipart.parse_options_header` to raise no exception and tests for a specific RuntimeError when parsing multipart file headers fails during installation. - Uses PyTest's `monkeypatch` context manager to mock the function call in question. - Asserts that an HTTP POST request with a binary payload raises the expected error message.

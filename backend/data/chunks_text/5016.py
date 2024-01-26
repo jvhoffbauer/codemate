@@ -1,0 +1,3 @@
+- This method is called when an attribute of the object is assigned a new value using the syntax `obj.attribute = value`.
+- It first checks if the variable name (stored in `item`) exists by calling another private helper function `_ensure_var()`. If it doesn't exist, an exception will be raised instead of setting the attribute directly.
+- Once the variable has been confirmed to exist, this method sets its value using the `set()` method provided by the `weakref` module's `WeakValueDictionary`, which was initialized as a dictionary for storing variables and their values in the constructor.

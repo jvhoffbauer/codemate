@@ -1,0 +1,3 @@
+- This function is a GET request handler for retrieving an item with the given ID and associated needy user.
+- The `item_id` parameter is passed as a path variable (`{item_id}`) in the URL.
+- An additional query parameter called `needy` is also included to specify which user needs this item.

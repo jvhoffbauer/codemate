@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"module\")\ndef client() -> Generator:\n    with TestClient(app) as c:\n        yield c"}

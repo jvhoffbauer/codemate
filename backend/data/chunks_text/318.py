@@ -1,0 +1,1 @@
+- Retrieves all Hero records from the database using SQLAlchemy's `Session`, `select()`, and `exec()` methods. - Assigns the resulting list of objects to a variable called 'heroes'. - Prints out the contents of the 'heroes' list for debugging purposes.

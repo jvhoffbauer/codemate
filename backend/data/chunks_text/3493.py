@@ -1,0 +1,1 @@
+- This function takes no arguments and returns a value of `None`. - It is used to explicitly return an invalid or null value, indicating that there is no valid result available. - Can be useful in functions where returning `None` instead of raising an exception is preferred for better error handling.

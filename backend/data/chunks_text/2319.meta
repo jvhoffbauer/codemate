@@ -1,0 +1,1 @@
+{"original_code": "        def serialize_a_uuid(self, v):\n            return str(v)"}

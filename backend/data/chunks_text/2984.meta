@@ -1,0 +1,1 @@
+{"original_code": "def read_item():\n    return {\"id\": \"foo\"}"}

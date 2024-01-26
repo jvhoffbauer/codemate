@@ -1,0 +1,3 @@
+- Defines a method called `amis_json()` for the current class (presumably a model or view).
+- Returns an JSON representation of the object's data using Django Rest Framework's built-in serialization methods.
+- Excludes None values from being serialized and uses field aliases instead of attribute names in the output.

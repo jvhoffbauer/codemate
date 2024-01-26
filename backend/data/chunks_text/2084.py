@@ -1,0 +1,1 @@
+- Defines a function `foo_handler` that takes two arguments `client_key` and `client_tag`, both with default values provided by functions _get_client_key and _get_client_tag respectively. - Returns a dictionary containing 'client_id' (equal to the value of `client_key`) and an optional 'client_tag' (if passed as argument).

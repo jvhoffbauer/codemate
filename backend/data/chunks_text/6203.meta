@@ -1,0 +1,1 @@
+{"original_code": "@V1.get(\"/deaths\")\nasync def get_deaths():\n    \"\"\"Total deaths.\"\"\"\n    deaths_data = await get_category(\"deaths\")\n\n    return deaths_data"}

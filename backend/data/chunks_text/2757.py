@@ -1,0 +1,1 @@
+- Tests a specific endpoint (/response_model_filtering_model-annotation_submodel-return_submodel) using Flask's built-in `client` object to simulate an HTTP request. - Asserts that the status code of the response is 200 and saves its text for debugging purposes if necessary. - Verifies that the JSON response contains the expected data structure with keys 'name' and'surname'.

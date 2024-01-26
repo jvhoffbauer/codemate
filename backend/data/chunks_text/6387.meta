@@ -1,0 +1,1 @@
+{"original_code": "        def __init__(self, func):\n            self.__doc__ = getattr(func, \"__doc__\")\n            self.func = func"}

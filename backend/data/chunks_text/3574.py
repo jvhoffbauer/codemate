@@ -1,0 +1,3 @@
+- This function handles a GET request to `/users/me`.
+- It takes an optional HTTPBasicCredentials object as a parameter and retrieves it using FastAPI's security feature (Security).
+- If no credentials are provided, it returns a message prompting the user to create an account. Otherwise, it returns the username and password of the authenticated user in a dictionary format.

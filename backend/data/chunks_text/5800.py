@@ -1,0 +1,4 @@
+- Defines a function `route_submit()` that returns an asynchronous function called `route()`.
+- The `route()` function takes three arguments: `Request`, `item_id`, and `data`.
+- The `item_id` argument is annotated with `self.admin.AnnotatedItemIdList` to indicate it's a list of IDs for items being edited or created through this endpoint. This is provided by FastAPI's built-in admin interface.
+- The `data` argument is annotated with `Annotated[self.schema, Body()]` to specify its schema using Pydantic's `Body()` decorator. If no data is included in the request body, this will be set to `None`.

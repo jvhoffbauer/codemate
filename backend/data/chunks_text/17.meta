@@ -1,0 +1,1 @@
+{"original_code": "    def __setattr__(cls, name: str, value: Any) -> None:\n        if is_table_model_class(cls):\n            DeclarativeMeta.__setattr__(cls, name, value)\n        else:\n            super().__setattr__(name, value)"}

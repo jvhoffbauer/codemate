@@ -1,0 +1,6 @@
+- Defines a function called `test_typing` that tests different data type inputs and responses using FastAPI's `TestClient`.
+- Creates a dictionary of expected inputs (keys are type annotations) with corresponding values.
+- Loops through each key-value pair in the dictionary and creates a new instance of FastAPI.
+- Defines a new endpoint with the specified input parameter and output model (response schema).
+- Makes a POST request to the endpoint with the expected input as JSON payload.
+- Asserts that the status code is correct and compares the actual response with the expected one.

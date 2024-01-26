@@ -1,0 +1,1 @@
+{"original_code": "def test_custom_request_class(ep, json_request):\n    resp = json_request(\n        {\n            \"id\": 0,\n            \"jsonrpc\": \"2.0\",\n            \"method\": \"probe\",\n            \"params\": {},\n            \"extra_value\": \"test\",\n        }\n    )\n    assert resp == {\"id\": 0, \"jsonrpc\": \"2.0\", \"result\": \"probe\"}"}

@@ -1,0 +1,1 @@
+{"original_code": "def on_nav(\n    nav: Navigation, *, config: MkDocsConfig, files: Files, **kwargs: Any\n) -> Navigation:\n    new_items = generate_renamed_section_items(nav.items, config=config)\n    return Navigation(items=new_items, pages=nav.pages)"}

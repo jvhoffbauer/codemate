@@ -1,0 +1,2 @@
+- Tests the COG viewer functionality by making a GET request to `/cog/viewer`.
+- Verifies that the status code is 200 and checks for correct content type and encoding in the response header.

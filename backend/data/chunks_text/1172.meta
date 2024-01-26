@@ -1,0 +1,1 @@
+{"original_code": "def get_db(db_state=Depends(reset_db_state)):\n    try:\n        database.db.connect()\n        yield\n    finally:\n        if not database.db.is_closed():\n            database.db.close()"}

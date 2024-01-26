@@ -1,0 +1,1 @@
+{"original_code": "@needs_pydanticv2\ndef test_settings(monkeypatch: MonkeyPatch):\n    from docs_src.settings.app02 import main\n\n    monkeypatch.setenv(\"ADMIN_EMAIL\", \"admin@example.com\")\n    settings = main.get_settings()\n    assert settings.app_name == \"Awesome API\"\n    assert settings.items_per_user == 50"}

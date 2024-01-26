@@ -1,0 +1,2 @@
+- Tests the `/a` endpoint of the router using a Flask client
+- Asserts that the JSON response contains the expected message and content type header value

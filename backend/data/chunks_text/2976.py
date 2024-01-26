@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_asynchronous_method_gen_dependency()`.
+- Accepts a positional argument `value` with default value provided by `Depends()`, which is bound to the result of calling `asynchronous_gen()` from another dependency called `methods_dependency`.
+- Returns the value passed in the argument `value`.

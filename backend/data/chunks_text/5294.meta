@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/route1\")\n    async def route1(value: str = Query(...)):\n        \"\"\"route1.\"\"\"\n        return {\"value\": value}"}

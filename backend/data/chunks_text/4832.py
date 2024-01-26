@@ -1,0 +1,3 @@
+- This endpoint retrieves a list of all available role enums using `crud.utils.ensure_enums_to_strs()`.
+- The result is returned as a JSON object with a "roles" key containing an array of string representations of each enum value.
+- Access to this endpoint requires authentication and authorization as the current user must be a superuser (`Depends(get_current_active_superuser)`).

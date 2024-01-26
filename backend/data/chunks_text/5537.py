@@ -1,0 +1,5 @@
+- Retrieves Pydantic model schema based on SQLAlchemy `Inspect` object of a given table model class
+- Checks whether the table model itself or its attribute `__pydantic_model__` (if present) is already a subclass of Pydantic's `BaseModel`. If so, returns it directly. Otherwise...
+- Extracts column names using `TableModelParser`, which is an external helper function that we don't see here
+- Creates corresponding Pydantic fields based on extracted columns and sets them as attributes of the table model with name `__pydantic_model__`
+- Returns the newly created Pydantic model

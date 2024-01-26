@@ -1,0 +1,2 @@
+- Initializes a Kafka producer and consumer using AsyncioKafka library with specified settings for connection and topic.
+- The `__init__()` method is called when creating an instance of this class to set up the necessary resources for interacting with Kafka.

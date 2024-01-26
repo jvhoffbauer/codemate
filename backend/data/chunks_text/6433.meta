@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def raw_response(self) -> dict:\n        return self._raw_response"}

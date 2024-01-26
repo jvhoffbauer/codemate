@@ -1,0 +1,5 @@
+- Defines a function `header_examples()` that takes an optional argument `data`.
+- The `data` parameter is defined as a union type of string or None using Pydantic's `Union` class.
+- If no value is provided for `data`, it defaults to `Header` object with three options - `default`, `examples`, and `openapi_examples`.
+- The `examples` list contains two strings ("json_schema_header1" and "json_schema_header2") which can be used in JSON Schema validation.
+- The `openapi_examples` dictionary provides more detailed information about headers, including summary, description, and values for each example. These examples are specific to OpenAPI (formerly known as Swagger) specification format.

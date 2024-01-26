@@ -1,0 +1,4 @@
+- Defines a websocket route at the root URL ("/").
+- Accepts an incoming web socket connection and waits for it to be confirmed (i.e., "handshaked").
+- Sends a text message to the connected client announcing greetings.
+- Closes the web socket connection after sending the message.

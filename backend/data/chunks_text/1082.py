@@ -1,0 +1,1 @@
+- This function is a GET route for "/app" in FastAPI app. - It returns a JSON response with a message and the root path of the server as variables passed from the request object.

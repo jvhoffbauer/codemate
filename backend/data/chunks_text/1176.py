@@ -1,0 +1,1 @@
+- Defines a function `read_users` with default arguments for `skip` and `limit`. - Uses the `crud` module to retrieve a list of users using the specified `skip` and `limit` values. - Returns the retrieved user list.

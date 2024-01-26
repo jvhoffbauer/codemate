@@ -1,0 +1,3 @@
+- Tests if access token generation fails when user with provided credentials doesn't exist in database
+- Makes a POST request to `app.url_path_for("login_access_token")` endpoint passing username and password as query parameters
+- Verifies that server returns HTTP status code 400 (Bad Request) and error message "Incorrect email or password"

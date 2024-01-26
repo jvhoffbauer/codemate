@@ -1,0 +1,1 @@
+{"original_code": "def no_alias_model():\n    return ModelNoAlias(name=\"Foo\")"}

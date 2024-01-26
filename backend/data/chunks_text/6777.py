@@ -1,0 +1,3 @@
+- Defines a function `main` that returns no value (None)
+- Initializes a logger object and logs an informational message about creating initial data using the `logger.info` method
+- Calls another function named `init` to create the initial data, but its implementation is not shown in this snippet

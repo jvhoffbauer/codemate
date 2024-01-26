@@ -1,0 +1,1 @@
+- Defines a function `get_client()` that returns an instance of Flask's built-in test client, `TestClient`, for interacting with our application in tests. - Imports the necessary components from our project structure (docs_src and extra_models). - Initializes the Flask application object passed to `TestClient`.

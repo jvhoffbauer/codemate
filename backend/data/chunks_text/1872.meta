@@ -1,0 +1,1 @@
+{"original_code": "async def update_item(\n    *,\n    item_id: int,\n    item: Item,\n    user: User,\n    importance: int = Body(gt=0),\n    q: str | None = None,\n):\n    results = {\"item_id\": item_id, \"item\": item, \"user\": user, \"importance\": importance}\n    if q:\n        results.update({\"q\": q})\n    return results"}

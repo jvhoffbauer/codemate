@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def __dict__(self):\n        \"\"\"Spoof a missing __dict__ by raising TypeError, this is how\n        asyncpg.pgroto.pgproto.UUID behaves\"\"\"\n        raise TypeError(\"vars() argument must have __dict__ attribute\")"}

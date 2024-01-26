@@ -1,0 +1,2 @@
+- Tests GET request for path parameter 'foo' with minimum and maximum length constraints using Flask's `client` object
+- Asserts that status code is 200 and returned JSON value is 'foo'

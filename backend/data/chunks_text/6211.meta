@@ -1,0 +1,1 @@
+{"original_code": "@V2.get(\"/locations/{id}\", response_model=LocationResponse)\nasync def get_location_by_id(\n    request: Request, id: int, source: Sources = Sources.JHU, timelines: bool = True\n):\n    \"\"\"\n    Getting specific location by id.\n    \"\"\"\n    location = await request.state.source.get(id)\n\n    return {\"location\": location.serialize(timelines)}"}

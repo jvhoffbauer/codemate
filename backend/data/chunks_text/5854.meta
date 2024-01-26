@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(\n        self,\n        settings: Settings,\n        *,\n        fastapi: FastAPI = None,\n        engine: SqlalchemyDatabase = None,\n    ):\n        super().__init__(settings, fastapi=fastapi, engine=engine)\n        self.register_admin(\n            HomeAdmin,\n            APIDocsApp,\n            FileAdmin,\n        )"}

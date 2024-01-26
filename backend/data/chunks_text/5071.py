@@ -1,0 +1,1 @@
+- Defines an asynchronous function `staff` that takes a session object as input and returns an instance of the `Staff` model created using the `AsyncDal` ORM library. - The `name` attribute is set to "admin" for the new `Staff` instance being created. - Uses the `commit` method provided by `AsyncDal` to save changes made in this transaction to the database.

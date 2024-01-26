@@ -1,0 +1,1 @@
+{"original_code": "@dataclass\nclass BidxExprParams(ExpressionParams, BidxParams):\n    \"\"\"Band Indexes and Expression parameters.\"\"\"\n\n    pass"}

@@ -1,0 +1,2 @@
+- Defines a Pydantic model `Model2` with fields `a`, `b`, and `c`.
+- Uses FastAPI's decorator syntax to define an endpoint `/simple_include_dict` that returns a dictionary conforming to `Model2` but includes only specific fields in the response body (`baz` and `ref.foo`) using the `response_model_include` parameter. The ellipsis (`...`) is replaced by the names of the desired included fields at runtime.

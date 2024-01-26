@@ -1,0 +1,1 @@
+- Defines a function `get_description` that takes a class as an argument (`cls`) and returns its description. - First, it retrieves the default description of the class using the `get_default_description` method. - If the class has a docstring, it appends it to the beginning of the description with two newlines in between.

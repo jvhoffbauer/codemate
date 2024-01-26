@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/tuple-of-models/\")\ndef post_tuple_of_models(square: Tuple[Coordinate, Coordinate]):\n    return square"}

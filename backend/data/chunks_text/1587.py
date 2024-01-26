@@ -1,0 +1,2 @@
+- Defines a route for the homepage (/) using FastAPI's `@app.get()` decorator
+- Returns a JSON response with a message of "Hello World" when the route is accessed

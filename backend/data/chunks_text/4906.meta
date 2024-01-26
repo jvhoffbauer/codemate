@@ -1,0 +1,1 @@
+{"original_code": "def superuser_token_headers():\n    return get_superuser_token_headers()"}

@@ -1,0 +1,1 @@
+{"original_code": "def read_dict():\n    return {\"alias\": \"Foo\"}"}

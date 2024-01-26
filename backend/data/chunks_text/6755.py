@@ -1,0 +1,1 @@
+- Defines type hints for input and output parameters using Python's built-in typing module. - Creates a new OpenRPC method with these type hints using Flask-OpenRPC's decorator syntax. - Retrieves the generated JSON schema from the server and verifies that it accurately reflects the defined types.

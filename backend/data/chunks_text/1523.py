@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in a query parameter (`q`) as an optional argument with default value of `None`, minimum length of 3 characters, and customized title.
+- Returns a dictionary containing two items ("Foo" and "Bar"), along with an updated dictionary that includes the passed-in query parameter (if provided).

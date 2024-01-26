@@ -1,0 +1,1 @@
+- Defines a GET request for the root URL of the application (/) using FastAPI's `@app.get()` decorator. - Returns a response with no content and sets its media type to JSON using Pydantic's `response_model`. - Skips running tests on this function using Pytest's `pragma: nocover` directive, as it is currently empty but may be implemented later.

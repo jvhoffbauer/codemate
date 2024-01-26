@@ -1,0 +1,1 @@
+- Defines a new command named "pg_to_es" for the `group_worker` group in Click's CLI application. - The function associated with this command is called when the user runs `myapp pg_to_es`. - This command likely involves transferring data from a PostgreSQL database to an Elasticsearch index, based on the naming convention and common use case of such tools.

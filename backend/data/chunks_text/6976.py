@@ -1,0 +1,5 @@
+- Defines a fixture named `superuser_token_headers` using PyTest's `@pytest.fixture()`.
+- Accepts an argument `client`, which is assumed to be an instance of FastAPI's built-in test client (`AsyncClient`) class.
+- Inside the function body, it creates a dictionary called `login_data` containing the email and password for the first user in our app's configuration file (`settings.py`).
+- It then sends a POST request to the `/api/v1/login/` endpoint with this data, expecting a JSON response that contains an 'access_token'.
+- The function returns a new dictionary where the key is 'Authorization', and its value is constructed by concatenating 'Bearer'followed by the retrieved token string. This dictionary can later be passed as headers when making requests to other endpoints requiring authentication.

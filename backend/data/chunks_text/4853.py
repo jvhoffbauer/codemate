@@ -1,0 +1,4 @@
+- This function updates a user's information (such as password, full name, or email address).
+- It takes optional arguments for each field that can be updated.
+- The `current_user` argument retrieves the currently logged-in user using FastAPI's dependency injection system and passes their data to the `UserUpdate` object.
+- The `crud.user.update()` method from SQLAlchemy's ORM library is used to save the changes back into the database.

@@ -1,0 +1,3 @@
+- Tests if passing a decimal value (2.7) as path parameter for 'item_id' raises a validation error with status code 422 and appropriate error message from pydantic.
+- Uses `IsDict` type hints in assertions to ensure that the expected JSON structure is returned by Flask-RESTful's `response.json()`.
+- Includes both current and deprecated error messages for backward compatibility until removing them in future versions of pydantic.

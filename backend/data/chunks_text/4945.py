@@ -1,0 +1,1 @@
+- Defines a function `test_celery_asyncio_cpu_bound` that tests Celery's asyncio support for CPU-bound tasks by calling another function `task_cpu_bound`. - Assumes that the called function is CPU-bound, meaning it performs intensive calculations and takes significant processing time on the CPU.

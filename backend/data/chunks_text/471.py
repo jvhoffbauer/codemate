@@ -1,0 +1,6 @@
+- Imports `test_tutorial` function and `create_engine` method from SQLAlchemy's `orm` module to connect to a SQLite database.
+- Defines variables for URL of the database and engine object created using `create_engine`.
+- Initializes `get_testing_print_function` to capture print statements during testing.
+- Patches builtin `print` function with captured version.
+- Executes `main` function in the imported module (`tutorial009_py310`) while capturing its output through patched `print` function.
+- Asserts that expected data is returned by the `main` function when executed within the context of tests.

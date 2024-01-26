@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` with a single parameter `q`.
+- The type of `q` is either a string or None using Pydantic's `Annotated` decorator.
+- The `Query` field provides options such as aliases, titles, descriptions, minimum and maximum lengths, patterns, and deprecation flags. In this case, it sets up a query called 'item-query', which has a required length between 3 and 50 characters, and matches a fixed value ('fixedquery') before being deprecated.

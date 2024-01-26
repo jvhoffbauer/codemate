@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/counter/\")\nasync def get_counter(count: int = Depends(dep_counter)):\n    return {\"counter\": count}"}

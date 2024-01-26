@@ -1,0 +1,1 @@
+- This function named `read_items` is asynchronous and takes a single argument `token`, which is annotated with the `Depends` decorator to retrieve it from the OAuth2 scheme. - The function returns a dictionary containing the retrieved `token`.

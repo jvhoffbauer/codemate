@@ -1,0 +1,1 @@
+- Initializes a new instance of `SecurityScheme` with the provided `SecurityBase` object and optional sequence of scopes. - Sets the `self.security_scheme` attribute to the given `SecurityBase`. - Optionally sets the `self.scopes` attribute to the passed in sequence of strings representing OAuth2 scopes.

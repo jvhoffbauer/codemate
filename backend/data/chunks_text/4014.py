@@ -1,0 +1,3 @@
+- Tests creating an item with just name and price fields using POST request
+- Verifies that server returns HTTP status code 422 (Unprocessable Entity) for invalid input format
+- Checks that error message returned by server contains details about specific validation errors encountered during parsing of 'price' field value

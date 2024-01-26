@@ -1,0 +1,1 @@
+{"original_code": "        @property\n        def required(self) -> bool:\n            return self.field_info.is_required()"}

@@ -1,0 +1,1 @@
+{"original_code": "def extract(field: str, expr: Union[_ColumnExpressionArgument[Any], Any]) -> Extract:\n    return sqlalchemy.extract(field, expr)  # type: ignore[arg-type]"}

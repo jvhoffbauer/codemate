@@ -1,0 +1,3 @@
+- Defines a function `save_item_no_body` that takes an argument `item_id`.
+- The function returns a dictionary with a key "item_id" and its corresponding value, which is passed as an argument to the function.
+- This implementation saves only the ID of the item without any associated body or data.

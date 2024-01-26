@@ -1,0 +1,1 @@
+{"original_code": "    async def asynchronous(self, value: str) -> str:\n        return value"}

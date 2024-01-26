@@ -1,0 +1,3 @@
+- Tests a WebSocket connection with headers and query parameters using `TestClient`.
+- Raises an exception if the session cookie or query token is missing, demonstrating secure authentication.
+- Sends multiple messages through the WebSocket and receives them back to verify bi-directional communication.

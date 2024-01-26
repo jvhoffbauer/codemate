@@ -1,0 +1,1 @@
+{"original_code": "async def get_recovered():\n    \"\"\"Recovered cases.\"\"\"\n    recovered_data = await get_category(\"recovered\")\n\n    return recovered_data"}

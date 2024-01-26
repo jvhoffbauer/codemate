@@ -1,0 +1,2 @@
+- Defines a new endpoint `/` for HTTP POST requests using FastAPI's router decorator
+- The function `update_admin()` is assigned to this endpoint and returns a JSON response with a message when called via an HTTP POST request

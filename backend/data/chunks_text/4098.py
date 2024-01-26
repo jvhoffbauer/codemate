@@ -1,0 +1,5 @@
+- Tests handling of disconnections in a websocket server using FastAPI and Starlette's built-in WebSocket functionality
+- Creates two simultaneous connections to different endpoints (/ws/1234 and /ws/5678)
+- Sends a message through one connection and receives it back, verifying that the received message matches what was sent
+- Receives a message from the other connection, which should contain information about the sender and their message
+- Closes the second connection and receives a notification on the first connection indicating that the second user has left the chat

@@ -1,0 +1,1 @@
+{"original_code": "    def probe1(\n        data: List[Balance],\n    ) -> List[Balance]:\n        return data"}

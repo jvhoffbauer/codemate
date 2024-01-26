@@ -1,0 +1,1 @@
+{"original_code": "@invoke.task\ndef lint(ctx):\n    \"\"\"Run linter.\"\"\"\n    ctx.run(\" \".join([\"pylint\", \"app\"]))"}

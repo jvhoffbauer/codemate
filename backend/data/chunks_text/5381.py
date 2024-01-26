@@ -1,0 +1,2 @@
+- Retrieves the value of GDAL environment variable `GDAL_DISABLE_READDIR_ON_OPEN` using FastAPI's dependency injection mechanism (`@router.get`)
+- Returns a dictionary containing the retrieved environment variable as its key-value pair

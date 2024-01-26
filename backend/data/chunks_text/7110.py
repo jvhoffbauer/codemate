@@ -1,0 +1,7 @@
+- Defines a function `paginator` that takes in a SQLAlchemy query object, current page number, desired page size, and an optional sorting column/direction as arguments.
+- Calculates the total number of items using the `count()` method of the query object.
+- Handles invalid input for page and page size by setting them to default values.
+- Calculates the starting index (`offset`) based on the current page and page size.
+- Applies the calculated `offset` and `limit` to the original query to get the subset of results for this page.
+- Sorts the result set according to the specified ordering parameter.
+- Returns both the resulting list of dictionaries representing each row's attributes and metadata about the pagination process, including the total number of pages, the current page, previous and next page numbers, etc.

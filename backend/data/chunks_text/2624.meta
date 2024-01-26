@@ -1,0 +1,1 @@
+{"original_code": "@router_c.get(\"/\")\ndef get_c():\n    return {\"msg\": \"C\"}"}

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/\", response_class=HTMLResponse, include_in_schema=False)\ndef landing(request: Request):\n    \"\"\"TiTiler Landing page\"\"\"\n    return templates.TemplateResponse(\n        name=\"index.html\",\n        context={\"request\": request},\n        media_type=\"text/html\",\n    )"}

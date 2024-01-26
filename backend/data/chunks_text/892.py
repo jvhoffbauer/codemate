@@ -1,0 +1,1 @@
+- Defines a method called `__get_validators__` that takes in the type of the class `UploadFile`. - Yields the validator function `validate`, which is defined on the same class, to be included as a validation callback for Pydantic's model validation process.

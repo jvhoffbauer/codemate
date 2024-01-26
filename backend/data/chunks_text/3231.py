@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/dict` using FastAPI's decorator syntax
+- Returns a dictionary with a key of 'alias' and a value of 'Foo', as specified by the `response_model` parameter
+- Disables automatic aliasing for the returned model using the `response_model_by_alias` flag

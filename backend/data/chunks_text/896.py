@@ -1,0 +1,3 @@
+- This function is a class method named `_validate`, which takes two arguments - an input value and another unused argument (represented by underscores).
+- The function checks whether the input value is of type `StarletteUploadFile`. If it's not, it raises a `ValueError` with an error message that includes the actual type of the input value.
+- After validating the input value, the function returns the same object after casting it to the expected type `UploadFile`.

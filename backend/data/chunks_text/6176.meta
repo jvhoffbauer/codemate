@@ -1,0 +1,1 @@
+{"original_code": "async def check_cache(data_id: str, namespace: str = None):\n    \"\"\"Check the data of a cache given an id.\"\"\"\n    cache = get_cache(namespace)\n    result = await cache.get(data_id, None)\n    LOGGER.info(f\"{data_id} cache pulled\")\n    await cache.close()\n    return result"}

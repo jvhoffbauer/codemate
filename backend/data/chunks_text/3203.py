@@ -1,0 +1,1 @@
+- Tests if Pydantic version 2's decimal encoder correctly converts a float value to its decimal equivalent during JSON serialization using `jsonable_encoder()`. - Verifies that the resulting dictionary contains the expected key-value pair with the decimal representation of the original float value.

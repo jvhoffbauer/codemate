@@ -1,0 +1,1 @@
+{"original_code": "async def overrider_sub_dependency(k: str):\n    return {\"k\": k}"}

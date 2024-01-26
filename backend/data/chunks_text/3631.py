@@ -1,0 +1,3 @@
+- Defines a function named 'new_subscription' which takes two arguments - 'body' and 'token'.
+- The 'body' argument is of type 'Subscription', representing the subscription details being created by the user.
+- The 'token' argument is annotated using FastAPI's security feature (Security decorator) with bearer scheme authentication. This means it expects an authorization header containing a Bearer token as part of the incoming HTTP request.

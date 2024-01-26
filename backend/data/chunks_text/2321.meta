@@ -1,0 +1,1 @@
+{"original_code": "    def return_some_user():\n        # Test that the fix also works for custom pydantic classes\n        return SomeCustomClass(a_uuid=MyUuid(\"b8799909-f914-42de-91bc-95c819218d01\"))"}

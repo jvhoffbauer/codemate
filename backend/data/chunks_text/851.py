@@ -1,0 +1,3 @@
+- Defines a decorator called `websocket` that takes three arguments: `path`, `name`, and `dependencies`.
+- The `decorator` function inside is responsible for adding the decorated function as an API web socket route using the `self.add_api_websocket_route` method provided by FastAPI's base class `BaseAPIRouter`. It also sets the `name` and `dependencies` values passed into the decorator.
+- This decorator can be used on functions with signature `async def my_websocket(websocket: WebSocket) -> None:` to create a new WebSocket endpoint. See example usage in comments.

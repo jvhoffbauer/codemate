@@ -1,0 +1,1 @@
+{"original_code": "def get_docs(\n    bucket: Bucket, *, doc_type: str, doc_model=Type[PydanticModel], skip=0, limit=100\n) -> List[PydanticModel]:\n    doc_results = get_doc_results_by_type(\n        bucket, doc_type=doc_type, skip=skip, limit=limit\n    )\n    return doc_results_to_model(doc_results, doc_model=doc_model)"}

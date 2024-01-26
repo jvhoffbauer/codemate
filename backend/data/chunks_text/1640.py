@@ -1,0 +1,3 @@
+- Defines an asynchronous function `dependency_a` that generates a dependency object called `dep_a`.
+- Uses a context manager to ensure proper cleanup of resources associated with `dep_a`, even if an exception is raised during execution.
+- Yields `dep_a` for use by other parts of the application, allowing them to consume it synchronously or asynchronously.

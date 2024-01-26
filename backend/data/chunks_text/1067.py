@@ -1,0 +1,4 @@
+- Retrieves comments for a specific translation discussion using GraphQL API
+- Takes necessary parameters such as settings and discussion number from user input or configuration files
+- Optionally accepts an `after` parameter to fetch subsequent pages of results
+- Returns a list of CommentEdge objects containing comment details and their positions in the discussion thread

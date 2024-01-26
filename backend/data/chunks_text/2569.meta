@@ -1,0 +1,1 @@
+{"original_code": "def set_indirect_cookie(*, dep: str = Depends(set_cookie)):\n    return dep"}

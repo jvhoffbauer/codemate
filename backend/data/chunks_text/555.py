@@ -1,0 +1,4 @@
+- Imports `test_tutorial` function and `tutorial003_py310` module from SQLModel's documentation sources.
+- Sets up a SQLAlchemy engine with an in-memory SQLite database URL.
+- Calls the main function of the `tutorial003_py310` module to execute its tests.
+- Retrieves an introspection object for the engine and checks if certain tables exist using their string representations.

@@ -1,0 +1,1 @@
+{"original_code": "def main():\n    create_db_and_tables()\n    create_heroes()\n    update_heroes()\n    delete_heroes()"}

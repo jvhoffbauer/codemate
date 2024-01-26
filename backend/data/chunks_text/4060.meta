@@ -1,0 +1,1 @@
+{"original_code": "def test_get_http_error():\n    response = client.get(\"/items/3\")\n    assert response.status_code == 418, response.text\n    assert response.json() == {\"detail\": \"Nope! I don't like 3.\"}"}

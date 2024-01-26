@@ -1,0 +1,1 @@
+{"original_code": "async def router_ws_depends_validate(\n    websocket: WebSocket, data=Depends(ws_dependency_validate)\n):\n    pass  # pragma: no cover"}

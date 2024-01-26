@@ -1,0 +1,1 @@
+{"original_code": "    def get_filename(self, file: UploadFile):\n        filename = (\n            str(uuid.uuid4()).replace(\"-\", \"\") + os.path.splitext(file.filename)[1]\n        )\n        return Path().joinpath(time.strftime(\"%Y%m\"), filename).as_posix()"}

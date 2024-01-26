@@ -1,0 +1,1 @@
+{"original_code": "    async def test_view():\n        logger.debug(\"Test view\")\n        task1.delay().get(timeout=10)"}

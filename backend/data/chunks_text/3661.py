@@ -1,0 +1,2 @@
+- Tests if a user with token 'jessica' can retrieve item 'Plumbus' using GET request to /items/plumbus endpoint
+- Verifies that the status code returned is 200 and the JSON response contains expected values for name and item_id fields of Plumbus object

@@ -1,0 +1,3 @@
+- Endpoint to retrieve an item with ID "object" using FastAPI's `@app.get()` decorator
+- Returns a single `Item` object in JSON format as specified by the `response_model` parameter
+- The returned `Item` has a fixed set of values for its properties (name, date, price, and owner_IDs)

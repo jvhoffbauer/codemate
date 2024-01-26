@@ -1,0 +1,2 @@
+- Defines a function `inner()` that takes an argument `client`.
+- Uses the `monkeypatch` module to set a new attribute for the `client` object called `"transport"` with a custom implementation provided by `_TestTransport()`, which has methods `check_event()` and `check_envelope()`.

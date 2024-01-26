@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a list (optional) as input and annotations it with Pydantic's `Query()`.
+- Creates a dictionary called `query_items` containing a key "q" with value from the input parameter or an empty list if not provided.
+- Returns the `query_items` dictionary.

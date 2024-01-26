@@ -1,0 +1,1 @@
+{"original_code": "@pytest.mark.parametrize(\n    \"driver\",\n    [\"png\", \"pngraw\", \"jpg\", \"jpeg\", \"webp\"],\n)\ndef test_imageprofile(driver):\n    \"\"\"test image profile.\"\"\"\n    assert ImageType[driver].profile == img_profiles.get(driver)"}

@@ -1,0 +1,2 @@
+- Defines a function `example` that takes an argument `item` of type `Item`. If no value is provided for `item`, it defaults to a `Body` object with a specific dictionary as its content (`{"data": "Data in Body example}"`)
+- Returns the passed or defaulted `item`

@@ -1,0 +1,1 @@
+{"original_code": "def test_celery(word: str):\n    return f\"test task return {word}\""}

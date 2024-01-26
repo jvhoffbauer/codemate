@@ -1,0 +1,5 @@
+- Defines a Lambda function using AWS CDK and CloudFormation syntax
+- Allows customization of various parameters such as memory size, timeouts, runtime, and environment variables
+- Supports adding IAM policies to the associated role through `add_to_role_policy()` method
+- Creates an API Gateway endpoint with a default integration that uses the defined Lambda function
+- Outputs the URL of the created API Gateway endpoint via CFN output

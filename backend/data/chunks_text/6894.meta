@@ -1,0 +1,1 @@
+{"original_code": "def payload_to_list(hpp: HousePredictionPayload) -> List:\n    return [\n        hpp.median_income_in_block,\n        hpp.median_house_age_in_block,\n        hpp.average_rooms,\n        hpp.average_bedrooms,\n        hpp.population_per_block,\n        hpp.average_house_occupancy,\n        hpp.block_latitude,\n        hpp.block_longitude,\n    ]"}

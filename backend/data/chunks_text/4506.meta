@@ -1,0 +1,1 @@
+{"original_code": "def get_client() -> TestClient:\n    from docs_src.conditional_openapi import tutorial001\n\n    importlib.reload(tutorial001)\n\n    client = TestClient(tutorial001.app)\n    return client"}

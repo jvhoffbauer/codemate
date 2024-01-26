@@ -1,0 +1,4 @@
+- Defines a function `fake_users` that takes `models` as an argument (presumably a module containing database model classes).
+- Creates a list of dictionaries representing user data with increasing IDs from 1 to 5.
+- Uses SQLAlchemy's ORM to add these users to the database and commit the changes.
+- Returns the created users as a list.

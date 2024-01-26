@@ -1,0 +1,3 @@
+- Defines a websocket route for incoming connections on `/ws`.
+- Verifies that an expected header (`x-request-id`) is present in the request.
+- Accepts the connection and sends a JSON message to the client, then closes the socket.

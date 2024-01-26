@@ -1,0 +1,3 @@
+- Defines a function `get_websocket_app()` that takes two optional arguments and returns another function (a coroutine).
+- The inner function `app()` accepts a websocket connection as an argument and returns nothing. It solves dependencies using `solve_dependencies()`, passes the results to the dependent's call method, and raises an error for invalid requests.
+- If `dependency_overrides_provider` is provided, it overrides any default dependency providers during dependency resolution.

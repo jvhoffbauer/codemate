@@ -1,0 +1,1 @@
+{"original_code": "def test_type_union_breaks() -> None:\n    with pytest.raises(ValueError):\n\n        class Hero(SQLModel, table=True):\n            id: Optional[int] = Field(default=None, primary_key=True)\n            tags: Union[int, str]"}

@@ -1,0 +1,1 @@
+{"original_code": "def get_database_uri():\n    return app_config.settings.DEFAULT_SQLALCHEMY_DATABASE_URI"}

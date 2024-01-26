@@ -1,0 +1,3 @@
+- This function tests a WebSocket connection using Flask's built-in testing framework, `FlaskTestClient`.
+- It connects to the WebSocket endpoint at "/ws" and receives an initial message containing the string "Hello WebSocket".
+- The received message is checked for correctness by comparing it against a dictionary with expected keys and values.

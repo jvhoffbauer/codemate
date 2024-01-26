@@ -1,0 +1,1 @@
+- Tests reading a dictionary by alias using Flask's `client` object and asserts that status code is 200 and returned JSON matches expected value for 'alias'.

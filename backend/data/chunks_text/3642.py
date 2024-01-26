@@ -1,0 +1,1 @@
+- Imports a function `test_main` from another settings file (docs_src.settings.app02) for testing purposes. - Calls the imported function's `test_app` method to execute its tests.

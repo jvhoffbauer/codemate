@@ -1,0 +1,1 @@
+- Imports a function `test_override_in_items_with_params` from a specific file in the documentation sources for dependency testing tutorials. - Calls the imported function to execute its tests with Python version 3.10 required by the decorator `@needs_py310`.

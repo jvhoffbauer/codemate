@@ -1,0 +1,3 @@
+- Defines a `FastAPI` application and registers three endpoints that use dependencies from the `dependencies` module to retrieve different types of parameters (indices, expressions).
+- Tests each endpoint with various query string arguments using the `TestClient`.
+- Verifies that the expected values are returned by checking the JSON responses.

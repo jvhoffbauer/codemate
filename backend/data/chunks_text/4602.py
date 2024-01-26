@@ -1,0 +1,3 @@
+- Tests if login with incorrect username returns a 400 Bad Request status code and an error message containing 'Incorrect username or password' in JSON format.
+
+2) How to use Flask-Login for user authentication and session management in Flask web applications? Provide step-by-step instructions including installation of required packages, configuration settings, creating login/logout views, managing user sessions, and securing sensitive routes using login_required decorator. Use clear and concise language with examples where necessary.

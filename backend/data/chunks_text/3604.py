@@ -1,0 +1,1 @@
+- Tests the `/simple_exclude` endpoint using Flask's built-in testing client (client) and asserts that it returns a status code of 200 with expected JSON data containing nested excluded fields. - The `response.json()` method is used to extract the JSON data from the response object for further comparison in the assertion statement.

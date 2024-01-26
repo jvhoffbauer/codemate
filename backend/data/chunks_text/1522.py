@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` with a single required parameter `q`.
+- The type of `q` is defined using Pydantic's `Annotated` decorator which allows specifying both Python types and validation rules (in this case, a query string).
+- If `q` is provided, it updates a dictionary called `results` with a new key `q`, containing the value of `q`. This way, we can easily pass the original query string back to the client without having to perform any additional processing or filtering on it.

@@ -1,0 +1,3 @@
+- This function `get_config_value()` takes three arguments - `model`, `parameter`, and an optional `default`.
+- It returns the value of a configuration parameter for the given SQLModel instance or class using Python's built-in `getattr()` function.
+- If the specified parameter is not found in the config dictionary, it falls back to the provided `default` value.

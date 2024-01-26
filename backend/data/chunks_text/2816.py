@@ -1,0 +1,2 @@
+- Tests GET request to `/query/param` endpoint with query parameter
+- Asserts that status code is 200 and response body contains 'foo bar'

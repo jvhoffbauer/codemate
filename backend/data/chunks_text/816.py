@@ -1,0 +1,1 @@
+- Retrieves current user's account information using FastAPI dependency injection and Pydantic models for request validation and response serialization. - Uses a custom `JWTData` dependency to extract the user ID from the JWT token in the authorization header. - Returns a subset of the user data as specified by the `response_model`.

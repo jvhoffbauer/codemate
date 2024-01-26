@@ -1,0 +1,5 @@
+- Imports and sets up SQLModel, engine, and database connection using `create_engine`.
+- Runs a tutorial script (`tutorial001_py310`) that creates three Hero records in the database.
+- Retrieves all Hero records using SQLAlchemy's `Session` object and stores them in a dictionary by name.
+- Accesses specific Hero objects by their names stored in the dictionary.
+- Asserts that each Hero's attributes are correctly set based on the values provided during creation.

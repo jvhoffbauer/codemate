@@ -1,0 +1,1 @@
+{"original_code": "    async def fake_getter(*args, **kwargs):\n        return True"}

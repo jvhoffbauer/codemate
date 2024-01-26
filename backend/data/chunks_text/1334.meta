@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/files/{file_path:path}\")\nasync def read_file(file_path: str):\n    return {\"file_path\": file_path}"}

@@ -1,0 +1,1 @@
+{"original_code": "def params_match(full_name_k1: str, key2: str):\n    \"\"\"\n    \u53bb\u6389url ?\u540e\u9762\u7684\u53c2\u6570 \u53ea\u53d6\u8def\u5f84\n    :param full_name_k1:\n    :param key2:\n    :return:\n    \"\"\"\n    key1 = full_name_k1.split(\"?\")[0]\n    return util.key_match2(key1, key2)"}

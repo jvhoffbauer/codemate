@@ -1,0 +1,1 @@
+{"original_code": "def get_graphql_pr_edges(*, settings: Settings, after: Union[str, None] = None):\n    data = get_graphql_response(settings=settings, query=prs_query, after=after)\n    graphql_response = PRsResponse.model_validate(data)\n    return graphql_response.data.repository.pullRequests.edges"}

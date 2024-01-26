@@ -1,0 +1,1 @@
+- This function tests an invalid POST request to the `/b/compute/` endpoint with a payload containing incorrect key-value pairs (`{"a": "bar", "b": "foo"}`). - The expected status code is 422 (Unprocessable Entity), and the actual status code and response body are checked using assertions.

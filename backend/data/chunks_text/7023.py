@@ -1,0 +1,4 @@
+- Creates a new user without requiring authentication (logged in).
+- Checks if open registration is allowed by reading `settings.USERS_OPEN_REGISTRATION`. If it's false, raises an error.
+- Retrieves existing user with given email using `crud.user.get_by_email()`. Raises an error if such user exists.
+- Otherwise creates a new user using `crud.user.create()`.

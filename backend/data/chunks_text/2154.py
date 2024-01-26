@@ -1,0 +1,1 @@
+- Defines a GET request for the path `"/path/param-ge-int"` with an integer parameter named `item_id`. - The value of the `item_id` parameter must be greater than or equal to 3, as specified by the `Path()` decorator's `ge` keyword argument. - Returns the value of the `item_id` parameter.

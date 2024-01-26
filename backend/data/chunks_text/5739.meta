@@ -1,0 +1,1 @@
+{"original_code": "    async def get_action(self, request: Request, name: str) -> Action:\n        admin_action = self.registered_admin_actions.get(name)\n        return await admin_action.get_action(request)"}

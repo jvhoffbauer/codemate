@@ -1,0 +1,1 @@
+- Defines a property called `required` for this class that returns a boolean value based on whether the associated field is required or not, as determined by the `is_required()` method of the `FieldInfo` object. - Allows easy access to the requiredness of the associated field without having to call its `is_required()` method directly.

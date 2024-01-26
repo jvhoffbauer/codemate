@@ -1,0 +1,1 @@
+- Defines an asynchronous function `create_upload_files()` that takes a parameter `files`, which is a list of `UploadFile` objects. - The function returns a dictionary with one key, "filenames", and its value is a list containing the filenames of all uploaded files (accessed through their `filename` attribute).

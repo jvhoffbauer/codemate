@@ -1,0 +1,3 @@
+- Defines an endpoint `/compute` using FastAPI's router decorator
+- Accepts two arguments `a` and `b`, both of which can be passed in as query parameters or JSON body data (using Pydantic's `Body` field)
+- Returns a dictionary containing the values of `a` and `b`

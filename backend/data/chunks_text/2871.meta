@@ -1,0 +1,1 @@
+{"original_code": "def test_body_repr_none():\n    assert repr(Body(None)) == \"Body(None)\""}

@@ -1,0 +1,4 @@
+- Defines a method `route_delete()` that returns a callable function (a coroutine).
+- The inner function `route()` is an asynchronous view function that handles HTTP DELETE requests for deleting one or more items identified by their IDs.
+- It checks whether the user has permission to delete using `await self.has_delete_permission(request, item_id)`. If not, it returns an error response.
+- Otherwise, it calls `await self.delete_items(request, item_id)` to actually perform the deletion and returns a JSON response with the number of deleted items.

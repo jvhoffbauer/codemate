@@ -1,0 +1,1 @@
+{"original_code": "def test_file_path():\n    response = client.get(\"/files/home/johndoe/myfile.txt\")\n    print(response.content)\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"file_path\": \"home/johndoe/myfile.txt\"}"}

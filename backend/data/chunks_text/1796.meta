@@ -1,0 +1,1 @@
+{"original_code": "@invoices_callback_router.post(\n    \"{$callback_url}/invoices/{$request.body.id}\", response_model=InvoiceEventReceived\n)\ndef invoice_notification(body: InvoiceEvent):\n    pass"}

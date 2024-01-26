@@ -1,0 +1,3 @@
+- Defines a class method `first_or_404()` for the current model (accessed through `self`)
+- Takes keyword arguments as input and passes them to `get_object_or_404()`, which returns either the object that matches the filter criteria or raises a HTTP 404 error if no match is found
+- Returns the retrieved object casted as an instance of the current model (`Self`)

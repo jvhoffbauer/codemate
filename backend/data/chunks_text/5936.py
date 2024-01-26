@@ -1,0 +1,4 @@
+- Creates a new model based on an existing `BaseModel`.
+- Allows specifying which fields to include or exclude using `include` and `exclude`, respectively.
+- Clones each field with `create_cloned_field()` before adding it to the new model's dictionary of fields. This allows customizing how certain types of fields are handled (e.g., strings vs. Numbers).
+- Returns the newly created model as a subclass of `BaseModel`.

@@ -1,0 +1,1 @@
+- Tests if GET request to path "/path/param-le-ge-int/{num}" with parameter num=1 returns status code 200 and JSON response equal to integer value of 1.

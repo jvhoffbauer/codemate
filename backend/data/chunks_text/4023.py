@@ -1,0 +1,1 @@
+- Patches `json.loads()` function to raise an exception when called during a POST request to create a new item. - Asserts that the server returns a HTTP status code of 400 (Bad Request) and displays the error message in the response body.

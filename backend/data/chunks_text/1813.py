@@ -1,0 +1,3 @@
+- Defines an asynchronous function `create_item` that takes three arguments: `item_id`, `item`, and an optional query string `q`.
+- The function returns a dictionary called `result` with two keys: 'item_id' (equal to the input argument `item_id`) and all other key-value pairs from the `Item` object passed in as `item`.
+- If the optional `q` parameter is provided, it updates the `result` dictionary with a new key 'q' equal to its value.

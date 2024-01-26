@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with an empty list called `history`. This list will be used to store previous user inputs or actions, allowing for undo/redo functionality in future methods.

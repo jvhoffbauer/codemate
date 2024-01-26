@@ -1,0 +1,4 @@
+- Tests synchronous and synchronous generator function with server error using Flask's `TestClient`.
+- Verifies that status code is 500 (Internal Server Error), and text contains the error message.
+- Checks if a variable containing the result of another endpoint is updated correctly despite the error.
+- Clears an internal dictionary used to store errors for further testing.

@@ -1,0 +1,1 @@
+- Sends a GET request to `/users/` with custom headers `'X-Token': 'fake-super-secret-token'` and `'X-Key': 'fake-super-secret-key'`. - Asserts that the status code is 200 and saves the response text for debugging purposes (optional). - Asserts that the JSON response contains two user objects with keys `'username'`.

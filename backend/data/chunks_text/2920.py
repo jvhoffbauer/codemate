@@ -1,0 +1,2 @@
+- Defines a function `get_user_override` that takes an argument `required_scopes` of type `SecurityScopes`.
+- The function returns a tuple containing a user ID ("alice") and a list of scopes (access permissions) specified in the `required_scopes` object.

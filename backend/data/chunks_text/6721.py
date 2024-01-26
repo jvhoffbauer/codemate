@@ -1,0 +1,3 @@
+1. This function tests if `probe` and a hypothetical method called `probe2` are recognized as JSON RPC methods by Sentry's transaction tracing feature using PyTest fixtures such as `capture_exceptions`, `assert_log_errors`, and `capture_events`.
+2. The function sends two requests with different IDs containing empty parameters to the `json_request` fixture, which simulates sending HTTP requests to Sentry's server.
+3. It checks that specific types of errors (`RuntimeError` and `ZeroDivisionError`) raised during the execution of these requests are caught and logged properly by Sentry, while other unrelated errors (such as division by zero) are not reported or interfere with the testing process.

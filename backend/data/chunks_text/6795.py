@@ -1,0 +1,3 @@
+- Defines a function `get_db` that returns a generator
+- Uses SQLAlchemy's `Session` context manager to create and manage database sessions
+- Yields each created session object for use in other functions or blocks of code

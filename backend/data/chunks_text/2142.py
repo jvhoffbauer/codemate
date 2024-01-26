@@ -1,0 +1,3 @@
+- Defines a GET request for the path `"/path/param-le/{item_id}"`.
+- Uses Pydantic's `Path` class to validate and parse the `item_id` query parameter as a floating point number less than or equal to 3 (inclusive).
+- Returns the parsed value of `item_id`.

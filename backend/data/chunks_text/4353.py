@@ -1,0 +1,1 @@
+- This function tests updating an item with a PUT request to /items/foo with a new name of 'Wrestlers'. - The expected status code is 200 and the updated JSON object should contain just the new name key ('Wrestlers') without the size key (which was previously set).

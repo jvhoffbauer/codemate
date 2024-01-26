@@ -1,0 +1,3 @@
+- Converts underscore separated words to camelCase using a function called `snake_convert`.
+- Checks whether input is of type string or not and returns it as it is otherwise.
+- Splits the given string by '_' character and converts each component to title case before joining them back together with an empty string ('').

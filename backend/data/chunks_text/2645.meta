@@ -1,0 +1,1 @@
+{"original_code": "def test_required_nonable_explicit_query_invalid():\n    response = client.get(\"/explicit-query\")\n    assert response.status_code == 422"}

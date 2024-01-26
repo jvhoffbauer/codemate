@@ -1,0 +1,1 @@
+- This function is an asynchronous view that returns a list of items owned by the currently authenticated user using FastAPI's security middleware to retrieve the user and check permissions with the `scopes` parameter set to `"items"`. - The returned list contains a single item object with an ID of 'Foo' and the username of the owner (retrieved from the `Security` wrapper).

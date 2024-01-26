@@ -1,0 +1,1 @@
+- Tests if a redirect status code is returned when accessing "/pydantic" endpoint without following the redirection. - Asserts that the HTTP status code of the response is 302 (Found). - Verifies that the location header contains the URL to which the browser should be redirected ("https://pydantic-docs.helpmanual.io/").

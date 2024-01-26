@@ -1,0 +1,3 @@
+- Tests if authentication with incorrect password fails and returns a 401 Unauthorized status code with an error message in JSON format.
+- Uses `raw_request` function to make a request without any decorators or wrappers applied.
+- Compares expected response (HTTP status code and error message) against actual response received from server.

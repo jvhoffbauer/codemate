@@ -1,0 +1,3 @@
+- Defines a GET request endpoint with a path parameter `{param}` using FastAPI's decorator syntax (@app.get)
+- The parameter is type annotated as an integer (int) and named 'param'
+- If the function body is not implemented, it will be skipped during testing due to the pragma: no cover directive

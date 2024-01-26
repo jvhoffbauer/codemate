@@ -1,0 +1,3 @@
+- Adds a new header `"X-Process-Time"` to the response with the value of the processing time in seconds since the Unix epoch (in milliseconds can be added by multiplying it by 1000).
+- Wraps the original request handling function using asyncio's `await` keyword and passes the result back asynchronously.
+- Calculates the difference between the current time and the starting time of the request to get the processing time.

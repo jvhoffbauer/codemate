@@ -1,0 +1,3 @@
+- Defines two endpoints for retrieving information about tile matrix sets using FastAPI's router decorator.
+- Uses Pydantic to define input and output models with validation and documentation.
+- Follows Open Geospatial Consortium (OGC) specifications for tile matrix sets and tilesets.

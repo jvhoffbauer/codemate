@@ -1,0 +1,3 @@
+- Tests for STAC point endpoint with missing assets and expressions
+- Uses mocks to simulate HTTP requests and raster data access
+- Verifies correct status codes and JSON responses for different scenarios

@@ -1,0 +1,3 @@
+- Creates a new cookie named 'fakesession' with the value 'fake-cookie-session-value'.
+- Adds this cookie to the HTTP response sent back to the client using FastAPI's `JSONResponse`.
+- The created cookie can be accessed by subsequent requests made by the same client until it expires or is deleted.

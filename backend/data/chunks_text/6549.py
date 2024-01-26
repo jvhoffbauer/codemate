@@ -1,0 +1,3 @@
+- Defines a new method called `probe` using FastAPI's decorator syntax.
+- Raises an HTTPException with status code 401 to simulate unauthorization error.
+- Makes a request to the defined method and checks if the response has expected status code (401) and JSON body ("detail" field contains "Unauthorized").

@@ -1,0 +1,4 @@
+- Deletes a specific team with the given ID from the database using SQLAlchemy's `Session`.
+- Raises an HTTP exception with status code 404 and detailed message "Team not found" if the specified team is not present in the database.
+- Commits changes made to the session after deleting the team.
+- Returns a simple JSON response indicating successful completion of the operation.

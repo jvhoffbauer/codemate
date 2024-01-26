@@ -1,0 +1,1 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using Pydantic models as input. - The generated schema includes information about endpoints (e.g., GET /), request and response formats, and model definitions. - The schema is validated against the actual API behavior to ensure correctness.

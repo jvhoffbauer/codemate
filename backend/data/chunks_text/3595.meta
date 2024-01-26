@@ -1,0 +1,1 @@
+{"original_code": "def simple_exclude():\n    return Model2(\n        ref=Model1(foo=\"simple_exclude model foo\", bar=\"simple_exclude model bar\"),\n        baz=\"simple_exclude model2 baz\",\n    )"}

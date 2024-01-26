@@ -1,0 +1,3 @@
+- This function is a FastAPI route with the `GET` method and path `/items/`.
+- It uses the `Annotated` decorator to create a dependency for `CommonsQueryParams`, which contains query parameters like `q` and limits.
+- The function returns a dictionary containing either just the `items` list or also includes the `q` parameter based on its presence in the `CommonsQueryParams`.

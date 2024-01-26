@@ -1,0 +1,3 @@
+- Defines a function `get_current_user()` that takes an optional argument `oauth_header`. If it's not provided, returns `None`.
+- Inside the function, creates a new instance of `User` class with username as the value from `oauth_header`.
+- Returns the created `User` object.

@@ -1,0 +1,4 @@
+- Tests the `/<STATE>/` endpoint for a confirmed case (`state="confirmed"`).
+- Mocks the datetime module to set a specific date and time using `mock.patch`.
+- Uses `mocked_strptime_isoformat` to handle parsing of ISO format dates returned by JHU API.
+- Compares the JSON output from the server against a predefined file containing expected results.

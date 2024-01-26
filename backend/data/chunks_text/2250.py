@@ -1,0 +1,1 @@
+- Tests if accessing user information without a security API key results in a 403 Forbidden status code and an error message of 'Not authenticated' in the JSON response body.

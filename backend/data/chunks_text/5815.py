@@ -1,0 +1,3 @@
+- This method is a private helper function called by `DjangoRestFramework`'s `DefaultRouter`.
+- It iterates over all registered routers and checks whether each one is an instance of `RouterAdmin`, which is a custom router class provided by the user.
+- If it finds such a router, it registers its routes using `register_router()` and includes it into the main router using `include_router()`.

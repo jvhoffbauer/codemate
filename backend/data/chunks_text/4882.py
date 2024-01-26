@@ -1,0 +1,3 @@
+- Defines a function `get_cluster_http_url()` that takes optional arguments for host and port (default values provided)
+- Concatenates the host, colon, and port into a URL string using an f-string
+- Returns the resulting URL as a string

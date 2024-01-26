@@ -1,0 +1,1 @@
+{"original_code": "@app.head(\"/items/{item_id}\")\ndef head_item(item_id: str):\n    return JSONResponse(None, headers={\"x-fastapi-item-id\": item_id})"}

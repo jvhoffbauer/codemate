@@ -1,0 +1,1 @@
+{"original_code": "    def probe(\n        shared_counter: str = Depends(get_shared_counter),\n        common_counter: str = Depends(get_common_counter),\n    ) -> Tuple[str, str]:\n        return shared_counter, common_counter"}

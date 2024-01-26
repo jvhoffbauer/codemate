@@ -1,0 +1,1 @@
+{"original_code": "def get_multi(bucket: Bucket, *, skip=0, limit=100):\n    return utils.get_docs(\n        bucket=bucket,\n        doc_type=ITEM_DOC_TYPE,\n        doc_model=ItemInDB,\n        skip=skip,\n        limit=limit,\n    )"}

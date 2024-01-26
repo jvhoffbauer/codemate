@@ -1,0 +1,1 @@
+- Defines a function `get_client()` that returns an instance of Flask's built-in test client, `TestClient`, for testing purposes. - Imports and uses the application object (`app`) defined in another module named `app_pv1`. This allows us to easily test endpoints within this specific version of our API without having to create a new Flask app each time we want to run tests.

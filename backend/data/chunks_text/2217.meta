@@ -1,0 +1,1 @@
+{"original_code": "    @app.post(\"/third\")\n    def post_third(item1: Item):\n        return item1  # pragma: nocover"}

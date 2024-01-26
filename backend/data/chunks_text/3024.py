@@ -1,0 +1,3 @@
+- Override `common_parameters` dependency with a custom implementation that includes a sub router in its dependencies using `app.dependency_overrides`.
+- Make an HTTP GET request to the `"/router-depends/"` endpoint and expect a status code of 422 (Unprocessable Entity) due to missing query parameter 'k'.
+- Verify the JSON response contains an error message indicating the 'k' parameter is required.

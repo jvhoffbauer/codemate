@@ -1,0 +1,5 @@
+- This function tests an API using Flask's built-in testing framework (TestClient).
+- It sends a POST request to "/spacy_entities" with a JSON body containing some text and language information.
+- The expected status code of the response is 200 OK.
+- The returned data contains a list of records, each representing a single input record.
+- The first record should contain no errors or warnings, and its original text ("But Google is starting from behind...") as well as entities recognized by spaCy (e.g., "Alexa", "Amazon", etc.).

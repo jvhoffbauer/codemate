@@ -1,0 +1,1 @@
+- Retrieves a list of items belonging to the authenticated user (accessed through `get_current_active_user`) using FastAPI's dependency injection system. - Returns an array containing item ID and owner username for each retrieved item.

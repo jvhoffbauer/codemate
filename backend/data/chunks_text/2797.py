@@ -1,0 +1,2 @@
+- Tests GET request with query parameter using Flask's `client` object to simulate a real HTTP request
+- Asserts that status code is 200 and checks response body for expected parameters

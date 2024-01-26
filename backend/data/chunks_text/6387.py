@@ -1,0 +1,1 @@
+- Creates a new class with an `__init__()` method that initializes two attributes: `__doc__` and `func`. - The value of `__doc__` is obtained from the function passed as argument using the built-in `getattr()` function. - The value of `func` is also assigned to this attribute for later use within the class methods.

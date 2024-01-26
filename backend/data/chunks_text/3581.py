@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/path_examples/{item_id}` using FastAPI's decorator syntax
+- Uses Pydantic's `Path` class to define a required positional parameter named `item_id`, with example values provided in both JSON Schema and OpenAPI formats
+- Provides additional context for each example value through annotations within the `openapi_examples` dictionary, including summary and description strings as well as corresponding values for each example

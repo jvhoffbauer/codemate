@@ -1,0 +1,5 @@
+- Defines a fixture named `color_attribute` with session scope for use in pytests
+- Creates an instance of AsyncDAL and adds a new product attribute called "Color" to it using its add method
+- Sets various properties such as slug, name, type, input_type, filterability, and availability
+- Adds two values ("Red" and "Blue") to the newly created attribute using the add method again
+- Commits changes made to the database using commit method

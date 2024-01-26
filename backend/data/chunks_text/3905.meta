@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_query_params_str_validations_no_query(client: TestClient):\n    response = client.get(\"/items/\")\n    assert response.status_code == 200\n    assert response.json() == {\"items\": [{\"item_id\": \"Foo\"}, {\"item_id\": \"Bar\"}]}"}

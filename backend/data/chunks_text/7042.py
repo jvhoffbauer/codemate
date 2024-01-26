@@ -1,0 +1,2 @@
+- Initializes a database session (db) and defines a function called `init_db`.
+- Checks whether a superuser exists in the database using CRUD operations. If not, creates one with the provided credentials and adds it to the session for committing changes. Refreshes the object after commit to ensure its updated state is returned by subsequent queries.

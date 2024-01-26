@@ -1,0 +1,1 @@
+{"original_code": "    async def start_producer(self):\n        await self.producer.start()"}

@@ -1,0 +1,1 @@
+{"original_code": "@strawberry.type\nclass Query:\n    @strawberry.field\n    def user(self) -> User:\n        return User(name=\"Patrick\", age=100)"}

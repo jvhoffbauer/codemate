@@ -1,0 +1,1 @@
+{"original_code": "async def main():\n    return \"Hello World\""}

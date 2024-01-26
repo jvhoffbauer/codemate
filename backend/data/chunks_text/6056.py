@@ -1,0 +1,3 @@
+- Defines a `User` model with two fields for storing user's roles (`role` and `roles`) using FastAPI's Pydantic ORM extension `PydanticSettings`.
+- Uses `amis_parser` to parse the models into Amis UI components.
+- Tests that the parsed forms correctly represent the `role` field as an input sub-form and the `roles` field as an array of input sub-forms.

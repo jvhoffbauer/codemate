@@ -1,0 +1,1 @@
+- Tests if the number of Staff objects retrieved from the database using `AsyncDal` is equal to a predefined value (in this case, 1). - Uses Pytest and asyncio for asynchronous testing. - Imports necessary modules such as `pytest`, `asyncio`, `aiohttp`, and `sqlmodel`.

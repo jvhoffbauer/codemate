@@ -1,0 +1,7 @@
+- Defines a base model `PersonBase`, which has fields for `name` and `lastname`.
+- Creates derived models `Person` and `PersonCreate` from `PersonBase`.
+- Adds an attribute `full_name` to `Person` using a property.
+- Sets up configuration options (`ConfigDict`) for both `Person` and `PersonRead`.
+- Registers a route with `FastAPI` that accepts a request body of type `PersonCreate` and returns a response body of type `PersonRead`.
+- Uses `TestClient` to make a POST request to the registered route with some sample input data.
+- Asserts that the expected status code is returned by the server, as well as checks that certain values in the response are correct.

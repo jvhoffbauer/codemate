@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/users/\", response_model=schemas.User)\ndef create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):\n    db_user = crud.get_user_by_email(db, email=user.email)\n    if db_user:\n        raise HTTPException(status_code=400, detail=\"Email already registered\")\n    return crud.create_user(db=db, user=user)"}

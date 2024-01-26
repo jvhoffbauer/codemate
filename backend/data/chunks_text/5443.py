@@ -1,0 +1,3 @@
+- This function returns a list of assets that overlap a specific location given its longitude and latitude coordinates using the `rasterio` library's `assets_for_point()` method.
+- It takes several dependencies including the path to the dataset, the user's input for longitude and latitude, parameters for the backend and reader functions, and an environment dictionary.
+- The function uses the `with` statement to create a context manager for the `rasterio` environment and the dataset reader, passing in the necessary arguments from the dependencies.

@@ -1,0 +1,3 @@
+- Defines a function called `AnnotatedSelect` that returns an instance of `Annotated`, which is a type hinting and validation decorator in FastAPI.
+- The returned value is a combination of two arguments - `Select` (a SQLAlchemy query object) and `Depends` (a FastAPI dependency resolver). This allows for automatic dependency injection when using this function as part of a route handler or other FastAPI endpoint.
+- The specific dependency being injected here is `self._select_maker`, which presumably is some sort of factory method for creating `Select` objects with appropriate filters or conditions based on request parameters or other contextual information.

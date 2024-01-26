@@ -1,0 +1,1 @@
+- This test uses `TestClient` from Pytest to simulate a request with PUT method and updates the value of 'name' field in JSON data for an item with ID 'foo'. - The expected status code is 200 (OK) and the updated name should be returned as part of the response body. - If the actual result doesn't match the expectations, an AssertionError will be raised by pytest framework.

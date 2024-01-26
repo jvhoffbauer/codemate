@@ -1,0 +1,4 @@
+- Generates a JWT (JSON Web Token) for resetting passwords using Flask-JWT-Extended library and its `jwt.encode()` function.
+- Sets an expiration time of `config.EMAIL_RESET_TOKEN_EXPIRE_HOURS` hours from current UTC time using Python's built-in `timedelta()`.
+- Includes necessary claims in the token such as expiration timestamp ('exp'), not before timestamp ('nbf'), subject ('sub') with value 'password_reset_jwt_subject', and user's username ('username').
+- Uses HMAC SHA256 encryption algorithm ('algorithm="HS256"') to securely encode the token using the application's secret key ('config.SECRET_KEY').

@@ -1,0 +1,2 @@
+- Tests GET request to `/items` endpoint
+- Verifies HTTP status code is 200 and compares actual JSON response with expected one

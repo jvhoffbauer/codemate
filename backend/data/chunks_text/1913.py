@@ -1,0 +1,3 @@
+- Generates HTML for the ReDoc documentation interface using the `get_redoc_html()` function from FastAPI's built-in `fastapi.responses` module.
+- Customizes the generated HTML by passing in a few arguments to `get_redoc_html()`, including the URL of the OpenAPI specification (retrieved via `app.openapi_url`) and a customized title that includes the application name ("ReDoc" is appended).
+- Loads the necessary JavaScript files for ReDoc from an external CDN (`redoc_js_url`).

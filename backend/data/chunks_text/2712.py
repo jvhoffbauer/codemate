@@ -1,0 +1,3 @@
+- Defines a function called `response_model_filtering_model_annotation_submodel_return_submodel`.
+- The function returns an instance of `DBUser`, which is a subclass of `BaseModel` and has attributes for name, surname, and password hash.
+- This specific implementation demonstrates how to use model annotations (such as `@field`) in FastAPI's OpenAPI schema generation by returning a custom object with those annotations instead of using built-in types like strings or integers.

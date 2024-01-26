@@ -1,0 +1,3 @@
+- Defines a function named `no_response_model_annotation_return_submodel_with_extra_data` that returns an instance of `DBUser`, which is a subclass of `BaseModel`.
+- The function takes no arguments and uses Python's type hinting to specify that it will return a `User` object, which is an alias for `DBUser`.
+- The returned value is created using the constructor of `DBUser`, passing in some initial data as keyword arguments (`name`, `surname`, and `password_hash`) without specifying any return type or annotation for this specific call. However, since we already defined the return type at the function level, Pydantic automatically infers the correct type based on our previous definition.

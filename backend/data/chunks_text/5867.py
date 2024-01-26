@@ -1,0 +1,3 @@
+- Defines a cached property called `registered_admin_actions`, which returns a dictionary of AdminActions (another class).
+- First retrieves the `registered_admin_actions` from its parent class using `super().registered_admin_actions`.
+- Filters out certain keys ("create", "update",...) that should be excluded to get the final dictionary with remaining AdminActions.

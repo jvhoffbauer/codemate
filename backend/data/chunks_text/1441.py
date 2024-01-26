@@ -1,0 +1,1 @@
+- Tests if a GET request to /items with an invalid token (hailhydra) in the X-Token header returns a HTTP status code of 400 and an error message detailing Invalid X-Token header in the JSON body.

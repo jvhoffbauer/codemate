@@ -1,0 +1,3 @@
+- Defines a dataclass `AssetsBidxExprParamsOptional` that inherits from `AssetsBidxExprParams`.
+- Removes the requirements on asset indexes, expressions, and asset bands by making them optional fields.
+- In the constructor, converts any string input for asset indexes into a dictionary of lists where each key is an identifier (e.g., "AAPL"), and each value is a sequence of integer indices representing the assets to include. This allows for more flexible specification of asset subsets without requiring strict formatting rules.

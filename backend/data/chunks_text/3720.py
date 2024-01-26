@@ -1,0 +1,3 @@
+- Creates a new user with email and password using POST request to /users endpoint
+- Verifies that status code is 200 (OK), extracts JSON response, checks if email matches input, and asserts existence of 'id' field
+- Makes another POST request with same user details, verifies that status code is now 400 (Bad Request), and checks error message

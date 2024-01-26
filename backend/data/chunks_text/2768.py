@@ -1,0 +1,2 @@
+- Defines a GET request for the root URL (/) using FastAPI's decorator syntax (@app.get)
+- Returns an HTTP response with content "Foo" as a string when the endpoint is accessed

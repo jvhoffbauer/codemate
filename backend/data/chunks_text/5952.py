@@ -1,0 +1,3 @@
+- Defines a fixture named `site` that returns an instance of `AdminSite`.
+- Sets the value of `site_path` to an empty string in the `Settings` object passed as an argument, which disables Django's default admin URL prefix.
+- Passes the `async_db.engine` connection to the `AdminSite` constructor instead of using Django's default synchronous database backend. This allows for asynchronous testing with SQLAlchemy.

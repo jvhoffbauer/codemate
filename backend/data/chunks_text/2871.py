@@ -1,0 +1,1 @@
+- Tests whether `Body()` with a None value returns the correct string representation using the `repr()` function. - Verifies that the returned string is in the format of 'Body(None)' when passing None as an argument to the constructor.

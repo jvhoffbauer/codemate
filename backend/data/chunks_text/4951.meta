@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, detail, status_code=None, biz_code=None, errors=None):\n        self.status_code = status_code or self.status_code\n        self.code = self.status_code or self.code\n        self.biz_code = biz_code or self.biz_code\n        self.detail = detail or self.detail\n        self.errors = errors or []"}

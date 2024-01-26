@@ -1,0 +1,6 @@
+- Defines a function `ep` that takes an endpoint path as input and returns an instance of `jsonrpc.Entrypoint`.
+- Initializes two counter variables with default values (zero).
+- Defines two decorator functions `get_shared_counter` and `get_common_counter`, which increment their respective counters when called using `nonlocal`.
+- Passes these decorators to `Dependencies` and `CommonDependencies` arguments of `Entrypoint` constructor.
+- Registers a method named `probe` on the entrypoint object, taking dependency inputs from both decorators.
+- Returns the created entrypoint object at the end.

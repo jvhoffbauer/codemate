@@ -1,0 +1,2 @@
+- Filters displayed columns based on user permissions (exclude fields without permission) for list views using `get_deny_fields()`.
+- Retrieves the column object from parent class and returns it after checking whether the field's alias/name is excluded by permissions.

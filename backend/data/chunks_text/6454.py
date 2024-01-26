@@ -1,0 +1,1 @@
+- Defines a method `__eq__()` for comparing instances of the class with another instance of type `MethodRoute`. - Returns True if both objects have the same path and function bound to them, False otherwise. - Helps in implementing equality checking between two routes defined using decorators like Flask's `@app.route('/')`.

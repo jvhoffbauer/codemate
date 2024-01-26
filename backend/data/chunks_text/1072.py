@@ -1,0 +1,3 @@
+- Retrieves a list of issues from GitHub using GraphQL queries and returns them as edges (a pair consisting of a node and its position in a collection).
+- Takes optional `after` parameter to paginate through results.
+- Uses `get_graphql_response()` function to make API request and parse response into Python objects.

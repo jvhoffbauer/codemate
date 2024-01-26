@@ -1,0 +1,3 @@
+- Tests posting invalid JSON body with non-integer key '3' and float value for key 'foo'.
+- Asserts that server returns HTTP status code 422 (Unprocessable Entity).
+- Verifies that server responds with appropriate error message in JSON format according to Pydantic validation errors.

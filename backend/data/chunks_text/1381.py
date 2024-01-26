@@ -1,0 +1,3 @@
+- Endpoint to create a new item using POST request
+- Returns the newly created item as JSON in response body (specified by `response_model`)
+- Includes detailed documentation on expected input parameters and their requirements

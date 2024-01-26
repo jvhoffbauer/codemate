@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/test` using FastAPI's router decorator
+- Accepts a query parameter named 'var', which is annotated as a string (type hint) and required (Query())
+- Returns a dictionary with a key 'foo' containing the value of the 'var' parameter

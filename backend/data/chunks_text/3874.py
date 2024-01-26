@@ -1,0 +1,3 @@
+- This function tests updating an item with a complex JSON body using PUT request in FastAPI.
+- The `test_post_body_valid` function takes a `TestClient` instance as its argument and uses it to send a PUT request to update an existing item (with ID=5) with new values for 'importance', 'item' and 'user'.
+- The expected status code is 200 OK, and the returned JSON data should contain updated fields from the request body, while other optional fields are set to their default values.

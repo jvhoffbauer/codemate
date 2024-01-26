@@ -1,0 +1,1 @@
+{"original_code": "def get_validlist():\n    return [\n        {\"name\": \"foo\", \"date\": datetime(2021, 7, 26)},\n        {\"name\": \"bar\", \"date\": datetime(2021, 7, 26), \"price\": 1.0},\n        {\n            \"name\": \"baz\",\n            \"date\": datetime(2021, 7, 26),\n            \"price\": 2.0,\n            \"owner_ids\": [1, 2, 3],\n        },\n    ]"}

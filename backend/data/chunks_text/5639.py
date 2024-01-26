@@ -1,0 +1,3 @@
+- Creates a new model based on the schema model using `create_model_by_model()`.
+- Prefixes the name of the new model with the given prefix (`self.schema_name_prefix`) and appends "_Create".
+- Excludes the primary key field from being included in the new model by passing it as an argument to the `exclude` parameter.

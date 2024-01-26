@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/teleport\")\nasync def get_teleport() -> RedirectResponse:\n    return RedirectResponse(url=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\")"}

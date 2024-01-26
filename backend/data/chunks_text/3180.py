@@ -1,0 +1,3 @@
+- Tests the `jsonable_encoder()` function from Pydantic's encoder module to convert a given object into JSON serializable format.
+- Demonstrates how to control which attributes are included or excluded in the output using the `include` and `exclude` parameters respectively.
+- Shows that an empty value for either parameter results in no attributes being included/excluded by default (i.e., all attributes are included).

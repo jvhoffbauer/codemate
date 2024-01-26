@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/second\")\n    def _bands_expr(params=Depends(dependencies.BandsExprParams)):\n        \"\"\"return params.\"\"\"\n        return params"}

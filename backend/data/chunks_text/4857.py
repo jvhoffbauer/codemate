@@ -1,0 +1,6 @@
+- Creates a new user without requiring authentication (logged in).
+- Checks if open registration is allowed by the configuration. If not, raises an error.
+- Retrieves existing users from the default database using their username. Raises an error if such a user already exists.
+- Creates a `UserCreate` object containing the provided data.
+- Upserts the new user into the database, which creates it if it doesn't exist yet or updates it otherwise. The persistence level of 1 ensures that changes are immediately written to disk.
+- Sends a welcome email to the newly created user's email address if emails are enabled and an email was provided during sign up.

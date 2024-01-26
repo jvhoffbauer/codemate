@@ -1,0 +1,4 @@
+- Imports `tutorial002` module from `docs_src/tutorial` directory and assigns it to a variable named `mod`.
+- Sets SQLAlchemy's connection URL (`sqlite_url`) for the `mod` object, creates an engine using that URL, and saves it in another attribute of `mod`.
+- Calls the `create_db_and_tables()` function defined inside `tutorial002`, which is expected to create both database and tables if they don't exist already.
+- Creates an instance of `Inspector` class provided by SQLAlchemy to check whether the table created during previous step exists or not. If yes, then passes.

@@ -1,0 +1,2 @@
+- Defines a method called `content_text()` for the current class (presumably a subclass of some other class)
+- If an instance variable named `content` exists and is not null, returns its `content` attribute; otherwise, returns none

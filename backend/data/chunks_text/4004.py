@@ -1,0 +1,3 @@
+- Tests creating an item with invalid YAML data in the 'tags' field (contains a nested dictionary).
+- Sends a POST request to '/items/' with the provided YAML data as the request body.
+- Asserts that the server returns a HTTP status code of 422 and includes an error message containing details about the validation errors.

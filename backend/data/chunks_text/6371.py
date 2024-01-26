@@ -1,0 +1,3 @@
+- Initializes a new instance of the class with a specified `name`.
+- Sets the value of the `name` attribute for this object to the given argument.
+- Creates a constructor method that takes in a single parameter (`name`) and assigns it to an internal variable (also called `name`) within the current object's context.

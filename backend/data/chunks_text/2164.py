@@ -1,0 +1,2 @@
+- Defines a GET request for query parameter with data type of integer (`int`) using FastAPI's decorator `@app.get()`.
+- Assigns the value of the query parameter to the variable `query`, which is then used in the function body to construct and return a string response that includes the query value.

@@ -1,0 +1,4 @@
+- Defines a FastAPI endpoint `/celery` with name `test_celery`.
+- Accepts an argument of type `schemas.Msg`, and optionally accepts the currently authenticated superuser from the dependency injection system (`Depends()`) using the `models.User` model.
+- Sends a task to the Celery app's queue named `"app.worker.test_celery"` with arguments `[msg.msg]`, where `msg` is the input message passed as an argument to this function.
+- Returns a simple response dictionary containing a key-value pair for testing purposes.

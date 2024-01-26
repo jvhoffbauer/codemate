@@ -1,0 +1,3 @@
+- Retrieves a list of users using GET request to `http://localhost:8000/api/v1/users/` with superuser authentication token as header
+- Creates two new users and saves them to the database using `crud.user.upsert()` function from pydantic-sqlalchemy library
+- Asserts that the retrieved list contains more than one user and checks if each user's 'username' and 'admin_roles' fields are present in the response JSON

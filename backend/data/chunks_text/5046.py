@@ -1,0 +1,1 @@
+- Defines a custom exception handler for HTTPExceptions using FastAPI's `@bp.exception_handler()` decorator. - Takes in the request object and the raised HTTPException as arguments. - Returns an ORJSONResponse with the error detail and status code from the exception.

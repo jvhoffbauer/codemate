@@ -1,0 +1,1 @@
+- Tests whether `__repr__()` method of Header class returns a string representation that includes its argument when called with 'teststr' as an input. - Asserts that the returned string is equal to 'Header(teststr)' for better readability and debugging purposes.

@@ -1,0 +1,3 @@
+- Defines an overloaded function `get_db()`.
+- Accepts optional arguments for database alias and async flag.
+- Returns a connection object of type `AsyncDatabase`.

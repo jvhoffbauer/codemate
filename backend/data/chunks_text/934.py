@@ -1,0 +1,1 @@
+- Defines a `__str__()` method for the class that returns a string representation of its error messages. - The method takes no arguments and returns a formatted string containing the number of errors, followed by each error on a new line. - Uses an f-string to format the output with placeholders for the length of the errors list and individual error strings.

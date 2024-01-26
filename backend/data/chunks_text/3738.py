@@ -1,0 +1,9 @@
+- Creates a temporary directory using `pytest.TempPathFactory`.
+- Changes working directory to the newly created temp dir.
+- Defines a path for the SQLite database file (`test.db`) in the current directory.
+- Checks if the database already exists and deletes it before proceeding.
+- Imports the `test_sql_app` module, which contains tests related to SQL databases.
+- Reloads the imported module to ensure that any necessary setup is executed again during testing.
+- Runs one specific test function (`test_create_user()`) within the imported module.
+- Deletes the database file at the end of the test.
+- Restores the original working directory.

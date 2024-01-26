@@ -1,0 +1,5 @@
+- Defines a function `inner` that creates an empty set called `errors`.
+- Saves the original `capture_event` method of the `Hub` class from the `sentry_sdk` module to a variable named `old_capture_event`.
+- Creates a new function `capture_event` that takes two arguments (`self`, `event`) and an optional argument `hint`. If `hint` is present and contains a key 'exc_info', it extracts the exception object from the tuple stored at index 1 and adds it to the `errors` set. The modified `capture_event` function then calls the saved `old_capture_event` with the same arguments and keyword arguments.
+- Uses the `monkeypatch` library to replace the `capture_event` attribute of the `Hub` class with our custom implementation.
+- Returns the `errors` set containing all exceptions captured during execution.

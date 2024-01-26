@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\ndef client(site: AdminSite) -> TestClient:\n    with TestClient(app=site.fastapi, base_url=\"http://testserver\") as c:\n        yield c"}

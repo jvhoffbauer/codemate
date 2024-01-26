@@ -1,0 +1,2 @@
+- Defines an asynchronous function `info()` that takes a dependency on `Settings`, obtained using `Depends(get_settings)`.
+- Returns a dictionary containing three key-value pairs representing app name, admin email, and items per user, all retrieved from the `Settings` object passed in through the dependency injection mechanism.

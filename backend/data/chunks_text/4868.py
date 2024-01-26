@@ -1,0 +1,4 @@
+- Endpoint for resetting a user's password using a provided token and new password
+- Verifies the validity of the password reset token using `verify_password_reset_token` function
+- Retrieves the user associated with the token from the database using `crud.user.get`
+- Checks if the user exists and is active before updating their password using `UserUpdate` object and `crud.user.update` method

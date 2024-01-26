@@ -1,0 +1,1 @@
+{"original_code": "def index(request):\n    now = datetime.datetime.now()\n    html = \"<html><body>It is now %s.</body></html>\" % now\n    return HttpResponse(html)"}

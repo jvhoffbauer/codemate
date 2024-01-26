@@ -1,0 +1,1 @@
+{"original_code": "@callback_router.get(\n    \"{$callback_url}/callback/\", responses={400: {\"model\": CustomModel}}\n)\ndef callback_route():\n    pass  # pragma: no cover"}

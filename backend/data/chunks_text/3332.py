@@ -1,0 +1,3 @@
+- Defines a GET request for a path with a hidden parameter called `hidden_path`.
+- Uses FastAPI's `Path` decorator to parse and validate the `hidden_path` argument, but sets its `include_in_schema` flag to False to exclude it from API documentation and requests.
+- Returns an HTTP response containing the value of the `hidden_path` parameter as part of a dictionary.

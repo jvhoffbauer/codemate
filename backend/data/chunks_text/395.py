@@ -1,0 +1,3 @@
+- Defines a function `pg_dump` that takes SQL as input and returns None (no return statement provided)
+- Uses the `compile` method of the PostgreSQL engine to compile the given SQL into a string representation for the specified dialect
+- Prints the compiled SQL with semicolon at the end using Python's built-in `print` function

@@ -1,0 +1,4 @@
+- Generates an OpenAPI specification for a FastAPI application using `client.get("/openapi.json")`.
+- Asserts that the status code is 200 and checks the JSON content of the response against expected values.
+- Defines routes with query parameters, including extra ones beyond standard parameter conventions in FastAPI.
+- Includes responses with error handling (validation errors) defined as schemas within components.

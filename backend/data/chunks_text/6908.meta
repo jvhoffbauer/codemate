@@ -1,0 +1,1 @@
+{"original_code": "    def _pre_process(self, payload: HousePredictionPayload) -> List:\n        logger.debug(\"Pre-processing payload.\")\n        result = np.asarray(payload_to_list(payload)).reshape(1, -1)\n        return result"}

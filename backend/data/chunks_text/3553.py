@@ -1,0 +1,1 @@
+- Defines a function named `foo()` that returns a dictionary with a single key-value pair containing the string 'Hello World' as its value and'message' as its key.

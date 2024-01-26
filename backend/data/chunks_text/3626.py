@@ -1,0 +1,2 @@
+- Defines a function called `sub_router_shutdown` that takes no arguments and returns nothing (i.e., is a void function)
+- Sets the value of the variable `state.sub_router_shutdown` to `True` when this function is called

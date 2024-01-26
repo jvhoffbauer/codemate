@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/coerce\", response_model=Item)\ndef get_coerce():\n    return {\"name\": \"coerce\", \"price\": \"1.0\"}"}

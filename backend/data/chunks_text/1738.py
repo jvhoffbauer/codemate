@@ -1,0 +1,3 @@
+- Defines a function `say_hello` that takes an argument named `name`, which must be a string (type hint).
+- The type hint also includes a docstring-like comment ("metadata") explaining its purpose in the context of this function.
+- Returns a formatted string with the greeting message and the provided name.

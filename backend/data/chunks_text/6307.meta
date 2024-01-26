@@ -1,0 +1,1 @@
+{"original_code": "def test_fetch_populations(body_arg, json_arg):\n    responses.add(\n        responses.GET, app.utils.populations.GEONAMES_URL, body=body_arg, json=json_arg\n    )\n\n    assert app.utils.populations.fetch_populations()"}

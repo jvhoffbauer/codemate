@@ -1,0 +1,9 @@
+- This test case uses `pytest-mock` to mock out the builtin print function and capture its output using a custom testing print function provided by `pytest`.
+- The `clear_sqlmodel` fixture is used to clear any existing SQLAlchemy metadata before running each test case.
+- The `test_tutorial` function imports the `tutorial004` module from the `docs_src.tutorial` package, which contains an example of how to use SQLAlchemy's filtering capabilities.
+- The `create_engine` function from SQLAlchemy is called to create a connection to a SQLite database specified by the `sqlite_url` variable.
+- A list named `calls` is initialized to store captured printing statements.
+- The `get_testing_print_function` function from `pytest` is used to replace the builtin `print` function with a custom one that captures its output.
+- The modified `print` function is passed into a context manager created by `patch`, which replaces the original `print` function during the execution of the test case.
+- Inside the context managed by `patch`, the `main` method of the imported `tutorial004` module is executed.
+- After executing the test case, the `expected_calls` list is compared against the `calls` list to ensure they match exactly. If there are discrepancies, an error message is raised indicating what did not match.

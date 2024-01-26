@@ -1,0 +1,2 @@
+- Tests authentication using Prediction API without providing an API key header in request
+- Verifies that a HTTP status code of 400 is returned and error message "detail": "No API Key" is included in JSON response body

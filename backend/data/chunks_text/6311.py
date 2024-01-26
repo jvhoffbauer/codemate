@@ -1,0 +1,4 @@
+- Initializes configuration from `config.config_ini_section`.
+- Sets SQLAlchemy URL based on retrieved database URI using `get_database_uri()`.
+- Creates an AsyncEngine object with NullPool class for connection management.
+- Establishes a connection with the context using `connectable.connect()`, which is then used to execute migration tasks synchronously via `connection.run_sync()`.

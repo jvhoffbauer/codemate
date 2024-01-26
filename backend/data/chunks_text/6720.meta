@@ -1,0 +1,1 @@
+{"original_code": "    def probe2() -> str:\n        raise RuntimeError"}

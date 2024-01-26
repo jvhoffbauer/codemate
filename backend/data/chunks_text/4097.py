@@ -1,0 +1,4 @@
+- Tests simultaneous connections to two different websockets using `asyncio.get_event_loop().run_until_complete()`.
+- Sends a message through one of the connections and receives it back, verifying its contents.
+- Receives a message sent by the other connected client, which is forwarded to both clients when they are still active.
+- Closes one of the connections and checks that the remaining client receives a notification about the disconnected client.

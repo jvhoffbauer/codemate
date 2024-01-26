@@ -1,0 +1,3 @@
+- This function `statistics()` retrieves dataset statistics using RasterIO's `statistics()` method.
+- It takes several dependencies (arguments passed to it by other functions) that provide various parameters for reading and processing the input data.
+- The resulting statistics are returned as a dictionary containing values such as mean, standard deviation, minimum, maximum, etc., depending on the specified options.

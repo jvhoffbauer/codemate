@@ -1,0 +1,3 @@
+- This function tests the `/items/foo` endpoint with query parameters `skip="a"` and `limit="b"`, which are both invalid according to Pydantic's validation rules (i.e., `skip` is missing, and both `skip` and `limit` cannot be parsed as integers).
+- The function uses Pytest's built-in `TestClient` fixture from Starlette to make HTTP requests against the application under test.
+- If the request fails due to validation errors, the function checks that the server returns a 422 Unprocessable Entity status code and a JSON error message containing detailed information about each validation failure, including the field name, location in the URL or body, type of error, input value if available, and suggested URL for further reading on the specific error type.

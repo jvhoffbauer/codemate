@@ -1,0 +1,1 @@
+- Tests the `TilerFactory` with a custom path dependency (`CustomPathParams`) for file and output resolution parameters. - Uses FastAPI to create an API endpoint that returns a preview image based on user input. - Verifies correct behavior when valid and invalid inputs are provided for both file and rescale parameters.

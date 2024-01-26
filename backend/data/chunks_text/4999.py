@@ -1,0 +1,3 @@
+- This method is a class decorator that adds a new instance method to a Django model called `get_or_404`.
+- The `get_or_404` method retrieves an object of the current model (specified by `self`) using the `get_object_or_404()` function from Django's generic views module.
+- It filters the objects based on the keyword arguments passed to the decorated method and returns the filtered object as the result of the decorated method call. If no matching object is found, it raises a HTTP 404 error instead.

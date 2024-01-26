@@ -1,0 +1,2 @@
+- Tests if email already exists in database during registration using a mock function to simulate `service.get_user_by_email`.
+- Returns HTTP 400 Bad Request with error message Email Taken when email is taken.

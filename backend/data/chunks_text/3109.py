@@ -1,0 +1,1 @@
+- Defines a Pydantic model for the `data` parameter using the `Header` class from FastAPI's built-in `typing` module. - Sets the default value of the `data` parameter to `None`. - Provides two example values for the `data` parameter in the `examples` list.

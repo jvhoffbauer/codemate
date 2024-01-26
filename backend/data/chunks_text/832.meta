@@ -1,0 +1,1 @@
+{"original_code": "@pytest_asyncio.fixture\nasync def client() -> AsyncGenerator[TestClient, None]:\n    host, port = \"127.0.0.1\", \"9000\"\n    scope = {\"client\": (host, port)}\n\n    async with TestClient(app, scope=scope) as client:\n        yield client"}

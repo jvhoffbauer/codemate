@@ -1,0 +1,1 @@
+{"original_code": "@router2_override.get(\"/default3\")\nasync def path3_default_router2_override(level3: str):\n    return level3"}

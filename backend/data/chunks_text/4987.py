@@ -1,0 +1,2 @@
+- Defines a method called `__str__()` for the current class (presumably a subclass of Python's built-in object)
+- The method returns an string representation of the object, using formatted strings to include its unique identifier and name

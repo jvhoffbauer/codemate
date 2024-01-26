@@ -1,0 +1,2 @@
+- This test checks if an invalid price (-3.0) for an item causes a 422 Unprocessable Entity error with a specific JSON response containing a validation error message from Pydantic's `IsGreaterThan` validator and URL to its documentation (match_pydantic_error_url).
+- The test also handles the deprecated `ValueError` exception that may still occur in older versions of Pydantic by checking whether it appears as part of the JSON response or not.

@@ -1,0 +1,2 @@
+- Defines an asynchronous function `bg` that takes in a dictionary `state`.
+- Sets the background color of the terminal using the `bg` command with options for brightness (`b`) and foreground color (`a`) from variables `state['context_b']` and `state['context_a']`, respectively. The resulting string is stored in `state['bg']`.

@@ -1,0 +1,5 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `fastapi add_oas`.
+- Defines the API's endpoints and their parameters, responses, and error types in the schema.
+- Includes support for query parameters (e.g., `teleport`) with default values and type definitions.
+- Provides detailed descriptions of each endpoint's behavior through summary and operation ID fields.
+- Uses HTTP status codes to indicate success or failure, along with specific error types and messages as needed.

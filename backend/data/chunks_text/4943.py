@@ -1,0 +1,2 @@
+- Defines a function named `task_cpu_bound()` that returns a string value 'good result'
+- The function is CPU bound as it performs simple computation and doesn't involve any I/O operations or network calls, making it suitable for execution on multiple cores simultaneously to improve performance

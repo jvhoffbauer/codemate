@@ -1,0 +1,5 @@
+- Tests synchronous background tasks by making an API request to `/sync_context_b_bg`.
+- Asserts that context B is executed first and sets its value in both the API response and global state dictionary (`state`).
+- Asserts that context A is also executed, but it's value is not yet available in the API response or global state dictionary at this point.
+- Waits for the completion of all tasks using Flask-Sync's `wait_for_completion()` function before checking the final values of all variables.
+- Verifies that the sync background task has been executed successfully and adds its result to the global state dictionary.

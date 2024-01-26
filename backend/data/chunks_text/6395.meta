@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, data=None):\n        if data is None:\n            data = {}\n\n        raw_data = data\n        data = self.validate_data(raw_data)\n\n        Exception.__init__(self, self.CODE, self.MESSAGE)\n\n        self.data = data\n        self.raw_data = raw_data"}

@@ -1,0 +1,1 @@
+{"original_code": "def _regenerate_error_with_loc(\n    *, errors: Sequence[Any], loc_prefix: Tuple[Union[str, int], ...]\n) -> List[Dict[str, Any]]:\n    updated_loc_errors: List[Any] = [\n        {**err, \"loc\": loc_prefix + err.get(\"loc\", ())}\n        for err in _normalize_errors(errors)\n    ]\n\n    return updated_loc_errors"}

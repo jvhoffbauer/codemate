@@ -1,0 +1,1 @@
+{"original_code": "async def common_parameters(\n    q: Union[str, None] = None, skip: int = 0, limit: int = 100\n):\n    return {\"q\": q, \"skip\": skip, \"limit\": limit}"}

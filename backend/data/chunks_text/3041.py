@@ -1,0 +1,3 @@
+- Defines a GET request for the `/override` path using FastAPI's router decorator `@router_a`.
+- Sets the response class to be plain text (string).
+- Returns the string "Hello A".

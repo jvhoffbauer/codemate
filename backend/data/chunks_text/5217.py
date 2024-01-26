@@ -1,0 +1,1 @@
+- Retrieves a list of available tile matrix sets (TMS) from the supported_tms object and returns them as JSON response with appropriate links to access individual TMS details using GET request to /TileMatrixSet/{ID} endpoint. - Follows Open Geospatial Consortium's (OGC) specification for Tile Matrix Sets (http://docs.opengeospatial.org/per/19-069.html#_tilematrixsets).

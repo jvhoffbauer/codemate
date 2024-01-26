@@ -1,0 +1,4 @@
+- Defines a custom `ArticleRead` model for reading articles with relationships to other tables (categories, contents, users, and tags) using SQLAlchemy's ORM.
+- Registers an instance of `ArticleCrud`, which is a wrapper around SQLAlchemy's CRUD operations, as a FastAPI endpoint under the prefix `/article`.
+- Tests that the OpenAPI documentation includes schemas for all required relationship fields.
+- Makes a GET request to retrieve a specific article by ID and verifies that it contains all expected relationship data.

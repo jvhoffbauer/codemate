@@ -1,0 +1,3 @@
+- Creates a new item with a randomly generated title and description using `ItemCreate`.
+- Associates the newly created item with a randomly generated user using `crud.item.create_with_owner`.
+- Asserts that the properties of the newly created item match those passed in during creation.

@@ -1,0 +1,3 @@
+- Tests a feature related to SQLAlchemy's relationship properties in SqlModel (an ORM for Python based on SQLAlchemy).
+- Demonstrates how to define and use a list of related objects using `List` and `Relationship`, as well as their corresponding `RelationshipProperty`.
+- Verifies that accessing the related object through its property works correctly after committing changes to the database.

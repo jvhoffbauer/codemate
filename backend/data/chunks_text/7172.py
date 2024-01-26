@@ -1,0 +1,3 @@
+- Handles validation errors that occur during internal parameter verification
+- Logs error details to the logger with URL, headers, and traceback information
+- Returns a failed response with a business error message set by the exception's `errors()` method

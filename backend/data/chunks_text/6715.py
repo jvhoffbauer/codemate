@@ -1,0 +1,3 @@
+- Defines a fixture `probe` that returns an instance of `Endpoint`, which is used to define two methods called `probe` and `probe2`.
+- Both methods are decorated with `@ep.method()` to register them as endpoints.
+- The first method raises a `ZeroDivisionError`, while the second one raises a `RuntimeError`.

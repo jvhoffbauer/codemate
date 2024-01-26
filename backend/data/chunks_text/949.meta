@@ -1,0 +1,1 @@
+{"original_code": "    def get_annotation_from_field_info(\n        annotation: Any, field_info: FieldInfo, field_name: str\n    ) -> Any:\n        return annotation"}

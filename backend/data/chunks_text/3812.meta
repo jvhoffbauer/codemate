@@ -1,0 +1,1 @@
+{"original_code": "def test_get_portal():\n    response = client.get(\"/teleport\", follow_redirects=False)\n    assert response.status_code == 307, response.text\n    assert response.headers[\"location\"] == \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\""}

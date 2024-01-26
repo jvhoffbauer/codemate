@@ -1,0 +1,3 @@
+- Defines an asynchronous function `update_item` that takes three arguments: `item_id`, `item`, and `user`.
+- Creates a dictionary called `results` with keys 'item_id', 'item', and 'user' containing their respective values passed to the function.
+- Returns the `results` dictionary.

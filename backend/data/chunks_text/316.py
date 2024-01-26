@@ -1,0 +1,3 @@
+- Retrieves a list of three Hero objects from the database, starting from the fourth row (using `offset`) and returning only those rows (using `limit`)
+- Uses SQLAlchemy's `Session` context manager to automatically manage transactions and connections
+- Prints the resulting list of Hero objects to the console

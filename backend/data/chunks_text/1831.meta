@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self):\n        self.active_connections: list[WebSocket] = []"}

@@ -1,0 +1,1 @@
+{"original_code": "    def get_config_value(\n        *, model: InstanceOrType[\"SQLModel\"], parameter: str, default: Any = None\n    ) -> Any:\n        return model.model_config.get(parameter, default)"}

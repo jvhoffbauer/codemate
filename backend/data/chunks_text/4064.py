@@ -1,0 +1,1 @@
+- This function is a unit test for the `GET /unicorns/{id}` endpoint. - It retrieves a specific unicorn with ID'shinny' using Flask's built-in testing client (client). - The status code of the response should be 200 OK and its body should contain a JSON object with the key 'unicorn_name' equal to'shinny'.

@@ -1,0 +1,1 @@
+- Tests getting an access token by making a POST request to `/api/v1/login/access-token` with username and password as parameters. - Asserts that the response status is 200 OK and that the JSON response contains an 'access_token' key. - Verifies that the value of the 'access_token' key is not empty or null.

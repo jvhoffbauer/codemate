@@ -1,0 +1,1 @@
+- Defines a method called `handle` that takes in a `Request`, `SchemaUpdateT`, and optional keyword arguments (`**kwargs`) as parameters. - The return type of this function is an instance of `BaseApiOut`. - This method raises a `NotImplementedError`, indicating that it needs to be implemented by subclasses.

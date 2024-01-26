@@ -1,0 +1,1 @@
+{"original_code": "@dataclass\nclass ImageRenderingParams(DefaultDependency):\n    \"\"\"Image Rendering options.\"\"\"\n\n    add_mask: bool = Query(\n        True, alias=\"return_mask\", description=\"Add mask to the output data.\"\n    )"}

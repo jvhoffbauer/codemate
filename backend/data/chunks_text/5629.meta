@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, schema_model: Type[SchemaModelT], router: APIRouter = None):\n        self.paginator = Paginator()\n        self.schema_model = schema_model or self.schema_model\n        assert self.schema_model, \"schema_model is None\"\n        self.router = router\n        RouterMixin.__init__(self)"}

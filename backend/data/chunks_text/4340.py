@@ -1,0 +1,3 @@
+- Imports `TestClient` and `app` from a specific file in the `docs_src.body_updates.tutorial001_py39` module
+- Creates an instance of `TestClient` with `app` as its argument, which is used to test Flask applications
+- Returns the created `client` object for use elsewhere in the program

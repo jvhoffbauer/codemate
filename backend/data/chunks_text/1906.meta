@@ -1,0 +1,1 @@
+{"original_code": "async def update_item(item_id: str, item: Item):\n    update_item_encoded = jsonable_encoder(item)\n    items[item_id] = update_item_encoded\n    return update_item_encoded"}

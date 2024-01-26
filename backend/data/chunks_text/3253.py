@@ -1,0 +1,2 @@
+- Tests reading a model by its alias using GET request to "/by-alias/{alias}" endpoint
+- Asserts that status code is 200 and returns expected JSON response for given alias ("model" in this case)

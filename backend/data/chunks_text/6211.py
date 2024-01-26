@@ -1,0 +1,1 @@
+- Retrieves a specific location with ID `id` from the data source (specified by `source`) using FastAPI's built-in dependency injection mechanism to access the `request.state.source`. - Returns the serialized representation of the location object with optional timeline data based on the value of `timelines`, which is passed as an argument to this function.

@@ -1,0 +1,3 @@
+- Defines a view function called `stac_viewer` that takes in a `Request` object as an argument.
+- Returns a template response with the HTML file named'stac_index.html' and passes some variables to it for use within the template.
+- The passed variables include URLs generated using Flask's built-in `url_for()` method for accessing other STAC endpoints such as tile JSON, info, and statistics.

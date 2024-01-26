@@ -1,0 +1,1 @@
+- Tests the `/crop` endpoint with different input parameters and expected output formats (PNG, JPG, NPY). - Uses a mocked version of rasterio's open function to simulate reading from a COG file. - Verifies that metadata is correctly extracted from the returned image or array using the `parse_img()` helper function.

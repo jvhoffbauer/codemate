@@ -1,0 +1,1 @@
+{"original_code": "    def model_fields(model: Type[BaseModel]) -> Dict[str, ModelField]:\n        return model.__fields__"}

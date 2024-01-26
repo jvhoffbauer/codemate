@@ -1,0 +1,3 @@
+- This function is a FastAPI endpoint with version `"/api/v1"` (`@api_v1`) and method `GET`.
+- It takes an argument `account` of type `Account`, which is retrieved using the `Depends` decorator from another function called `get_account`.
+- The function returns an object of type `Balance`, containing the `amount` and `currency` properties of the passed `account`.

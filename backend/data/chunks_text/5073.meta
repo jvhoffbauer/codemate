@@ -1,0 +1,1 @@
+{"original_code": "async def user(session: AsyncSession):\n    adal = AsyncDal(session)\n    ins = adal.add(\n        User,\n        email=\"alphago@gmail.com\",\n        is_active=True,\n        password=\"plain_password\",\n        last_login_at=datetime.datetime.now(),\n        first_name=\"alpha\",\n        last_name=\"go\",\n    )\n    await adal.commit()\n    return ins"}

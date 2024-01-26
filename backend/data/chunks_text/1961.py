@@ -1,0 +1,3 @@
+- Defines a GET request for the URL "/fastapi".
+- Returns a RedirectResponse object with the URL "https://fastapi.tiangolo.com".
+- This can be used to easily redirect users or clients to an external resource, such as a documentation page or support site.

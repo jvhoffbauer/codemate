@@ -1,0 +1,3 @@
+- Sends a GET request to "/enum-status-code" using Flask's built-in `client` object
+- Asserts that the status code of the response is 201 (Created) and displays an error message with the response text if it fails
+- Extracts the JSON body from the response and asserts that its value is "foo bar"

@@ -1,0 +1,1 @@
+{"original_code": "    def filter(cls, *args, **kwargs) -> QuerySet[Model]:\n        return cls.objects.filter(*args, **kwargs)"}

@@ -1,0 +1,3 @@
+- Tests the `get_portal()` function by making a GET request to "/teleport".
+- Asserts that the status code is 307 (Temporary Redirect).
+- Asserts that the location header contains the URL for the YouTube video with the title "Rick Astley - Never Gonna Give You Up".

@@ -1,0 +1,1 @@
+- This function tests the authentication process by obtaining an access token with a specific scope and using it to make a request for user information from the API endpoint `/users/me`. - The `assert` statements verify that the HTTP status code is correct (200 OK) and that the expected JSON data is returned in the response body.

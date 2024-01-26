@@ -1,0 +1,3 @@
+- Endpoint for creating a new file with FastAPI's `@app.post()` decorator
+- Accepts a binary file using FastAPI's `File()` parameter wrapper, which provides metadata such as filename and content type
+- Returns the size of the uploaded file in bytes

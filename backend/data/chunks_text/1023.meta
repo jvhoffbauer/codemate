@@ -1,0 +1,1 @@
+{"original_code": "def generate_operation_summary(*, route: routing.APIRoute, method: str) -> str:\n    if route.summary:\n        return route.summary\n    return route.name.replace(\"_\", \" \").title()"}

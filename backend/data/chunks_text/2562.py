@@ -1,0 +1,6 @@
+- Defines a function `custom_handler()` which takes a `WebSocket` object and an instance of a custom error class (`CustomError`) as arguments.
+- Inside this handler, we close the connection using the `await websocket.close()` method with status code 1002 ("Going Away") and reason "foo".
+- We create a new FastAPI application called `myapp` by passing our custom exception handlers dictionary to the `make_app()` function.
+- We then use PyTest's built-in `TestClient` to simulate a web socket request for the endpoint "/custom_error/" defined within our app.
+- The test raises a `WebSocketDisconnect` exception because the server closed the connection due to the raised `CustomError`.
+- Finally, we check if the disconnection was handled correctly by verifying the status code and reason returned from the exception.

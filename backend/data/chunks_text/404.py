@@ -1,0 +1,3 @@
+- Defines a function `test_json_schema_flat_model_pydantic_v2` to test the JSON schema of a Pydantic model called `FlatModel`.
+- Uses the `model_json_schema()` method provided by Pydantic to generate the JSON schema for `FlatModel`.
+- Asserts that the generated JSON schema matches the expected structure, which includes a title, type (object), required fields (ID and enum field), and definitions for any referenced enums (in this case, `MyEnum1`).

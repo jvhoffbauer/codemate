@@ -1,0 +1,3 @@
+- This function handles a single WebSocket connection and manages it using an instance of `Manager`.
+- It connects the WebSocket to the manager on entry and disconnects from it upon exit (via exception handling).
+- While connected, it receives text messages from the client via `WebSocket.receive_text()`, sends them back as personal messages using `Manager.send_personal_message()`, and broadcasts them to all other clients using `Manager.broadcast()`.

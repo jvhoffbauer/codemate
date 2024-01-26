@@ -1,0 +1,1 @@
+- Tests the endpoint `/no_response_model-annotation-return_dict_with_extra_data`, which returns a dictionary with extra data (in this case, 'name' and'surname') without using Flask-RESTful's ResponseModel annotation. - Asserts that the HTTP status code is 200 OK and checks the response body to ensure it contains the expected keys ('name' and'surname').

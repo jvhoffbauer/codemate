@@ -1,0 +1,1 @@
+- Tests if accessing an invalid resource (unicorn with ID 'yolo') raises a 418 I'm a Teapot HTTP status code and returns an error message in JSON format.

@@ -1,0 +1,3 @@
+- Retrieves user information for the authenticated user with username 'johndoe' using a GET request to '/users/me'.
+- Verifies that the status code is 200 and displays the response text if it fails.
+- Parses the JSON response and asserts that the expected keys and values are present.

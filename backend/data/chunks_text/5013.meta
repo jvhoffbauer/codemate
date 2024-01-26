@@ -1,0 +1,1 @@
+{"original_code": "    def reset(self) -> None:\n        for _name, var in self._vars.items():\n            var.set(None)"}

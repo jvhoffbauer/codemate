@@ -1,0 +1,4 @@
+- Defines a method `__eq__()` for comparing two instances of the class with each other based on their names
+- Checks whether the argument passed to this method is an instance of the `User` class using the `isinstance()` function
+- Returns `False` if the type check fails, indicating that the objects are not equal
+- Compares the names of both objects and returns `True` if they're identical, implying equality between them

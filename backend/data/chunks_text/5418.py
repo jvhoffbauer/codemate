@@ -1,0 +1,3 @@
+- Defines an `read()` method for the REST API's Register/GET endpoint
+- Uses FastAPI's dependency injection to pass arguments to the function
+- Returns the mosaic JSON definition using RasterIO and the defined dependencies

@@ -1,0 +1,1 @@
+- This function tests a POST request to create a new user with provided username and email using Flask's built-in `client` object. - The expected status code is checked against the actual one returned by the server. - If the status code matches, the JSON response body is verified for correctness.

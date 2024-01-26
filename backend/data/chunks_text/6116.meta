@@ -1,0 +1,1 @@
+{"original_code": "    def receive_after_update(mapper, connection, target):\n        \"listen for the 'after_update' event\"\n        assert isinstance(target, models.User)\n        event_counter.after += 1"}

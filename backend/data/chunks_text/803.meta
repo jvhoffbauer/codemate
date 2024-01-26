@@ -1,0 +1,1 @@
+{"original_code": "async def expire_refresh_token(refresh_token_uuid: UUID4) -> None:\n    update_query = (\n        refresh_tokens.update()\n        .values(expires_at=datetime.utcnow() - timedelta(days=1))\n        .where(refresh_tokens.c.uuid == refresh_token_uuid)\n    )\n\n    await execute(update_query)"}

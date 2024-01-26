@@ -1,0 +1,4 @@
+- Defines a view function named `index` that handles HTTP GET requests to the root URL (/) of the application.
+- Retrieves the current date and time using Python's built-in `datetime` module.
+- Constructs an HTML string with the current timestamp embedded in it, using string formatting syntax (%).
+- Returns an `HttpResponse` object containing the generated HTML content.

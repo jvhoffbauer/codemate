@@ -1,0 +1,1 @@
+{"original_code": "    def __eq__(self, other):\n        return isinstance(other, EntrypointRoute) and self.path == other.path"}

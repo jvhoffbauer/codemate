@@ -1,0 +1,3 @@
+- This function is an asynchronous method called `read_items`.
+- It takes two arguments - a `Request` object and a list of `item_ids`.
+- The function returns a list of objects that conform to the `SchemaReadT` type after fetching the corresponding data from the database using the `_read_items` helper function provided by the `Db` class.

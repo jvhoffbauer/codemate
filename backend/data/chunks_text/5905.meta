@@ -1,0 +1,1 @@
+{"original_code": "    def __post_init__(self):\n        super().__post_init__()\n        # \u5982\u679ctd\u4e3aint,\u5219\u8868\u793a\u79d2\u6570\n        self.td = timedelta(seconds=self.td) if isinstance(self.td, int) else self.td"}

@@ -1,0 +1,3 @@
+- Tests retrieving an item that doesn't exist by making a GET request to /items/bar and checking for HTTP status code 404
+- Asserts that no custom error header (x-error) was set in the response headers
+- Verifies that the JSON body of the response contains the expected detail message ("Item not found")

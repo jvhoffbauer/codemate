@@ -1,0 +1,1 @@
+{"original_code": "def test_file_not_found_error(app):\n    \"\"\"raise 404 when file is not found.\"\"\"\n    response = app.get(\"/cog/info?url=foo.tif\")\n    assert response.status_code == 500"}

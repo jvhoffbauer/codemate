@@ -1,0 +1,1 @@
+{"original_code": "def init():\n    try:\n        init_db()\n    except Exception as e:\n        logger.error(e)\n        raise e"}

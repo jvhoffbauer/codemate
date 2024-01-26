@@ -1,0 +1,1 @@
+{"original_code": "async def get_current_user(token: str = Depends(oauth2_scheme)):\n    user = fake_decode_token(token)\n    if not user:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Invalid authentication credentials\",\n            headers={\"WWW-Authenticate\": \"Bearer\"},\n        )\n    return user"}

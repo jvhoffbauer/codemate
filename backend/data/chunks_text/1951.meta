@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\", response_class=HTMLResponse)\nasync def read_items():\n    return generate_html_response()"}

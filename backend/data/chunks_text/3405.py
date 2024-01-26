@@ -1,0 +1,2 @@
+- Tests if passing a path parameter of '0' to '/path/param-lt-gt/{item_id}' results in a HTTP status code of 422 (Unprocessable Entity) and an error message indicating that input should be greater than 1, with URL pointing to pydantic documentation for greater_than validator.
+- Alternatively, tests for compatibility with older versions of Pydantic by checking for presence of alternative error format containing msg "ensure this value is greater than 1" and type "value_error.number.not_gt". This check will eventually be removed once support for these old formats is dropped.

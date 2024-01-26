@@ -1,0 +1,3 @@
+- Defines a function `db` that returns a generator object
+- Uses a context manager (with statement) to create and manage a database connection using SQLAlchemy's `Session` class
+- Yields the created `Session` instance, allowing it to be used in other parts of the program through iteration or assignment

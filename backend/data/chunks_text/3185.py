@@ -1,0 +1,3 @@
+- Defines a custom encoder for a `DateTime` field using Pydantic's `@field_serializer` decorator
+- Creates two models that inherit from this base model with and without additional fields
+- Tests encoding both models to JSON using FastAPI's built-in `jsonable_encoder` function, which uses our custom encoder for the `DateTime` field

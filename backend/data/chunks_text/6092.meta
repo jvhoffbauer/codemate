@@ -1,0 +1,1 @@
+{"original_code": "def client(app: FastAPI, prepare_database: Any) -> Generator[TestClient, None, None]:\n    with TestClient(app=app, base_url=\"http://testserver\") as c:\n        yield c"}

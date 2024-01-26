@@ -1,0 +1,4 @@
+- Defines a subclass of `django_celery_beat.models.SelectPerm`, which is used to restrict access to specific data based on selection criteria.
+- Sets two attributes for specifying the name of the user ID column and the attribute that represents the user's unique identifier in other models.
+- Overrides the `_call()` method to retrieve the current user from Django's authentication system (`Django.contrib.auth`) and filter the selected objects based on their matching user ID.
+- Returns an updated `Select` object with the filtered queryset.

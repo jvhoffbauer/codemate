@@ -1,0 +1,3 @@
+- Retrieves user information from a request context variable named `legacy_request_state_context_var`.
+- Checks if the context variable is not empty (i.e., there's an active request).
+- Returns the "user" attribute of the request object stored in the context variable.

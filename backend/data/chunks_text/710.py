@@ -1,0 +1,4 @@
+- Tests if Starlette's middleware preserves headers already present in a response object without modifying or overwriting them.
+- Sets two cookies named 'access_token_cookie' and'refresh_token_cookie' in the response object using `Response.set_cookie()`.
+- Makes an HTTP GET request to the endpoint defined by `@app.get("/multiple_headers_same_name")`, which returns the previously created response object.
+- Asserts that both cookies are included in the `Set-Cookie:` header returned by the server.

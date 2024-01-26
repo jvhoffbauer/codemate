@@ -1,0 +1,3 @@
+- This function is a callback that gets executed when a new client connects to the server using SocketIO.
+- The `sid`, `environ`, and `auth` arguments contain information about the connecting client's session ID, environment variables, and authentication credentials respectively.
+- Inside this function, you can perform any necessary setup or initialization for the newly connected client.

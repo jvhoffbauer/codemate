@@ -1,0 +1,3 @@
+- Defines a function named `no_response_model_annotation_return_dict_with_extra_data` that returns an instance of the built-in Python class `User`.
+- The function's return type is annotated as `User`, but instead of returning a regular `User` object, it returns a dictionary with three keys ("name", "surname", and "password_hash") containing string values.
+- This implementation demonstrates how to use dictionaries in place of model instances when using FastAPI's response annotations for customizing responses without requiring complex serialization logic or additional dependencies like Marshmallow or Pydantic.

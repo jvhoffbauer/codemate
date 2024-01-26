@@ -1,0 +1,1 @@
+- This function retrieves a list of pull requests (PRs) using GitHub's GraphQL API with pagination. - It then counts the number of contributions, comments, and reviews made by each user across all PRs. - The function also keeps track of the authors of each PR and stores them in a dictionary for later use.

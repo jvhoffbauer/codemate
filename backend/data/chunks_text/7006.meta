@@ -1,0 +1,1 @@
+{"original_code": "@router.post(\n    \"/test-email\",\n    response_model=schemas.Msg,\n    status_code=201,\n    dependencies=[Depends(deps.get_current_active_superuser)],\n)\ndef test_email(\n    email_to: EmailStr,\n) -> Any:\n    \"\"\"Test email sending.\"\"\"\n    send_test_email(email_to=email_to)\n    return {\"msg\": \"Test email was sent.\"}"}

@@ -1,0 +1,1 @@
+- Defines a dataclass named `Item` with four attributes: `name`, `date`, `price`, and `owner_ids`. - The `Optional` type hint is used for the `price` and `owner_ids` parameters, indicating that they are optional and can be set to `None`. - The `datetime` module from Python's standard library is imported and used as the data type for the `date` attribute.

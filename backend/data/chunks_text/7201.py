@@ -1,0 +1,2 @@
+- Tests adding a scheduled job with ID `job_id` using the `POST /job/schedule` endpoint and a superuser token header
+- Verifies that the API returns a successful status code (200), a success message (code 200), and the newly created job's ID in the response body

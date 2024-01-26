@@ -1,0 +1,1 @@
+{"original_code": "    async def test_root_api(self):\n        \"\"\"Validate that / returns a 200 and is not a redirect.\"\"\"\n        response = await self.asgi_client.get(\"/\")\n\n        assert response.status_code == 200\n        assert not response.is_redirect"}

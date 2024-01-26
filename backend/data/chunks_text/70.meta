@@ -1,0 +1,1 @@
+{"original_code": "    def get_field_metadata(field: Any) -> Any:\n        metadata = FakeMetadata()\n        metadata.max_length = field.field_info.max_length\n        metadata.max_digits = getattr(field.type_, \"max_digits\", None)\n        metadata.decimal_places = getattr(field.type_, \"decimal_places\", None)\n        return metadata"}

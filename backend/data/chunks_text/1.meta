@@ -1,0 +1,1 @@
+{"original_code": "    def __bool__(self) -> bool:\n        return bool(self.value)"}

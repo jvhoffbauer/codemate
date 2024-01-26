@@ -1,0 +1,1 @@
+- Creates three new heroes with their respective names, secret identities (if provided), and ages (if provided). - Initializes a SQLAlchemy session to interact with the database. - Adds each newly created hero to the session. - Commits changes made during this session to the database. - Closes the current session.

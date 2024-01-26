@@ -1,0 +1,1 @@
+- This method is deprecated and will be removed in a future version of Pydantic (version 2.x). - The reason for deprecation is that direct access to this method is no longer necessary as newer versions of Pydantic provide alternative ways to achieve similar functionality. - Users are encouraged to upgrade to Pydantic 2.x instead of relying on this method.

@@ -1,0 +1,1 @@
+- Defines a fixture named `ep_path` for use in pytests. - Returns the string value of '/api/v1/jsonrpc' when called by other tests using this fixture. - Helps to keep API endpoint paths consistent across multiple test cases, making it easier to maintain and debug tests.

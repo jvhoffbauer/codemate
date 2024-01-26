@@ -1,0 +1,2 @@
+- Defines an asynchronous function called `test_async_testing`.
+- Calls another async function named `test_root` using the `await` keyword for concurrent execution.

@@ -1,0 +1,1 @@
+{"original_code": "    def __call__(self, value: str) -> str:\n        return value"}

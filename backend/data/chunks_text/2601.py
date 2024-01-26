@@ -1,0 +1,1 @@
+- Defines a function named `get_items` that takes an argument called `item_id` of type string. - Inside the function, creates a dictionary with one key-value pair where the key is "item_id" and its value is the same as the input parameter passed to the function (i.e., `item_id`). - Returns this dictionary from the function.

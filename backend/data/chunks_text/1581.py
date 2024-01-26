@@ -1,0 +1,4 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in a query parameter (`q`) from the URL as an argument to the function.
+- Validates and sanitizes the input using Pydantic's `Query` decorator with custom options such as default value, minimum length, and descriptive title.
+- Returns a dictionary containing either just the items list or also includes the search query depending on whether it was provided by the user.

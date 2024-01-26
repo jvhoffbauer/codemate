@@ -1,0 +1,1 @@
+{"original_code": "def test_get_portal(client: TestClient):\n    response = client.get(\"/portal\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"message\": \"Here's your interdimensional portal.\"}"}

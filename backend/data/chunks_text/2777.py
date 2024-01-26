@@ -1,0 +1,4 @@
+- This function defines a GET request for the `/` endpoint of the item router.
+- It takes an optional parameter `user_id`, which defaults to `None`.
+- If `user_id` is not provided, it returns a list containing two dictionaries representing items and their associated users (`u1` and `u2`).
+- If `user_id` is provided, it returns a list with a single dictionary where the specified user's ID matches that passed in as a query parameter.

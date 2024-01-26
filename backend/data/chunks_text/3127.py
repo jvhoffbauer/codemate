@@ -1,0 +1,1 @@
+- This endpoint returns a list of Item objects with valid data using FastAPI's `response_model` decorator to specify the expected schema for the response body. - The returned items have required fields 'name' and 'date', as well as optional field 'price'. - One item also includes an additional nested list 'owner_ids' containing multiple integer values.

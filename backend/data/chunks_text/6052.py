@@ -1,0 +1,5 @@
+- Defines an enum `UserStatus` with values 'NORMAL' and 'DISABLED'.
+- Creates a `User` model with an optional field `status` of type `UserStatus`.
+- Retrieves the metadata for the `status` field using `model_fields()`.
+- Converts the metadata to various forms (form item, filter item, table column).
+- Verifies that each converted form has the expected properties based on its intended usage.

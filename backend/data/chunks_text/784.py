@@ -1,0 +1,1 @@
+- Method `is_deployed()` returns a boolean value indicating whether the current environment (stored in `self`) is either staging or production. - The method takes no arguments and uses the instance variable `self` to determine the current environment. - This method can be used to check if an application should behave differently based on its deployment status.

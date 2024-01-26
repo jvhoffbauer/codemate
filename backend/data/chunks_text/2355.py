@@ -1,0 +1,3 @@
+- Defines a GET request handler for the root URL of `/api/v2/myapp/{level1}/{level2}` using FastAPI's decorator syntax (`@callback_router3.get`)
+- Accepts a query parameter named 'level3' with type string (`level3: str`)
+- Does not perform any action, marked as "no coverage" to avoid running during tests (`pass # pragma: nocover`)

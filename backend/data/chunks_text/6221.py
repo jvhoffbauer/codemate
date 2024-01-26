@@ -1,0 +1,1 @@
+- This method is asynchronous and returns a list of all locations using `get_locations()`. - The `get_locations()` function is called to retrieve a list of locations, which is then returned by this method. - This method can be used to efficiently fetch all location data in one call instead of making multiple requests.

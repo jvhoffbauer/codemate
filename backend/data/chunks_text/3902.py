@@ -1,0 +1,4 @@
+- Tests that passing a non-matching query parameter value for `item-query` raises a validation error with a specific message and location (in this case, `nonregexquery`)
+- Uses Pytest's built-in fixture to create an instance of Flask's testing client (`TestClient`) for making HTTP requests against our app
+- Asserts that the status code returned by the GET request is 422 (Unprocessable Entity)
+- Verifies that the JSON response body contains a dictionary representing the validation errors, which includes details about the type of error, its location in the URL parameters, and the input value causing it

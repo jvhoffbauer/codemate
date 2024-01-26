@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self):\n        self.producer = AIOKafkaProducer(\n            loop=loop, bootstrap_servers=settings.KAFKA_BOOTSTRAP_SERVERS\n        )\n        self.consumer = AIOKafkaConsumer(\n            settings.KAFKA_TOPIC,\n            loop=loop,\n            bootstrap_servers=settings.KAFKA_BOOTSTRAP_SERVERS,\n        )"}

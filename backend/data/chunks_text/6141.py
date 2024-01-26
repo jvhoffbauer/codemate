@@ -1,0 +1,5 @@
+- Defines a custom CRUD for updating articles with specific fields and relationships using SqlAlchemyCrud from Pydantic-SQLAlchemy.
+- Excludes the 'content' field ID during updates using the 'update_exclude' property.
+- Adds two new fields to the 'update_fields' list - description and a relationship attribute named 'content'.
+- Updates both the 'description' and 'content' attributes of an existing article through API request using the 'PUT' method.
+- Refreshes the session after fetching the updated article and its related content object to ensure that changes are reflected accurately.

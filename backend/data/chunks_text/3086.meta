@@ -1,0 +1,1 @@
+{"original_code": "    def create_person(person: PersonCreate) -> Any:\n        db_person = Person.from_orm(person)\n        return db_person"}

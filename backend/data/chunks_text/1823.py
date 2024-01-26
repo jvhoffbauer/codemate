@@ -1,0 +1,1 @@
+- Removes a specific `WebSocket` object from the list of active connections when it is closed or disconnected by the client. - Updates the internal state of the class to reflect that this connection is no longer active. - Helps ensure accurate tracking and management of concurrent user sessions in real-time applications using WebSockets.

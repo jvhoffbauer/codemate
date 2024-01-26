@@ -1,0 +1,3 @@
+- Defines a GET endpoint with two annotations for `User` and `Item`.
+- The `response_model` parameter specifies that the function should return a JSON object in the format of a `User`, but instead returns an invalid dictionary containing just a string key ("name") and value ("John").
+- This is likely done to test how FastAPI handles returning unexpected data types from endpoints, as it will raise a `ValidationError` by default.

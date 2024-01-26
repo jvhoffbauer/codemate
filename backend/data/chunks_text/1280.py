@@ -1,0 +1,3 @@
+- Endpoint for creating a new file with Pydantic's `File` annotation to handle file uploading and parsing
+- Accepts binary data in the request body using FastAPI's `Annotated` decorator
+- Returns the size of the uploaded file as JSON response

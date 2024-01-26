@@ -1,0 +1,6 @@
+- Defines a decorator `assert_log_errors` that takes a CapLog object as an argument and returns another function (a closure).
+- The inner function `_assert_log_errors` accepts one or more arguments representing expected log messages or exceptions raised by tested functions. It parses these inputs to extract message strings and exception classes/instances.
+- Uses the CapLog object's `records` attribute to retrieve actual logged messages during test execution. Filters out non-error level logs using the `logging.ERROR` threshold.
+- Compares the extracted message strings from both sources and raises AssertionError if they don't match.
+- For each matched pair of expected and actual messages, it checks whether there was any corresponding exception context provided via PyTest's `pytest.raises` fixture. If so, it executes this context within the same scope where the exception occurred, raising the original exception again. This ensures that the tests cover all possible paths through the codebase, including those involving exceptional conditions.
+- Finally, clears the CapLog object's history after running the decorated function to avoid false positives caused by accumulated log noise.

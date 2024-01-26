@@ -1,0 +1,4 @@
+- Retrieves a model field from the parser and checks for its foreign keys
+- If found, retrieves the corresponding table's Admin class and URL path
+- Creates a Picker component with necessary options based on the foreign key information
+- Returns a service object containing an API endpoint to retrieve the Picker components and their associated data

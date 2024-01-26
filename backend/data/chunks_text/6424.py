@@ -1,0 +1,5 @@
+- This function takes a `ValidationError` or `RequestValidationError` as input and returns an instance of `InvalidParams`.
+- It iterates over all validation errors using list comprehension and removes the 'url' key from each error dictionary.
+- If the location ('loc') of the error is within the request body, it updates the 'loc' tuple to exclude the initial 'body.' prefix.
+- Otherwise, it checks that there is actually a location specified and adds '<' and the URL path before the remaining location components.
+- The updated error dictionaries are appended to a list called 'errors', which is then included in the returned `InvalidParams` object with a 'data' attribute containing {'errors': errors}.

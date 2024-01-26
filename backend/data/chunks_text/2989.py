@@ -1,0 +1,2 @@
+- This function tests posting a new item with price to the server using Flask's built-in `client`.
+- It asserts that the status code is 200 and checks the JSON response body for correctness.

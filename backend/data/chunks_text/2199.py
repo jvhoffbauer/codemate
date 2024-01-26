@@ -1,0 +1,1 @@
+- Defines a POST endpoint for `/router` with a customized HTTP status code of 404 and a specific model type (List[Message]) in case of an error. - Accepts two arguments named `item1` and `item2`, both of type `Item`. - Returns a tuple containing `item1` and `item2` without any further processing or validation.

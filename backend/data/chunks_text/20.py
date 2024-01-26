@@ -1,0 +1,3 @@
+- This function `get_config()` takes a string argument `name`, representing the name of the configuration to retrieve.
+- It returns either the value of the configuration from the class (if it exists), or the corresponding keyword argument passed during instantiation, or `Undefined` if neither are found.
+- The function uses two helper functions `get_config_value()` and `Undefined` which are not shown in this snippet but can be assumed as part of the context.

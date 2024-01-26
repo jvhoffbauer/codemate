@@ -1,0 +1,1 @@
+{"original_code": "        @app.get(\"/query_example_examples/\")\n        def query_example_examples(\n            data: Union[str, None] = Query(\n                default=None,\n                example=\"query_overridden\",\n                examples=[\"query1\", \"query2\"],\n            ),\n        ):\n            return data"}

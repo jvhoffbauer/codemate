@@ -1,0 +1,1 @@
+{"original_code": "    @sub_router.on_event(\"shutdown\")\n    def sub_router_shutdown() -> None:\n        state.sub_router_shutdown = True"}

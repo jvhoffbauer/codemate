@@ -1,0 +1,3 @@
+- Retrieves GDAL configuration variable "GDAL_DISABLE_READDIR_ON_OPEN" using `get_gdal_config()`.
+- Assigns value to a dictionary keyed by 'env'.
+- Returns dictionary containing environment variables for use in tests or scripts that require GDAL functionality.

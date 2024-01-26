@@ -1,0 +1,1 @@
+- Creates a new item with name 'Chillies' and saves it to the server using PUT request at '/items/red'. - Verifies that the status code of the response is 201 (Created) and checks for any error messages in the text body. - Checks if the JSON response contains the expected key-value pairs ('name': 'Chillies','size': None).

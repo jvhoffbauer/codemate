@@ -1,0 +1,1 @@
+- Tests that making a GET request to `/users` without providing a token results in a HTTP status code of 422 (Unprocessable Entity) and an error message indicating that the 'token' query parameter is required. - Uses Pytest Fixtures to inject a TestClient object into the function for testing purposes. - Imports the necessary modules from FastAPI and Pytest.

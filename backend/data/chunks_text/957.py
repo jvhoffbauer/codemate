@@ -1,0 +1,2 @@
+- Checks if a given `ModelField` represents a scalar value (i.e., primitive data type like int or string).
+- Uses two helper functions: `field_annotation_is_scalar()` to check whether annotation is a scalar type, and `params.Body` to exclude request body fields.

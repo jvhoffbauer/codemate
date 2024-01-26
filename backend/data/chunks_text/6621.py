@@ -1,0 +1,1 @@
+- Defines a fixture named `body` for use in pytests. - Returns a JSON string representing a request payload with an ID of 1, version 2.0 of the JSON RPC protocol, and a method called 'probe' without any parameters.

@@ -1,0 +1,1 @@
+{"original_code": "async def get_async_callable_gen_dependency(\n    value: str = Depends(async_callable_gen_dependency),\n):\n    return value"}

@@ -1,0 +1,6 @@
+- This function is a GET request for retrieving a specific hero by ID using FastAPI's decorator `@app.get`.
+- The parameter `hero_id` is passed in and converted to an integer type.
+- A database connection is established using SQLAlchemy's `Session()` method.
+- The `session.get()` method is used to retrieve the specified hero from the database based on its primary key (ID).
+- If the hero is not found, a customized HTTP exception is raised with status code 404 and error message "Hero not found".
+- Otherwise, the hero object is returned as the response body.

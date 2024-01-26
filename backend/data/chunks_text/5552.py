@@ -1,0 +1,3 @@
+- Initializes a new instance of the `ModelField` class with optional arguments for defining the field's name, data type (`Type[Any]`), whether it is required, and additional metadata (`FieldInfo`)
+- If using Dantic version 2, sets default values for `field_info` based on user input; otherwise, adds user input to a dictionary of keyword arguments passed to the parent constructor
+- Calls the parent constructor with the updated set of keyword arguments

@@ -1,0 +1,3 @@
+- This function tests a POST request with invalid JSON body to `/a/compute`.
+- The expected status code is 422 (Unprocessable Entity).
+- The actual text of the error message is not checked in this test case.

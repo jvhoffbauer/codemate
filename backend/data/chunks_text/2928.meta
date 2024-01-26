@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/product\")\nasync def create_item(product: Product):\n    return product"}

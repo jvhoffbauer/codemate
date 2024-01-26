@@ -1,0 +1,2 @@
+- Defines a function `get_path_param_gt_int` that takes an optional parameter `item_id`, which is assigned a default value of a Pydantic model called `Path`. The `Path` class has a field named `gt` with a default value of 3, indicating that any path parameter passed to this endpoint must be greater than 3 (i.e., `/items/{item_id: gt[3]}`)
+- Returns the value of the `item_id` argument after it's been validated by the `Path` model

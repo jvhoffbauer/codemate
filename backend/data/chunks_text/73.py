@@ -1,0 +1,8 @@
+- Defines a function `sqlmodel_validate` that takes several arguments related to model validation and initialization.
+- Checks whether the `orm_mode` configuration flag is enabled before allowing usage of `from_orm`.
+- Decomposes non-mapping input into a dictionary using custom root types or default behavior.
+- Supports an optional `update` dictionary to merge into the input data.
+- Calls the `validate_model` function provided by Pydantic to perform validation on the input data.
+- Creates a new instance of the model class either normally or via SQLAlchemy creation depending on the presence of a configured database table.
+- Sets the `__dict__` attribute of the newly created instance based on validated input data.
+- Initializes private attributes as needed after setting up required properties.

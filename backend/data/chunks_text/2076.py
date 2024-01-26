@@ -1,0 +1,3 @@
+- Tests if accessing protected resource without OAuth2 header results in expected error message and status code
+- Uses Flask's built-in `client` object to simulate a request from a browser or external service
+- Verifies that the server returns the correct JSON response with a custom error message

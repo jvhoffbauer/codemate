@@ -1,0 +1,3 @@
+- Defines a function called `response_model_no_annotation_return_dict_with_extra_data()`.
+- The function returns a dictionary with three key-value pairs representing the name, surname and password hash of a user.
+- Note that there are no type annotations (type hints) for the values returned by this function. This is because Pydantic's automatic model generation feature will not work without them. However, we can still use this function to return a plain Python dict containing extra data beyond what would be expected from our normal models.

@@ -1,0 +1,1 @@
+{"original_code": "def test_get_parameters():\n    response = client.get(\"/test_path\", params={\"repeated_alias\": \"test_query\"})\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"path\": \"test_path\", \"query\": \"test_query\"}"}

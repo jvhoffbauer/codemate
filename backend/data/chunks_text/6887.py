@@ -1,0 +1,3 @@
+- Tests the health endpoint by making a GET request to `/api/health/heartbeat`.
+- Asserts that the status code is 200 (OK).
+- Asserts that the JSON response contains a key 'is_alive' with value True, indicating that the service is running properly.

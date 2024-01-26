@@ -1,0 +1,1 @@
+- Defines a generator function `event_loop` that creates a new asynchronous event loop using the default policy and yields it to be used in other coroutines or tasks. - The loop is closed after its use, which releases any resources associated with it. This pattern allows for efficient resource management when working with multiple concurrent operations within an application.

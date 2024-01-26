@@ -1,0 +1,1 @@
+- Retrieves a list of selected columns from an SQLAlchemy `Select` statement using the `exported_columns` attribute and passes them to the `get_alias()` method to obtain their aliases (if any). - The resulting list is returned by the function.

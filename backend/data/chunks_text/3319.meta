@@ -1,0 +1,1 @@
+{"original_code": "    async def test(var: Annotated[str, Query()] = \"bar\"):\n        return {\"foo\": var}"}

@@ -1,0 +1,1 @@
+{"original_code": "    @abc.abstractmethod\n    def __call__(self, img: ImageData) -> ImageData:\n        \"\"\"Apply algorithm\"\"\"\n        ..."}

@@ -1,0 +1,4 @@
+- Defines a FastAPI endpoint `/celery` with name `test_celery`.
+- Accepts two arguments - `Msg` and `UserInDB`, where `Msg` is a custom message object and `UserInDB` is obtained using `Depends()` function to get the currently active superuser.
+- Sends a task named `"app.worker.test_celery"` to Celery worker queue with argument `args=[msg.msg]`.
+- Returns a dictionary containing a key-value pair of `{"msg": "Word received"}`.

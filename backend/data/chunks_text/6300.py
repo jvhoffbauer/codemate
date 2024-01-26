@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with an empty `text` attribute. - Calls the private method `read_file()` to read the contents of a file and assign it to the `text` attribute.

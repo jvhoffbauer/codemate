@@ -1,0 +1,2 @@
+- Creates a new item with name 'Foo' and age 5 using POST request to /items endpoint
+- Verifies that server returns HTTP status code 200 (OK) and JSON response containing newly created item object

@@ -1,0 +1,1 @@
+- Defines a function `main_depends` that takes an optional argument `commons`, which is provided by the `Depends()` decorator and its parameter `common_parameters`. - The returned dictionary contains two keys, 'in' with value'main-depends', and 'params' with the value of the `commons` dictionary passed to this function as an argument or obtained from the `Depends()` decorator.

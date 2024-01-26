@@ -1,0 +1,4 @@
+- This function defines a GET request for retrieving the bounds (i.e., spatial extent) of a COG dataset using FastAPI and Pydantic.
+- It takes three dependencies: `src_path`, which is the path to the COG file; `reader_params`, which are parameters specific to the chosen data format; and `env`, which contains environment variables such as CRS information.
+- The function uses the `rasterio` library to open the COG file and retrieve its geographic bounds, which are then returned in a dictionary called `"bounds"`.
+- The function also includes an HTTP status code description for the successful response (status code 200).

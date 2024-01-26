@@ -1,0 +1,2 @@
+- Tests the `/healthz` endpoint using Flask's built-in testing client (`app.test_client`)
+- Asserts that the status code is 200 and the JSON response contains a key 'ping' with value 'pong!'

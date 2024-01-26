@@ -1,0 +1,3 @@
+- Tests if GET request to path "/path/param-gt-int/{id}" with integer parameter greater than 42 returns expected JSON response and status code
+- Uses Flask's built-in `client` object for making requests against our app
+- Asserts that the returned HTTP status code is 200 (OK) and the parsed JSON body matches the expected value of 42

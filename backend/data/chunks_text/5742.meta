@@ -1,0 +1,1 @@
+{"original_code": "    def register_router(self):\n        for admin_action in self.registered_admin_actions.values():\n            if isinstance(admin_action, RouterAdmin):\n                admin_action.register_router()\n        return super().register_router()"}

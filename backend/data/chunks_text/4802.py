@@ -1,0 +1,3 @@
+- Retrieves documents of a specific type from Couchbase using N1QL queries
+- Allows for pagination with `skip` and `limit` parameters
+- Returns a list of dictionaries representing each document's fields and metadata, including its ID (stored in the `doc_id` field)

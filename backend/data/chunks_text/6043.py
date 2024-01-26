@@ -1,0 +1,3 @@
+- This method is a subclass of `BaseHandler`, which is part of Tornado's web framework for asynchronous networking.
+- It retrieves an instance of `Select` from its parent class and then joins it with another table (`User`) using an outer join based on their primary keys.
+- The resulting joined data is returned by the function.

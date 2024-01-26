@@ -1,0 +1,3 @@
+- Registers a custom admin class `TmpAdmin` for all models using Django's built-in `AdminSite`.
+- Retrieves the registered instance of the admin and asserts that it belongs to the correct `AdminSite`.
+- Asserts that the unique ID of the admin has been generated correctly.

@@ -1,0 +1,3 @@
+- This function is an asynchronous decorator for a FastAPI route handler (`Request` and `Response` are objects provided by Starlette).
+- It logs information about incoming requests to a logger object using the `logging` module. The logged data includes the request method, URL, headers, and client IP address.
+- The decorated route handler is called with the `call_next()` function, which passes control to the next middleware or route handler in the chain. The result of this call is returned unchanged.

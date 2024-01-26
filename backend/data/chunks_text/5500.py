@@ -1,0 +1,5 @@
+- Tests the `GET /mosaicjson/tiles` endpoint for different file formats and resolutions using Mercator tiles generated from a JSON file (MOSAICJSON_FILE).
+- Uses the `mercantile` library to generate tile coordinates based on the JSON file's center and zoom level.
+- Patches the `FileBackend._read()` method of the `filebackend` module to return a mock function that reads data from the specified JSON file.
+- Sends requests to the server with various parameters such as URL, resolution, format, nodata value, band index, colormap name, rescale factor, and resampling algorithm.
+- Verifies the HTTP status codes, content types, image metadata, and pixel values returned by the server in each case.

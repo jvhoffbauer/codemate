@@ -1,0 +1,1 @@
+- Tests if default parameter query works by making a GET request to /items with q set to foo using Flask's built-in testing client (client) and asserts that status code is 200 and JSON output contains expected value for 'q'.

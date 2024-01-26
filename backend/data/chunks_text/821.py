@@ -1,0 +1,4 @@
+- This function refreshes a user's access token and sets a new refresh token in the browser cookie using FastAPI's `BackgroundTasks`, `Depends()`, and `Response`.
+- It takes two dependencies: `valid_refresh_token` (which validates the incoming request's refresh token) and `valid_refresh_token_user` (which retrieves the associated user).
+- The function creates a new refresh token for the user with `service.create_refresh_token()` and adds an expiration task to delete the old one with `worker.add_task()`.
+- Finally, it returns both the new access token and refresh token as a JSON object.

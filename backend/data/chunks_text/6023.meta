@@ -1,0 +1,1 @@
+{"original_code": "    @site.register_admin\n    class TmpAdmin(admin.LinkAdmin):\n        link = \"https://docs.amis.work\""}

@@ -1,0 +1,1 @@
+- Initializes necessary routes for API functionality, such as reading data, retrieving bounds, providing information, generating tiles, creating tile JSON files, serving WMTS requests, handling point queries, validating input, and managing assets. - Defines optional route for displaying map viewer. - Registers all defined routes with the router after initializing the class.

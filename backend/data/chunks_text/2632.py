@@ -1,0 +1,4 @@
+- Tests if Swagger UI is accessible by making a GET request to /docs and checking status code and content type.
+- Checks for presence of swagger-ui-dist string in response text.
+- Prints base URL using Flask's `client`.
+- Verifies that OAuth2 redirect URL is correctly set up in Swagger UI configuration.

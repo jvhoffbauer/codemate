@@ -1,0 +1,1 @@
+{"original_code": "@strawberry.type\nclass User:\n    name: str\n    age: int"}

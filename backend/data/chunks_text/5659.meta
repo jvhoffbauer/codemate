@@ -1,0 +1,1 @@
+{"original_code": "    def amis_dict(self):\n        return self.dict(exclude_none=True, by_alias=True)"}

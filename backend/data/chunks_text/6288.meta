@@ -1,0 +1,1 @@
+{"original_code": "def test_save(tmp_path, name, content, kwargs):\n    test_path = tmp_path / name\n    assert not test_path.exists()\n\n    result = app.io.save(test_path, content, **kwargs)\n    assert result == test_path\n    assert test_path.exists()"}

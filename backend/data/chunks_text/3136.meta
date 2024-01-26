@@ -1,0 +1,1 @@
+{"original_code": "def test_object():\n    response = client.get(\"/items/object\")\n    response.raise_for_status()\n    assert response.json() == {\n        \"name\": \"object\",\n        \"date\": datetime(2021, 7, 26).isoformat(),\n        \"price\": 1.0,\n        \"owner_ids\": [1, 2, 3],\n    }"}

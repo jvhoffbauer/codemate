@@ -1,0 +1,1 @@
+{"original_code": "@as_declarative()\nclass ORMBase:\n    id: Any\n    __name__: str\n\n    # Generate __tablename__ automatically\n    @declared_attr\n    def __tablename__(cls):\n        return cls.__name__.lower()"}

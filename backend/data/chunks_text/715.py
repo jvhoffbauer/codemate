@@ -1,0 +1,3 @@
+- Tests a custom generator app using FastAPI's built-in testing framework (AsyncHTTPTestCase)
+- Uses an instance of AsyncClient to make requests against the app and verify responses
+- Verifies that the X-Request-ID header is transformed by the custom middleware defined in the `GeneratorApp` class

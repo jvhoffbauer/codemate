@@ -1,0 +1,4 @@
+- Tests the `TilerFactory` class by creating a factory with route dependencies and adding it to a FastAPI application using its `router`.
+- Uses dependency injection through the `Depends` decorator provided by FastAPI to add authentication requirements for certain routes.
+- Verifies that unauthorized users are denied access while authorized ones can retrieve tiles and metadata.
+- Demonstrates how to dynamically modify the list of route dependencies after initializing the factory instance.

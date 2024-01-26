@@ -1,0 +1,2 @@
+- Defines a property called `content_text` for this class
+- The value of `content_text` is either the text from the `content` attribute, or an empty string if `content` is None

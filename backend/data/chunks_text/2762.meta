@@ -1,0 +1,1 @@
+{"original_code": "def test_response_model_union_no_annotation_return_model2():\n    response = client.get(\"/response_model_union-no_annotation-return_model2\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"name\": \"Foo\", \"price\": 42.0}"}

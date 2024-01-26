@@ -1,0 +1,4 @@
+- Initializes a new instance of `AdminAction`, which is a subclass of `FormAdmin`.
+- Sets up properties for `admin`, `action`, `flags`, and `getter`. These are optional arguments that can be passed in when creating an instance of this class.
+- Assigns values to `router` and `schema` based on the `admin` object's properties.
+- Initializes another base class called `FormAdmin` with the current app as its argument. This appears to be used for handling forms related to actions.

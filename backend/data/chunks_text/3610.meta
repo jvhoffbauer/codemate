@@ -1,0 +1,1 @@
+{"original_code": "def state() -> State:\n    return State()"}

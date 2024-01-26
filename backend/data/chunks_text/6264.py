@@ -1,0 +1,1 @@
+- This function tests the `--list` command of the `invoke` script using Python's built-in `subprocess` module to execute a shell command and capture its exit status (return code). - The expected return code is zero, indicating successful execution.

@@ -1,0 +1,1 @@
+- Defines a function called `say_hi` that takes an optional parameter named `name` of type `str`. - Prints a greeting message using string formatting with the value of `name`, if provided, or an empty string otherwise.

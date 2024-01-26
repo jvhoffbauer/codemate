@@ -1,0 +1,3 @@
+- Defines a function `test_celery()` that takes in an argument of type `schemas.Msg`.
+- Uses Celery's `send_task()` to send a task with name 'app.worker.test_celery' and arguments [msg.msg] to be executed by the Celery worker.
+- Returns a dictionary containing a key-value pair ("msg": "Work received") as response.

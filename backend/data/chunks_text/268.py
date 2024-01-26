@@ -1,0 +1,1 @@
+- Retrieves a specific hero (with ID=1) from the database using SQLAlchemy's `Session` and `get()` methods. - Prints out the retrieved hero object to the console for debugging purposes.

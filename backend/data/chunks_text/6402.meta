@@ -1,0 +1,1 @@
+{"original_code": "    @classmethod\n    def get_default_description(cls):\n        return f\"[{cls.CODE}] {cls.MESSAGE}\""}

@@ -1,0 +1,2 @@
+- Defines a custom exception handler for `RequestValidationError`.
+- Returns a plain text response with the error message and HTTP status code of 400 (Bad Request).

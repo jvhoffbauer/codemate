@@ -1,0 +1,1 @@
+{"original_code": "    def custom_enum_encoder(v: Enum):\n        return v.value.lower()"}

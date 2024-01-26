@@ -1,0 +1,4 @@
+- Takes an `item_id` parameter that can be either an integer or a comma-separated string of items
+- If `item_id` is an integer, returns a list containing just that integer as a string
+- If `item_id` is a non-empty string and not already a list, converts it to a set (removes duplicates), then back to a list for output
+- Otherwise, returns an empty list

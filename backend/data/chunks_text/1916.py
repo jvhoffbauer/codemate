@@ -1,0 +1,2 @@
+- Defines an asynchronous function `read_user` that takes a username parameter of type string
+- Returns a dictionary with a key "message", whose value is a formatted greeting message using the provided username

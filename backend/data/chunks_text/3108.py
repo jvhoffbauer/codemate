@@ -1,0 +1,3 @@
+- Defines a function `header_example` with a single positional argument `data`.
+- The `Header` class is used to define a custom type for the `data` parameter that allows both string values and `NoneType` (represented by the `Union` type).
+- If no value is provided for `data`, it defaults to `None` but an example value of "header1" can still be specified using the `example` keyword argument.

@@ -1,0 +1,3 @@
+- This function takes a `SqlaInsAttr`, which is an attribute that represents an SQLAlchemy instrumentation feature, as its argument and returns an optional `InstrumentedAttribute`.
+- If the input `field` is already an instance of `InstrumentedAttribute`, it's returned directly. Otherwise, it tries to retrieve the corresponding attribute from the model using the string representation of `field`.
+- If the retrieval succeeds, the resulting attribute is returned; otherwise, `None` is returned.

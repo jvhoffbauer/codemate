@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that returns a list containing one dictionary with keys 'name' and 'price'. - The returned value is hardcoded, making this function suitable for testing or demonstration purposes rather than production use.

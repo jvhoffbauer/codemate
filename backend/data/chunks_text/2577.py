@@ -1,0 +1,1 @@
+- Tests authentication using HTTP Bearer token with value 'foobar' for user endpoint '/users/me'. - Verifies successful response status and returns expected JSON payload containing scheme and credentials of the token.

@@ -1,0 +1,5 @@
+- Defines an asynchronous function `fake_categories` that takes two arguments: an AsyncSession object and a model class (presumably defined elsewhere).
+- Creates a list of Category objects with IDs from 1 to 5 and names "Category_1", "Category_2", etc., using a list comprehension.
+- Adds all these objects to the session using the `add_all` method.
+- Commits the changes made during this transaction using the `commit` method.
+- Returns the list of created categories.

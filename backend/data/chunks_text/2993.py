@@ -1,0 +1,3 @@
+- This endpoint is accessed using the `GET` method and its URL path is `"/main-depends/"`.
+- It uses a dependency called `commons`, which is provided by the `Depends()` decorator with an argument of type `dict`.
+- The function returns a dictionary containing two keys, 'in' (with value'main-depends') and 'params', which contains the values passed to the `common_parameters` function through the `Depends()` decorator.

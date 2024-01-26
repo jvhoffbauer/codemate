@@ -1,0 +1,2 @@
+- Defines a function `query_extractor` that takes an optional argument `q` of type string or None
+- Returns the value of `q`, which can be either a user's search query (string) or None if no query is provided

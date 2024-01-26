@@ -1,0 +1,3 @@
+- Registers a custom admin view for a model called `Tmp`.
+- Uses Starlette's built-in `Jinja2Templates` to render HTML pages dynamically.
+- Defines a custom `get_page()` method that returns a dictionary with data to be passed to the HTML template. The `request` object is provided by Starlette and can be used to access additional context such as user authentication or session information.

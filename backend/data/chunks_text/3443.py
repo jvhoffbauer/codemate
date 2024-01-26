@@ -1,0 +1,1 @@
+- Tests whether two `Default` placeholders with equal default values are considered equal using Python's built-in equality operator (`==`) and asserts that they have the same value attribute.

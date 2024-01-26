@@ -1,0 +1,5 @@
+- Defines a field for use in data models with optional arguments to customize behavior and validation rules.
+- Supports setting defaults, aliases, titles, descriptions, exclusion/inclusion criteria, constraints on values (e.g., minimum or maximum length), and regular expressions for input validation.
+- Allows specifying whether fields are mutable, have unique values, serve as primary keys, or have foreign key relationships.
+- Provides options for SQLAlchemy integration, including type mappings and column attributes.
+- Accepts additional schema information that can be used by external tools like Swagger.

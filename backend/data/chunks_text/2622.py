@@ -1,0 +1,2 @@
+- Defines a GET request handler for the root URL of router B
+- Returns a JSON response with a message "B"

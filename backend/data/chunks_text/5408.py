@@ -1,0 +1,4 @@
+- Tests how to use path parameters as part of a URL prefix using FastAPI's `Path` decorator and `Router`.
+- Defines an endpoint factory that registers two routes with path parameters used in their URL paths and prefixes.
+- Includes the generated router into the main application with its own prefix based on another path parameter.
+- Makes requests against both regular and JSON-formatted endpoints with different values for the prefix and path parameters.

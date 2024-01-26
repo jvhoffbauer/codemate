@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_root_token_jessica(client: TestClient):\n    response = client.get(\"/?token=jessica\")\n    assert response.status_code == 200\n    assert response.json() == {\"message\": \"Hello Bigger Applications!\"}"}

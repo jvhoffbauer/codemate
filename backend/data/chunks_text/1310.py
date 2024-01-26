@@ -1,0 +1,1 @@
+- Endpoint for creating a new file with Pydantic's `File()` annotation to handle file uploads and pass them as bytes to the function. - Returns the size of the uploaded file in bytes using Python's built-in `len()` function.

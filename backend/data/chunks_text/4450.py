@@ -1,0 +1,4 @@
+- Generates an OpenAPI (Swagger) JSON schema for a FastAPI application using `fastapi generate --openapi`.
+- The generated schema is stored in the file `openapi.json`, which can be used to document and share the API's endpoints and parameters with other developers or tools.
+- The schema includes information about each endpoint's HTTP method, URL path, request and response formats, error handling, and documentation.
+- It also defines custom schemas for validation errors that are specific to FastAPI's usage of Pydantic models.

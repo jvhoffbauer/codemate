@@ -1,0 +1,3 @@
+- Tests custom middleware by sending a POST request to `/middleware` endpoint with a file attached using Flask's built-in `client`.
+- Verifies that the middleware doesn't raise an exception and returns a JSON response containing 'OK'.
+- Uses temporary directory (`Path`) for storing the uploaded file during testing.

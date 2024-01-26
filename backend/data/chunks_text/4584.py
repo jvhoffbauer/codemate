@@ -1,0 +1,3 @@
+- Tests if an unauthorized user tries to access their own information using a valid token for another user (with different scopes)
+- Asserts that the status code is 401 and the error message is correct
+- Verifies that the WWW-Authenticate header contains the expected value with the required scope ('me')

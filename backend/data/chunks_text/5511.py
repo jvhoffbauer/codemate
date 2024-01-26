@@ -1,0 +1,1 @@
+- Tests for retrieving tiles with missing asset files and valid requests using `httpx`, `rio`, and Flask application contexts. - Verifies that the correct HTTP status codes are returned in case of invalid or missing assets. - Confirms that the expected image format (PNG), dimensions, and metadata are delivered when requesting a specific band or expression.

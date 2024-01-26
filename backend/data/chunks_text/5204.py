@@ -1,0 +1,5 @@
+- Defines an endpoint for retrieving geospatial data in GeoJSON format (`.geojson`) using FastAPI's `@app.get()` decorator and specifying the HTTP method (GET).
+- Specifies that the returned value should be of type `InfoGeoJSON`, which is defined elsewhere in the application. The `response_model` parameter tells FastAPI to automatically serialize this object into JSON before returning it to the client.
+- Excludes None values from being serialized by setting `response_model_exclude_none` to True. This prevents unnecessary null fields from appearing in the output.
+- Uses the `GeoJSONResponse` class instead of the default `JSONResponse` to handle the specific requirements of GeoJSON formatting.
+- Provides detailed documentation about what the endpoint returns through the `responses` dictionary. In this case, we specify that if the request is successful (status code 200), then the content will be a GeoJSON file with the specified MIME type ("application/geo+json"). We also provide a description explaining what kind of information can be expected from the resulting GeoJSON feature.

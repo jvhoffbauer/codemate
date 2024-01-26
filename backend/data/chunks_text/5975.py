@@ -1,0 +1,1 @@
+- Tests whether `validator_skip_blank()` function correctly returns an integer value when passed as argument and its type is explicitly specified as 'int' using a second parameter to the function. - Asserts that the returned value matches the original input (123).

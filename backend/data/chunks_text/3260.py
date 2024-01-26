@@ -1,0 +1,3 @@
+- This function tests the Swagger UI endpoint by making a GET request to `/docs`.
+- It asserts that the status code is 200 and checks the content type header.
+- The text of the response is checked for the presence of'swagger-ui-dist' and a specific OAuth2 redirect URL string.

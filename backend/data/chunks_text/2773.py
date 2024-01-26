@@ -1,0 +1,2 @@
+- Defines a GET request for the root URL of the `/user` endpoint
+- Returns an array containing two dictionaries, each representing a user with a unique ID

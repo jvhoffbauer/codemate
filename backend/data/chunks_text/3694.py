@@ -1,0 +1,1 @@
+- This function uses `aiohttp`'s built-in testing client to make a GET request with query parameter 'token' set to 'jessica'. - The expected status code is checked against the actual response status code using an assert statement. - If the status code matches, the JSON content of the response is extracted and compared against a predefined value in another assert statement.

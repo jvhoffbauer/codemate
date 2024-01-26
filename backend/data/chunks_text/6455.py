@@ -1,0 +1,1 @@
+- This function is an asynchronous method that takes a HTTP request object and returns any data parsed from its body. - It tries to convert the request's body into a JSON format using `httpx.Response.json()`. If this fails due to invalid JSON syntax, it raises a custom exception called `ParseError`. - The resulting parsed data is returned as the function output.

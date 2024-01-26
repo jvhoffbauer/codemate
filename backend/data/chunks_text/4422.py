@@ -1,0 +1,3 @@
+- Defines a parameterized test using `pytest.mark.parametrize`.
+- Tests GET requests to different endpoints with various query parameters.
+- Asserts that the status code and JSON response match the expected values for each request.

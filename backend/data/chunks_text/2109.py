@@ -1,0 +1,1 @@
+- Defines a new API route for the Flask application with the path "/api_route" using the `@app.api_route()` decorator. - The function associated with this route is called `non_operation()`. - This function returns a JSON response containing a simple message when the route is accessed.

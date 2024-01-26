@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_put(client: TestClient):\n    response = client.put(\n        \"/items/plumbus?token=jessica\", headers={\"X-Token\": \"fake-super-secret-token\"}\n    )\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"item_id\": \"plumbus\", \"name\": \"The great Plumbus\"}"}

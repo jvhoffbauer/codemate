@@ -1,0 +1,4 @@
+- This function tests a specific example in the SQLModel tutorial (tutorial002).
+- It sets up the necessary variables and functions for running the tutorial, including creating an engine using SQLAlchemy's `create_engine`.
+- It patches the built-in `print` function to capture its output during the execution of the tutorial.
+- The captured outputs are stored in a list called `calls`, which can be inspected after the fact to verify that the expected messages were printed by the tutorial.

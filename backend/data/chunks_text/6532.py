@@ -1,0 +1,3 @@
+- This function takes a `Request` object as input and returns its parameter with an added postfix using the built-in Python method `return request.params`.
+- The returned value can be used to modify or append additional information to the URL path, which is useful for generating dynamic links or handling complex routing scenarios in web applications.
+- It's commonly used in Flask framework to customize URL paths based on user inputs or other variables passed through HTTP requests.

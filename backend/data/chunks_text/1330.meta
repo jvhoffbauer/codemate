@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/users/me\")\nasync def read_user_me():\n    return {\"user_id\": \"the current user\"}"}

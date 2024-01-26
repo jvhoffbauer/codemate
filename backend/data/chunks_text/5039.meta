@@ -1,0 +1,1 @@
+{"original_code": "@sio.on(\"connect\")\nasync def on_connect(sid, environ, auth):\n    ..."}

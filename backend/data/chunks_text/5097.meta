@@ -1,0 +1,1 @@
+{"original_code": "async def test_staff_count(session: AsyncSession, staff):\n    adal = AsyncDal(session)\n    assert len(await adal.all(Staff)) == 1"}

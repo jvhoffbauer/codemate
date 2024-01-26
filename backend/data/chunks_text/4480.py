@@ -1,0 +1,2 @@
+- Tests if passing an invalid X-Key header results in a HTTP status code of 400 and an error message containing 'X-Key header invalid' in the JSON body.
+- Uses `@needs_py39` decorator to ensure that this test is run on Python version >= 3.9 due to usage of f-strings in the error message.

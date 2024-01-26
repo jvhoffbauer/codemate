@@ -1,0 +1,3 @@
+- This function `test_get()` tests a GET request to the URL "/typer".
+- The `client` object is used to make the request and `follow_redirects` is set to False to prevent automatic redirection.
+- The status code of the response is checked to be equal to 307 (Temporary Redirect), and the location header in the response is verified against the expected value.

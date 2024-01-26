@@ -1,0 +1,1 @@
+{"original_code": "def get_flat_params(dependant: Dependant) -> List[ModelField]:\n    flat_dependant = get_flat_dependant(dependant, skip_repeats=True)\n    return (\n        flat_dependant.path_params\n        + flat_dependant.query_params\n        + flat_dependant.header_params\n        + flat_dependant.cookie_params\n    )"}

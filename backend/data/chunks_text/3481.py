@@ -1,0 +1,3 @@
+- Defines a function `create_dependency` that takes a string argument `name`.
+- The inner function `fun` accepts an instance of `DepList`, appends `name` to it, and returns nothing (i.e., performs side effects).
+- Returns an object of type `Depends` which wraps the `fun` function as a dependency decorator for use in FastAPI routes or functions.

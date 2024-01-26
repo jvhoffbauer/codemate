@@ -1,0 +1,1 @@
+- Defines a custom exception handler for validation errors in FastAPI applications using `validation_exception_handler()`. - Takes two arguments, `request` and `exc`, where `request` is the current request object and `exc` represents the raised exception. - Returns a plain text response with the error message as a string and HTTP status code of 400 (Bad Request).

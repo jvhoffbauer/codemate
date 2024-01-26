@@ -1,0 +1,3 @@
+- `verify_password()` function checks if a plain text password (`plain_password`) matches its corresponding hash value (`hashed_password`) using PassLib's BCrypt algorithm.
+- The function applies a PassLib context to perform the verification process efficiently with a specified number of iterations (default is 12).
+- This operation takes approximately 0.3 seconds for the default number of iterations in Flask-Login's security settings.

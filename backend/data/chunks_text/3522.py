@@ -1,0 +1,3 @@
+- Defines a GET request for items with an ID using FastAPI's decorator syntax (@app.get)
+- Accepts two instances of the Item class as parameters (Tuple[Item, Item]) named id
+- The function body is currently empty and marked as uncovered by test coverage tools (pragma: no cover)

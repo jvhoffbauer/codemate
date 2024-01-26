@@ -1,0 +1,3 @@
+- This function tests reading system status using an access token obtained from `get_access_token()`.
+- It sends a GET request to the `/status/` endpoint with authorization header set to Bearer followed by the access token.
+- The function asserts that the response status is 200 and its body contains '{"status": "ok"}'.

@@ -1,0 +1,1 @@
+- Tests the `/response_model_Model1AnnotationModel2ReturnInvalidDict` endpoint by raising a `ResponseValidationError` when an invalid dictionary is passed to it. - The error message should contain the word'missing'.

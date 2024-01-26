@@ -1,0 +1,1 @@
+- Initializes a new object with three attributes: `url`, `filename`, and `state`. These values are passed in as arguments to the constructor method.

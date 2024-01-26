@@ -1,0 +1,4 @@
+- Generates an OpenAPI v3.1.0 schema for a FastAPI application using `client.get("/openapi.json")`.
+- Asserts that the status code is 200 and checks the text content if necessary.
+- Verifies that the JSON response matches the expected structure with specific keys such as 'openapi', 'info', 'paths'.
+- Confirms that each endpoint's GET method has the correct summary, operation ID, and responses (including HTTP status codes).

@@ -1,0 +1,1 @@
+{"original_code": "@celery.task(name=\"test_celery_asyncio_io_bound\")\ndef test_celery_asyncio_io_bound():\n    async_to_sync(task_io_bound)()"}

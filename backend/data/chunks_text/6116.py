@@ -1,0 +1,3 @@
+- Defines a function named `receive_after_update` that takes three arguments (a mapper object, a database connection, and a model instance).
+- The function checks if the type of the target argument is equal to SQLAlchemy's User class using the `isinstance()` method.
+- If the condition is true, it increments a global variable called `event_counter.after`. This suggests that this function listens for the `after_update` event triggered by SQLAlchemy's ORM when an update operation completes successfully on a User model instance.

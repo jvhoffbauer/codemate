@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_create_item(client: TestClient) -> None:\n    response = client.post(\"/items/\", json={\"name\": \"Foo\"})\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"name\": \"Foo\", \"description\": None}"}

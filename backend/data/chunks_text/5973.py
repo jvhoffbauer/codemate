@@ -1,0 +1,1 @@
+- Tests whether `validator_skip_blank()` function correctly converts a non-empty string to an integer using the provided type conversion function (in this case, `int`) and returns it as the output value. - Verifies that the input string is not empty or blank before attempting any conversions.

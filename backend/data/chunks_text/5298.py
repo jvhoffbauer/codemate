@@ -1,0 +1,3 @@
+- Defines a Pydantic FastAPI endpoint with name `route1`.
+- Accepts an optional query parameter named `value`, which is expected to be a list of strings (specified using the `Query()` decorator).
+- Returns a dictionary containing the received `value` as its key-value pair.

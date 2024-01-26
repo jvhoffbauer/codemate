@@ -1,0 +1,5 @@
+- Defines a `build_resp_model` class method that creates a Pydantic model for representing JSON RPC errors and responses.
+- Creates a dictionary of field definitions with default values and examples from the base classes' attributes.
+- Checks whether there is an associated data model and adds it to the response structure as an optional field.
+- Generates a new Pydantic model for the error response by extending BaseModel and adding required fields like 'jsonrpc', 'id', and 'error'.
+- Applies configuration settings to the generated model using ConfigDict.

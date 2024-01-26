@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/users/\")\nasync def read_users(commons: dict = Depends(common_parameters)):\n    return {\"message\": \"Hello Users!\", \"params\": commons}"}

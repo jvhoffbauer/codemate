@@ -1,0 +1,4 @@
+- Initializes configuration for SQLAlchemy based on INI file settings
+- Creates an `AsyncEngine` object using the configured URL and null database pool
+- Establishes a connection to the database using the created `AsyncEngine` instance
+- Executes migration tasks synchronously within the established connection

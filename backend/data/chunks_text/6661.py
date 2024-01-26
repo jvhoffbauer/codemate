@@ -1,0 +1,3 @@
+- Tests if an unexpected request type is passed to the custom request class by sending a JSON RPC request with an extra value that is not a string.
+- Asserts that the response contains an error message indicating that the input for the extra value is invalid and specifies the expected error details.
+- Verifies that the original request ID, version number, and format are still included in the response.

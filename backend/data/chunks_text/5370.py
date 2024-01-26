@@ -1,0 +1,3 @@
+- Defines a function `f` that takes an argument `r`.
+- Inside the function, it calls another function `get_gdal_config` to retrieve the value of GDAL configuration option "GDAL_DISABLE_READDIR_ON_OPEN".
+- The returned value is assigned to variable `r`, which can be used further in the program's logic.

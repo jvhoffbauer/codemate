@@ -1,0 +1,1 @@
+{"original_code": "def test_header_repr_ellipsis():\n    assert repr(Header(...)) == IsOneOf(\n        \"Header(PydanticUndefined)\",\n        # TODO: remove when deprecating Pydantic v1\n        \"Header(Ellipsis)\",\n    )"}

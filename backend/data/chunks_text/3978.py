@@ -1,0 +1,1 @@
+- Tests if getting enums with an invalid model name (i.e., `"foo"`) returns a validation error with the expected message and status code (422). - Uses both Pydantic v1 and v2 syntax for the expected output, as the latter will become mandatory in future versions of FastAPI.

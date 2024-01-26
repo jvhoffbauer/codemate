@@ -1,0 +1,1 @@
+- Retrieves a specific superhero from the database using their unique ID (`hero_id`) and returns it in JSON format. - Uses SQLAlchemy's `Session()` context manager to establish a connection to the database and retrieve the desired record. - Raises an error (HTTPException) if the requested hero is not found in the database.

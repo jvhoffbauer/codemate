@@ -1,0 +1,1 @@
+{"original_code": "def test_default_placeholder_bool():\n    placeholder_a = Default(\"a\")\n    placeholder_b = Default(\"\")\n    assert placeholder_a\n    assert not placeholder_b"}

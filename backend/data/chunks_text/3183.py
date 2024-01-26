@@ -1,0 +1,1 @@
+- Tests if `jsonable_encoder` raises a `ValueError` when passed an instance of `Unserializable`, which is not JSON serializable. - Uses PyTest's `with` statement to automatically clean up resources after testing, in this case raising an exception. - Imports and uses FastAPI's built-in function `jsonable_encoder` for encoding objects into JSON format.

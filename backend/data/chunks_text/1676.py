@@ -1,0 +1,2 @@
+- Endpoint for creating a new item using POST request
+- Accepts an `Item` object as input and returns a `ResponseMessage` with success message

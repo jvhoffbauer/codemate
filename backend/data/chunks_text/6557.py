@@ -1,0 +1,3 @@
+- Adds a custom middleware to the endpoint using `ep.middlewares`.
+- The middleware raises an HTTPException with status code 401 after executing the request handler.
+- Tests the behavior of the added middleware by making a JSON RPC request and verifying that it returns a 401 Unauthorized response with appropriate error details.

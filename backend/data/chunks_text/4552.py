@@ -1,0 +1,1 @@
+- This function tests the `GET /status/` endpoint using a test client and an access token obtained from `get_access_token`. - The expected status code is 200 (OK), and the JSON response should contain a key'status' with value 'ok'.

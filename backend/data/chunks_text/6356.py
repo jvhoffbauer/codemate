@@ -1,0 +1,2 @@
+- Creates a new environment file (`.env`) by copying the contents of an existing template file (`.env.template`) using Python's `pathlib` module.
+- Deletes the original template file to avoid unnecessary clutter in version control and prevent accidentally committing sensitive information.

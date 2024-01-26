@@ -1,0 +1,1 @@
+- Retrieves a specific Hero from the database using SQLAlchemy's `Session`, `select()`, and `where()` methods. - The result is stored in a variable called 'hero', which is then printed to the console for display.

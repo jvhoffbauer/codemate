@@ -1,0 +1,2 @@
+- Defines an asynchronous function `info()` that returns a dictionary containing important information about the application such as app name, admin email, and items per user (retrieved from Django's `settings`)
+- The returned dictionary can be used for various purposes like displaying it in a web page or sending it via API response

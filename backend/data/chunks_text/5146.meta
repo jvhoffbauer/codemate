@@ -1,0 +1,1 @@
+{"original_code": "def add_exception_handlers(\n    app: FastAPI, status_codes: Dict[Type[Exception], int]\n) -> None:\n    \"\"\"\n    Add exception handlers to the FastAPI app.\n    \"\"\"\n    for exc, code in status_codes.items():\n        app.add_exception_handler(exc, exception_handler_factory(code))"}

@@ -1,0 +1,1 @@
+{"original_code": "def amis_templates(template_path: str, encoding=\"utf8\") -> Template:\n    \"\"\"page template\"\"\"\n    with open(template_path, encoding=encoding) as f:\n        return Template(f.read())"}

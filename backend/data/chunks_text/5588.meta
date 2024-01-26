@@ -1,0 +1,1 @@
+{"original_code": "    def _fetch_item_scalars(\n        self, session: Session, item_id: Iterable[str]\n    ) -> List[TableModelT]:\n        sel = select(self.model).where(\n            self.pk.in_(list(map(get_python_type_parse(self.pk), item_id)))\n        )\n        return session.scalars(sel).all()"}

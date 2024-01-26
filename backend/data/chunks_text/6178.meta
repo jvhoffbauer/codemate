@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, latitude, longitude):\n        self.latitude = latitude\n        self.longitude = longitude"}

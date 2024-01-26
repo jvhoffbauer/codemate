@@ -1,0 +1,3 @@
+- This function is a PUT request handler for updating an existing item with ID `item_id`.
+- The `Item` model is passed as a JSON body using FastAPI's `Body()` decorator and embedded into the response using `embed=True`.
+- The updated item data is returned in a dictionary format containing both the original `item_id` and the new `item` values.

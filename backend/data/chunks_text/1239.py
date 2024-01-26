@@ -1,0 +1,1 @@
+- Defines a new route `"/login/"`, which is triggered when an HTTP POST request is made to it. - Accepts two query parameters, `username` and `password`, both of type string, using FastAPI's built-in `Form` parameter decorator. - Returns a JSON response containing just the value of the `username` parameter passed in the request body.

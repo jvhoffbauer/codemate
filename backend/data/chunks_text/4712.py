@@ -1,0 +1,3 @@
+- Defines a fixture named `app` for use in pytests by calling another module's function `get_app()`.
+- The `get_app()` function is imported and called to retrieve an instance of Flask application (`app`) defined in the specified module.
+- This fixture can be used as a dependency injection mechanism, allowing tests to access the same initialized Flask object without having to create it repeatedly.

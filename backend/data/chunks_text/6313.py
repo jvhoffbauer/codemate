@@ -1,0 +1,3 @@
+- Defines a function `downgrade()` that reverses database schema changes made during an upgrade process using Alembic.
+- Drops an index named 'ix_user_model_email' from the 'user_model' table using SQLAlchemy's `Op` object and its `drop_index()` method.
+- Deletes the entire 'user_model' table using `Op`'s `drop_table()` method.

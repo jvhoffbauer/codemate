@@ -1,0 +1,3 @@
+- Defines a GET request endpoint for retrieving user data at `"/users"`
+- Accepts an optional parameter `commons`, which is a dictionary containing common parameters, using FastAPI's dependency injection mechanism (`Depends`) and default value (`{}`)
+- Returns the provided `commons` dictionary as response body

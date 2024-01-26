@@ -1,0 +1,3 @@
+- Defines a GET request for `/route1`.
+- Uses FastAPI's dependency injection to pass a list of strings as an argument to the function, which is optional and can be provided in the query string using the `Query()` decorator with ellipsis (...) syntax.
+- Returns a dictionary containing the passed values under the key "value".

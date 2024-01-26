@@ -1,0 +1,1 @@
+- This function tests the `GET /users/me` endpoint with a token for user 'jessica'. - It asserts that the status code is 200 and the JSON response contains the expected username ('fakecurrentuser'). - The decorator `@needs_py39` ensures that this test requires Python version 3.9 or higher to run.

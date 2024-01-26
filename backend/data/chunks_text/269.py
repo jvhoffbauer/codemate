@@ -1,0 +1,1 @@
+- Retrieves a specific hero named Deadpool from the database using SQLAlchemy's `Session` and `exec` functions, filtering by name using the `where` clause. - Assigns the retrieved hero to a variable called `hero`, which is then printed to the console for display.

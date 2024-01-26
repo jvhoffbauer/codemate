@@ -1,0 +1,1 @@
+{"original_code": "    async def get_init_data(self, request: Request, **kwargs) -> BaseApiOut[Any]:\n        return BaseApiOut()"}

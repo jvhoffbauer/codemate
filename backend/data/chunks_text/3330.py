@@ -1,0 +1,3 @@
+- Defines a Pydantic FastAPI route with path `/hidden_header`.
+- Uses the `Header` decorator to create an optional parameter named `hidden_header`, which can be omitted from requests and will have a default value of `None`.
+- The `include_in_schema` argument is set to `False`, indicating that this parameter should not appear in the API documentation or request body schema.

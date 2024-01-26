@@ -1,0 +1,1 @@
+{"original_code": "def partial_init() -> Generator[None, None, None]:\n    token = finish_init.set(False)\n    yield\n    finish_init.reset(token)"}

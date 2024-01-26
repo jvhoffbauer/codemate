@@ -1,0 +1,1 @@
+{"original_code": "def test_is_uploadfile_sequence_annotation():\n    # For coverage\n    # TODO: in theory this would allow declaring types that could be lists of UploadFile\n    # and other types, but I'm not even sure it's a good idea to support it as a first\n    # class \"feature\"\n    assert is_uploadfile_sequence_annotation(Union[List[str], List[UploadFile]])"}

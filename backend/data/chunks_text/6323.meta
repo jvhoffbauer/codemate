@@ -1,0 +1,1 @@
+{"original_code": "@router.delete(\"/me\", status_code=204)\nasync def delete_current_user(\n    current_user: User = Depends(deps.get_current_user),\n    session: AsyncSession = Depends(deps.get_session),\n):\n    \"\"\"Delete current user\"\"\"\n    await session.execute(delete(User).where(User.id == current_user.id))\n    await session.commit()"}

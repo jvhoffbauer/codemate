@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/\", response_model=List[UserOut], dependencies=[Depends(on_superuser)])\nasync def read_users(\n    offset: int = 0, limit: int = 100, session: AsyncSession = Depends(get_session)\n):\n    \"\"\"\n    Retrieve users.\n    \"\"\"\n    users = await crud_user.get_multi(session, offset=offset, limit=limit)\n    return users"}

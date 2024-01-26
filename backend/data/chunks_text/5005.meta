@@ -1,0 +1,1 @@
+{"original_code": "    def one_or_404(cls, **kwargs) -> Self:\n        return get_object_or_404(cls.objects.filter(**kwargs))"}

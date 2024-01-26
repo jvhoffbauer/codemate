@@ -1,0 +1,3 @@
+- Tests retrieving data for the latest update using `GET /v2/latest`.
+- Mocks datetime functions to simulate a specific date and time.
+- Verifies that the expected JSON response is returned from the API endpoint.

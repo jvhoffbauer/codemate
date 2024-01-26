@@ -1,0 +1,3 @@
+- Defines a route for retrieving an item with ID `item_id`, using FastAPI's decorator syntax and specifying GET method
+- Accepts a path parameter named `item_id` of type string, which is passed to the function as an argument
+- Returns a dictionary containing the value of the `item_id` parameter

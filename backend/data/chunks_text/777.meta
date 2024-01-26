@@ -1,0 +1,1 @@
+{"original_code": "async def get_by_key(key: str) -> Optional[str]:\n    return await redis_client.get(key)"}

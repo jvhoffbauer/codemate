@@ -1,0 +1,3 @@
+- Endpoint to retrieve dataset's basic information as a GeoJSON feature
+- Dependencies passed through `Depends` decorator for path, assets, and reader parameters, as well as environment variables
+- Uses `rasterio` library to read data from specified file path using provided parameters, then returns a GeoJSON feature containing polygon bounds and associated metadata

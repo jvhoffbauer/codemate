@@ -1,0 +1,3 @@
+- Generates a unique filename for an uploaded file using `uuid.uuid4()`.
+- Removes hyphens from the generated uuid string to make it easier to use as part of the filename.
+- Splits the original filename into its base name and extension using `os.path.splitext()`, then appends the extension back onto the new filename created with the uuid and current year/month in ISO format.

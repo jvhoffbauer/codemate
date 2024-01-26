@@ -1,0 +1,1 @@
+{"original_code": "    async def get_page(self, request: Request) -> Page:\n        return self.page or Page()"}

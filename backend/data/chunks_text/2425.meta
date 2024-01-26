@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/sync_sync\")\ndef get_sync_sync(state: str = Depends(generator_state)):\n    return state"}

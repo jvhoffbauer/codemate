@@ -1,0 +1,5 @@
+- Imports `test_tutorial` function and necessary modules for testing SQLAlchemy's relationship attributes feature in a tutorial example.
+- Sets up SQLAlchemy engine with an in-memory database URL and creates a new instance of the module being tested.
+- Calls the main function within the module to execute its contents.
+- Retrieves an Inspector object from the engine to check if tables have been created by the module during execution.
+- Asserts that all expected tables exist after running the module.

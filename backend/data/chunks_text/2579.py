@@ -1,0 +1,1 @@
+- Tests if incorrect authorization scheme (in this case, 'notreally') is passed in request header for HTTP Bearer authentication. - Verifies that server returns expected status code and error message when invalid credentials are provided.

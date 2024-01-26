@@ -1,0 +1,1 @@
+{"original_code": "def test_endpoint_works():\n    response = client.post(\"/\", json=[1, 2, 3])\n    assert response.json() == 6"}

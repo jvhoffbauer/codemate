@@ -1,0 +1,1 @@
+{"original_code": "@needs_pydanticv1\ndef test_upload_file_dummy_with_info_plain_validator_function():\n    # For coverage\n    assert UploadFile.__get_pydantic_core_schema__(str, lambda x: None) == {}"}

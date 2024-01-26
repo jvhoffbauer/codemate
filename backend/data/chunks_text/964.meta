@@ -1,0 +1,1 @@
+{"original_code": "    def get_missing_field_error(loc: Tuple[str, ...]) -> Dict[str, Any]:\n        error = ValidationError.from_exception_data(\n            \"Field required\", [{\"type\": \"missing\", \"loc\": loc, \"input\": {}}]\n        ).errors()[0]\n        error[\"input\"] = None\n        return error  # type: ignore[return-value]"}

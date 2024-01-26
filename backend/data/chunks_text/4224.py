@@ -1,0 +1,4 @@
+- This function tests the `GET /users` endpoint with query parameters using Flask's built-in testing client (client).
+- The `q`, `skip`, and `limit` query parameters are passed to the endpoint through the URL query string.
+- The expected HTTP status code is checked against the actual response received from the server. If they match, a message is printed; otherwise, an error message containing the response text is displayed.
+- The JSON response body is extracted and compared against the expected result. In this case, we expect a simple message along with the original query parameters that were sent in the request.

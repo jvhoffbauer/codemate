@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\", response_model=List[schemas.Item], dependencies=[Depends(get_db)])\ndef read_items(skip: int = 0, limit: int = 100):\n    items = crud.get_items(skip=skip, limit=limit)\n    return items"}

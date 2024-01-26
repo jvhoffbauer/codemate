@@ -1,0 +1,1 @@
+{"original_code": "def set_cookie(*, response: Response):\n    response.set_cookie(\"cookie-name\", \"cookie-value\")\n    return {}"}

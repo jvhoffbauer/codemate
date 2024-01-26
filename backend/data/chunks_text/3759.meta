@@ -1,0 +1,1 @@
+{"original_code": "def test_get_items(client: TestClient):\n    response = client.get(\"/keyword-weights/\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"foo\": 2.3, \"bar\": 3.4}"}

@@ -1,0 +1,5 @@
+- Creates a new user without requiring login credentials (open registration).
+- Checks if open registration is allowed by server configuration and raises an error otherwise.
+- Retrieves existing user with provided email address using CRUD operations. Raises an error if such user exists.
+- Converts input data into `UserCreate` object and creates a new user using CRUD operations.
+- Returns newly created user as response body. Type hinting is ignored due to limitations of mypy.

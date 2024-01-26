@@ -1,0 +1,1 @@
+- Defines a function `float_convertor` that takes an optional argument `param` of type `float`. If not provided, defaults to `Path()`. - Returns a dictionary with a single key-value pair where the value is the input parameter and the key is "float".

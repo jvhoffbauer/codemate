@@ -1,0 +1,1 @@
+{"original_code": "@router.websocket(\"/custom_error/\")\nasync def router_ws_custom_error(websocket: WebSocket):\n    raise CustomError()"}

@@ -1,0 +1,1 @@
+{"original_code": "def test_no_query():\n    client = get_client()\n    response = client.post(\"/items/\")\n    assert response.status_code == 200\n    assert response.json() == \"Hello World\""}

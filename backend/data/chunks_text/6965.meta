@@ -1,0 +1,1 @@
+{"original_code": "async def main():\n    logger.info(\"Creating initial data\")\n    async with SessionLocal() as session:\n        await create_first_user(session)\n    logger.info(\"Initial data created\")"}

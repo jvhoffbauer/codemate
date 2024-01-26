@@ -1,0 +1,1 @@
+{"original_code": "def test_round_trip(tmp_path, name, content, kwargs):\n    test_path = tmp_path / name\n    assert not test_path.exists()\n\n    app.io.save(test_path, content, **kwargs)\n    assert app.io.load(test_path) == content"}

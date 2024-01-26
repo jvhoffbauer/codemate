@@ -1,0 +1,3 @@
+- Defines a function `create_user` that takes in a `schemas.UserCreate` object and an optional database session (defaulted to be retrieved using `Depends(get_db)`)
+- Checks if a user with the given email exists by calling `crud.get_user_by_email()`. If found, raises a `HTTPException` with status code 400 and error message "Email already registered".
+- Otherwise, creates a new user using `crud.create_user()`, passing it both the input data from `user` and the current database connection obtained through `db`. The resulting user is returned.

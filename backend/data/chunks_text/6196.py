@@ -1,0 +1,3 @@
+- Method `serialize()` converts a Location object to a dictionary for easier storage and transmission of data.
+- It returns a dictionary containing general information about the location such as ID, country name, population, province, coordinates, last update time, and latest statistics on confirmed cases, deaths, and recoveries.
+- The method also calls another serialization function `serialize()` from the `Coordinates` class to convert its own attributes into a nested dictionary format.

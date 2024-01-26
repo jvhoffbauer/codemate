@@ -1,0 +1,1 @@
+- Tests if Flask's route converter can convert a URL with a path component into a dictionary key named 'path'. - Sends an HTTP GET request to '/path/some/example', and checks that the status code is 200 OK. - Verifies that the JSON response contains a key 'path' with value'some/example'.

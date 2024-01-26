@@ -1,0 +1,6 @@
+- This function is called by SQLModel when constructing an instance of a SQLModel subclass. It takes three arguments: the current SQLModel instance being constructed, a dictionary containing the input data, and an optional list of already set fields (used internally).
+- The function first copies the existing dictionary of the SQLModel instance to avoid overwriting its original state. Then, it creates two dictionaries: one with the actual values for the fields, and another with default values for required but missing ones.
+- If the configuration option 'extra' is set to 'allow', then all remaining keys in the input dictionary are added to the '_extra' attribute of the SQLModel instance. Otherwise, they are directly assigned as fields.
+- Finally, the function sets the fields on the SQLModel instance using the'setattr' method, which triggers SQLAlchemy's object initialization process. Additionally, it sets some internal attributes used by pydantic for introspection purposes.
+- At the end, the function calls the post-initialization hook defined in the SQLModel subclass, or sets some additional metadata about private attributes if no such hook exists.
+- Lastly, the function iterates through the predefined relationships between tables and assigns their corresponding instances based on the input data.

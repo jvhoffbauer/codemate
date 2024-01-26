@@ -1,0 +1,4 @@
+- Defines a function `upsert()` that takes several arguments including a `Bucket`, an ID for the document to be created or updated, and data to create/update the document (stored in `ItemCreate`)
+- Retrieves the actual document ID from the provided ID using `get_doc_id()`
+- Creates a new `ItemInDB` object with the necessary attributes set based on the input parameters
+- Calls the `utils.upsert()` method passing in the `Bucket`, document ID, newly created `ItemInDB` object, optional persistence time, and TTL value

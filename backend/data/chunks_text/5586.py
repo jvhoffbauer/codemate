@@ -1,0 +1,3 @@
+- Removes a specific object from the database using SQLAlchemy's session management and deletes it permanently.
+- Takes an instance of the table model as input (TableModelT), which is passed to the `object_session()` function for managing the session.
+- The deleted object is not immediately removed from the database; instead, changes are queued in the session until committed or rolled back explicitly.

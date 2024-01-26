@@ -1,0 +1,3 @@
+- Tests if an unauthorized user tries to access their own information using a token for another user (inexistent)
+- Sends a GET request to /users/me with an invalid bearer token and expects a status code of 401 Unauthorized
+- Checks that the error message returned is "Could not validate credentials" and the WWW-Authenticate header contains Bearer scope="me"

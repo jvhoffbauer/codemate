@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/heroes/\", response_model=Hero)\ndef create_hero(hero: Hero):\n    with Session(engine) as session:\n        session.add(hero)\n        session.commit()\n        session.refresh(hero)\n        return hero"}

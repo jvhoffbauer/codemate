@@ -1,0 +1,1 @@
+- Defines a function `get_probe2_dep()` that takes an optional argument `probe2_dep`. If not provided, it uses the default value of any type (represented by ellipsis `...`) for `Body`. - Returns the value of `probe2_dep`, which can be either the user-provided value or the default one if none was given.

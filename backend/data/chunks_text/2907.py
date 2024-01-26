@@ -1,0 +1,3 @@
+- Defines a function `get_something_else()` that takes an optional keyword argument `someheader`.
+- If `someheader` is not provided, it defaults to the value returned by another function called `get_header`, which is imported using the `Depends` decorator from FastAPI's dependency injection system.
+- The function returns a string concatenated with the default or user-provided value of `someheader` and the literal string "123".

@@ -1,0 +1,1 @@
+- Registers a custom admin for a Plone site's Page Schema with label 'page_label'. - Allows administrators to manage and configure instances of this schema through the Plone control panel. - Provides additional functionality beyond standard Plone content management, such as advanced search or workflow automation.

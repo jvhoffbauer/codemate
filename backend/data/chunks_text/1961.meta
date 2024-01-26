@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/fastapi\", response_class=RedirectResponse)\nasync def redirect_fastapi():\n    return \"https://fastapi.tiangolo.com\""}

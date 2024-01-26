@@ -1,0 +1,5 @@
+- Defines a custom SQLAlchemy selector called `ArticleSelector`, which inherits from `SqlalchemySelector`.
+- Sets the prefix for the API routes to `/user`.
+- Specifies a list of fields that should be included in the query results using the `fields` attribute. These include `id`, `title`, `username`, and an alias for the password field (`pwd`) defined on the related User model.
+- Asserts that the expected fields are present in the `selector._select_entities` dictionary after creating the selector instance with the `Article` model as input.
+- Verifies that the filter entities (i.e., the set of columns used to construct WHERE clauses) is equal to the selected entities. This ensures that the correct columns are being filtered based on user input.

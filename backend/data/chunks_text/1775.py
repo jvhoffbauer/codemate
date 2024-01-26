@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/{item_id}` with a parameter `item_id`.
+- Returns either a JSON object (default behavior) or an image file (if `img` is set to True).
+- Uses FastAPI's `FileResponse()` function to serve an image as a response.

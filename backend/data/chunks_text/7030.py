@@ -1,0 +1,1 @@
+- Retrieves a specific user with the given ID using FastAPI's dependency injection mechanism and Pydantic's model validation. - Requires authentication as an active superuser (admin). - Returns the retrieved user in the specified format defined by schemas.User.

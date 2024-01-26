@@ -1,0 +1,2 @@
+- This method, `alias`, returns an alias for the current field if it exists, otherwise it returns the original name of the field.
+- The alias is retrieved from the `FieldInfo` object associated with this field using its `alias` attribute. If no alias is found, the original name is returned instead.

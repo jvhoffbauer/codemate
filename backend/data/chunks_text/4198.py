@@ -1,0 +1,1 @@
+- This function, `test_get()`, tests a GET request to the root URL (/) using Flask's built-in testing client. - The expected response body is hardcoded as JSON and compared against the actual response content returned by the server. - If the responses match, the test passes; otherwise, it fails with an AssertionError exception.

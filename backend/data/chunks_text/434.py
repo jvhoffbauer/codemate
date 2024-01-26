@@ -1,0 +1,4 @@
+- Imports and sets up a module called `mod` from the SQLModel tutorial in Python 3.10 (Python version requirement).
+- Creates an engine using the provided URL for testing purposes.
+- Patches the built-in print function to capture its output during execution of the main method of the module.
+- Asserts that the captured output matches the expected result, which is a list containing a tuple representing the Hero object's properties.

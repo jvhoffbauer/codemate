@@ -1,0 +1,1 @@
+- Defines a method `exec()` in the class that takes a select statement and optional parameters, execution options, bind arguments, parent execute state, and event handler as arguments. - Returns a tuple containing the result of executing the select statement with the provided inputs. - The implementation details are omitted (represented by ellipsis) for brevity.

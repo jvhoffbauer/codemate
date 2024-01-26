@@ -1,0 +1,3 @@
+- Defines a fixture `probe_ep` that adds middleware to an endpoint (`ep`) using context managers and appends them to its list of middlewares.
+- Creates another middleware for a specific method (`probe()`) which is added to it through the `middlewares` parameter in the decorator.
+- The `probe()` function sets cookies at different stages and returns some data while setting HTTP status code to 404.

@@ -1,0 +1,2 @@
+- Defines an asynchronous function called `route` that takes a `Request` object as its argument
+- Returns the result of calling another asynchronous function, `get_init_data`, with the request object passed in as an argument

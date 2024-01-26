@@ -1,0 +1,1 @@
+{"original_code": "def init() -> None:\n    with Session(engine) as session:\n        init_db(session)"}

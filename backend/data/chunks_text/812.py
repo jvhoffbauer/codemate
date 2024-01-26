@@ -1,0 +1,1 @@
+- Defines a function `hash_password` that takes a password as input and returns its hashed value using the Bcrypt algorithm in Python's built-in `bcrypt` library. - Converts the plaintext password to bytes with UTF-8 encoding (line 2). - Generates a random salt for added security (line 4). - Combines the password and salt using the `hashpw` method of the `bcrypt` module (line 5).

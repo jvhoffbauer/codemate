@@ -1,0 +1,3 @@
+- Endpoint for health checks (/healthz) is defined using FastAPI's decorator syntax (@app.get).
+- The endpoint returns a simple JSON response with key 'ping' and value 'pong!'.
+- This endpoint can be used to verify that the application is running properly, as it should always respond successfully regardless of any other issues in the app.

@@ -1,0 +1,3 @@
+- Creates a new item using `POST /items/` endpoint with JSON data containing name, price (as string), description, and tax as float
+- Asserts that the HTTP status code is 200 OK
+- Asserts that the returned JSON matches expected values for name, price (converted to float), description, and tax

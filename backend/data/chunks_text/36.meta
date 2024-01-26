@@ -1,0 +1,1 @@
+{"original_code": "    def from_orm(\n        cls: Type[_TSQLModel], obj: Any, update: Optional[Dict[str, Any]] = None\n    ) -> _TSQLModel:\n        return cls.model_validate(obj, update=update)"}

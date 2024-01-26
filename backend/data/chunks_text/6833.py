@@ -1,0 +1,4 @@
+- Defines a method `assemble_cors_origins` that takes a union of string or list as input parameter `v`.
+- Checks whether the input is a single string without square brackets around it. If yes, splits it by comma and strips whitespace from each element to create a list.
+- Else, returns the input directly as either a string or a list.
+- Raises an error with message `v` if the input cannot be handled.

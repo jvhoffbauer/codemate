@@ -1,0 +1,1 @@
+{"original_code": "def read_item(\n    *,\n    item: models.Item = Depends(get_item),\n    user: models.User = Depends(deps.get_current_active_user),\n):\n    \"\"\"Get item by id.\"\"\"\n    if not crud.user.is_superuser(user) and (item.owner_id != user.id):\n        raise HTTPException(status_code=400, detail=\"Not enough permissions.\")\n    return item"}

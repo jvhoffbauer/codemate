@@ -1,0 +1,2 @@
+- Defines a function `downgrade()` that returns no value (`None`)
+- Uses Alembic's `op` object to drop two tables named "auth_refresh_token" and "auth_user" during database schema migrations

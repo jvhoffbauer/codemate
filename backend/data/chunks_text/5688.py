@@ -1,0 +1,3 @@
+- Defines a decorator named `names` that takes a class as an argument (`cls`) and returns a function with the same name as the decorated class.
+- Checks whether the decorated class already has an attribute called `__empty__`. If it exists, adds a list containing a single string "`__empty__`" to the list of names; otherwise, creates an empty list.
+- Appends the names of all members (variables, functions, etc.) defined within the decorated class using a list comprehension. The result is returned by the decorator.

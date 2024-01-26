@@ -1,0 +1,4 @@
+- This function `on_event()` adds an event handler to the FastAPI router.
+- It takes a string argument representing the type of event (either'startup' or'shutdown').
+- It returns a callable that can be used as a decorator to add the event handler to a specific function.
+- However, this function is marked as deprecated and users are encouraged to use the `lifespan` event handlers instead, which provide more flexibility and better performance. More information can be found in the FastAPI documentation linked in the deprecation message.

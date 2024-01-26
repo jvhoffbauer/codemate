@@ -1,0 +1,1 @@
+- Defines a cached property called `site` for the current class (presumably an admin subclass). - The value of this property is either the current object itself, or the `site` attribute of its application (assuming it has one). - This caching decorator ensures that the computationally expensive process of finding the site is done once and stored in memory for future use.

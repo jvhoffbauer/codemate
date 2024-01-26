@@ -1,0 +1,3 @@
+- This function tests strict login with correct username and password using grant type 'password'
+- It makes a POST request to '/login' endpoint with required parameters in the body
+- The expected status code is 200 and the JSON response contains granted access token details including grant type, username, password, scopes, client ID, and client secret (which are all null for this case)

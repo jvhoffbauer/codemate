@@ -1,0 +1,3 @@
+- This function is asynchronous and named `shutdown`.
+- It waits for the disconnection of the database connection using the `disconnect()` method provided by the `aiosqlite` library's `Connection` class (stored in a variable called `database`).
+- The function returns immediately after initiating the disconnection process, allowing other parts of the program to continue executing without waiting for the actual disconnection to complete.

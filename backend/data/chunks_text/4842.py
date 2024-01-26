@@ -1,0 +1,3 @@
+- Retrieves an item with a specific ID from the default GCP Cloud Firestore database using FastAPI's dependency injection to retrieve the necessary objects.
+- Checks whether the requested item exists in the database or raises a `HTTPException` with status code 404 ("Item not found").
+- Verifies that the user making the request has sufficient privileges to access the item based on its ownership information stored in the database. If the user is not the owner of the item and is not a superuser, a `HTTPException` with status code 400 ("Not enough permissions") is raised.

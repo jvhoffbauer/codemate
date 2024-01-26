@@ -1,0 +1,3 @@
+- This function handles GET requests to the `/items/` endpoint.
+- It takes a query parameter called `token`, which is optional and authenticated using FastAPI's built-in OAuth2 authentication scheme (`Security()`) provided by the `oauth2_scheme`.
+- If no token is present, it returns a message prompting the user to create an account; otherwise, it returns the token as part of the response body.

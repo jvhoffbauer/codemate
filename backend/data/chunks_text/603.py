@@ -1,0 +1,3 @@
+- Imports and sets up necessary modules to run a SQLAlchemy example from the SQLModel documentation (tutorial003_py310).
+- Creates an engine using the provided URL, then executes the main function of the module.
+- Retrieves all Hero records from the database using SQLAlchemy's `Session`, stores them in a dictionary by name, and accesses specific characters to perform assertions on their attributes.

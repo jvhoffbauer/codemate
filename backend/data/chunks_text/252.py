@@ -1,0 +1,3 @@
+- This function is a GET request for all heroes in the database, using FastAPI's decorator `@app.get`.
+- It creates a new SQLAlchemy session and executes a SELECT query to retrieve all rows from the Hero table (using `session.exec(select(Hero))`) into a list called 'heroes'.
+- The resulting list of dictionaries representing each hero row is returned by the function.

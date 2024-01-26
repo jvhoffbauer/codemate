@@ -1,0 +1,1 @@
+{"original_code": "def response_model_model1_annotation_model2_return_invalid_model() -> Item:\n    return Item(name=\"Foo\", price=42.0)"}

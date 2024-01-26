@@ -1,0 +1,1 @@
+- Tests if a ResponseModel without annotations raises a `ResponseValidationError` when returned by a Flask API endpoint. - Uses PyTest's `with` statement to raise and catch exceptions for testing purposes. - Checks that the error message contains the string'missing'.

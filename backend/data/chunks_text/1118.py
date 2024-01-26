@@ -1,0 +1,3 @@
+- Endpoint to retrieve system status
+- Requires authentication using FastAPI's `Depends()` decorator and `get_current_user()` function from the `starlette_context` package
+- Returns a JSON response with a single key,'status', set to 'ok'

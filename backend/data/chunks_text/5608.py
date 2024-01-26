@@ -1,0 +1,3 @@
+- Defines a property called `filtered_item_id` for the class which returns a callable function named `depend`.
+- The `depend` function takes two arguments - `item_id` and `sel`, where `item_id` is a list of IDs and `sel` represents an SQL query with select statement.
+- Inside the `depend` function, it filters the input `item_id` using the `in_` operator in the WHERE clause of the SQL query represented by `sel`. It then retrieves the filtered results from the database using `async_scalars` method and converts them into a list using `list` built-in function. Finally, it returns the filtered list.

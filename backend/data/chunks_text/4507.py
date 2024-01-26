@@ -1,0 +1,1 @@
+- Disables OpenAPI generation by setting OPENAPI_URL environment variable to an empty string before loading the FastAPI instance using `get_client()`. - Verifies that attempting to access the OpenAPI JSON or documentation pages results in a HTTP 404 error.

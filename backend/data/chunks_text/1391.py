@@ -1,0 +1,3 @@
+- Endpoint for creating a new item with POST request
+- Uses FastAPI's decorator `@app.post()` to define an endpoint and specify HTTP method as POST
+- Returns the newly created item object in JSON format using `response_model` parameter of `@app.post()`

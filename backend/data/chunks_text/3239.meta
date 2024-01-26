@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/by-alias/model\", response_model=Model)\ndef by_alias_model():\n    return Model(alias=\"Foo\")"}

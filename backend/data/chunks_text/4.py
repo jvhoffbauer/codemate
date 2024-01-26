@@ -1,0 +1,3 @@
+- This is a decorator function called `__dataclass_transform__`. It takes optional arguments for customizing how dataclasses are transformed during initialization and comparison.
+- The default behavior of this transformer is to use equality by default (eq_default=True), not sort attributes by default (order_default=False), and allow keyword-only arguments (kw_only_default=False).
+- The `field_descriptors` argument allows specifying additional fields or transformations that should be applied when initializing the dataclass instance. These can be either types or callables that will be used as descriptors for each field.

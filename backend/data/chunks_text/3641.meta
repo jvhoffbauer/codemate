@@ -1,0 +1,1 @@
+{"original_code": "@needs_pydanticv2\ndef test_override_settings():\n    from docs_src.settings.app02 import test_main\n\n    test_main.test_app()"}

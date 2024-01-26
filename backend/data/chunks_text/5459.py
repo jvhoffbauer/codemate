@@ -1,0 +1,2 @@
+- Defines a function `parse_cors_origin` that takes a class (`cls`) and a value (`v`) as arguments.
+- The function parses CORS origins by splitting the comma-separated string `v` into a list of strings, stripping whitespace from each element using the built-in `strip()` method, and returning the resulting list.

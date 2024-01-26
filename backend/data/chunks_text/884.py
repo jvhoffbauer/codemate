@@ -1,0 +1,3 @@
+- Initializes a new instance of the class with an optional `dependency` function and a boolean flag for caching results (default is true)
+- The `dependency` parameter can be used to specify another function that should be called before executing this function's logic, allowing for complex dependencies between functions in a pipeline
+- The `use_cache` parameter determines whether cached results will be returned instead of recomputing them each time the function is called

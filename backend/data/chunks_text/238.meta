@@ -1,0 +1,1 @@
+{"original_code": "def test_delete_hero(session: Session, client: TestClient):\n    hero_1 = Hero(name=\"Deadpond\", secret_name=\"Dive Wilson\")\n    session.add(hero_1)\n    session.commit()\n\n    response = client.delete(f\"/heroes/{hero_1.id}\")\n\n    hero_in_db = session.get(Hero, hero_1.id)\n\n    assert response.status_code == 200\n\n    assert hero_in_db is None"}

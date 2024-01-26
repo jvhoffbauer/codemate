@@ -1,0 +1,3 @@
+- Defines an OpenAPI schema for a FastAPI application with version 3.1.0 and title 'FastAPI' (v0.1.0)
+- Includes paths for GET requests to '/portal', which can optionally include query parameter 'teleport' of type boolean with default value false
+- Specifies responses for successful ('200') and validation error ('422') cases, including detailed schemas for HTTPValidationError and ValidationError objects

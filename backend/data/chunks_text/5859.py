@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `http_exception_handler` that takes a request object and an HTTPException instance as arguments.
+- Checks whether the response body should be returned for the given HTTP status code using the `is_body_allowed_for_status_code()` helper method (not shown). If it shouldn't, returns a simple response with just the status code and headers from the exception.
+- Otherwise, retrieves the exception's content (which may contain additional details beyond just the status code and message), converts it to a JSON-serializable format, and returns a JSON response with both the content and status code/headers from the exception.

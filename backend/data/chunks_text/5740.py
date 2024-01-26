@@ -1,0 +1,3 @@
+- Retrieves a list of `Action` objects based on a specified flag and user permissions using Django Rest Framework's `APIView`.
+- Loops through all registered admin actions with the given flag and checks whether the current user has permission to perform that action.
+- Appends each eligible action to a list and returns it after filtering out any null values.

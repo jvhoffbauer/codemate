@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_portal()` that takes a boolean argument `teleport`.
+- If `teleport` is true, returns a redirect response to a specific YouTube video URL (the infamous "Rickroll" video).
+- Otherwise, returns a dictionary with a message for the user.

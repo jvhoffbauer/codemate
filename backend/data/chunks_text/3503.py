@@ -1,0 +1,2 @@
+- Defines a function named `valid2` with no arguments or return value (pass statement).
+- This function is not used in this program and serves as an example of how to define a function without any implementation.

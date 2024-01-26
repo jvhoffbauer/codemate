@@ -1,0 +1,1 @@
+- This endpoint returns a list of `Item` objects without specifying a response model in the decorator or function signature. - The returned list contains three items with different attributes (name, date, price, and owner_ids). - Since no response model is provided, FastAPI will automatically infer the schema based on the data type and structure of the returned values.

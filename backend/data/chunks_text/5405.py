@@ -1,0 +1,3 @@
+- Tests the `environment_dependency` parameter of `TilerFactory`, which allows passing a function that returns an environment dictionary to be passed to GDAL when creating tiles.
+- Demonstrates how to use this feature to control whether GDAL should skip reading directories (i.e., disabling readdir_p for performance reasons), and shows how it affects tile generation.
+- Shows how to define custom query parameters to pass the same functionality as URL arguments.

@@ -1,0 +1,4 @@
+- Creates a FastAPI application with multiple routes and handlers.
+- Adds the `CacheControlMiddleware` to set default caching behavior for responses.
+- Excludes specific paths (routes starting with "/route1", "/route2", or matching the regex pattern "/tiles/[0-1]/.*") from being cached by setting their own custom headers instead of using the middleware's defaults.
+- Tests the middleware by making requests to different endpoints and checking that the expected HTTP headers are present in the responses.

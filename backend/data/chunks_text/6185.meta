@@ -1,0 +1,1 @@
+{"original_code": "    def serialize(self):\n        \"\"\"\n        Serialize the model into dict\n        TODO: override dict() instead of using serialize\n        \"\"\"\n        return {**self.dict(), \"latest\": self.latest}"}

@@ -1,0 +1,1 @@
+- Defines a function `get_user()` that returns an empty dictionary (representing a user object) without executing any test coverage analysis using the `pragma: no cover` directive. This is useful for testing functions that don't require external resources or input, as it prevents unnecessary tests from running and improves overall test suite performance.

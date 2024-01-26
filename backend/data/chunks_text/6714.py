@@ -1,0 +1,3 @@
+- Tests a basic request with probe endpoint and passes data to middleware for cookie storage
+- Asserts that cookies are set correctly based on middleware functions' behavior
+- Verifies HTTP status code is as expected (404 in this case)

@@ -1,0 +1,1 @@
+{"original_code": "def test_router_with_params():\n    client = TestClient(app)\n    with client.websocket_connect(\n        \"/router/path/to/file?queryparam=a_query_param\"\n    ) as websocket:\n        data = websocket.receive_text()\n        assert data == \"path/to/file\"\n        data = websocket.receive_text()\n        assert data == \"a_query_param\""}

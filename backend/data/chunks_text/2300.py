@@ -1,0 +1,3 @@
+- Tests converting a query parameter using Flask's `request.args` dictionary
+- Sends an HTTP GET request to the "/query" route with a parameter named "param" containing non-ASCII characters
+- Asserts that the status code is 200 and the JSON response contains the converted value of the parameter

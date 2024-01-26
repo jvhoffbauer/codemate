@@ -1,0 +1,3 @@
+- Defines a decorator function `values()` that takes a class as an argument (`cls`)
+- Inside the function, creates a list comprehension to extract all the values from each tuple in the `choices` attribute of the given class
+- Returns this list of extracted values

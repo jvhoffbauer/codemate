@@ -1,0 +1,3 @@
+- This function tests the `POST /uploadfiles/` endpoint using Flask's built-in testing client (TestClient).
+- It creates two temporary files containing some data and passes them to the server along with their filenames in a dictionary of tuples representing multiple files with the same name.
+- The function checks that the server returns an HTTP status code of 200 OK and a JSON response containing the list of uploaded filenames.

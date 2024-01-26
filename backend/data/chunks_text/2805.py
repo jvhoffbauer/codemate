@@ -1,0 +1,3 @@
+- Tests GET request to /query/int endpoint with Pydantic validation for missing query parameter
+- Asserts that status code is 422 (Unprocessable Entity) and error message contains 'Field required'
+- Uses `IsDict` from pypi package `asgiref` to compare expected JSON response format against actual response

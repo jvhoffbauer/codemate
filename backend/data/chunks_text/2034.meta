@@ -1,0 +1,1 @@
+{"original_code": "def get_mkdocs_material_langs() -> List[str]:\n    material_path = Path(material.__file__).parent\n    material_langs_path = material_path / \"templates\" / \"partials\" / \"languages\"\n    langs = [file.stem for file in material_langs_path.glob(\"*.html\")]\n    return langs"}

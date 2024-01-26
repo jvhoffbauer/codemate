@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"session\")\ndef user_client(user: User):\n    return ApiClient(app, user)"}

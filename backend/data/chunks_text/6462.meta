@@ -1,0 +1,1 @@
+{"original_code": "    async def body(self):\n        return await self.request.body()"}

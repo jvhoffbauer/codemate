@@ -1,0 +1,3 @@
+- Tests if a view function without `@api_view` decorator and model annotation returns the same model as expected
+- Sends GET request to URL "/no_response_model_annotation_return_same_model" using Flask's built-in testing client (client)
+- Asserts that HTTP status code is 200 OK and checks the response body for correctness

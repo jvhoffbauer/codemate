@@ -1,0 +1,3 @@
+- Tests login functionality by making a POST request to /token with username and password as parameters
+- Verifies that the server returns a successful HTTP status code (200) and a JSON object containing an access token and token type ("bearer") in response
+- Uses Flask's built-in testing framework (TestClient) for automated unit tests

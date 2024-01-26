@@ -1,0 +1,1 @@
+{"original_code": "    async def _get_page_as_tabs(self, request: Request) -> Page:\n        page = await super(AdminApp, self).get_page(request)\n        children = await self.get_page_schema_children(request)\n        page.body = PageSchema(\n            children=children, tabsMode=self.page_schema.tabsMode\n        ).as_page_body()\n        return page"}

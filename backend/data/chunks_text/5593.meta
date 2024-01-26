@@ -1,0 +1,1 @@
+{"original_code": "    async def read_items(\n        self, request: Request, item_id: List[str]\n    ) -> List[SchemaReadT]:\n        \"\"\"Fetch the database data by id.\"\"\"\n        return await self.db.async_run_sync(self._read_items, item_id)"}

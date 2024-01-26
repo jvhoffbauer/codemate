@@ -1,0 +1,4 @@
+1. This function takes an object `res`, and optional arguments `exclude_unset`, `exclude_defaults`, and `exclude_none`. It returns the prepared response content based on the type of input `res`.
+2. If `res` is a subclass of `BaseModel`, the function checks whether the `read_with_ORM_mode` attribute is set. If so, it returns `res` directly without converting it into a dictionary; otherwise, it calls another helper function `_model_dump` with additional options passed down.
+3. For lists or dictionaries, the function recursively applies itself to each element and returns the result as a new list/dictionary respectively.
+4. For other types (including plain Python objects like tuples, strings, etc.), the function simply returns them unchanged.

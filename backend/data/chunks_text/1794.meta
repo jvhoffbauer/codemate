@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/info\")\nasync def info(settings: config.Settings = Depends(get_settings)):\n    return {\n        \"app_name\": settings.app_name,\n        \"admin_email\": settings.admin_email,\n        \"items_per_user\": settings.items_per_user,\n    }"}

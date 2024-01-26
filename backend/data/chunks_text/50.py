@@ -1,0 +1,2 @@
+- Defines a function `get_annotations()` that takes in a dictionary called `class_dict`.
+- Returns the value of the key '__annotations__' from the given dictionary or an empty dictionary if it doesn't exist.

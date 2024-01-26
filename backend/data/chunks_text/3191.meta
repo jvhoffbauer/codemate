@@ -1,0 +1,1 @@
+{"original_code": "def test_encode_model_with_alias_raises():\n    with pytest.raises(ValidationError):\n        ModelWithAlias(foo=\"Bar\")"}

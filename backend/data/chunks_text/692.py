@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/celery-test` with an HTTP response status of 200
+- Logs a debug message to the application's logger
+- Executes a Celery task asynchronously using the `delay()` method and waits for its result up to 10 seconds using the `get()` method

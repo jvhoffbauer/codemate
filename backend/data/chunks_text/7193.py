@@ -1,0 +1,1 @@
+- Defines a function named `job_id` that returns a string representing a unique identifier for a scheduled task in Celery or another scheduling framework. - The docstring provides a brief description of what the function is used for and its expected output type.

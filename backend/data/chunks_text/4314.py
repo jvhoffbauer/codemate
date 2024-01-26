@@ -1,0 +1,2 @@
+- Creates a new note using POST request and saves it to database (Pydantic validation handled by `@needs_pydanticv1`)
+- Retrieves all notes using GET request and checks if newly created note is included in the list

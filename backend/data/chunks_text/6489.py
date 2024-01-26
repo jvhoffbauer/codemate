@@ -1,0 +1,1 @@
+- Initializes a new instance of FastAPIJSONRPC class with optional arguments for fine names and custom URL for OpenRPC schema. - Sets default values for `fastapi_jsonrpc_components_fine_names` and initializes `self.openrpc_schema` to `None`. - Calls parent constructor with provided args and kwargs.

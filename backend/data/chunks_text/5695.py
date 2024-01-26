@@ -1,0 +1,3 @@
+- This method is called when an object of this class is converted to a string representation (e.g., passed to `print()`, used as a key in a dictionary).
+- It returns the value attribute of the current object, which allows for more meaningful output when using Django's template language or other contexts where strings are expected.
+- By providing this custom implementation of the `__str__` method, we can ensure that our choices are displayed correctly without needing to manually convert them ourselves.

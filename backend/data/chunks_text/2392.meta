@@ -1,0 +1,1 @@
+{"original_code": "    def read_root() -> Rectangle:\n        return Rectangle(width=3, length=4)"}

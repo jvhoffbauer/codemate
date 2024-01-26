@@ -1,0 +1,1 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using Swagger UI integration. - Includes information about the API's title and version in the `info` object. - Defines paths for each endpoint, including request parameters and responses. - Specifies error handling using custom schemas for HTTP validation errors and generic validation errors.

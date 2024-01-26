@@ -1,0 +1,1 @@
+{"original_code": "@flask_app.route(\"/\")\ndef flask_main():\n    name = request.args.get(\"name\", \"World\")\n    return f\"Hello, {escape(name)} from Flask!\""}

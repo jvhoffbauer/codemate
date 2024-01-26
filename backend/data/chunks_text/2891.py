@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` with a single parameter `q`.
+- The type of `q` is either a string or `None`, and it's optional (default value is `None`) using Pydantic's `Query` decorator to validate input against a regular expression pattern.
+- If `q` is not `None` and matches the regex pattern, returns a formatted message with `q` included; otherwise, returns a default message.

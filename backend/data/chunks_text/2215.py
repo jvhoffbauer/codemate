@@ -1,0 +1,3 @@
+- Defines a new endpoint `/second` using FastAPI's decorator syntax
+- Accepts an argument of type `Item`, which is defined elsewhere in the application
+- Returns the received `Item` object without any modifications

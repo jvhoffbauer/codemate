@@ -1,0 +1,4 @@
+- This test uses `@needs_py310` decorator to ensure Python version is at least 3.10.
+- It imports a module named `tutorial002_py310` from the `docs_src.tutorial.indexes` package and runs its main function after setting up necessary variables like SQLAlchemy engine and mocking builtin print statement using `patch`.
+- The test checks if the output of printing statements matches the expected values by comparing them against a list stored in `call` variable created by `get_testing_print_function`.
+- After running the main function, the test retrieves all indexes defined on the `Hero` table using SQLAlchemy's `Inspector`, compares them against an expected list of indexes, and verifies that there are no other unexpected indexes present in the database.

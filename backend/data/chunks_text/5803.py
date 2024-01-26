@@ -1,0 +1,1 @@
+- Adds a new `PageSchemaAdminT` object to the list of children associated with this class instance (presumably representing some kind of page or content item). - Does not return any value and is therefore marked as having no return type in Python's typing system (hence "None" as the return type annotation).

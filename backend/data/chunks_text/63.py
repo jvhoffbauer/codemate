@@ -1,0 +1,2 @@
+- Retrieves all fields of a SQLModel instance or class and returns them as a dictionary with field names as keys and FieldInfo objects as values (ignoring type hints).
+- The `type: ignore` annotation is used to suppress mypy's warning about ignoring the type hint for the function's first parameter.

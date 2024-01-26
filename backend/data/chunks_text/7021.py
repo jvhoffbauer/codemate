@@ -1,0 +1,3 @@
+- Retrieves a list of users from the database using `crud.user.get_multi()`.
+- Allows specifying an optional offset (`skip`) and limit (`limit`) for pagination purposes.
+- Returns the retrieved user objects as a list.

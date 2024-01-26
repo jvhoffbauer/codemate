@@ -1,0 +1,4 @@
+- Defines a class method `valid_password()` that takes a string argument `password`.
+- Uses regular expressions to check whether the password meets certain criteria (at least one lowercase letter, one uppercase letter, digit, or special symbol).
+- Raises a `ValueError` with an error message explaining what is required for a strong password if the password fails validation.
+- Returns the original password unchanged if it passes validation.

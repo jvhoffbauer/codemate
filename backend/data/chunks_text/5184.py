@@ -1,0 +1,3 @@
+- Defines two endpoints for cropping images based on bounding boxes using FastAPI's `@app.get()` decorator and Pydantic's `Path`, `Query`, and `Depends` functions to parse URL parameters and dependencies.
+- Accepts various arguments such as minimum and maximum x and y coordinates, output image format, source path, layer parameters, dataset parameters, image parameters, post-processing function, rescaling parameters, color formula, colormap, rendering parameters, and environment variables through different dependency functions like `self.path_dependency`, `self.layer_dependency`, etc.
+- Uses RasterIO library to read and manipulate geospatial data, including applying color formulas and colormaps, and returns the resulting image in the specified format.

@@ -1,0 +1,1 @@
+- This endpoint uses FastAPI's dependency injection to set a cookie with key `dep`. The value of this cookie is passed as an argument to the function using the `Depends()` decorator and assigned to the variable `dep`. - The endpoint returns a dictionary containing the value of the `dep` cookie, which can be accessed by making a GET request to the `/directCookie` route.

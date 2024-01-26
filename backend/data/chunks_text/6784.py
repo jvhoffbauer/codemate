@@ -1,0 +1,3 @@
+- This method checks if a given `user` object is active by calling its `is_active()` attribute.
+- It returns a boolean value indicating whether the user is considered active or not.
+- The method follows the Flask-Login convention for naming custom authentication methods.

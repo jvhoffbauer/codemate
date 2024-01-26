@@ -1,0 +1,3 @@
+- Defines a custom serialization method for a specific field named `dt_field`, using the `@field_serializer` decorator from Django Rest Framework (DRF)
+- The `serialize_datetime` function takes in an instance of Python's built-in `datetime` class as its argument and returns a string representation of it in ISO format with microseconds set to zero and time zone information removed by converting it to UTC using DRF's `timezone` module
+- This custom serialization can be used when defining fields in API views or models that use DRF's serializers

@@ -1,0 +1,3 @@
+- Defines a fixture named `cid` using PyTest's decorator syntax
+- Generates a new UUID (version 4) as a hex string and stores it in a global variable called `correlation_id` using Python's built-in `set` method
+- Returns the generated correlation ID for use by tests that require one

@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a default optional argument `user_agent`.
+- The value of this argument is set using the built-in `Header` class, which allows for easy handling of missing or empty values.
+- If no value is provided, the header will not be included in the request; otherwise, it will be added to the headers dictionary returned by the function.

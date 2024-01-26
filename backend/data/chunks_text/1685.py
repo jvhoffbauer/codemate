@@ -1,0 +1,3 @@
+- Endpoint for creating a new user (POST request to /users/)
+- Request body should contain a `User` object with required fields (defined in the `User` model)
+- Returns a JSON response containing a generic message ("User received") and using the `ResponseMessage` type annotation for better error handling

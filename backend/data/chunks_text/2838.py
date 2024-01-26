@@ -1,0 +1,1 @@
+- Defines an asynchronous function `root` with two arguments, a required string `username` and an optional file uploaded using FastAPI's built-in `UploadFile` class (`f`) from a form (`Form()`). - Returns the value of the `username` argument without any further processing or validation (`pragma: nocover` is used to skip running this line during testing).

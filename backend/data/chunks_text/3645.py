@@ -1,0 +1,4 @@
+- Tests that the OpenAPI schema can be retrieved successfully with a status code of 200
+- Verifies that the correct version and title are included in the info dictionary
+- Checks that both staging and production environments are listed, each with their own URL and description
+- Confirms that there is an endpoint for reading main data, with a summary, operation ID, and successful response definition

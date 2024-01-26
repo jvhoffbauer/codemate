@@ -1,0 +1,2 @@
+- Defines a GET request endpoint at the root URL (/) for the FastAPI application
+- Returns a JSON response with a message of "Hello World" when the endpoint is accessed

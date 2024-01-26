@@ -1,0 +1,3 @@
+- Defines a property called `router_prefix` for the current class (presumably a subclass of `Resource`)
+- The value returned by this property is constructed using string formatting, where `self.schema_model.__name__` represents the name of the model associated with this resource (assuming there's such an association)
+- This prefix will be prepended to all URL paths generated for resources of this type

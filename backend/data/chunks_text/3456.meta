@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/orjson_non_str_keys\")\ndef get_orjson_non_str_keys():\n    key = quoted_name(value=\"msg\", quote=False)\n    return {key: \"Hello World\", 1: 1}"}

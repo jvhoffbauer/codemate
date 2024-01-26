@@ -1,0 +1,1 @@
+{"original_code": "    def route_read(self) -> Callable[..., Any]:\n        raise NotImplementedError"}

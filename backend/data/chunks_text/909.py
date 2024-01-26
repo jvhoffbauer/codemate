@@ -1,0 +1,4 @@
+- Defines an asynchronous function `app()` that takes a websocket object and returns none
+- Calls the `solve_dependencies()` function to resolve dependencies for the current request (passing in the websocket object, the name of the dependent module/class, and any overrides provided by the user)
+- Extracts the necessary results from the returned tuple (values, errors, etc.) and raises an error if there are any validation issues with the input data
+- Asserts that the dependent module has a callable method, then invokes it using the resolved arguments

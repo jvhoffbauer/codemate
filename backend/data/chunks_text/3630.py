@@ -1,0 +1,3 @@
+- This function is a webhook endpoint registered under the name "new-subscription" using FastAPI's built-in WebSocket and HTTP router (WebHooks).
+- It receives two arguments: `body`, which contains subscription details from the client, and `token`, an authentication token passed by Stripe as part of its security scheme called Bearer Token Authentication.
+- The function handles a new subscription event triggered when a user signs up for our service through Stripe's API, sending us a POST request containing relevant information about the newly created subscription.

@@ -1,0 +1,1 @@
+- Mocks `rasterio.open()` function using Python's built-in unittest.mock module (`unittest.mock`) to simulate a specific behavior during testing. - Tests whether raising a HTTP status code of 404 and setting cache control headers are correctly handled by the Flask application in case an image tile requested through GET request falls outside the bounds of the raster dataset.

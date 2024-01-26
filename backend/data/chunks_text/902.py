@@ -1,0 +1,3 @@
+- This function is a decorator that wraps another function (`cls._validate`) and returns it as a `CoreSchema`.
+- The purpose of this decorator is to add information about the validated data to the schema using the `with_info_plain_validator_function()` helper function provided by Pydantic's core library.
+- It takes three arguments: `cls`, which represents the class being decorated; `source`, which is the type of the object being validated; and `handler`, which is a callback function used to create the actual `CoreSchema` instance for the given `source`.

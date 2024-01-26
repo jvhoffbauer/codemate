@@ -1,0 +1,1 @@
+- This method, `get_default()`, returns a default value for an optional field in the model class. - If the field is required (i.e., not nullable), it returns `Undefined`. - Otherwise, it calls the `get_default()` method of the corresponding Field object to retrieve its default value and passes `True` as an argument to call the default factory function (if defined).

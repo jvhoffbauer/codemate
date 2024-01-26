@@ -1,0 +1,3 @@
+- Defines a function `get_password_hash()` that accepts a string argument `password`.
+- Uses PassLib library to create a hash from the given password using BCrypt algorithm and returns it as a string.
+- The function applies the PassLib context with default settings, which includes 12 rounds of hashing specified by `SECURITY_BCRYPT_DEFAULT_ROUNDS`, resulting in approximately 0.3 seconds processing time.

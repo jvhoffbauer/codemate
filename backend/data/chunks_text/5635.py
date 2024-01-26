@@ -1,0 +1,3 @@
+- This method is a private helper function called `_create_schema_list`.
+- It returns an instance of the type `SchemaListT`, which is defined as part of the class's generic parameters (i.e., `Type[SchemaListT]`).
+- The specific implementation simply returns the value assigned to the `schema_model` attribute, implying that this variable holds the desired schema list type for use in the class.

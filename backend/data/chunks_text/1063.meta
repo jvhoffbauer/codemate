@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(\n        self, security_scheme: SecurityBase, scopes: Optional[Sequence[str]] = None\n    ):\n        self.security_scheme = security_scheme\n        self.scopes = scopes"}

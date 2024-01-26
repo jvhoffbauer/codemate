@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(name=\"client\")  # (1)!\ndef client_fixture(session: Session):  # (2)!\n    def get_session_override():  # (3)!\n        return session\n\n    app.dependency_overrides[get_session] = get_session_override  # (4)!\n\n    client = TestClient(app)  # (5)!\n    yield client  # (6)!\n    app.dependency_overrides.clear()  # (7)!"}

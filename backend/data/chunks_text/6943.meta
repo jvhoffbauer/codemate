@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/\", dependencies=[Depends(get_token_data)])\nasync def home():\n    return \"Hello World!\""}

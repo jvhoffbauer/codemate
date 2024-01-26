@@ -1,0 +1,1 @@
+{"original_code": "def path_to_cls_name(path):\n    return snake_convert(path[1:].replace(\"/\", \"_\"))"}

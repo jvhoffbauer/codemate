@@ -1,0 +1,4 @@
+- Uses `responses` library to mock HTTP requests for unit tests
+- Defines a list of input arguments and expected JSON/HTML response bodies using PyTest's parametrize decorator
+- Adds each request with its corresponding body and JSON data to the `responses` cache
+- Asserts that calling `app.utils.populations.fetch_populations()` succeeds in all cases except when a timeout is forced

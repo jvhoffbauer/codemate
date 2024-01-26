@@ -1,0 +1,2 @@
+- Defines a fixture named `log_record` that creates and returns an instance of `LogRecord`.
+- The created `LogRecord` object has an info (`INFO`) logging level, no associated module or line number, a message "Hello, world!" with no arguments, and no exception information.

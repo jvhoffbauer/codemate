@@ -1,0 +1,1 @@
+- This function authenticates a user using their email and password. - It takes in an `AsyncSession`, email, and password as arguments. - The function returns the user object if authentication succeeds or `None` otherwise.

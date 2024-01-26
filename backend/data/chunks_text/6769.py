@@ -1,0 +1,3 @@
+- Initializes a service and logs an informational message using the `logger`.
+- Calls the `init()` function to perform any necessary setup for the service.
+- Logs another informational message indicating that initialization is complete.

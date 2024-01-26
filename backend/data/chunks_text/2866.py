@@ -1,0 +1,1 @@
+- Tests whether `Cookie(None)` returns a string representation of itself as 'Cookie(None)' using the built-in Python function `repr()`. - Verifies that the behavior is correct by comparing the expected output ('Cookie(None)') with the actual result obtained from running the test case.

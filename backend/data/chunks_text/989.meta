@@ -1,0 +1,1 @@
+{"original_code": "def field_annotation_is_sequence(annotation: Union[Type[Any], None]) -> bool:\n    return _annotation_is_sequence(annotation) or _annotation_is_sequence(\n        get_origin(annotation)\n    )"}

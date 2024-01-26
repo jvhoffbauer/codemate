@@ -1,0 +1,3 @@
+- This function is a decorator that validates input values for specific classes (specified by `cls`) using an external library called `email-validator`.
+- If the library is not installed, this function falls back to treating the input value as a string instead of attempting to validate it with the library.
+- The warning message provides instructions on how to install the required library if desired.

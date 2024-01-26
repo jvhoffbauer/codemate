@@ -1,0 +1,3 @@
+- Defines a function named `_endpoint` that takes an optional argument `algorithm`.
+- Returns either the dictionary representation of the value stored in the `algorithm` object, or an empty dictionary if `algorithm` is not provided.
+- This function can be used as a dependency for other functions using FastAPI's Dependency Injection feature to pass parameters between them.

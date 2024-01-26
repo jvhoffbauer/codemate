@@ -1,0 +1,1 @@
+{"original_code": "def test_class_dependency(route, value):\n    response = client.get(route, params={\"value\": value})\n    assert response.status_code == 200, response.text\n    assert response.json() == value"}

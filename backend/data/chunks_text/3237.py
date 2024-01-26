@@ -1,0 +1,3 @@
+- Endpoint to retrieve a resource using its alias as key in a dictionary format
+- Returns a JSON object with an `alias` field containing the value 'Foo'
+- Uses FastAPI's built-in `response_model` decorator for automatic schema validation and serialization

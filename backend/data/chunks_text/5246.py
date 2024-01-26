@@ -1,0 +1,3 @@
+- Defines a `ImageParams` dataclass that inherits from `DefaultDependency`, which is likely used for dependency injection in this context.
+- Contains three optional query parameters (`max_size`, `height`, and `width`) with descriptive annotations using Pydantic's `Query` decorator.
+- Includes a post init method that sets `max_size` to `None` when both `width` and `height` are provided, implying some sort of constraint or validation logic around setting all dimensions at once versus individually.

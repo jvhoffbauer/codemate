@@ -1,0 +1,1 @@
+- Tests that creating an API object with fine names but no entrypoints raises no errors and returns a valid OpenRPC document. - Uses `TestClient` to simulate HTTP requests against the FastAPI application created by `JSONRPC`'s `API`. - Verifies that the returned response status is 200 OK, indicating successful retrieval of the OpenRPC document.

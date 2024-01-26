@@ -1,0 +1,1 @@
+{"original_code": "async def get_session() -> AsyncGenerator[AsyncSession, None]:\n    async with async_session() as session:\n        yield session"}

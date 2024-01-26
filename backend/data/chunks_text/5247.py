@@ -1,0 +1,2 @@
+- Initializes an object after its construction is complete (Python's `__init__()` method runs during object creation)
+- Checks if both width and height attributes are set, and sets max_size to None in this case, implying that there is no maximum size constraint on the object

@@ -1,0 +1,2 @@
+- Defines a GET request for the root URL (/) using the `read_root()` function as the endpoint handler.
+- The `read_root()` function returns a dictionary containing a string that includes a greeting, the version of Python being used, and information about the web server stack being utilized by this application.

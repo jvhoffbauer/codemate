@@ -1,0 +1,1 @@
+- Tests a WebSocket connection to the `/native/` endpoint using Starlette's built-in testing client (TestClient). - Verifies that the received message is "Hello, router with native prefix!". - Demonstrates how to use the `with` statement for automatic resource cleanup in tests.

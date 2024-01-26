@@ -1,0 +1,2 @@
+- Uses FastAPI router to define a GET endpoint at `/future`.
+- Attempts to retrieve a value from an environment variable using a thread pool executor and map function. However, this implementation is not working correctly and returns the first result of the mapped values instead of the actual environment variable.

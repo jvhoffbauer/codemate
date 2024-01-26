@@ -1,0 +1,3 @@
+- Defines a class method `validate_data` that takes in `data`.
+- Retrieves the `DataModel` object associated with this class using `get_data_model()`.
+- If the `DataModel` exists, calls its `model_validate()` function to perform validation on the input `data`, and returns the validated result. Otherwise, simply returns the unmodified `data`.

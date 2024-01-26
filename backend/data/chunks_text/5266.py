@@ -1,0 +1,4 @@
+- Converts a single band DEM image to an RGB image using a simple color mapping scheme
+- Clips and scales the elevation values between 0 and 65535 for each pixel in the input image
+- Generates red, green, and blue channels based on the scaled elevations using bitwise operations
+- Returns a new `ImageData` object with the generated RGB array as its data, preserving other metadata such as mask, CRS, and bounds from the original DEM image

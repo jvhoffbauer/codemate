@@ -1,0 +1,1 @@
+{"original_code": "    async def get_all(self):\n        # Get the locations.\n        locations = await get_locations()\n        return locations"}

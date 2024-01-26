@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/users/me\", response_model=UserResponse)\nasync def get_my_account(\n    jwt_data: JWTData = Depends(parse_jwt_user_data),\n) -> dict[str, str]:\n    user = await service.get_user_by_id(jwt_data.user_id)\n\n    return {\n        \"email\": user[\"email\"],\n    }"}

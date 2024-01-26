@@ -1,0 +1,1 @@
+{"original_code": "    async def ep_handle_exception(_ctx: jsonrpc.JsonRpcContext):\n        try:\n            yield\n        except RuntimeError as exc:\n            logging.exception(str(exc), exc_info=exc)\n            raise _TestError(unique_marker2)"}

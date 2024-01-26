@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/foo\", response_model=Item)\ndef foo():\n    return {\"name\": \"Foo item\"}"}

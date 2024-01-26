@@ -1,0 +1,5 @@
+- Defines a component named `_Response[name]` in the given module using Pydantic's `@component_name()` decorator.
+- Creates a subclass of BaseModel called `_Response`, which takes three arguments (`name`, `module`, and `result_model`) to customize its behavior based on the specific use case.
+- Adds two fields to the response object: `jsonrpc` with a default value of '2.0', and an optional `id`. Both fields have example values provided for JSON schema validation purposes.
+- Includes a `result` field that is populated by passing it the specified `result_model`.
+- Sets up configuration options for the resulting model using Pydantic's `ConfigDict()` function. Specifically, we set `extra='forbid'` to prevent additional keys from being added to the dictionary representation of this model, and `json_schema_serialization_defaults_required=True` to ensure required defaults are serialized as part of the output.

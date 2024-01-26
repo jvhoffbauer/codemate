@@ -1,0 +1,1 @@
+{"original_code": "async def unrelated(foo: Annotated[str, object()]):\n    return {\"foo\": foo}"}

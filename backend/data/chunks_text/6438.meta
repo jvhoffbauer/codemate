@@ -1,0 +1,1 @@
+{"original_code": "    def request(self) -> JsonRpcRequest:\n        try:\n            return self.request_class.model_validate(self.raw_request)\n        except ValidationError as exc:\n            raise invalid_request_from_validation_error(exc)"}

@@ -1,0 +1,1 @@
+- Defines a property called `country_population` for the current object (presumably representing a location). - Returns the population of the specified country, as calculated by the `country_population()` function and passed its ISO 3166-1 alpha-2 country code.

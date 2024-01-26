@@ -1,0 +1,3 @@
+- Tests retrieving a list of users as an authenticated superuser using FastAPI's built-in testing client and SQLAlchemy session management.
+- Creates two new users with randomly generated email addresses and passwords using Pydantic models and CRUD operations from sqlalchemy-auto.
+- Makes a GET request to the /users endpoint with the superuser token header and checks that the response contains more than one user object. Iterates over each user object and verifies that it has an 'email' key.

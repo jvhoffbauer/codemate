@@ -1,0 +1,3 @@
+- Tests if sending an empty batch request results in a valid error response from the server
+- Uses `json_request()` to send the request and store the response in `resp` variable
+- Asserts that the expected error message is present in the response body

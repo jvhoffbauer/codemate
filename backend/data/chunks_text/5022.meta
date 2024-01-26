@@ -1,0 +1,1 @@
+{"original_code": "def snake_convert(s):\n    if not isinstance(s, str):\n        return s\n    components = s.split(\"_\")\n    return \"\".join(x.title() for x in components)"}

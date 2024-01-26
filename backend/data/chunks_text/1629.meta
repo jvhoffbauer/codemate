@@ -1,0 +1,1 @@
+{"original_code": "    def __exit__(self, exc_type, exc_value, traceback):\n        self.db.close()"}

@@ -1,0 +1,3 @@
+- This endpoint is accessed using a POST request to `"/login/test-token"`
+- It returns the authenticated user object (of type `models.User`) associated with the access token included in the request headers, as obtained by calling `Depends(deps.get_current_user)`.
+- The returned value can be of any type, but here it's explicitly casted to `Any`, indicating that we don't care about its specific type and just want to suppress Pylance warnings.

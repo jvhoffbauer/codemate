@@ -1,0 +1,4 @@
+- Defines a function `app` that takes an argument `ep`.
+- Initializes a JSONRPC API object called `app`.
+- Binds the entry point specified by `ep` to the initialized `app` object using the `bind_entrypoint` method of the API class.
+- Returns the initialized and bound `app` object.

@@ -1,0 +1,4 @@
+- Defines an endpoint `/a` with HTTP GET method using FastAPI's decorator syntax
+- Sets the expected HTTP status code to be returned as 204 (No Content)
+- Specifies that the response should follow JSON API format using `response_class` parameter of FastAPI's `@app.get()` decorator
+- Provides custom error handling for HTTP status code 500 by defining it in the `responses` dictionary passed to the decorator

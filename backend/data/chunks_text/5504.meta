@@ -1,0 +1,1 @@
+{"original_code": "def test_validate(app):\n    \"\"\"test POST /mosaicjson/validate endpoint\"\"\"\n    body = read_json_fixture(\"mosaic.json\")\n    response = app.post(\"/mosaicjson/validate\", json=body)\n    assert response.status_code == 200\n\n    response = app.post(\"/mosaicjson/validate\", json={\"nope\": \"oups\"})\n    assert response.status_code == 422"}

@@ -1,0 +1,3 @@
+- This function is a PUT request handler for updating an existing item with ID `item_id`.
+- The `Item` parameter represents the updated data to be saved in the database.
+- The function returns a dictionary containing the updated item's ID and new values as a response.

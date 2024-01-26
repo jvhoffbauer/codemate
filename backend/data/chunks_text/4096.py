@@ -1,0 +1,2 @@
+- This function is a unit test for an endpoint with GET request using FastAPI's built-in testing framework `TestClient`.
+- It sends a GET request to the root URL ("/"), and asserts that the returned HTML content matches the expected value (stored in variable `html`) by comparing their text contents.

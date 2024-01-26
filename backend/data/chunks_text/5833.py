@@ -1,0 +1,4 @@
+- Generates an Amis (Alibaba Cloud Mobile Intelligence Studio) form based on a PyDantic model
+- Takes three arguments: the model class, whether to set defaults, and whether it's a filter form
+- Sets up the basic properties of the form, including title and size
+- Loops through all fields in the model using `model_fields`, generating a single form item for each one with optional default setting and filter flag passed down

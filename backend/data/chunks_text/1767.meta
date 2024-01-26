@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/images/multiple/\")\nasync def create_multiple_images(images: list[Image]):\n    return images"}

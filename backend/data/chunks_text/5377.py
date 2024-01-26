@@ -1,0 +1,6 @@
+- Uses FastAPI's `@router.get` decorator to define a GET endpoint at "/afuture"
+- Imports `rasterio`, which is used for working with geospatial data in Python
+- Creates an environment variable called GDAL_DISABLE_READDIR_ON_OPEN using `rasterio.Env`. This variable is set to "FALSE". The purpose of this is unclear from the given context.
+- Uses the `with` statement to create a context manager that will automatically close the resources it manages when done. In this case, we are creating a context manager around both `rasterio.Env` and `futures.ThreadPoolExecutor`.
+- Inside the context manager, we use `list(executor.map(f, range(1)))[0]` to execute a function (`f`) concurrently on multiple threads using the `ThreadPoolExecutor`. We pass `range(1)` as input to `map`, which returns an iterator over the results produced by applying `f` to each element of the sequence. By wrapping this inside another list comprehension, we convert the iterator into a list so that we can access its first item (which should be the result returned by our `f` function).
+- Finally, we return a dictionary containing the value returned by our `res` variable, along with a key called "env" whose value is the modified environment variables created earlier.

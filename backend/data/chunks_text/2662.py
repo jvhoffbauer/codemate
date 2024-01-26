@@ -1,0 +1,1 @@
+- Defines a function named `no_response_model_no_annotation_return_dict` that returns a dictionary with two keys, 'name' and'surname', containing the values 'John' and 'Doe' respectively. - The function name suggests that it is used to define a response model without annotations (decorators) and returning a dictionary instead of a custom object.

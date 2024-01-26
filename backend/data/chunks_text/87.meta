@@ -1,0 +1,1 @@
+{"original_code": "def between(\n    expr: Union[_ColumnExpressionOrLiteralArgument[_T], _T],\n    lower_bound: Any,\n    upper_bound: Any,\n    symmetric: bool = False,\n) -> BinaryExpression[bool]:\n    return sqlalchemy.between(expr, lower_bound, upper_bound, symmetric=symmetric)  # type: ignore[arg-type]"}

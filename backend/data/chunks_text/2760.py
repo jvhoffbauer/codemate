@@ -1,0 +1,3 @@
+- Tests forward reference of a list of models without response model annotation using Flask-RESTful and Marshmallow
+- Sends GET request to "/no_response_model_annotation_forward_ref_list_of_model" endpoint
+- Asserts that status code is 200 and returns expected JSON data (two dictionaries with keys 'name' and'surname')

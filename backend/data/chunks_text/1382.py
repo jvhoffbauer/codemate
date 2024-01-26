@@ -1,0 +1,3 @@
+- Creates a new item object with provided details
+- Saves the item to the database or storage system (implicitly assumed)
+- Returns the newly created item object

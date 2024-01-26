@@ -1,0 +1,3 @@
+- Defines a method `__str__()` for the class
+- Creates a string representation of the object using formatted strings (f-strings) and concatenation
+- Includes the CODE, MESSAGE, and data attributes in the string representation, with appropriate formatting and indentation

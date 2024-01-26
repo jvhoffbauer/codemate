@@ -1,0 +1,3 @@
+- This function tests a POST request with invalid data in the 'tags' field of the YAML body using Pytest and FastAPI.
+- The YAML data contains an extra key'sneaky' under 'tags', which is not a list but an object.
+- The server returns a HTTP status code 422 (Unprocessable Entity) along with an error message indicating that the value for 'tags[3]' should be a string instead of an object ('str type expected').

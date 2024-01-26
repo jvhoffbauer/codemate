@@ -1,0 +1,6 @@
+- Defines a class method `bind_model_admin()` that takes two arguments: an instance of `ModelAdmin` representing the primary model and an instrumented attribute representing a relationship to another model
+- Checks whether the relationship property is a `RelationshipProperty`, returns `None` otherwise
+- Retrieves the secondary table from the relationship property's `secondary` attribute
+- If the secondary table exists, iterates over its foreign keys to find one with a column belonging to the primary model's table
+- If such a foreign key is found, retrieves the corresponding `ModelAdmin` using Flask-Admin's site object and saves it as well as the link and item columns involved in the relationship
+- Creates a new instance of `LinkModelForm` passing the necessary parameters and returns it

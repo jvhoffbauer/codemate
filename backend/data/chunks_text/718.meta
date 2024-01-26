@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture()\ndef log_record():\n    \"\"\"Create and return an INFO-level log record\"\"\"\n    return LogRecord(\n        name=\"\",\n        level=INFO,\n        pathname=\"\",\n        lineno=0,\n        msg=\"Hello, world!\",\n        args=(),\n        exc_info=None,\n    )"}

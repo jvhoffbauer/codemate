@@ -1,0 +1,1 @@
+- This function tests a PUT request to update an item with ID 'plumbus' using token 'jessica'. - It sends the request with an additional header containing a fake secret token for authentication purposes. - The expected status code is 200 and the JSON response should contain the updated item details.

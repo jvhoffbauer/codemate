@@ -1,0 +1,1 @@
+- Tests sending a PUT request to update an item with query parameter 'q' set to 'bar', without providing any body in JSON format. - Verifies that the server returns a successful HTTP status code (200 OK). - Asserts that the updated item object returned by the server contains both the original ID and the new value for the 'q' parameter.

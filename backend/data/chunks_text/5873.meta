@@ -1,0 +1,1 @@
+{"original_code": "    async def get_select(self, request: Request):\n        sel = await super().get_select(request)\n        return sel.where(self.model.delete_time == None)  # noqa E711"}

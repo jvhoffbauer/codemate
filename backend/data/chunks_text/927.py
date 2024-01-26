@@ -1,0 +1,1 @@
+- Defines a custom exception handler for `RequestValidationError`, which is raised when validation fails during a Pydantic model's deserialization process. - Returns a JSON response with HTTP status code 422 (Unprocessable Entity) and an error detail containing the errors from the original validation failure.

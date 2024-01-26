@@ -1,0 +1,1 @@
+{"original_code": "def get_docs_by_keys(\n    bucket: Bucket, *, keys: List[str], doc_model=Type[PydanticModel]\n) -> List[PydanticModel]:\n    results = bucket.get_multi(keys, quiet=True)\n    docs = []\n    for result in results.values():\n        doc = doc_model(**result.value)\n        docs.append(doc)\n    return docs"}

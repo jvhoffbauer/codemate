@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/test\", status_code=200)\n    async def test_view(request: Request) -> dict:\n        logger.debug(\"Test view\")\n        return {\"correlation_id\": request.headers.get(\"X-Request-ID\")}"}

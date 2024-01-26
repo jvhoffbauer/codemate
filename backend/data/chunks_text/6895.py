@@ -1,0 +1,1 @@
+- Endpoint for predicting house prices based on input data using a pretrained machine learning model stored in FastAPI's state dictionary. - Requires authentication and accepts a payload containing specific features of a house as input (stored in `block_data`) to make predictions with. - Returns a structured result object containing predicted price and confidence score.

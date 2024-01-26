@@ -1,0 +1,3 @@
+- Defines a function `withdraw` that takes an optional argument `Account` and an required argument `amount`. The `Account` object is retrieved using the `Depends` decorator from the `get_account` function.
+- Uses Pydantic's `Body` field to validate the `amount` parameter with constraints of being greater than zero and providing an example value of 10.
+- Checks whether the new balance after withdrawal would be negative by subtracting the withdrawn amount from the current balance. If so, raises a custom exception `NotEnoughMoney` with details about the remaining balance. Otherwise, updates the `Account` object's `amount` attribute and returns the updated balance using another helper function `get_balance`.

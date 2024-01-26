@@ -1,0 +1,6 @@
+- Configures Couchbase server with provided credentials and settings
+- Checks that Couchbase server is ready before proceeding
+- Sets up services on Couchbase server using default or custom credentials
+- Sets up memory quotas for data, full text search, and indices using default or custom credentials
+- Optionally sets up index storage using default or custom credentials
+- Ensures that Couchbase user's password meets complexity requirements

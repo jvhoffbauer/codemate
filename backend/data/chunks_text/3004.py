@@ -1,0 +1,3 @@
+- Tests if `GET /main-depends/` returns a 422 status code and an error message indicating that a required query parameter is missing (either 'q' in Pydantic v1 or 'q' in JSON schema)
+- Uses Pytest Fixtures to create a Flask Client object for making requests
+- Asserts that the server responds with the expected HTTP status code and error details using Pytest Assertions

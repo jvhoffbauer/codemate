@@ -1,0 +1,1 @@
+{"original_code": "@pytest.mark.anyio\nasync def test_async_testing():\n    await test_root()"}

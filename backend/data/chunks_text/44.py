@@ -1,0 +1,5 @@
+- Defines a context manager using `@contextmanager` decorator
+- Creates a generator function called `partial_init` that yields control to its body and returns nothing (`yield`, `None`)
+- Inside the generator, sets a global variable `finish_init` to False using the `set` method of the `threading.local` class
+- Yields control back to the caller
+- Resets the value of `finish_init` to its original state when the generator exits by passing the saved token returned from calling `set` earlier as an argument to `reset` method of `threading.local`.

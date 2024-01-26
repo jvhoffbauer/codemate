@@ -1,0 +1,1 @@
+{"original_code": "def test_auth_using_prediction_api_wrong_apikey_header(test_client) -> None:\n    response = test_client.post(\n        \"/api/model/predict\", json={\"image\": \"test\"}, headers={\"token\": \"WRONG_TOKEN\"}\n    )\n    assert response.status_code == 401\n    assert response.json() == {\"detail\": messages.AUTH_REQ}"}

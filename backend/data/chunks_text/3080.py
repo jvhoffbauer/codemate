@@ -1,0 +1,2 @@
+- Defines a new method called `full_name()` for the current class (presumably a subclass of `Person`)
+- The method takes no arguments and returns a string concatenating the values of the instance variables `name` and `lastname`, formatted using an f-string with the `str` format specifier

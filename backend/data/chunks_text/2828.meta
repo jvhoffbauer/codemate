@@ -1,0 +1,1 @@
+{"original_code": "        @app.post(\"/\")\n        async def root(f: UploadFile = File()):\n            return f  # pragma: nocover"}

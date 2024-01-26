@@ -1,0 +1,2 @@
+- Retrieves environment variables for PostgreSQL credentials (username, password, hostname/IP address, and database name)
+- Combines them into a single URL string in the format of a PostgreSQL connection URI using Python's formatted string literals (f-strings)

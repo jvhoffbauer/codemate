@@ -1,0 +1,1 @@
+- Uses CookieCutter to generate a project structure based on a given template (stored in `template`) with customized context variables (specified in `extra_context`) without user input (set by `no_input`). - The generated project will have the name'minimal_project' as specified in `extra_context`.

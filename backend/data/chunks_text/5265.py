@@ -1,0 +1,3 @@
+- Applies contours to an input image using OpenCV's `cv2.fillPoly()` function with a custom color map based on terrain elevation values.
+- Rescales the minimum and maximum z-values of the input image to a range of 1-255 for better visualization in the output image.
+- Sets pixels below a certain threshold value to black to create visible contour lines.

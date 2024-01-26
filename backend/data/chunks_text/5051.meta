@@ -1,0 +1,1 @@
+{"original_code": "async def test_celery_async():\n    celery.send_task(\"test_celery_asyncio_io_bound\", args=())\n    return \"ok\""}

@@ -1,0 +1,4 @@
+- Registers two API routes for CRUD operations on a specific item identified by `item_id`.
+- Uses FastAPI's built-in router to add these routes to the main application's route table.
+- Specifies HTTP request methods (GET, POST, PUT, DELETE) and expected responses using decorators provided by FastAPI.
+- Provides custom names for each route that can be used in documentation or other contexts where unique identifiers are needed.

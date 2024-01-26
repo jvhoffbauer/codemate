@@ -1,0 +1,3 @@
+- Defines a function named `receive_before_update` that listens for the 'before_update' event.
+- Checks if the object being updated is of type `models.User`.
+- Increments a counter called `event_counter.before` when the 'before_update' event occurs for an instance of `models.User`.

@@ -1,0 +1,8 @@
+- Creates a temporary directory using `pytest.TempPathFactory`.
+- Changes working directory to the newly created temp dir.
+- Checks for existence of 'test.db' and deletes it (if present).
+- Imports SQL app module, creates database during test session initialization.
+- Reloads imported module to ensure side effects are executed again.
+- Runs specific test case ('test_create_user') within the SQL app module.
+- Deletes 'test.db' file at the end.
+- Restores original working directory before exiting function.

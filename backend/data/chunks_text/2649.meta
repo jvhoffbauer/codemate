@@ -1,0 +1,1 @@
+{"original_code": "def test_required_noneable_body_embed_value():\n    response = client.post(\"/body-embed\", json={\"b\": \"foo\"})\n    assert response.status_code == 200\n    assert response.json() == \"foo\""}

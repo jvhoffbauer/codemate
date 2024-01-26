@@ -1,0 +1,1 @@
+- Tests a GET request to `/user`, expecting a JSON response with specific keys and values.

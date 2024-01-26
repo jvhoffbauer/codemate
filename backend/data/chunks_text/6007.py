@@ -1,0 +1,1 @@
+- Tests different ways to set and validate `Settings` object properties related to URLs (`site_url`, `amis_cdn`, and `site_path`) using the `Settings` class defined in the program. - Asserts that the values of these properties are correctly extracted from the input arguments passed to the constructor, regardless of whether they include a trailing slash or not.

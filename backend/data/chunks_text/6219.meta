@@ -1,0 +1,1 @@
+{"original_code": "async def teardown_client_session():\n    \"\"\"Close the application-global aiohttp.ClientSession.\"\"\"\n    global CLIENT_SESSION  # pylint: disable=global-statement\n    LOGGER.info(\"Closing global aiohttp.ClientSession.\")\n    await CLIENT_SESSION.close()"}

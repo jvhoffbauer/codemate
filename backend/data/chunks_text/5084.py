@@ -1,0 +1,7 @@
+- Defines a fixture named `date_attribute` with session scope (runs once per test session).
+- Creates an instance of `AsyncDal`, which is used to interact with the database.
+- Adds a new `Attribute` object representing a release date field to the system.
+- Sets various properties on the newly created `Attribute`.
+- Loops through two dates and creates corresponding `AttributeValue` objects for each one using the `adal.add()` method.
+- Commits changes made during this function call back to the database.
+- Returns the newly added `Attribute` object so it can be accessed by other tests that use this fixture.

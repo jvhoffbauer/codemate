@@ -1,0 +1,1 @@
+- This function takes in a dictionary `item` as an argument and creates a new instance of the model class (`TableModelT`) using keyword arguments from the dictionary. - The newly created object is returned by the function for further use within the application.

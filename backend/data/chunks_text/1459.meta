@@ -1,0 +1,1 @@
+{"original_code": "def fake_save_user(user_in: UserIn):\n    hashed_password = fake_password_hasher(user_in.password)\n    user_in_db = UserInDB(**user_in.dict(), hashed_password=hashed_password)\n    print(\"User saved! ..not really\")\n    return user_in_db"}

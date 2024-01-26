@@ -1,0 +1,5 @@
+- Defines a function `create_user` that takes two arguments: `UserCreate` and an optional dependency of type `AsyncSession`.
+- Uses the `Depends()` decorator to automatically pass the current database connection (`session`) from the FastAPI request context into the function as an argument.
+- Checks whether a user with the given email address already exists using the `crud_user.get()` method provided by SQLAlchemy's CRUD extensions. If such a user is found, raises a `HTTPException` with a custom error message.
+- Creates a new instance of the `UserInDB` class based on the input data passed through the `UserCreate` object. The password field is hashed using the `get_password_hash()` helper function before storing it in the database.
+- Calls the `crud_user.create()` method to insert the new user record into the database.

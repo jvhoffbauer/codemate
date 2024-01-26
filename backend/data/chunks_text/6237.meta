@@ -1,0 +1,1 @@
+{"original_code": "    @abstractmethod\n    async def get(self, id):  # pylint: disable=redefined-builtin,invalid-name\n        \"\"\"\n        Gets and returns location with the provided id.\n\n        :returns: The location.\n        :rtype: Location\n        \"\"\"\n        raise NotImplementedError"}

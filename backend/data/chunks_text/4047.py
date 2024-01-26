@@ -1,0 +1,3 @@
+- This function tests the `GET /authors/` endpoint using Flask's built-in testing client (client).
+- It asserts that the status code is 200, indicating a successful request.
+- It also checks if the JSON response matches the expected format with two authors and their corresponding items. Some item descriptions are provided while others have none.

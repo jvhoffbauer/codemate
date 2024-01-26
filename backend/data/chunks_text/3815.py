@@ -1,0 +1,1 @@
+- Tests reading public data for an item with ID 'bar' using Flask's built-in testing client (client) and asserts that the status code is 200 and the JSON response matches expected values.

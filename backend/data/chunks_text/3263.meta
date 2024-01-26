@@ -1,0 +1,1 @@
+{"original_code": "def test_enum_status_code_response():\n    response = client.get(\"/enum-status-code\")\n    assert response.status_code == 201, response.text\n    assert response.json() == \"foo bar\""}

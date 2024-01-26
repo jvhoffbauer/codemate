@@ -1,0 +1,1 @@
+{"original_code": "    @model_validator(mode=\"before\")\n    @classmethod\n    def set_null_microseconds(cls, data: dict[str, Any]) -> dict[str, Any]:\n        datetime_fields = {\n            k: v.replace(microsecond=0)\n            for k, v in data.items()\n            if isinstance(k, datetime)\n        }\n\n        return {**data, **datetime_fields}"}

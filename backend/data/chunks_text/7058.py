@@ -1,0 +1,1 @@
+- Generates a password reset token for the provided email address using FastAPI's built-in `create_access_token()` function from the JWT library. - The generated token has an expiration time of `settings.EMAIL_RESET_TOKEN_EXPIRE_HOURS` hours as specified in the project settings file.

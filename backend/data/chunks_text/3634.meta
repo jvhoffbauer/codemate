@@ -1,0 +1,1 @@
+{"original_code": "def test_path_operation():\n    response = client.post(\"/cookie/\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"message\": \"Come to the dark side, we have cookies\"}\n    assert response.cookies[\"fakesession\"] == \"fake-cookie-session-value\""}

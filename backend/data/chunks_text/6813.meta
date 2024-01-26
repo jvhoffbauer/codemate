@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/\", dependencies=[Depends(get_current_active_superuser)])\ndef read_users(session: SessionDep, skip: int = 0, limit: int = 100) -> List[UserOut]:\n    \"\"\"\n    Retrieve users.\n    \"\"\"\n    statement = select(User).offset(skip).limit(limit)\n    users = session.exec(statement).all()\n    return users  # type: ignore"}

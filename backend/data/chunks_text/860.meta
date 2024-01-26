@@ -1,0 +1,1 @@
+{"original_code": "        def decorator(func: DecoratedCallable) -> DecoratedCallable:\n            self.add_exception_handler(exc_class_or_status_code, func)\n            return func"}

@@ -1,0 +1,1 @@
+- Registers a new admin page for a model named `Tmp` using Flask-Admin's PageSchemaAdmin class, which allows customizing the layout and behavior of individual pages within an Admin interface. - Does not define any specific functionality or views; it simply registers the `TmpAdmin` class as an administrative view for the given model.

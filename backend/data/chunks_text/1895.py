@@ -1,0 +1,1 @@
+- Defines an asynchronous function called `not_timed()`. - The function returns a dictionary with a single key-value pair containing a string value. - This function is not designed to be executed within a time constraint or limit, unlike functions that are labeled as 'timed'.

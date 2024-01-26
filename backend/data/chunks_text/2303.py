@@ -1,0 +1,3 @@
+- Defines a function `read_items()` that takes an optional argument `token`.
+- If `token` is not provided, returns an error message. Otherwise, returns an object with key 'token' containing the value of `token`.
+- Uses FastAPI's built-in security feature (OAuth2 scheme) to validate and pass authentication tokens as arguments to functions.

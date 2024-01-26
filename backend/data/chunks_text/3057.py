@@ -1,0 +1,1 @@
+- Defines a GET request handler for the "/override" endpoint at router_b_a using HTMLResponse as the response class. - Returns a string "Hello B A" when this endpoint is accessed, overriding any potential default behavior defined in routers b and/or a.

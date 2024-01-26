@@ -1,0 +1,5 @@
+- Imports `test_tutorial` function and `create_engine` function from SQLAlchemy's `orm` module.
+- Sets up a mock print function using `get_testing_print_function`.
+- Patches the builtin `print` function to use the mock print function.
+- Calls the main function of the `tutorial007` module in the `docs_src.tutorial` package.
+- Asserts that the expected output is printed by checking the contents of the `calls` list returned by the mock print function.

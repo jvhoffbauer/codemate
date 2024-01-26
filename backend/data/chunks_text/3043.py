@@ -1,0 +1,2 @@
+- Defines a GET request handler for the root URL of router `router_a_a`.
+- Returns a JSON response with a message "Hello A A".

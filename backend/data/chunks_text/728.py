@@ -1,0 +1,2 @@
+- Tests whether `CeleryTracingIdsFilter` adds current ID to logs using a mock `celery_current_id`.
+- Asserts that initial log record doesn't have `celery_current_id`, filters it with `CeleryTracingIdsFilter`, and checks if filtered log record now contains `celery_current_id` value set by mock `celery_current_id`.

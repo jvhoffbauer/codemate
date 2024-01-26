@@ -1,0 +1,3 @@
+- Defines a function `get_exclude_none` that returns an instance of `ModelDefaults`.
+- The returned object has two attributes `x` and `y`, where `x` is set to `None` and `y` is set to the string value "y".
+- This function can be used as a default argument for a model's constructor or other methods that accept keyword arguments with defaults. By returning an instance of `ModelDefaults`, it allows us to exclude certain parameters from being included in the serialized output without having to explicitly specify them as `None`.

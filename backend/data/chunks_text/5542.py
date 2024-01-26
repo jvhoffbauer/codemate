@@ -1,0 +1,1 @@
+- Retrieves a list of column aliases from an SQLAlchemy `Row` object using its parent table's key map dictionary and the `get_alias()` method provided by this class. - Returns a list of string values representing the column names or customized labels assigned to them via the `Column` objects' `label()` function calls within the table definition.

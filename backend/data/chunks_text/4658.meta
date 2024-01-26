@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(name=\"app\")\ndef get_app():\n    from docs_src.request_forms_and_files.tutorial001 import app\n\n    return app"}

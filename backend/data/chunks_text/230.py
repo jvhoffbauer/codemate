@@ -1,0 +1,4 @@
+- Defines a function `client_fixture` that takes in a `Session` object as an argument and returns another function called `get_session_override`.
+- Inside the `client_Fixture`, it sets up an override for the `get_session` dependency using the `get_session_override` function, which is returned by the inner function. This allows us to provide our own implementation of the `get_session` method during testing.
+- Creates a new instance of the Flask test client (`TestClient`) with the modified application context (`app`) and yields it back so we can use it in other functions or assertions within the fixture.
+- Finally, clears out the overridden dependencies after the tests are completed.

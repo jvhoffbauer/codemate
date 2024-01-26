@@ -1,0 +1,2 @@
+- Defines a function `custom_generate_unique_id2` that takes an argument `route`.
+- The function returns a string in format "bar_[route name]", where `[route name]` is replaced with the actual name of the route passed as an argument to this function.

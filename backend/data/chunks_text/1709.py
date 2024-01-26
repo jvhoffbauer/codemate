@@ -1,0 +1,4 @@
+- This function is a route decorator for an HTTP GET request with a path parameter `item_id`.
+- It takes two arguments: `item_id`, which must be between 0 and 1000 (inclusive) and `q`, which can be any string value. The `size` argument is optional and has default values greater than zero and less than 10.5.
+- Inside the function, it creates a dictionary called `results` that contains the `item_id` passed in as a parameter. If the `q` parameter is not empty, it adds a key-value pair to this dictionary containing the `q` value.
+- Finally, the function returns the `results` dictionary.

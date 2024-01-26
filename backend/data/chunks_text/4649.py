@@ -1,0 +1,2 @@
+- Tests if an inactive user (represented by Alice's token) can access their own profile using GET request to /users/me endpoint
+- Verifies that the server returns a HTTP status code of 400 Bad Request and a JSON error message containing "Inactive user" detail

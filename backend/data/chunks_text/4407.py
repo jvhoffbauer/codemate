@@ -1,0 +1,2 @@
+- Tests if GET request to /redoc endpoint returns a successful HTTP status code (200) and checks that redoc.standalone.js file is included in the response body.
+- Uses Flask's built-in testing client to simulate requests and responses for unit tests.

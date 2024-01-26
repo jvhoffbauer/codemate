@@ -1,0 +1,3 @@
+- Defines a function called `app_client` that takes an argument named `app`.
+- Inside this function, creates and returns an instance of Flask's built-in test client (TestClient) with the given application (`app`) as its argument.
+- This allows for easy testing of routes and functionality within the Flask application without having to make actual HTTP requests.

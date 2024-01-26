@@ -1,0 +1,1 @@
+- Initializes an object in the `__init__()` method, which is called during startup as defined by the `@app.on_event("startup")` decorator. - The initialized value of the `_schedule` attribute is set to `None`.

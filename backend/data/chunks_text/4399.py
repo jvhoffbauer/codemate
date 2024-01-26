@@ -1,0 +1,5 @@
+- Defines a function `client` that sets up and tears down a Flask test client for testing custom documentation UI in tutorial001.
+- Creates a directory called'static' to store static files required by the UI, if it doesn't already exist.
+- Imports the Flask application defined in tutorial001 (assuming it is located at `docs_src/custom_docs_ui/tutorial001.py`) using an absolute path relative to the current working directory.
+- Uses the `TestClient` class provided by Flask to create a new instance of the test client, which can be used to make requests against the server running our Flask application. The client object is then passed into a generator expression so we can use its context manager functionality to automatically clean up resources after each test case has finished executing.
+- Removes the'static' directory once all tests have completed execution.

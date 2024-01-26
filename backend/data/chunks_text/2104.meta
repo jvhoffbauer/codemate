@@ -1,0 +1,1 @@
+{"original_code": "@events_callback_router.get(\"{$callback_url}/events/{$request.body.title}\")\ndef event_callback(event: Event):\n    pass  # pragma: nocover"}

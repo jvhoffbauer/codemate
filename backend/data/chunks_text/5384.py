@@ -1,0 +1,3 @@
+- Retrieves the value of GDAL environment variable "GDAL_DISABLE_READDIR_ON_OPEN" using `get_gdal_config()`.
+- Returns a dictionary with the retrieved environment variable as its key-value pair under the 'env' key.
+- The function is marked asynchronous (async) but since it doesn't perform any I/O operations, it won't actually run concurrently with other tasks in an event loop. Therefore, this function can be called synchronously without affecting performance or behavior.

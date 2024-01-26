@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"module\")\ndef server_api():\n    return get_server_api()"}

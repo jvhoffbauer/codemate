@@ -1,0 +1,1 @@
+{"original_code": "    def test_with_non_empty_string_and_int_type(self):\n        result = validator_skip_blank(\"123\", int)\n        assert result == 123"}

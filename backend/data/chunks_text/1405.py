@@ -1,0 +1,3 @@
+- Defines a custom exception handler for Starlette's built-in `StarletteHTTPException`.
+- Prints an informative message to the console when such exceptions occur.
+- Delegates handling of the exception to the default `http_exception_handler()`, which is provided by Starlette itself.

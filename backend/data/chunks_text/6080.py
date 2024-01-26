@@ -1,0 +1,6 @@
+- Defines a fixture named `fake_article_contents` using PyTest's `@pytest.fixture` decorator.
+- Accepts two arguments, an asynchronous SQLAlchemy session (`async_session`) and a reference to the ArticleContent model class (`models`).
+- Creates five new instances of the ArticleContent model with incrementing ID values and some sample content text.
+- Adds these objects to the database session using `async_session.add_all()`.
+- Commits the changes made during this function call using `await async_session.commit()`.
+- Returns the list of newly created ArticleContent objects so they can be used by other tests that require them.

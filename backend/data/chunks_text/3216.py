@@ -1,0 +1,1 @@
+- Defines a custom validator for usernames using Python's built-in `@classmethod` decorator and the `ValidationInfo` class from Pydantic's validation framework. - The validator checks whether the username ends with 'A', raising a `ValueError` exception if it doesn't. - Returns the original username unchanged otherwise.

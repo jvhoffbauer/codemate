@@ -1,0 +1,3 @@
+- Retrieves a list of heroes and their corresponding teams using SQLAlchemy's `Session` object to establish a database connection.
+- Uses a JOIN query to combine data from both the Hero and Team tables into a single result set.
+- Prints out each hero and its associated team (if any) using a generator expression.

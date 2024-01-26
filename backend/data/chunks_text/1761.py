@@ -1,0 +1,2 @@
+- Endpoint for creating index weights with a request body containing a dictionary of integer keys and floating point values (weight scores)
+- Returns the created weight dictionary as response body

@@ -1,0 +1,6 @@
+- This function tests the prediction functionality of a house price model using PyTest and FastAPI's built-in testing client (test_client).
+- The default path to the trained machine learning model is configured in the `config.py` module.
+- A sample input payload for the prediction request is created as an instance of `HousePredictionPayload`.
+- An instance of `HousePriceModel`, which wraps the loaded TensorFlow Keras model, is initialized with the default model path.
+- The `predict()` method of the wrapped model is called on the prepared input payload, returning a `HousePredictionResult` object that contains the predicted sale price.
+- Finally, we check if the returned value is indeed an instance of `HousePredictionResult`.

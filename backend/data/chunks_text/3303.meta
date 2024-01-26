@@ -1,0 +1,1 @@
+{"original_code": "        @app.get(\"/\")\n        async def get2(foo: Annotated[int, Depends(dep)] = Depends(dep)):\n            pass  # pragma: nocover"}

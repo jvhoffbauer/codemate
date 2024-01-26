@@ -1,0 +1,1 @@
+{"original_code": "def get_query(query):\n    return f\"foo bar {query}\""}

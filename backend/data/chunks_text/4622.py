@@ -1,0 +1,2 @@
+- Imports a function `get_password_hash()` from a specific tutorial in the documentation for Python version 3.9 (Python 3.9 is required)
+- Asserts that calling this imported function with an argument of "secretalice" returns a truthy value, without specifying what exactly this returned value should be

@@ -1,0 +1,3 @@
+- Tests that passing a list as the type for a column raises a `ValueError`.
+- Uses PyTest's `with pytest.raises()` context manager to assert an exception is raised during testing.
+- Defines a simple SQLAlchemy model (Hero) with an optional integer ID and a list of string tags. The `table=True` argument creates a database table from this model definition.

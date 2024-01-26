@@ -1,0 +1,1 @@
+- Adds a custom extension to an OpenAPI document for this specific endpoint using FastAPI's `openapi_extra` decorator. - The value of the custom extension is set to 'value'. - This can be used to provide additional information or metadata about the endpoint that isn't part of the standard OpenAPI specification.

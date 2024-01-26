@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method(middlewares=[method_middleware])\n    def probe_error() -> str:\n        raise RuntimeError(unique_marker)"}

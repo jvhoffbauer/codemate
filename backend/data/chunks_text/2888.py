@@ -1,0 +1,3 @@
+- Tests whether raising an exception is triggered when trying to add an empty router using `include_router()`.
+- Both the `include` parameter and the `router.path` attribute must be empty for this error to occur.
+- The specific error raised is a `FastAPIError`, which is handled by PyTest's `pytest.raises()` decorator in order to verify its behavior.

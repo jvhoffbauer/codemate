@@ -1,0 +1,2 @@
+- Retrieves a list of heroes from the database using SQLAlchemy's `Session` and `select()` functions, filtering by age less than 35
+- Loops through each result (`ResultProxy`) returned by executing the query and prints out its properties (`__dict__`)

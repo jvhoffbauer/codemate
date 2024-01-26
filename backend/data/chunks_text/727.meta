@@ -1,0 +1,1 @@
+{"original_code": "def test_celery_filter_adds_parent_id(cid: str, log_record: LogRecord):\n    filter_ = CeleryTracingIdsFilter()\n    celery_parent_id.set(\"a\")\n\n    assert not hasattr(log_record, \"celery_parent_id\")\n    filter_.filter(log_record)\n    assert log_record.celery_parent_id == \"a\""}

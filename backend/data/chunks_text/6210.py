@@ -1,0 +1,4 @@
+- This function retrieves and filters location data from a specified source (JHU by default).
+- It accepts optional parameters for filtering based on country code, province/region, and county/district.
+- The function returns a dictionary containing both overall statistics ("latest") as well as detailed information about each filtered location ("locations").
+- If no matches are found after filtering, an error is raised indicating that the selected source doesn't contain the requested data.

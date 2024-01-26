@@ -1,0 +1,4 @@
+- This function is called `login`, and takes an argument of type `OAuth2PasswordRequestForm`. It's being passed in using the `Depends` decorator to make it a dependency for this route.
+- The function retrieves the user dictionary from a mock database (`fake_users_db`) based on the provided username. If the user doesn't exist, it raises an error with status code 400 ("Bad Request").
+- The function checks whether the hash of the provided password matches the stored hash for that user. Again, if they don't match, it raises an error with status code 400 ("Bad Request").
+- Finally, the function returns a simple JSON response containing the access token (which is just the username), and the token type ("Bearer").

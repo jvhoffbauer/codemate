@@ -1,0 +1,1 @@
+{"original_code": "        @field_serializer(\"dt_field\")\n        def serialize_datetime(self, dt_field: datetime):\n            return dt_field.replace(microsecond=0, tzinfo=timezone.utc).isoformat()"}

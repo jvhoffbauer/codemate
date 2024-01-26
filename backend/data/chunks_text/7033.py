@@ -1,0 +1,3 @@
+- This function updates an existing user in the database using FastAPI's dependency injection and CRUD operations from SQLAlchemy.
+- It takes several arguments including `db`, which is obtained through dependency injection, `user`, which is also passed as a parameter to be updated, and `user_in`, which contains the new values for updating the user.
+- The function returns the updated user object after executing the `crud.user.update()` method provided by SQLAlchemy's ORM extension (Cruddy).

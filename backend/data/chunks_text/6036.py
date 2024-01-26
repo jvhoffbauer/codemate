@@ -1,0 +1,1 @@
+- Defines an asynchronous function `get_page()` that takes a `Request` object as input and returns a dictionary with one key-value pair containing a username value of 'hello'.

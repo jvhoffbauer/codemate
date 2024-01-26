@@ -1,0 +1,1 @@
+{"original_code": "def get_current_user(oauth_header: str = Security(api_key)):\n    user = User(username=oauth_header)\n    return user"}

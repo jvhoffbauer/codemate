@@ -1,0 +1,3 @@
+- Tests if the OpenAPI schema can be retrieved successfully with a GET request to `/openapi.json`.
+- Asserts that the status code is 200 and checks the text of the response in case of failure.
+- Verifies that the JSON returned by the API matches the expected structure defined in the bullet points above.

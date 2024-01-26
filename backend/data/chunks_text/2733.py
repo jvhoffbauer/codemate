@@ -1,0 +1,1 @@
+- Tests if a Flask API endpoint returns the same ResponseModel object without any annotations or modifications when requested with GET method. - Uses Flask's built-in testing client to simulate HTTP requests and responses. - Asserts that the status code of the response is 200 OK and its body matches the expected JSON data.

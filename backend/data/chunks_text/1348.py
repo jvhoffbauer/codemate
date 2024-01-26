@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Uses Pydantic's `Header` class to parse an optional header named 'x-token', which can be either a list of strings or none by default
+- Returns a dictionary containing the parsed value of the 'x-token' header as a key with the value being its corresponding value

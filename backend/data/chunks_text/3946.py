@@ -1,0 +1,3 @@
+- Generates an OpenAPI (Swagger) JSON schema for a FastAPI application using Pytest and Uvicorn frameworks.
+- Defines endpoints with request parameters, responses, status codes, and summary descriptions.
+- Includes error handling with custom validation errors defined in components section of the schema.

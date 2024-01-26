@@ -1,0 +1,2 @@
+- Sends a POST request to an invalid user path (rick) using Flask's built-in `client` object
+- Asserts that the server returns a HTTP status code of 404 and displays the error message in the `response.text` attribute if the requested resource is not found

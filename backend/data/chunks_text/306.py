@@ -1,0 +1,3 @@
+- Updates Spider-Boy's teams by adding him to Z-Force and removing his membership from Preventers (if he was a member)
+- Prints updated lists of Spider-Boy's teams and Z-Force's members
+- Sets the training status of Spider-Boy's link to Z-Force to True and commits changes to the database

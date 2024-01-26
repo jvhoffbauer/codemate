@@ -1,0 +1,3 @@
+- Defines a task called `fmt` using invoke's decorator syntax
+- Sets its dependencies to include the `sort` task and displays a usage message with the `help` parameter
+- Prints a message indicating that formatting is in progress before running the `black` command on the specified target files

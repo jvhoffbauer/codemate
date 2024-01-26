@@ -1,0 +1,3 @@
+- Tests GET request to /users endpoint using Flask's built-in testing client
+- Asserts that status code is 200 and returns expected text if not
+- Retrieves JSON response from server and asserts that it contains 'email' and 'id' keys for first user

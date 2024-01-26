@@ -1,0 +1,4 @@
+- Deletes an item with a specific ID from a database using FastAPI's dependency injection to retrieve the necessary objects.
+- Checks whether the requested item exists in the database; raises an error if it doesn't.
+- Verifies that the user making the request has sufficient privileges to perform the deletion based on the ownership of the item; raises an error if they don't have permission.
+- Removes the item from the database and returns its updated state.

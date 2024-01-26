@@ -1,0 +1,3 @@
+- Retrieves account information for a specific user based on their ID provided in the JSON Web Token (JWT).
+- Uses FastAPI's dependency injection to pass the parsed JWT data and retrieve the necessary user ID from it.
+- Returns a dictionary containing the email address of the requested user.

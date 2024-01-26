@@ -1,0 +1,1 @@
+- Defines a function `read_items` that returns a list of `Item` objects using list comprehension syntax. - Each item in the list is created by passing arguments to the constructor of the `Item` class, which takes three parameters (`name`, `description`, and an optional nested `SubItem` object). - The `SubItem` object is also defined as a nested dictionary within each `Item`.

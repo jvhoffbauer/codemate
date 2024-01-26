@@ -1,0 +1,1 @@
+- Tests whether admin setting authorization is intercepted by making a POST request to `/add/auth` with an authority ID of '100', path '/add/auth' and method 'POST'. - Verifies that the status code returned is 200 and the JSON response contains a 'code' value of 200.

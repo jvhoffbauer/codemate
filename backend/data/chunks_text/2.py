@@ -1,0 +1,3 @@
+- Defines a method `__eq__()` for comparing instances of this class with other objects using Python's equality operator (`==`)
+- Checks if the argument `o` is an instance of another similar class called `_DefaultPlaceholder`, which seems to be an internal implementation detail
+- If both instances are of that type, compares their respective values using the `value` attribute of each instance

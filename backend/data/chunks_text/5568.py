@@ -1,0 +1,3 @@
+- Defines a property called `_select_maker` that returns a function named `select_maker`.
+- If there are linked models (stored in `self.link_models`), then `select_maker` takes two arguments: an instance of `Select` and an optional argument for a "link clause". The function modifies the `Select` object based on the value of the link clause before returning it.
+- Otherwise, `select_maker` simply returns the original `get_select()` method from the class.

@@ -1,0 +1,3 @@
+- This function, named `_bands_expr_opt`, takes an optional parameter `params` of type `Dependencies.BandsExprParamsOptional`.
+- The function simply returns the value of the `params` argument without any modifications or calculations.
+- In summary, this function is a helper method that retrieves and passes on the `BandExpressionParameters` object provided as input by another part of the application.

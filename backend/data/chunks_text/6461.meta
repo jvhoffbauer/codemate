@@ -1,0 +1,1 @@
+{"original_code": "    async def stream(self):\n        async for body in self.request.stream():\n            yield body"}

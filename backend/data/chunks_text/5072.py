@@ -1,0 +1,3 @@
+- Defines a fixture named `user` with session scope for PyTest tests
+- Creates an instance of `User` using `AsyncDAL` and sets its properties
+- Commits changes to the database using `AsyncDAL`'s commit method

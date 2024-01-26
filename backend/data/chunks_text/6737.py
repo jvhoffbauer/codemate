@@ -1,0 +1,5 @@
+- Defines a fixture called `capture_exceptions` that takes `monkeypatch` as an argument.
+- Inside the fixture, creates a new variable `errors`, which will be used to store any exceptions captured during testing.
+- Saves the original function for capturing events (`old_capture_event`) from the `Hub` object of the `sentry_sdk`.
+- Creates a new function `capture_event` that is assigned to the `Hub`'s `capture_event` attribute using `monkeypatch`. This new function adds any exception information to the `errors` list and then calls the original `capture_event` with the same arguments.
+- Returns the `errors` list at the end of the fixture.

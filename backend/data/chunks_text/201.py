@@ -1,0 +1,4 @@
+- Deletes a specific hero with the given ID from the database using SQLAlchemy's `Session`.
+- Raises an HTTP exception with status code 404 and error message "Hero not found" if the requested hero is not present in the database.
+- Commits changes to the database after deleting the hero.
+- Returns a simple JSON response indicating success ("OK").

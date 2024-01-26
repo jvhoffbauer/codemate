@@ -1,0 +1,2 @@
+- Initializes a function called `startup()` that will be executed when the application starts up (using FastAPI's event system).
+- Inside this function, it calls the `async_run_sync()` method of SQLAlchemy's connection object to create all tables defined in our models using the `SQLModel.metadata.create_all()` function. This ensures that the database schema is created if it doesn't exist already or updated if there are any changes made to the model definitions.

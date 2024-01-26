@@ -1,0 +1,3 @@
+- Defines a GET request for the URL "/route2".
+- Uses FastAPI's decorator `@app.get()` to associate this function with that endpoint.
+- Returns a string after sleeping for one second, demonstrating how to add delays in API responses using Python's built-in `time` module.

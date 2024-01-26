@@ -1,0 +1,3 @@
+- Retrieves default values for `redoc_js_url` and `redoc_favicon_url` from function signature using Python's `inspect` module
+- Calls `get_redoc_html` with a sample URL to generate HTML documentation, passing in the retrieved defaults as arguments
+- Extracts the generated HTML content and checks if both defaults are included in it

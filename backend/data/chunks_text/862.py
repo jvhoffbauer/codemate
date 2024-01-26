@@ -1,0 +1,3 @@
+- Defines a method `render()` that takes in any data as an argument (`content`) and returns it as byte format using ORJSON library's `dumps()`.
+- Uses ORJSON's options for serializing non-string keys and numpy arrays.
+- Raises AssertionError if ORJSON is not installed, indicating dependency requirement.

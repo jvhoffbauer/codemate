@@ -1,0 +1,1 @@
+{"original_code": "def _startup_model(app: FastAPI) -> None:\n    model_path = DEFAULT_MODEL_PATH\n    model_instance = HousePriceModel(model_path)\n    app.state.model = model_instance"}

@@ -1,0 +1,2 @@
+- Defines a function named `main` that returns a dictionary with one key-value pair containing a message string.
+- The function's return type is annotated as a dictionary (Dict) of strings (str).

@@ -1,0 +1,1 @@
+{"original_code": "def get_db(request: Request):\n    return request.state.db"}

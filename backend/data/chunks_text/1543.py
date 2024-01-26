@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Uses the `Query` parameter to accept an optional query string parameter named `q`, which can be either a list of strings or `None`. If it is not provided, its default value will be `None`.
+- Returns an object containing the parsed query parameters as a dictionary with a key called 'q'. This allows us to easily access and use these values in our application logic.

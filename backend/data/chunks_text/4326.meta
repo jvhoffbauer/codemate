@@ -1,0 +1,1 @@
+{"original_code": "def test_main():\n    with pytest.warns(DeprecationWarning):\n        from docs_src.app_testing.tutorial003 import test_read_items\n    test_read_items()"}

@@ -1,0 +1,3 @@
+- Deletes the currently logged in user from the database using SQLAlchemy's `delete()` method and commits the changes to the database.
+- Takes two dependencies, the current user (retrieved with `Depends(deps.get_current_user)`) and a database connection (obtained through `Depends(deps.get_session)`).
+- Returns nothing as this is an async function that modifies data directly instead of returning it.

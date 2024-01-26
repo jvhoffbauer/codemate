@@ -1,0 +1,3 @@
+- The `Default()` function is an internal helper function that should not be called directly.
+- Its purpose is to distinguish between cases where a default value has been explicitly set and those where it hasn't, even in situations where the overridden default value would still evaluate as true (i.e., truthiness).
+- This functionality is provided by returning a placeholder object (_DefaultPlaceholder) with the original default value wrapped inside.

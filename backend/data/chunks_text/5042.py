@@ -1,0 +1,2 @@
+- Listens for a "drawing" event from a client (SID = socket ID) and receives drawing data in JSON format (data)
+- Broadcasts the received drawing data to all connected clients using `broadcast=True` parameter of `emit()` function

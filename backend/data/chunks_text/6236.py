@@ -1,0 +1,1 @@
+- This method is asynchronous (async) and has no arguments. - It retrieves and returns a list of Location objects, which represent geographic places or addresses. - If this class doesn't implement its own version of `get_all()`, it raises an exception called NotImplementedError to indicate that subclasses should override this method with their specific implementation.

@@ -1,0 +1,4 @@
+- Defines an endpoint `/items/` with GET request method using FastAPI's decorator syntax
+- Accepts a query parameter named 'q', which is optional and has a default value of None
+- The query parameter is validated using Pydantic's Query class, which sets its minimum length to 3 characters
+- If the 'q' parameter is provided, it updates the response dictionary with a new key 'q' containing its value before returning the result

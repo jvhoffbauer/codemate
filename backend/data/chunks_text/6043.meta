@@ -1,0 +1,1 @@
+{"original_code": "        async def get_select(self, request: Request) -> Select:\n            sel = await super().get_select(request)\n            return sel.outerjoin(models.User, models.User.id == models.Article.user_id)"}

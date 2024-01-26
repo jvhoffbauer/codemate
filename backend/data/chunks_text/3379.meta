@@ -1,0 +1,1 @@
+{"original_code": "def test_path_bool_False():\n    response = client.get(\"/path/bool/False\")\n    assert response.status_code == 200\n    assert response.json() is False"}

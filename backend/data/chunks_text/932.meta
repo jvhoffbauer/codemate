@@ -1,0 +1,1 @@
+{"original_code": "    def errors(self) -> Sequence[Any]:\n        return self._errors"}

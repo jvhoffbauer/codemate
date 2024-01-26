@@ -1,0 +1,5 @@
+- This function `test_tutorial` is testing a module called `tutorial008_py310`, which is part of SQLAlchemy's documentation (docs_src).
+- The `clear_sqlmodel` parameter is used to clear any existing database connections before running this test case.
+- The `get_testing_print_function` method is being used to capture all print statements made during execution and store them in a list called 'calls'.
+- After capturing these prints, we are replacing the builtin `print` function with our custom implementation using Python's `patch` decorator.
+- Finally, we run the main function of the `tutorial008_py310` module and check if the expected output is stored in the 'calls' list.

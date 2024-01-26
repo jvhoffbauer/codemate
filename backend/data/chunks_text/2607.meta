@@ -1,0 +1,1 @@
+{"original_code": "@app.options(\"/items/{item_id}\")\ndef options_item(item_id: str):\n    return JSONResponse(None, headers={\"x-fastapi-item-id\": item_id})"}

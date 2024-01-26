@@ -1,0 +1,1 @@
+- This function is a JSON RPC error handler that catches `RuntimeError` exceptions and logs them with stack trace information using Python's built-in `logging` module. - If a `RuntimeError` occurs, it raises a custom exception called `_TestError` with a unique marker (`unique_marker2`) to help identify the specific error in tests.

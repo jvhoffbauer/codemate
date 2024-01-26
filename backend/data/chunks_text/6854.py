@@ -1,0 +1,4 @@
+- Creates a new item with a randomly generated title and description using `ItemCreate`.
+- Associates the newly created item with a randomly generated user using `crud.item.create_with_owner`.
+- Retrieves the deleted item from the database using `crud.item.get`, which should return `None` since it was already deleted by `crud.item.remove`.
+- Compares the properties of the deleted item (ID, title, description, and owner ID) against those of the original item to ensure they match after deletion.

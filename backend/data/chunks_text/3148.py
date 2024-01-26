@@ -1,0 +1,3 @@
+- Defines a function named `route_with_request_validation_exception` that takes a single argument `param` of type `int`.
+- The function body is empty and marked with a pragma statement to skip test coverage for this block (i.e., it's not expected to be executed during testing).
+- This function serves as an example of how to raise a request validation exception by wrapping its implementation in a try/except block, which will be covered later in the text material.

@@ -1,0 +1,2 @@
+- Tests if connecting to an invalid endpoint results in a WebSocket disconnection
+- Verifies that the disconnection is due to a normal closure (status code 1000)

@@ -1,0 +1,1 @@
+{"original_code": "def setup_routers(app: FastAPI):\n    from tifa.apps import user, health, whiteboard, admin\n\n    app.mount(\"/health\", health.bp)\n    # app.mount(\"/admin\", admin.bp)\n    app.mount(\"/user\", user.bp)\n    app.mount(\"/whiteboard\", whiteboard.bp)\n    app.mount(\"/metrics\", make_asgi_app())"}

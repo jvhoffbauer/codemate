@@ -1,0 +1,4 @@
+- Defines a function `test_openapi_schema` that tests the OpenAPI schema of our FastAPI application using pytest and the built-in Flask testing client.
+- Makes an HTTP GET request to the root URL (/) with query parameter `/openapi.json`, which returns the JSON representation of the OpenAPI specification for our API endpoints.
+- Asserts that the status code is 200 OK and saves the response text in case we want to debug any issues later on.
+- Parses the JSON response into a dictionary and asserts that it matches the expected structure defined by the OpenAPI specification. This includes checking the version number, title, paths, components, schemas, etc. Of our API.

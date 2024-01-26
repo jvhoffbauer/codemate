@@ -1,0 +1,1 @@
+{"original_code": "def test_imagetype(value, driver, mediatype):\n    \"\"\"Test driver and mediatype values.\"\"\"\n    assert ImageType[value].driver == driver\n    assert ImageType[value].mediatype == mediatype"}

@@ -1,0 +1,1 @@
+{"original_code": "async def read_next_item():\n    return {\n        \"name\": \"Island In The Moon\",\n        \"price\": 12.99,\n        \"description\": \"A place to be be playin' and havin' fun\",\n        \"tags\": [\"breater\"],\n    }"}

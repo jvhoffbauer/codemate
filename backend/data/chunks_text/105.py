@@ -1,0 +1,1 @@
+- Adds one or more conditions (represented by ColumnExpressions or boolean values) to the WHERE clause of an SQL query using AND logic. - Returns a new Select object that represents the modified query. - Ignore argument type warning for whereclause parameter due to union type hint.

@@ -1,0 +1,1 @@
+- Defines a function named `no_response_model_annotation_return_exact_dict` that returns an exact dictionary representing a user object with keys 'name' and'surname'. - The function has a type hint specifying its return value as a `User`, but since we are returning an exact dictionary, this is not strictly necessary (but still recommended for clarity).

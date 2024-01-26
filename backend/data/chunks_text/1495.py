@@ -1,0 +1,4 @@
+- Defines an endpoint `/items/` with GET request using FastAPI's decorator syntax
+- Uses Pydantic's `Annotated` function to create a query parameter called 'q', which can be either a string or None
+- The `Query` class is used to define metadata about the parameter such as its name, type, and constraints (e.g., minimum length)
+- If the 'q' parameter is provided, it updates the response dictionary with a new key 'q' containing the value of the parameter

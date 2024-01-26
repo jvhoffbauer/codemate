@@ -1,0 +1,4 @@
+- Creates a random item in the database using `create_random_item`.
+- Makes an HTTP GET request to retrieve the created item with its ID.
+- Verifies that the status code is 200 (OK).
+- Extracts and asserts the expected values from the JSON response body for title, description, ID, and owner_ID.

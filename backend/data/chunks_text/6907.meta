@@ -1,0 +1,1 @@
+{"original_code": "    def _load_local_model(self):\n        self.model = joblib.load(self.path)"}

@@ -1,0 +1,1 @@
+- Defines a new command named "test" for the worker process of Celery group tasks. - The function `test_worker()` is associated with this command and will be executed when running `celery --app=myproject.tasks group run mytask.group:name`. - This allows testing specific parts of multi-step workflows without having to spin up an entire message queue infrastructure.

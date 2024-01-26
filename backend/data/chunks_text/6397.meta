@@ -1,0 +1,1 @@
+{"original_code": "    def validate_data(cls, data):\n        data_model = cls.get_data_model()\n        if data_model:\n            data = data_model.model_validate(data)\n        return data"}

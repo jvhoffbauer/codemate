@@ -1,0 +1,1 @@
+- This function is a GET request for all items (/) under the /items endpoint, tagged as 'items'. - It returns an array of dictionaries containing item names ('name') in response to the request.

@@ -1,0 +1,3 @@
+- Sends two items with incorrect body format (missing 'name' field and non-decimal values for 'age') in one POST request to '/items/' endpoint using Flask-Restful's `client`.
+- Asserts that the status code of the response is 422 (Unprocessable Entity) and its text matches the expected error message from Pydantic's validation errors.
+- Verifies that the JSON response contains an array of dictionaries representing each validation error, including their type, location, message, input value, and URL path where they occurred. The output format may differ depending on whether we are running Pydantic v1 or v2.

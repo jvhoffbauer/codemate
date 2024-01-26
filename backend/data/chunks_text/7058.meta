@@ -1,0 +1,1 @@
+{"original_code": "def generate_password_reset_token(email: EmailStr) -> str:\n    return create_access_token(\n        subject=email,\n        expires_delta=timedelta(hours=settings.EMAIL_RESET_TOKEN_EXPIRE_HOURS),\n    )"}

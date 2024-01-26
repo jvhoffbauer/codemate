@@ -1,0 +1,6 @@
+- Sets default values for environment variables `NAME`, `IMAGE`, and `SLEEP_TIME`.
+- Uses Docker's `docker run` command to start a new container with the specified image, name, and port mapping. The container is started in detached mode (background).
+- Waits for a certain amount of time before verifying that the container responds correctly using the `verify_container` function.
+- Stops the container and removes it from the local machine.
+- Restarts the stopped container and waits again for the expected response.
+- Finally stops and removes the container.

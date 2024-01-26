@@ -1,0 +1,4 @@
+- Defines a function `main()`.
+- Initializes variables `start_at` and `start_with`.
+- If `start_with` is provided, finds its index in `environments` list using list comprehension with `enumerate()` and assigns it to `start_at`.
+- Iterates over `environments` starting from `start_at`, prints each environment's name (`NAME`) using f-string formatting, and passes it to another function called `process_tag()`.

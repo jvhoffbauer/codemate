@@ -1,0 +1,1 @@
+{"original_code": "async def session(setup_db) -> AsyncSession:\n    async with db.AsyncSession() as session:\n        yield session"}

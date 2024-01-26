@@ -1,0 +1,1 @@
+{"original_code": "def test_include_empty():\n    # if both include and router.path are empty - it should raise exception\n    with pytest.raises(FastAPIError):\n        app.include_router(router)"}

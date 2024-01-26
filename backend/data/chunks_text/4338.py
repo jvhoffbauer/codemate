@@ -1,0 +1,3 @@
+- This function tests the PUT request for updating an item with new values using FastAPI's built-in testing framework `TestClient`.
+- It sends a PUT request to update the item with ID 'bar', passing in a JSON body containing updated values for name and price.
+- The expected response is checked against the actual response received from the server, verifying that the correct fields are returned after successful update.

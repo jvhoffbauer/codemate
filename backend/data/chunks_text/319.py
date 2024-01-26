@@ -1,0 +1,1 @@
+- Retrieves all records from the 'hero' table using SQLAlchemy's `Session` and `exec` methods, and stores them in a list called 'heroes'. - Prints the contents of the 'heroes' list to the console for display purposes.

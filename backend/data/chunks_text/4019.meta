@@ -1,0 +1,1 @@
+{"original_code": "def test_explicit_content_type(client: TestClient):\n    response = client.post(\n        \"/items/\",\n        content='{\"name\": \"Foo\", \"price\": 50.5}',\n        headers={\"Content-Type\": \"application/json\"},\n    )\n    assert response.status_code == 200, response.text"}

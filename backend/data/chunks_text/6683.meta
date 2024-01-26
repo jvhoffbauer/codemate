@@ -1,0 +1,1 @@
+{"original_code": "    def get_shared_counter(\n        shared: str = Header(\"shared\"),\n    ) -> str:\n        nonlocal _shared_counter\n        _shared_counter += 1\n        return f\"{shared}-{_shared_counter}\""}

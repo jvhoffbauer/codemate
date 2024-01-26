@@ -1,0 +1,4 @@
+- Defines a function `test` that takes four arguments: `path`, `headers`, `expected_status`, and `expected_response`.
+- Makes an HTTP GET request to the specified path using Flask's built-in `client` object. The `headers` argument is passed as query parameters for customizing requests.
+- Asserts that the status code of the response matches the provided `expected_status`.
+- Asserts that the JSON response body returned by the server matches the expected `expected_response`.

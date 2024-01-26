@@ -1,0 +1,3 @@
+- This method checks if a user has permission to delete an item with the given IDs using Django Rest Framework's built-in `PermissionMixin`.
+- It takes in three arguments: `Request`, which is the HTTP request object; `item_id`, which is a list of IDs for the items being deleted; and optional keyword arguments passed from the viewset class (not used here).
+- The method returns a boolean value indicating whether the user has permission or not based on the result of calling another method called `has_page_permission()` with the same arguments but with an additional argument specifying the desired CRUD operation as `action=CrudEnum.delete`.

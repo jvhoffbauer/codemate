@@ -1,0 +1,1 @@
+{"original_code": "@router.patch(\"/me\", response_model=schemas.User)\ndef update_user_me(\n    *,\n    db: Session = Depends(deps.get_db),\n    user_in: schemas.UserUpdate,\n    user: models.User = Depends(deps.get_current_active_user),\n):\n    \"\"\"Update own user.\"\"\"\n    return crud.user.update(db, db_obj=user, obj_in=user_in)"}

@@ -1,0 +1,3 @@
+- Tests the OAuth2 redirect functionality of Swagger UI by making a GET request to `/docs/oauth2-redirect`.
+- Asserts that the status code is 200 and checks the content type header.
+- Checks for the presence of a specific string related to OAuth2 redirection in the HTML response body.

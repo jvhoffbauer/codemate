@@ -1,0 +1,4 @@
+- Defines a function `ep` that takes an argument `ep_path`.
+- Creates a custom subclass of `JsonRpcRequest`, called `CustomJsonRpcRequest`, and sets its attribute `extra_value` to be a string.
+- Initializes an instance of `Entrypoint` with the given path (`ep_path`) and specifies our custom request class using the `request_class` parameter.
+- Registers a new method named "probe" for this entrypoint, which accepts a single positional argument `jsonrpc_method` that is obtained from another dependency `get_jsonrpc_method`. The returned value is simply the name of the JSON RPC method received as input.

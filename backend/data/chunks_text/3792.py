@@ -1,0 +1,1 @@
+- Tests if GET request to /portal returns a successful status code (200) and expected JSON response. - Uses Flask's built-in `client` object for making requests against our app. - Asserts that both the status code and JSON response match our expectations using Python's `assert` statement.

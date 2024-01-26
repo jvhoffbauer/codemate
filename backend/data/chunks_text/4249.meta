@@ -1,0 +1,1 @@
+{"original_code": "def test_override_in_users_with_q():\n    from docs_src.dependency_testing.tutorial001_py310 import client\n\n    response = client.get(\"/users/?q=foo\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\n        \"message\": \"Hello Users!\",\n        \"params\": {\"q\": \"foo\", \"skip\": 5, \"limit\": 10},\n    }"}

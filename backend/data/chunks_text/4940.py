@@ -1,0 +1,3 @@
+- Creates a new item with a randomly generated title and description
+- Optionally sets an owner username (if provided), otherwise creates a new user
+- Inserts or updates the item in the default bucket using Pydantic's ORM library `crud`

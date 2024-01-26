@@ -1,0 +1,1 @@
+- Defines an asynchronous function `process_fn` that takes a callable (a function that returns a coroutine) as its argument. - The function executes the passed function and saves the resulting value in a list called `results`. - This implementation follows PEP8 style guide by using `noqa: B023` to suppress warnings for unused variable `result`.

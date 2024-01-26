@@ -1,0 +1,1 @@
+- Converts a date string in custom format to ISO format using Python's built-in `datetime` module and its `strptime()` method. - Returns the resulting ISO formatted string as output of the function.

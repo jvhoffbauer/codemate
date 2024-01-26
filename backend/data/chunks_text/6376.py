@@ -1,0 +1,3 @@
+- Defines a function named `get_account_by_id` that takes an argument `account_id`.
+- Returns the account with the given ID from the dictionary `accounts`, which is assumed to be available in the current scope.
+- The returned value has type `Account`, as specified by the function's return type annotation (PEP 484).

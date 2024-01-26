@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/login\")\n# Here we use string annotations to test them\ndef login(form_data: \"OAuth2PasswordRequestFormStrict\" = Depends()):\n    return form_data"}

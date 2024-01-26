@@ -1,0 +1,3 @@
+- Defines a function named `_bands` that takes an optional parameter `params`.
+- The `Depends` decorator is used to pass dependencies, in this case `dependencies.BandsParams`, to the function.
+- If no value for `params` is provided, the default behavior of returning all available bands is implemented using the `bands` attribute from the passed dependency object.

@@ -1,0 +1,3 @@
+- Retrieves data on recovered COVID-19 cases using `get_category()` asynchronously
+- Stores the retrieved data in a variable called `recovered_data`
+- Returns the `recovered_data` for further processing or display

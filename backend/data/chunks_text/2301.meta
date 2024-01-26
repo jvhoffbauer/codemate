@@ -1,0 +1,1 @@
+{"original_code": "def test_url_path_for_path_convertor():\n    assert (\n        app.url_path_for(\"path_convertor\", param=\"some/example\") == \"/path/some/example\"\n    )"}

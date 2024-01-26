@@ -1,0 +1,1 @@
+- Retrieves a specific user record from the database by ID using SQLAlchemy's `Undelete` and `Select` methods. - Returns the first row of the query result as a dictionary with keys corresponding to the selected columns. - Does not delete or update any records in the process; simply selects one for viewing purposes.

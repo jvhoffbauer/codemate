@@ -1,0 +1,4 @@
+- Creates a new invoice using the provided `Invoice` object and optional callback URL
+- Sends the invoice to the client for payment
+- Collects the payment from the client
+- Notifies the API user via a callback at the specified URL (optional)

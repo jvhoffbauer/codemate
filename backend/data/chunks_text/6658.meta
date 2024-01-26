@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\ndef ep(ep_path):\n    class CustomJsonRpcRequest(JsonRpcRequest):\n        extra_value: str\n\n    ep = Entrypoint(ep_path, request_class=CustomJsonRpcRequest)\n\n    @ep.method()\n    def probe(\n        jsonrpc_method: str = Depends(get_jsonrpc_method),\n    ) -> str:\n        return jsonrpc_method\n\n    return ep"}

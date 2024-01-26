@@ -1,0 +1,3 @@
+- This function tests the `/query/int` endpoint with a query parameter of `42.5`.
+- It expects a status code of 422 (Unprocessable Entity) and a JSON response containing an error detail about invalid int parsing due to non-integer input value.
+- The expected error message includes details such as the type of error ("int_parsing"), location in the request path ("query" and "query"), explanation of the issue ("unable to parse string as an integer"), original input value ("42.5"), and URL for further information on this specific error type ("match_pydantic_error_url('int_parsing')").

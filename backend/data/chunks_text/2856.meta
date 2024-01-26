@@ -1,0 +1,1 @@
+{"original_code": "def test_query_repr_none():\n    assert repr(Query(None)) == \"Query(None)\""}

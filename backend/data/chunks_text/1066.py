@@ -1,0 +1,3 @@
+- Retrieves discussions related to translating questions using GraphQL API
+- Takes in `Settings` object as a parameter for configuring GraphQL requests
+- Returns list of discussion nodes from parsed response

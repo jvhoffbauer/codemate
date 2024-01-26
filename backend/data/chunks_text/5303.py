@@ -1,0 +1,4 @@
+- Defines an asynchronous function called `route2`.
+- The function is documented with a docstring explaining its purpose.
+- Inside the function, it waits for one second using the built-in `time` module's `sleep()` method.
+- After sleeping, the function returns a string message indicating that it slept well.

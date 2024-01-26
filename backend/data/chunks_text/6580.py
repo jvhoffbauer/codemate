@@ -1,0 +1,3 @@
+- Defines a JSONRPC entrypoint with authentication and dependency requirements using FastAPI's `jsonrpc` extension
+- Registers two methods (`probe` and `probe2`) with different parameter types and dependencies
+- Uses `Body` to validate input parameters for both methods, providing example values for `data` in `probe`

@@ -1,0 +1,1 @@
+{"original_code": "    def method(self):\n        \"\"\"Return rio-tiler-mosaic pixel selection class\"\"\"\n        return getattr(defaults, f\"{self._value_.title()}Method\")"}

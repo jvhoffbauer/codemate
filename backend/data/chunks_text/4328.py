@@ -1,0 +1,4 @@
+- Sends a GET request to the specified URL using Flask's built-in `client` object
+- Asserts that the status code is 200 and displays an error message if it isn't
+- Retrieves the JSON response body and asserts its value
+- Retrieves the header named 'X-Cat-Dog' from the response headers and asserts its value

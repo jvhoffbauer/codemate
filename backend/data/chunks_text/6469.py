@@ -1,0 +1,1 @@
+- Defines a method `__eq__()` for the class that checks if two instances of the `EntrypointRoute` class are equal based on their path attribute. - The method returns True if both objects are instances of `EntrypointRoute` and have identical paths; otherwise, it returns False.

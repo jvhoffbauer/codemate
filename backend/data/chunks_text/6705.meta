@@ -1,0 +1,1 @@
+{"original_code": "def test_context_vars(ep, method_request):\n    resp = method_request(\"probe_context_vars\", {}, request_id=111)\n    assert resp == {\n        \"id\": 111,\n        \"jsonrpc\": \"2.0\",\n        \"result\": [\"ep_middleware-value\", \"method_middleware-value\"],\n    }"}

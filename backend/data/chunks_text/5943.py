@@ -1,0 +1,3 @@
+- This method is called `get_language()`.
+- It returns the value of the private attribute `_language`, which represents the programming language being used in this context.
+- The purpose of this method is to provide a way for other parts of the program to access and use the current language without directly modifying or exposing the internal state of the object.

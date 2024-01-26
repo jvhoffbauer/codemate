@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/directCookie\")\ndef get_direct_cookie(dep: str = Depends(set_cookie)):\n    return {\"dep\": dep}"}

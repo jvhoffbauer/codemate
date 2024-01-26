@@ -1,0 +1,3 @@
+- Defines a function `create_person` that takes an argument of type `PersonCreate`.
+- Creates a new instance of `Person` from its ORM representation (i.e., converts it back to SQLAlchemy's internal format).
+- Returns the newly created `Person` object as any data type, which can be used for further processing or storage in another system.

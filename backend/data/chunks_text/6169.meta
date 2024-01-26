@@ -1,0 +1,1 @@
+{"original_code": "def load(name: str, **json_kwargs) -> Union[str, Dict, List]:\n    \"\"\"Loads content from a file. If file ends with '.json', call json.load() and return a Dictionary.\"\"\"\n    path = DATA / name\n    with open(path) as f_in:\n        if path.suffix == \".json\":\n            return json.load(f_in, **json_kwargs)\n        return f_in.read()"}

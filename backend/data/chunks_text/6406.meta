@@ -1,0 +1,1 @@
+{"original_code": "    def get_error_model(cls):\n        if cls.__dict__.get(\"error_model\") is not None:\n            return cls.error_model\n        cls.error_model = cls.build_error_model()\n        return cls.error_model"}

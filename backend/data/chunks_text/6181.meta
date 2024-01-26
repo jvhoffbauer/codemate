@@ -1,0 +1,1 @@
+{"original_code": "    @validator(\"timeline\")\n    @classmethod\n    def sort_timeline(cls, value):\n        \"\"\"Sort the timeline history before inserting into the model\"\"\"\n        return dict(sorted(value.items()))"}

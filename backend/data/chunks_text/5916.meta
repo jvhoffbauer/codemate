@@ -1,0 +1,1 @@
+{"original_code": "    def field_outer_type(field: ModelField) -> Any:\n        return field.field_info.annotation"}

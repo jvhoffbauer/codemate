@@ -1,0 +1,1 @@
+- Initializes a middleware class with an instance of the FastAPI or Starlette application passed as an argument. - The `__init__()` method is called when creating a new instance of this middleware class. - This method sets the value of the `self.app` attribute to the provided application object for later use in the middleware's processing logic.

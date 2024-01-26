@@ -1,0 +1,3 @@
+1. Allows passing'self' as an argument for initializing attributes instead of using self inside the init function. This is necessary because SQLAlchemy modifies the __init__ method during initialization.
+2. Explicitly calls the __init__ method to trigger all SQLAlchemy logic required for initialization. However, this may not always be desirable, such as when validating models outside of instance creation with Model.model_validate().
+3. Introduces a context variable (finish_init) that determines whether to execute all default logic or just the SQLAlchemy initialization. This allows for more flexibility in model initialization while still supporting features like Model.model_validate().

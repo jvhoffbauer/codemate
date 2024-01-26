@@ -1,0 +1,3 @@
+- This is a helper method named `_name_to_id` that takes a string input `text`.
+- It performs some normalization on the given text by converting all characters to lowercase and joining them with hyphens (-) using list comprehension.
+- The resulting normalized string can be used as an identifier or ID for the original text.

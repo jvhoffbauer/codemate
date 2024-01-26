@@ -1,0 +1,4 @@
+1. This function sets common attributes for both `FormItem` and `TableColumn`. It takes a `ModelField`, an instance of either `FormItem` or `TableColumn`, and optional boolean flags to indicate whether to set default values and whether the attribute applies to filters.
+2. It extracts information from the `ModelField`'s `field_info` object, such as maximum and minimum length limits, and sets corresponding attributes on the `FormItem`/`TableColumn` instance based on Python version constraints.
+3. It also checks whether the `ModelField` requires input and sets the required flag accordingly, unless it represents a Boolean value. If a default value has been provided for the `ModelField`, it sets the initial value for the form element.
+4. Finally, it sets the name, label, and any associated labels or remarks using internationalized strings where possible.

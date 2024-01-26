@@ -1,0 +1,2 @@
+- Defines a GET request for the URL "/route2".
+- Returns the string "yeah" in response to the request.

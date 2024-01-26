@@ -1,0 +1,2 @@
+- Defines a function called `app_shutdown` that returns no value (None)
+- Sets a variable named `state.app_shutdown` to true when this function is called

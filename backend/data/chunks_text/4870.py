@@ -1,0 +1,4 @@
+- Retrieves current user from JWT token using FastAPI's built-in security middleware and Pydantic's JSON Web Tokens (jwt) library
+- Decodes the token to extract the username and verifies its signature with a secret key
+- Fetches default database connection and retrieves user record by username from CRUD operations defined in another module
+- Raises exceptions for invalid tokens or non-existent users

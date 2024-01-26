@@ -1,0 +1,3 @@
+- This function is a GET endpoint for retrieving a specific user with ID `user_id`.
+- It takes two arguments: `user_id`, which is passed as part of the URL path, and `request`, which provides additional information about the HTTP request being made.
+- The function returns an object containing both the requested `user_id` and the current path (as obtained from the `APIRoute` class).

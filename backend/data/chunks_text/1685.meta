@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/users/\", response_model=ResponseMessage, tags=[\"users\"])\nasync def create_user(user: User):\n    return {\"message\": \"User received\"}"}

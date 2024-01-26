@@ -1,0 +1,3 @@
+- Sends a GET request to `http://localhost:8000/items/` with query parameters `q=foo` and `q=bar`.
+- Asserts that the server returns an HTTP status code of 200 (OK).
+- Parses the JSON response body and asserts that it contains a key named 'q' with a value equal to ['foo', 'bar'].

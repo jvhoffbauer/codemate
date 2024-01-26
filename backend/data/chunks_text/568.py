@@ -1,0 +1,8 @@
+- Imports `test_tutorial` function and `create_engine` function from SQLAlchemy library.
+- Defines a variable called `mod` to store the imported module containing the tutorial's implementation.
+- Sets the value of `mod.sqlite_url` to a string representing an SQLite database URL.
+- Creates an engine using the `create_engine` function and assigns it to `mod.engine`.
+- Initializes a list called `calls` that will be used later for testing output.
+- Retrieves the built-in print function and replaces it temporarily with a custom one that saves each printed statement in the `calls` list.
+- Calls the main function of the tutorial module stored in `mod`, passing the modified print function as an argument.
+- Asserts that the `calls` list contains the expected statements after running the tutorial.

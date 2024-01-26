@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/main-depends/\")\nasync def main_depends(commons: dict = Depends(common_parameters)):\n    return {\"in\": \"main-depends\", \"params\": commons}"}

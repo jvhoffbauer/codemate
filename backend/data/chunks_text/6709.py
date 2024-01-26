@@ -1,0 +1,4 @@
+- Defines an asynchronous middleware function `ep_middleware()` for JSON RPC contexts (`JsonRpcContext`) in FastAPI.
+- Sets a cookie named "ep_middleware_enter" with value "1" at the beginning of the request handling process using `set_cookie()`.
+- Yields control to the next middleware or handler function using `yield`.
+- Sets another cookie named "ep_middleware_exit" with value "2" after completing the request handling process using `set_cookie()`.

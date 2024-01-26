@@ -1,0 +1,4 @@
+- Initializes a new asynchronous function called `connect`.
+- Accepts an argument of type `WebSocket`, which represents a web socket connection.
+- Asynchronously waits for the connection to be accepted using the `await websocket.accept()` statement.
+- Adds the newly connected web socket to a list of active connections (`self.active_connections`) using the `self.active_connections.append(websocket)` statement.

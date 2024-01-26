@@ -1,0 +1,1 @@
+{"original_code": "async def async_session():\n    async with async_db.session_maker() as session:\n        yield session"}

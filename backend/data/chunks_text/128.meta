@@ -1,0 +1,1 @@
+{"original_code": "def select(  # type: ignore\n    entity_0: _TScalar_0,\n    __ent1: _TCCA[_T1],\n    __ent2: _TCCA[_T2],\n) -> Select[Tuple[_TScalar_0, _T1, _T2]]:\n    ..."}

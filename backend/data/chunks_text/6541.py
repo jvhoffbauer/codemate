@@ -1,0 +1,3 @@
+- Defines a custom entrypoint for handling exceptions using `jsonrpc.Entrypoint`.
+- Overrides the `handle_exception` method to specify how certain types of exceptions should be handled (either re-raise as an unhandled exception or converted into another type).
+- Registers two methods that intentionally raise specific error types for testing purposes.

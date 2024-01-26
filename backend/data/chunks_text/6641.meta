@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method()\n    def probe(\n        jsonrpc_method: str = Depends(get_jsonrpc_method),\n    ) -> str:\n        return jsonrpc_method"}

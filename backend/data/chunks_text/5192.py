@@ -1,0 +1,4 @@
+- This function returns the basic information of a dataset as a GeoJSON feature using RasterIO library.
+- It takes several dependencies including path dependency, assets dependency, and environment dependency to access necessary resources.
+- The function creates a Polygon object from the bounds of the dataset and adds its properties (such as name, size, etc.) as key-value pairs in a dictionary called "properties".
+- Finally, it returns this GeoJSON feature which can be used to display or analyze the data on maps.

@@ -1,0 +1,3 @@
+- Takes a list of `ModelFields` as input and returns a dictionary mapping model names to their corresponding classes (`ModelNameMap`) using recursive function calls to find all related models.
+- Uses `get_flat_models_from_fields()` to retrieve all models involved in the given fields' relationships, adding them to a set of already discovered models to avoid infinite loops.
+- Passes this set of discovered models to `get_model_name_map()`, which creates the final dictionary with model names as keys and their respective classes as values.

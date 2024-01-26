@@ -1,0 +1,3 @@
+- Defines a fixture named `client` using the `pytest.fixture()` decorator with the name argument set to "client".
+- The function `get_client()` is defined as the implementation of this fixture, which returns an instance of Flask's `TestClient`.
+- This `TestClient` object represents a test client that can be used to make requests against our application and assert responses. It will be automatically passed into any tests that use the `client` fixture.

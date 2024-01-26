@@ -1,0 +1,6 @@
+- Defines a method `create` that takes an instance of `AsyncSession` and a data object representing the new model to be created (`CreateSchemaType`) as arguments.
+- Converts the input data into a dictionary called `obj_in_data`.
+- Creates a new instance of the model class with this converted data using the `__init__` constructor.
+- Adds the newly created object to the database session using the `session.add()` function.
+- Commits the changes made in the current transaction using the `asyncio.get_event_loop().run_until_complete()` decorator around the `await session.commit()` call.
+- Returns the newly added object from the database.

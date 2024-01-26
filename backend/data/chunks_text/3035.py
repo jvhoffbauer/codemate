@@ -1,0 +1,2 @@
+- Defines a GET request handler for the root URL (/) using FastAPI's `@app.get()` decorator
+- Returns a JSON response with a message "Hello World" when the endpoint is accessed

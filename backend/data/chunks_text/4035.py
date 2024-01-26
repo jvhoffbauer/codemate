@@ -1,0 +1,3 @@
+- Tests creating an item using JSON request body with `Pydantic` validation errors handling
+- Asserts that status code is 422 and error message contains expected details for model attribute type error
+- Uses `IsDict` helper function to simplify assertion of complex error responses

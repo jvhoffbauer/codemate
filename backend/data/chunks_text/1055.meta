@@ -1,0 +1,1 @@
+{"original_code": "def is_coroutine_callable(call: Callable[..., Any]) -> bool:\n    if inspect.isroutine(call):\n        return inspect.iscoroutinefunction(call)\n    if inspect.isclass(call):\n        return False\n    dunder_call = getattr(call, \"__call__\", None)  # noqa: B004\n    return inspect.iscoroutinefunction(dunder_call)"}

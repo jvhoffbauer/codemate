@@ -1,0 +1,3 @@
+- Defines a function `hidden_header()` that takes an optional argument `hidden_header`.
+- The `Header` decorator is used to make the `hidden_header` parameter optional and exclude it from being included in the schema by default.
+- Returns a dictionary with a key named 'hidden_header' containing the value of the `hidden_header` parameter passed as an argument or None if not provided.

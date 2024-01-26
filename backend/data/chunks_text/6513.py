@@ -1,0 +1,3 @@
+- Defines a function `check_no_errors()` that takes a CapLog object as an argument (`caplog`) and yields nothing using the `yield` keyword. This is called a generator function, which allows us to write functions that behave like iterators.
+- Inside the function, it checks for error messages during two specific stages of test execution - setup and call. It retrieves all the log records with severity level ERROR or higher from the specified stage using the `get_records()` method provided by PyTest's plugin `pytest_logging`. The list of messages is then stored in a variable named'messages'.
+- If any errors are found, the function raises a failure using the `pytest.fail()` function, passing the list of error messages obtained earlier.

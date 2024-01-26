@@ -1,0 +1,1 @@
+{"original_code": "def stop_app_handler(app: FastAPI) -> Callable:\n    def shutdown() -> None:\n        logger.info(\"Running app shutdown handler.\")\n        _shutdown_model(app)\n\n    return shutdown"}

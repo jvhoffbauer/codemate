@@ -1,0 +1,1 @@
+{"original_code": "def test_b():\n    response = client.get(\"/b\")\n    assert response.status_code == 200, response.text\n    assert response.json() == \"b\""}

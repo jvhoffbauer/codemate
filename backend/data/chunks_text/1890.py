@@ -1,0 +1,3 @@
+- Defines a new endpoint `/sum` using FastAPI's decorator syntax
+- Accepts a list of integers as input through the `Body()` parameter, which is automatically parsed from the request body by Pydantic
+- Calculates and returns the sum of the numbers using Python's built-in `sum()` function

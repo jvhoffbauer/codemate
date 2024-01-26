@@ -1,0 +1,1 @@
+{"original_code": "def ColorMapParams(\n    colormap_name: ColorMapName = Query(None, description=\"Colormap name\"),\n) -> Optional[Dict]:\n    \"\"\"Colormap Dependency.\"\"\"\n    if colormap_name:\n        return cmap.get(colormap_name.value)\n\n    return None"}

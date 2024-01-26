@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\", response_class=ORJSONResponse)\nasync def read_items():\n    return ORJSONResponse([{\"item_id\": \"Foo\"}])"}

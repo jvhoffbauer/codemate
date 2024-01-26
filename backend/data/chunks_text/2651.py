@@ -1,0 +1,1 @@
+- Defines a function `get_valid()` that returns a dictionary with two key-value pairs, `"name"` and `"price"`. - The values for these keys are fixed strings ("valid") and floats (1.0), respectively.

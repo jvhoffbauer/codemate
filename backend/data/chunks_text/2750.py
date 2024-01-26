@@ -1,0 +1,1 @@
+- This test case uses Flask's built-in `client` object to simulate a GET request for an endpoint with a specific URL path. - The expected HTTP status code and response body are checked using Python's built-in `assert` statement. - The JSON data returned by the server is compared against a predefined dictionary containing some sample values.

@@ -1,0 +1,1 @@
+{"original_code": "def invalid_request_from_validation_error(exc: ValidationError) -> InvalidRequest:\n    return InvalidRequest(data={\"errors\": exc.errors(include_url=False)})"}

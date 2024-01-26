@@ -1,0 +1,3 @@
+- Tests reading all items from the API endpoint `/items/`.
+- Verifies that the status code is 200 and checks the response body for validity using JSON parsing.
+- Retrieves the first item from the list of items returned by the API and asserts that it contains expected keys ("title" and "description").

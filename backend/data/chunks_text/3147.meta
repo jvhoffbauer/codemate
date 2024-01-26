@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/request-validation/{param}/\")\ndef route_with_request_validation_exception(param: int):\n    pass  # pragma: no cover"}

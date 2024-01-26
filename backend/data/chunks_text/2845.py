@@ -1,0 +1,3 @@
+- Defines a function `f()` that returns a dictionary with two keys, 'c' and 'd'.
+- The value associated with key 'c' is an empty dictionary ({}).
+- The value associated with key 'd' is another nested dictionary with one key 'a', which also has an empty dictionary as its value ({}).

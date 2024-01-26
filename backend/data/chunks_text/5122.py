@@ -1,0 +1,3 @@
+- Adds data from `tile` to current object's internal `tile`.
+- Masking is applied based on overlap between `tile` and current object's existing `tile`.
+- The updated `tile` with new data and masks is stored in the current object for future use.

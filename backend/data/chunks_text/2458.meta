@@ -1,0 +1,1 @@
+{"original_code": "def test_sync_async_raise_server_error():\n    client = TestClient(app, raise_server_exceptions=False)\n    response = client.get(\"/sync_async_raise\")\n    assert response.status_code == 500, response.text\n    assert state[\"/async_raise\"] == \"asyncgen raise finalized\"\n    assert \"/async_raise\" in errors\n    errors.clear()"}

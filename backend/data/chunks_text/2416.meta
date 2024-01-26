@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/context_b\")\nasync def get_context_b(state: dict = Depends(context_b)):\n    return state"}

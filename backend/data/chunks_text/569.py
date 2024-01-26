@@ -1,0 +1,4 @@
+- Imports `test_tutorial` function and necessary modules for testing
+- Sets up SQLAlchemy engine using a hardcoded URL
+- Patches builtin print function to capture output during execution of main function in imported module
+- Asserts that captured outputs match expected values

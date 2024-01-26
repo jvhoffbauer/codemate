@@ -1,0 +1,3 @@
+- Defines an entrypoint (RPC server) using FastAPI's `jsonrpc` extension and specifies its path as a parameter.
+- Sets up dependency injection for authentication tokens and other shared resources through the `Dependends` decorator.
+- Defines two RPC methods with different parameters and dependencies. One method takes input from the request body and returns a list of integers, while the other method requires both an authentication token and a custom dependency to be passed in. Both methods delete unused arguments before returning their respective results.

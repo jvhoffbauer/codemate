@@ -1,0 +1,3 @@
+- This function is called `test_email`, and it tests sending an email to a specified recipient (stored in the `email_to` parameter).
+- The `current_user` argument is used to ensure that only superusers can access this endpoint, which helps prevent unauthorized use of the email feature.
+- The `Depends()` decorator is used with the `get_current_active_superuser()` function to retrieve the currently logged-in user's information for authorization purposes.

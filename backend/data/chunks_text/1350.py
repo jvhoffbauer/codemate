@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional query parameter named `user_agent`, which is parsed by FastAPI's built-in header parser (`Header`) and defaults to `None`. The `|` operator in Python allows us to specify multiple types that this argument can be assigned, here it could either be a string or `None`.
+- Returns a dictionary containing the value of the `user_agent` header as its key with the corresponding value being the returned object itself. This allows clients to easily access the requested headers without having to parse them themselves.

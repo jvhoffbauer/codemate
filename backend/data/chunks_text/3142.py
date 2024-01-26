@@ -1,0 +1,3 @@
+- Defines a custom error handler for HTTP exceptions using Django's `JSONResponse`.
+- Takes in the current request and exception as arguments.
+- Returns a dictionary with an 'exception' key containing the string value of 'http-exception'.

@@ -1,0 +1,4 @@
+- Sends a POST request to `/files/` with JSON body containing keys 'file', 'token' and value 'Bar'.
+- Asserts that status code is 422 (Unprocessable Entity) and error message contains details about missing fields 'file' and 'token'.
+- Uses Pytest fixture `TestClient` from FastAPI for testing HTTP requests.
+- Utilizes Pydantic validation errors for handling input data validation failures in API endpoints.

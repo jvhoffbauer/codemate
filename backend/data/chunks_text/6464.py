@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `form()`.
+- Takes keyword arguments (`**kw`) and passes them to `request.form()`, which returns a dictionary containing the data submitted in a web request's body using the HTTP POST method.
+- Returns the result of calling `request.form()` with the given keywords.

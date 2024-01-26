@@ -1,0 +1,1 @@
+{"original_code": "    def broken_operation_id(route: APIRoute):\n        return \"foo\""}

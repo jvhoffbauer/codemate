@@ -1,0 +1,2 @@
+- Defines a function `marge_model_config` that takes in two arguments - `model`, which is an instance of Pydantic's BaseModel class, and `update`, which is a dictionary containing key-value pairs to be merged into the original configuration.
+- The returned value can either be a new subclass of `model.Config` with updated attributes or simply the updated dictionary itself, depending on whether we want to create a new config object or modify the existing one directly.

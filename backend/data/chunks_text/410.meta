@@ -1,0 +1,1 @@
+{"original_code": "        def reject_none(cls, v):\n            assert v is not None\n            return v"}

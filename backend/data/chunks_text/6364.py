@@ -1,0 +1,4 @@
+- Retrieves a list of process names from a Docker container using `get_process_names()`.
+- Selects the name of the first Gunicorn process in the list.
+- Splits the selected process name into three parts based on the position of "-c".
+- Returns the filename (without extension) of the configuration file used by the selected Gunicorn process.

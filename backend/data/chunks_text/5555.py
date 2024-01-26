@@ -1,0 +1,5 @@
+- Takes an instance of a SQLAlchemy table model (`TableModelT`) and a Pydantic schema type (`Type[SchemaT]`) as input arguments. Optionally takes a boolean flag `refresh` for refreshing the database session.
+- If `refresh` is true, it refreshes the database session using SQLAlchemy's `object_session()`.
+- Determines whether ORM mode should be used based on configuration attributes in the schema class.
+- Uses either the `from_orm` method provided by Pydantic's ORM support or the regular `parse_obj` method depending on the ORM mode setting.
+- Returns the resulting parsed Pydantic object.

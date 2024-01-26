@@ -1,0 +1,1 @@
+{"original_code": "def test_not_authenticate_user():\n    email = random_lower_string()\n    password = random_lower_string()\n    bucket = get_default_bucket()\n    user = crud.user.authenticate(bucket, username=email, password=password)\n    assert user is None"}

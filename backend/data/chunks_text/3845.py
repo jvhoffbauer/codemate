@@ -1,0 +1,1 @@
+- Imports `TestClient` class and `app` object from a specific tutorial in the documentation source directory (docs_src). - Creates an instance of `TestClient` using the imported `app`. - Returns the created `TestClient` instance for use elsewhere in the program.

@@ -1,0 +1,1 @@
+{"original_code": "def create_application() -> FastAPI:\n    application = FastAPI(title=settings.PROJECT_NAME)\n    application.include_router(router)\n    application.add_event_handler(\"startup\", create_redis_pool)\n    application.add_event_handler(\"shutdown\", close_redis_pool)\n    return application"}

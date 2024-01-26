@@ -1,0 +1,3 @@
+- Defines a function named `no_response_model_annotation_union_return_model1`.
+- The function returns an object of type `Union[User, Item]`, which is either a `User` or an `Item`.
+- Inside the function body, we create and return a new instance of `DBUser`, which is a subclass of `User`. This means that if the returned value is actually a `User`, it will be of type `DBUser` in this specific case.

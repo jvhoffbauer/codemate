@@ -1,0 +1,3 @@
+- Generates an OpenAPI schema for a FastAPI application using `fastapi.testclient`.
+- Makes a GET request to the `/openapi.json` endpoint and checks that it returns a successful status code (200) with the expected JSON content.
+- The generated schema includes information about the API's version, title, paths, components, security schemes, responses, summaries, operation IDs, and HTTP authentication methods.

@@ -1,0 +1,3 @@
+- Tests if GET request for openAPI schema returns a successful status code and valid JSON response with expected structure
+- Verifies that the returned JSON contains correct metadata about ChimichangApp, including title, summary, description, terms of service, contact information, license details, and version number
+- Confirms that the paths section includes an entry for reading items (GET /items/) with a summary, operation ID, and empty content schema

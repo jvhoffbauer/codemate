@@ -1,0 +1,1 @@
+{"original_code": "def get_default_bucket():\n    return get_bucket(\n        COUCHBASE_USER,\n        COUCHBASE_PASSWORD,\n        COUCHBASE_BUCKET_NAME,\n        host=COUCHBASE_HOST,\n        port=COUCHBASE_PORT,\n    )"}

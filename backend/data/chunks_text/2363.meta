@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/default1\")\nasync def path1_default(level1: str):\n    return level1"}

@@ -1,0 +1,4 @@
+- Defines an asynchronous context manager using `@contextlib.asynccontextmanager`.
+- Saves request and response information in a dictionary called `_calls`, with IDs as keys.
+- Adds entry information to the corresponding list when entering the context.
+- Adds exit information to the same list when leaving the context, including any exceptions that occurred during execution.

@@ -1,0 +1,1 @@
+{"original_code": "def _annotation_is_sequence(annotation: Union[Type[Any], None]) -> bool:\n    if lenient_issubclass(annotation, (str, bytes)):\n        return False\n    return lenient_issubclass(annotation, sequence_types)"}

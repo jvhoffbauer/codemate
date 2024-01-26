@@ -1,0 +1,3 @@
+- This function handles both successful responses (dictionary type) and exceptions thrown by FastAPI's built-in `HTTPException`.
+- It converts some types of exceptions into a dictionary representation that can be returned as part of the response body.
+- The function also removes an optional 'id' key from the response body to prevent potential conflicts with client-side requests.

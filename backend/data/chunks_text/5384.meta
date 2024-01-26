@@ -1,0 +1,1 @@
+{"original_code": "    async def home1():\n        \"\"\"Works and should return FALSE.\"\"\"\n        res = get_gdal_config(\"GDAL_DISABLE_READDIR_ON_OPEN\")\n        return {\"env\": res}"}

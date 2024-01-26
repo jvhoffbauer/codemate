@@ -1,0 +1,2 @@
+- Defines a function `main` with an optional argument `cm`, which is dependent on the `ColorMapParams` class from the `dependencies` module.
+- If `cm` is provided, it returns the value of `cm`. Otherwise, this function can be called without arguments to use the default color map.

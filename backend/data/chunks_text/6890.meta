@@ -1,0 +1,1 @@
+{"original_code": "def test_prediction_nopayload(test_client) -> None:\n    response = test_client.post(\n        \"/api/model/predict\", json={}, headers={\"token\": str(config.API_KEY)}\n    )\n    assert response.status_code == 422"}

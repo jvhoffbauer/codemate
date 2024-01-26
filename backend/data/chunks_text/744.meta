@@ -1,0 +1,1 @@
+{"original_code": "async def update_user(request: UserUpdateIn, id: int):\n    user: ORMUser = await ORMUser.get(id)\n    updated_fields: User = User.from_orm(request)\n    await user.update(**updated_fields.dict(skip_defaults=True)).apply()\n    return User.from_orm(user)"}

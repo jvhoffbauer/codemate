@@ -1,0 +1,1 @@
+{"original_code": "    async def is_disconnected(self):\n        return await self.request.is_disconnected()"}

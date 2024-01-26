@@ -1,0 +1,2 @@
+- Defines an asynchronous function `create_upload_file()` that takes a parameter `file` of type `UploadFile`.
+- The function returns a dictionary with a single key-value pair, where the value is the filename of the uploaded file and the key is "filename".

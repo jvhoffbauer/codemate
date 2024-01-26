@@ -1,0 +1,3 @@
+- Sets up routes for OpenAPI documentation using FastAPI's `add_route()` function.
+- Checks whether an external URL is provided for OpenAPI, docs, or Redoc endpoints. If so, it adds corresponding routes with appropriate parameters to serve these documents.
+- Includes a route for redirecting OAuth2 authentication requests from Swagger UI. This feature requires additional configuration outside of this snippet.

@@ -1,0 +1,1 @@
+- Defines a function `get_path_param_le_ge` that takes an optional argument `item_id`, which is bound to a path parameter with lower (`le`) and greater than or equal to (`ge`) constraints of 3 and 1 respectively using Pydantic's `Path` class. - Returns the value of `item_id`.

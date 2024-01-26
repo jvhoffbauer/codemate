@@ -1,0 +1,1 @@
+- Retrieves a list of up to 3 Hero objects from the database using SQLAlchemy's `Session`, `select()`, and `limit()`. - The resulting list is stored in the variable `heroes` and printed to the console for debugging purposes.

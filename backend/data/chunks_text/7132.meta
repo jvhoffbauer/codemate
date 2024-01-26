@@ -1,0 +1,1 @@
+{"original_code": "    @classmethod\n    def single_by_id(cls, uid: int):\n        db = (\n            User.undelete()\n            .select(\n                User.id, User.name, User.email, User.phone, User.username, User.avatar\n            )\n            .where(User.id == uid)\n        )\n        return db.first()"}

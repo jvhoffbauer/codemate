@@ -1,0 +1,1 @@
+- Tests if passing an invalid X-Key header results in a HTTP status code of 400 Bad Request and an error message containing 'X-Key header invalid' in the JSON body. - Uses the `TestClient` class from FastAPI to simulate requests with custom headers. - Verifies that the server returns the expected error response for an invalid second authentication header (X-Key).

@@ -1,0 +1,1 @@
+{"original_code": "    def get_field_by_alias(alias: str) -> Optional[ModelField]:\n        for f in fields.values():\n            if f.alias == alias:\n                return f\n        return None"}

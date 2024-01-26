@@ -1,0 +1,1 @@
+- Defines a function named `no_response_model_annotation_return_invalid_dict` that returns an invalid dictionary representing a user object without using Pydantic's ResponseModel decorator for type hinting and validation. - The returned dictionary contains a single key-value pair with the name 'name' set to the value 'John'.

@@ -1,0 +1,3 @@
+- Defines a method `probe` using the `@ep.method()` decorator from the `easyprocess` library.
+- Accepts an optional parameter `whole_params`, which is of type `WholeParams`. This parameter contains multiple parameters that are passed to this function as a single object (hence, "whole"). The `...` syntax indicates that we're not specifying all the arguments here and will provide them later when calling the function.
+- Returns a list of integers obtained by adding each element of the `data` attribute of `whole_params` with its corresponding `amount` attribute.

@@ -1,0 +1,1 @@
+- Imports `TestClient` and `app` from a specific module in the `docs_src` package to create a new Flask test client instance called `client`. - Returns the newly created `client` for use elsewhere in the application or tests.

@@ -1,0 +1,1 @@
+{"original_code": "def get_modelfield_by_alias(\n    table_model: Type[TableModelT], alias: str\n) -> Optional[ModelField]:\n    \"\"\"Get the field of the model according to the alias\"\"\"\n    fields = TableModelParser.get_table_model_fields(table_model).values()\n    for field in fields:\n        if field.alias == alias:\n            return field\n    return None"}

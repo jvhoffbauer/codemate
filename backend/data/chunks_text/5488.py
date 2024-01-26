@@ -1,0 +1,2 @@
+- Tests the `/validate` endpoint for COG files by passing a valid URL to the `data_dir`.
+- Verifies that the status code is 200 and checks if the JSON response contains the key "COG".

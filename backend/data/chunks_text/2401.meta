@@ -1,0 +1,1 @@
+{"original_code": "def generator_state_try(state: Dict[str, str] = Depends(get_state)):\n    state[\"/sync_raise\"] = \"generator raise started\"\n    try:\n        yield state[\"/sync_raise\"]\n    except SyncDependencyError:\n        errors.append(\"/sync_raise\")\n    finally:\n        state[\"/sync_raise\"] = \"generator raise finalized\""}

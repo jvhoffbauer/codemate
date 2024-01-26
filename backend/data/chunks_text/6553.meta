@@ -1,0 +1,1 @@
+{"original_code": "    @contextlib.asynccontextmanager\n    async def middleware(_ctx: JsonRpcContext):\n        raise HTTPException(401)\n        # noinspection PyUnreachableCode\n        yield"}

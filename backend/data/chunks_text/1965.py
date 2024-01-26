@@ -1,0 +1,3 @@
+- This function is a callback for the `shutdown` event in FastAPI's application object (`@app`)
+- It asynchronously disconnects from the specified SQLAlchemy database connection using the `disconnect()` method of the `database` variable, which presumably holds an instance of a SQLAlchemy engine or session factory
+- The purpose of this function is to ensure that any open connections are properly closed when the server shuts down gracefully, preventing resource leaks and potential data corruption issues

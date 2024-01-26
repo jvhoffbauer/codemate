@@ -1,0 +1,5 @@
+- Retrieves OpenAPI schema from FastAPI app using `get_client()` function and sends a GET request to `/openapi.json`.
+- Asserts that status code is 200 and checks the content of the JSON response against expected values.
+- Defines an example of how to use `IsDict` and `|` operator in Pydantic for complex type validation.
+- Demonstrates usage of `AnyOf`, `Title`, and `Required` attributes in Pydantic's `Schema` class.
+- Shows how to define custom error schemas using `Components` section in OpenAPI specification.

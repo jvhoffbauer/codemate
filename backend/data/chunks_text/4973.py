@@ -1,0 +1,1 @@
+- Initializes a global scheduler for periodic tasks using the `start_scheduler()` function. - This function is used to schedule recurring tasks at specific intervals without having to create multiple schedulers throughout the application.

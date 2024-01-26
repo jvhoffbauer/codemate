@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/response_model_none-annotation-return_same_model\", response_model=None)\ndef response_model_none_annotation_return_same_model() -> User:\n    return User(name=\"John\", surname=\"Doe\")"}

@@ -1,0 +1,1 @@
+- Retrieves the text content of an object's `content` attribute, which is assumed to be a subclass of `ContentStream`. If `content` is not defined or empty, returns an empty string instead.

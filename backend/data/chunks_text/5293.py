@@ -1,0 +1,5 @@
+- Defines a function `test_lowercase_middleware` to test the Middleware for converting query string parameters to lowercase.
+- Creates an instance of FastAPI called `app`.
+- Adds the `LowerCaseQueryStringMiddleware` as middleware to `app`.
+- Uses the `TestClient` class from FastAPI's testing module to make requests against our application.
+- Makes two GET requests with different cases in the query parameter, verifying that both values are correctly converted to lowercase by the middleware before being passed downstream.

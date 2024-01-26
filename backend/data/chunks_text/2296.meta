@@ -1,0 +1,1 @@
+{"original_code": "def query_convertor(param: str = Query()):\n    return {\"query\": param}"}

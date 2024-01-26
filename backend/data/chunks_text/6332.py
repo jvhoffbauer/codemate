@@ -1,0 +1,1 @@
+- Defines a method `TEST_SQLALCHEMY_DATABASE_URI()` that returns a string representing the URI for connecting to a test database using AsyncPG and SQLAlchemy. - Uses the `PostgresDsn` class from the `sqlalchemy-dsl` library to build the connection string with the necessary parameters (username, password, etc.). - Returns the resulting string as a plain Python string.

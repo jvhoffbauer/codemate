@@ -1,0 +1,2 @@
+- Defines a function called `error_data_handle` that takes in a `Request` object as an argument.
+- Raises an instance of `HTTPException` with status code `HTTPStatus.HTTP_400_BAD_REQUEST` and custom error message "error data handle".

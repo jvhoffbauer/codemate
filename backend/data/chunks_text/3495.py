@@ -1,0 +1,2 @@
+- Defines a function `get_valid_none()` that takes an optional boolean argument `send_none`.
+- If `send_none` is true, returns `None`. Otherwise, returns a dictionary with keys 'name' and 'price'. The values of these keys are arbitrary in this example.

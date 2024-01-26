@@ -1,0 +1,1 @@
+- Tests the AutoFormat feature of the colormap in GeoPandas Rasterio plugin by passing an array of color maps and their corresponding ranges through URL parameters. - Ensures that both alpha and mask values are taken into consideration while generating the preview image using FastAPI and GDAL libraries.

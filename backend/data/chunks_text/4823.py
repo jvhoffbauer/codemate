@@ -1,0 +1,3 @@
+- Retrieves multiple items from a specified Couchbase bucket with optional pagination using `utils.get_docs()`.
+- The method takes three arguments - `Bucket`, `skip` (optional), and `limit` (optional).
+- Returns an iterator of `ItemInDB` objects representing the retrieved documents.

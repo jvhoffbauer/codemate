@@ -1,0 +1,2 @@
+- Defines a function `_get_client_key()` that takes an optional query parameter `client_id`.
+- Returns a string concatenated with the value of `client_id` and "_key".

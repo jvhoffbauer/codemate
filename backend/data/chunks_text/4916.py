@@ -1,0 +1,2 @@
+- Creates a new user with randomly generated email and password using `crud.user.authenticate` function from default bucket
+- Asserts that returned user object is `None`, indicating unsuccessful authentication due to incorrect credentials

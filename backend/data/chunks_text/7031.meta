@@ -1,0 +1,1 @@
+{"original_code": "def read_user_by_id(user: models.User = Depends(get_user)):\n    \"\"\"Get a specific user by id.\"\"\"\n    return user"}

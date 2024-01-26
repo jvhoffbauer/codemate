@@ -1,0 +1,1 @@
+- Tests if Flask's request validation exception is overridden by defining a custom error handler function in `app.py`. - Sends an invalid request to the endpoint "/request-validation/invalid" and checks that it returns a JSON response with the expected message. - Asserts that the status code of the response is 200, indicating that the error handling was successful.

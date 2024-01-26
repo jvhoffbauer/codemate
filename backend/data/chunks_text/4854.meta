@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/me\", response_model=User)\ndef read_user_me(current_user: UserInDB = Depends(get_current_active_user)):\n    \"\"\"\n    Get current user.\n    \"\"\"\n    return current_user"}

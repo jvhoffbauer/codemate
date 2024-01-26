@@ -1,0 +1,5 @@
+- Defines a method `create` in the class that takes two arguments - an SQLAlchemy session (`Session`) and a user creation object (`UserCreate`) as input parameters.
+- Creates a new instance of the `User` model with the provided data from the `UserCreate` object. The password hash is generated using the `get_password_hash` function.
+- Adds the newly created user to the database session and commits the changes.
+- Refreshes the state of the user object to ensure it's up-to-date with any changes made during the commit process.
+- Returns the updated user object.

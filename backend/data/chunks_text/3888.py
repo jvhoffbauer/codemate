@@ -1,0 +1,1 @@
+- Tests if a hidden query parameter can be passed and retrieved in the API endpoint using FastAPI's Query class decorator. - Asserts that the status code is 200 and checks the returned JSON data contains the expected value for the hidden query parameter.

@@ -1,0 +1,1 @@
+{"original_code": "async def extract_value_from_http_connection(conn: HTTPConnection):\n    return conn.app.state.value"}

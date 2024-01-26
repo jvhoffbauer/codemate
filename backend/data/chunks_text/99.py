@@ -1,0 +1,3 @@
+- Defines a function `nulls_last` that takes either a SQLAlchemy column expression or a value as an argument and returns a new SQLAlchemy expression called `UnaryExpression`.
+- The returned expression is created using the built-in `nulls_last()` method provided by SQLAlchemy, which sorts NULL values to the end of the result set when sorting columns with mixed NULL and non-NULL values.
+- Note that we're ignoring the mypy warning about the argument type (`arg-type`) because the union type in this case covers both possible types for the input parameter.

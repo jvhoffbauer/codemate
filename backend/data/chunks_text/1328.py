@@ -1,0 +1,2 @@
+- Defines a GET request for an item with ID `item_id`, using FastAPI's decorator syntax to map it to the URL path `/items/{item_id}`
+- Returns a JSON response containing just the requested item ID, as specified by the `return` statement inside the function body

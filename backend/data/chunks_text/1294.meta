@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/uploadfiles/\")\nasync def create_upload_files(files: list[UploadFile]):\n    return {\"filenames\": [file.filename for file in files]}"}

@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/test` with an HTTP response status of 200 (OK).
+- Logs a debug message to the application's logging system using the `logger`.
+- Returns a dictionary containing the value of the `X-Request-ID` header from the incoming request, if present.

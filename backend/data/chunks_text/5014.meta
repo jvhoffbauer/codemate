@@ -1,0 +1,1 @@
+{"original_code": "    def _ensure_var(self, item: str) -> None:\n        if item not in self._vars:\n            self._vars[item] = ContextVar(f\"globals:{item}\")\n            self._vars[item].set(None)"}

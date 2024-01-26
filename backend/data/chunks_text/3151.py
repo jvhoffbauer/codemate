@@ -1,0 +1,3 @@
+- Tests if a custom HTTP exception is handled correctly by Flask's error handling mechanism using `client.get()`.
+- Asserts that the status code of the response is 200, indicating successful request processing.
+- Verifies that the JSON response contains an expected key and value for the custom exception.

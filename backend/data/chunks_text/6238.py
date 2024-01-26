@@ -1,0 +1,3 @@
+- This method is asynchronous (async) and takes an ID parameter (id).
+- It raises a `NotImplementedError`, indicating that this implementation should be overridden in subclasses.
+- The returned value is a `Location` object, which represents a specific geographic point or area.

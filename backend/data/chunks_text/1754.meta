@@ -1,0 +1,1 @@
+{"original_code": "def process_items(items: list[str]):\n    for item in items:\n        print(item)"}

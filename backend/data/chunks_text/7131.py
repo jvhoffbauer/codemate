@@ -1,0 +1,2 @@
+- This method is called `xxx_logic`. It belongs to an object of this class (implicit self parameter).
+- The body of the method is currently empty, but it will contain some logic related to operation XYZ in the future.

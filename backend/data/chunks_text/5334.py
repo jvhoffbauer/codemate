@@ -1,0 +1,3 @@
+- Defines a GET request for the `/third` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts query parameters through the `Depends()` function, which is passed an instance of the `AssetsBidxParams` class defined in the `dependencies` module
+- Returns the parsed query parameters as a dictionary (`params`)

@@ -1,0 +1,5 @@
+- Checks whether a given `FieldInfo` object represents an optional (nullabel) field using two methods:
+   - If the `nullable` attribute of the field is defined, returns its value.
+   - Otherwise, checks the annotation of the field to see if it's a union type with at least one nullable element.
+- Returns false if the field has been marked as required.
+- If the field doesn't have a default value and either its annotation is undefined or its annotation is `NoneType`, returns true (indicating that it may be optional). Otherwise, returns false.

@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self):\n        # \u5bf9\u8c61 \u5728 @app.on_event(\"startup\") \u4e2d\u521d\u59cb\u5316\n        self._schedule = None"}

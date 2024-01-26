@@ -1,0 +1,1 @@
+{"original_code": "    def no_params() -> str:\n        return \"123\""}

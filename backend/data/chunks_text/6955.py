@@ -1,0 +1,1 @@
+- Deletes a specific user with the given ID from the database using FastAPI router decorator and SQLAlchemy session dependency injection. - Returns no content (HTTP 204 response) after successful deletion. - Raises an error (HTTP 404 or 403) if the requested user doesn't exist in the database or if the authenticated superuser tries to delete themselves instead of another user.

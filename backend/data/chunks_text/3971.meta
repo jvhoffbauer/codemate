@@ -1,0 +1,1 @@
+{"original_code": "def test_get_timed():\n    response = client.get(\"/timed\")\n    assert response.json() == {\"message\": \"It's the time of my life\"}\n    assert \"X-Response-Time\" in response.headers\n    assert float(response.headers[\"X-Response-Time\"]) >= 0"}

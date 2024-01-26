@@ -1,0 +1,3 @@
+- Defines a GET endpoint for `/mixed_dict`.
+- Specifies that the response should be of type `Model3`, with specific fields included and excluded in the output.
+- Returns a dictionary containing data to match the specified response schema.

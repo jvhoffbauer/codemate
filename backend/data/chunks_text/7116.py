@@ -1,0 +1,2 @@
+- Defines a method `__setitem__()` for dictionary subclassing
+- Assigns the given key-value pair to the internal scheduler dictionary (`_schedule`) when setting an item using this class's square bracket notation

@@ -1,0 +1,3 @@
+- Defines a command named "start" for the `GroupWorker` class in Celery Beat scheduler.
+- The purpose of this command is to customize multiple workers based on specific business requirements.
+- This function body (...) contains implementation details that are not provided in the given context.

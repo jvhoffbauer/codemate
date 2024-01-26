@@ -1,0 +1,1 @@
+- Defines a GET request for the path `"/path/param-gt"` with a query parameter named `item_id`. - The value of the `item_id` parameter is required to be greater than or equal to 3, as specified by the `Path` decorator's `gt` argument. - Returns the value of the parsed `item_id` parameter.

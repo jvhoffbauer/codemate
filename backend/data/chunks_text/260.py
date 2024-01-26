@@ -1,0 +1,5 @@
+- Defines a function `delete_hero` that takes an integer argument `hero_id`.
+- Uses SQLAlchemy's `Session` context manager to interact with the database.
+- Retrieves the hero with the given ID using `session.get`, and raises a `HTTPException` with status code 404 if it doesn't exist.
+- Deletes the retrieved hero from the database using `session.delete`, and commits the changes using `session.commit`.
+- Returns a simple JSON response indicating success.

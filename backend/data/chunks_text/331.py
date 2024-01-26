@@ -1,0 +1,1 @@
+- Retrieves a list of heroes and their corresponding teams using SQLAlchemy's `Session`, `select()`, and `join()` functions. - Loops through each result tuple returned by executing the query and prints out the name of the hero and its associated team.

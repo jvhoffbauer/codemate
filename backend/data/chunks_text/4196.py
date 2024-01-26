@@ -1,0 +1,3 @@
+- Sends a GET request to the "/items/" endpoint using Flask's built-in `client` object
+- Asserts that the status code of the response is 200 (OK) and saves it in a variable for later use
+- Compares the text content of the response with a predefined string called `html_contents`, which should be returned if the API call was successful

@@ -1,0 +1,1 @@
+- Tests a GET request to /users with query parameter 'q' set to 'foo'. - Asserts that the status code is 200 and displays the response text if it fails. - Verifies that the JSON response contains expected message and parameters (including overridden ones from query string).

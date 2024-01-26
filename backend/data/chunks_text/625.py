@@ -1,0 +1,6 @@
+- This test case is marked as needing Python 3.9 (`@needs_py39`) and clears SQLModel's session cache before running (`clear_sqlmodel`).
+- It imports a specific tutorial file (`app`, `database`) and sets up its SQLAlchemy engine to use an in-memory SQLite database.
+- The `get_testing_print_function` function is called to capture print statements during execution of the application.
+- A patched version of builtin `print` function is created using `patch`.
+- The main entry point of the Flask application (`app.main()`) is executed while capturing all printed messages through the customized `print` function.
+- Finally, the captured list of print statements is compared against some predefined set of expected output (`expected_calls`) to verify correctness.

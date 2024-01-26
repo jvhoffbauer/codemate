@@ -1,0 +1,2 @@
+- Defines an asynchronous function `create_file` that takes three arguments: a binary data object (`bytes`) named `file`, an uploaded file object (`UploadFile`) named `fileb`, and a string representing a form value (`str`) named `token`.
+- Returns a dictionary containing three key-value pairs: the size of the binary data in bytes (`len(file)`), the value of the `token` parameter passed via the HTTP request's body, and the content type of the uploaded file (`fileb.content_type`).

@@ -1,0 +1,4 @@
+- Defines a GET request for the `/portal` endpoint in FastAPI
+- Accepts an optional query parameter `teleport`, defaulting to False
+- If `teleport` is True, redirects to a YouTube video (a meme) using the built-in `RedirectResponse()` function from FastAPI
+- Otherwise, returns a JSON response with a message using the built-in `JSONResponse()` function from FastAPI

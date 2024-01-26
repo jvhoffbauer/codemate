@@ -1,0 +1,3 @@
+- Defines a dataclass `ImageRenderingParams` that inherits from `DefaultDependency`.
+- Contains a single boolean flag called `add_mask`, which is set to true by default and can be overridden using the `Query` decorator with an optional argument of `alias` and `description`.
+- The `alias` parameter allows for renaming the flag in other parts of the application without changing its name here, while the `description` provides additional context about what the flag does.

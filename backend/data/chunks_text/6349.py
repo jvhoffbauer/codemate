@@ -1,0 +1,3 @@
+- Tests reading current user's information using Flask-RESTful and asyncio with FastAPI integration
+- Sends a GET request to the `/api/v1/users/{user_id}` endpoint with an authorization header containing the access token of the default user
+- Verifies that the server returns a successful HTTP status code (200) and a JSON response containing the expected user data

@@ -1,0 +1,1 @@
+- Tests that raising a `FastAPIError` is triggered when an invalid response model (`NonPydanticModel`) is provided in the `responses` dictionary of a route decorator, resulting in HTTP status code 500. - Uses PyTest to assert this behavior and cover the corresponding code block without executing it.

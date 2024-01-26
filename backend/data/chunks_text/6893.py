@@ -1,0 +1,1 @@
+- Defines a function `get_app` that returns an instance of FastAPI with specific configuration settings and includes a router for API endpoints. - Registers event handlers to execute custom logic during startup and shutdown phases using the `FastAPI.add_event_handler` method. - Returns the configured FastAPI application object.

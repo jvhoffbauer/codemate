@@ -1,0 +1,1 @@
+{"original_code": "def test_value_extracting_by_ws():\n    with client.websocket_connect(\"/ws\") as websocket:\n        assert websocket.receive_json() == 42"}

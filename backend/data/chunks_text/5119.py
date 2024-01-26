@@ -1,0 +1,5 @@
+- Registers an endpoint for creating a STAC item using the given Tile Factory.
+- Imports necessary dependencies such as rio-stac and pystac.
+- Defines default values for optional parameters like datetime, extensions, etc.
+- Uses the create_stac_item function provided by rio-stac to generate the STAC item based on user inputs.
+- Returns the generated STAC item as JSON response.

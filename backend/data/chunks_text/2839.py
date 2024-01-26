@@ -1,0 +1,1 @@
+- Tests if `multipart` package is not installed by deleting its version attribute using a mock object (Monkey Patch). - Raises a `RuntimeError` with an error message "Multipart middleware requires'multipart' package to be installed." when running the FastAPI application without installing the `multipart` package.

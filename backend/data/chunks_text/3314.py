@@ -1,0 +1,1 @@
+- Defines an asynchronous function `unrelated` that takes a single argument `foo`, which is annotated with both `str` and `object()`. This means that any value can be passed to this parameter. - The function returns a dictionary containing a key "foo" whose value is the same as the `foo` argument passed to the function.

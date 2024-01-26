@@ -1,0 +1,3 @@
+- Registers a new router with parent class' `super().register_router()`.
+- Adds a POST route for submitting form data using schema `self.schema_submit_out`, requiring permission from `self.page_permission_depend`.
+- If an initialization schema is defined (`self.form_init`), adds a GET route to retrieve it using schema `self.schema_init_out`, also requiring permission from `self.page_permission_depend`.

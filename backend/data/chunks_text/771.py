@@ -1,0 +1,3 @@
+- This function is a model validator that runs after object creation (mode="after").
+- It checks whether the environment is deployed and SENTRY_DSN is empty, raising an error if both conditions are true.
+- The function returns the configuration object unchanged otherwise.

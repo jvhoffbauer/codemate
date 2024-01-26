@@ -1,0 +1,1 @@
+- This function retrieves a user from the database using their email address as the primary key. - It uses SQLAlchemy's `select()`, `fetch_one()`, and `Where()` methods to construct an SQL query that returns a single row matching the provided email. - The returned value is either a dictionary containing the user data or `None` if no match was found.

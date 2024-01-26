@@ -1,0 +1,3 @@
+- This function uses `aiohttp` to make a GET request to the `/items/` endpoint of an application.
+- It asserts that the status code is 200 and saves the text for debugging purposes.
+- The JSON response is compared against a list containing two dictionaries representing expected item data.

@@ -1,0 +1,3 @@
+- Defines a function `page_parser` that takes in two arguments `request` and `page`.
+- The function returns a response using the `TemplateResponse` class from the `jinja2` template engine provided by Channels' `channels.templatetags` module.
+- The returned response includes the parsed HTML template with data passed as a dictionary called `page`, which also contains the original HTTP request object for use within the template.

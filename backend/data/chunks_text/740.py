@@ -1,0 +1,4 @@
+- Creates a new user in the database using FastAPI's built-in `Pydantic` model validation and ORM (Object Relational Mapping).
+- Connects to Redis cache using `Arq`, an asynchronous library for managing Redis connections.
+- Enqueues a background job using Redis's `RQ` queueing system to send a welcome message to the newly created user via email or SMS.
+- Returns the newly created user object with its data converted from the ORM to the API response format.

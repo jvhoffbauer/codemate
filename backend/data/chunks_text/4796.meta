@@ -1,0 +1,1 @@
+{"original_code": "def is_superuser(user: UserInDB):\n    return RoleEnum.superuser.value in utils.ensure_enums_to_strs(\n        user.admin_roles or []\n    )"}

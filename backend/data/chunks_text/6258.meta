@@ -1,0 +1,1 @@
+{"original_code": "def test_coordinates_class(latitude, longitude):\n    coord_obj = coordinates.Coordinates(latitude=latitude, longitude=longitude)\n\n    # validate serialize\n    check_obj = {\"latitude\": latitude, \"longitude\": longitude}\n\n    assert coord_obj.serialize() == check_obj"}

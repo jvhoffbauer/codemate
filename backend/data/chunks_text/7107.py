@@ -1,0 +1,1 @@
+- Defines a function `params_match_func` that takes multiple arguments (`*args`) and returns the result of calling another function `params_match` with those arguments as parameters. - Assigns the first two arguments to variables named `name1` and `name2`, respectively.

@@ -1,0 +1,3 @@
+- This method is called `read_file_v1` and belongs to a class (implicitly).
+- It takes a single argument `state`, which is used in formatting the filename of an input JSON file.
+- The method returns the contents of that JSON file after reading it using Python's built-in `open()` function.

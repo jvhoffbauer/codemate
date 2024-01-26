@@ -1,0 +1,1 @@
+{"original_code": "    def handle_exc(request: Request, exc):\n        raise exc"}

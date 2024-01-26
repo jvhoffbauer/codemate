@@ -1,0 +1,2 @@
+- Defines a property called `router_prefix` for this class
+- The value of the property is generated using string formatting, where `__class__.__name__` returns the name of the current class (e.g., "Router") and is prefixed with a forward slash ("/"). This prefix will be used to identify the specific resource being accessed in a RESTful API design.

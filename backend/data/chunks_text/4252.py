@@ -1,0 +1,5 @@
+- Imports `app` and `client` from a tutorial on dependency testing for Python 3.10 (Python version 3.10 is required).
+- Sets `app.dependency_overrides` to `None`, which means that dependencies will be resolved normally instead of being overridden by mocks or stubs during tests.
+- Makes an HTTP GET request using `client` with query parameters `"q"="foo"`, `"skip"="100"`, and `"limit"="200"`.
+- Asserts that the response status code is 200 OK and saves its text in case of failure.
+- Extracts the JSON body of the response and asserts that it contains expected keys ("message" and "params").

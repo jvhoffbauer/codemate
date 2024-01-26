@@ -1,0 +1,2 @@
+- Tests that making a GET request to `/items/` without any query parameters returns all items in JSON format with expected data.
+- Uses Pytest's `@needs_py39` fixture to ensure tests are run on Python 3.9 or higher.

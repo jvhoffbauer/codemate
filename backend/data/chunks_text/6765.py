@@ -1,0 +1,1 @@
+- Defines a Celery task called `test_celery` with name `aks_late`. This means that acknowledgements for this task will be delayed until its result is ready, which can help prevent race conditions in distributed systems. - The function takes a single argument `word`, and returns a string containing the word concatenated with a message.

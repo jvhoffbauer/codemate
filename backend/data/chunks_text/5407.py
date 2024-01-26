@@ -1,0 +1,3 @@
+- Tests the `Algorithms` endpoint using FastAPI's built-in testing framework (pytest).
+- Creates a new instance of the `Algorithm` class and adds its router to the main application.
+- Makes GET requests to both the root and specific algorithm endpoints, verifying their responses contain expected data.

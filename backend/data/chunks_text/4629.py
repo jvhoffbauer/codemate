@@ -1,0 +1,2 @@
+- Tests HTTP Basic authentication by making a GET request to `/users/me` with username and password as basic authorization headers (`auth=("john", "secret")`) using Pytest's built-in `TestClient`.
+- Asserts that the server returns an expected status code of 200 OK and checks the response body for correct user data.

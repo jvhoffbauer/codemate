@@ -1,0 +1,1 @@
+{"original_code": "    async def asynchronous_gen(self, value: str) -> AsyncGenerator[str, None]:\n        yield value"}

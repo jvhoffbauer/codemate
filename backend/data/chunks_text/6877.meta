@@ -1,0 +1,1 @@
+{"original_code": "def create_random_user(db: Session) -> User:\n    email = random_email()\n    password = random_lower_string()\n    user_in = UserCreate(username=email, email=email, password=password)\n    user = crud.user.create(db=db, obj_in=user_in)\n    return user"}

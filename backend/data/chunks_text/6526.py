@@ -1,0 +1,3 @@
+- Defines a function `raw_request()` that takes an instance of Flask's client object (`app_client`) and a base URL for making requests (`ep_path`) as arguments.
+- Returns another function called `requester()`, which is used to make specific requests using the provided `app_client`.
+- The `requester()` function accepts three optional parameters - `body` (the request body), `path_postfix` (an additional path segment to append to the base URL) and `auth` (authentication credentials). It makes a POST request with these options and returns the response object.

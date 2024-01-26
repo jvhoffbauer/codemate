@@ -1,0 +1,1 @@
+{"original_code": "def get_query_type_optional(query: Optional[int] = None):\n    if query is None:\n        return \"foo bar\"\n    return f\"foo bar {query}\""}

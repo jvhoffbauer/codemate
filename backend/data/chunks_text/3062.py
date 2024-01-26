@@ -1,0 +1,3 @@
+- Defines a function called `get_b_a_c_path_override()`.
+- The function returns a dictionary with one key-value pair, where the value is a string "Hello B A C".
+- This function can be used to override the default behavior of getting the path for BAC modules in some specific contexts.

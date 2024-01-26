@@ -1,0 +1,1 @@
+- Tests whether `Header()` with a None value for header returns the correct string representation using Python's built-in `repr()` function. - Verifies that the returned string is in the format of 'Header(None)' where 'None' represents the absence of any header text.

@@ -1,0 +1,2 @@
+- Retrieves and returns a tuple containing the values of two middleware variables (ep_middleware_var and method_middleware_var) associated with the current request context.
+- Used to provide access to these variables for debugging or testing purposes without modifying the original request object.

@@ -1,0 +1,1 @@
+{"original_code": "async def session(test_db_setup_sessionmaker) -> AsyncGenerator[AsyncSession, None]:\n    async with async_session() as session:\n        yield session\n\n        # delete all data from all tables after test\n        for name, table in Base.metadata.tables.items():\n            await session.execute(delete(table))\n        await session.commit()"}

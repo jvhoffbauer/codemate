@@ -1,0 +1,1 @@
+- Defines an asynchronous function `get_user` that takes a string argument `user_id` and a `Request` object as input. - Retrieves the current route from the `request.scope["route"]` dictionary and stores it in a variable called `route`. - Returns a dictionary with two keys: 'user_id' (set to the value of `user_id`) and 'path' (set to the path component of the URL).

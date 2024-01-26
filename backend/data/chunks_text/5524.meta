@@ -1,0 +1,1 @@
+{"original_code": "def parser_str_set_list(item_id: Union[int, str]) -> List[str]:\n    if isinstance(item_id, int):\n        return [str(item_id)]\n    elif not isinstance(item_id, str) or not item_id:\n        return []\n    return list(set(item_id.split(\",\")))"}

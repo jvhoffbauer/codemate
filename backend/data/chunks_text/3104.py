@@ -1,0 +1,4 @@
+- Defines a function `query_examples()` that takes an optional argument `data`.
+- The `Query` decorator is used to define a parameter with validation and example values.
+- In this case, if no value is provided for `data`, it defaults to `None`. If a value is provided, it can be either a string or `None`.
+- Two example strings are also defined for the `Query` decorator, which will be displayed in documentation and error messages when using the API.

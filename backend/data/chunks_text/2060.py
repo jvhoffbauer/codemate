@@ -1,0 +1,3 @@
+- The `live()` function serves a MkDocs website with livereload for a specific language using the `mkdocs.commands.serve.serve()` method.
+- It takes an optional `LANG` argument that defaults to 'en' and sets the corresponding path in `docx_path`.
+- During local development, it enables line numbers through environment variable `LINENUMS`.

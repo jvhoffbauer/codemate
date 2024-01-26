@@ -1,0 +1,3 @@
+- This function named `test_basic()` is a unit test that uses the `unittest.mock.Mock` object called `json_request`.
+- It sends an HTTP request with specific parameters to a server using the `json_request()` method and stores the response in a variable called `resp`.
+- The expected result of this operation is stored in a dictionary called `assert resp`, which contains the original ID value (1), JSONRPC version (2.0) and a modified `result` key containing hexadecimal values for each input string ("11", "22", "33") prefixed by '1' ('1011', '1022', '1033').

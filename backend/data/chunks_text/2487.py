@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_pet()` that takes a `pet_id` parameter of type `int`.
+- Initializes two database models, `UserDB` and `PetDB`, with sample data for testing purposes.
+- Returns the `PetDB` object containing the requested pet's details based on the provided `pet_id`.

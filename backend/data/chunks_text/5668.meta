@@ -1,0 +1,1 @@
+{"original_code": "@overload\ndef get_db(*, alias: str = DEFAULT_ALIAS) -> Database:\n    ..."}

@@ -1,0 +1,9 @@
+- Defines a function `get_current_user()` that takes two arguments: `SecurityScopes` and an OAuth2 access token `token`.
+- If there are any required scopes specified by `SecurityScopes`, adds them to the authentication header value.
+- Raises a `credentials_exception` with appropriate error message and WWW-Authenticate header if validation fails or necessary scopes are missing.
+- Decodes the JWT token using the secret key and algorithm defined earlier.
+- Retrieves the username from the decoded payload and raises another exception if it's null.
+- Extracts the list of granted scopes from the decoded payload as well.
+- Fetches the corresponding user record from the fake database based on the retrieved username.
+- Checks whether all requested scopes are present among the granted ones; otherwise, throws an exception with suitable details.
+- Returns the found user object.

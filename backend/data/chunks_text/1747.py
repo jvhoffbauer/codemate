@@ -1,0 +1,3 @@
+- Defines a function `get_full_name` that takes in two arguments `first_name` and `last_name`.
+- Inside the function, creates a variable called `full_name` by concatenating the titleized versions of `first_name` and `last_name`.
+- Returns the value stored in `full_name`.

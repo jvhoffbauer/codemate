@@ -1,0 +1,1 @@
+{"original_code": "async def router_ws_decorator_depends(\n    websocket: WebSocket, data=Depends(ws_dependency)\n):\n    await websocket.accept()\n    await websocket.send_text(data)\n    await websocket.close()"}

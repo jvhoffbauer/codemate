@@ -1,0 +1,3 @@
+- Defines a function called `test_typing` that uses type annotations with Pydantic's `FastAPI`.
+- Creates a dictionary of examples using different data structures and their corresponding type hints (lists, dictionaries, sets, tuples).
+- Loops through each example and creates a new instance of `FastAPI`, defines a POST endpoint with the given request body and response model, makes a request to the endpoint with the expected JSON payload, asserts that the status code is correct, and checks if the returned JSON matches the original input.

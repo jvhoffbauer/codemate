@@ -1,0 +1,3 @@
+- Defines a function `mocked_timeline` that takes variable arguments (`*args`) and keyword arguments (`**kwargs`)
+- Inside this function, creates an inner class called `TestTimeline` with an initializer that accepts a single argument `latest`. This is assigned to an instance attribute of the same name.
+- Returns the newly created `TestTimeline` object, passing in the first element from the list of arguments passed into `mocked_timeline` as the value for `latest`.

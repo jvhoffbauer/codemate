@@ -1,0 +1,1 @@
+- Tests if `UploadFile.validate()` raises a `ValueError` when passed an object that is not a valid Starlette `UploadFile`. - Verifies the correctness of the error handling mechanism for invalid input to `UploadFile.validate()`.

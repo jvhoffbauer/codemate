@@ -1,0 +1,1 @@
+- Sets a cookie named 'fakesession' with value 'fake-cookie-session-value' in the HTTP response header using FastAPI's `Response` object. - Returns a JSON response containing a message encouraging users to use cookies for session management instead of relying on server-side sessions (a hypothetical scenario).

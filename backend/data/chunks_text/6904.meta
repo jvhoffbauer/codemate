@@ -1,0 +1,1 @@
+{"original_code": "    def shutdown() -> None:\n        logger.info(\"Running app shutdown handler.\")\n        _shutdown_model(app)"}

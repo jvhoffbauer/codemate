@@ -1,0 +1,1 @@
+{"original_code": "async def client() -> AsyncGenerator[AsyncClient, None]:\n    async with AsyncClient(app=app, base_url=\"http://test\") as client:\n        client.headers.update({\"Host\": \"localhost\"})\n        yield client"}

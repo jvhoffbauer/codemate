@@ -1,0 +1,1 @@
+{"original_code": "    @classmethod\n    def create(cls, **kwargs) -> Self:\n        return cls.objects.create(**kwargs)"}

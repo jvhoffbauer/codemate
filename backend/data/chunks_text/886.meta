@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(\n        self,\n        dependency: Optional[Callable[..., Any]] = None,\n        *,\n        scopes: Optional[Sequence[str]] = None,\n        use_cache: bool = True,\n    ):\n        super().__init__(dependency=dependency, use_cache=use_cache)\n        self.scopes = scopes or []"}

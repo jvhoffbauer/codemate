@@ -1,0 +1,1 @@
+{"original_code": "def update_languages() -> None:\n    \"\"\"\n    Update the mkdocs.yml file Languages section including all the available languages.\n    \"\"\"\n    update_config()"}

@@ -1,0 +1,1 @@
+{"original_code": "    def gdal_env(disable_read: ReaddirType = Query(ReaddirType.false)):\n        return {\"GDAL_DISABLE_READDIR_ON_OPEN\": disable_read.value.upper()}"}

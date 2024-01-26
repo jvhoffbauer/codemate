@@ -1,0 +1,1 @@
+{"original_code": "async def no_duplicates(item: Item, item2: Item = Depends(dependency)):\n    return [item, item2]"}

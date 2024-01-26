@@ -1,0 +1,1 @@
+- Tests if a token without required scopes can be used to access protected resources by making a GET request to /users/me with an authorization header containing the bearer token and checking for HTTP status code 401 (Unauthorized), error message detailing insufficient permissions, and WWW-Authenticate header specifying the required scope ('me')

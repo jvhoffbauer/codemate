@@ -1,0 +1,4 @@
+- Creates a new item with a randomly generated title and description using `ItemCreate`.
+- Generates a unique ID for the item using `crud.utils.generate_new_id()`.
+- Upserts (creates or updates) the item in the default bucket with the given input data and sets the owner to a newly created user.
+- Asserts that the returned item has the expected properties, including its ID, type, title, description, and owner username.

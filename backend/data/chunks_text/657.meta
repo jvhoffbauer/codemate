@@ -1,0 +1,1 @@
+{"original_code": "        async def handle_outgoing_request(message: \"Message\") -> None:\n            if message[\"type\"] == \"http.response.start\" and correlation_id.get():\n                headers = MutableHeaders(scope=message)\n                headers.append(self.header_name, correlation_id.get())\n\n            await send(message)"}

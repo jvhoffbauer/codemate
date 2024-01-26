@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/query/param-required/int\")\ndef get_query_param_required_type(query: int = Query()):\n    return f\"foo bar {query}\""}

@@ -1,0 +1,1 @@
+{"original_code": "def write_log(message: str):\n    with open(\"log.txt\", mode=\"a\") as log:\n        log.write(message)"}

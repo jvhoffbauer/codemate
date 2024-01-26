@@ -1,0 +1,1 @@
+- Defines a property named `full_name` for the current class (presumably representing a person). - The value of this property is computed using an f-string that concatenates the values of two instance attributes, `name` and `lastname`. - Returns the resulting string as the value of the property.

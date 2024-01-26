@@ -1,0 +1,4 @@
+- Defines a websocket endpoint with a path parameter `client_id`.
+- Connects the incoming web socket to the message manager and handles any errors during connection.
+- Starts an infinite loop that receives text messages from the connected web socket using `await websocket.receive_text()`, sends personalized messages to the sender using `await manager.send_personal_message()`, and broadcasts messages to all other clients using `await manager.broadcast()`.
+- Handles disconnections by removing the web socket from the message manager and sending a broadcast message announcing the departure of the client identified by `client_id`.

@@ -1,0 +1,3 @@
+- Defines a new FastAPI web socket endpoint at `"/depends-validate"` using the `Router` class.
+- Uses dependency injection to validate incoming web socket messages by passing them through the `ws_dependency_validate()` function before processing them in this route handler.
+- The `data` parameter is annotated with the `Depends()` decorator and passed as an argument to the route handler function. This allows us to easily inject dependencies into our route handlers without having to manually manage their lifecycle or scope.

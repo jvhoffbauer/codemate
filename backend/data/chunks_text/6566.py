@@ -1,0 +1,4 @@
+- Defines an asynchronous function `get_common_counter()` that takes a required argument `common`.
+- Uses the `Body` decorator to allow any value for the `common` parameter (ellipsis syntax).
+- Initializes and updates a global variable `_common_counter`, which is incremented by one each time this function is called.
+- Yields a string with the concatenated values of `common` and the updated counter, using f-strings.

@@ -1,0 +1,1 @@
+{"original_code": "def create_dependency(name: str):\n    def fun(deps: DepList):\n        deps.append(name)\n\n    return Depends(fun)"}

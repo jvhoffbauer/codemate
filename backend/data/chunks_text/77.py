@@ -1,0 +1,1 @@
+- Defines an `exec()` method with type hints for a select query and optional parameters, execution options, and binding arguments. - The method is marked asynchronous using the `async` keyword. - Returns a `ScalarResult` object containing the result of executing the SQL query.

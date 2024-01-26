@@ -1,0 +1,1 @@
+{"original_code": "    def fun(deps: DepList):\n        deps.append(name)"}

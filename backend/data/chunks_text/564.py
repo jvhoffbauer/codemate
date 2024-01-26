@@ -1,0 +1,6 @@
+- Imports `test_tutorial` function and `expected_calls` list from a fixture called `clear_sqlmodel`.
+- Imports `tutorial002_py39` module from the `docs_src/tutorial/relationship_attributes` directory.
+- Sets up SQLAlchemy engine using `create_engine` method.
+- Patches builtin `print` function to capture its output in a list called `calls`.
+- Calls `main` function of imported module inside patched print context.
+- Asserts that captured prints match the expected ones stored in `expected_calls` list.

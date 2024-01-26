@@ -1,0 +1,2 @@
+- Defines a function `handle_validation_error` that takes in a `Request` object and a `ValidationError` exception as arguments (but ignores them using `pylint: disable=unused-argument`)
+- Returns a JSON response with an error message containing all validation errors when a `ValidationError` is raised during request handling

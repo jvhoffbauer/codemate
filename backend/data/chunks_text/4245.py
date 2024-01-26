@@ -1,0 +1,1 @@
+- Imports a function `test_override_in_items_with_params` from another module and calls it directly in this script. - This is an example of how to override tests with parameters using pytest's `--reruns` flag for debugging purposes. - The imported function itself sets up a simple scenario where a list comprehension overrides some values based on conditions passed as arguments.

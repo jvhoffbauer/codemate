@@ -1,0 +1,1 @@
+- Tests if `None` values are correctly handled in a GET request with query parameter `send_none=true`. - Verifies that the API returns an HTTP status code of 200 and the expected JSON response (i.e., `None`) when `send_none=true`.

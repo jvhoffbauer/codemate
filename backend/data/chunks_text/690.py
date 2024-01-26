@@ -1,0 +1,1 @@
+- Defines a function named `task3()` that logs an informational message to the logger with label "test3".

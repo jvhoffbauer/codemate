@@ -1,0 +1,1 @@
+{"original_code": "def read_json_fixture(fname: str) -> Dict[Any, Any]:\n    \"\"\"Read json from test directory.\"\"\"\n    with open(os.path.join(DATA_DIR, fname)) as f:\n        return json.load(f)"}

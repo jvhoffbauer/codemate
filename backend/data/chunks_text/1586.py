@@ -1,0 +1,1 @@
+- Defines an asynchronous function `root()` that returns a dictionary with a single key-value pair containing a greeting message.

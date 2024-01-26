@@ -1,0 +1,3 @@
+- Imports a function `test_main` from a module named `tests_src.settings.app02`.
+- Calls the method `test_app` of the imported function to execute its tests.
+- Requires Pydantic version >= 2 (using `@needs_pydanticv2`) for compatibility with the specific usage of Pydantic in this context.

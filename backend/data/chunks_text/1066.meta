@@ -1,0 +1,1 @@
+{"original_code": "def get_graphql_translation_discussions(*, settings: Settings):\n    data = get_graphql_response(\n        settings=settings,\n        query=all_discussions_query,\n        category_id=questions_translations_category_id,\n    )\n    graphql_response = AllDiscussionsResponse.parse_obj(data)\n    return graphql_response.data.repository.discussions.nodes"}

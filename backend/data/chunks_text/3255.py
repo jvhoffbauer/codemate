@@ -1,0 +1,3 @@
+- Tests reading a dictionary from an API endpoint without aliasing (using `response.json()`)
+- Asserts that the status code is 200 and displays the error message if it's not
+- Verifies that the returned JSON matches the expected result ("Foo" for the key "name")

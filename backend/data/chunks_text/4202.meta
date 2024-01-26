@@ -1,0 +1,1 @@
+{"original_code": "def test_get():\n    response = client.get(\"/typer\", follow_redirects=False)\n    assert response.status_code == 307, response.text\n    assert response.headers[\"location\"] == \"https://typer.tiangolo.com\""}

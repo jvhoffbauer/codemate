@@ -1,0 +1,6 @@
+- Defines a subclass of `MultiBandReader`, which is used to read multiple bands from a single file or URL.
+- Accepts an input file/URL, tile matrix set (TMS), optional reader options, and minimum and maximum zoom levels.
+- Default TMS is Web Mercator Quad.
+- Uses `__attrs_post_init__` method to parse scene ID and extract grid bounds after initializing attributes.
+- Retrieves CRS and minimum/maximum zoom levels from the first band using COG reader.
+- Provides a custom method `_get_band_url` to validate and return the URL of a specific band.

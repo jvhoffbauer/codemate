@@ -1,0 +1,1 @@
+{"original_code": "    def remove(self, db: Session, *, id: int) -> ModelType:\n        obj = db.query(self.model).get(id)\n        db.delete(obj)\n        db.commit()\n        return obj"}

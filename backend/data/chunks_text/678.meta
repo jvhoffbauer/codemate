@@ -1,0 +1,1 @@
+{"original_code": "    def clean_up(**kwargs: Any) -> None:\n        \"\"\"\n        Clear context vars, to avoid re-using values in the next task.\n        \"\"\"\n        celery_current_id.set(None)\n        celery_parent_id.set(None)"}

@@ -1,0 +1,5 @@
+- Tests converting a decimal number (25.5) to a JSON object with key "float".
+- Uses Flask's built-in `client` object to make an HTTP GET request to the route for floating point numbers.
+- Asserts that the status code is 200 and checks the response body using `response.text`.
+- Verifies that the returned JSON matches expected values by comparing it against a dictionary literal.
+- Demonstrates how to use Flask's URL builder to generate a URL from a named route and arguments. The `type: ignore` comment is required because mypy doesn't recognize this feature yet.

@@ -1,0 +1,3 @@
+- Defines a GET request endpoint at `/override`.
+- Returns plain text response with message "Hello World".
+- Allows for customization of response class to PlainTextResponse, overriding FastAPI's default JSON response format.

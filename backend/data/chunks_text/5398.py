@@ -1,0 +1,3 @@
+- Defines a default value for `_maxzoom`, which is a property of the class that this method belongs to (presumably `TileLayer`)
+- The default value is obtained by calling `maxzoom` on the `tms` attribute, which presumably represents some sort of Tile Map Service (TMS) configuration or connection object
+- This default behavior can be overridden in subclasses or instances by providing their own implementation of `_maxzoom`

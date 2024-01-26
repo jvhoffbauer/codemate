@@ -1,0 +1,1 @@
+- Tests if Flask's `client` object can make a GET request to the "/check-class" endpoint and returns JSON data containing the string "GzipRequest". - Verifies that the HTTP requests made by Flask's built-in testing client are compressed using Gzip compression, as specified in the application configuration.

@@ -1,0 +1,3 @@
+- Tests if the homepage redirects to the documentation page using Flask's built-in testing client (TestClient).
+- Verifies that the initial request returns a status code of 302, indicating a temporary redirection.
+- Confirms that the final response has a status code of 200 and the URL matches the expected value for the documentation page.

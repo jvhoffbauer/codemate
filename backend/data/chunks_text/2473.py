@@ -1,0 +1,1 @@
+- Tests if a ResponseValidationError is raised when accessing an endpoint for an invalid list (i.e., a list that doesn't exist) using Flask-RESTful and PyTest. - Uses the `with` statement to automatically raise any exceptions caught by the `pytest.raises()` decorator, making it easier to read and understand the test case.

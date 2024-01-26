@@ -1,0 +1,3 @@
+- Defines a GET request for `/path_example_examples/{item_id}` using FastAPI's decorator syntax (`@app.get`)
+- Uses Pydantic's `Path` class to validate and parse the required query parameter `item_id`, which can be overridden with an example value or chosen from a list of examples provided by Pydantic
+- Returns the parsed value of `item_id` as the response body

@@ -1,0 +1,2 @@
+- Defines an asynchronous function `update_item` that takes in two arguments: `item_id` and `item`.
+- The function returns a dictionary called `results`, which contains the updated `item_id` and the new value of `item`.

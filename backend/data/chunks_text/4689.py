@@ -1,0 +1,4 @@
+- This function tests uploading a file using `requests-mock` and `Python 3.10`.
+- It creates a temporary directory (`tmp_path`) and opens a new file in binary mode inside it.
+- The function sends an HTTP POST request to the server's "/files/" endpoint while passing the newly created file as a parameter named "file".
+- After receiving a successful response from the server, the function checks its status code and JSON contents for correctness.

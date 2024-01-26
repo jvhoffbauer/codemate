@@ -1,0 +1,4 @@
+- Defines an asynchronous function `user` that takes a session object from SQLAlchemy's async extension (AsyncSession).
+- Initializes an instance of AsyncDAL with the given session and adds a new User record to it using the add method. The added fields include email, active status, plain text password, current login timestamp, and first/last names.
+- Commits the changes made by AsyncDAL to the database using the commit method provided by AsyncSession.
+- Returns the newly created User instance for further processing or usage in other parts of the application.

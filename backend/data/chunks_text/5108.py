@@ -1,0 +1,3 @@
+- Registers an endpoint for a COG viewer with the given `BaseTilerFactory`.
+- The viewer is accessed through the URL path "/viewer".
+- The HTML response returned by this function includes dynamic data from the tile JSON, info, and statistics endpoints provided by the `BaseTilerFactory`.

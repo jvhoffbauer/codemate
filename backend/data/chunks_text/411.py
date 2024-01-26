@@ -1,0 +1,3 @@
+- Tests validation of implicit and explicit `None` values in SQLModel using Pydantic version 2.
+- Consistency with Pydantic's behavior where validators are not called for unsupplied arguments.
+- Issue tracking links related to this feature request.

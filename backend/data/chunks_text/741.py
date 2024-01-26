@@ -1,0 +1,3 @@
+- Retrieves a specific user with the given ID from the database using FastAPI's built-in `GET` request decorator and Pydantic's `response_model`.
+- Converts the retrieved `ORMUser` object to a `User` object, which is returned as the API response.
+- Uses the `tags` parameter in the route definition to categorize this endpoint under the "Users" tag for easier organization and discovery of related endpoints.

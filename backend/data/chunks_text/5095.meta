@@ -1,0 +1,1 @@
+{"original_code": "async def test_filtering_by_attribute(\n    session: AsyncSession,\n    product_type,\n    # color_attribute,\n    # size_attribute,\n    # # category,\n    # date_attribute,\n    # date_time_attribute,\n    # # boolean_attribute,\n):\n    adal = AsyncDal(session)\n    assert len(await adal.all(ProductType)) == 1\n    ..."}

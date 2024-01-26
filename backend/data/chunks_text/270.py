@@ -1,0 +1,1 @@
+- Retrieves a list of heroes from the database using SQLAlchemy's `Session` and `select()` functions, filtering by age less than or equal to 35. - Returns the first result (i.e., the first hero found that meets the criteria) using `results.first()`. - Prints out the selected hero object using string formatting inside an f-string.

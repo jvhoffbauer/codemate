@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a query parameter `q`.
+- Uses Pydantic's `Annotated` decorator to validate and parse the `q` argument with a minimum length of 3 characters.
+- Returns a dictionary called `results`, which contains two items (`"items"` and `"q"`) by default. If `q` is not empty, it updates the `results` dictionary with the value of `q`.

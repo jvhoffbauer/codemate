@@ -1,0 +1,4 @@
+- Defines a method `update_from_dict()` that takes a dictionary as an argument (named `kwargs`) and returns `self`.
+- Iterates over each key-value pair in the dictionary using a dictionary comprehension syntax (`for k, v in kwargs.items():`).
+- Uses Python's built-in function `setattr()` to dynamically set the attribute of the current object with the given name and value.
+- Returns `self`, allowing chaining of method calls.

@@ -1,0 +1,7 @@
+- Imports `needs_pydanticv1`, which is used to ensure compatibility with Pydantic version 1.x.
+- Creates an instance of FastAPI and defines two endpoints using its decorators.
+- Defines a custom UUID subclass called `MyUuid`.
+- Tests the behavior of the custom UUID by checking if it's a valid `uuid.UUID` object but not of the same type as `uuid.UUID`. It also checks whether accessing attributes via dictionary style raises a TypeError (which should be true).
+- Defines a custom Pydantic model called `SomeCustomClass` with some configuration settings to allow arbitrary types and convert UUID objects to strings during JSON encoding/decoding.
+- Uses the `TestClient` from Pytest to make requests against both endpoints defined earlier.
+- Asserts that the responses contain the expected data in their respective formats.

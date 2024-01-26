@@ -1,0 +1,1 @@
+{"original_code": "def test_extra_fields():\n    tmp = PageSchema(schema=Page(), children=[PageSchema()], extra_field=\"extra field\")  # type: ignore\n    assert tmp.amis_dict().get(\"extra_field\") == \"extra field\""}

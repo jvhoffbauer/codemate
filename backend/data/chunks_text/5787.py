@@ -1,0 +1,1 @@
+- This method checks if a user has read permission for an item with the given IDs using the `has_page_permission()` method of the base class. - The `action` parameter is set to `CrudEnum.read`, indicating that we're checking whether the user can perform a read operation on the specified items. - The result of this method is returned as a boolean value.

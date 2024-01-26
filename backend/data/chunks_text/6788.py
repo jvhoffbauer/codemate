@@ -1,0 +1,5 @@
+- Creates a new instance of the model with data from `obj_in` and sets its `owner_id` to the provided value.
+- Adds the newly created object to the database session using SQLAlchemy's `Session.add()`.
+- Commits the changes made in this session using `Session.commit()`.
+- Refreshes the state of the object in memory by fetching it again from the database using `Session.refresh()`.
+- Returns the refreshed object.

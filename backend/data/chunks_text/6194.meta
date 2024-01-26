@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def country_population(self):\n        \"\"\"\n        Gets the population of this location.\n\n        :returns: The population.\n        :rtype: int\n        \"\"\"\n        return country_population(self.country_code)"}

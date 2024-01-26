@@ -1,0 +1,3 @@
+- Tests deep data validation using JSON RPC request with a nested object containing an empty dictionary as value for one of its keys.
+- Asserts that the response contains an error message indicating that the input is invalid due to missing field in the nested object.
+- The error message includes details such as the location of the missing field and the type of error (missing).

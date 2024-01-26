@@ -1,0 +1,3 @@
+1. Defines an endpoint at `/tilejson.json` and its variants based on the `TileMatrixSetId` parameter.
+2. Uses FastAPI's dependency injection system to pass arguments such as query parameters, path dependencies, and environment variables to the function.
+3. Returns a JSON object representing the TileJSON specification for the specified dataset and options. The returned dictionary includes information about the bounds, minimum and maximum zoom levels, and URL templates for generating individual tiles.

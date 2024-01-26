@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_create_access_token():\n    from docs_src.security.tutorial005_an_py310 import create_access_token\n\n    access_token = create_access_token(data={\"data\": \"foo\"})\n    assert access_token"}

@@ -1,0 +1,1 @@
+- This function generates a single generator that yields a temporary path and then iterates over all files with ".coverage" extension within it. - For each matching file found, it copies it to a new location under the "top_level_path". - The copied files are named identically to their original counterparts but now reside at the specified destination path.

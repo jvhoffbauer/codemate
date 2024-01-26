@@ -1,0 +1,1 @@
+{"original_code": "def is_couchbase_ready(cluster_url):\n    r = requests.get(cluster_url)\n    return r.status_code == 200"}

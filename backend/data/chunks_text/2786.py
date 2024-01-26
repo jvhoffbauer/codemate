@@ -1,0 +1,2 @@
+- Tests retrieving an item by ID with a specific user ID using GET request to `/items/{item_id}` endpoint
+- Verifies that the status code is 200 and the returned JSON contains both the requested item ID and user ID (specified in query parameter)

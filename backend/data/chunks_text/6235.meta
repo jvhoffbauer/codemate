@@ -1,0 +1,1 @@
+{"original_code": "    @abstractmethod\n    async def get_all(self):\n        \"\"\"\n        Gets and returns all of the locations.\n\n        :returns: The locations.\n        :rtype: List[Location]\n        \"\"\"\n        raise NotImplementedError"}

@@ -1,0 +1,3 @@
+- Creates a new user with `ORMUser.create()` and returns it as JSON using FastAPI's `response_model`.
+- Connects to Redis using `create_pool()`, which is an asyncio-friendly wrapper around aioredis.
+- Enqueues a message for sending later using `enqueue_job()`, passing in the newly created user ID and a welcome message. The job will be executed by a background worker running the `send_message()` function.

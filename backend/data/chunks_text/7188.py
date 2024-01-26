@@ -1,0 +1,3 @@
+- Defines a fixture named `db` with session scope for PyTest tests, using SQLAlchemy's `SessionLocal`.
+- Yields an instance of `SessionLocal`, which is available to test functions that use it as a dependency injection.
+- The fixture is cleaned up automatically after all tests have finished executing in the current session.

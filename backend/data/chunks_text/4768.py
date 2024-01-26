@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_model_a()` that takes a required string argument `name`.
+- Optionally accepts another dependency called `model_c`, which is obtained using the `get_model_c()` function from the FastAPI Dependency Resolver (`Depends(get_model_c)`).
+- Returns a dictionary with keys 'name', 'description' and'model_b'. The value for'model_b' is set to the result of calling `model_c`.

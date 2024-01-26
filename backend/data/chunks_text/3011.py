@@ -1,0 +1,1 @@
+- Tests if router depends on query parameter 'q' with value 'foo'. - Sends a GET request to '/router-depends/' URL with 'q' parameter set to 'foo'. - Asserts that HTTP status code is 200 and returns expected JSON response containing 'in' key with value 'router-depends', 'params' key with values for 'q','skip', and 'limit'.

@@ -1,0 +1,1 @@
+{"original_code": "        def __init__(self, app: \"AdminApp\"):\n            super().__init__(app)\n            self.register_admin(UserAdmin)"}

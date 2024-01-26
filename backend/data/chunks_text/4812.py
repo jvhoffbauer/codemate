@@ -1,0 +1,3 @@
+- This function searches through a specified Elasticsearch index using a given query string and returns a list of document IDs that match the criteria.
+- It takes several arguments including the name of the Elasticsearch bucket (or client), the query string to search for, the name of the index to search within, an optional starting point from which to begin searching (default is 0), and an optional maximum number of results to return (default is 100).
+- The function creates a `QueryStringQuery` object with the provided query string, executes a search against the specified index using the Elasticsearch client's `search()` method, iterates over the resulting "hits" (matches), extracts their corresponding document IDs, and returns them as a list.

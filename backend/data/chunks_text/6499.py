@@ -1,0 +1,1 @@
+- Defines a function `echo` that takes an optional argument `data` of type string with a default value provided by Pydantic's `Body()`. The `examples` parameter is used to provide example values for documentation and testing purposes. - Raises a custom exception `MyError` with a dictionary containing details when `data` equals 'error'. Otherwise, returns the input `data`.

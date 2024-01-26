@@ -1,0 +1,2 @@
+- This method is called `get`, and it takes two arguments: a `key` (any type) and an optional `default` value (also any type).
+- The method returns the result of calling `getattr()` on the object stored in the instance's `_obj` attribute with the given `key`. If the resulting value is a Peewee ModelSelect object, it is converted to a list before being returned; otherwise, it is simply returned as is.

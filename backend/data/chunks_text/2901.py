@@ -1,0 +1,3 @@
+- Defines a new route `/login` using FastAPI's decorator syntax
+- Uses Pydantic's OAuth2PasswordRequestFormStrict class as input validation for the request body, which is automatically converted into a Python dictionary called `form_data` by FastAPI
+- Returns the `form_data` object without any further processing or manipulation

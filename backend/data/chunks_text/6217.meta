@@ -1,0 +1,1 @@
+{"original_code": "def country_population(country_code, default=None):\n    \"\"\"\n    Fetches the population of the country with the provided country code.\n\n    :returns: The population.\n    :rtype: int\n    \"\"\"\n    return POPULATIONS.get(country_code, default)"}

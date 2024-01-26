@@ -1,0 +1,3 @@
+- Defines a method named `unhandled_exception` with annotations specifying its return type as `int`.
+- Decorates it with `@ep.method()`, which is likely part of some external library or framework for handling exceptions in Python applications (e.g., Elasticsearch Persistence).
+- Raises a custom exception called `MyErrorToUnhandledException`, indicating that this error should not be handled by any existing try/except blocks and instead propagate up to the application's top level, potentially causing it to crash.

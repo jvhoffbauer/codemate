@@ -1,0 +1,4 @@
+- Initializes a SQLAlchemy session (db) for the entire test session using `SessionLocal`.
+- Calls an initialization function (`init_db`) to populate the database with necessary data or perform any other setup tasks.
+- Yields the initialized database object, making it available to all tests in this session.
+- Closes the database connection after all tests have completed.

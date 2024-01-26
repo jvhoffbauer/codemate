@@ -1,0 +1,1 @@
+{"original_code": "def test_get_valid():\n    response = client.get(\"/foo\", params={\"client_id\": \"bar\"})\n    assert response.status_code == 200\n    assert response.json() == {\"client_id\": \"bar_key\", \"client_tag\": \"bar_tag\"}"}

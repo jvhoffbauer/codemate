@@ -1,0 +1,3 @@
+- Registers three custom admin classes for managing PageSchemas using Flask-Admin's `AdminSite`.
+- Retrieves instances of these registered admins to verify their behavior with respect to the `page_schema` attribute.
+- Verifies that the first two admins simply inherit from `amis.admin.PageSchemaAdmin`, which sets a default value for `page_schema` based on the current page schema. The third admin explicitly defines its own `page_schema` object, which overrides the inherited one. Both cases are verified by checking the type and properties of the resulting `page_schema` instance.

@@ -1,0 +1,1 @@
+- Defines a fixture named `app` for use in pytests using Flask application `app` defined in file `tutorial001_an.py`. - Returns the `app` object to be used by other tests that require it, eliminating the need to create and configure an instance of Flask every time such tests are run.

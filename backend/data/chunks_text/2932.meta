@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/\", response_model=Model, response_model_exclude_unset=True)\ndef get_root() -> ModelSubclass:\n    return ModelSubclass(sub={}, y=1, z=0)"}

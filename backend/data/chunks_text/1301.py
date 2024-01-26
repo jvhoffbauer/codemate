@@ -1,0 +1,1 @@
+- Defines an asynchronous function `create_file()` that takes a parameter `file`, which can be either bytes or a file object (specified using Pydantic's `Annotated` decorator). - If no file is provided, returns a dictionary with a message indicating so. - Otherwise, returns a dictionary containing the size of the uploaded file in bytes.

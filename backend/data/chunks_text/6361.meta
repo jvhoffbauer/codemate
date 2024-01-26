@@ -1,0 +1,1 @@
+{"original_code": "def print_version_envs():\n    env_lines = []\n    for env in environments:\n        env_vars = []\n        for key, value in env.items():\n            env_vars.append(f\"{key}='{value}'\")\n        env_lines.append(\" \".join(env_vars))\n    for line in env_lines:\n        print(line)"}

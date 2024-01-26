@@ -1,0 +1,2 @@
+- This endpoint returns an instance of `Item`, which is not a valid response model for this endpoint as it should return a `User`.
+- The use of type hinting (`-> User`) in the function signature indicates that the method should return a `User`, but the actual implementation violates this contract, leading to potential issues with API consumers expecting a specific data structure.

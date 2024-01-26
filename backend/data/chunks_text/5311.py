@@ -1,0 +1,4 @@
+- Defines a function `CustomPathParams()` that takes a query parameter named 'name'.
+- The function returns a string representing the customized file path based on the value of the 'name' parameter.
+- If the 'name' parameter does not end with '.tif', raises an HTTP exception with status code 400 and error message "Nope, this is not a valid File - Please Try Again".
+- If the specified file at the given location does not exist, raises an HTTP exception with status code 404 and error message "The File doesn't exists - Please Try Again".

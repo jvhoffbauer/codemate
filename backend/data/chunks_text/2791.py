@@ -1,0 +1,1 @@
+- This function `test_get` tests a GET request to retrieve user 'foo' from segment'seg'. - The expected status code is 200 and the JSON response should contain the segment name ('seg') and user ID ('foo').

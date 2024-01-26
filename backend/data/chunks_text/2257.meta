@@ -1,0 +1,1 @@
+{"original_code": "async def get_user(user_id: str, request: Request):\n    route: APIRoute = request.scope[\"route\"]\n    return {\"user_id\": user_id, \"path\": route.path}"}

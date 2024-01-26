@@ -1,0 +1,2 @@
+- Tests the `/exclude_unset_none` endpoint using Flask's built-in testing client (client)
+- Asserts that the JSON response contains a key 'y' with value 'y', ignoring any unset or None values due to the exclude_unset parameter in request.get_json(force=True, parse_float=False, typ=dict, location='json', charset='utf-8', errors=RequestParserError, strict=true, fresh=false) function call inside the route decorator for /exclude_unset_none

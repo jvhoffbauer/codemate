@@ -1,0 +1,8 @@
+- Defines a function `test_app_lifespan_state` that takes a `State` object as an argument and returns none.
+- Creates an async context manager called `lifespan` which sets the `state.app_startup` flag to true when the application starts up, yields control back to the caller, and then sets the `state.app_shutdown` flag to true at the end of its execution.
+- Initializes a new instance of `FastAPI`, passing in the `lifespan` context manager as the value for the `lifespan` parameter.
+- Registers a simple route handler using the `@app.get` decorator.
+- Asserts that both flags are initially false before creating a `TestClient` instance to make requests against the server.
+- Asserts that the `state.app_startup` flag is now true after making a request via the `client`.
+- Makes another request through the `client` and checks that it succeeds (i.e., status code 200).
+- After closing the `client`, asserts that both flags remain set to their respective values.

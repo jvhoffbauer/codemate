@@ -1,0 +1,2 @@
+- Tests if default route (/) returns a 404 status code using Flask's built-in testing client `test_client`.
+- Asserts that the expected HTTP status code is returned by comparing it with an integer constant `404`.

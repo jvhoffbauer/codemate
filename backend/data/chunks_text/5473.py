@@ -1,0 +1,3 @@
+- Tests the `/info` and `/info.geojson` endpoints for a COG at a specific URL using mocked RasterIO functions
+- Verifies that the responses have expected status codes and content types
+- Checks that the returned JSON contains correct bounds, band descriptions, data type, color interpolation, and nodata value information

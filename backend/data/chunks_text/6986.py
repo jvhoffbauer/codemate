@@ -1,0 +1,7 @@
+- Defines a retry decorator with specific parameters for handling exceptions during initialization process
+- Initializes logger object and logs an info message about starting service
+- Tries to establish connection to database using SQLAlchemy's `SessionLocal`, catches any exception that may occur and logs it with warning level
+- Checks environment variable RUN_MIGRATION and skips migration step or runs Alembic migrations depending on its value
+- Logs messages about skipping/running migrations and executes corresponding function
+- Initializes some data in the database using another helper function called `init_db`
+- Finally, logs a success message about finishing initialization

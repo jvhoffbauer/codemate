@@ -1,0 +1,9 @@
+- Defines a function `ep` that takes an endpoint path and returns an instance of `jsonrpc.Entrypoint`.
+- Uses `defaultdict` to store information about requests and responses for testing purposes.
+- Creates three context managers for handling exceptions, entrypoint middleware, and method middleware respectively.
+- Registers exception handler using `ep_handle_exception` context manager.
+- Registers entrypoint middleware using `ep_middleware` context manager with two callback functions: one for entering and another for exiting.
+- Registers method middleware using `method_middleware` context manager with similar callback functions.
+- Initializes `jsonrpc.Entrypoint` object with registered handlers and passes it the endpoint path.
+- Decorates methods `probe`, `probe_error`, and `probe_context_vars` with `@ep.method` decorator and specifies middleware list for each method separately.
+- Sets global variable `ep.calls` to the dictionary storing request/response pairs.

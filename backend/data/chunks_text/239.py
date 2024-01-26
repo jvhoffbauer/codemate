@@ -1,0 +1,3 @@
+1. Creates a SQLAlchemy database connection using an in-memory SQLite database and disables thread checking for concurrent access. Uses StaticPool to reuse connections instead of creating new ones each time.
+2. Defines the location of the SQLite database as `sqlite://`.
+3. Specifies that the connection pool should be created using the StaticPool class instead of the default ThreadLocalSessionPackagingConnectionPool. This allows multiple requests to use the same connection without creating new ones.

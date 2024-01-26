@@ -1,0 +1,4 @@
+- This function uses `pytest.mark.parametrize` to run multiple tests with different values for the route and expected result (stored in a tuple).
+- The `client` object is used to make HTTP requests using Flask's built-in testing client.
+- Each request includes a query parameter named 'value', which is passed as an argument to the corresponding test case.
+- The status code of each response is checked against 200, and the text and JSON contents are compared with the expected results stored in variables outside the loop.

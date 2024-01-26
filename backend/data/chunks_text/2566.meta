@@ -1,0 +1,1 @@
+{"original_code": "def test_custom_response_schema():\n    response = client.get(\"/openapi.json\")\n    assert response.status_code == 200, response.text\n    assert response.json()[\"components\"][\"schemas\"][\"Item\"] == item_schema"}

@@ -1,0 +1,1 @@
+- Defines a class method `__tablename__` for the current class (cls). - Returns the lowercase name of the current class as the table name in SQLAlchemy. - Helps to avoid naming conflicts between Python classes and database tables with different capitalization conventions.

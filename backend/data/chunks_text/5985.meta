@@ -1,0 +1,1 @@
+{"original_code": "    def test_scalar_type_enum(self):\n        class MyEnum(Enum):\n            VALUE = \"value\"\n\n        assert annotation_outer_type(MyEnum) == MyEnum\n\n        assert annotation_outer_type(Optional[MyEnum]) == MyEnum"}

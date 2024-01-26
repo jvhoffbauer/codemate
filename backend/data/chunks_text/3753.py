@@ -1,0 +1,4 @@
+- Copies a file from one location to another using Python's built-in `shutil` module
+- Makes an HTTP GET request with a query parameter specifying whether or not to include an image in the response
+- Asserts that the status code of the response is 200 and that it contains content if the image should be included
+- Removes the temporary copy of the file created during testing

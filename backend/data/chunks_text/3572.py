@@ -1,0 +1,1 @@
+- Tests reading items from the API using Flask's built-in testing client and a separate input/output schema for better performance in large applications. - Compares responses between clients with and without separated schemas to ensure consistency of data returned by the API. - Verifies that expected JSON data is correctly formatted and contains all necessary fields.

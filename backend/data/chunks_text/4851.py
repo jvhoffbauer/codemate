@@ -1,0 +1,3 @@
+- Creates a new user using `crud.user.create()` or updates an existing one using `crud.user.update()`, depending on whether it already exists in the database (`persist_to=1` ensures that changes are saved to the database).
+- Checks for duplicate usernames by retrieving the user from the default bucket using `crud.user.get()`. If found, raises a `HTTPException` with a custom error message.
+- Sends a welcome email to the new user's email address (if provided) using a helper function called `send_new_account_email()`. This assumes that emails are enabled in the configuration file (`config.EMAILS_ENABLED`) and uses FastAPI's dependency injection feature to pass the necessary arguments to the function.

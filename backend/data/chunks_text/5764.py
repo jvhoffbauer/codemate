@@ -1,0 +1,4 @@
+- This function takes a `Request`, a `ModelField`, and returns a `TableColumn`.
+- It first converts the `ModelField` to a `TableColumn` using Amis' parser.
+- If the user has update permission for this field on the current schema (if any), it enables editing of the switch widget (if present) and sets quick edit mode based on another helper method.
+- The function then returns the modified `TableColumn`.

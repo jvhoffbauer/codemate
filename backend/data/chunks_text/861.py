@@ -1,0 +1,3 @@
+- Defines a method `render()` that takes in an argument `content`.
+- Uses the `assert` statement to check if `ujson` module is imported and raises an error message if it's not. This ensures that `UJSONResponse` class can only be used when `ujson` package is installed.
+- Converts the passed `content` using `ujson.dumps()`, which returns JSON encoded string with Unicode strings as ASCII by default (set through `ensure_ascii` parameter), and then encodes it into byte stream using `encode('utf-8')`.

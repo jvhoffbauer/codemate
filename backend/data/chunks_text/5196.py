@@ -1,0 +1,3 @@
+- This function calculates per-asset statistics using RasterIO's `statistics()` method.
+- It takes several dependencies to configure various parameters for reading and processing the data.
+- The calculated statistics are returned as a dictionary or array depending on the input arguments.

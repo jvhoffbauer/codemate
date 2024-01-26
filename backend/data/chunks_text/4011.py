@@ -1,0 +1,1 @@
+- This function tests a POST request to create an item with string and float values for price and description fields using Flask's built-in testing client (TestClient). - The expected status code is 200 (OK) and the JSON response contains the provided name, converted price, original description, and null tax value since it was not specified in the request body.

@@ -1,0 +1,6 @@
+1. This function `get_current_user()` takes two arguments - `SecurityScopes` and a JWT token obtained from OAuth2 authentication scheme using FastAPI dependency injection mechanism.
+2. It checks whether any scopes are provided by the client application during authorization request. If yes, it adds them to the Authentication header value as part of Bearer token format.
+3. The function tries to decode the JWT token with the help of PyJWT library and extracts the sub (subject) field which represents the username of the logged-in user.
+4. If the decoding fails or the subject field is missing, an exception is raised indicating that the credentials could not be validated.
+5. Otherwise, the function retrieves the user object from the database based on the extracted username and returns it.
+6. Before returning the user object, this function also verifies whether the requested scopes match with the granted scopes present in the JWT token. If there is a mismatch, another exception is thrown indicating insufficient permissions.

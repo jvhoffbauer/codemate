@@ -1,0 +1,3 @@
+- Takes a list of SQLAlchemy `Row` objects as input and returns a list of dictionaries representing those rows.
+- Extracts the column names from the first row using `get_row_keys()`.
+- Creates a dictionary with key-value pairs corresponding to each column name and its value in the current row, using Python's built-in `zip()` function.

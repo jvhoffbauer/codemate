@@ -1,0 +1,3 @@
+- This test case checks if a sub decorator's dependency override is applied correctly by setting it in `app.dependency_overrides`.
+- The endpoint being tested is `"/decorator-depends/"`, and the query parameter `"q"` is set to `"foo"`.
+- If the dependency override is successful, an HTTP status code of 422 (Unprocessable Entity) should be returned with a JSON error message containing details about the missing field.

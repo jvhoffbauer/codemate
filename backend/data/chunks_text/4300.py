@@ -1,0 +1,4 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using Pydantic models and validators.
+- Includes definitions for HTTP requests (GET, POST, etc.) with request parameters, request bodies, responses, and status codes.
+- Defines data types and validation rules for input and output data using Pydantic's built-in type hinting syntax.
+- Provides examples of how to use these endpoints in practice through the `examples` field.

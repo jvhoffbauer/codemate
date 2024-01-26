@@ -1,0 +1,1 @@
+{"original_code": "def and_(\n    initial_clause: Union[Literal[True], _ColumnExpressionArgument[bool], bool],\n    *clauses: Union[_ColumnExpressionArgument[bool], bool],\n) -> ColumnElement[bool]:\n    return sqlalchemy.and_(initial_clause, *clauses)  # type: ignore[arg-type]"}

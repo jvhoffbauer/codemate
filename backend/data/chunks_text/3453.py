@@ -1,0 +1,3 @@
+- Retrieves the Swagger UI from the server at `/docs`.
+- Asserts that the status code is 200 and prints the text if it fails.
+- Checks for the presence of specific strings in the HTML output to verify that the Swagger UI has been properly configured with our app name ("The Predendapp") and OAuth client ID ("the-foo-clients").

@@ -1,0 +1,1 @@
+{"original_code": "def get_missing_translation_content(docs_dir: str) -> str:\n    docs_dir_path = Path(docs_dir)\n    missing_translation_path = docs_dir_path.parent.parent / \"missing-translation.md\"\n    return missing_translation_path.read_text(encoding=\"utf-8\")"}

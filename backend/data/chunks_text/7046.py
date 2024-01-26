@@ -1,0 +1,3 @@
+- This function is a validator decorator that modifies the `BACKEND_CORS_ORIGINS` setting before it's used by the application.
+- It checks whether the value of this setting is a string or a list of strings, and converts it to a list if necessary.
+- If the original value was a single string without square brackets, it splits it into a list using commas as separators and strips whitespace from each item.

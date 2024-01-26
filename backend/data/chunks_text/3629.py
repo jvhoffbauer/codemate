@@ -1,0 +1,1 @@
+- Initializes a variable `state.app_startup` to true when the application starts up. - Yields control back to the caller (FastAPI framework). - Sets another variable `state.app_shutdown` to true when the application shuts down.

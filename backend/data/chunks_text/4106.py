@@ -1,0 +1,3 @@
+- Tests a WebSocket connection with a session cookie passed in the request headers using `TestClient`.
+- Raises an exception (`WebSocketDisconnect`) when closing the WebSocket connection to simulate disconnection.
+- Sends and receives messages through the WebSocket connection while passing the session cookie in each request header.

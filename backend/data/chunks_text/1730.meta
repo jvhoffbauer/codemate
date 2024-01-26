@@ -1,0 +1,1 @@
+{"original_code": "async def send_notification(\n    email: str, background_tasks: BackgroundTasks, q: Annotated[str, Depends(get_query)]\n):\n    message = f\"message to {email}\\n\"\n    background_tasks.add_task(write_log, message)\n    return {\"message\": \"Message sent\"}"}

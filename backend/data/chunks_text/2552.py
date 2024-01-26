@@ -1,0 +1,2 @@
+- Defines a constructor function for a middleware that wraps an existing FastAPI application (`app`) and adds web socket support to it using `uvicorn`.
+- The wrapper function (`wrapped_app`) checks whether the incoming request is of type 'websocket' or not. If not, it passes the request to the original application (`app`). Otherwise, it creates a new instance of `WebSocket`, calls the next middleware in the chain (`call_next()`), and returns the result of calling our custom middleware function with the `WebSocket` object and the `call_next()` coroutine as arguments.

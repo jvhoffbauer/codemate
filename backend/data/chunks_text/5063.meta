@@ -1,0 +1,1 @@
+{"original_code": "    def get(self, url: str, **kwargs) -> Response:\n        return super().get(url, **kwargs)"}

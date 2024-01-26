@@ -1,0 +1,1 @@
+{"original_code": "def app() -> FastAPI:\n    app = FastAPI()\n    app.add_middleware(BaseHTTPMiddleware, dispatch=async_db.asgi_dispatch)\n    return app"}

@@ -1,0 +1,1 @@
+- Tests whether `CorrelationIdFilter` truncates correlation IDs based on a specified length (in this case, 8). - Verifies that the original correlation ID is still present in the filtered record's correlation ID attribute. - Checks if the truncated correlation ID starts with the original one.

@@ -1,0 +1,1 @@
+{"original_code": "def exists_global(name: str, *, alias: str = DEFAULT_ALIAS) -> bool:\n    \"\"\"Judge whether the global variable exists\"\"\"\n    return (name, alias) in __globals__ or (\n        alias == DEFAULT_ALIAS and _exists_faa_global(name)\n    )"}

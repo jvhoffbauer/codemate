@@ -1,0 +1,1 @@
+{"original_code": "async def parse_jwt_user_data(\n    token: JWTData | None = Depends(parse_jwt_user_data_optional),\n) -> JWTData:\n    if not token:\n        raise AuthRequired()\n\n    return token"}

@@ -1,0 +1,1 @@
+{"original_code": "def upsert(bucket: Bucket, *, user_in: UserCreate, persist_to=0):\n    user = upsert_in_db(bucket, user_in=user_in, persist_to=persist_to)\n    user_in_sync = UserSyncIn(**user_in.dict(), name=user_in.username)\n    assert insert_sync_gateway(user_in_sync)\n    return user"}

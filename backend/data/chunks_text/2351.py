@@ -1,0 +1,1 @@
+- Defines a GET request handler for the root URL of `/` with a query parameter named 'level1' of type string, using FastAPI's decorator syntax to register it as part of the router called `callback_router1`. - The function body is empty and marked as not being tested (`pragma: nocover`) since we are just defining the endpoint here, without any implementation logic yet.

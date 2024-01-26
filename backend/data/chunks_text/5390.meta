@@ -1,0 +1,1 @@
+{"original_code": "    def must_be_bob(credentials: security.HTTPBasicCredentials = Depends(http_basic)):\n        if credentials.username == \"bob\":\n            return True\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"You're not Bob\",\n            headers={\"WWW-Authenticate\": \"Basic\"},\n        )"}

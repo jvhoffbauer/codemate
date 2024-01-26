@@ -1,0 +1,4 @@
+- Retrieves a list of column operations from Django's `RequestContext`.
+- Filters and extends the list based on specific flags (flag="column" and flag="item").
+- Appends the filtered/extended list to a `List` called `columns`, which is then returned by the function.
+- The resulting `List` contains a single `ColumnOperation` object with a "fixed" position ("right"), a label ("Operation"), and a list of associated button objects representing available actions.

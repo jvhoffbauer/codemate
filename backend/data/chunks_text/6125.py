@@ -1,0 +1,6 @@
+- Defines a custom `SqlalchemySelector` subclass called `ArticleSelector`.
+- Sets the prefix for the API router to `/user`.
+- Specifies a list of allowed filter fields for articles, including the article's ID, title, user's username (using SQLAlchemy's relationship syntax), and a field named 'pwd', which is actually the password field from the User model with an alias name 'pwd'.
+- Asserts that the expected filter entities are present in the `selector._filter_entities` dictionary.
+- Asserts that the 'not_exist' field is not included in the `selector._filter_entities`, as it was explicitly excluded from the list.
+- Asserts that the `selector._filter_entities` dictionary is different from the `selector._select_entities` dictionary, indicating that filtering is being performed separately from selecting columns.

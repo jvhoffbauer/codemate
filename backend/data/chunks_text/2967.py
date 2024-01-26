@@ -1,0 +1,3 @@
+- Defines a FastAPI route with path `/async-callable-gen-dependency`.
+- Uses the `Depends()` decorator to pass an asynchronous callable generator function (`async_callable_gen_dependency`) as a dependency for the `value` parameter of this route handler.
+- Returns the value returned by the passed dependency, which is generated lazily when needed during request processing.

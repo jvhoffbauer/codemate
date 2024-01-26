@@ -1,0 +1,1 @@
+- This function takes in a `TestClient`, an email address, and a password as arguments to authenticate a user using the Flask-JWT-Extended library's login endpoint. - It returns a dictionary containing the authentication header with the generated JWT token for further API requests that require authorization.

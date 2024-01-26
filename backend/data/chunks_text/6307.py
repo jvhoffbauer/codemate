@@ -1,0 +1,1 @@
+- Mocks a GET request to GeoNames API with specific response body and JSON data using `responses` library in Flask-Mock. - Asserts that `app.utils.populations.fetch_populations()` function is called successfully without raising any errors or exceptions.

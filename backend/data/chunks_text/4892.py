@@ -1,0 +1,2 @@
+- Imports default data from Couchbase's sample buckets with a specified URL and credentials using `requests`.
+- Returns True if the operation was successful (HTTP status code 202) or if the dataset is already present. False otherwise.

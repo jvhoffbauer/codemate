@@ -1,0 +1,3 @@
+- Deletes a specific user with the given ID using FastAPI's built-in `DELETE` method and returns the deleted user object in JSON format (response model).
+- Uses SQLAlchemy to retrieve the user from the database before deleting it.
+- Tags the endpoint as "Users" for easier organization and discovery within the API documentation.

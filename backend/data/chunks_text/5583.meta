@@ -1,0 +1,1 @@
+{"original_code": "    def create_item(self, item: Dict[str, Any]) -> TableModelT:\n        \"\"\"Create a database orm object through a dictionary.\"\"\"\n        return self.model(**item)"}

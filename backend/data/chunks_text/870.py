@@ -1,0 +1,3 @@
+- Creates a new response field in FastAPI using user-provided arguments such as field name, data type, validation rules, and defaults.
+- Checks whether the provided data type `type_` is a valid Pydantic field type and raises an error if it's not.
+- Allows disabling generation of the response model from the type annotation by passing `response_model=None` to the path operation decorator. This is useful when returning multiple types like `Union[Response, dict, None]`.

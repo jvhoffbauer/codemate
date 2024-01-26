@@ -1,0 +1,3 @@
+- Retrieves the OpenAPI schema from the server using a GET request to `/openapi.json`.
+- Asserts that the status code of the response is 200 and saves its text for debugging purposes (optional).
+- Compares the JSON content of the response with the expected OpenAPI schema defined in the variable `openapi_schema_main`, which should be equal if the API documentation is correct.

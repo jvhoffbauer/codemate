@@ -1,0 +1,4 @@
+- Defines a function called `root()`.
+- Inside the function, two variables `a` and `b` are assigned values.
+- The value of `b` is concatenated with the value of `a`, resulting in a new string.
+- A dictionary containing a key-value pair is returned from the function.

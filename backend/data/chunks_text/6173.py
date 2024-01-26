@@ -1,0 +1,3 @@
+- Loads content from a specified file using `aiofiles`.
+- Checks whether the file has a `.json` extension and loads its contents using Python's built-in `json` module if it does. Otherwise, returns the raw string content of the file.
+- Returns either a dictionary or a list (depending on the type returned by `json.loads`) or a plain string for non-JSON files.

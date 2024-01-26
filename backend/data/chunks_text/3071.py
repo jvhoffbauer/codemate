@@ -1,0 +1,2 @@
+- Tests the `/b` endpoint of the router using a client object from the `httpx` library
+- Asserts that the expected content and Content-Type header are returned by the server in response to GET request for `/b`

@@ -1,0 +1,1 @@
+{"original_code": "    async def handle(\n        self,\n        request: Request,\n        item_id: List[str],\n        data: Optional[SchemaUpdateT],\n        **kwargs,\n    ) -> BaseApiOut[Any]:\n        return BaseApiOut(data=data)"}

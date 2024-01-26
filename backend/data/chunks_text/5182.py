@@ -1,0 +1,4 @@
+- Endpoint for generating previews of datasets using FastAPI and RasterIO libraries
+- Accepts various parameters such as output image format, rescaling, color formulas, colormaps, etc.
+- Uses dependency injection to pass arguments between functions and avoid repetition in function signatures
+- Returns response object containing generated preview image

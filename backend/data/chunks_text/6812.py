@@ -1,0 +1,5 @@
+- Deletes a specific item with the given ID from the database using SQLAlchemy's `Session`.
+- Raises a `HTTPException` with status code 404 if the item is not found in the database.
+- Checks whether the user has sufficient permissions to delete the item based on its owner ID and their own user ID. If they are not authorized, raises another `HTTPException` with status code 400.
+- Commits the changes made during this operation to the database.
+- Returns the deleted item as output for further processing or display purposes. Note that we suppress the mypy warning about returning `None` by adding `# type: ignore` at the end of the function definition. This is because our implementation actually returns the deleted object, but mypy cannot infer this statically due to the way SQLAlchemy works.

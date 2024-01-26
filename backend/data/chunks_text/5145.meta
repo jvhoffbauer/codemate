@@ -1,0 +1,1 @@
+{"original_code": "    def handler(request: Request, exc: Exception):\n        return JSONResponse(content={\"detail\": str(exc)}, status_code=status_code)"}

@@ -1,0 +1,1 @@
+{"original_code": "@needs_pydanticv2\ndef test_decimal_encoder_float():\n    data = {\"value\": Decimal(1.23)}\n    assert jsonable_encoder(data) == {\"value\": 1.23}"}

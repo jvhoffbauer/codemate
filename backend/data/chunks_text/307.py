@@ -1,0 +1,3 @@
+- Defines a function called `main`.
+- Calls three functions in sequence inside `main`: `create_db_and_tables`, `create_heroes`, and `update_heroes`.
+- This is likely an entry point for executing multiple database operations, as each of these functions appears to interact with a database or table.

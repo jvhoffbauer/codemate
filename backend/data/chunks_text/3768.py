@@ -1,0 +1,1 @@
+- Tests retrieving a specific car item with ID 'item1' using Pytest and Flask's built-in testing client (TestClient). - Asserts that the HTTP status code is 200 OK and saves the text for debugging purposes if the assertion fails. - Verifies that the JSON response contains the expected description and type of the requested car item.

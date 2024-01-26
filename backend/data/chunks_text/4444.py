@@ -1,0 +1,1 @@
+- Sends a GET request to the `/users/` endpoint with custom headers containing a fake token and key. - Asserts that the status code is 200 (OK) and saves the response text for debugging purposes. - Asserts that the JSON response contains an array of user objects with 'Rick' and 'Morty' as their respective usernames.

@@ -1,0 +1,1 @@
+- Defines a function `test_countries_country_name__country_code` to test the `country_code()` method of the `Countries` class with specific input values (`country_name`, `expected_country_code`) and asserts that the returned value matches the expected one using Python's built-in `assert` statement.

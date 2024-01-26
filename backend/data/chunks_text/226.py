@@ -1,0 +1,4 @@
+1. Defines a function `session_fixture()` that creates an SQLAlchemy engine and initializes its metadata, then yields a database session for use in tests.
+2. The `connect_args={'check_same_thread': False}` option is used to disable thread local storage (TLS), which allows multiple threads to access the same connection without issues. This is necessary because we're using FastAPI's built-in test client, which runs tests concurrently across multiple threads.
+3. We also set the `poolclass` parameter of our engine to `StaticPool`, which ensures that each request gets a new connection from the pool instead of reusing existing ones. This helps prevent race conditions when running tests concurrently.
+4. Finally, we yield the session object so it can be accessed by other functions or classes within this context manager.

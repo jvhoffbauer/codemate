@@ -1,0 +1,3 @@
+- Retrieves current user's information based on their authenticated session (JWT token) using FastAPI dependency injection and `Depends()`.
+- Returns a JSON response with the retrieved username as its value.
+- Uses the `Annotated[]` decorator to provide type hinting for the function parameter.

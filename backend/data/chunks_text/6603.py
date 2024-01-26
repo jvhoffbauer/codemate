@@ -1,0 +1,3 @@
+- Tests that passing an invalid request ID (in this case, an integer) results in a validation error with specific error messages for both string and int types.
+- Uses `json_request()` to make the JSON RPC request and asserts that the response contains the expected error message structure.
+- Does not actually send any requests or perform any actions on the server; just tests the handling of invalid input by the client library.

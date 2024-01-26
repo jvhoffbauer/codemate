@@ -1,0 +1,1 @@
+{"original_code": "async def test_read_current_user(client: AsyncClient, default_user_headers):\n    response = await client.get(\n        app.url_path_for(\"read_current_user\"), headers=default_user_headers\n    )\n    assert response.status_code == codes.OK\n    assert response.json() == {\n        \"id\": default_user_id,\n        \"email\": default_user_email,\n    }"}

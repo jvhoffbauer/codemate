@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/query/int\")\ndef get_query_type(query: int):\n    return f\"foo bar {query}\""}

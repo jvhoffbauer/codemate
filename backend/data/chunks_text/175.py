@@ -1,0 +1,5 @@
+- Defines an overloaded method `exec()` for executing a SQL query with a single scalar result (e.g., SELECT COUNT(*) FROM table) using PySQLite's cursor object.
+- Accepts a `statement` parameter of type `SelectOfScalar`, which is a subclass of `sqlalchemy.orm.query.Query`. This allows us to use SQLAlchemy's ORM features like filtering and sorting in our queries.
+- Optionally accepts parameters as a dictionary or sequence of dictionaries, which are passed directly to the database engine during query execution.
+- Allows passing additional options to control how the query is executed, such as fetchsize and timeout values.
+- Provides optional arguments for binding named placeholders in the query string to actual values, and for adding event handlers to be called after query execution completes.

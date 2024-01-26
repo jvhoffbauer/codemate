@@ -1,0 +1,1 @@
+{"original_code": "async def delete_user(id: int):\n    user: ORMUser = await ORMUser.get(id)\n    return await user.delete()"}

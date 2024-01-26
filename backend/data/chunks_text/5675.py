@@ -1,0 +1,3 @@
+- This function is a private helper method for loading external variables into Python's `__globals__`.
+- It retrieves the name of the desired module (`FAA_GLOBALS`) from an environment variable and attempts to import it using `importlib.import_module()`.
+- If successful, it sets the global namespace (`__globals__`) to the imported module's globals dictionary or falls back to an empty dictionary otherwise.

@@ -1,0 +1,5 @@
+- Defines a function `get_allowed_username` that takes a single argument `username`.
+- Initializes a string variable `chars_to_remove` containing characters to be replaced.
+- Creates an empty string called `modified_username`, which will hold the cleaned up version of the input `username`.
+- Loops through each character in `chars_to_remove` and replaces it with a hyphen (-) in `modified_username`.
+- Returns the final value of `modified_username`.

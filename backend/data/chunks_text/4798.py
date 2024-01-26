@@ -1,0 +1,3 @@
+- This function searches for documents in a specified Google Cloud Firestore `Bucket` using a given `query_string`.
+- It uses the `utils.search_get_docs()` method to perform the search and returns a list of matching `UserInDB` objects (stored as JSON documents).
+- The `skip` and `limit` parameters allow pagination through large result sets.

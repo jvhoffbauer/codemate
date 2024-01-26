@@ -1,0 +1,1 @@
+{"original_code": "async def predict(x: float):\n    result = ml_models[\"answer_to_everything\"](x)\n    return {\"result\": result}"}

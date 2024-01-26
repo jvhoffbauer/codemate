@@ -1,0 +1,2 @@
+- Creates a new item with title 'Foo' and description 'Something that fights' using POST request to /users/1/items/ endpoint
+- Verifies successful creation by checking status code, JSON data, and GET requests to both items and users endpoints

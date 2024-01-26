@@ -1,0 +1,7 @@
+- Defines a method called `create` that takes in a database session (`Session`) and an object containing input data for creating a new record (`CreateSchemaType`).
+- Converts the input data to a JSON serializable format using `jsonable_encoder`.
+- Creates a new instance of the model class with the converted input data as keyword arguments.
+- Adds the newly created object to the database session.
+- Commits the changes made to the database session.
+- Refreshes the state of the newly added object to ensure it has the latest values from the database.
+- Returns the newly created object.

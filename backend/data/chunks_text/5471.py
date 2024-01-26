@@ -1,0 +1,3 @@
+- Tests the `/bounds` endpoint of a COG server using Flask and RasterIO
+- Mocks the opening of the raster file with RasterIO to avoid actual I/O operations during testing
+- Verifies that the response status is 200 OK and contains an array with four bounds values (xmin, ymin, xmax, ymax) for the requested COG URL

@@ -1,0 +1,1 @@
+- Defines a method `validate_data` for a class (`cls`) that takes in data as an argument (`data`) and returns validated data. - Retrieves the data model associated with the current class using the `get_data_model` method. - If a data model is found, it passes the input data to the validation function of the data model (`model_validate`) and returns the validated result.

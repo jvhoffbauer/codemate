@@ -1,0 +1,1 @@
+- Tests the `/stac/preview` endpoint using mocks for HTTP requests and rasterio functions. - Verifies that missing assets or expressions result in a 400 Bad Request error. - Confirms that providing valid asset names, rescale values, max size limits, widths, heights, and expressions returns a PNG image with expected dimensions.

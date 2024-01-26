@@ -1,0 +1,2 @@
+- Defines a function called `select` with three arguments (`entity_0`, `__ent1`, and `entity_2`) that returns an object of type `Select` containing tuples consisting of the first argument (`entity_0`), elements from the second argument (`__ent1`), and the third argument (`entity_2`).
+- The `type: ignore` comment is used to suppress a mypy warning about the return type being inferred as `Any`. This allows us to provide our own more specific return type for better type checking.

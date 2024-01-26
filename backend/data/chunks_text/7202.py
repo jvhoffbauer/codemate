@@ -1,0 +1,3 @@
+- This function tests the `GET /jobs/all` endpoint using a Flask-Restful's built-in testing client (TestClient).
+- It passes in a predefined header dictionary containing an authentication token for a superuser to authenticate the request.
+- The function asserts that the status code of the response is 200 and that the HTTP response contains the expected JSON structure with a success code and a list of job objects.

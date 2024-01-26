@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/foo\")\ndef foo(items: Items):\n    return items.items"}

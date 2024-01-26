@@ -1,0 +1,1 @@
+{"original_code": "async def get_async(state: str = Depends(asyncgen_state)):\n    return state"}

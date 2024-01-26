@@ -1,0 +1,2 @@
+- Defines a custom method `__get_pydantic_json_schema__` for the class that returns a JSON schema value representing the format of binary data as a string type with 'binary' format.
+- Takes two arguments - `cls`, which is the current instance being serialized or deserialized, and `core_schema` and `handler`, both from Pydantic's internal API used to generate JSON schemas dynamically at runtime.

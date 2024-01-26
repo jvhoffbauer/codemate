@@ -1,0 +1,2 @@
+- Defines a function `get_headers()` that takes a `Response` object as an argument (`response`) and returns a dictionary with one key-value pair ("message", "Hello World")
+- Inside the function, it modifies the headers of the `Response` object by adding a new header named "X-Cat-Dog" with a value of "alone in the world" using the square bracket notation to access the headers dictionary inside the `Response` object

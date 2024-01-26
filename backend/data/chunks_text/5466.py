@@ -1,0 +1,1 @@
+- Defines a method called `json()` for the current class (presumably a subclass of some other class). - Inside this method, it calls the built-in Python function `json.loads()`, passing in the value of the instance variable `self.data`. - The result is returned from the `json()` method.

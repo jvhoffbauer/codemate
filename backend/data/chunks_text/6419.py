@@ -1,0 +1,4 @@
+- Defines a function `call_sync_async` that takes a callable (`call`) and arguments/keywords as input
+- Checks whether the given callable is an asynchronous coroutine using `asyncio.iscoroutinefunction()`
+- If it's a coroutine, calls it directly with `await` and returns its result
+- Otherwise, wraps the synchronous call in a thread pool executor using `run_in_threadpool()` from `concurrent.futures`, which allows us to execute blocking I/O operations without freezing up the event loop, and returns its result after waiting for completion

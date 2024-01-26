@@ -1,0 +1,3 @@
+- This endpoint is accessed using GET request to `http://localhost:8000/items/`.
+- It returns an instance of `CommonsDep`, which provides access to common resources like database connections and logging utilities.
+- The `read_items()` function doesn't actually retrieve any items, but rather demonstrates how to pass a dependency (in this case, `CommonsDep`) into a FastAPI route handler as a parameter.

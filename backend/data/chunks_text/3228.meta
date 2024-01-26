@@ -1,0 +1,1 @@
+{"original_code": "def test_sub_router():\n    response = client.get(\"/items/\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"hello\": \"world\"}"}

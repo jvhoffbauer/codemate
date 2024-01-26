@@ -1,0 +1,5 @@
+- Initializes a new instance of the `APIKeyCookie` class with options for configuring its behavior.
+- Accepts arguments for setting the cookie's name, security scheme name, description, and whether automatic error handling should occur when the cookie is missing.
+- Creates a new `APIKey` object using the specified cookie configuration and stores it as a property on the current instance.
+- Sets the value of the `self.scheme_name` attribute based on either the passed-in argument or the class name by default.
+- Stores the `auto_error` flag as a property on the current instance.

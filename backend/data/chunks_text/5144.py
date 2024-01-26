@@ -1,0 +1,3 @@
+- Defines a function `exception_handler_factory` that takes in an integer argument `status_code`.
+- The returned value is a callable object (a function).
+- This function, called as an exception handler, returns a JSON response with a custom error message and specified HTTP status code.

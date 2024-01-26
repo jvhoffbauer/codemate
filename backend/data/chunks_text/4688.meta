@@ -1,0 +1,1 @@
+{"original_code": "def test_post_uploadfile_no_body(client: TestClient):\n    response = client.post(\"/uploadfile/\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"message\": \"No upload file sent\"}"}

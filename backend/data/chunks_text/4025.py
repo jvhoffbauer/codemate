@@ -1,0 +1,3 @@
+- Imports a specific function `client()` from a module named `docs_src`.
+- Inside the `client()` function, imports another function called `app` from a nested module within `docs_src`.
+- Creates an instance of Flask's test client using the imported `app`, and returns it for use in other parts of the application or tests.

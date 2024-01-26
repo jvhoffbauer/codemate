@@ -1,0 +1,1 @@
+{"original_code": "@callback_router1.get(\"/\")\nasync def callback1(level1: str):\n    pass  # pragma: nocover"}

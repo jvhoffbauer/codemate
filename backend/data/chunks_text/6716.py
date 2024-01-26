@@ -1,0 +1,3 @@
+- Defines a function `probe` that takes an endpoint object (`ep`) as input and returns it after defining two methods named `probe` and `probe2`.
+- Both methods are decorated with `@ep.method()`, which adds them to the endpoint's list of available operations.
+- The first method raises a `ZeroDivisionError` when called, while the second one raises a `RuntimeError`. This can be used for testing or error handling purposes.

@@ -1,0 +1,1 @@
+{"original_code": "@dataclass  # type: ignore\nclass FactoryExtension(metaclass=abc.ABCMeta):\n    \"\"\"Factory Extension.\"\"\"\n\n    @abc.abstractmethod\n    def register(self, factory: \"BaseTilerFactory\"):\n        \"\"\"Register extension to the factory.\"\"\"\n        ..."}

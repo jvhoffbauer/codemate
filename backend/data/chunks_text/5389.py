@@ -1,0 +1,5 @@
+- Tests `add_route_dependencies` function for adding route level authentication using Basic Auth and dependency injection with `security.HTTPBasic`.
+- Defines a custom dependency `must_be_bob` that checks user credential against specific username 'bob'.
+- Adds route level authentication to '/one' endpoint by passing `must_be_bob` as a dependency in `add_route_dependencies` call.
+- Makes requests to both authenticated ('/one') and unauthenticated ('/two') endpoints using different Basic Auth credentials (for bob and notbob respectively).
+- Verifies successful responses from authorized users while returning appropriate error codes for unauthorized access attempts.

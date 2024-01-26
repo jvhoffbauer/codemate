@@ -1,0 +1,1 @@
+{"original_code": "        def decorator(func: Union[FunctionType, Coroutine]) -> Callable:\n            self.add_method_route(\n                func,\n                **kwargs,\n            )\n            return func"}

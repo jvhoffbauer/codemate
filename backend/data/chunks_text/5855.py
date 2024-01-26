@@ -1,0 +1,4 @@
+- Registers global exception handlers for specific types of exceptions in a FastAPI application using `FastAPI.add_exception_handler()`.
+- Defines custom exception handling functions (e.g., `request_validation_exception_handler`, `http_exception_handler`) to be called when certain exceptions are raised within the application.
+- Provides default error responses and logging functionality through these handlers.
+- Allows for more fine-grained control over how errors are handled at different levels of an application's architecture.

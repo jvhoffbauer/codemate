@@ -1,0 +1,1 @@
+{"original_code": "    def test_with_enum_and_str_type_with_blank_member(self):\n        class MyEnum(Enum):\n            VALUE = \"value\"\n            BLANK = \"\"\n\n        result = validator_skip_blank(\"\", MyEnum)\n        assert result == \"\""}

@@ -1,0 +1,1 @@
+{"original_code": "def test_q_fixedquery():\n    client = get_client()\n    response = client.post(\"/items/\", data={\"q\": \"fixedquery\"})\n    assert response.status_code == 200\n    assert response.json() == \"Hello fixedquery\""}

@@ -1,0 +1,1 @@
+{"original_code": "    def get_resp_data(self):\n        return self.raw_data"}

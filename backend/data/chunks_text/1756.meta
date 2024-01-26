@@ -1,0 +1,1 @@
+{"original_code": "def process_items(prices: dict[str, float]):\n    for item_name, item_price in prices.items():\n        print(item_name)\n        print(item_price)"}

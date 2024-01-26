@@ -1,0 +1,2 @@
+- Tests deleting a single item and verifying it's deleted from database using FastAPI's built-in `AsyncClient`.
+- Also tests deleting multiple items at once by passing their IDs separated by commas in the URL path parameter.

@@ -1,0 +1,1 @@
+{"original_code": "async def delete_by_key(key: str) -> None:\n    return await redis_client.delete(key)"}

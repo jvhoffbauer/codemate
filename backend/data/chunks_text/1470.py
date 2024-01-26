@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a query parameter `q`.
+- The type of `q` is either a string or `None`, and it should be at least 3 characters long but not more than 50. This constraint is enforced using Pydantic's `Query` validator.
+- If `q` is provided, it updates a dictionary called `results` with a new key `q` containing its value. Otherwise, `results` contains just the list of items.

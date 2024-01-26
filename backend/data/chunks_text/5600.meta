@@ -1,0 +1,1 @@
+{"original_code": "    async def on_create_pre(\n        self, request: Request, obj: SchemaCreateT, **kwargs\n    ) -> Dict[str, Any]:\n        data = obj.dict(by_alias=True)  # exclude=set(self.pk)\n        if self.pk_name in data and not data.get(self.pk_name):\n            del data[self.pk_name]\n        return data"}

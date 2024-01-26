@@ -1,0 +1,1 @@
+- This function, named `get_model`, returns a predefined object called `model`. - The purpose of this function is to provide easy access to the `model` object without having to import it from another file or define it multiple times in different parts of the program. - It follows the Singleton design pattern by returning the same instance every time the function is called.

@@ -1,0 +1,1 @@
+{"original_code": "def get_graphql_issue_edges(*, settings: Settings, after: Union[str, None] = None):\n    data = get_graphql_response(settings=settings, query=issues_query, after=after)\n    graphql_response = IssuesResponse.model_validate(data)\n    return graphql_response.data.repository.issues.edges"}

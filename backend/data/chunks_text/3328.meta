@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/hidden_cookie\")\nasync def hidden_cookie(\n    hidden_cookie: Optional[str] = Cookie(default=None, include_in_schema=False)\n):\n    return {\"hidden_cookie\": hidden_cookie}"}

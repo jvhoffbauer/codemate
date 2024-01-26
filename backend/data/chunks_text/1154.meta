@@ -1,0 +1,1 @@
+{"original_code": "async def read_item(request: Request, id: str):\n    return templates.TemplateResponse(\"item.html\", {\"request\": request, \"id\": id})"}

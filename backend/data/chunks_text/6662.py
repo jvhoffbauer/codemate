@@ -1,0 +1,3 @@
+- This function tests for unexpected extra parameters in JSON RPC requests using pytest and a custom request handler `json_request`.
+- It sends an invalid request with additional keys 'extra_value' and 'unexpected_extra', which should trigger an error response from the server.
+- The expected error message is returned as a dictionary containing details about the input that caused the error (in this case, the value of 'unexpected_extra') and its location ('unexpected_extra').

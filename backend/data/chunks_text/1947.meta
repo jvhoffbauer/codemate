@@ -1,0 +1,1 @@
+{"original_code": "async def fake_video_streamer():\n    for i in range(10):\n        yield b\"some fake video bytes\""}

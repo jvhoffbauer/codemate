@@ -1,0 +1,1 @@
+{"original_code": "def test_sync_context_b_raise():\n    with pytest.raises(OtherDependencyError):\n        client.get(\"/sync_context_b_raise\")\n    assert state[\"context_b\"] == \"finished b with a: started a\"\n    assert state[\"context_a\"] == \"finished a\""}

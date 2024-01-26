@@ -1,0 +1,3 @@
+- This method is a private helper function called `_filter_entities`.
+- It returns a dictionary that maps SQL field names to either an instance of `InstrumentedAttribute` or `Label`, based on the result of filtering the list of SQL fields using the `filter_insfield()` method from the `SQLAlchemyParser` class (stored in `self.parser`) with the current list filter and saving only labels as values.
+- The resulting dictionary can be used to extract specific entities from the query results later on.

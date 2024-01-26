@@ -1,0 +1,1 @@
+{"original_code": "def type_coerce(\n    expression: Union[_ColumnExpressionOrLiteralArgument[Any], Any],\n    type_: \"_TypeEngineArgument[_T]\",\n) -> TypeCoerce[_T]:\n    return sqlalchemy.type_coerce(expression, type_)  # type: ignore[arg-type]"}

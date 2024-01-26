@@ -1,0 +1,3 @@
+- Defines a GET request endpoint at `/query`.
+- Accepts a query parameter named `query`.
+- Returns a string concatenating "foo bar ", the value of the `query` parameter, and itself (for testing).

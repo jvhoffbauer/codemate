@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method()\n    def deep_data(\n        data: List[DataItem] = Body(...),\n    ) -> List[DataItem]:\n        return data"}

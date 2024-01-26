@@ -1,0 +1,3 @@
+- Defines an `ArticleAdmin` for Django's admin interface using Graphene-Django's `RegisterAdminMixin`.
+- Excludes certain fields from view, update, and creation permissions using `perm_fields_exclude`, a dictionary mapping permission types to lists of field names to exclude.
+- Verifies that excluded fields are indeed omitted from various permission-related methods on the resulting `InspectableNode` instance (e.g., `create_permission_fields`, `update_permission_fields`, etc.).

@@ -1,0 +1,1 @@
+- Retrieves application information using FastAPI's dependency injection mechanism to pass in a `Settings` object containing app configuration values. - Returns a JSON response with three key-value pairs representing the app name, admin email address, and maximum number of items allowed per user.

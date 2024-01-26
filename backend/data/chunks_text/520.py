@@ -1,0 +1,5 @@
+- Imports `tutorial001_py310` module from `docs_src/tutorial/connect/select`.
+- Sets SQLAlchemy URL to a local SQLite database and creates an engine for it.
+- Patches builtin print function using `get_testing_print_function` decorator, which captures all printed statements in a list called 'calls'.
+- Calls `main()` method of imported module, passing arguments through decorated print function.
+- Asserts that captured prints match expected values stored in `expected_calls` variable.

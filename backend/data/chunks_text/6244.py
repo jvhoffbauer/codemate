@@ -1,0 +1,3 @@
+- Defines a coroutine function `async_api_client()` that returns an instance of `AsyncTestClient`.
+- The `AsyncTestClient` is used to test asynchronous APIs in Channels and Django Channels projects using ASGI (Asynchronous Server Gateway Interface).
+- It takes `APP` as its argument, which is assumed to be the application object created by Django's `create_app()` method or equivalent.

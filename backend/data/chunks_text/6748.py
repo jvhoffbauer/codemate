@@ -1,0 +1,2 @@
+- Defines a method named `my_method__with_tags` with no arguments and returns nothing (None) in Python.
+- The double underscores (_) before the method name indicate that it is a private or internal method, not meant to be called from outside the class. This naming convention follows PEP8 style guide recommendations for Python.

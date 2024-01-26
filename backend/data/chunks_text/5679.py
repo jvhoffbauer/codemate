@@ -1,0 +1,1 @@
+- Checks if a global variable named 'name' exists within the `FAA_GLOBALS` module by accessing its dictionary of globals (`__dict__`) through the `__faa_globals__` attribute, which should be set when importing the `FAA_GLOBALS` module. - Returns True if both conditions are met; False otherwise.

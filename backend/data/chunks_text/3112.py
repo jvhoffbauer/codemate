@@ -1,0 +1,3 @@
+- Defines a function `header_example_examples()` that takes an optional argument `data`.
+- The type of `data` can be either a string or `None`, and is specified using Python's built-in `Union` type hinting feature.
+- If no value for `data` is provided when calling the function, its default value (specified as `Header(default=None)`) will be used instead. This default value has two additional attributes - `example` and `examples` - which are set to specific values in this case. These attributes provide alternative examples for how the input should look like.

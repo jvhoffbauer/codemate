@@ -1,0 +1,2 @@
+- Defines a GET endpoint `/get_custom_class` using FastAPI's decorator syntax
+- Returns an instance of a user object represented by the `SomeCustomClass` class, which is a custom Pydantic model with a nested field containing a UUID generated from the `MyUUID` class (which implements the `UUIDLike` interface) instead of the standard Python built-in `uuid.UUID`. This allows us to test whether our fix for handling custom models and their nested fields correctly handles this scenario as well.

@@ -1,0 +1,3 @@
+- Tests the GET request to the root endpoint using a `TestClient`.
+- Asserts that the status code is 200 and saves the text for debugging purposes.
+- Checks if the HTML content contains an opening tag of a form element (`<form>`) to ensure that the view returns an expected page with a form.

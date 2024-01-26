@@ -1,0 +1,1 @@
+- This function is a decorator that updates forward references of a subclass of `BaseModel`. - It calls the `model_rebuild()` method on the given `model` to update its internal state and resolve any circular dependencies between attributes. - The updated model can then be used in subsequent operations without issues related to unresolved forward references.

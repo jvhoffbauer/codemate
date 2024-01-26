@@ -1,0 +1,3 @@
+- Initializes `__post_init__` method for object creation
+- Loads sentry extension and sets it to a variable called `sentry_extension`
+- Imports Celery module (if available), loads an extension called `load_correlation_ids`, and executes it if both Sentry and Celery are installed

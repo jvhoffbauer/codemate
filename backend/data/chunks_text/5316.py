@@ -1,0 +1,3 @@
+- Defines a GET request for the `/all/{TileMatrixSetId}` endpoint using FastAPI's decorator syntax (@app.get)
+- Accepts a query parameter named 'TileMatrixSetId', which must be equal to a tuple containing all available values from the list() method of the tms module (Literal[tuple(tms.list())])
+- Returns the value of the 'TileMatrixSetId' query parameter as is, without any further processing or manipulation (def all...)

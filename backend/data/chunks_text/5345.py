@@ -1,0 +1,1 @@
+- Defines a function named `_endpoint` that takes an optional argument `params`, which is dependent on the `dependencies.ImageParams` class from the `dependencies` module. - The purpose of this function is to simply return the value of the `params` argument, implying it will be used as input for some other operation or endpoint in the application.

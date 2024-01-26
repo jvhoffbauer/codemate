@@ -1,0 +1,3 @@
+1. Creates a temporary SQLite database at `./sql_app.db`. If it already exists, deletes it (skips this step for coverage).
+2. Imports and creates the Flask app `alt_main`, which includes defining the SQLAlchemy database connection. This ensures that the database is created when running tests.
+3. Yields the Flask test client object `c` for use in testing routes and functionality of the application. After finishing all tests, deletes the temporary database file again (skips this step for coverage).

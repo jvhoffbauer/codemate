@@ -1,0 +1,3 @@
+- Tests the `/items` endpoint with an invalid token (`fake-super-secret-token`) using a custom error handler provided by Pytest-mock's `TestClient`.
+- Asserts that the server returns a HTTP status code of 422 and a JSON response containing a validation error indicating that the 'token' query parameter is missing. The error message conforms to the OpenAPI specification for this case ('Field required').
+- Verifies that the error handling logic works correctly both in current versions of Pydantic as well as its upcoming major release (v2) which will deprecate some aspects of the old error format.

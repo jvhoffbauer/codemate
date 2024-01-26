@@ -1,0 +1,1 @@
+- Allows creating a new user without requiring authentication (logged in). - This feature can be disabled by setting `settings.USERS_OPEN_REGISTRATION` to False. - Checks if an existing user with the same email address already exists and raises an error if found.

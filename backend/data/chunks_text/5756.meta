@@ -1,0 +1,1 @@
+{"original_code": "    async def has_action_permission(self, request: Request, name: str) -> bool:\n        return await self.has_page_permission(request, action=name)"}

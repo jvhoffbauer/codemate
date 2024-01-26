@@ -1,0 +1,3 @@
+- Tests if an incorrect token is provided in authorization header for accessing items endpoint
+- Asserts that status code returned is 401 (Unauthorized) and error message is 'Not authenticated'
+- Verifies that WWW-Authenticate header contains Bearer value indicating use of bearer tokens

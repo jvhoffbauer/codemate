@@ -1,0 +1,3 @@
+- Defines a GET endpoint at root URL (/) in FastAPI app
+- Accepts an optional query parameter `algorithm`, which is passed to a dependency function `PostProcessParams` using Depends decorator
+- Returns either dictionary representation of parsed parameters or empty dictionary if no parameters are provided

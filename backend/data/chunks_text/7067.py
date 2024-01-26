@@ -1,0 +1,3 @@
+- Generates a dictionary containing authentication headers for requests made by a test client as a superuser
+- Uses `get_superuser_auth_header()` function to retrieve necessary authorization information
+- Returns resulting header dictionary

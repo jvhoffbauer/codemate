@@ -1,0 +1,3 @@
+- Generates HTML for Swagger UI with customized elements such as title and OAuth2 redirect URL
+- Uses Flask-Swagger's `get_swagger_ui_html()` function to generate the HTML
+- Customizes the generated HTML by passing in specific arguments like `openapi_url`, `title`, and `swagger_js_url`

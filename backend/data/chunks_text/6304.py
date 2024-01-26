@@ -1,0 +1,4 @@
+- Defines a parameterized test using `pytest.mark.parametrize()`.
+- Provides a list of tuples containing country names and their corresponding ISO codes as arguments to the function being tested (`countries.country_code()`).
+- Asserts that the returned value from `countries.country_code()` matches the expected result for each tuple in the list.
+- Includes edge cases with invalid or unknown country names to ensure proper handling by the function.

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(app.swagger_ui_oauth2_redirect_url, include_in_schema=False)\nasync def swagger_ui_redirect():\n    return get_swagger_ui_oauth2_redirect_html()"}

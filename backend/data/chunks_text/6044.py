@@ -1,0 +1,4 @@
+- Defines a custom `UserAdmin` for the `User` model using FastAPI's built-in admin interface (Starlette).
+- Adds two filters to the list view: one based on the primary key and another labeling the username as 'name'.
+- Registers the router with the admin site and retrieves the resulting instance of the user admin.
+- Asserts that the expected fields are present in both the filter schema and the generated OpenAPI specification.

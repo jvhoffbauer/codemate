@@ -1,0 +1,1 @@
+{"original_code": "    def set_config_value(\n        *,\n        model: InstanceOrType[\"SQLModel\"],\n        parameter: str,\n        value: Any,\n    ) -> None:\n        model.model_config[parameter] = value  # type: ignore[literal-required]"}

@@ -1,0 +1,3 @@
+- This function tests creating an item with a float price using Flask's built-in testing client (TestClient).
+- It sends a POST request to the "/items/" endpoint with a JSON body containing a name and a float price of 50.5.
+- The function asserts that the server returns a status code of 200 (OK) and checks if the returned JSON matches the expected format for items with no description or tax fields set.

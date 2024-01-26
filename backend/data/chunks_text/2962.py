@@ -1,0 +1,1 @@
+- Defines an asynchronous function `get_callable_dependency` that takes a positional argument `value` with a default dependency of `callable_dependency`. - Returns the value passed to the function or, if no value is provided, retrieves it from the `Depends` decorator applied to the `value` parameter (i.e., calls the `callable_dependency`).

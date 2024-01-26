@@ -1,0 +1,1 @@
+- Defines an asynchronous function `get_users()` that returns a list of dictionaries containing user information with keys 'name' for Harry and Ron respectively.

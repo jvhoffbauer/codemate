@@ -1,0 +1,5 @@
+- Initializes an instance of the `OAuth2Credentials` class with various parameters specified in the constructor.
+- Uses Pydantic's `Annotated` decorator for type hinting and validation.
+- Validates input values using Pydantic's `Form` and `Pattern` validators.
+- Provides documentation for each parameter using Pydantic's `Doc` decorator.
+- Allows optional `client_id` and `client_secret` parameters that should ideally be passed through HTTP Basic authentication according to the OAuth2 specification.

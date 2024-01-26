@@ -1,0 +1,2 @@
+- Closes the database connection using `db.close()`.
+- Stops the scheduler using `schedule.shutdown()`.

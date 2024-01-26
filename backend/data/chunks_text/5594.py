@@ -1,0 +1,3 @@
+- This method is a private helper function called `_update_items`.
+- It takes three arguments: an SQLAlchemy session (`Session`), a list of item IDs (`item_id`), and a dictionary containing new values to update (`values`).
+- The method fetches all the items with the given IDs using another private helper function `_fetch_item_scalars`, updates each item's properties based on the provided dictionary, and returns the updated items as a list.

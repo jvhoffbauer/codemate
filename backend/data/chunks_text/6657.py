@@ -1,0 +1,3 @@
+- Tests an exception raised by a middleware function during request processing using `pytest.raises()`.
+- Uses the `assert_log_errors()` helper to check that the expected log messages are generated when the exception is raised.
+- Verifies that the response returned from the endpoint contains the correct error message and status code (-32603 for Internal Error).

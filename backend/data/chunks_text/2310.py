@@ -1,0 +1,3 @@
+- This is a class property decorator that returns a function object representing the built-in `uuid.UUID` class when accessed as an attribute of the current class (i.e., `MyClass.__class__`)
+- The `type: ignore` comment suppresses a mypy warning about the ignored type hint for the `@property` decorator, which is not strictly necessary in this case but can be helpful to avoid confusion or errors in larger projects with more complex type signatures
+- In practice, this property could be used to provide convenient access to the underlying data type of a custom class's primary key field without having to import and qualify the `uuid.UUID` module every time it's needed

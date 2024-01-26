@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in a list of strings as a query parameter named 'q'.
+- Returns an object with a key 'query_items', which contains the passed-in value of 'q'.

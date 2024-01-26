@@ -1,0 +1,1 @@
+- This function tests the `GET /pets` endpoint by making a request to it using Flask's built-in testing client (client). - The expected JSON response is an array containing two dictionaries representing pet models, each with a 'name' key and an embedded 'owner' dictionary with an 'email' key. - Both pets have the same owner ('johndoe@example.com').

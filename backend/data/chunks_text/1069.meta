@@ -1,0 +1,1 @@
+{"original_code": "def create_comment(*, settings: Settings, discussion_id: str, body: str):\n    data = get_graphql_response(\n        settings=settings,\n        query=add_comment_mutation,\n        discussion_id=discussion_id,\n        body=body,\n    )\n    response = AddCommentResponse.parse_obj(data)\n    return response.data.addDiscussionComment.comment"}

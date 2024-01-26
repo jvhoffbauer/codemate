@@ -1,0 +1,1 @@
+{"original_code": "def convert_datetime_to_gmt(dt: datetime) -> str:\n    if not dt.tzinfo:\n        dt = dt.replace(tzinfo=ZoneInfo(\"UTC\"))\n\n    return dt.strftime(\"%Y-%m-%dT%H:%M:%S%z\")"}

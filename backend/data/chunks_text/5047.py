@@ -1,0 +1,5 @@
+- Defines an asynchronous function called `http_exception_handler`.
+- Takes two arguments - a request object and an exception object (`exc`) - both passed in by FastAPI's built-in error handling mechanism.
+- Returns an instance of `ORJSONResponse`, which is a custom response class that serializes data using Open API JSON (ORJSON) format instead of the default JSON format used by FastAPI.
+- The returned dictionary contains a key-value pair for the 'detail' field, which holds the error message provided by the exception object.
+- The HTTP status code is also set to match the value stored in the exception object's `status_code` attribute.

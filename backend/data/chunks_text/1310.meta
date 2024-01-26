@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/files/\")\nasync def create_file(file: Annotated[bytes, File()]):\n    return {\"file_size\": len(file)}"}

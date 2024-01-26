@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\", response_model=list[Item], tags=[\"items\"])\nasync def get_items():\n    return [\n        {\"name\": \"Plumbus\", \"price\": 3},\n        {\"name\": \"Portal Gun\", \"price\": 9001},\n    ]"}

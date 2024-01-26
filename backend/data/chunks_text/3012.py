@@ -1,0 +1,1 @@
+- Tests a GET request to `/router-depends` with query parameters `q`, `skip`, and `limit`. - Asserts that the status code is 200 (OK). - Asserts that the JSON response contains expected keys 'in' and 'params'.

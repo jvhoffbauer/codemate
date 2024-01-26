@@ -1,0 +1,1 @@
+- Tests if accessing user information without a security API key results in a forbidden (403) status code and an error message indicating that authentication is required. - Uses Flask's built-in testing client to simulate HTTP requests against our application. - Verifies that the expected JSON response is returned with the correct error details.

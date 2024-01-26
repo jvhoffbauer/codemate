@@ -1,0 +1,3 @@
+- Defines a GET route for `"/cookie_example_examples"` with an optional query parameter named `data`.
+- Uses FastAPI's built-in `Cookie` decorator to define a custom cookie called `data`, which has a default value of `None`, an example value of `"cookie_overridden"`, and two possible values in its list of examples (`"cookie1"` and `"cookie2"`).
+- Returns the value of the `data` cookie as the response body.

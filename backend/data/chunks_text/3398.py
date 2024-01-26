@@ -1,0 +1,1 @@
+- Tests if a negative value is passed as path parameter for 'path_param_lt0' endpoint, and returns the same value in JSON format with status code 200.

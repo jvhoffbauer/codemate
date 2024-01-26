@@ -1,0 +1,1 @@
+{"original_code": "@lru_cache\ndef get_settings():\n    return Settings()"}

@@ -1,0 +1,1 @@
+{"original_code": "def random_email() -> str:\n    return f\"{random_lower_string()}@{random_lower_string()}.com\""}

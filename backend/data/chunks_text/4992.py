@@ -1,0 +1,2 @@
+- Defines a class method `all` for the current model (represented by `self`) using Django's ORM (Object Relational Mapping).
+- Returns either a queryset of objects or a list of objects, depending on whether the caller is expecting an iterable or not. This allows for more flexibility in how the data is consumed.

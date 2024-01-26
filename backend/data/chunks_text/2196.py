@@ -1,0 +1,2 @@
+- Defines a function `custom_generate_unique_id3` that takes an argument `route` of type `APIRoute`.
+- The function returns a string in format "baz_[route name]", where `[route name]` is replaced with the actual name of the route passed as an argument to this function.

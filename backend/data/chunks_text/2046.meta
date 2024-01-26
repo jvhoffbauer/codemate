@@ -1,0 +1,1 @@
+{"original_code": "def complete_existing_lang(incomplete: str):\n    lang_path: Path\n    for lang_path in get_lang_paths():\n        if lang_path.is_dir() and lang_path.name.startswith(incomplete):\n            yield lang_path.name"}

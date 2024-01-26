@@ -1,0 +1,3 @@
+- Tests reading system status without authentication token
+- Verifies HTTP status code is 401 Unauthorized and error message is correct
+- Confirms WWW-Authenticate header contains Bearer value for authorization

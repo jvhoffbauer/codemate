@@ -1,0 +1,1 @@
+- Imports a specific function `get_client()` from a module called 'docs_src' which contains additional status codes tutorial for Python version 3.10 (version specified in the file name). - Creates an instance of FlaskTestClient named 'client' using the imported application object ('app') and returns it to be used elsewhere in the program.

@@ -1,0 +1,1 @@
+{"original_code": "    def create(self, db: Session, obj_in: UserCreate | UserAdminCreate) -> User:\n        data = jsonable_encoder(obj_in)\n        data[\"hashed_password\"] = get_password_hash(obj_in.password)\n        del data[\"password\"]\n        db_obj = User(**data)\n        db.add(db_obj)\n        db.commit()\n        db.refresh(db_obj)\n        return db_obj"}

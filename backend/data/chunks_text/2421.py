@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_context_b_bg()` that takes in two arguments: `tasks`, which is used to add background tasks, and `state`, which is passed through dependencies using FastAPI's `Depends`.
+- Inside this function, it defines another asynchronous function called `bg()` that accepts `state` as its argument. This inner function sets the value of 'bg' key inside the dictionary stored in `state` variable. The values for 'context_a' and 'context_b' are also fetched from the same dictionary.
+- Finally, the outer function adds the inner function with the current state as an argument to the list of background tasks using the `BackgroundTasks` object provided by FastAPI. It returns the updated state dictionary.

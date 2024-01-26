@@ -1,0 +1,4 @@
+- Defines an asynchronous function `home3` that returns a dictionary containing the modified environment variables set by GDAL library.
+- Uses RasterIO's context manager to modify the GDAL_DISABLE_READDIR_ON_OPEN variable to "FALSE". This is done to ensure that directories are read during file opening operations instead of being skipped.
+- Utilizes Python's built-in concurrent programming module 'concurrent.futures' to execute multiple tasks simultaneously using threads from a thread pool executor. The results obtained from these tasks are then collected in a list using the map() method.
+- Returns the first element of the resulting list after extracting it from the dictionary returned by the ThreadPoolExecutor().

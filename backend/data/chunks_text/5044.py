@@ -1,0 +1,2 @@
+- Defines an asynchronous function `index()` that takes a `Request` object as its argument
+- Returns a response using the `templates.TemplateResponse()` method with the path to the HTML template and a dictionary of context variables (in this case, just the ID)

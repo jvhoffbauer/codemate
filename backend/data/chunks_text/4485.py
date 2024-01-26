@@ -1,0 +1,4 @@
+- Defines an OpenAPI schema for a FastAPI application with version 3.1.0 and title 'FastAPI' (line 1)
+- Includes information about the API endpoints, including GET requests to retrieve items (lines 9-25)
+- Specifies request headers ('X-Token' and 'X-Key') as required parameters for the item endpoint (lines 16-18)
+- Describes error responses using custom schemas for ValidationErrors and HTTPValidationErrors (lines 27-42)

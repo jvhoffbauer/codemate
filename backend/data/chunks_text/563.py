@@ -1,0 +1,1 @@
+- This function tests a specific tutorial in SQLModel's documentation by running it and checking that certain print statements are called. - The `clear_sqlmodel` parameter is used to clear any existing database connections before running the tutorial. - The `get_testing_print_function` helper function is used to capture standard output during the execution of the tutorial.

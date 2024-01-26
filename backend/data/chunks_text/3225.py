@@ -1,0 +1,4 @@
+- Generates an OpenAPI schema for a FastAPI application using `pytest` and `fastapi`.
+- Retrieves the JSON representation of the OpenAPI schema by making a GET request to the `/openapi.json` endpoint.
+- Asserts that the HTTP status code is 200 and checks if the text content matches the expected value (optional).
+- Verifies that the generated OpenAPI schema contains the correct information such as version, title, paths, components, security schemes, etc.

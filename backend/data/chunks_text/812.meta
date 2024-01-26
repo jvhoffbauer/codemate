@@ -1,0 +1,1 @@
+{"original_code": "def hash_password(password: str) -> bytes:\n    pw = bytes(password, \"utf-8\")\n    salt = bcrypt.gensalt()\n    return bcrypt.hashpw(pw, salt)"}

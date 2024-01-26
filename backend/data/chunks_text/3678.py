@@ -1,0 +1,1 @@
+- This function tests the `/users` endpoint with a token of 'jessica' using Pytest and FastAPI's built-in TestClient. - The expected status code is 200, indicating successful retrieval of data. - The JSON response should contain an array containing two user objects with corresponding keys 'username'.

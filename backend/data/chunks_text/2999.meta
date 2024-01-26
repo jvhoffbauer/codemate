@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/router-decorator-depends/\", dependencies=[Depends(common_parameters)])\nasync def router_decorator_depends():\n    return {\"in\": \"router-decorator-depends\"}"}

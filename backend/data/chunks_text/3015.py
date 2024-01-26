@@ -1,0 +1,1 @@
+- Tests the router decorator with query parameters `q`, `skip`, and `limit`. - Verifies that the endpoint returns a status code of 200 and expected JSON data when called with specific query parameter values (`q="foo"`, `skip=100`, and `limit=200`) using Flask's built-in testing client.

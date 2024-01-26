@@ -1,0 +1,1 @@
+- Defines a function `resp_ok()` that takes optional arguments for response status code (default is 0), message (default is 'ok'), and data to be returned in the response body (optional). - Returns a dictionary with keys 'code','msg', and 'data' containing the specified values or defaults if not provided.

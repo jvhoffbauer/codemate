@@ -1,0 +1,3 @@
+- Generates an OpenAPI schema for a FastAPI application using `pydantic` and `fastapi`.
+- The generated schema is saved as JSON at the endpoint `/openapi.json`.
+- The schema includes definitions for endpoints (in this case, `GET /keyword-weights`) with detailed responses and request parameters.

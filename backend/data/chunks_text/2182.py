@@ -1,0 +1,3 @@
+- This endpoint is accessed using the URL `http://localhost:8000/counter/`.
+- The `Depends()` decorator is used to pass a dependency (in this case, the value of the counter) into the function as an argument named `count`.
+- The function returns a JSON response with a key called "counter" and its corresponding value, which is the current state of the counter.

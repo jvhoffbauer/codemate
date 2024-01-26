@@ -1,0 +1,1 @@
+- Defines an asynchronous function `predict` that takes a single argument `x`, which is assumed to be a floating point number. - Calls the predefined machine learning model `ml_models["answer_to_everything"]` with input `x`. - Returns a dictionary containing a key-value pair where the value is the output of the ML model and the key is "result".

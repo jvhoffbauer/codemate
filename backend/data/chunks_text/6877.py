@@ -1,0 +1,3 @@
+- Creates a new user with a randomly generated email and password using `random_email()` and `random_lower_string()`.
+- Uses FastAPI's built-in CRUD operations to insert the new user into the database via `crud.user.create()`.
+- Returns the newly created user object for further use or manipulation.

@@ -1,0 +1,3 @@
+- Defines a function `process_items` that takes a dictionary of item names and their corresponding prices as an argument (`prices`)
+- Iterates over each key-value pair in the dictionary using a loop with list comprehension syntax (`for item_name, item_price in prices.items():`)
+- Prints out the name of the item followed by its price on separate lines within the loop body

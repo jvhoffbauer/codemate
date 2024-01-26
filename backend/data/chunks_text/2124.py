@@ -1,0 +1,2 @@
+- Defines a GET request for the path `"/path/param/{item_id}"`, where `{item_id}` is replaced with a value passed in the URL (e.g., "http://localhost:8000/path/param/123")
+- Uses FastAPI's `Path` decorator to automatically parse and validate the `item_id` parameter as an optional string, which can be accessed inside the function using the argument name `item_id`. If no `item_id` is provided in the URL, it defaults to None.

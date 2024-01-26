@@ -1,0 +1,1 @@
+{"original_code": "def verify_password(plain_password: str, hashed_password: str) -> bool:\n    \"\"\"\n    \u9a8c\u8bc1\u5bc6\u7801\n    :param plain_password: \u539f\u5bc6\u7801\n    :param hashed_password: hash\u540e\u7684\u5bc6\u7801\n    :return:\n    \"\"\"\n    return pwd_context.verify(plain_password, hashed_password)"}

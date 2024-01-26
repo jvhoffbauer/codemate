@@ -1,0 +1,3 @@
+1. Defines an inner function `iterfile()` that will be used to generate a stream of data for the response body.
+2. Uses a context manager (the `with` statement) to automatically close the opened file after it's done being read. The `mode="rb"` argument specifies binary reading mode.
+3. Yields each byte or block of bytes in the file using the `yield from` syntax, which is equivalent to calling `__aiter__()`, `__anext__()`, and `__awrite__(value)__()` on the iterator returned by `file_like`. This allows us to lazily consume the contents of the file without loading it all into memory at once.

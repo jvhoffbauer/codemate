@@ -1,0 +1,1 @@
+- Defines an overloaded function called `select` with two positional arguments of type `_TCCA` for types `T0` and `T1`, respectively (type hint ignored). - Returns a generic class called `Select` that takes a tuple as its argument containing both input types `T0` and `T1`.

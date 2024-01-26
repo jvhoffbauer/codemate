@@ -1,0 +1,2 @@
+- Imports `create_access_token()` function from tutorial on using Python 3.10 in FastAPI security features
+- Creates an access token with a custom data payload and asserts that it is not None

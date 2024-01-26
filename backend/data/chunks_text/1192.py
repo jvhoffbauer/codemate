@@ -1,0 +1,1 @@
+- Defines a function `get_items()` that takes optional arguments `skip` and `limit`. Default values are provided for both. - Uses SQLAlchemy's `select()`, `offset()`, and `limit()` methods to retrieve a list of items from the database with pagination based on the given `skip` and `limit` parameters.

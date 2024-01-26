@@ -1,0 +1,1 @@
+{"original_code": "def test_no_entrypoints__ok(fastapi_jsonrpc_components_fine_names):\n    app = jsonrpc.API(\n        fastapi_jsonrpc_components_fine_names=fastapi_jsonrpc_components_fine_names\n    )\n    app_client = TestClient(app)\n    resp = app_client.get(\"/openapi.json\")\n    resp.raise_for_status()\n    assert resp.status_code == 200"}

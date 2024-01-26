@@ -1,0 +1,4 @@
+- Defines a function `probe` that returns an endpoint object (`Endpoint`) using FastAPI's decorator syntax.
+- Inside the `probe` function, two methods are defined with the same name as their arguments (`probe`, `probe2`) and decorated with FastAPI's method decorator.
+- Both methods take a single argument named `jsonrpc_method` which is passed to them through dependency injection using the `Depends` utility function from FastAPI. The value of this argument comes from another function called `get_jsonrpc_method`.
+- Each method simply returns the value of its `jsonrpc_method` argument.

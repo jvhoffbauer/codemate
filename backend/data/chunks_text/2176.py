@@ -1,0 +1,3 @@
+- Defines a GET route with name `/enum-status-code`.
+- Sets the HTTP response status code to CREATED (201).
+- Returns a string `'foo bar'` as the response body.

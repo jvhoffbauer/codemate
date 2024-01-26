@@ -1,0 +1,1 @@
+- Tests if a GET request to `"/path/float/42"` returns an HTTP status code of 200 (OK) and returns the float value 42 as JSON in the response body.

@@ -1,0 +1,4 @@
+- This function defines a FastAPI web socket endpoint at `/ws`.
+- It accepts a single argument, `websocket`, which is an instance of the built-in `WebSocket` class in Starlette.
+- The function also takes an optional dependency, `value`, which is extracted from the HTTP connection using another function called `extract_value_from_http_connection`.
+- After accepting the incoming websocket request, the function sends back the `value` to the client and then closes the websocket connection.

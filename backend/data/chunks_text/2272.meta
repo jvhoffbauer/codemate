@@ -1,0 +1,1 @@
+{"original_code": "def get_validdict():\n    return {\n        \"k1\": Item(aliased_name=\"foo\"),\n        \"k2\": Item(aliased_name=\"bar\", price=1.0),\n        \"k3\": Item(aliased_name=\"baz\", price=2.0, owner_ids=[1, 2, 3]),\n    }"}

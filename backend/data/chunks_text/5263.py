@@ -1,0 +1,3 @@
+- Defines a method `render()` that takes in an argument `content`.
+- The method returns the result of calling `json.dumps()` with specific arguments for encoding and handling special cases like `NaN`, which is then encoded into bytes using `encode('utf-8')`.
+- This implementation allows replacing `NaN` values with `null` when serializing JSON data using `simplejson`.

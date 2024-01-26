@@ -1,0 +1,3 @@
+- Defines a method `route_page()` that returns a callable function (a coroutine).
+- The inner function `route()` is an asynchronous view function that takes two arguments: a `Request` object and a variable named `page`, which has been decorated with the `@anndecorator` syntax to indicate its data type (in this case, it's likely a custom class or enum representing a specific web page).
+- The `return` statement inside `route()` calls another method called `page_parser()`. This method is not defined in this snippet but presumably parses the requested page based on the given `Request` and `page` objects.

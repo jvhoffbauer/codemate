@@ -1,0 +1,3 @@
+- Defines a `__post_init__` method to be called after object initialization
+- Retrieves properties from an algorithm's schema to extract input/output values and algorithm parameters
+- Registers two FastAPI endpoints using the router decorator: one to retrieve all algorithms' metadata (GET /algorithms), another to retrieve specific algorithm's metadata by ID (GET /algorithms/{algorithmId})

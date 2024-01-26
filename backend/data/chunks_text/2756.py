@@ -1,0 +1,3 @@
+- Tests a specific endpoint with multiple models and annotations using Flask's built-in testing client (client)
+- Asserts that the status code is 200 and saves the text for debugging purposes if necessary
+- Deserializes the JSON response into a Python dictionary and asserts that it contains expected keys and values

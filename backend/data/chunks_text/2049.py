@@ -1,0 +1,5 @@
+- Creates a new translation directory with the given language code (`lang`) in the `docs` folder.
+- Checks if the directory already exists and raises an error or continues depending on the result.
+- Writes a configuration file based on the existing English one to inherit its settings.
+- Creates a new index page for the translated documentation using the content from the original English one but adding a placeholder for missing translations.
+- Updates the list of available languages after creating the new directory.

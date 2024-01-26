@@ -1,0 +1,4 @@
+- Sets environment variable `GDAL_DISABLE_READDIR_ON_OPEN` to a deprecated value using MonkeyPatch in PyTest
+- Creates FastAPI instance and creates an APIRouter object with custom route factory that sets the same environment variable for all routes
+- Defines four endpoints (home, home1, home2, home3) that retrieve GDAL configuration values using different methods (sync function call, async function call, sync ThreadPoolExecutor usage, async ThreadPoolExecutor usage). The first two endpoints use the default behavior of FastAPI which is synchronous execution by default. The last two endpoints demonstrate how to execute long running tasks concurrently using Futures library.
+- Includes the created APIRouter into the main FastAPI application and tests each endpoint using TestClient provided by FastAPI testing utilities.

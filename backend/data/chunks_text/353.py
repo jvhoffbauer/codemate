@@ -1,0 +1,1 @@
+- Resets the `SQLModel.metadata` and disposes of the default registry to prevent warnings during testing or development when creating new models. - Yields control back to the caller, allowing other functions to execute before continuing with the rest of this function's logic.

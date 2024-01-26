@@ -1,0 +1,4 @@
+- Creates a new user with a randomly generated username and password using `UserCreate`.
+- Persists the user to the default bucket using `crud.user.upsert`.
+- Retrieves the newly created user from the database by username using `crud.user.get`.
+- Asserts that both users have equal values for their respective attributes (i.e., they are equivalent).

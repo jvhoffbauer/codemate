@@ -1,0 +1,5 @@
+- This function is a GET request for retrieving a specific user with the given `username`.
+- It uses FastAPI's decorator `@app.get` to define an endpoint and specifies the path parameter `{username}` using curly braces.
+- The returned data type of this function is defined as `User`, which is specified by the `response_model` argument passed to `@app.get`.
+- Inside the function body, it first gets the `Bucket` object from some external storage service (e.g., S3 or GCS), then calls another helper method `get_user` passing in both the `Bucket` and `username` parameters.
+- Finally, the resulting `User` object is directly returned without any further processing.

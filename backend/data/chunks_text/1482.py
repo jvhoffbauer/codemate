@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that takes a query parameter (optional) with alias 'item-query' and type Union[str, None]. - Uses Pydantic to validate input types for the query parameter. - Returns a dictionary containing either just the list of items or also includes the query string depending on whether the query parameter was provided.

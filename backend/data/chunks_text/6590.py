@@ -1,0 +1,3 @@
+- Defines a method called `echo` using FastAPI's decorator `@app.get`.
+- Accepts an optional parameter `data` of type string, with default value provided by FastAPI's `Body` function and example values specified in a list.
+- Returns a string equal to the input `data`, after appending it to a global variable named `echo_info.history`.

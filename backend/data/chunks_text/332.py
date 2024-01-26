@@ -1,0 +1,1 @@
+- Creates a function `create_heroes` that initializes three new instances of the `Hero` class and sets their attributes using keyword arguments. - Uses SQLAlchemy's `Session` context manager to add these heroes to the database and commit the changes in one atomic operation.

@@ -1,0 +1,3 @@
+- Initializes a SQLAlchemy session and connects it to the database engine using `Session(engine)`.
+- Uses a context manager (`with`) to automatically close the session after use, preventing resource leaks.
+- Executes a simple SELECT query inside the session to ensure that the database connection is alive and ready for further operations. If an exception occurs during this step, raises it immediately instead of letting the program continue silently.

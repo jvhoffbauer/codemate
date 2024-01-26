@@ -1,0 +1,1 @@
+{"original_code": "@site.register_admin\nclass CategoryAdmin(admin.ModelAdmin):\n    page_schema = \"Category\"\n    # \u914d\u7f6e\u7ba1\u7406\u6a21\u578b\n    model = Category"}

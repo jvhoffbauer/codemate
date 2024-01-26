@@ -1,0 +1,2 @@
+- Tests if GET request to path "/path/param-le-ge/{num}" with parameter "num" equal or less than 1 returns a successful HTTP status code (200)
+- Uses Flask's built-in `client` object for making requests and asserts that the returned status code is expected using Python's unittest framework

@@ -1,0 +1,3 @@
+- Defines an asynchronous function `main()`.
+- Returns a `StreamingResponse` object that wraps the output of `fake_video_streamer()`, which is assumed to be a generator yielding video frames or data chunks for streaming.
+- This allows Flask to serve the streamed content directly without buffering it in memory, making it more efficient and scalable for large videos or live streams.

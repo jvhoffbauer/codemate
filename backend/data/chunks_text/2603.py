@@ -1,0 +1,3 @@
+- This function is a FastAPI route decorated with `@app.delete`.
+- It takes two arguments: `item_id`, which is passed as a path parameter (`{item_id}`), and `item`, which is an instance of the `Item` model class that's automatically populated by FastAPI based on the URL parameters.
+- The function returns a dictionary containing the deleted item ID and the original item object for reference purposes.

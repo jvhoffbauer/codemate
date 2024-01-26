@@ -1,0 +1,4 @@
+- Creates an `AsyncGenerator` fixture named `client` at session scope using `pytest_asyncio`.
+- Initializes a new instance of `AsyncClient` from FastAPI's built-in test client and passes in our app object (`app`) and customized base URL ("http://test").
+- Sets up a header called 'Host' to be equal to 'localhost'.
+- Yields the initialized `AsyncClient` for use within tests that require it.

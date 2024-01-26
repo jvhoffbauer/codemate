@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture()\nasync def connection():\n    async with engine.begin() as conn:\n        yield conn\n        await conn.rollback()"}

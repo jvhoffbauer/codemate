@@ -1,0 +1,3 @@
+- Defines a function `test_openapi_schema` that tests the OpenAPI schema of the FastAPI application.
+- Makes an HTTP GET request to the `/openapi.json` endpoint using the Flask client and asserts that the status code is 200 (OK).
+- Asserts that the JSON response matches the expected structure, which includes version information, paths for endpoints, components with schemas, etc. Specifically, it checks that the `Item` schema has required fields based on either Pydantic v1 or v2 syntax, depending on whether the corresponding flag is set in the `IsXxx` decorators.

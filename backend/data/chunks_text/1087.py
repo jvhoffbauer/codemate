@@ -1,0 +1,4 @@
+- This function takes a fake database (presumably for testing purposes), a username, and a password as arguments.
+- It retrieves the user with the given username from the fake database using `get_user()`. If no such user exists, it returns false immediately.
+- It checks whether the hashed password of the user matches the plaintext password provided by comparing them using `verify_password()`. If they don't match, it returns false again.
+- Otherwise, it returns the user object itself.

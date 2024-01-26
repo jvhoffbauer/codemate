@@ -1,0 +1,1 @@
+{"original_code": "def _get_client_key(client_id: str = Query(...)) -> str:\n    return f\"{client_id}_key\""}

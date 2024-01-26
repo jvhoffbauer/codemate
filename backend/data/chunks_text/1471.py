@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in a query parameter (`q`) with a minimum length of 3 characters.
+- Returns an object containing either just the list of items or also includes the search query as a separate key-value pair depending on whether the query was provided.

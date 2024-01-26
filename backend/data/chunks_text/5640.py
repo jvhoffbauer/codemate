@@ -1,0 +1,2 @@
+- Defines a property named `route_list` that returns a callable function with variable number of arguments and an arbitrary return type (represented by `Any`)
+- Throws a `NotImplementedError`, indicating that this method should be overridden in subclasses to provide actual implementation for the `route_list` property

@@ -1,0 +1,3 @@
+- Tests login functionality by making a POST request to /token with username and password as parameters
+- Verifies that the server returns a successful HTTP status code (200) and contains an access token in the JSON response
+- Checks that the token type is 'bearer'

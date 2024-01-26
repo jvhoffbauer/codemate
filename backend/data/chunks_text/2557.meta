@@ -1,0 +1,1 @@
+{"original_code": "    @websocket_middleware\n    async def catcher(websocket, call_next):\n        try:\n            return await call_next()\n        except Exception as e:  # pragma: no cover\n            caught.append(e)\n            raise"}

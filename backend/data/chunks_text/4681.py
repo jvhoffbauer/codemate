@@ -1,0 +1,1 @@
+- Tests uploading a large file using FastAPI's built-in `File` object and Pydantic's validation for maximum size of 2^16 bytes. - Creates a temporary directory to store the large file, writes data into it, and passes its path to the API endpoint in a POST request. - Asserts that the server returns a successful status code and includes the correct file size in the JSON response.

@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/body-embed\")\ndef send_body_embed(b: Union[str, None] = Body(embed=True)):\n    return b"}

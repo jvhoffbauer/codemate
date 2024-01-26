@@ -1,0 +1,1 @@
+- Defines a function `save_union_body` that takes an argument `item` of type `Union[OtherItem, Item]`. - Returns a dictionary with a key "item" and value equal to the input `item`, regardless of whether it is of type `OtherItem` or `Item`.

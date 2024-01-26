@@ -1,0 +1,1 @@
+{"original_code": "def create_user(db: Session, user: schemas.UserCreate):\n    fake_hashed_password = user.password + \"notreallyhashed\"\n    db_user = models.User(email=user.email, hashed_password=fake_hashed_password)\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user"}

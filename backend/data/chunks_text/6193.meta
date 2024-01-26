@@ -1,0 +1,1 @@
+{"original_code": "    def country_code(self):\n        \"\"\"\n        Gets the alpha-2 code represention of the country. Returns 'XX' if none is found.\n\n        :returns: The country code.\n        :rtype: str\n        \"\"\"\n        return (\n            countries.country_code(self.country) or countries.DEFAULT_COUNTRY_CODE\n        ).upper()"}

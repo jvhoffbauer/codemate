@@ -1,0 +1,3 @@
+- Defines a function `auth_user` that takes an optional argument `credentials`, which is obtained using the `Depends()` decorator and passed to it from another function.
+- Inside the function, checks whether the provided user credentials match a specific set of values. If not, raises a customized HTTP exception with a specified error message and authentication header.
+- Returns the original `credentials` object if the validation passes successfully.

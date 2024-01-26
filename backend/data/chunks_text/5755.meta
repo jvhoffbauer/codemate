@@ -1,0 +1,1 @@
+{"original_code": "    async def handle(\n        self, request: Request, data: SchemaUpdateT, **kwargs\n    ) -> BaseApiOut[Any]:\n        raise NotImplementedError"}

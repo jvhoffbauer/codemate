@@ -1,0 +1,2 @@
+- Registers a custom admin class `TmpAdmin` for testing purposes using Django's built-in `AdminSite`.
+- Raises an AssertionError when attempting to retrieve the registered admin without providing its schema, indicating that this information is required by Django's admin system.

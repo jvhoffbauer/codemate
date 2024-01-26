@@ -1,0 +1,1 @@
+{"original_code": "@dataclass\nclass FilterSelectPerm(SelectPerm):\n    \"\"\"filter(where)\u5b50\u53e5\u9009\u62e9\u6570\u636e\u96c6\"\"\"\n\n    filters: list = None\n\n    async def _call(self, admin: ModelAdmin, request: Request, sel: Select) -> Select:\n        if not self.filters:\n            return sel\n        return sel.filter(*self.filters)"}

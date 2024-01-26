@@ -1,0 +1,3 @@
+- Registers an instance of `BaseTilerFactory` as an extension with this class.
+- Allows for customization and addition of new tile types through subclassing `BaseTilerFactory`.
+- Enables dynamic creation of tiles based on specific requirements or data sources.

@@ -1,0 +1,3 @@
+- Initializes a new instance of `PageSchemaAdminT`, which is a subclass of `AdminModelAdmin`.
+- Sets the application (`app`) as its parent using the `super()` function.
+- Creates an empty list called `_children` to store instances of `PageSchemaAdminT` that will be added later.

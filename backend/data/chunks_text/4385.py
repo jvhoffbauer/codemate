@@ -1,0 +1,3 @@
+- Defines a function `test_openapi_schema` that tests the OpenAPI schema of our FastAPI application using the built-in testing framework provided by FastAPI (TestClient).
+- Makes an HTTP GET request to the `/openapi.json` endpoint and asserts that it returns a status code of 200.
+- Asserts that the JSON response returned from the API matches the expected structure defined in the `response.json()`. This includes checking for specific keys such as 'openapi', 'info', 'paths' and 'components'. Additionally, we check the structure of nested objects like 'HTTPValidationError' under 'components->schemas'.

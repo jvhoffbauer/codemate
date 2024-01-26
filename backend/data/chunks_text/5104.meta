@@ -1,0 +1,1 @@
+{"original_code": "def main(\n    req: func.HttpRequest,\n    context: func.Context,\n) -> func.HttpResponse:\n    \"\"\"Run App in AsgiMiddleware.\"\"\"\n    return func.AsgiMiddleware(app).handle(req, context)"}

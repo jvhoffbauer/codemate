@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `websocket_request_validation_exception_handler`.
+- Takes two arguments - a `WebSocket` object and a `WebSocketRequestValidationError` exception.
+- Closes the web socket connection with status code WS_1008_POLICY_VIOLATION (Policy Violation) and sends the error details in JSON format using `jsonable_encoder()`.

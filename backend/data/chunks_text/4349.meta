@@ -1,0 +1,1 @@
+{"original_code": "def test_events(app: FastAPI):\n    with TestClient(app) as client:\n        response = client.get(\"/items/\")\n        assert response.status_code == 200, response.text\n        assert response.json() == [{\"name\": \"Foo\"}]\n    with open(\"log.txt\") as log:\n        assert \"Application shutdown\" in log.read()"}

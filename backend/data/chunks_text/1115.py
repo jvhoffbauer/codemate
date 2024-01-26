@@ -1,0 +1,3 @@
+- This function is an asynchronous (async) method that returns a list of users, but in this specific case, it's not returning any user data since we are using `return current_user`.
+- The parameter `current_user: User = Depends(get_current_active_user)` is used to pass the authenticated user object from the FastAPI middleware `get_current_active_user()` into our function for further processing or usage.
+- By passing the `Depends()` decorator with `get_current_active_user()`, we ensure that the authentication and authorization checks are performed before executing the function body.

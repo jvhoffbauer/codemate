@@ -1,0 +1,1 @@
+{"original_code": "def login(form_data: \"OAuth2PasswordRequestFormStrict\" = Depends()):\n    return form_data"}

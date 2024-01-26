@@ -1,0 +1,1 @@
+- Compares a plain text password with its corresponding hash using Python's Cryptography library (specifically, the `CryptoHash` class). - Returns True if the plain text and hash match, False otherwise. - Helps ensure secure storage of user passwords by avoiding storing them in plaintext form.

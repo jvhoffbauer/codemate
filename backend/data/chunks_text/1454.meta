@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/keyword-weights/\", response_model=Dict[str, float])\nasync def read_keyword_weights():\n    return {\"foo\": 2.3, \"bar\": 3.4}"}

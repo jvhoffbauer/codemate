@@ -1,0 +1,1 @@
+{"original_code": "async def redirect_pydantic():\n    return \"https://pydantic-docs.helpmanual.io/\""}

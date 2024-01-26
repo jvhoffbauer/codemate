@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/`, with a query parameter named `q`.
+- Uses Pydantic's `Annotated` and `Query` decorators to validate and parse the `q` parameter as a required string of at least 3 characters length.
+- Returns a dictionary containing an array of items (hardcoded here) and optionally updates it with a new key called `q` that contains the value of the `q` parameter if provided in the request URL.

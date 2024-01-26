@@ -1,0 +1,4 @@
+- Tests retrieving an existing user using a superuser token and the API endpoint for users (/v1/users/:username).
+- Creates a new user with a unique username and password, then saves it to the default bucket.
+- Makes a GET request to the API endpoint with the created username as a parameter, passing in the superuser token headers.
+- Asserts that the response status is within the range of successful HTTP responses (2xx), extracts the JSON body from the response, and compares it against the saved user object's attributes.

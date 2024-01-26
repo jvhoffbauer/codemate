@@ -1,0 +1,1 @@
+{"original_code": "async def create_file(file: bytes = File(description=\"A file read as bytes\")):\n    return {\"file_size\": len(file)}"}

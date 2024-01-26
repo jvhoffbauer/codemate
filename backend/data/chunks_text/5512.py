@@ -1,0 +1,3 @@
+- Tests the `/tilejson` endpoint of Rio Tiler using mocks for HTTP requests and RasterIO functions.
+- Verifies that an error is returned when a required parameter (URL) is missing.
+- Confirms that assets, minzoom, maxzoom, tile format, and scale parameters are correctly passed to the backend and reflected in the resulting TileJSON object.

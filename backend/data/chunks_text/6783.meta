@@ -1,0 +1,1 @@
+{"original_code": "    def authenticate(self, db: Session, *, email: str, password: str) -> Optional[User]:\n        user = self.get_by_email(db, email=email)\n        if not user:\n            return None\n        if not verify_password(password, user.hashed_password):\n            return None\n        return user"}

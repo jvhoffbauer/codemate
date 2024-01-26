@@ -1,0 +1,1 @@
+{"original_code": "    async def get_list_table(self, request: Request) -> TableCRUD:\n        table = await super().get_list_table(request)\n        table.footable = True\n        return table"}

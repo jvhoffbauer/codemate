@@ -1,0 +1,1 @@
+{"original_code": "    async def has_read_permission(\n        self, request: Request, item_id: List[str], **kwargs\n    ) -> bool:\n        return await self.has_page_permission(request, action=CrudEnum.read)"}

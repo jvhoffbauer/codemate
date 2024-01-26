@@ -1,0 +1,4 @@
+- Defines a new endpoint `"/examples/"`, which is accessed using HTTP POST method.
+- Accepts an argument named `item` of type `Item`. This argument is bound to the request body using FastAPI's built-in `Body()` function.
+- The `Item` class has a nested field called `examples` that contains a list of dictionaries with keys `"data"` and values containing sample data for this API call.
+- Returns the value of the `item` object passed as input.

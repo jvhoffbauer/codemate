@@ -1,0 +1,3 @@
+- Creates a new `Item` object with a fixed set of values for testing purposes
+- The item is named "object" and was created on July 26th, 2021
+- Its initial price is $1.00, and it has been owned by users with IDs 1, 2, and 3 at some point in time

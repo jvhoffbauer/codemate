@@ -1,0 +1,3 @@
+- Defines a middleware function called `errorhandler` for handling errors in web socket connections using FastAPI's built-in decorator `@websocket_middleware`.
+- Uses an `async` context manager to wrap the execution of the next handler (`call_next`) inside a `try...except` block that catches any exceptions thrown by it.
+- If an exception is caught, closes the current web socket connection with status code `status.WS_1006_ABNORMAL_CLOSURE` and provides a customized error message using the `reason` parameter.

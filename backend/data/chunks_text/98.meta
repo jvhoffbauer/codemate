@@ -1,0 +1,1 @@
+{"original_code": "def nulls_first(\n    column: Union[_ColumnExpressionArgument[_T], _T]\n) -> UnaryExpression[_T]:\n    return sqlalchemy.nulls_first(column)  # type: ignore[arg-type]"}

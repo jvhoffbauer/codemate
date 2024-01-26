@@ -1,0 +1,4 @@
+- Defines an asynchronous function `read_item` with three positional arguments and one keyword argument (default value)
+- The first argument `item_id` is required and should be a string representing the unique identifier of the item to retrieve
+- An optional query parameter `q` can be passed in as a second argument or through the URL query string using the `q` parameter
+- A boolean flag `short` determines whether to include a detailed description of the item; default is false for longer descriptions

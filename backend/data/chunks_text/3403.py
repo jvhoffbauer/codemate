@@ -1,0 +1,3 @@
+- Tests GET request to endpoint `"/path/param-lt-gt"` with parameter value of `2`.
+- Verifies that status code is `200 OK`.
+- Asserts that returned JSON data is equal to `2`.

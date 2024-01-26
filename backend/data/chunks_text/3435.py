@@ -1,0 +1,4 @@
+- Defines an asynchronous function `inner` that modifies a global variable `received`.
+- Waits for a message using the `receive` coroutine and checks its type. If it's not an HTTP request, returns the message without further processing (skipped by test coverage tool).
+- Calculates the length of the message body and updates the value of `received`, which is assumed to be initialized outside this scope.
+- Checks whether the total content size has exceeded a certain limit. If so, raises an exception with specific details.

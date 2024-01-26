@@ -1,0 +1,2 @@
+- Tests if `/override` endpoint returns expected content and header using Flask's built-in testing client
+- Uses a context manager to ensure that resources are properly released after use

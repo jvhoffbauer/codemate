@@ -1,0 +1,8 @@
+- Imports `test_tutorial` function and `create_engine` method from SQLAlchemy's `orm` module.
+- Defines a variable called `mod` to hold the imported `tutorial010_py310` module from the `docs_src.tutorial.where` directory.
+- Sets the value of `mod.sqlite_url` to an in-memory SQLite database URL.
+- Creates a new engine using `create_engine`.
+- Initializes a list called `calls` to store output values for testing purposes.
+- Retrieves the built-in print function and replaces it with a custom one that saves its arguments to the `calls` list.
+- Calls the `main` function defined within the `mod` module while passing the patched `print` function.
+- Asserts that the expected output is stored correctly in the `calls` list.

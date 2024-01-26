@@ -1,0 +1,1 @@
+{"original_code": "    async def create(\n        self, session: AsyncSession, obj_in: CreateSchemaType\n    ) -> ModelType:\n        obj_in_data = dict(obj_in)\n        db_obj = self._model(**obj_in_data)\n        session.add(db_obj)\n        await session.commit()\n        return db_obj"}

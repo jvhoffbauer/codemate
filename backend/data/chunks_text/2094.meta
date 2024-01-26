@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/a/{id}\")\nasync def a(id):\n    pass  # pragma: no cover"}

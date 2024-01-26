@@ -1,0 +1,1 @@
+- Tests if a redirect response is returned when accessing "/fastapi". - Asserts that the status code of the response is 307 (Temporary Redirect). - Verifies that the location header contains the URL to which the user should be redirected ("https://fastapi.tiangolo.com").

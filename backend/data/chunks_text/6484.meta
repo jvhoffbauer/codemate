@@ -1,0 +1,1 @@
+{"original_code": "    def bind_dependency_overrides_provider(self, value):\n        for route in self.routes:\n            route.dependency_overrides_provider = value"}

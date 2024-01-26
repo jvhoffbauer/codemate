@@ -1,0 +1,3 @@
+- Tests that GET request with path parameter `"item_id"` less than required limit (in this case, 2) returns a validation error with status code 422 and detailed message about the violation of greater than or equal constraint.
+- The error message includes information such as location of the input in URL path ("path", "item_id"), type of constraint violated ("greater_than_equal"), expected minimum value ("3"), and contextual details like URL for further reference.
+- This implementation follows both Pydantic v1 and v2 conventions for handling validation errors using Pytest's fixture `match_pydantic_error_url`.

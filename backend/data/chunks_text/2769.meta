@@ -1,0 +1,1 @@
+{"original_code": "        def read_root() -> Union[Response, None]:\n            return Response(content=\"Foo\")  # pragma: no cover"}

@@ -1,0 +1,1 @@
+- Tests if accessing `/items` without a token returns a status code of 200 and a specific error message in the JSON response body.

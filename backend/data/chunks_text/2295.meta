@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/query/\")\ndef query_convertor(param: str = Query()):\n    return {\"query\": param}"}

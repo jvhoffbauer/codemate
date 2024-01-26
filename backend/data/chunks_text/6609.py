@@ -1,0 +1,2 @@
+- Tests if a method with an unknown name is called using JSON RPC requests and asserts that it returns an error message with code -32601 (METHOD_NOT_FOUND) and a descriptive message.
+- Does not call or interact with any external function named 'echo' in this context.

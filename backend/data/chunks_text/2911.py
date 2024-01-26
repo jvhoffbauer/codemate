@@ -1,0 +1,3 @@
+- Sends a GET request to the root URL with a custom header using Flask's `client` object
+- Asserts that the server returns an HTTP 200 OK status code
+- Deserializes the JSON response and asserts that it contains expected values for two keys ('dep1', 'dep2')

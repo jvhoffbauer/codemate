@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_next_item()` that returns a dictionary representing a product with its name, price, description, and tags. - The returned dictionary contains keys for 'name', 'price', 'description', and 'tags'. - The value of the 'tags' key is set to ['breater'].

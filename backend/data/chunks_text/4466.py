@@ -1,0 +1,1 @@
+- Tests getting users with an invalid X-Key header value using a fake token and asserts that it returns a HTTP status code of 400 Bad Request with an error message in the JSON body.

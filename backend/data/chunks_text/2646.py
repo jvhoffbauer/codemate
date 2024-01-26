@@ -1,0 +1,1 @@
+- Tests the endpoint `/explicit-query` with a required query parameter 'q' set to an explicit value of 'foo'. - Verifies that the status code is 200 and the returned JSON matches the expected value 'foo'.

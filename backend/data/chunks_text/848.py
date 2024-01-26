@@ -1,0 +1,2 @@
+- Defines a function `api_route()` that takes several arguments for configuring an API route, including the endpoint URL (`path`) and optional parameters such as HTTP status codes, request/response models, and OpenAPI documentation.
+- Returns a decorator function that can be applied to a view function or class method to register it with FastAPI's routing system using the specified configuration.

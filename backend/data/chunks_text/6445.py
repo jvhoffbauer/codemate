@@ -1,0 +1,4 @@
+- Defines a context manager `_fix_sentry_scope` that modifies the current Sentry Hub and its configuration for the duration of the context.
+- Clears all breadcrumbs from the current scope using `scope.clear_breadcrumbs()`.
+- Adds an event processor to the current scope using `scope.add_event_processor()`, which is created by calling `self._make_sentry_event_processor()`.
+- Yields control back to the caller, executing any statements within the context block.

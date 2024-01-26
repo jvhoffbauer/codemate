@@ -1,0 +1,4 @@
+- Tests crop endpoints with missing assets and expressions, returning a 400 status code.
+- Verifies that passing valid asset (band), rescale factor, and max size parameters returns a PNG image with expected dimensions.
+- Confirms that specifying custom width and height values also works as expected.
+- Demonstrates how to use `parse_img()` function from `rio_tiler.utils` module to extract metadata from the returned image data.

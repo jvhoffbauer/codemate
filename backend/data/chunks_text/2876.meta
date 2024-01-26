@@ -1,0 +1,1 @@
+{"original_code": "async def get_database():\n    temp_database = fake_database.copy()\n    try:\n        yield temp_database\n        fake_database.update(temp_database)\n    except HTTPException:\n        state[\"except\"] = True\n    finally:\n        state[\"finally\"] = True"}

@@ -1,0 +1,4 @@
+- Tests synchronous endpoint `/sync_raise_other`, which raises an error due to a dependency issue (`OtherDependencyError`)
+- Asserts that initial state of `/sync_raise` is correct before raising the error
+- Catches and verifies the raised exception, while checking if there are any unexpected errors during request handling
+- Verifies that the expected final state of `/sync_raise` is reached after the error has been handled

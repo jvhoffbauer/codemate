@@ -1,0 +1,3 @@
+- Defines a function `parse_obj()` that takes three arguments: `cls`, an instance of `Type` representing the model class; `obj`, any Python object to be parsed into the corresponding SQLAlchemy ORM object; and `update`, an optional dictionary containing updates for existing objects (default is `None`)
+- If Pydantic version 2 or lower is detected using the `IS_PYDANTIC_V2` constant, it calls the private method `_enforce_dict_if_root()` on the input object before passing it to the `model_validate()` method of the model class (this ensures that the root level of the JSON data is always represented as a dict in Pydantic v1)
+- Otherwise, it directly passes the input object to the `model_validate()` method without enforcing the dict structure at the root level

@@ -1,0 +1,3 @@
+- Initializes missing attributes with values retrieved from `self.input`.
+- Uses a method called `_read()` to retrieve these values (not defined here).
+- Sets default minimum and maximum zoom levels based on the mosaic definition's bounds.

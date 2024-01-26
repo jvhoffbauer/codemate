@@ -1,0 +1,1 @@
+{"original_code": "    async def on_filter_pre(\n        self, request: Request, obj: Optional[SchemaFilterT], **kwargs\n    ) -> Dict[str, Any]:\n        return obj and {\n            k: v\n            for k, v in obj.dict(exclude_unset=True, by_alias=True).items()\n            if v is not None\n        }"}

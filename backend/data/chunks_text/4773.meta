@@ -1,0 +1,1 @@
+{"original_code": "def init():\n    try:\n        # Check Couchbase is awake\n        bucket = get_default_bucket()\n        logger.info(\n            f\"Database bucket connection established with bucket object: {bucket}\"\n        )\n    except Exception as e:\n        logger.error(e)\n        raise e"}

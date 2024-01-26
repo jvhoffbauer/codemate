@@ -1,0 +1,3 @@
+- Defines a function `publish_task_from_worker_or_request` that takes two arguments - `headers` and optional keyword arguments (`**kwargs`) of any type.
+- The function sets the value of the `celery_current_id` global variable (assuming its already defined) into the `current` local variable. If this variable is not empty or null, then it adds the value to the `headers` dictionary with the key `header_key`.
+- By doing so, when the new task is executed on another Celery worker, it will have access to the original task's ID through the added header, allowing for better tracing and debugging capabilities.

@@ -1,0 +1,3 @@
+- Retrieves sponsor information from a GraphQL API using the `get_graphql_response()` function and the `sponsors_query`.
+- Optionally filters results based on the value of the `after` parameter (a cursor used for pagination).
+- Returns an iterator over edges representing relationships between users and their sponsored projects in the form of a list of tuples containing nodes and cursors.

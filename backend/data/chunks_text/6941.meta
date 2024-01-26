@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/{task_id}/\")\nasync def get_task(task_id: str):\n    job = ArqJob(task_id, redis.pool)\n    return await job.info()"}

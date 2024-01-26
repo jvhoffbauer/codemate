@@ -1,0 +1,3 @@
+1. Registers a custom admin class for the `Category` model using Flask-Admin's decorator `@site.register_admin`.
+2. Defines a custom admin configuration by subclassing Django Admin's ModelAdmin and setting its attributes, such as `page_schema`, which sets the title of the admin interface section.
+3. Allows for more fine-grained control over how models are displayed in the administrative interface provided by Flask-Admin.

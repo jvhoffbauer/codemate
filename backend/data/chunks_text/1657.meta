@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\")\nasync def read_items(commons=Depends(CommonQueryParams)):\n    response = {}\n    if commons.q:\n        response.update({\"q\": commons.q})\n    items = fake_items_db[commons.skip : commons.skip + commons.limit]\n    response.update({\"items\": items})\n    return response"}

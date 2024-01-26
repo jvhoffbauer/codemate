@@ -1,0 +1,3 @@
+- Defines a function `create_note` that takes in an argument `note` of type `NoteIn`.
+- Inserts a new record into the 'notes' table with columns 'text' and 'completed'.
+- Returns a dictionary containing the original note data as well as the ID of the newly created record from the database.

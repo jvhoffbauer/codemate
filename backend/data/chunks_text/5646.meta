@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def route_update(self) -> Callable[..., Any]:\n        raise NotImplementedError"}

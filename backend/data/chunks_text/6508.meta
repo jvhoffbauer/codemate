@@ -1,0 +1,1 @@
+{"original_code": "    @tagged_api.method(tags=[\"method-tag\"])\n    async def tagged_method(data: dict) -> dict:\n        pass"}

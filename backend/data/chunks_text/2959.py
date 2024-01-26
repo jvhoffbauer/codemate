@@ -1,0 +1,1 @@
+- Defines a method named `synchronous_gen` that takes a single argument `value` of type string and returns a generator object. - The method yields the given `value`, which adds it to the values returned by the generator. - Since there are no `yield from` statements or asynchronous operations in this function, it is considered synchronous.

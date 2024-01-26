@@ -1,0 +1,1 @@
+{"original_code": "    def examples(\n        item: Item = Body(\n            examples=[\n                {\"data\": \"Data in Body examples, example1\"},\n                {\"data\": \"Data in Body examples, example2\"},\n            ],\n        ),\n    ):\n        return item"}

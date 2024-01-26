@@ -1,0 +1,3 @@
+- Defines a method `__eq__()` for comparing instances of this class with other objects using Python's equality operator (`==`)
+- Checks if the argument `o` is an instance of `DefaultPlaceholder`, indicating that it represents another placeholder value in TensorFlow
+- If both placeholders have the same value, returns `True`. Otherwise, returns `False`.

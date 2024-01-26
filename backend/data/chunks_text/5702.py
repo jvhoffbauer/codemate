@@ -1,0 +1,5 @@
+- Defines a `route_delete()` method that returns an asynchronous function called `route()`. This function is used to define a REST API endpoint for deleting items from a database table.
+- The `route()` function takes three arguments: `Request`, `link_id`, and `item_id`. These are parsed using the `IdStrQuery` and `pk_admin.AnnotatedItemIdList` types provided by FastAPI's SQLAlchemy integration.
+- If the user doesn't have permission to update the specified items, the function returns an error message.
+- A SQL query is constructed using the `delete()` function of SQLAlchemy's ORM. It filters rows based on the values in the `link_col` and `item_col` columns, which correspond to foreign keys referencing other tables.
+- The results of executing the query are returned as JSON data using FastAPI's built-in response formatters.

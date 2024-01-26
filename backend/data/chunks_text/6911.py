@@ -1,0 +1,7 @@
+- Defines a method `predict()` that takes in a `HousePredictionPayload` object and returns a processed prediction result.
+- Raises an error with a custom message when the input payload is null or invalid.
+- Pre-processes the payload using a private helper function `_pre_process()`.
+- Passes the pre-processed data to another private helper function `_predict()` for model prediction.
+- Logs the raw prediction output using Python's built-in logging module.
+- Post-processes the prediction using another private helper function `_post_process()`.
+- Returns the final processed prediction result.

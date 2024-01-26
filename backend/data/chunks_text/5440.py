@@ -1,0 +1,5 @@
+- Defines an endpoint for retrieving a list of COGs that intersect a specified bounding box using FastAPI's `@app.get()` decorator and Router class.
+- Specifies the URL path pattern (`{minx},{miny},{maxx},{maxy}/assets`) and HTTP response status codes (`responses={200:...}`).
+- Accepts query parameters for the left, bottom, right, and top coordinates of the bounding box (`Query(..., description...)`).
+- Dependencies are passed to the function through arguments (`src_path`, `backend_params`, `reader_params`, and `env`).
+- Uses RasterIO's `with` context manager to open the dataset and retrieve the requested assets within the given bounds (`src_dst.assets_for_bbox()`).

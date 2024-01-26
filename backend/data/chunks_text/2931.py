@@ -1,0 +1,4 @@
+- Defines a function `test_openapi_schema` that tests the OpenAPI schema of our FastAPI application using the built-in Flask testing client.
+- Makes an HTTP GET request to the `/openapi.json` endpoint and asserts that the status code is 200 (OK) with the expected JSON content in the body.
+- The returned JSON object conforms to the OpenAPI Specification version 3.1.0 and contains information about the API's endpoints, components, and schemas.
+- The `products` endpoint has a GET method with a request body containing a Product schema defined by FastAPI. This schema references other definitions within the component section for validation errors and nested objects like ValidationErrors and HTTPValidationErrors.

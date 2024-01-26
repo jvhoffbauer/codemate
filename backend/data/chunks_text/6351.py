@@ -1,0 +1,1 @@
+- Tests resetting password for current user using `POST /reset-current-user-password` endpoint with valid credentials and updates hashed password in database.

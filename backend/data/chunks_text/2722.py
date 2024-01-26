@@ -1,0 +1,3 @@
+- Defines a function called `response_model_union_no_annotation_return_model2`.
+- The function returns an instance of the `Item` class with a name "Foo" and a price of 42.0 (float).
+- This implementation demonstrates returning a specific model type from a Union endpoint without using annotations to specify the exact type returned by the function.

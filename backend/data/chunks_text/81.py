@@ -1,0 +1,3 @@
+- The `execute` function in this context is a modified version of the original SQLAlchemy `Session.execute` method provided by AsyncSQLAlchemy.
+- It returns rows as `Row` objects which need to be converted into models using `scalars()`. Alternatively, `exec()` can be used for more concise syntax with automatic conversion.
+- The function takes several optional parameters including `statement`, `params`, `execution_options`, `bind_arguments`, `_parent_execute_state`, and `_add_event`. These are passed through to the parent class's implementation of `execute()`.

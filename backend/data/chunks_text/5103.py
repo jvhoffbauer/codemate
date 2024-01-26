@@ -1,0 +1,2 @@
+- Defines a function named `landing` that takes in a `Request` object as an argument.
+- Returns a response using the `templates.TemplateResponse()` method, passing in the name of the HTML template ("index.html"), a dictionary containing any necessary variables (in this case, just the `Request` object), and specifying the MIME type for the response as "text/html".

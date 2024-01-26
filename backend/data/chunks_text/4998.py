@@ -1,0 +1,3 @@
+- Defines a class method `get_or_404` for the current model (accessed through `self`)
+- Takes keyword arguments as input and passes them to `filter()` on the queryset of objects for this model
+- Returns either an instance of the model matching the given criteria or raises a HTTP 404 error using Django's built-in function `get_object_or_404()`

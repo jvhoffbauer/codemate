@@ -1,0 +1,2 @@
+- Tests the STAC viewer functionality by making a GET request to `/stac/viewer`.
+- Verifies that the status code is 200 and checks for correct content type and encoding in the HTTP header.

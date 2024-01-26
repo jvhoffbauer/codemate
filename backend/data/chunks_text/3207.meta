@@ -1,0 +1,1 @@
+{"original_code": "def test_encode_deque_encodes_child_models():\n    class Model(BaseModel):\n        test: str\n\n    dq = deque([Model(test=\"test\")])\n\n    assert jsonable_encoder(dq)[0][\"test\"] == \"test\""}

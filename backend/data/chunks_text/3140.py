@@ -1,0 +1,3 @@
+- This function tests a GET request to `/items/no-response-model/object`.
+- It raises an exception if there is no response from the server (i.e., status code other than 2xx) using `raise_for_status()`.
+- The expected JSON response for this endpoint is returned and checked against the actual response received by Flask's built-in testing client.

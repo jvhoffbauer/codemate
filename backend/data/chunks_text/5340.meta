@@ -1,0 +1,1 @@
+{"original_code": "    def _bands_expr(params=Depends(dependencies.BandsExprParams)):\n        \"\"\"return params.\"\"\"\n        return params"}

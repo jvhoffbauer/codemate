@@ -1,0 +1,3 @@
+- Defines a method called `route_init()` in an unspecified class context
+- The method returns an asynchronous function named `route()`, which takes a single argument of type `Request`
+- Inside the `route()` function, it calls another method `get_init_data()` and waits for its result to be returned before returning itself

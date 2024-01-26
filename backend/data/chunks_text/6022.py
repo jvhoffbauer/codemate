@@ -1,0 +1,3 @@
+- Defines a custom admin for a model called `TmpAdmin`, which inherits from Django's built-in `LinkAdmin`.
+- Sets the URL to be displayed as a hyperlink in the admin interface using the `link` attribute.
+- Registers and creates an instance of the new admin, then checks that its properties are correct (specifically, the value of the `link` field).

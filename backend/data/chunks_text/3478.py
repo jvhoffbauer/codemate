@@ -1,0 +1,1 @@
+- Defines a function called `route_with_extras()` that returns an empty dictionary (`{}`) when called. This could potentially be used as a default value for options or settings in a routing system, allowing additional customization beyond just basic routes.

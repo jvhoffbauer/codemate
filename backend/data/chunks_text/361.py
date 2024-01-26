@@ -1,0 +1,4 @@
+- Defines a `Hero` model with various fields that can be nullable or have defaults using SQLAlchemy's `Field()` decorator.
+- Creates an SQLite database and executes SQLAlchemy's `create_all()` method to generate tables based on the defined models.
+- Uses Pytest's `capfdit` plugin to capture logging messages during the creation of the tables.
+- Asserts that each field is correctly represented as a column in the generated table, including constraints such as PRIMARY KEY, NOT NULL, and DEFAULT values.

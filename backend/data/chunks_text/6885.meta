@@ -1,0 +1,1 @@
+{"original_code": "def test_auth_using_prediction_api_no_apikey_header(test_client) -> None:\n    response = test_client.post(\"/api/model/predict\")\n    assert response.status_code == 400\n    assert response.json() == {\"detail\": messages.NO_API_KEY}"}

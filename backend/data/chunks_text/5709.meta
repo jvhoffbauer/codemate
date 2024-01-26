@@ -1,0 +1,1 @@
+{"original_code": "    @cached_property\n    def site(self) -> \"BaseAdminSite\":\n        return self if self.app is self else self.app.site"}

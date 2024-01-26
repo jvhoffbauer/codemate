@@ -1,0 +1,3 @@
+- Generates an HTML response containing the necessary elements to display Redoc documentation generated from an OpenAPI definition.
+- Allows customization of various aspects such as the OpenAPI URL, document title, Redoc JS URL, Redoc favicon URL, and whether or not to include Google Fonts.
+- Returns an HTMLResponse object which can be used directly in a route handler to serve the Redoc documentation.

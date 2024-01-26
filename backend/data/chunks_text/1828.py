@@ -1,0 +1,1 @@
+- This function takes a `websocket`, an optional `session` cookie, and an optional query parameter `token`. It returns either the value of `session` (if it's not `None`) or the value of `token` (also if it's not `None`). If both are `None`, it raises a `WebSocketException` with status code `1008`.

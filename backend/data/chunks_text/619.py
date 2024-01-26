@@ -1,0 +1,6 @@
+- Imports `test_tutorial001` function and `docs_src.tutorial.delete` module containing a Python script called `tutorial001_py310`.
+- Sets SQLAlchemy connection URL to an in-memory SQLite database using `create_engine()`.
+- Creates a mock print function that captures output using `get_testing_print_function()`.
+- Patches built-in `print()` function with the mock print function for testing purposes.
+- Calls the main function of the `tutorial001_py310` script, which is being tested here.
+- Asserts that the captured output matches the expected output by comparing it with `expected_calls`.

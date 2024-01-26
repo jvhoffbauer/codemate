@@ -1,0 +1,1 @@
+{"original_code": "def setup_static_files(app: FastAPI):\n    static_files_app = StaticFiles(directory=settings.STATIC_DIR)\n    app.mount(path=settings.STATIC_PATH, app=static_files_app, name=\"static\")"}

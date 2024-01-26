@@ -1,0 +1,3 @@
+1. Wraps a given `FormItem` object to add an optional image/file upload receiver and a manual input file link component for certain types of forms.
+2. If the wrapped `FormItem` is an 'input-image' without a receiver, sets its receiver to the `image_receiver`. Similarly, for 'input-file', it checks whether there's already a receiver set and falls back to setting one otherwise. For 'input-rich-text', it adds both receivers as fallbacks.
+3. For 'input-image' and 'input-file' types, creates a new group containing both the original item and a text field with no maximum length limit, which serves as a manual input file link. The resulting group replaces the original `FormItem`.

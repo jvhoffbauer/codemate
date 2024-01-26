@@ -1,0 +1,1 @@
+{"original_code": "    @site.register_admin\n    class TmpAdmin(admin.PageAdmin):\n        page_path = \"/test\"\n\n        async def get_page(self, request: Request) -> Page:\n            return Page(title=\"hello\", body=\"Test Amis Page\")"}

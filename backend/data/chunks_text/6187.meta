@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, id, state, county, coordinates, last_updated, timelines):\n        super().__init__(id, \"US\", state, coordinates, last_updated, timelines)\n\n        self.state = state\n        self.county = county"}

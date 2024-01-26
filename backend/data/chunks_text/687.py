@@ -1,0 +1,3 @@
+- Defines a Celery task named `task2`, marked as shared using the `@shared_task()` decorator
+- Logs an informational message to the Celery logging system with "test2"
+- Calls another Celery task, `task3`, asynchronously using its delay method

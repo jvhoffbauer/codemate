@@ -1,0 +1,3 @@
+- Defines a function `get_client` that returns an instance of `TestClient`.
+- Imports and uses the Flask application defined in `docs_src/separate_openapi_schemas/tutorial001.py`.
+- Follows PEP8 naming conventions for functions (lowercase with underscores).

@@ -1,0 +1,3 @@
+- This function tests the `GET /items/` endpoint using Flask's built-in testing client (client).
+- It asserts that the status code of the response is 200 and saves its text for debugging purposes.
+- The JSON content returned by the server should be an array containing two strings ("Portal gun" and "Plumbus").

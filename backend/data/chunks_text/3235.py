@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/list`.
+- Returns an array of objects with a single field called `alias`, represented by the `Model` class (which is not explicitly defined in this example).
+- The `response_model` parameter specifies that the API should use this model to validate and serialize responses, while `response_model_by_alias` disables automatic alias detection for nested models.

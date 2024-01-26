@@ -1,0 +1,3 @@
+- Tests synchronous dependency error when both dependencies are synchronized and second one raises an exception during generation
+- Asserts that first dependent resource is correctly generated despite raised exception by second dependent resource
+- Verifies that second dependent resource's error is recorded in `errors` dictionary

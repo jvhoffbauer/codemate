@@ -1,0 +1,3 @@
+- Runs pytest tests in parallel using coverage tool to generate a report of test coverage for the given module (`mod`) and saves it under `top_level_path`.
+- The command is executed by invoking `subprocess.run()`, passing arguments such as 'coverage', 'run', '-m', 'pytest' along with the path to the module being tested ('test_path') and specifying the working directory ('top_level_path').
+- Asserts that the return value of the process is zero, indicating successful execution, and prints the output if any errors occur during testing.

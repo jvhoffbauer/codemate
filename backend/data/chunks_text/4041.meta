@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_other_exceptions(client: TestClient):\n    with patch(\"json.loads\", side_effect=Exception):\n        response = client.post(\"/items/\", json={\"test\": \"test2\"})\n        assert response.status_code == 400, response.text"}

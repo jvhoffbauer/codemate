@@ -1,0 +1,1 @@
+{"original_code": "async def health(session: AsyncSession = Depends(get_session)):\n    try:\n        await asyncio.wait_for(session.execute(\"SELECT 1\"), timeout=1)\n    except (asyncio.TimeoutError, socket.gaierror):\n        return Response(status_code=503)\n    return Response(status_code=204)"}

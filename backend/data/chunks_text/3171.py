@@ -1,0 +1,4 @@
+- Generates an OpenAPI schema for a FastAPI application using `client.get("/openapi.json")`.
+- Asserts that the status code is 200 and checks the text content if necessary.
+- Verifies that the JSON response matches the expected structure with specific keys such as 'openapi', 'info', 'paths', and 'components'.
+- Confirms that the HTTP authentication scheme (in this case, HTTP Digest) is included in the security section of the schema.

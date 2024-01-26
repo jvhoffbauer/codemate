@@ -1,0 +1,2 @@
+- Creates a new user with provided credentials using POST request to `/user/` endpoint
+- Extracts and asserts the expected fields from the JSON response returned by the server

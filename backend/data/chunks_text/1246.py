@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `main()`.
+- The function returns a string with some big content.
+- This is likely used in an asyncio application to provide a result or response from a long-running task without blocking the event loop.

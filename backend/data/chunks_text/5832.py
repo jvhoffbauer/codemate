@@ -1,0 +1,5 @@
+- This function takes a `ModelField` and an optional boolean flag for quick editing, and returns a `TableColumn`.
+- It first retrieves the table column from its internal cache based on the given model field (using another helper method).
+- It then updates some common attributes of the column using another helper method, but excludes setting defaults and filtering options this time.
+- The sortability of the column is enabled unless it's one of two specific types ("switch" or "mapping").
+- If quick editing is requested, the function creates a form item representation of the model field with default values included, converts it to a dictionary, and adds it to the column's quick edit property. It also sets save immediacy to true. For switch type columns, it disables them and changes their mode to inline.

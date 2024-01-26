@@ -1,0 +1,2 @@
+- Tests a specific endpoint (`ep_method_auth`) with authentication credentials ('user', 'password') using `raw_request`.
+- Asserts that the response status code is 200 and its JSON content matches expected values.

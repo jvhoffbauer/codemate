@@ -1,0 +1,5 @@
+- Defines a decorator called `websocket` that takes three arguments: `path`, `name`, and `dependencies`.
+- The `path` argument is annotated with documentation explaining what it is.
+- The `name` argument is optional and has documentation explaining its internal use only.
+- The `dependencies` argument is also optional and has documentation linking to further information on using dependencies with WebSockets in FastAPI.
+- Returns a callable decorator that adds the decorated function as a WebSocket route when called.

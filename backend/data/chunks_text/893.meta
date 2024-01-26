@@ -1,0 +1,1 @@
+{"original_code": "    @classmethod\n    def validate(cls: Type[\"UploadFile\"], v: Any) -> Any:\n        if not isinstance(v, StarletteUploadFile):\n            raise ValueError(f\"Expected UploadFile, received: {type(v)}\")\n        return v"}

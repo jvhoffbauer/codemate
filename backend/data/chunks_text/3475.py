@@ -1,0 +1,3 @@
+- Creates a new shop with the provided `Shop` object in the request body (`data`) and saves it to the database.
+- Optionally includes a list of products for this shop using the `included` parameter, which is also saved to the database.
+- The function currently doesn't return anything as we haven't implemented the actual creation logic yet (covered by test).

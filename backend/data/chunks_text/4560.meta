@@ -1,0 +1,1 @@
+{"original_code": "def test_token(client: TestClient):\n    response = client.get(\"/items\", headers={\"Authorization\": \"Bearer testtoken\"})\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"token\": \"testtoken\"}"}

@@ -1,0 +1,2 @@
+- Tests that Swagger UI is accessible by making a GET request to /docs endpoint
+- Asserts that HTTP status code is 200 and checks for specific configuration options in the response body to ensure default settings are being used correctly

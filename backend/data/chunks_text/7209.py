@@ -1,0 +1,1 @@
+- Defines a function named `demo_task` that takes in one argument `a1` of type string. - Inside the function body, prints out the value of `a1` and the current time using Python's built-in `time` module.

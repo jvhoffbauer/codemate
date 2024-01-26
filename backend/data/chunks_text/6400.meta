@@ -1,0 +1,1 @@
+{"original_code": "    @classmethod\n    def get_description(cls):\n        s = cls.get_default_description()\n        if cls.__doc__:\n            s += \"\\n\\n\" + cls.__doc__\n        return s"}

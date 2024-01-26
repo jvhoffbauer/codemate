@@ -1,0 +1,3 @@
+- Tests if sending invalid data to a websocket connection raises `WebSocketDisconnect`.
+- Uses Flask's built-in testing client (`TestClient`) to simulate an HTTP request and establish a websocket connection.
+- Raises `pytest.Fail` in case the expected exception is not raised, indicating a failure in the test.

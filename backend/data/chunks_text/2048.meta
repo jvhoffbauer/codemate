@@ -1,0 +1,1 @@
+{"original_code": "def callback() -> None:\n    if is_mkdocs_insiders():\n        os.environ[\"INSIDERS_FILE\"] = \"../en/mkdocs.insiders.yml\"\n    # For MacOS with insiders and Cairo\n    os.environ[\"DYLD_FALLBACK_LIBRARY_PATH\"] = \"/opt/homebrew/lib\""}

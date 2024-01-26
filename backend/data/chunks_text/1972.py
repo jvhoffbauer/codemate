@@ -1,0 +1,3 @@
+- Defines a function called `read_main()` that returns a dictionary with one key-value pair containing a message.
+- The message is hardcoded as "Hello World from main app".
+- This function can be used to provide a standard response for requests made directly to the main application, without needing to make any database queries or perform complex logic.

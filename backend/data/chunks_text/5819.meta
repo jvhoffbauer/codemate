@@ -1,0 +1,1 @@
+{"original_code": "    def register_admin(self, *admin_cls: Type[BaseAdminT]) -> Type[BaseAdminT]:\n        [self._registered.update({cls: None}) for cls in admin_cls if cls]\n        return admin_cls[0]"}

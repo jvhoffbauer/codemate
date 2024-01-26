@@ -1,0 +1,5 @@
+- Defines a function `gen_jwt` that takes in two arguments `subject` and `minutes`.
+- The `subject` argument can be either a string or any other type (using Python's `Union`).
+- Inside the function, an expiration time is calculated based on the current time plus the number of minutes specified by `minutes`.
+- A dictionary containing the subject and expiration time is created and passed as input to the `jwt.encode` method along with the secret key and algorithm.
+- The resulting JWT token is returned from the function.

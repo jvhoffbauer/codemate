@@ -1,0 +1,2 @@
+- Defines a method `delete_item` that takes an instance of a subclass of `SchemaModel` as its argument (`obj`) and returns nothing (`None`)
+- Sets the value of the `delete_time` attribute of the object to the current time using the `datetime.now()` function from Python's built-in `datetime` module

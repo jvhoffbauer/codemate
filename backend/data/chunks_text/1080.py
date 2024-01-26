@@ -1,0 +1,4 @@
+- Retrieves a list of sponsor nodes and their corresponding edges from GraphQL API using `get_graphql_sponsor_edges()`.
+- Traverses through the graph by iterating over all edges until there are no more left to explore.
+- Stores each sponsor entity's login and tier information into a dictionary with monthly price as key.
+- Returns a dictionary containing dictionaries where keys represent tier prices and values contain sponsor entities associated with that tier.

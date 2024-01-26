@@ -1,0 +1,3 @@
+- Takes in two arguments `data` and `mask`.
+- Sets all values of `mask` to 255 (i.e., fully opaque).
+- Multiplies each element of `data` by 2 and returns both modified `data` and unchanged `mask`.

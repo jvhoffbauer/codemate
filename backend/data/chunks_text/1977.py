@@ -1,0 +1,3 @@
+- This function defines a GET request for the "/legacy/" endpoint using FastAPI's decorator syntax (@app.get).
+- It returns an XML response with legacy data (i.e., outdated or deprecated information) in the format of an "shampoo" element containing header and body sections.
+- The response is returned as a FastAPI Response object with the specified content and media type ("application/xml").

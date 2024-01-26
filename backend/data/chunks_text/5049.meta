@@ -1,0 +1,1 @@
+{"original_code": "def test_celery():\n    celery.send_task(\"test_celery\", args=(\"words????\",))\n    return \"ok\""}

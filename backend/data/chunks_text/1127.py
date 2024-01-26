@@ -1,0 +1,1 @@
+- This function is a GET request for retrieving items from the API, with no specific item ID provided in the URL path. - The `Depends()` decorator is used to pass an OAuth2 authentication scheme (`oauth2_scheme`) as a dependency to this endpoint. - The returned JSON response contains the authenticated user's access token obtained through OAuth2 authorization.

@@ -1,0 +1,3 @@
+- Defines a function `get_root` that returns an instance of class `ModelSubclass`.
+- The returned object has two attributes `sub` and `z`, both initialized with default values (an empty dictionary and zero respectively).
+- The attribute `y` is also present in the returned object but it's not assigned any value inside this function; its initial value will be used instead.

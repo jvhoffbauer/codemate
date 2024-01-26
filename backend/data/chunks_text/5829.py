@@ -1,0 +1,1 @@
+- Initializes two optional arguments `image_receiver` and `file_receiver`, both of type `amis.API`. These arguments are used for uploading images and files respectively to a specific location and returning their addresses. - The constructor method takes these arguments as inputs and assigns them to class attributes `self.image_receiver` and `self.file_receiver` respectively.

@@ -1,0 +1,3 @@
+- Endpoint `POST /files/` creates one or more files and returns a JSON response with their sizes.
+- The `File()` decorator is used to automatically parse incoming multipart requests containing binary data (i.e., files).
+- The list of bytes received from the request body is stored in the `files` parameter, which can be accessed using its name inside the function.

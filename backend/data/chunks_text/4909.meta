@@ -1,0 +1,1 @@
+{"original_code": "def test_get_user_id():\n    username = \"johndoe@example.com\"\n    user_id = crud.user.get_doc_id(username)\n    assert user_id == \"userprofile::johndoe@example.com\""}

@@ -1,0 +1,1 @@
+{"original_code": "@app.webhooks.post(\"new-subscription\")\ndef new_subscription(\n    body: Subscription, token: Annotated[str, Security(bearer_scheme)]\n):\n    \"\"\"\n    When a new user subscribes to your service we'll send you a POST request with this\n    data to the URL that you register for the event `new-subscription` in the dashboard.\n    \"\"\""}

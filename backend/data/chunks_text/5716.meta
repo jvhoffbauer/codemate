@@ -1,0 +1,1 @@
+{"original_code": "    def get_page_schema(self) -> Optional[PageSchema]:\n        if super().get_page_schema():\n            assert self.link, \"link is None\"\n            self.page_schema.link = self.page_schema.link or self.link\n        return self.page_schema"}

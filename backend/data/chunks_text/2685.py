@@ -1,0 +1,1 @@
+- This endpoint returns a `User` object with annotations, but without using FastAPI's built-in response model feature. - The returned user is created from a subclass of `DBUser`, which adds an extra field (password hash) to the base class. - Since we are not using FastAPI's response model feature, we need to explicitly define the return type as `User`.

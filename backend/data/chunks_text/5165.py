@@ -1,0 +1,3 @@
+- This function defines a GET request for retrieving statistical information about a specific dataset using FastAPI and RasterIO libraries.
+- It takes multiple dependencies to access different parameters required by RasterIO functions such as path, layers, datasets, images, statistics, histogram options, environment variables, etc.
+- The `response_class`, `response_model`, and `responses` attributes are used to specify JSON format output and status codes for successful or error cases.

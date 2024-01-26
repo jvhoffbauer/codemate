@@ -1,0 +1,3 @@
+- Tests if a hidden query parameter is not present in the URL and returns an error message with status code 404 (not found)
+- Uses Flask's built-in `TestClient` to simulate HTTP requests for testing purposes
+- Verifies that the API endpoint "/items" responds with JSON data containing a specific error message when no hidden query parameter is provided

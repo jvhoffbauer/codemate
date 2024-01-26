@@ -1,0 +1,3 @@
+- This function tests retrieving an item with a specific ID using Flask's built-in testing client (client).
+- It makes a GET request for the next available item in the database and checks that the status code is 200 OK.
+- The JSON response from the server is compared against expected values for name, price, description, tags, and tax fields of the item object.

@@ -1,0 +1,1 @@
+- This function tests the `create_hero` endpoint by creating a new hero with name 'Deadpond' and secret_name 'Dive Wilson'. - It overrides the `Session` dependency using `dependency_overrides`, which allows us to mock or replace dependencies during testing. - After making the request, it clears the overridden dependencies to ensure they are restored for future requests.

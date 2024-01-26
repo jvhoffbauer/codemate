@@ -1,0 +1,3 @@
+- Tests a WebSocket connection with custom headers and query parameters using Flask's `TestClient`.
+- Raises an exception (`WebSocketDisconnect`) when closing the WebSocket due to invalid session or query tokens.
+- Verifies that the received messages contain the correct values based on the sent messages, headers, and query parameters.

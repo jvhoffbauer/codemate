@@ -1,0 +1,1 @@
+{"original_code": "async def fetch_all(select_query: Select | Insert | Update) -> list[dict[str, Any]]:\n    async with engine.begin() as conn:\n        cursor: CursorResult = await conn.execute(select_query)\n        return [r._asdict() for r in cursor.all()]"}

@@ -1,0 +1,1 @@
+{"original_code": "def test_non_json__parse_error(echo, raw_request, content):\n    resp = raw_request(content).json()\n    assert resp == {\n        \"error\": {\n            \"code\": -32700,\n            \"message\": \"Parse error\",\n        },\n        \"id\": None,\n        \"jsonrpc\": \"2.0\",\n    }\n    assert echo.history == []"}

@@ -1,0 +1,3 @@
+- This function uses `aiohttp`'s built-in testing client to make a GET request with a query parameter named 'hidden_query'.
+- The value of this hidden query is set to'somevalue', which should not be visible in the URL or logs by default (hence the name 'hidden').
+- The function asserts that the server returns an HTTP status code of 200 and includes the hidden query parameter in the JSON response body.

@@ -1,0 +1,5 @@
+- Tests HTTP Basic Authentication with non-valid credentials using FastAPI's built-in `TestClient`.
+- Encodes a username and password into base64 format to create an authorization header for the request.
+- Sends a GET request to the "/users/me" endpoint with the customized Authorization header.
+- Asserts that the server returns a 401 Unauthorized status code and sets the WWW-Authenticate header to "Basic".
+- Verifies that the JSON body of the response contains an error message indicating invalid authentication credentials.

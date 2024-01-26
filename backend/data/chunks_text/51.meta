@@ -1,0 +1,1 @@
+{"original_code": "    def is_table_model_class(cls: Type[Any]) -> bool:\n        config = getattr(cls, \"model_config\", {})\n        if config:\n            return config.get(\"table\", False) or False\n        return False"}

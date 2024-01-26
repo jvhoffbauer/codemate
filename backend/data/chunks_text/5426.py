@@ -1,0 +1,3 @@
+- Defines a function `info` that takes several dependencies and returns basic information about a dataset using RasterIO library.
+- Uses dependency injection to pass in parameters for file path, backend settings, reader options, and environment variables.
+- Wraps the actual data reading operation inside a context manager provided by RasterIO's Env class, which allows passing customized settings like CRS or nodata values.

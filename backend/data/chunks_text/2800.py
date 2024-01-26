@@ -1,0 +1,1 @@
+- Tests a GET request to `/query` with query parameter 'query' set to 'baz'. - Asserts that the status code is 200 (OK). - Asserts that the JSON response body contains 'foo', 'bar', and 'baz'.

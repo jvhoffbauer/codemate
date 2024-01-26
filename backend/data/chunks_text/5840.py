@@ -1,0 +1,3 @@
+- Defines a generator function called `cyclic_generator()` that takes an iterable as its argument (named `iterable`) and returns a generator object.
+- The body of the function is a single statement using the new syntax for list comprehensions with generators (yield from). This line yields all elements in the input iterable infinitely by repeating it through iteration.
+- The function has three return types specified after the colon: `Generator`, which indicates this is a generator function; `None`, indicating there are no values returned when calling `next()` on the generator; and finally, `None` again to indicate that the generator raises StopIteration when done iterating over all items.

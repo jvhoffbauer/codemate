@@ -1,0 +1,3 @@
+- Registers a custom admin for a model called `Tmp` with an alias of 'tmp' using Alchemy Migrations and SQLAlchemy (AMISA).
+- Defines a new subclass of Django Admin's PageSchemaAdmin named `TmpAdmin2`.
+- Sets the label, default status, and sort order for the associated AMISA PageSchema object through its constructor argument.

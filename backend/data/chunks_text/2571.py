@@ -1,0 +1,1 @@
+- Defines a function `get_direct_cookie` that takes an optional argument `dep` with default value set by `Depends(set_cookie)`. - Returns a dictionary containing a key-value pair where the key is "dep" and the value is the passed or defaulted value of `dep`.

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/notes/\", response_model=List[Note])\nasync def read_notes():\n    query = notes.select()\n    return await database.fetch_all(query)"}

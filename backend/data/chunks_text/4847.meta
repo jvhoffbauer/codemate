@@ -1,0 +1,1 @@
+{"original_code": "def read_users(\n    skip: int = 0,\n    limit: int = 100,\n    current_user: UserInDB = Depends(get_current_active_superuser),\n):\n    \"\"\"\n    Retrieve users.\n    \"\"\"\n    bucket = get_default_bucket()\n    users = crud.user.get_multi(bucket, skip=skip, limit=limit)\n    return users"}

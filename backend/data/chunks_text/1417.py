@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_unicorn()` that takes a required string argument named `name`.
+- If the value of `name` is equal to "yolo", raises a custom exception called `UnicornException` with a keyword argument `name`.
+- Otherwise, returns a dictionary containing a key-value pair where the key is "unicorn_name" and the value is the same as the input `name`.

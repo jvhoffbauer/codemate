@@ -1,0 +1,3 @@
+- This function returns a list of assets that intersect a given bounding box using the `rasterio` library's `assets_for_bbox()` method.
+- It takes several arguments for customizing the input data and environment settings, including the path to the source dataset (`src_path`) and parameters for the backend and reader dependencies.
+- The function wraps the call to `assets_for_bbox()` inside a context manager provided by `rasterio.Env`, allowing for easy management of global variables like GDAL and NumPy.

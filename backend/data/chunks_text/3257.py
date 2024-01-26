@@ -1,0 +1,1 @@
+- Tests reading a list of dictionaries from an API endpoint without aliasing keys using Flask's `client` object and making an HTTP GET request to "/no-alias/list". - Asserts that the status code is 200 OK and saves the text response for debugging purposes (not used in this case). - Verifies that the JSON response contains two dictionaries with "name" as their key.

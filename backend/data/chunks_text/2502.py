@@ -1,0 +1,3 @@
+- Defines a new endpoint `"/model-with-tuple"` with an HTTP POST method using FastAPI's decorator syntax
+- Accepts a custom data model `ItemGroup` as input through the `item_group` parameter, which is defined elsewhere in the application
+- Returns the received `ItemGroup` object without any modifications or transformations

@@ -1,0 +1,4 @@
+- Defines a function `get_current_active_superuser()` that takes an optional argument `current_active_user`, which is retrieved using the `Depends()` decorator from FastAPI's built-in authentication middleware (`get_current_active_user`)
+- Checks whether the current active user has superuser permissions using the `crud.user.is_superuser()` method provided by SQLAlchemy-based ORM library called "Cruddy"
+- Raises a `HTTPException` with a custom error message and status code of 403 Forbidden if the user doesn't have sufficient privileges to access the resource being requested
+- Returns the current active user object as output

@@ -1,0 +1,1 @@
+{"original_code": "async def authenticate_user(auth_data: AuthUser) -> dict[str, Any]:\n    user = await get_user_by_email(auth_data.email)\n    if not user:\n        raise InvalidCredentials()\n\n    if not check_password(auth_data.password, user[\"password\"]):\n        raise InvalidCredentials()\n\n    return user"}

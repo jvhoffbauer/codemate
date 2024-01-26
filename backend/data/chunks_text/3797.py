@@ -1,0 +1,3 @@
+- Tests if GET request to /portal endpoint returns a successful HTTP status code (200) and checks the JSON response body for expected message.
+- Uses `TestClient` from FastAPI testing utilities to simulate an actual user request.
+- Implicitly imports `fastapi.testclient.TestClient`, assuming it is already imported at module level with `from fastapi import TestClient`.

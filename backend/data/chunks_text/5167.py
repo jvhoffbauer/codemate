@@ -1,0 +1,5 @@
+- Endpoint to retrieve statistical information of a GeoJSON feature or collection using FastAPI and RasterIO libraries.
+- Uses `Body()` decorator to validate input JSON body (GeoJSON).
+- Dependencies are used to pass arguments between functions without repeating them multiple times.
+- The function retrieves statistical information by calling `get_array_statistics()`, which is implemented elsewhere.
+- Results are added to the properties dictionary of each feature before returning the modified features.

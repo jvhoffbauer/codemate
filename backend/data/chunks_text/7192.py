@@ -1,0 +1,2 @@
+- Defines a fixture named `job_id` with module scope for PyTest tests
+- Returns a string value of '123' to be used as the job ID in test cases related to scheduling tasks

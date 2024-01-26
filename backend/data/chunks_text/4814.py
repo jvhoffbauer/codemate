@@ -1,0 +1,8 @@
+- Defines a function `search_by_type_get_search_results()` that takes several arguments related to Elasticsearch queries (bucket, query string, index name, document type, etc.)
+- Sets default values for `skip` and `limit`.
+- Creates a filter based on the specified document type using the `f"` string formatting feature.
+- Combines the filter with the query string (if provided).
+- Uses the `QueryStringQuery()` class from Elasticsearch DSL to create a query object.
+- Executes an Elasticsearch search operation using the `Bucket.search()` method, passing in the created query object along with other parameters like `fields`, `skip`, and `limit`.
+- Loops through the returned search results and appends them to a list called `docs`.
+- Returns the list of documents found during the search.

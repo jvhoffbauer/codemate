@@ -1,0 +1,1 @@
+- Tests that creating an API object with `fastapi_jsonrpc_components_fine_names` set to True or False doesn't raise any errors and returns a valid FastAPI application instance (TestClient can be used to make requests against it). - Verifies that accessing the OpenAPI JSON endpoint of the created application is successful regardless of whether fine names are enabled or not.

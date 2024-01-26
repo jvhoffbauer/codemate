@@ -1,0 +1,4 @@
+- Tests getting an item that doesn't exist using `client.get()`.
+- Asserts that the status code is 404 and checks the text of the response to confirm it.
+- Checks for a custom header named 'x-error', which should contain a specific value.
+- Verifies that the JSON returned by the server contains the expected detail message.

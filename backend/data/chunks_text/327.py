@@ -1,0 +1,1 @@
+- Retrieves a list of heroes and their corresponding teams from the database where the team name is 'Preventers' using SQLAlchemy's `Session`, `select()`, and `join()`. - Loops through each result tuple containing both the selected hero object and its associated team object, then prints out their names separated by a colon.

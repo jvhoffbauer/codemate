@@ -1,0 +1,1 @@
+- Defines a GET route with path parameter `item_id`, which has a maximum length of 3 characters using FastAPI's `Path()` decorator for validating and parsing query parameters. - The function returns the value of the parsed path parameter, which is limited to a maximum length of 3 characters due to the `max_length` argument passed to `Path()`.

@@ -1,0 +1,1 @@
+{"original_code": "def exists_site(*, alias: str = DEFAULT_ALIAS) -> bool:\n    \"\"\"Judge whether the site exists\"\"\"\n    return exists_global(SITE_NAME, alias=alias)"}

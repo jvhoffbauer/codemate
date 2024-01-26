@@ -1,0 +1,3 @@
+- Sets environment variable ADMIN_EMAIL to 'admin@example.com' using Pytest's `MonkeyPatch`.
+- Imports and tests a Flask application with Pydantic settings defined in tutorial001_pv1.
+- Makes an HTTP GET request to '/info', asserts status code is 200, and checks that expected JSON data is returned.

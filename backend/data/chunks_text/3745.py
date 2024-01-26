@@ -1,0 +1,3 @@
+- Tests reading all items from the API using GET request to /items endpoint
+- Verifies that status code is 200 and returns JSON data
+- Extracts the first item's title and description fields

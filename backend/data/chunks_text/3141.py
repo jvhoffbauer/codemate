@@ -1,0 +1,2 @@
+- Tests GET request for `/items/no-response-model/objectlist` endpoint without a ResponseModel class defined
+- Verifies that the API returns an array of dictionaries with expected keys and values (including nullable fields) in JSON format

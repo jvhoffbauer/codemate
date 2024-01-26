@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_users()` that returns a list of strings containing user names ("Rick" and "Morty")

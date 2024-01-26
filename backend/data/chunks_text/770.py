@@ -1,0 +1,1 @@
+- Defines an asynchronous function `healthcheck` that returns a dictionary with a key `"status"` and value `"ok"`. - The returned dictionary represents the application's current health status in JSON format for monitoring purposes.

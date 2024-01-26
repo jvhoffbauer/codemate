@@ -1,0 +1,3 @@
+- Defines a property called `router_prefix` for this class (presumably a subclass of Django's `ModelAdmin`)
+- Checks whether the current class inherits from `ModelAdmin`, and returns a prefix based on that inheritance status
+- If it does, uses the name of the current class as part of the prefix; otherwise, uses the name of the model being administered by this admin

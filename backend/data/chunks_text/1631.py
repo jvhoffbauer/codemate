@@ -1,0 +1,5 @@
+- Defines a function `query_or_cookie_extractor` that takes two arguments `q` and `last_query`.
+- The argument `q` is optional and has a default value of `Depends(query_extractor)`, which means it will be extracted from the URL query parameters using another function called `query_extractor`.
+- The argument `last_query` is also optional but has a default value of `None`. It represents the previous search query stored in a cookie.
+- If `q` is empty or nonexistent (i.e., no search query was provided in the current request), then the function returns the value of `last_query` instead. This allows us to preserve the user's previous search query across multiple requests without having to resubmit it every time.
+- Otherwise, the function simply returns the new search query passed as an argument `q`.

@@ -1,0 +1,1 @@
+- Tests the `UpdateRequestHeaderMiddleware` by checking that a new request ID is added to the request header when one isn't present or has an invalid format. - Verifies that the original request ID is preserved and returned in the response JSON when passed through the middleware.

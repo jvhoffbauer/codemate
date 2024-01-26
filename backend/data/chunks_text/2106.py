@@ -1,0 +1,3 @@
+- Creates a new invoice for the API user
+- Sends the invoice to the client and collects payment
+- Notifies the API user via callback when the invoice status changes

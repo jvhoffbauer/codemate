@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional query parameter named `q`, which is of type `Dict[str, Item]` and has a default value of `None`. This parameter can be accessed inside the function body using Pydantic's `Query()` class to parse and validate user input.
+- The function body currently contains a placeholder statement (`pass`) with a comment indicating that it should not be executed during testing (`pragma: no cover`).

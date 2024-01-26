@@ -1,0 +1,3 @@
+- This endpoint returns a union of `User` and `Item`, but always returns an `Item`.
+- The function's return type is annotated with `Union[User, Item]`, indicating that it may return either a `User` or an `Item`. However, in this case, we know for certain that it will return an `Item`.
+- By returning an `Item` instead of a generic dictionary or JSON response, we can provide more specific information to clients about the shape of the data they are receiving.

@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1.0 schema for the FastAPI application using `pydantic_jsonencoders`.
+- Retrieves the generated schema by making a GET request to `/openapi.json`.
+- Asserts that the status code is 200 and checks if the JSON response matches the expected schema.

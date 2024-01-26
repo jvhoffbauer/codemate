@@ -1,0 +1,3 @@
+- Defines a method named `has_delete_permission` that takes in three arguments: `request`, `item_id`, and optional keyword arguments (represented by `**kwargs`)
+- The method is asynchronous (indicated by the `async` keyword)
+- Returns `False` to indicate that the user does not have permission to delete items with the given IDs (stored in the `item_id` list)

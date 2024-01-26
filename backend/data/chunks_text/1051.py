@@ -1,0 +1,4 @@
+- Defines a function `get_dependant()` that takes several optional arguments to configure how dependencies are handled when making API requests using FastAPI.
+- Extracts information from the provided callback function and its parameters to determine which ones should be considered as dependencies.
+- Creates a new instance of the `Dependant` class with the specified configuration options and adds any necessary sub-dependants or fields based on the analysis of each parameter's annotations and default values.
+- Returns the newly created dependency object.

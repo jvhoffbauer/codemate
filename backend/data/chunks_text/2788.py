@@ -1,0 +1,1 @@
+- Tests GET request to `/users/{user_id}/items` endpoint with user ID 'abc123' and item ID 'item01'. - Verifies HTTP status code is 200 OK and checks if returned JSON matches expected values for item ID and user ID.

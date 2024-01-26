@@ -1,0 +1,2 @@
+- Tests the `/router` endpoint by connecting to it using Flask's built-in testing client (TestClient).
+- Verifies that the initial message received from the WebSocket connection contains an array of strings representing the list of available routers ("app", "router2", "router", and "routerindex").

@@ -1,0 +1,4 @@
+- Defines a function `cookie_examples()` that takes an optional argument `data`.
+- If no value is provided for `data`, it sets its initial value to be a `Cookie` object with some predefined values and examples.
+- The `Cookie` class allows defining custom cookies for API requests using JSON Schema or OpenAPI specifications.
+- This implementation provides two example cookies ("json_schema_cookie1" and "json_schema_cookie2") as well as two additional ones defined in the `openapi_examples` dictionary (with summaries and descriptions).

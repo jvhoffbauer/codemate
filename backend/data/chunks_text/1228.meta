@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\")\nasync def read_items() -> list[Item]:\n    return [\n        Item(name=\"Portal Gun\", price=42.0),\n        Item(name=\"Plumbus\", price=32.0),\n    ]"}

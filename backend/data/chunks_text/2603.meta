@@ -1,0 +1,1 @@
+{"original_code": "@app.delete(\"/items/{item_id}\")\ndef delete_item(item_id: str, item: Item):\n    return {\"item_id\": item_id, \"item\": item}"}

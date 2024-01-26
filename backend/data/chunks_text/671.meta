@@ -1,0 +1,1 @@
+{"original_code": "    def cleanup(**kwargs: Any) -> None:\n        \"\"\"\n        Clear context vars, to avoid re-using values in the next task.\n\n        Context vars are cleared automatically in a HTTP request-setting,\n        but must be manually reset for workers.\n        \"\"\"\n        correlation_id.set(None)"}

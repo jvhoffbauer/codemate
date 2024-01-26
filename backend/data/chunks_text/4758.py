@@ -1,0 +1,3 @@
+- Retrieves a specific model (modelA) using FastAPI's built-in `TestClient`.
+- Verifies that the HTTP status code is 200 and checks the JSON response for correctness.
+- Extracts nested sub-model'model_b' from the main model object and asserts its value to be {'username': 'test-user'}

@@ -1,0 +1,1 @@
+{"original_code": "def test_dependency_set_status_code():\n    response = client.get(\"/\")\n    assert response.status_code == 201, response.text\n    assert response.json() == {\"msg\": \"Hello World\"}"}

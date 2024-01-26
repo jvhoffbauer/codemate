@@ -1,0 +1,1 @@
+{"original_code": "    def create_body_model(\n        *, fields: Sequence[ModelField], model_name: str\n    ) -> Type[BaseModel]:\n        field_params = {f.name: (f.field_info.annotation, f.field_info) for f in fields}\n        BodyModel: Type[BaseModel] = create_model(model_name, **field_params)  # type: ignore[call-overload]\n        return BodyModel"}

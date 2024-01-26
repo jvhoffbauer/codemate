@@ -1,0 +1,3 @@
+- Defines an `async` function called `session` that takes a parameter of type `AsyncConnection`.
+- Inside this function, creates a new instance of `AsyncSession` using the provided connection and sets the `expire_on_commit` flag to False. This means that the session will not be automatically closed after committing changes.
+- Yields the created session object for use within other functions or blocks in the program.

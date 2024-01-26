@@ -1,0 +1,1 @@
+{"original_code": "async def ws_dependency_validate(x_missing: str = Header()):\n    pass  # pragma: no cover"}

@@ -1,0 +1,2 @@
+- Sends a GET request to /items with an invalid token (notexistent testtoken) in the Authorization header
+- Asserts that the status code is still 200 and checks if the server returns an error message ("Create an account first") instead of returning actual item data

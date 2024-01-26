@@ -1,0 +1,6 @@
+- Defines a function `receive_wrapper` that takes another asynchronous function `receive` as an argument and returns a new asynchronous function called `inner`.
+- Initializes a variable `received` to zero inside the `inner` function.
+- Inside the `inner` function, receives a message using the original `receive` function and checks its type. If it's not an HTTP request, it simply passes the message back without any modifications.
+- Calculates the length of the message body (if present) and updates the `received` counter with this value.
+- Checks whether the total amount of content received so far is greater than a certain maximum size. If yes, raises an exception with a custom error code and details.
+- Otherwise, just passes the message back unmodified.

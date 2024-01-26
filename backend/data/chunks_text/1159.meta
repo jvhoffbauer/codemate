@@ -1,0 +1,1 @@
+{"original_code": "async def create_item(request: Request):\n    raw_body = await request.body()\n    data = magic_data_reader(raw_body)\n    return data"}

@@ -1,0 +1,3 @@
+- Defines a new method called `method()` that takes keyword arguments and returns a function decorator.
+- The decorator is named `decorator()`, which accepts a function or coroutine as an argument (`func`) and adds it to a list of methods using the `self.add_method_route()` method with the provided keyword arguments (`**kwargs`).
+- Returns the original function passed into the decorator for use in other parts of the program.

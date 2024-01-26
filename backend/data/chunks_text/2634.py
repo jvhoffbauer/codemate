@@ -1,0 +1,1 @@
+- Sends a GET request to `/items/` using Flask's built-in testing client (client) and stores the resulting response in variable'response'. - Asserts that the JSON representation of the response is equal to {'id': 'foo'} using Python's built-in unittest module's assert function (assert).

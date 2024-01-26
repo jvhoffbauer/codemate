@@ -1,0 +1,1 @@
+- Tests whether `Query(None)` is correctly represented as a string using Python's built-in `repr()` function. - Verifies that the representation of an empty query (i.e., one with no conditions or filters) is simply `"Query(None)"`.

@@ -1,0 +1,5 @@
+- This endpoint is used to extract named entities (NEs) from a batch of records using FastText's NER model.
+- The request body contains an array of `Record` objects with their unique ID and text data.
+- The function iterates over each record, creates a dictionary representing its metadata, and appends it to a list of dictionaries called `documents`.
+- It then passes this list of dictionaries to the `extract_entities()` method provided by the FastText library, which returns a list of entity extraction results as a nested JSON structure.
+- Finally, the function converts these results into a list of `Record` objects with their extracted entities, and returns them in a JSON format.

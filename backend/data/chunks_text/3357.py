@@ -1,0 +1,5 @@
+- Generates an OpenAPI schema for a FastAPI application using `pydantic` and `fastapi`.
+- Tests the generated schema by making a GET request to the `/openapi.json` endpoint of the app.
+- Verifies that the status code is 200 and the JSON response matches the expected structure with placeholders filled in (e.g., title, version).
+- Checks that the paths section contains the correct route information and responses, including summary, operation ID, security requirements, etc.
+- Confirms that the components section includes the necessary security scheme definitions.

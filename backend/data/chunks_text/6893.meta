@@ -1,0 +1,1 @@
+{"original_code": "def get_app() -> FastAPI:\n    fast_app = FastAPI(title=APP_NAME, version=APP_VERSION, debug=IS_DEBUG)\n    fast_app.include_router(api_router, prefix=API_PREFIX)\n\n    fast_app.add_event_handler(\"startup\", start_app_handler(fast_app))\n    fast_app.add_event_handler(\"shutdown\", stop_app_handler(fast_app))\n\n    return fast_app"}

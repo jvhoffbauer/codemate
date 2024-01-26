@@ -1,0 +1,3 @@
+- Sets up basic application information (title and version) and a single server URL for testing purposes
+- Makes an HTTP GET request to `/openrpc.json`, which is a standard endpoint for OpenRPC specification files
+- Asserts that the response JSON matches the expected structure with the provided application info and server URLs

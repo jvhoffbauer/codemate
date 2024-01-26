@@ -1,0 +1,3 @@
+- Defines a function called `Default` that takes in an argument of type `DefaultType`.
+- The docstring explains that this function should not be called directly and is instead used for internal purposes.
+- Its purpose is to help identify cases where a default value has been replaced with another non-false value. This is achieved by returning a custom object (`DefaultPlaceholder`) containing the original default value.

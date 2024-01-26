@@ -1,0 +1,3 @@
+- Defines a function called `decorator` that takes in a parameter `func`, which is of type `DecoratedCallable`.
+- Inside the function, it calls another method `self.add_middleware()` on an object `self` and passes two arguments - `BaseHTTPMiddleware` (a class or instance) and `dispatch=func` to add middleware functionality before executing the decorated function.
+- Finally, the original function `func` is returned without any modifications. This allows us to use this decorator as we would normally use a Python decorator.

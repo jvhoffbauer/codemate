@@ -1,0 +1,1 @@
+{"original_code": "def read_current_user(username: Annotated[str, Depends(get_current_username)]):\n    return {\"username\": username}"}

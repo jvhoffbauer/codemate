@@ -1,0 +1,5 @@
+- Tests if Sentry SDK is installed by checking if `set_tag` method of `scope` object is called with 'transaction_id' tag and its value passed to it.
+- Uses a mocking library (in this case, Python's built-in unittest.mock module) to simulate the behavior of Sentry SDK's configuration function `configure_scope`.
+- Creates a mock `scope` object which returns an instance of another mock `MockedScope`, allowing us to control how the `configure_scope` function behaves during testing.
+- Calls our helper functions `set_transaction_id` and `set_tag` inside the mocked context manager returned by `MockedScope`.
+- Asserts that the `set_tag` method was called once with 'transaction_id' as the key and the expected ID value as the argument.

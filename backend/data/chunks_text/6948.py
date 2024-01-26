@@ -1,0 +1,3 @@
+- This function retrieves a list of users from the database using `crud_user.get_multi()`.
+- It takes two optional arguments for pagination (`offset` and `limit`) with default values.
+- The function returns the list of users as a response to the API request.

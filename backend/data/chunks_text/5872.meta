@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: \"AdminApp\"):\n        super().__init__(app)\n        assert hasattr(\n            self.model, \"delete_time\"\n        ), \"SoftDeleteModelAdmin\u9700\u8981\u5728\u6a21\u578b\u4e2d\u5b9a\u4e49delete_time\u5b57\u6bb5\""}

@@ -1,0 +1,1 @@
+{"original_code": "def test_login():\n    response = client.post(\"/token\", data={\"username\": \"johndoe\", \"password\": \"secret\"})\n    assert response.status_code == 200, response.text\n    content = response.json()\n    assert \"access_token\" in content\n    assert content[\"token_type\"] == \"bearer\""}

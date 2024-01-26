@@ -1,0 +1,5 @@
+- Sets environment variable `GDAL_DISABLE_READDIR_ON_OPEN` to a custom value using `monkeypatch`.
+- Creates an instance of FastAPI without passing any arguments.
+- Defines a function called `home` that returns the current value of `GDAL_DISABLE_READDIR_ON_OPEN`.
+- Registers routes for `home`, `home1`, `home2`, and `home3` using `APIRouter`.
+- Uses `TestClient` to make requests to each registered route and checks if they return the expected values based on the set environment variables.

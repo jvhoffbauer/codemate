@@ -1,0 +1,3 @@
+- Defines a GET request for `"/items/"`, which returns a dictionary called `query_items`.
+- Includes an optional parameter `q` that can be passed in as a list of strings or `None`.
+- Uses Pydantic's `Annotated` and `Query()` decorators to validate and parse the `q` parameter.

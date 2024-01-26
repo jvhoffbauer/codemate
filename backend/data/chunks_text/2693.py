@@ -1,0 +1,3 @@
+- This endpoint returns a `User` object with annotated None type for its response model, but actually returns an `Item`.
+- The returned value is not compatible with the specified response model, causing an error during JSON serialization or deserialization.
+- Use this example to demonstrate how FastAPI handles invalid response models and how to avoid such errors in your own endpoints.

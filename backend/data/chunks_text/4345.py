@@ -1,0 +1,1 @@
+- Tests the `GET /items/{item_id}` endpoint using a mock server (FastAPI app) and a testing client provided by Pytest. - Verifies that the status code is 200 OK and checks the response body for correctness. - Uses Pytest's built-in assert statement to raise an error if the conditions are not met.

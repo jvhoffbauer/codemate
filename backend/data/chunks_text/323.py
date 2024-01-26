@@ -1,0 +1,1 @@
+- Defines a function `main` that executes three functions in sequence: `create_db_and_tables`, `create_heroes`, and `select_heroes`. - The last function called is `select_heroes` with line number (13). This suggests that this function retrieves data from the database tables created earlier.

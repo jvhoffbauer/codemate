@@ -1,0 +1,4 @@
+- Defines two SQLAlchemy models `Team` and `Hero`, with a foreign key relationship between them using `sa_column_args`.
+- Creates an SQLite database connection and executes SQLAlchemy's `create_all()` method to generate tables based on the defined models.
+- Uses Pytest's `caplog` fixture to capture logging messages during execution of the tests.
+- Asserts that the generated SQL statement for creating the 'hero' table includes the expected foreign key constraint definition.

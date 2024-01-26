@@ -1,0 +1,1 @@
+{"original_code": "def test_update_hero_not_found(client: TestClient):\n    response = client.patch(\"/heroes/9000\", json={\"name\": \"Very-Rusty-Man\"})\n    assert response.status_code == 404"}

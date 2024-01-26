@@ -1,0 +1,1 @@
+{"original_code": "    async def update_items(\n        self, request: Request, item_id: List[str], values: Dict[str, Any]\n    ) -> List[TableModelT]:\n        \"\"\"Update the database data by id.\"\"\"\n        return await self.db.async_run_sync(self._update_items, item_id, values)"}

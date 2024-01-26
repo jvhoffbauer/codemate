@@ -1,0 +1,1 @@
+{"original_code": "    async def get_page(self, request: Request) -> Page:\n        page = await super(FormAdmin, self).get_page(request)\n        page.body = await self.get_form(request)\n        return page"}

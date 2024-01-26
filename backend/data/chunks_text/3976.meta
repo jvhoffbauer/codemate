@@ -1,0 +1,1 @@
+{"original_code": "def test_get_enums_lenet():\n    response = client.get(\"/models/lenet\")\n    assert response.status_code == 200\n    assert response.json() == {\"model_name\": \"lenet\", \"message\": \"LeCNN all the images\"}"}

@@ -1,0 +1,1 @@
+{"original_code": "async def authenticate(\n    session: AsyncSession, email: EmailStr, password: str\n) -> Optional[User]:\n    user = await crud_user.get(session, email=email)\n    if user is not None and is_valid_password(password, user.hashed_password):\n        return user\n    return None"}

@@ -1,0 +1,3 @@
+- Endpoint for creating new items in the application
+- Accepts JSON data representing an `Item` object as input using FastAPI's built-in Pydantic model validation
+- Returns the newly created `Item` object as the response body, decorated with OpenAPI schema metadata to provide detailed documentation and type hinting

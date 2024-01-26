@@ -1,0 +1,1 @@
+{"original_code": "    def __getattr__(self, name):\n        return self._state.get()[name]"}

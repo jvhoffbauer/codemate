@@ -1,0 +1,3 @@
+- Imports `TestClient` class and `app` object from a specific location in the project's documentation sources (docs_src).
+- Creates an instance of `TestClient` with `app` as its argument, which is used to test Flask applications.
+- Returns the created `TestClient` instance for further use in tests or other functions that require it.

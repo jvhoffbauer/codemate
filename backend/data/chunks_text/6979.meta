@@ -1,0 +1,1 @@
+{"original_code": "async def test_home(client: AsyncClient, superuser_token_headers: Dict[str, str]):\n    res = await client.get(\"/api/v1/home\", headers=superuser_token_headers)\n    assert res.status_code == 200\n    assert res.json() == \"Hello World!\""}

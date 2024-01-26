@@ -1,0 +1,2 @@
+- Defines a function `try_cast` that takes two arguments: an expression and a data type.
+- Returns a `TryCast` object using SQLAlchemy's built-in `try_cast()` function with the given expression and data type as arguments (ignoring argument type checking).

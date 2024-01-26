@@ -1,0 +1,3 @@
+- Defines an asynchronous function `test_view()` that takes a `Request` object as its argument and returns a dictionary with one key-value pair.
+- Inside the function, logs a debug message to the application's logger using the `logger` variable (presumably initialized elsewhere).
+- Retrieves the value of the HTTP header "X-Request-ID" from the incoming request and includes it in the returned dictionary under the key "correlation_id".

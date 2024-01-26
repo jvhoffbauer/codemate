@@ -1,0 +1,3 @@
+- Defines a FastAPI route with GET method and customized response model (User).
+- The `response_model` parameter is used to specify that the function should return an instance of the User class, without explicitly defining its structure in the function signature or using JSON schema for validation purposes.
+- This approach simplifies the API design by reducing boilerplate code and improving readability, as the expected data format is directly associated with the endpoint's name.

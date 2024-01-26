@@ -1,0 +1,5 @@
+- Defines a method `url_for()` that takes two arguments `Request` and `name`, as well as optional keyword arguments `**path_params`.
+- Returns the full URL (including prefix) for a specified endpoint using the router's `url_path_for()` function.
+- Concatenates the base URL from the request object with the router prefix (if present), replacing any custom path parameters with values from the `path_params` dictionary passed to the method.
+- Uses the `replace_params()` function to perform this replacement. This function is not defined within this snippet of code but may be found elsewhere in the same module or another related one.
+- Finally, combines the resulting URL string with the original URL path to create an absolute URL.

@@ -1,0 +1,3 @@
+- This function is a GET request for all heroes, identified by their URI `"/heroes/"`.
+- It returns an array of Hero objects (defined elsewhere in the program), which are retrieved from the database using SQLAlchemy's `Session` and `select` functions.
+- The returned data conforms to the specified JSON schema defined by the `response_model` decorator.

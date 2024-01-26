@@ -1,0 +1,1 @@
+{"original_code": "async def create_user(user_in: UserIn):\n    user_saved = fake_save_user(user_in)\n    return user_saved"}

@@ -1,0 +1,1 @@
+{"original_code": "    def isoformat(self):\n        return datetime.datetime.strptime(self.date, self.strformat).isoformat()"}

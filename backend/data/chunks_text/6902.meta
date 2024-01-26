@@ -1,0 +1,1 @@
+{"original_code": "    def startup() -> None:\n        logger.info(\"Running app start handler.\")\n        _startup_model(app)"}

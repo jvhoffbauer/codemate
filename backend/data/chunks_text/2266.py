@@ -1,0 +1,2 @@
+- Defines a function `get_valid()` that returns an instance of class `Item`.
+- The returned object has its name aliased to "valid" and its price set to 1.0.

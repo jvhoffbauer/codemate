@@ -1,0 +1,4 @@
+- Defines a function called `select` with four arguments (`entity_0`, `entity_1`, `__ent2`, and `entity_3`) that returns an object of type `Select`.
+- The first two arguments are scalar types denoted by `_TScalar_0` and `_TScalar_1`.
+- The third argument is a tuple containing a generic type `_TCCA` followed by another generic type `_T2`. This indicates that this parameter can be any iterable or sequence data structure.
+- The fourth argument is also a scalar type represented as `_TScalar_3`.

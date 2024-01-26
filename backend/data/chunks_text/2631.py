@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that returns a dictionary with one key-value pair containing the string 'foo' for the value associated with the key 'id'.

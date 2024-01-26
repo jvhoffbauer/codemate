@@ -1,0 +1,3 @@
+- Initializes a boolean flag `state.router_startup` to true, indicating that the router has completed its startup process.
+- This function is likely called by the router's initialization routine or bootstrap script.
+- It may be used in other parts of the system to check if the router is fully operational and ready for use.

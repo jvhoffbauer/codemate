@@ -1,0 +1,3 @@
+- Defines a PUT request handler at `/<item_id>` with custom tag and specific error response (HTTP 403 Forbidden).
+- Checks whether the requested item ID matches a predefined value ("plumbus") and raises an exception with appropriate details otherwise.
+- Returns a simple dictionary as response body containing both the updated item ID and name ("Plumbus").

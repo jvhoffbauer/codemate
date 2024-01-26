@@ -1,0 +1,1 @@
+{"original_code": "@APP.exception_handler(pydantic.error_wrappers.ValidationError)\nasync def handle_validation_error(\n    request: Request, exc: pydantic.error_wrappers.ValidationError\n):  # pylint: disable=unused-argument\n    \"\"\"\n    Handles validation errors.\n    \"\"\"\n    return JSONResponse({\"message\": exc.errors()}, status_code=422)"}

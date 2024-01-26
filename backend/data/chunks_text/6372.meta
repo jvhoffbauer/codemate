@@ -1,0 +1,1 @@
+{"original_code": "    def __eq__(self, other):\n        if not isinstance(other, User):\n            return False\n        return self.name == other.name"}

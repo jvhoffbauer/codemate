@@ -1,0 +1,3 @@
+- Defines a dataclass called `BandsParams` that inherits from `DefaultDependency`.
+- Contains a single field named `bands`, which is an optional list of strings representing band names.
+- Includes Swagger documentation using Pydantic's built-in decorators to provide a user-friendly interface for specifying band names as query parameters in API requests.

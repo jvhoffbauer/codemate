@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method(middlewares=[method_middleware])\n    def probe(\n        data: str = Body(..., examples=[\"123\"]),\n    ) -> str:\n        return data"}

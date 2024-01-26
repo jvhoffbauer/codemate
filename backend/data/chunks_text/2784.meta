@@ -1,0 +1,1 @@
+{"original_code": "def test_get_items_2():\n    \"\"\"Check that /items returns expected data with user_id specified\"\"\"\n    response = client.get(\"/items?user_id=abc123\")\n    assert response.status_code == 200, response.text\n    assert response.json() == [{\"item_id\": \"i2\", \"user_id\": \"abc123\"}]"}

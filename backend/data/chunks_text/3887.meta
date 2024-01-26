@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_hidden_query(client: TestClient):\n    response = client.get(\"/items?hidden_query=somevalue\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"hidden_query\": \"somevalue\"}"}

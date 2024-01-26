@@ -1,0 +1,1 @@
+- Tests if accessing the OAuth2 redirect URL without authentication results in a 404 error. - Uses Flask's built-in `client` object to simulate an HTTP request and retrieve the server's response. - Asserts that the status code of the response is equal to 404 (not found) and saves the text content for debugging purposes.

@@ -1,0 +1,1 @@
+- Tests that Pydantic's JSON schema generation correctly inherits and merges fields from a base class (BaseModel) and an overriding subclass (InheritModel). - Verifies that enum types are properly referenced in the generated schema using $ref. - Confirms that required fields are accurately identified by the schema generator.

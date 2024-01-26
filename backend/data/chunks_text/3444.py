@@ -1,0 +1,3 @@
+- Tests whether `Default()` returns a boolean value based on its argument (True or False) when called as a function
+- Uses two different arguments to demonstrate that this behavior is consistent for all values passed in
+- Asserts that the expected boolean values are returned using Python's built-in `assert` statement

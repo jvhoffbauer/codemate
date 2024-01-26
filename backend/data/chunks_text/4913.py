@@ -1,0 +1,4 @@
+- Creates a new item with a randomly generated title and description using `ItemCreate`.
+- Persists the item to the default bucket for the current user.
+- Retrieves the newly created item from the database.
+- Deletes the previously created item and retrieves it again to ensure that it has been deleted successfully.

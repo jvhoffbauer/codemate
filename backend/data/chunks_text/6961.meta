@@ -1,0 +1,1 @@
+{"original_code": "def create_access_token(user: User) -> str:\n    expire = datetime.utcnow() + timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)\n    return jwt.encode(\n        {\"exp\": expire, \"user_id\": str(user.id)},\n        key=settings.SECRET_KEY.get_secret_value(),\n        algorithm=ALGORITHM,\n    )"}

@@ -1,0 +1,1 @@
+- Retrieves user information for the currently logged in user using FastAPI's `Depends()` decorator to pass the authenticated user object (`current_user`) as an argument to the function. - Returns the retrieved user data in JSON format.

@@ -1,0 +1,5 @@
+- Defines a function `create_access_token` that takes two arguments: `subject` (required) and an optional `expires_delta`.
+- If `expires_delta` is provided, sets the token's expiration time based on it; otherwise, uses a default value from `settings.py`.
+- Creates a dictionary with the necessary claims ("payload") for the JWT, including the subject and expiration time.
+- Encodes the payload using the `jwt.encode()` method of the Flask-JWT-Extended library, passing in the secret key and algorithm specified in `settings.py`.
+- Returns the resulting JWT string.

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/redoc\", include_in_schema=False)\nasync def redoc_html():\n    return get_redoc_html(\n        openapi_url=app.openapi_url,\n        title=app.title + \" - ReDoc\",\n        redoc_js_url=\"https://unpkg.com/redoc@next/bundles/redoc.standalone.js\",\n    )"}

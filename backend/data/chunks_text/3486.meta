@@ -1,0 +1,1 @@
+{"original_code": "async def routerindex(websocket: WebSocket, deps: DepList):\n    await websocket.accept()\n    await websocket.send_text(json.dumps(deps))\n    await websocket.close()"}

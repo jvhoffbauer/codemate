@@ -1,0 +1,2 @@
+- Takes a `UploadFile` object as input and appends it to a list called `testing_file_store`.
+- Returns a dictionary with a single key-value pair, where the value is the filename of the uploaded file.

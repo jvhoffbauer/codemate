@@ -1,0 +1,3 @@
+- Defines a fixture named `client` for use in pytests using Flask's `TestClient`.
+- Imports the necessary module and class (`app`, `TestClient`) to create an instance of the test client.
+- Returns the created `TestClient` object, making it available for use in other tests that utilize this fixture.

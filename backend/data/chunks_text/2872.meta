@@ -1,0 +1,1 @@
+{"original_code": "def test_body_repr_ellipsis():\n    assert repr(Body(...)) == IsOneOf(\n        \"Body(PydanticUndefined)\",\n        # TODO: remove when deprecating Pydantic v1\n        \"Body(Ellipsis)\",\n    )"}

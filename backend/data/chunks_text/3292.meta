@@ -1,0 +1,1 @@
+{"original_code": "def test_dependency_set_status_code():\n    response = client.delete(\"/1\")\n    assert response.status_code == 400 and response.content\n    assert response.json() == {\"msg\": \"Status overwritten\", \"id\": 1}"}

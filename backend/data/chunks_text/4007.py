@@ -1,0 +1,1 @@
+- Defines a fixture named `client` for use in pytests. - Imports the Flask application defined in tutorial001 of the documentation sources (docs_src). - Creates an instance of the Flask test client and returns it to be used by tests that require access to the server's functionality.

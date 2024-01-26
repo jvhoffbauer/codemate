@@ -1,0 +1,3 @@
+- Tests if user is authenticated using HTTP Basic authentication with no credentials provided
+- Sends a GET request to "/users/me" endpoint without providing any username and password in headers
+- Verifies that server returns expected status code (401 Unauthorized) and error message ("Create an account first") as JSON response

@@ -1,0 +1,3 @@
+- Defines an asynchronous function `dep_counter()`.
+- Increments a global dictionary key 'counter' by 1 and stores it in another global dictionary called `counter_holder`.
+- Returns the value of the updated 'counter' from `counter_holder`.

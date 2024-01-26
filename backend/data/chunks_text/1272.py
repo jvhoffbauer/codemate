@@ -1,0 +1,3 @@
+- Endpoint `POST /files/` creates one or more files and returns a JSON response with their sizes.
+- The request body contains a list of binary data (`bytes`) objects, annotated as `File()`.
+- The function extracts the contents of each file using list comprehension and returns them as part of a dictionary.

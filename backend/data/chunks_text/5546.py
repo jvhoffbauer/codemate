@@ -1,0 +1,3 @@
+- Defines a method `filter_insfield()` that filters a list of SQLAlchemy fields or any objects to get their corresponding InstrumentedAttributes (i.e., attributes with metadata).
+- Accepts two optional arguments `save_class` and `exclude_property`. If provided, it filters out fields based on these criteria.
+- Returns a list of unique InstrumentedAttributes, preserving original order.

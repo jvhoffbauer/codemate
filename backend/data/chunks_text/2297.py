@@ -1,0 +1,3 @@
+- Tests converting an integer URL parameter to a dictionary key and returning it as JSON
+- Uses Flask's `client` object to simulate making a GET request to the route with the URL path `/int/<int:param>`
+- Asserts that the status code is 200 OK, the returned text is empty (no content), and the JSON response contains the converted integer value in a dictionary called "int". Also checks if the reverse URL for this route can be generated using Flask's built-in helper function `url_path_for`.

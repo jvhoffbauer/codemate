@@ -1,0 +1,1 @@
+- This function tests creating a new user by a normal (non-admin) user using the `client` and `normal_user_token_headers`. - The `username` and `password` are generated randomly for each test run. - If the request is successful, an error with status code 400 should be raised because non-admins cannot create users in this implementation.

@@ -1,0 +1,3 @@
+- Tests if login with incorrect username returns a 400 Bad Request status and an error message containing 'Incorrect username or password'
+- Uses FastAPI's built-in `TestClient` to simulate HTTP requests for testing purposes
+- Demonstrates how to use JSON responses in tests by checking both the status code and the content of the response body

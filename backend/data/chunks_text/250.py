@@ -1,0 +1,1 @@
+- This function is a FastAPI endpoint with the route `"/teams/"`. - It returns a list of Team objects in JSON format using the `response_model` decorator. - The query parameters `offset` and `limit` are used to paginate the results from the database.

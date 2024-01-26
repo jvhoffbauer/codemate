@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"module\")\ndef ordinary_token_headers(client: TestClient) -> dict:\n    \"\"\"\n    \u666e\u901a\u7528\u6237\n    :param client:\n    :return:\n    \"\"\"\n    return user_authentication_headers(\n        client=client, email=\"test@test.com\", password=\"test\"\n    )"}

@@ -1,0 +1,1 @@
+{"original_code": "def test_route_converters_path():\n    # Test path conversion\n    response = client.get(\"/path/some/example\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"path\": \"some/example\"}"}

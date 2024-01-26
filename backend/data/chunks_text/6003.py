@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_init_data()` that takes a `Request` object and optional keyword arguments (`**kwargs`)
+- Returns an instance of `BaseApiOut`, which is a class provided by FastAPI's built-in OpenAPI support for handling responses with custom data types
+- The returned value contains a dictionary with two keys ("username" and "password") and their corresponding values ("admin")

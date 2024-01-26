@@ -1,0 +1,1 @@
+{"original_code": "    @property  # type: ignore\n    def __class__(self):\n        return uuid.UUID"}

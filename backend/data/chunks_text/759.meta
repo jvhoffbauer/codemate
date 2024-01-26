@@ -1,0 +1,1 @@
+{"original_code": "    def _name_to_id(self, text: str):\n        \"\"\"Utility function to do a messy normalization of an entity name\n\n        text (str): text to create \"id\" from\n        \"\"\"\n        return \"-\".join([s.lower() for s in text.split()])"}

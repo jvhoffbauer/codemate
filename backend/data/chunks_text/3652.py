@@ -1,0 +1,2 @@
+- Tests if users can be retrieved with a specific token (in this case, 'jessica') using GET request to /users endpoint in Flask application
+- Asserts that status code is 200 and expected list of usernames are returned as JSON response

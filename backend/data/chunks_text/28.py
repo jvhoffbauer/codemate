@@ -1,0 +1,4 @@
+- Defines a class decorator called `__tablename__` that takes no arguments (represented by an empty parameter list).
+- Inside the decorator, it accesses the current class being decorated using the `cls` variable and retrieves its name using the `__name__` attribute.
+- The lowercase version of the class name is returned as the table name for SQLAlchemy to use in database queries.
+- This allows us to define our own custom naming conventions for tables without having to modify SQLAlchemy's default behavior.

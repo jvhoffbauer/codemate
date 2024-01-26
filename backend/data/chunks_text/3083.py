@@ -1,0 +1,6 @@
+- Defines a base model `PersonBase`, which is inherited by two other models `Person` and `PersonCreate`.
+- Enables ORM mode for all Pydantic classes using `Config.orm_mode = True`.
+- Allows reading from database tables directly into Pydantic objects with `Config.read_with_orm_mode = True`.
+- Creates an endpoint to create a new `Person` object, returning it as a subclass of `PersonBase` with additional fields filled in (`full_name`) based on its attributes.
+- Uses the `TestClient` provided by FastAPI to make requests against the created server instance.
+- Tests that creating a new `Person` returns the expected JSON representation, including both original input values and derived ones calculated at runtime.

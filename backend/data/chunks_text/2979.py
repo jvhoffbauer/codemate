@@ -1,0 +1,3 @@
+- Defines an endpoint `/a` using FastAPI's decorator syntax (`@app.get`) and assigns it to the function `a()`.
+- Includes a customized response definition for the status code `200 OK`, which is assigned to the key `"hello"` in the dictionary passed as argument to `responses`. The description provided will be displayed by tools like Swagger or ReDoc when interacting with this endpoint.
+- Uses the pragma directive to skip test coverage of the function body, since its purpose here is just to demonstrate how to define a customized response.

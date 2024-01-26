@@ -1,0 +1,3 @@
+- Defines an endpoint `/validate` for POST requests using FastAPI's router decorator
+- Accepts a request body in the format of a MosaicJSON object (defined by the `MosaicJSON` type hint)
+- Returns `True`, indicating successful validation of the MosaicJSON data

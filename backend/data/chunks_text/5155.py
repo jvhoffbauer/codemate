@@ -1,0 +1,4 @@
+- Defines a `register_routes` method that registers routes with the router
+- Cannot directly define routes as methods due to `self` parameter
+- Registers default routes for various endpoints using class methods
+- Optionally registers additional routes based on configuration flags

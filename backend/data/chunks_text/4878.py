@@ -1,0 +1,3 @@
+- Defines a function `get_index` that takes several arguments for connecting to Couchbase and retrieving an index definition by name
+- Makes a GET request to the specified URL using the `requests` library and passes authentication credentials as needed
+- Handles errors such as a missing or invalid index, returning `None` in those cases and raising exceptions otherwise

@@ -1,0 +1,1 @@
+{"original_code": "    def conv_row_to_dict(self, rows: List[Row]) -> List[Dict[str, Any]]:\n        \"\"\"sqlalchemy row to dict\"\"\"\n        if not rows:\n            return []\n        keys = self.get_row_keys(rows[0])\n        return [dict(zip(keys, row)) for row in rows]"}

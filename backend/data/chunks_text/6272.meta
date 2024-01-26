@@ -1,0 +1,1 @@
+{"original_code": "    def read_file_v1(self, state):\n        filepath = \"tests/expected_output/v1_{state}.json\".format(state=state)\n        with open(filepath, \"r\") as file:\n            expected_json_output = file.read()\n        return expected_json_output"}

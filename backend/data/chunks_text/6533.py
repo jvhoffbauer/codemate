@@ -1,0 +1,3 @@
+- Defines a fixture named `method_request` that takes two arguments (`json_request`, `add_path_postfix`) and returns a function called `requester`.
+- The `requester` function accepts three parameters (`method`, `params`, `request_id`) and constructs an HTTP request using the `json_request` fixture with additional query string parameters based on the value of `add_path_postfix`.
+- Returns the `requester` function as the result of the fixture definition.

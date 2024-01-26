@@ -1,0 +1,1 @@
+{"original_code": "    def main() -> Dict[str, str]:\n        return {\"message\": \"Hello World\"}"}

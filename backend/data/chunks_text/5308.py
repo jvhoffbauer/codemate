@@ -1,0 +1,3 @@
+- Tests the `CustomRenderParams` class as a render dependency for generating tiles using GeoPandas and GDAL libraries in FastAPI.
+- Verifies that custom parameters such as nodata value, output compression, and rescale are correctly passed to GDAL's `gdal.Translate()` function during tile generation.
+- Uses `FastAPI`'s built-in testing framework (`pytest`) to make HTTP requests and validate responses from the generated tiles.

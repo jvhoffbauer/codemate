@@ -1,0 +1,5 @@
+- Defines a property `route_create` that returns an asynchronous function called `route`. This function is used to define a new route for creating links between items.
+- The `route` function takes three arguments: `request`, which represents the HTTP request; `link_id`, which is a list of IDs representing the links to be created; and `item_id`, which is a list of IDs representing the items involved in these links.
+- Before proceeding with the creation process, the function checks whether the user has permission to update the specified items using the `has_update_permission` method provided by FastAPI's built-in security system (Pydantic Security). If access is denied, it returns an error message.
+- For each pair of linked items, the function creates a dictionary containing both the link and the item data. These dictionaries are then passed to the SQL `INSERT` statement, which adds them to the database.
+- After executing the SQL query, the function returns a JSON response containing the number of rows affected by the operation.

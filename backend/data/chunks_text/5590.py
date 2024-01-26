@@ -1,0 +1,3 @@
+- This function is a private method named `_create_items`. It takes two arguments - `session` which represents an SQLAlchemy database connection and `items`, which is a list of dictionaries containing data to be inserted into the table.
+- The function first checks whether the input list `items` is empty or not. If it's empty, it returns an empty list. Otherwise, it creates a new object (i.e., row) for each dictionary using the `create_item` method and adds them all to the session.
+- After adding all objects to the session, the changes are flushed to the database. Finally, the created objects are returned as a list.

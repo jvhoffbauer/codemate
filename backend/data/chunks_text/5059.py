@@ -1,0 +1,2 @@
+- Defines a function named `test_1_plus_1_v2` that takes a single argument called `result`.
+- The returned value is a dictionary with a key "result" and its corresponding boolean value indicating whether the value of `result` equals to 2 or not.

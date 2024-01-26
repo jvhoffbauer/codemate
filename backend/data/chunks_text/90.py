@@ -1,0 +1,2 @@
+- Defines a function `cast()` that takes two arguments - an expression and a data type (represented by `_TypeEngineArgument`) - and returns a new SQLAlchemy `Cast` object for converting the expression to the specified data type.
+- The `sqlalchemy.cast()` method is called with the given expression and data type as arguments, but we suppress any potential type checking errors using the `# type: ignore[arg-type]` comment.

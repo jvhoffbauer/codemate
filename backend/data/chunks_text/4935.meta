@@ -1,0 +1,1 @@
+{"original_code": "def create_random_user():\n    email = random_lower_string()\n    password = random_lower_string()\n    user_in = UserCreate(username=email, email=email, password=password)\n    bucket = get_default_bucket()\n    user = crud.user.upsert(bucket, user_in=user_in, persist_to=1)\n    return user"}

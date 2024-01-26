@@ -1,0 +1,3 @@
+- Defines a fixture named `async_session` for use in pytest tests
+- Uses the `async_db.session_maker()` function to create an AsyncSession object, which is used to interact with the database
+- Yields the session object so it can be accessed by test functions that use this fixture

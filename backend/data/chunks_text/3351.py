@@ -1,0 +1,1 @@
+- Sends a POST request to `/form/python-set` with a dictionary containing an 'items' key and values of 'first','second', and 'third'. - Asserts that the status code is 200 (OK) and saves the text for debugging purposes if necessary. - Converts the JSON response into a set and asserts that it contains all three input items.

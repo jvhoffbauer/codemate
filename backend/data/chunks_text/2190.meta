@@ -1,0 +1,1 @@
+{"original_code": "def test_normal_counter():\n    counter_holder[\"counter\"] = 0\n    response = client.get(\"/counter/\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"counter\": 1}\n    response = client.get(\"/counter/\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"counter\": 2}"}

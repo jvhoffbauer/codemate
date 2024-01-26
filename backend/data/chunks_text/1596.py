@@ -1,0 +1,3 @@
+- This function takes a `user_id` and a database session as arguments using keyword parameters (`user_id: int`, `db: Session = Depends(get_db)`)
+- It retrieves the user with the given ID from the database using the `crud.get_user()` method provided by some library or framework called "Crud"
+- If the user is not found in the database, it raises an HTTP exception with status code 404 and a custom error message ("User not found")

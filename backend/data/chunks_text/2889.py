@@ -1,0 +1,3 @@
+- Defines a function `get_client` that creates an instance of FastAPI and returns it as a test client using PyTest's `TestClient`.
+- Uses a context manager to suppress deprecation warnings from FastAPI's old query parameter syntax (using `Query`) which is being replaced by Pydantic's new syntax (using `Annotated`).
+- Defines a route handler for GET requests at "/items/" that takes a query parameter named 'q', which must match a regular expression starting with "fixedquery". If the query parameter is present, the response includes the value of the query parameter concatenated into a greeting message; otherwise, the default greeting message is returned.

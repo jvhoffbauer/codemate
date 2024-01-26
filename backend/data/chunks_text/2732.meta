@@ -1,0 +1,1 @@
+{"original_code": "def test_no_response_model_no_annotation_return_dict():\n    response = client.get(\"/no_response_model-no_annotation-return_dict\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"name\": \"John\", \"surname\": \"Doe\"}"}

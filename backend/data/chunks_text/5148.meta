@@ -1,0 +1,1 @@
+{"original_code": "    @abc.abstractmethod\n    def register(self, factory: \"BaseTilerFactory\"):\n        \"\"\"Register extension to the factory.\"\"\"\n        ..."}

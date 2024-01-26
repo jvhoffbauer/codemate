@@ -1,0 +1,1 @@
+{"original_code": "@app.on_event(\"shutdown\")\nasync def shutdown():\n    await database.disconnect()"}

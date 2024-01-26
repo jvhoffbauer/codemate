@@ -1,0 +1,1 @@
+- Imports and sets up necessary modules for testing a SQLModel tutorial example (version 001, Python 3.10). - Creates an in-memory SQLite database using `create_engine`. - Patches the built-in `print` function to capture its output during execution of the tutorial's main method. - Calls `check_calls` on the captured print statements to verify that they match expected behavior.

@@ -1,0 +1,1 @@
+- Tests if a GET request to /items endpoint with an invalid X-Token header returns a HTTP status code of 400 and a detailed error message in JSON format.

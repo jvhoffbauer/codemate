@@ -1,0 +1,3 @@
+- Cached function that retrieves locations from categories with a cache time limit of 1 hour using Redis' `TTLCache`.
+- Returns list of `TimelinedLocation` objects containing location information, timelines for confirmed cases, deaths, and recoveries, as well as their respective coordinates and last updated times.
+- Assumes consistency in index positions between confirmed, death, and recovery lists when iterating over them.

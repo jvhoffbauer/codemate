@@ -1,0 +1,1 @@
+- Tests whether `annotation_outer_type()` correctly identifies the outer type of a scalar ellipsis (i.e., `...`) as `Any`. - Uses the `assert` statement to check if the function returns the expected result, which is `Any`, for the input argument `Ellipsis`.

@@ -1,0 +1,2 @@
+- Defines a function called `no_alias_list()` that returns a list containing two dictionaries with a key named 'name'
+- The use of dictionary unpacking (i.e., {**dictionary}) is avoided to prevent aliasing issues when modifying nested keys in subsequent operations on the returned lists or dictionaries

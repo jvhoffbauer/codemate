@@ -1,0 +1,4 @@
+- Retrieves a specific Hero named Spider-Boy from the database using SQLAlchemy's `Session`.
+- Also retrieves the ID of the Team that Spider-Boy belongs to using a WHERE clause in the SELECT statement.
+- Prints out the name of Spider-Boy's team, which was previously stored in a variable called 'team'.
+- Alternatively, prints out the same information by accessing the 'team' attribute directly on the Hero object (hero_spider_boy), since it has already been loaded into memory during the first query.

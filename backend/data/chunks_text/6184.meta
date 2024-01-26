@@ -1,0 +1,1 @@
+{"original_code": "    def latest(self):\n        \"\"\"Get latest available history value.\"\"\"\n        return list(self.timeline.values())[-1] if self.timeline else 0"}

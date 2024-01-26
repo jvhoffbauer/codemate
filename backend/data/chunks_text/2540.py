@@ -1,0 +1,1 @@
+- Defines an asynchronous function `router_ws_custom_error` that takes a websocket object as input and raises a custom error called `CustomError`. - This function can be used to handle custom errors in WebSocket connections, allowing for more specific error handling than standard HTTP status codes provide.

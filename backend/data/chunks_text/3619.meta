@@ -1,0 +1,1 @@
+{"original_code": "    @router.on_event(\"startup\")\n    def router_startup() -> None:\n        state.router_startup = True"}

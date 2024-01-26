@@ -1,0 +1,1 @@
+- Tests raising an authentication error (HTTP status code 401) when accessing a Mosaic JSON file from S3 using Flask's `get()` method with query parameters for URL and bucket name. - Uses Flask's built-in testing framework to run this specific test case, which is part of a larger suite of tests for the application.

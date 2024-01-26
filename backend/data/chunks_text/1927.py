@@ -1,0 +1,3 @@
+- Defines a PUT endpoint for updating an item with the given ID using FastAPI's decorator syntax and `Path` parameter annotation.
+- Uses FastAPI's `Body` annotation to define the request body schema as a subclass of `Item`, which is then passed into the function as an argument named `item`.
+- Provides three example payloads that conform to the defined schema, demonstrating how stringified values can be parsed automatically by FastAPI.

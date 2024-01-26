@@ -1,0 +1,2 @@
+- Defines a function `invalid_request_from_validation_error` that takes an argument `exc` of type `ValidationError`.
+- Inside the function, it returns an instance of `InvalidRequest` with a dictionary called 'data' containing errors from the validation error object (excluding URLs).

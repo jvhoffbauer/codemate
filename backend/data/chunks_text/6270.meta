@@ -1,0 +1,1 @@
+{"original_code": "def test_parse_history(key, locations, index, expected):\n    \"\"\"\n    Test validating and extracting history content from\n    locations data based on index.\n    \"\"\"\n    assert jhu.parse_history(key, locations, index) == expected"}

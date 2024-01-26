@@ -1,0 +1,3 @@
+- Runs pytest tests in parallel using coverage tool for code coverage analysis
+- Uses `subprocess.run()` to execute command with specified arguments and captures output
+- Clears SQLModel metadata before running tests (provided by `clear_sqlmodel` decorator)

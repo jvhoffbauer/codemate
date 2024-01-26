@@ -1,0 +1,1 @@
+- Tests the `get_password_hash()` function defined in tutorial005 of the security module, which generates a password hash using Python's built-in `hashlib` and `binascii` modules for secure storage in databases or configuration files. - Compares the returned value with an expected result (not shown here) to verify correctness.

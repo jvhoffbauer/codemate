@@ -1,0 +1,3 @@
+- Registers one or more algorithm instances with the `Algorithms` class by passing them as a dictionary of names to instances (`Dict[str, BaseAlgorithm]`)
+- Raises an exception if trying to register an algorithm with a name that's already taken unless `overwrite` flag is set to True
+- Returns a new instance of `Algorithms`, merging the newly added algorithms with any existing ones stored in the original object

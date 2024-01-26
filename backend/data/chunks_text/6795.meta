@@ -1,0 +1,1 @@
+{"original_code": "def get_db() -> Generator:\n    with Session(engine) as session:\n        yield session"}

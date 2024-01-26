@@ -1,0 +1,1 @@
+{"original_code": "    @declared_attr  # type: ignore\n    def __tablename__(cls) -> str:\n        return cls.__name__.lower()"}

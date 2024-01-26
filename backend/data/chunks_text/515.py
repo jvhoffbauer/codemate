@@ -1,0 +1,3 @@
+- This is a unit test for `docs_src/tutorial/connect/select/tutorial001.py`.
+- It uses pytest's `@pytest.fixture` to clear SQLModel's metadata and sessionmaker before each test, preventing conflicts between tests.
+- The test imports `tutorial001`, sets its URL and engine, creates a mock print function using `get_testing_print_function`, patches builtin `print` with it, runs `main()`, and checks that the expected console output was printed by comparing against `expected_calls`.

@@ -1,0 +1,1 @@
+- This method is a class decorator that adds a `find_or_404()` function to the defined Django model class. - The `find_or_404()` function returns an instance of the model class filtered by given keyword arguments using `get_object_or_404()`. - If no object matches the filter criteria, a HTTP 404 error will be raised instead of returning None or raising DoesNotExist exception.

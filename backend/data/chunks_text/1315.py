@@ -1,0 +1,1 @@
+- Defines an async function `create_files` that takes a list of byte arrays (representing multiple files) as input through the `File` decorator from Pydantic's `File` class. - Returns a dictionary with keys "file_sizes" and values being the length of each corresponding file passed to the function.

@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(\n        self,\n        name: str = \"\",\n        uuid_length: Optional[int] = None,\n        default_value: Optional[str] = None,\n    ):\n        super().__init__(name=name)\n        self.uuid_length = uuid_length\n        self.default_value = default_value"}

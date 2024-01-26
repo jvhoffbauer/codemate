@@ -1,0 +1,3 @@
+- Defines a function named `_endpoint` that takes an optional argument `params`.
+- The argument is of type `Depends`, which comes from the `dependencies` module, and represents a dependency on another function or object.
+- Inside the function body, we simply return the value of the `params` argument without any modifications.

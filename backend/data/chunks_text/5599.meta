@@ -1,0 +1,1 @@
+{"original_code": "    def schema_name_prefix(self):\n        if self.__class__ is SqlalchemyCrud:\n            return self.model.__name__\n        return super().schema_name_prefix"}

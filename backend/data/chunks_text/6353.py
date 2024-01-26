@@ -1,0 +1,5 @@
+- Generates an access token for a user with provided email and password using the `login_access_token` endpoint
+- Verifies that the status code is OK (200)
+- Extracts the access token from the JSON response
+- Confirms that the token type is Bearer
+- Checks if the access token, expires at, issued at, refresh token, refresh token expiration time, and refresh token issuance time are present in the response

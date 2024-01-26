@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\n    \"/items/valid-exclude-unset\", response_model=Item, response_model_exclude_unset=True\n)\ndef get_valid_exclude_unset():\n    return Item(aliased_name=\"valid\", price=1.0)"}

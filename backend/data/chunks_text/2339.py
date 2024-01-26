@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items` that takes a optional argument `token`.
+- The `Security` decorator is used to specify OAuth2 authentication scheme for the `token` parameter.
+- If the `token` parameter is provided, it returns a dictionary with the key 'token' and its value set to the passed in token.

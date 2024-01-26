@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\ndef api_client():\n    \"\"\"\n    Returns a fastapi.testclient.TestClient.\n    The test client uses the requests library for making http requests.\n    \"\"\"\n    return TestClient(APP)"}

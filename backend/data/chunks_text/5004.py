@@ -1,0 +1,3 @@
+- Defines a class method `one_or_404()` for the current model (accessed through `self`)
+- Takes keyword arguments as input and filters the objects based on them using Django's query syntax
+- Returns either the first object found by filtering or raises a HTTP 404 error if no matching object is found

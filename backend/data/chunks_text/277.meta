@@ -1,0 +1,1 @@
+{"original_code": "def select_heroes():\n    with Session(engine) as session:\n        statement = select(Team).where(Team.name == \"Preventers\")\n        result = session.exec(statement)\n        team_preventers = result.one()\n\n        print(\"Preventers heroes:\", team_preventers.heroes)"}

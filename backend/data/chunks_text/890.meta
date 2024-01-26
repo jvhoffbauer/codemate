@@ -1,0 +1,1 @@
+{"original_code": "    async def close(self) -> None:\n        \"\"\"\n        Close the file.\n\n        To be awaitable, compatible with async, this is run in threadpool.\n        \"\"\"\n        return await super().close()"}

@@ -1,0 +1,1 @@
+{"original_code": "def test_cog_viewer(app):\n    \"\"\"Test COG Viewer.\"\"\"\n    response = app.get(\"/cog/viewer\", headers={\"accept-encoding\": \"gzip\"})\n    assert response.status_code == 200\n    assert response.headers[\"content-type\"] == \"text/html; charset=utf-8\"\n    assert response.headers[\"content-encoding\"] == \"gzip\""}

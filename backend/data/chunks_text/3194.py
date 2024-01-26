@@ -1,0 +1,4 @@
+- Defines a subclass `safe_datetime` of Python's built-in `datetime`.
+- Creates a new model `MyModel` that uses this custom datetime type for its `dt_field`.
+- Uses Pydantic's `jsonable_encoder` to encode an instance of `MyModel`, passing in a custom encoder dictionary that converts instances of our `safe_datetime` subclass to their ISO format string representation using a simple lambda function.
+- Asserts that the resulting JSON object contains the expected ISO formatted value for the `dt_field`.

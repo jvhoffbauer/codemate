@@ -1,0 +1,2 @@
+- Defines an asynchronous function `openrpc` that returns a JSON response when called with no arguments (`_: Request`)
+- The returned value is assigned to the variable `JSONResponse` and passed back to the caller of this function, which could be another route or endpoint in FastAPI's application structure

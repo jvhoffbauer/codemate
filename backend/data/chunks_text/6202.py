@@ -1,0 +1,2 @@
+- Retrieves data for confirmed COVID-19 cases using `get_category()` asynchronously
+- Returns the retrieved data in a list format

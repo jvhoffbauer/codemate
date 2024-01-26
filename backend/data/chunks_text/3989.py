@@ -1,0 +1,3 @@
+- This test case checks if a broken YAML input raises a validation error during item creation using Pydantic's YAML parser.
+- The `needs_pydanticv1` decorator is used to ensure that this test runs against Pytest-Python version 1.x and not later versions.
+- The expected HTTP status code for an invalid request body is 422 (Unprocessable Entity).

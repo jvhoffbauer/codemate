@@ -1,0 +1,3 @@
+- Retrieves a specific user's data from a Firestore database using their unique ID and returns it as an instance of `UserInDB`.
+- Handles cases where the document doesn't exist by returning `None`.
+- Uses the `quiet` parameter to prevent printing verbose output during retrieval.

@@ -1,0 +1,1 @@
+- This function uses `pytest.mark.parametrize` to define multiple tests with different input values for `path`, `expected_status`, and `expected_response`. - It makes a GET request using Flask's built-in `client` object and asserts that the status code matches the corresponding `expected_status`. - Finally, it checks if the JSON response is equal to the `expected_response`.

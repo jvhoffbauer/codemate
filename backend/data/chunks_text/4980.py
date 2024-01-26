@@ -1,0 +1,5 @@
+- Starts Tifa web application using Uvicorn ASGI server
+- Runs app from tifa module with create_app function and passes it to Uvicorn for serving
+- Enables automatic reloading of Python modules during development (reload=True)
+- Binds server to all network interfaces (host="0.0.0.0") on default HTTP port (port=8000)
+- Sets logging level to INFO (log_level="info")

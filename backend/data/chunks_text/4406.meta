@@ -1,0 +1,1 @@
+{"original_code": "def test_swagger_ui_html(client: TestClient):\n    response = client.get(\"/docs\")\n    assert response.status_code == 200, response.text\n    assert \"/static/swagger-ui-bundle.js\" in response.text\n    assert \"/static/swagger-ui.css\" in response.text"}

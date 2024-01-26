@@ -1,0 +1,1 @@
+- Defines an asynchronous function `get_model_c` that returns a new instance of class `ModelC`. - The constructor arguments for `ModelC` are hardcoded to "test-user" and "test-password". This could be replaced with user input or configuration settings in production environments.

@@ -1,0 +1,1 @@
+{"original_code": "async def dep_counter():\n    counter_holder[\"counter\"] += 1\n    return counter_holder[\"counter\"]"}

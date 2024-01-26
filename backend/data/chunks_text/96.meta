@@ -1,0 +1,1 @@
+{"original_code": "def funcfilter(\n    func: FunctionElement[_T], *criterion: Union[_ColumnExpressionArgument[bool], bool]\n) -> FunctionFilter[_T]:\n    return sqlalchemy.funcfilter(func, *criterion)  # type: ignore[arg-type]"}

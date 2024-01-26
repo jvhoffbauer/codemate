@@ -1,0 +1,6 @@
+- Defines an OpenAPI schema for a FastAPI application with version 3.1.0
+- Includes information about the API's title and version
+- Describes the endpoint `/index-weights/` with a POST request that creates index weights
+- Specifies responses for successful (200) and validation error (422) cases
+- Requires a JSON body containing object properties of type number
+- Imports custom schemas for ValidationError and HTTPValidationError errors

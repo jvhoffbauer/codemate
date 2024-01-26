@@ -1,0 +1,3 @@
+- Defines a FastAPI endpoint with name `route1`.
+- Accepts an optional query parameter named `value`, which can be any string (represented by `Query()` decorator).
+- Returns a dictionary containing the received query parameter as its value.

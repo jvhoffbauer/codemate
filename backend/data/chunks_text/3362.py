@@ -1,0 +1,1 @@
+- This function tests a GET request to the URL "/path/str/42". - It asserts that the status code of the response is 200 (OK). - It asserts that the JSON response body contains the value "42".

@@ -1,0 +1,1 @@
+{"original_code": "    def delete_item(self, obj: TableModelT) -> None:\n        \"\"\"delete database data\"\"\"\n        object_session(obj).delete(obj)"}

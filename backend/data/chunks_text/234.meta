@@ -1,0 +1,1 @@
+{"original_code": "def test_create_hero_invalid(client: TestClient):\n    # secret_name has an invalid type\n    response = client.post(\n        \"/heroes/\",\n        json={\n            \"name\": \"Deadpond\",\n            \"secret_name\": {\"message\": \"Do you wanna know my secret identity?\"},\n        },\n    )\n    assert response.status_code == 422"}

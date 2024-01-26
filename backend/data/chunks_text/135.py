@@ -1,0 +1,2 @@
+- This is an overloaded function called `select`. It takes four arguments of type `_TCCA` with generic types `_T0`, `_T1`, `_T2`, and `_T3`. The first argument is named `__ent0`.
+- If all four arguments are provided, this version of the function returns a tuple containing elements selected from each input sequence using the same selection criteria (not specified in the given snippet). The resulting tuple has a generic type `Select[Tuple[_T0, _T1, _T2, _T3]]`.

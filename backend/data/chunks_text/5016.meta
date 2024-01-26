@@ -1,0 +1,1 @@
+{"original_code": "    def __setattr__(self, item: str, value: Any) -> None:\n        self._ensure_var(item)\n        self._vars[item].set(value)"}

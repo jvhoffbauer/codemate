@@ -1,0 +1,3 @@
+- This function is a GET request for an item with the specified `item_id`.
+- The `Path()` decorator is used to validate and parse the `item_id` parameter, which has a title "The ID of the item to get" and must be greater than or equal to 1 (ge).
+- An optional query parameter `q` can also be passed in the URL, which will be added to the response dictionary `results`.

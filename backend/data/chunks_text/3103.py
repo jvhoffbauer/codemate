@@ -1,0 +1,3 @@
+- Defines a GET route at `"/query_examples/"`, with an optional parameter named `data`.
+- Uses Pydantic's `Query` decorator to define a schema for the `data` parameter, which has a default value of `None` and provides example values ("query1" and "query2").
+- Returns the value of the `data` parameter as the response body.

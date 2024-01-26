@@ -1,0 +1,1 @@
+- This function `read_users_me()` takes a parameter `current_user`, which is optional and can be obtained using the `Depends` decorator with the `get_current_user()` function. - If `current_user` is `None`, it returns a message to create an account first. - Otherwise, it simply returns the `current_user`.

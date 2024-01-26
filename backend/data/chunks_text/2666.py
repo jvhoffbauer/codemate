@@ -1,0 +1,3 @@
+- Defines a function called `response_model_no_annotation_return_exact_dict()`.
+- The function returns an exact dictionary with two keys, 'name' and'surname', containing the values 'John' and 'Doe'.
+- This function can be used as a response model in FastAPI without any Pydantic annotations for automatic validation or conversion of data types.

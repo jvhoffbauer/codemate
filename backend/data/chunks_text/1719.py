@@ -1,0 +1,3 @@
+- This function is a GET request for an individual item with the specified `item_id`.
+- The query parameter `q` can be included in the URL and will be added as a key-value pair in the response dictionary.
+- The `Path()` decorator is used to parse the `item_id` from the URL path and validate it using Pydantic's schema validation feature (in this case, requiring that it be an integer).

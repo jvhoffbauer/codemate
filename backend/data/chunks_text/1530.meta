@@ -1,0 +1,1 @@
+{"original_code": "async def read_items(\n    hidden_query: str | None = Query(default=None, include_in_schema=False)\n):\n    if hidden_query:\n        return {\"hidden_query\": hidden_query}\n    else:\n        return {\"hidden_query\": \"Not found\"}"}

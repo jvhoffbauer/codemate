@@ -1,0 +1,1 @@
+- Tests if a specific endpoint (`"/b/a/c/override"`) returns expected JSON data and header value, where `override_type` is defined in another part of the script. - Uses Flask's built-in `client` object to simulate HTTP requests for testing purposes. - Demonstrates how to customize response headers using Flask's `before_request` decorator.

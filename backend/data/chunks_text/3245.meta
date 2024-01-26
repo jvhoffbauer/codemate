@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/no-alias/model\", response_model=ModelNoAlias)\ndef no_alias_model():\n    return ModelNoAlias(name=\"Foo\")"}

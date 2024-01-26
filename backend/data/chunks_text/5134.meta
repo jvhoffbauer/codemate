@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: ASGIApp) -> None:\n        \"\"\"Init Middleware.\n\n        Args:\n            app (ASGIApp): starlette/FastAPI application.\n\n        \"\"\"\n        self.app = app"}

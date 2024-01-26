@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/user\")\ndef read_user(\n    user_data: Tuple[str, List[str]] = Security(get_user, scopes=[\"foo\", \"bar\"]),\n    data: List[int] = Depends(get_data),\n):\n    return {\"user\": user_data[0], \"scopes\": user_data[1], \"data\": data}"}

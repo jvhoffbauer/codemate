@@ -1,0 +1,1 @@
+{"original_code": "    def __new__(cls, *args, **kw):\n        if cls._instance is None:\n            cls._instance = object.__new__(cls, *args, **kw)\n        return cls._instance"}

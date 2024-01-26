@@ -1,0 +1,2 @@
+- Defines a function named `ping` that performs a health check and returns a dictionary with a key-value pair of 'ping' and 'pong!' as its value.
+- The purpose of this function is to provide a simple endpoint for checking if the server or application is up and running, which can be useful in monitoring tools or automated tests.

@@ -1,0 +1,3 @@
+- This function is a GET request handler for retrieving an item with the specified `item_id`.
+- The `Path` decorator from FastAPI's router class is used to extract the `item_id` parameter from the URL path and validate it as an integer greater than or equal to 1.
+- A query parameter named 'q' can also be passed in the URL, which will be stored in the dictionary returned by this function.

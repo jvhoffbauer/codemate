@@ -1,0 +1,3 @@
+- This function takes a `Bucket`, a query string, an index name, and other optional parameters as input.
+- It returns a list of documents that match the given query using Elasticsearch's search API.
+- The returned list is converted to instances of the specified Pydantic model for easier consumption by the caller.

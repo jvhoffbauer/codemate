@@ -1,0 +1,1 @@
+- Defines a method called `__get_validators__` that returns an iterable of callables (functions). - The function is bound to the class it's defined in, indicated by the double underscores before and after its name. - It yields a single validator function named `validate`, which will be used during data validation.

@@ -1,0 +1,3 @@
+- Defines a GET request handler for the `/override` path at the router created by `@router_b_a_c`.
+- Returns an HTTP response with a custom response class, `OverrideResponse`, which allows us to override the default response behavior of FastAPI's built-in `JSONResponse` class.
+- The returned message is hardcoded as `"Hello B A C"` in this example.

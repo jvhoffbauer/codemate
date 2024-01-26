@@ -1,0 +1,1 @@
+{"original_code": "def test_not_equality() -> None:\n    value1 = Default(\"foo\")\n    value2 = Default(\"bar\")\n\n    assert not (value1 == value2)"}

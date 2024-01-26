@@ -1,0 +1,6 @@
+- Defines a method named `probe` using FastAPI's decorator `@app.get`.
+- Applies middleware function `method_middleware` to this endpoint.
+- Accepts an HTTP response object and optional request body as arguments.
+- Sets a cookie with key "probe-cookie" and value from the request body in the HTTP response.
+- Returns the request body if it is provided or raises an error for missing required parameter.
+- Modifies the status code of the HTTP response to 404.

@@ -1,0 +1,1 @@
+{"original_code": "def test_use_empty():\n    with client:\n        response = client.get(\"/prefix\")\n        assert response.status_code == 200, response.text\n        assert response.json() == [\"OK\"]\n\n        response = client.get(\"/prefix/\")\n        assert response.status_code == 200, response.text\n        assert response.json() == [\"OK\"]"}

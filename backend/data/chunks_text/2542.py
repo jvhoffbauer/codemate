@@ -1,0 +1,3 @@
+- Sets up a Flask application (assumed to be defined in variable `app`) and creates a test client for it using Pytest's built-in `TestClient`.
+- Establishes a WebSocket connection through the created client on the root URL ("/").
+- Receives the first message sent by the server via the WebSocket connection and checks if its content matches the expected string "Hello, world!".

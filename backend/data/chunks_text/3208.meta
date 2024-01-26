@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\n    \"/a\",\n    status_code=204,\n    response_class=JsonApiResponse,\n    responses={500: {\"description\": \"Error\", \"model\": JsonApiError}},\n)\nasync def a():\n    pass"}

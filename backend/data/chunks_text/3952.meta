@@ -1,0 +1,1 @@
+{"original_code": "def get_client():\n    from docs_src.query_params_str_validations.tutorial013_an_py39 import app\n\n    client = TestClient(app)\n    return client"}

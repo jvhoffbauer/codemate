@@ -1,0 +1,3 @@
+- Defines a new method `probe` with a custom middleware that raises an HTTP exception (401 Unauthorized).
+- Uses the `@contextlib.asynccontextmanager` decorator to define the asynchronous context manager for the middleware function.
+- Calls the `raw_request` helper function from FastAPI's testing utilities to simulate a JSON RPC request and verify its response status and content.

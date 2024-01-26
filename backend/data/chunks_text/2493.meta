@@ -1,0 +1,1 @@
+{"original_code": "def test_invalid_response_model_raises():\n    with pytest.raises(FastAPIError):\n        app = FastAPI()\n\n        @app.get(\"/\", response_model=NonPydanticModel)\n        def read_root():\n            pass  # pragma: nocover"}

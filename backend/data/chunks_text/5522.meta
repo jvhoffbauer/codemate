@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, perPageMax: int = None, perPageDefault: int = 10):\n        self.perPageMax = perPageMax\n        self.perPageDefault = perPageDefault"}

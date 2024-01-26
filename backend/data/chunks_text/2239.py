@@ -1,0 +1,1 @@
+- This endpoint accepts two `Item` objects as arguments using FastAPI's dependency injection system. - The second argument is annotated with a custom dependency function called `duplicate_dependency`. - The returned value of this endpoint is a list containing both input items.

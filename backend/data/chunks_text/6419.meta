@@ -1,0 +1,1 @@
+{"original_code": "async def call_sync_async(call, *args, **kwargs):\n    is_coroutine = asyncio.iscoroutinefunction(call)\n    if is_coroutine:\n        return await call(*args, **kwargs)\n    else:\n        return await run_in_threadpool(call, *args, **kwargs)"}

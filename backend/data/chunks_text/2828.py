@@ -1,0 +1,3 @@
+- Defines a new endpoint `/` with an HTTP POST method using FastAPI's decorator syntax
+- Accepts a file upload as input using Pydantic's `UploadFile` class, which is bound to the `f` parameter
+- Returns the uploaded file object directly without any further processing or validation (disabled coverage check)

@@ -1,0 +1,1 @@
+- Defines a function `setup_db` that sets up the database using SQLAlchemy's engine and session objects. - Drops all existing tables in the database (if any). - Creates new tables based on defined models. - Yields control to the next block of code, allowing other functions or statements to execute before closing the connection. - Closes the connection when done.

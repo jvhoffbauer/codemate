@@ -1,0 +1,3 @@
+- This function is a pytest marker that generates multiple tests with different values of `url`.
+- The list of URLs comes from iterating over the files in the `DATA_DIR`, filtering by extension, and joining them with the directory path.
+- The function calls the `/cog/validate` endpoint with one specific URL (hardcoded here), asserts its status code, and checks whether the COG flag is present in the JSON response.

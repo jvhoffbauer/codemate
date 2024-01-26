@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_override_in_items_with_q_run():\n    from docs_src.dependency_testing.tutorial001_py310 import (\n        test_override_in_items_with_q,\n    )\n\n    test_override_in_items_with_q()"}

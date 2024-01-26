@@ -1,0 +1,3 @@
+- Defines a function `test_openapi_schema` to test the OpenAPI schema of our FastAPI application.
+- Makes an HTTP GET request to the `/openapi.json` endpoint using the `client` object provided by PyTest and checks if the status code is 200 (OK). If not, it prints the error message along with the response text.
+- Asserts that the JSON response matches the expected structure defined in the `assert response.json() == {}` statement. Here we're comparing the actual JSON response returned from the server against the expected JSON format stored as a dictionary literal. The `{}` represents an empty dictionary which means there are no keys or values present in this case. This can be replaced with your own JSON data for more complex tests.

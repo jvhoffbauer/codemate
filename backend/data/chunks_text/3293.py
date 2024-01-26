@@ -1,0 +1,4 @@
+- Defines a function `test_openapi_schema` to test the OpenAPI schema of our FastAPI application.
+- Makes an HTTP GET request to the `/openapi.json` endpoint using the `client` object provided by PyTest and FastAPI's built-in testing support.
+- Asserts that the status code is 200 (OK) and saves the response text for debugging purposes if necessary.
+- Parses the JSON response and asserts that it matches the expected structure defined in the second bullet point. This includes checking the version number, title, and description of the API, as well as verifying the existence and properties of specific endpoints and error responses.

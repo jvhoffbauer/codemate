@@ -1,0 +1,2 @@
+- Retrieves specific job information based on a provided ID using Celery's `schedule` module.
+- Checks whether the specified job exists and returns an error message or success response with relevant details (ID, function reference, arguments, cron model, next run time).

@@ -1,0 +1,1 @@
+- Checks whether annotation is either a type or `None`. - Filters out string and byte types using `lenient_issubclass()`, which allows subclasses as well. - Returns true if annotation is a subsequence of built-in sequences like list, tuple, range, etc., using `sequence_types`.

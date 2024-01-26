@@ -1,0 +1,3 @@
+- Creates a JSON Web Token (JWT) with an optional refresh flag and sets its expiration time based on input arguments.
+- The function takes three parameters: `subject`, which can be any unique identifier for the user; `exp_secs`, specifying how long the JWT should remain valid before it expires; and `refresh`, indicating whether this is a refresh token that should persist longer than regular tokens.
+- It returns a tuple containing the encoded JWT string, the Unix timestamp of when the token will expire, and the timestamp at which it was created.

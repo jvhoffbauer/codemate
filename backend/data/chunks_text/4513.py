@@ -1,0 +1,1 @@
+- Tests if accessing `/items` without a token returns a 401 Unauthorized status code and includes an authentication challenge in the WWW-Authenticate header with Bearer scheme. - Verifies that the error message returned is "Not authenticated".

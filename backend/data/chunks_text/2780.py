@@ -1,0 +1,3 @@
+- Defines a function `get_item` that takes two arguments `item_id` and an optional argument `user_id`.
+- If `user_id` is not provided (i.e., it's `None`), returns a dictionary with just the key-value pair for `item_id`.
+- Otherwise, returns a dictionary with both `item_id` and `user_id` as key-value pairs.

@@ -1,0 +1,4 @@
+- Defines a `User` model with a dictionary field named `data`.
+- Uses FastAPI's `Field()` decorator to add validation and serialization functionality to the `data` field.
+- Tests the generated FormItem and TableColumn using Amis UI library parser provided by FastAPI.
+- Verifies that the generated FormItem has type 'json-editor', name 'data', and the generated TableColumn has type 'json' and label '数据'.

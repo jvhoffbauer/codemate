@@ -1,0 +1,1 @@
+{"original_code": "async def parse_jwt_admin_data(\n    token: JWTData = Depends(parse_jwt_user_data),\n) -> JWTData:\n    if not token.is_admin:\n        raise AuthorizationFailed()\n\n    return token"}

@@ -1,0 +1,3 @@
+- Tests a WebSocket connection with headers and query parameters using `TestClient`.
+- Raises an exception (`WebSocketDisconnect`) when closing the WebSocket due to invalid session or query token values.
+- Verifies that the received messages contain the expected information, including the header and query parameters passed in the URL.

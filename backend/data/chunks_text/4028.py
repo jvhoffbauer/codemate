@@ -1,0 +1,3 @@
+- Sends a POST request to the `/items/` endpoint with JSON data containing a string for price and a float for description
+- Asserts that the status code is 200 (OK)
+- Verifies that the returned JSON contains the expected values for name, price, description, and tax (which should be null since we didn't provide it in this case)

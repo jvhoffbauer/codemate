@@ -1,0 +1,3 @@
+- Defines a function `get_sync_async_raise_other` with an optional dependency `state`.
+- The function checks if the value of `state` is equal to a specific string, and raises another exception called `OtherDependencyError` if it's not.
+- This function demonstrates how to handle dependencies that may raise exceptions in async contexts using FastAPI's dependency injection system.

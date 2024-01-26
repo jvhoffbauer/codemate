@@ -1,0 +1,2 @@
+- Defines a GET request handler for the `/typer` endpoint using FastAPI's decorator syntax (@app.get)
+- Returns an instance of RedirectResponse with URL "https://typer.tiangolo.com" as its argument, which causes the browser to automatically navigate to that page

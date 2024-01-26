@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\n    \"/users/{user_id}/items/\",\n    response_model=schemas.Item,\n    dependencies=[Depends(get_db)],\n)\ndef create_item_for_user(user_id: int, item: schemas.ItemCreate):\n    return crud.create_user_item(item=item, user_id=user_id)"}

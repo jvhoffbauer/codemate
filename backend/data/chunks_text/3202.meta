@@ -1,0 +1,1 @@
+{"original_code": "def test_encode_root():\n    class ModelWithRoot(BaseModel):\n        __root__: str\n\n    model = ModelWithRoot(__root__=\"Foo\")\n    assert jsonable_encoder(model) == \"Foo\""}

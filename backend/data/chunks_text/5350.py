@@ -1,0 +1,2 @@
+- This function named `is_nan` takes an optional argument `params`, which is a dependency provided by the `Dependencies` class from the `fastapi` library's `depencdies` module. The type of this parameter is specified as `Depends(dependencies.DatasetParams)`.
+- Inside the function, we simply return the value of the `nodata` attribute of the `params` object passed in as an argument. This could potentially be used to check if a specific dataset has missing values (i.e., NaN or Not A Number).

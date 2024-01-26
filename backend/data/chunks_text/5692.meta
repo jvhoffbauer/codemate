@@ -1,0 +1,1 @@
+{"original_code": "    def labels(cls):\n        return [label for _, label in cls.choices]"}

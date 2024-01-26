@@ -1,0 +1,3 @@
+- Registers a startup event for the FastAPI router using `@router.on_event("startup")`.
+- Defines a function called `router_startup()` that will be executed when the server starts up.
+- Sets a variable in the application's global state (`state`) to indicate that the router has started up successfully.

@@ -1,0 +1,3 @@
+- Creates a new user with the provided `UserCreateRequest` object and saves it to the database using SQLAlchemy's `AsyncSession`.
+- Checks for existing users with the same email address before creating the new one to prevent duplicate emails. If an existing user is found, raises a `HTTPException` with status code 400 (Bad Request).
+- Hashes the password of the new user using the `get_password_hash()` function from FastAPI Security before saving it in the database. This adds an extra layer of security by storing passwords as hash values instead of plain text.

@@ -1,0 +1,3 @@
+- Takes a byte array `content` representing an image file
+- Uses Python's built-in `MemoryFile` class to read the contents of the byte array into memory without writing it to disk
+- Returns a dictionary containing metadata about the image, such as its width, height, color depth, etc., obtained by reading the image header using the `Profile` object provided by Pillow (Python Imaging Library)

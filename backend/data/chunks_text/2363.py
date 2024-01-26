@@ -1,0 +1,1 @@
+- Defines a GET request endpoint at `/default1` with a required query parameter named `level1`. - Returns the value of the `level1` parameter as the response body.

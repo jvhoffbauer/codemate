@@ -1,0 +1,3 @@
+- Defines a function `mixed()` that returns an instance of `Model3`.
+- The returned object has attributes `name`, `age`, and `ref2`.
+- `ref2` is itself an instance of `Model2`, which contains references to instances of `Model1` (for attribute `ref`) and a separate string value for `baz`.

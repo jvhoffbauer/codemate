@@ -1,0 +1,1 @@
+- Defines an async function `create_files` that takes a list of byte arrays (representing multiple files) as input using Pydantic's `File` field validator. - Returns a dictionary with keys "file_sizes" and values being the lengths of each corresponding file passed to the function.

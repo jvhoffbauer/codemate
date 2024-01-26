@@ -1,0 +1,1 @@
+- Defines a function `compute` with two optional arguments `a` and `b`, both initialized to the result of calling the built-in function `Body`. This allows for default values without having to pass them explicitly in every call. - Returns a dictionary containing the computed values of `a` and `b`.

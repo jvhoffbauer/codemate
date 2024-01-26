@@ -1,0 +1,4 @@
+- Defines a function `add_interval_job()` that adds an interval job to the scheduler using APScheduler's `IntervalJob`.
+- Takes four arguments: `seconds`, `job_id`, and `run_time`. The first two are required, while the third is optional with a default value of current time.
+- Checks whether a job with the given `job_id` already exists in the scheduler. If so, returns an error message; otherwise, creates a new job with the specified parameters.
+- Returns a success response containing the newly created job ID.

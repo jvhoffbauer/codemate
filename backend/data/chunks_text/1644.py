@@ -1,0 +1,3 @@
+- Defines an asynchronous function `verify_key` that takes a default argument `x_key` of type `Header`.
+- Checks whether the value of `x_key` is not equal to a specific string ("fake-super-secret-key"). If it's different, raises an exception with status code 400 and error message "X-Key header invalid".
+- Returns the value of `x_key` if it passes the verification check.

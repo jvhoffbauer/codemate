@@ -1,0 +1,1 @@
+{"original_code": "def remove_previous_container(client: DockerClient) -> None:\n    try:\n        previous = client.containers.get(CONTAINER_NAME)\n        previous.stop()\n        previous.remove()\n    except NotFound:\n        return None"}

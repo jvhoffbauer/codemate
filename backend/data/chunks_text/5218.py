@@ -1,0 +1,1 @@
+- Retrieves information about a specific tile matrix set from the supported list using its name as an argument. - Follows the Open Geospatial Consortium's specification for tile matrix sets defined in version 1.9.0 of their Web Map Service standard. - Returns the corresponding `TileMatrixSet` object if found or raises a `HTTPException` with status code 404 otherwise.

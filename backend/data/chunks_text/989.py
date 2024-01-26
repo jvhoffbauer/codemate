@@ -1,0 +1,1 @@
+- Checks if a given annotation is either a sequence type (e.g., list, tuple) or has a sequence origin (i.e., its base class is Sequence). - Used to determine whether a function parameter's annotation should be treated as a sequence of values during type checking and validation. - Helps ensure that functions with sequence arguments can handle input lists, tuples, etc. Correctly.

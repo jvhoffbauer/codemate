@@ -1,0 +1,1 @@
+- Defines a function `get_app()` that imports and returns an instance of Flask application named 'app' defined in tutorial002_an_py39 file under websockets directory within docs_src folder.

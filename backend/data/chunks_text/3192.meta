@@ -1,0 +1,1 @@
+{"original_code": "def test_encode_model_with_alias():\n    model = ModelWithAlias(Foo=\"Bar\")\n    assert jsonable_encoder(model) == {\"Foo\": \"Bar\"}"}

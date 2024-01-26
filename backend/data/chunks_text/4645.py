@@ -1,0 +1,2 @@
+- Tests the `create_access_token()` function in tutorial005 of the security module for Python 3.10 documentation
+- Passes a dictionary with data to be included in the token as an argument and checks if the returned value is truthy (i.e., not None or False)

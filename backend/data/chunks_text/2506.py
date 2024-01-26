@@ -1,0 +1,3 @@
+- Defines a new route for POST requests to `"/tuple-form/"`.
+- Accepts a tuple with two integer fields as input using FastAPI's built-in form parsing feature (Form()).
+- Returns the received tuple without any modifications.

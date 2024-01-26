@@ -1,0 +1,1 @@
+{"original_code": "def test_override_request_validation_exception():\n    response = client.get(\"/request-validation/invalid\")\n    assert response.status_code == 200\n    assert response.json() == {\"exception\": \"request-validation\"}"}

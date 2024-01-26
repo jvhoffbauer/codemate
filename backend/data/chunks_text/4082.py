@@ -1,0 +1,3 @@
+- Tests a WebSocket endpoint that requires an authentication token in the URL query parameters using PyTest's `TestClient`.
+- Sends and receives messages through the WebSocket connection, verifying their contents and the presence of the authentication token in the session cookies or query parameters.
+- Raises a `WebSocketDisconnect` exception when closing the WebSocket connection to simulate disconnection scenarios.

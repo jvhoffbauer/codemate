@@ -1,0 +1,3 @@
+- Defines a GET request for retrieving an item with the specified `item_id`.
+- Allows passing a query parameter `q`, which is optional and defaults to `None`. The parameter's name can be customized using the `alias` argument.
+- Combines the `item_id` and (optional) `q` parameters into a dictionary called `results`, which is returned as the response body.

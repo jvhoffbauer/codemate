@@ -1,0 +1,1 @@
+- Sends a DELETE request to delete an item with ID 'foo' and name 'Foo'. - Asserts that the server returns a status code of 200 (OK) and displays the text if it doesn't. - Parses the JSON response from the server and asserts that the returned dictionary contains the expected keys ('item_id', 'item') and values for the deleted item.

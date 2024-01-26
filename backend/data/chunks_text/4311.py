@@ -1,0 +1,3 @@
+- Tests middleware for compressing responses using gzip encoding
+- Verifies that large responses are compressed and content length is reduced
+- Confirms that non-compressed responses are not affected by middleware

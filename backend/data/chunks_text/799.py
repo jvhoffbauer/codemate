@@ -1,0 +1,1 @@
+- Retrieves a specific user from the database using their ID with SQLAlchemy's `SELECT` statement and filters by the primary key column (`id`) in the `auth_user` table. - Returns the resulting row as a dictionary or `None` if no matching record is found. - Uses asyncio to make this function asynchronous for improved performance when dealing with multiple requests simultaneously.

@@ -1,0 +1,4 @@
+- Defines a method `get_update_action()` that takes two optional arguments `request` and `bulk`.
+- If `bulk` is false (i.e., updating one record at a time), it returns an action with a pencil icon, update tooltip, and a dialog containing the update form for the current page schema.
+- If `bulk` is true but there are defined fields to be updated in bulk, it returns an action with a bulk update label and a dialog containing the bulk update form for all selected records on this page.
+- Otherwise, it returns none as no update actions should be displayed.

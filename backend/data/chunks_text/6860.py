@@ -1,0 +1,6 @@
+- Creates a new user with an email and password using `UserCreate`.
+- Sets the `is_superuser` field to true for this user.
+- Uses the `crud.user.create` function from FastAPI's SQLAlchemy extension (Pydantic-SQLAlchemy) to create the user in the database.
+- Retrieves the newly created user using its ID returned by `crud.user.create`.
+- Calls the `crud.user.is_superuser` function to check if the retrieved user has superuser privileges.
+- Asserts that the result of `crud.user.is_superuser` is truthy (i.e., not False or None).

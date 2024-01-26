@@ -1,0 +1,3 @@
+- Defines an asynchronous function `fake_users` that takes two arguments: a SQLAlchemy session and a list of model classes (presumably defined elsewhere).
+- Generates a list of dictionaries representing user data with unique IDs, usernames, passwords, creation times, addresses, and attached files.
+- Adds these users to the database using the `add_all` method of the SQLAlchemy session object, commits the changes, and returns the newly created users.

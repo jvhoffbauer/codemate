@@ -1,0 +1,1 @@
+- Imports a specific response model example (docs_src.response_model.tutorial003_04) and raises an error when trying to access its FastAPI application object, since it's not meant to be run as a standalone script. - This is used for testing that raising errors works correctly in this case.

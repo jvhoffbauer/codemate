@@ -1,0 +1,2 @@
+- Defines a function `delete_by_key` that takes in a key as an argument and returns none after deleting the specified key from Redis using the asyncio library's `redis` client.
+- The function is marked asynchronous (`async`) to support concurrent operations with other functions or tasks.

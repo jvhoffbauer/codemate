@@ -1,0 +1,1 @@
+{"original_code": "def test_jwt():\n    token = gen_jwt(\"staff:1\", 30)\n    payload = decode_jwt(token)\n    assert payload[\"sub\"] == \"staff:1\""}

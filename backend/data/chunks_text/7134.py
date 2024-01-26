@@ -1,0 +1,3 @@
+- Defines a class method `single_by_phone` that takes an optional argument `phone`.
+- Initializes a query object for all users (`User.select()`) and filters it based on the value of `phone` (`db.where(User.phone == phone)`).
+- Returns the first result from the filtered query using the `first()` function provided by SQLAlchemy's ORM.

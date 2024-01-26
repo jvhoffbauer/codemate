@@ -1,0 +1,3 @@
+- Defines a class method named `validate` that takes a single argument `v`.
+- The function is marked as a test coverage skip (`pragma: no cover`) to avoid running it during tests.
+- Returns the input value `v` without any validation or modification.

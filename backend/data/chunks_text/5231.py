@@ -1,0 +1,2 @@
+- This method is called when an item in the dictionary is accessed using its key (i.e., `my_obj['some_key']`)
+- It returns the corresponding value for that key by looking it up in the object's internal dictionary (`__dict__`)

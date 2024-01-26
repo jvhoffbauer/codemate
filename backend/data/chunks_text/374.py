@@ -1,0 +1,3 @@
+- Tests that two different objects with equal values are considered unequal using `Default` and a plain Python object.
+- Uses the `==` operator to compare the values of `value1` and `value2`.
+- Asserts that the result is false, indicating that they are not equal.

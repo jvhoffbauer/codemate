@@ -1,0 +1,1 @@
+{"original_code": "    def is_deployed(self) -> bool:\n        return self in (self.STAGING, self.PRODUCTION)"}

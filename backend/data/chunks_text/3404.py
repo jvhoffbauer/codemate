@@ -1,0 +1,3 @@
+- Tests if passing a path parameter greater than or equal to 4 results in a validation error with status code 422 and appropriate message
+- Uses Pytest's built-in `client` fixture for making requests against our Flask app
+- Asserts that the JSON response body matches the expected structure, which includes an array of errors with details about the specific validation failure (either 'less_than' or 'value_error.number.not_lt')

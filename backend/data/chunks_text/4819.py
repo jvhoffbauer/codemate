@@ -1,0 +1,3 @@
+- Retrieves a specific item from a specified bucket using its ID and returns it as an instance of `ItemInDB`.
+- First calculates the document ID for the given item ID using `get_doc_id()`, which is not shown in this snippet.
+- Then calls `utils.get_doc()` to retrieve the actual document with the calculated document ID from the specified bucket and model (`ItemInDB`).

@@ -1,0 +1,1 @@
+- This endpoint is decorated with `@app.get` and takes a dependency on `generator_state_try`. - The value of the `state` parameter is checked to ensure it matches a specific string, indicating that the generator has been initialized correctly. - If the check passes, an exception (`SyncDependencyError`) is raised explicitly using the `raise` statement inside the function body.

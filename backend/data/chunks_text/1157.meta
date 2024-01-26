@@ -1,0 +1,1 @@
+{"original_code": "def magic_data_reader(raw_body: bytes):\n    return {\n        \"size\": len(raw_body),\n        \"content\": {\n            \"name\": \"Maaaagic\",\n            \"price\": 42,\n            \"description\": \"Just kiddin', no magic here. \u2728\",\n        },\n    }"}

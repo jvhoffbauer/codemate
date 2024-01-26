@@ -1,0 +1,3 @@
+- This endpoint is accessed using GET request to `http://localhost:8000/items/`.
+- The method returns a list of all available items in JSON format, as defined by the `response_model` parameter (in this case, `List[Item]`).
+- The `read_items()` function simply returns the global variable `items`, which should be populated with data from some external API or database.

@@ -1,0 +1,4 @@
+- Tests a WebSocket connection with a session cookie passed in the `cookies` parameter of Flask's built-in testing client (`TestClient`)
+- Raises an exception (`WebSocketDisconnect`) when closing the WebSocket connection to simulate disconnection from the server
+- Sends and receives messages through the WebSocket connection while passing the session cookie as a header
+- Verifies that the received messages contain both the sent message text and the item ID being watched

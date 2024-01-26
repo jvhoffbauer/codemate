@@ -1,0 +1,3 @@
+- Tests if a GET request to an item that doesn't exist returns a 404 status code and an error message in JSON format.
+- Uses Flask's built-in `client` object for making requests against our app.
+- Asserts that the expected HTTP status code (404) is returned by the server, as well as checking the contents of the response body.

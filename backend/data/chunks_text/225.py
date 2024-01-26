@@ -1,0 +1,3 @@
+- Defines a fixture named `session` using PyTest's `@pytest.fixture` decorator at line (2). This allows us to reuse this setup logic across multiple tests without having to repeat it in each test function.
+- The `session_fixture()` function is defined at line (3), which creates an SQLAlchemy engine and initializes the metadata for our models. It also sets up some connection options, such as disabling thread checking and creating a static connection pool.
+- Inside the `with Session(engine) as session:` block at line (4), we yield the session object back to PyTest so that other functions can use it during their execution. This ensures that all database operations are performed within a single transaction, making our tests more reliable and consistent.

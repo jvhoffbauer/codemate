@@ -1,0 +1,1 @@
+{"original_code": "async def hidden_path(hidden_path: str = Path(include_in_schema=False)):\n    return {\"hidden_path\": hidden_path}"}

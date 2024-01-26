@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Includes an optional query parameter named `user_agent`, which can be passed as either a string or `None`. If not provided, it defaults to `None` via the `Header()` function. This allows clients to specify their web browser or other software agent information in requests.
+- Returns a dictionary containing the value of the `user_agent` header if present, otherwise returns an empty dictionary.

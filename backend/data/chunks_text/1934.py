@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `main()`.
+- The function returns a string "Hello World".
+- This is a simple example of defining and returning a value from an async function in Python using the await keyword.

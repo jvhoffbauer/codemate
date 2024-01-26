@@ -1,0 +1,2 @@
+- Defines a private function `_trim_string` that takes in an optional string (`string`) and an optional integer representing the maximum length of the string (`string_length`).
+- Returns the original string unchanged if either input is missing or null, otherwise returns the leftmost portion of the string with a length equal to or less than `string_length`.

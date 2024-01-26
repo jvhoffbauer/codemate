@@ -1,0 +1,1 @@
+- Tests a POST request to the `/form/python-tuple` endpoint with a tuple of values passed as a form parameter named 'items'. - Verifies that the server returns an HTTP status code of 200 and the expected list of items in JSON format.

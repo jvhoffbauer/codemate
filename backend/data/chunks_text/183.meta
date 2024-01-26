@@ -1,0 +1,1 @@
+{"original_code": "@app.on_event(\"startup\")\ndef on_startup():\n    create_db_and_tables()"}

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/healthcheck\", include_in_schema=False)\nasync def healthcheck() -> dict[str, str]:\n    return {\"status\": \"ok\"}"}

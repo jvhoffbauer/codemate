@@ -1,0 +1,3 @@
+- Defines a property called `is_deployed` for the current object instance
+- The property returns a boolean value based on whether the object's state is either STAGING or PRODUCTION
+- This can be used to easily check if an environment is deployed without having to compare against hardcoded values

@@ -1,0 +1,4 @@
+- Defines an asynchronous function `read_items()` with two arguments - `q` and its optional query parameter (default is `None`)
+- The `@Query` decorator adds validation rules such as minimum length of 3 characters, maximum length of 50 characters, and a fixed value for testing purposes ('fixedquery')
+- If the `q` argument is not `None`, it updates a dictionary called'results' with a new key-value pair containing the user inputted query string
+- Finally, the updated dictionary'results' is returned by the function

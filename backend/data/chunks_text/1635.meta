@@ -1,0 +1,1 @@
+{"original_code": "    def __call__(self, q: str = \"\"):\n        if q:\n            return self.fixed_content in q\n        return False"}

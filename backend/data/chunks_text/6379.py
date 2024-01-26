@@ -1,0 +1,4 @@
+- Defines an asynchronous context manager using `@asynccontextmanager`.
+- Logs the incoming request to a file or console using Python's built-in `logging` module.
+- Yields control back to the caller, allowing them to execute their async function within this middleware.
+- Logs the outgoing response after cleanup operations are completed in the `finally` block.

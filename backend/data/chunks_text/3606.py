@@ -1,0 +1,2 @@
+- Tests GET request to `/mixed` endpoint and asserts status code is 200 with expected text in case of failure
+- Verifies JSON response contains correct nested structure for 'name' key and'ref2' dictionary containing a single dictionary called'ref' with keys 'foo' and 'bar'

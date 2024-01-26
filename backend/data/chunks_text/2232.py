@@ -1,0 +1,3 @@
+- Defines a new route `/` with an HTTP POST method using FastAPI's decorator syntax
+- Accepts either a string or list of integers as input parameter named 'foo', which is defined using Python's type hinting feature (Union)
+- Returns the value passed in the 'foo' argument without any modification

@@ -1,0 +1,2 @@
+- Tests for multiple query parameters with conflicting types (string vs int) using `client.get()`.
+- Asserts that the status code of the response is 422 and its body contains a validation error message from Pydantic's JSON schema implementation or its legacy type hints.

@@ -1,0 +1,3 @@
+- This method is called to authenticate a user with the given `email` and `password`.
+- It retrieves the user from the database using the `get_by_email()` method of the model class (assuming it exists).
+- If the user doesn't exist or the provided password doesn't match the hashed password in the database, `None` is returned; otherwise, the authenticating user object is returned.

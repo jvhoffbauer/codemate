@@ -1,0 +1,3 @@
+- Defines a fixture named `client` using PyTest's decorator syntax
+- Imports and retrieves an instance of Flask's test client (`TestClient`) for the application defined in `docs_src/request_forms/tutorial001.py`
+- Returns the `TestClient` object to be used by other tests that require it

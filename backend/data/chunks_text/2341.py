@@ -1,0 +1,3 @@
+- Tests if an incorrect token is provided in authorization header for accessing items endpoint
+- Asserts that status code returned by server is 401 (Unauthorized) and text of response matches expected message
+- Verifies that JSON response contains detail key with value 'Not authenticated'

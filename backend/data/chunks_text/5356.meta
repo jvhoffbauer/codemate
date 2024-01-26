@@ -1,0 +1,1 @@
+{"original_code": "    def _endpoint(algorithm=Depends(PostProcessParams)):\n        \"\"\"return params.\"\"\"\n        if algorithm:\n            return algorithm.dict()\n        return {}"}

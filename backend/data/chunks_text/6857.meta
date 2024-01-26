@@ -1,0 +1,1 @@
+{"original_code": "def test_not_authenticate_user(db: Session) -> None:\n    email = random_email()\n    password = random_lower_string()\n    user = crud.user.authenticate(db, email=email, password=password)\n    assert user is None"}

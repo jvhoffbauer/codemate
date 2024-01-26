@@ -1,0 +1,3 @@
+- Tests the `/context_b` endpoint and verifies that it returns the expected JSON response containing'started b' in the context_b key.
+- Also checks if the correct values are stored in the global variable `state`, specifically, 'finished b with a: started a' for context_b and 'finished a' for context_a.
+- Implicitly tests the behavior of the decorator by ensuring that the order of execution is as expected based on the function names (test_context_a was called before this one).

@@ -1,0 +1,1 @@
+{"original_code": "def test_filter_has_default_value_attributes():\n    filter_ = CorrelationIdFilter(default_value=\"-\")\n    assert filter_.default_value == \"-\""}

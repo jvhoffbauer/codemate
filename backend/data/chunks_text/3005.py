@@ -1,0 +1,1 @@
+- Tests if `GET /main-depends/?q=foo` returns a successful HTTP status code (200) and includes expected query parameters in the JSON response body.

@@ -1,0 +1,1 @@
+{"original_code": "def test_read_dict_by_alias():\n    response = client.get(\"/by-alias/dict\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"alias\": \"Foo\"}"}

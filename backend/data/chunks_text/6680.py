@@ -1,0 +1,2 @@
+- Sends a batch request with two identical probe requests to the `json_request()` function
+- Expects the response from the server to contain the result of each individual probe request in an array format

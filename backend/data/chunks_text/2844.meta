@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/\", response_model=Model3)\ndef f():\n    return {\"c\": {}, \"d\": {\"a\": {}}}"}

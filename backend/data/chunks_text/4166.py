@@ -1,0 +1,3 @@
+- This function tests the `GET /items/` endpoint using a Pytest fixture called `TestClient`.
+- It asserts that the status code is 200 and checks the response body for correctness.
+- The expected JSON response is provided in a list comprehension with two dictionaries representing item objects.

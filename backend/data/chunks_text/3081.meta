@@ -1,0 +1,1 @@
+{"original_code": "    @app.post(\"/people/\", response_model=PersonRead)\n    def create_person(person: PersonCreate) -> Any:\n        db_person = Person.model_validate(person)\n        return db_person"}

@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method()\n    def probe(user: HTTPBasicCredentials = Depends(auth_user)) -> str:\n        return user.username"}

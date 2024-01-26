@@ -1,0 +1,5 @@
+- This function defines a route for `GET /scope-counter`.
+- It takes three arguments annotated with Pydantic's `int` and FastAPI's `Security` decorator to validate user input based on OAuth2 scopes.
+- The first argument (`count`) is not associated with any specific scope, so it can be accessed by anyone without authentication or authorization checks.
+- The second and third arguments (`scope_count_1` and `scope_count_2`) are both associated with the same scope ("scope"), which means they require that scope in order to be accessed.
+- The `scopes` parameter of `Security` specifies the required scopes for each argument separately.

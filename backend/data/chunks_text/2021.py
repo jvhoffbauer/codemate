@@ -1,0 +1,3 @@
+- This function handles PUT requests to update an existing item with ID `id`.
+- The updated item data is passed as a JSON object in the request body and converted into a Python dictionary using `jsonable_encoder()`.
+- The updated item data is stored in the simulated database (represented by `fake_db`) under the specified key `id`.

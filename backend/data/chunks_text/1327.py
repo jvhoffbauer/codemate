@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_model()` that takes a parameter `model_name` of type `ModelName`.
+- Inside the function, it checks for two specific values of `model_name`, `AlexNet` and `Lenet`. If either value matches, it returns a dictionary with the corresponding message based on the selected model.
+- For any other unspecified value of `model_name`, it simply returns a dictionary containing both the name and a generic message.

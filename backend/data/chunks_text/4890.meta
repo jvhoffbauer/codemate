@@ -1,0 +1,1 @@
+{"original_code": "def check_couchbase_username_password(*, cluster_url, username, password):\n    url = f\"{cluster_url}/settings/web\"\n    auth = HTTPBasicAuth(username, password)\n    r = requests.get(url, auth=auth)\n    return r.status_code == 200"}

@@ -1,0 +1,5 @@
+- Defines a function `test_invalid_simple_list` using PyTest's `pytest.fixture`.
+- Uses PyTest's `with` statement to raise an AssertionError when executing the function body.
+- Creates a new instance of FastAPI and assigns it to the variable `app`.
+- Defines a route handler for GET requests at the path "/items/{id}" that takes a parameter named "id" of type `list`.
+- The route handler is marked as uncovered by Pragma, indicating that its execution will not be included in code coverage reports.

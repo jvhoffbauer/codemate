@@ -1,0 +1,1 @@
+- This function tests creating an existing item with a POST request to /items/. - It sets the X-Token header to 'coneofsilence'. - If successful, it asserts that the status code is 400 and the error message returned by the server matches 'Item already exists' (detailed in the JSON response).

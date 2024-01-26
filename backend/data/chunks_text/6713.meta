@@ -1,0 +1,1 @@
+{"original_code": "    def probe(\n        http_response: Response,\n        data: str = Body(..., examples=[\"123\"]),\n    ) -> str:\n        http_response.set_cookie(key=\"probe-cookie\", value=data)\n        http_response.status_code = 404\n        return data"}

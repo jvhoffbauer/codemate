@@ -1,0 +1,3 @@
+- Defines a method `probe` using FastAPI's dependency injection system (`@ep.method()`)
+- Accepts two dependencies: `shared_counter`, obtained from a function called `get_shared_counter`, and `common_counter`, obtained as a tuple of string and integer values returned by another function called `get_common_counter`. Both functions are assumed to be defined elsewhere in the program.
+- Returns a tuple containing the original `shared_counter` value, followed by the first element of `common_counter` (i.e., its string component). The second element of `common_counter` is not included in this output.

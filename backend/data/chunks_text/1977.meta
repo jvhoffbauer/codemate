@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/legacy/\")\ndef get_legacy_data():\n    data = \"\"\"<?xml version=\"1.0\"?>\n    <shampoo>\n    <Header>\n        Apply shampoo here.\n    </Header>\n    <Body>\n        You'll have to use soap here.\n    </Body>\n    </shampoo>\n    \"\"\"\n    return Response(content=data, media_type=\"application/xml\")"}

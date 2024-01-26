@@ -1,0 +1,5 @@
+- Configures Celery event hooks for generating tracing IDs with depth using `asgi_correlation_id`.
+- Users must call the function during startup to enable tracing ID generation.
+- The `before_task_publish` hook adds the current ID as a header when publishing tasks from workers or requests.
+- The `task_prerun` hook sets the current ID and parent ID (if provided).
+- The `task_postrun` hook cleans up context variables to prevent value reuse in subsequent tasks.

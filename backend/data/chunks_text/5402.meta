@@ -1,0 +1,1 @@
+{"original_code": "def CustomPathParams(directory: str = Query(..., description=\"Give me a url.\")) -> str:\n    \"\"\"Custom path Dependency.\"\"\"\n    return directory"}

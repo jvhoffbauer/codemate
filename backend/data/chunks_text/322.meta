@@ -1,0 +1,1 @@
+{"original_code": "def select_heroes():\n    with Session(engine) as session:  # (7)!\n        statement = select(Hero)  # (8)!\n        results = session.exec(statement)  # (9)!\n        for hero in results:  # (10)!\n            print(hero)  # (11)!\n    # (12)!"}

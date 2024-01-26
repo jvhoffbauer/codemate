@@ -1,0 +1,1 @@
+{"original_code": "def event_counter():\n    return EventsCounter()"}

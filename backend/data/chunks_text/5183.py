@@ -1,0 +1,5 @@
+- The `preview` function creates a preview of a geospatial dataset using FastAPI and RasterIO libraries.
+- It takes several dependencies including path to the input file, layer parameters, dataset parameters, image parameters, post processing functions, rescaling options, color formula, colormap, rendering settings, and environment variables.
+- It reads the input file using the provided reader dependency and generates an image based on the specified layers, datasets, images, and parameters.
+- It applies any necessary transformations such as post processing, rescaling, color formulas, and colormaps.
+- Finally, it renders the resulting image in the desired format and returns it as a response object.

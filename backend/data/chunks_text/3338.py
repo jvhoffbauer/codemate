@@ -1,0 +1,5 @@
+- Sets up a Flask application and passes it to `TestClient`.
+- Creates a dictionary of cookies (if any).
+- Makes an HTTP GET request using `TestClient`, passing in the path and cookies as arguments.
+- Asserts that the status code is equal to the provided value.
+- Asserts that the JSON response matches the expected value.

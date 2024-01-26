@@ -1,0 +1,3 @@
+- Tests if login with incorrect password fails and returns a 400 Bad Request status code with an error message of 'Incorrect username or password'
+- Uses Flask-RESTful's `TestClient` to simulate HTTP requests for testing purposes
+- Utilizes JSON format for request body in POST method call

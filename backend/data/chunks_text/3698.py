@@ -1,0 +1,1 @@
+- Sends a PUT request to update an item with ID 'plumbus' and token 'jessica'. - Includes a custom header 'X-Token' with value 'fake-super-secret-token'. - Asserts that the server returns HTTP status code 200 (OK) and checks the response body for expected data.

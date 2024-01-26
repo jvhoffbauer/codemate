@@ -1,0 +1,1 @@
+{"original_code": "def session_fixture():  # (3)!\n    engine = create_engine(\n        \"sqlite://\", connect_args={\"check_same_thread\": False}, poolclass=StaticPool\n    )\n    SQLModel.metadata.create_all(engine)\n    with Session(engine) as session:\n        yield session  # (4)!"}

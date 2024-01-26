@@ -1,0 +1,1 @@
+- Defines a test function for uploading a file with dummy data and using a custom validator function that returns `None`. - Asserts that calling `__get_pydantic_core_schema__()` on an instance of `UploadFile` with string type and a custom validator function that always returns `None` results in an empty schema dictionary being returned.

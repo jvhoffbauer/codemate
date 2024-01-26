@@ -1,0 +1,7 @@
+- Imports and sets up necessary modules for running a SQLAlchemy tutorial example (docs_src, sqlalchemy).
+- Defines a function `test_tutorial001` with a decorator `@pytest.fixture`. This fixture is used to clear the database before each test case runs.
+- Import the specific module containing the tutorial's implementation (in this case, `tutorial001_py310`) and assign it to a variable called `mod`.
+- Set the URL of the SQLite connection string and create an engine using `create_engine()`.
+- Call the main method in the imported module (`mod.main()`), which executes the tutorial steps.
+- Create an instance of the `Inspector` class provided by SQLAlchemy to check if tables were created successfully after running the tutorial.
+- Assert that both Hero and Team tables exist in the database using the `inspect().has_table()` method.

@@ -1,0 +1,3 @@
+- Defines a function called `docs_redirect()`.
+- Returns an instance of `RedirectResponse`, which redirects the user to the specified URL (in this case, "/docs").
+- This function can be used in routes or other parts of the application where we want to automatically redirect users to our documentation page.

@@ -1,0 +1,1 @@
+{"original_code": "    def get_multi_by_owner(\n        self, db: Session, *, owner_id: int, skip: int = 0, limit: int = 100\n    ) -> List[Item]:\n        return (\n            db.query(self.model)\n            .filter(Item.owner_id == owner_id)\n            .offset(skip)\n            .limit(limit)\n            .all()\n        )"}

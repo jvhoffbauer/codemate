@@ -1,0 +1,3 @@
+- Retrieves a list of available tile matrix sets using GET request to `/tileMatrixSets`.
+- Returns a JSON response with an array containing objects representing each tile matrix set. Each object has an ID and title, as well as a link to its detailed information at `/TileMatrixSet/{ID}`.
+- Follows the Open Geospatial Consortium's specification for tile matrix sets (http://docs.opengeospatial.org/per/19-069.html#_tilematrixsets)

@@ -1,0 +1,1 @@
+- Tests if accessing `/items` endpoint without authentication returns a 401 Unauthorized status code and includes an appropriate error message in the body. - Also checks that the WWW-Authenticate header is set to Bearer, indicating that bearer tokens are required for authorization.

@@ -1,0 +1,2 @@
+- Defines a function `read_items` that takes an argument `id`, which is expected to be a tuple (type hint)
+- The function body is empty, marked with a docstring "pragma: no cover" indicating that this block of code should not be executed during test coverage analysis

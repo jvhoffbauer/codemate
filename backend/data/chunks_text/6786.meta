@@ -1,0 +1,1 @@
+{"original_code": "def create_user(*, session: Session, user_create: UserCreate) -> User:\n    db_obj = User.from_orm(\n        user_create, update={\"hashed_password\": get_password_hash(user_create.password)}\n    )\n    session.add(db_obj)\n    session.commit()\n    session.refresh(db_obj)\n    return db_obj"}

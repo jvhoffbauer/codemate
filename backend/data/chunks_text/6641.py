@@ -1,0 +1,3 @@
+- Defines a method called `probe` using FastAPI's decorator syntax (@ep).
+- Accepts an optional parameter named `jsonrpc_method`, which is retrieved from another function (`get_jsonrpc_method`) that returns a string value, and passed to the method as a dependency using Pydantic's Depends().
+- Returns a string value representing the JSON RPC method received in the request.

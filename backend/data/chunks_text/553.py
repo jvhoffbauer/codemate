@@ -1,0 +1,7 @@
+- Imports `tutorial002_py310` module from `docs_src/tutorial/relationship_attributes/back_populates` directory and assigns it to a variable named `mod`.
+- Sets SQLAlchemy connection URL for testing purposes using `sqlite://` syntax.
+- Creates an engine object using `create_engine()` function provided by SQLAlchemy library.
+- Initializes a list called `calls` which will be used later in this script to store print statements made during execution of `main()` method inside `tutorial002_py310` module.
+- Calls `get_testing_print_function()` function to replace built-in Python's `print()` statement with custom implementation that stores each printed message into `calls` list instead of displaying them on console.
+- Executes `main()` method inside `tutorial002_py310` module while passing our custom `print()` replacement function obtained through `get_testing_print_Function()`.
+- Asserts that `calls` list contains exactly those messages we expect to see after executing `main()` method.

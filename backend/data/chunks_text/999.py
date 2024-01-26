@@ -1,0 +1,2 @@
+- Defines a function `isoformat` that takes either a `datetime.date` or a `datetime.time` object as input (type annotation)
+- Returns the ISO format string representation of the given date/time object using its built-in method `isoformat()`

@@ -1,0 +1,4 @@
+- Generates an OpenAPI schema for a FastAPI application using `docstring` and `Pydantic` models as input.
+- Exports the schema in JSON format at the URL `/openapi.json`.
+- Defines request parameters (including cookie parameter) with descriptive names and types.
+- Includes error responses with detailed information about validation errors.

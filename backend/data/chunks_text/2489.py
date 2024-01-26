@@ -1,0 +1,1 @@
+- Defines a function `read_pets()` that returns a list of two `PetDB` objects and one `UserDB` object using the async syntax in Python. - The `UserDB` class represents a database model for users with an email address and a hashed password. - The `PetDB` class represents a database model for pets with a name and an associated `UserDB` object representing its owner.

@@ -1,0 +1,1 @@
+{"original_code": "async def test_custom_transformer():\n    cid = uuid4().hex\n    async with AsyncClient(app=transformer_app, base_url=\"http://test\") as client:\n        response = await client.get(\"test\", headers={\"X-Request-ID\": cid})\n        assert response.headers[\"X-Request-ID\"] == cid * 2"}

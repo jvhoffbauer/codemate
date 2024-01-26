@@ -1,0 +1,1 @@
+{"original_code": "async def test_form_admin_register(site: AdminSite):\n    site.register_admin(TmpAdmin)\n\n    with pytest.raises(AssertionError) as exc:\n        site.get_admin_or_create(TmpAdmin)\n    assert exc.match(\"schema is None\")"}

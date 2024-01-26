@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/explicit-query\")\ndef read_explicit_query(q: Union[str, None] = Query()):\n    return q"}

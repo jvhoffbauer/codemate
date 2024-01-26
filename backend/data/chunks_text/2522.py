@@ -1,0 +1,3 @@
+- Defines a web socket route with prefix "/" using `@prefix_router.websocket_route` decorator
+- Accepts incoming connections and sends initial message "Hello, router with prefix!" to client
+- Closes connection after sending response

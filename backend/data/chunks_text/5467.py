@@ -1,0 +1,3 @@
+- Overrides the default behavior of `requests.Response.raise_for_status()`, which raises an exception if the HTTP status code is not in a success range (200-299)
+- Returns `True` instead, indicating that any HTTP response should be considered successful and no exceptions will be raised
+- Useful for cases where you want to handle non-success responses manually or ignore certain error codes

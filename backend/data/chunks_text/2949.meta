@@ -1,0 +1,1 @@
+{"original_code": "async def custom_middleware(\n    request: Request, call_next: Callable[[Request], Awaitable[Response]]\n):\n    response = await call_next(request)\n    response.headers[\"custom\"] = \"foo\"\n    return response"}

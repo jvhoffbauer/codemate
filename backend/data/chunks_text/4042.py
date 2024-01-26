@@ -1,0 +1,2 @@
+- This function tests a POST request to create an item with name 'Foo' and price 3 using Flask's built-in `client`.
+- The expected status code is 200 (OK) and the JSON response should contain just the provided fields ('name', 'price') as well as default values for 'description' and 'tax'.

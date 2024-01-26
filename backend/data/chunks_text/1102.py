@@ -1,0 +1,1 @@
+- This function takes a `current_user` parameter annotated with `User` and retrieved using `Depends(get_current_user)`. - It checks whether the user's disabled flag is set to True (i.e., they are inactive). - If so, it raises a custom HTTP exception with status code 400 and error message "Inactive user". - Otherwise, it returns the current user object as normal.

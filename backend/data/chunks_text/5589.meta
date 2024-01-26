@@ -1,0 +1,1 @@
+{"original_code": "    async def fetch_items(self, *item_id: str) -> List[TableModelT]:\n        \"\"\"Fetch the database data by id.\"\"\"\n        return await self.db.async_run_sync(self._fetch_item_scalars, item_id)"}

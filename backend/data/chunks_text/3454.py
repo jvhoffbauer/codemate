@@ -1,0 +1,2 @@
+- This function is a unit test for the main endpoint of an application, accessed through `client`.
+- It checks that the status code returned by the GET request to `/app` is 200 OK and that the JSON response contains specific keys with expected values.

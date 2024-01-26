@@ -1,0 +1,3 @@
+- Defines a method `__str__()` for the class, which is called when an object of this class is converted to a string representation using the built-in function str().
+- The method returns a formatted string that includes the ID and name (and optionally name in another language) of the object as a concise identifier.
+- This can be useful for debugging or logging purposes, where it's helpful to see a brief summary of what the object represents without having to print out all its attributes separately.

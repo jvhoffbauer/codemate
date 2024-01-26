@@ -1,0 +1,3 @@
+- Defines a GET route with path `/query/param-required/int`.
+- Uses FastAPI's built-in query parameter decorator to specify that an integer query parameter is required for this endpoint.
+- Assigns the value of the query parameter to a variable called `query`, which can be used in the response body or other logic within the function.

@@ -1,0 +1,1 @@
+- Defines a function `get_innerinvalid()` that returns an inner object with three key-value pairs, each of which is invalid in some way (string instead of integer for price and list instead of string or integer for owner_ids)

@@ -1,0 +1,3 @@
+- Retrieves the `label_field_name` attribute from a given `BaseModel` class using the `model_config_attr()` function. If this value is not `None`, it returns immediately with that value.
+- Otherwise, iterates over all fields of the model (using `model_fields()`) and checks whether any have an alias equal to one of several common labels ("name", "title", or "label"). If so, it returns that alias as the label field name.
+- Finally, if no suitable label field could be found, falls back to returning "id".

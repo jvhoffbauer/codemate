@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"session\", autouse=True)\ndef setup_db():\n    with db.engine.begin() as conn:\n        db.drop_all(conn)\n        db.create_all(conn)\n    yield\n    conn.close()"}

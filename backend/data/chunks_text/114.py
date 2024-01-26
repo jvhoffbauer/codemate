@@ -1,0 +1,1 @@
+- Defines a function called `select` with two arguments: `__ent0` of type `_TCCA[_T0]`, and `entity_1` of type `_TScalar_1`. The first argument is ignored for now (type annotation). - Returns a new object of type `Select[Tuple[_T0, _TScalar_1]]`. This suggests that this function creates a new selection operation based on the input types `_T0` and `_TScalar_1`.

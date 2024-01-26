@@ -1,0 +1,1 @@
+{"original_code": "    def get_emails_enabled(cls, v: bool, values: Dict[str, Any]) -> bool:\n        return bool(\n            values.get(\"SMTP_HOST\")\n            and values.get(\"SMTP_PORT\")\n            and values.get(\"EMAILS_FROM_EMAIL\")\n        )"}

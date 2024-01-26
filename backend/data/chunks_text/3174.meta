@@ -1,0 +1,1 @@
+{"original_code": "@dataclass\nclass Item:\n    name: str\n    count: int"}

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/no_response_model-annotation_json_response_class\")\ndef no_response_model_annotation_json_response_class() -> JSONResponse:\n    return JSONResponse(content={\"foo\": \"bar\"})"}

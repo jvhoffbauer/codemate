@@ -1,0 +1,1 @@
+{"original_code": "    def _create_schema_list(self) -> Type[SchemaListT]:\n        return self.schema_model"}

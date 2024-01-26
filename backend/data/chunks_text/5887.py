@@ -1,0 +1,3 @@
+- Decorates a method with `@cached_property`.
+- Returns a dictionary of filtered permission fields for "filter" operation using `get_permission_fields()` function.
+- Caches the result to improve performance by avoiding repeated calculations.

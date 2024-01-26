@@ -1,0 +1,3 @@
+- Tests retrieving an item with ID 'item1' using Flask's built-in testing client (TestClient)
+- Asserts that the HTTP status code is 200 and saves the text for debugging purposes
+- Verifies that the JSON response contains expected keys ('description', 'type') and values

@@ -1,0 +1,1 @@
+{"original_code": "async def verify_key(x_key: str = Header()):\n    if x_key != \"fake-super-secret-key\":\n        raise HTTPException(status_code=400, detail=\"X-Key header invalid\")\n    return x_key"}

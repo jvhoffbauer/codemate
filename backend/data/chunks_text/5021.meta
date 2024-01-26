@@ -1,0 +1,1 @@
+{"original_code": "    async def create(cls):\n        _pool = await aioredis.Redis(host=settings.REDIS_CACHE_URI)\n        return cls(pool=_pool)"}

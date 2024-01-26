@@ -1,0 +1,4 @@
+- Generates a form to create new instances of the model represented by this viewset.
+- Allows specifying whether to generate a single item creation form or a bulk creation list with Excel import functionality (via `bulk` parameter).
+- If creating a single item, returns an API object representing the POST request to the router path with the appropriate query parameters and a Form object containing the necessary input fields.
+- If generating a bulk creation list, iteratively generates ListColumn objects from each non-primary key field using `get_list_column`, adds them as columns to a Table component, and creates an AmisAPI object representing the POST request with an optional "$excel" parameter that maps table headers to their corresponding labels. The resulting Form contains both an Excel upload widget and the generated Table component.

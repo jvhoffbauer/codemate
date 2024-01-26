@@ -1,0 +1,1 @@
+- This method is called `body` and it's an asynchronous function (indicated by the `async` keyword). - It returns the result of calling another asynchronous function, `await self.request.body()`. - The `body()` method is likely used to retrieve data sent in a request body.

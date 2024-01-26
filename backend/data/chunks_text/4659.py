@@ -1,0 +1,1 @@
+- Defines a function `get_app()` that imports and returns an instance of Flask application named 'app' defined in tutorial001 module under request_forms_and_files package within docs_src directory.

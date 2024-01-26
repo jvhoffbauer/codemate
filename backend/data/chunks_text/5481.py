@@ -1,0 +1,3 @@
+- Tests the `/cog/crop` endpoint with different parameters and formats (PNG, JPG).
+- Verifies that metadata is correctly extracted from the responses using the `parse_img()` function.
+- Checks for correct handling of optional arguments such as `return_mask`, `width`, and `height`.

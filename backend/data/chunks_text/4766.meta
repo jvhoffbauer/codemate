@@ -1,0 +1,1 @@
+{"original_code": "async def get_model_c() -> ModelC:\n    return ModelC(username=\"test-user\", password=\"test-password\")"}

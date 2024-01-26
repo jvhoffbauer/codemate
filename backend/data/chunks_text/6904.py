@@ -1,0 +1,3 @@
+- Defines a function called `shutdown` that returns no value (None).
+- Logs an informational message using the `logger`.
+- Calls another function named `_shutdown_model` with the `app` object as its argument.

@@ -1,0 +1,4 @@
+- Tests whether the CeleryTracingIdsFilter sets default values for `celery_parent_id` and `celery_current_id` when their corresponding context variables (`celery_parent_id` and `celery_current_id`) are not set.
+- Resets both `celery_parent_id` and `celery_current_id` tokens before running the test case.
+- Asserts that neither `celery_parent_id` nor `celery_current_id` is present in the initial `LogRecord`.
+- Calls the `CeleryTracingIdsFilter` with the reset context variables and filters a new `LogRecord`, then asserts that both `celery_parent_id` and `celery_current_id` have been assigned the default value of '-'.

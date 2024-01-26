@@ -1,0 +1,1 @@
+- This method is marked as abstract, meaning it must be implemented by subclasses. - It uses `async` to indicate that it's an asynchronous function. - It has a docstring explaining its purpose and return type.

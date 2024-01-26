@@ -1,0 +1,6 @@
+- Defines a cached property called `registered_admin_actions`.
+- Initializes an empty dictionary called `admin_actions`.
+- Loops through all instances of `AdminActionMaker`, which is assumed to be a class or function that creates AdminActions.
+- For each instance, it calls its constructor with `self` as argument and stores the resulting AdminAction object in `admin_action`.
+- If `admin_action` is not None (i.e., was created successfully), it adds it to `admin_actions` using its name as key.
+- Returns `admin_actions`.

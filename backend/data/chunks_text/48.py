@@ -1,0 +1,3 @@
+- Retrieves a dictionary of field information for a given SQLModel class or instance using its `model_fields` attribute.
+- The returned dictionary contains key-value pairs where each key is the name of a field and the corresponding value is an object representing that field's metadata (e.g., data type, nullability).
+- This function can be used to access detailed information about the fields in a SQLModel schema without having to iterate over them manually.

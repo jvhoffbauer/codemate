@@ -1,0 +1,4 @@
+- This function converts SQLAlchemy model fields and Flask-WTF form fields into a list of `FormItems`.
+- It takes an optional `action` parameter to determine whether it's creating (`CREATE`) or updating (`UPDATE`) a record.
+- The function iterates over each input field and checks its type. If it's already a `FormItem`, it adds it directly to the output list. Otherwise, it retrieves the corresponding SQLAlchemy field using `self.parser.get_modelfield()` and passes it along with the `action` value to `self.get_form_item()` to create a new `FormItem`.
+- After all fields have been processed, the resulting list is sorted by whether it's a service object (which should be displayed first).

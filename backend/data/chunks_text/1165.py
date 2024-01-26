@@ -1,0 +1,3 @@
+- Endpoint to create a new item using PUT request method
+- Request body is expected in JSON format as per `response_model` parameter
+- Required fields are `name`, `description`, and `price`. Optional fields include `tax` and `tags`

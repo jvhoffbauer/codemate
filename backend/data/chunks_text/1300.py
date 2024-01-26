@@ -1,0 +1,3 @@
+- Endpoint for creating a new file with Pydantic's FastAPI framework
+- Accepts either bytes or `None` as input using annotations and type hinting
+- Validates input using Pydantic's built-in `File()` class to ensure it is a valid file object

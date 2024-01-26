@@ -1,0 +1,1 @@
+{"original_code": "    def __dict__(self):\n        raise NotImplementedError()"}

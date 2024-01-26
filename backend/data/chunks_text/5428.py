@@ -1,0 +1,3 @@
+- This function returns the basic information of a mosaic in GeoJSON format using RasterIO library.
+- It takes several dependencies including path to the dataset, parameters for reading and processing data, environment variables, and returns a GeoJSON feature containing the metadata (i.e., bounds, resolution) and other attributes of the mosaic.
+- The function uses RasterIO's `with` statement to automatically close resources after use, ensuring proper resource management.

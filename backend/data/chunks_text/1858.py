@@ -1,0 +1,2 @@
+- Defines an asynchronous function `update_item` that takes four arguments: `item_id`, `Item` object, `User` object, and optional `importance` parameter (default is `Body()`)
+- The function returns a dictionary called `results` containing the values of the input parameters

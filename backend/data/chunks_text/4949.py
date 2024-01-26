@@ -1,0 +1,4 @@
+- Initializes a new object with a specified `value`, optional `status_code` (default is 200), and an optional `next_page`.
+- The `value` attribute stores the actual data being represented by this object.
+- The `status_code` attribute holds a HTTP response status code that may be returned when accessing this resource. Defaults to 200 for success.
+- The `next_page` attribute provides a reference to the next page of related resources in a paginated API response. May be None if there are no more pages available.

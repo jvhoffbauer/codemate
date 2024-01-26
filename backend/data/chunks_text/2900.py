@@ -1,0 +1,3 @@
+- Defines a function `get_current_user()` that takes an optional argument `oauth_header`.
+- If provided, extracts the username from the OAuth header using the `Security` decorator and `reusable_oauth2` scheme to authenticate the request.
+- Returns a new instance of the `User` class with the extracted username as its attribute value.

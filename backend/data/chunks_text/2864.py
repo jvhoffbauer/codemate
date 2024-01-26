@@ -1,0 +1,1 @@
+- Tests whether `__repr__()` method of an empty Header object returns a string representation with square brackets and no elements inside. - Verifies that the `__repr__()` function for an empty header list is correctly implemented in accordance with Python's built-in behavior.

@@ -1,0 +1,1 @@
+- Defines a function `get_coerce_exclude_unset()` that returns an instance of `Item` with aliased name "coerce" and fixed price "1.0". - This function is used to provide default values for coercion behavior in case it's not explicitly set by the user, while excluding unset options from being included in calculations or comparisons.

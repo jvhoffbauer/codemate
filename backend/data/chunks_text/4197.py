@@ -1,0 +1,3 @@
+- Tests the endpoint `/openapi.json`, which returns an OpenAPI schema in JSON format.
+- Asserts that the status code is 200 and checks the text of the response if needed (not shown here).
+- Verifies that the returned JSON matches the expected structure with specific keys and values for the OpenAPI version, info object, paths dictionary, etc.

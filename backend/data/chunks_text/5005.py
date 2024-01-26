@@ -1,0 +1,3 @@
+- Defines a class method `one_or_404()` for the current model (`cls`) that returns an instance of the model or raises a `404 Not Found` error if it doesn't exist in the database.
+- Uses Django's built-in `get_object_or_404()` function to retrieve the object based on the given keyword arguments (`**kwargs`).
+- Returns the retrieved object as self (i.e., the same model class), allowing chaining of methods like `.first()`, etc.

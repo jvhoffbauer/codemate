@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `fastapi add_route` and `app.include_router`.
+- Defines endpoints with request parameters, responses (including error codes), and summary descriptions.
+- Includes custom validation errors in the schema by defining them as components of the OpenAPI specification.

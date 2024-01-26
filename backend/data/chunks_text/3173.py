@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with an owner (a `Person`) and a name (a string) as arguments. - Sets the values of the `owner` and `name` attributes of the object to the corresponding argument values passed in during instantiation.

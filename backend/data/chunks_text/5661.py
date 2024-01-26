@@ -1,0 +1,3 @@
+- Defines a method `update_from_kwargs` that takes keyword arguments (`**`) and passes them to another method called `update_from_dict`.
+- The purpose of this method is to provide an alternative way for updating the object's state using keywords instead of a dictionary argument in the `update_from_dict` method.
+- This allows more flexibility when calling methods as it eliminates the need to create a separate dictionary just for passing updates.

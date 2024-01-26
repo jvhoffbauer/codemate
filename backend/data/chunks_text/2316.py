@@ -1,0 +1,4 @@
+- Defines a route `/fast_uuid` for returning a fast UUID using the `MyUuid` class from the `asyncpg` library
+- Creates an instance of `MyUuid` and checks that it is a valid `uuid.UUID`, but not the same as the built-in `uuid.UUID` class
+- Raises a `TypeError` when attempting to access variables on the `MyUuid` object (as this is not a regular Python object)
+- Returns a dictionary containing the generated fast UUID

@@ -1,0 +1,1 @@
+- This function takes a `UserSyncIn` object as input and inserts its contents into Couchbase's Sync Gateway using an HTTP PUT request to a specific URL with the user's name as part of it. - The returned status code is checked against two possible values (200 for success, 201 for created resource), indicating whether the operation was successful or not.

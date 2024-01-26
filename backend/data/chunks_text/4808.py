@@ -1,0 +1,3 @@
+- Retrieves a specific document with the given ID from a specified BigQuery bucket using Google Cloud Storage API's `Bucket.get()`.
+- Quietly returns `None` if the document doesn't exist in the bucket to avoid raising an exception.
+- Converts the retrieved JSON data into an instance of the provided Pydantic model and returns it.

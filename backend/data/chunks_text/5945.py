@@ -1,0 +1,4 @@
+- This method is called `gettext()`. It takes a string `value` and an optional language `language`, which defaults to the current language stored in the object's attribute `_language`.
+- The function first checks whether the given language is provided; if not, it uses the default one from `_language`.
+- If the language exists as a key in the dictionary of locales (stored in `_locales`) associated with this object, then it iterates through all translations available for that language. For each translation, it looks up the `value` in its internal catalog and returns the corresponding translated text using the `gettext()` method of the translation object.
+- Finally, the original `value` is returned unchanged unless a matching translation was found.

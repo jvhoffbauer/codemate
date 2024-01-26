@@ -1,0 +1,3 @@
+- Defines a function `path_examples()` that takes an optional argument `item_id`.
+- The default value of `item_id` is set using Pythons built-in `Path()` class, which allows for specifying example values and OpenAPI examples.
+- In this case, there are two JSON schema items ("json_schema_item_1" and "json_schema_item_2") provided as examples, and two OpenAPI examples (for paths "Path One" and "Path Two"). Each OpenAPI example includes a summary, description, and corresponding JSON schema item ID.

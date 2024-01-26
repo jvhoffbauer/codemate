@@ -1,0 +1,4 @@
+- This function handles a GET request to retrieve an item with the specified ID from the database (represented by `fake_db`) using FastAPI's built-in routing decorator `@app.get`.
+- The function takes two arguments: `item_id`, which is required and passed as part of the URL path, and `x_token`, which is optional and provided via the `Header()` class from FastAPI's dependency injection system.
+- If the value of `x_token` doesn't match the hardcoded secret token `fake_secret_token`, a customized HTTP exception with status code 400 ("Bad Request") and error message "Invalid X-Token header" is raised.
+- If the requested item isn't present in the dictionary `fake_db`, another customized HTTP exception with status code 404 ("Not Found") and error message "Item not found" is raised instead.

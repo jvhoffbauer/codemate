@@ -1,0 +1,2 @@
+- Defines a function `head_item()` that takes an argument `item_id`.
+- Returns a response with no content (`JSONResponse(None)`) and sets a custom header named "x-fastapi-item-id" to the value of the input parameter `item_id`. This is commonly used in RESTful APIs for HTTP HEAD requests to retrieve metadata about resources without returning their full contents.

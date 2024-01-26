@@ -1,0 +1,1 @@
+{"original_code": "async def get_scope_counter(\n    count: int = Security(dep_counter),\n    scope_count_1: int = Security(dep_counter, scopes=[\"scope\"]),\n    scope_count_2: int = Security(dep_counter, scopes=[\"scope\"]),\n):\n    return {\n        \"counter\": count,\n        \"scope_counter_1\": scope_count_1,\n        \"scope_counter_2\": scope_count_2,\n    }"}

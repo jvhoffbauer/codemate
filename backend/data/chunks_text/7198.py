@@ -1,0 +1,3 @@
+- Tests login functionality by making a POST request to `/admin/auth/login/access-token` with username and password as JSON data
+- Asserts that the status code is 200, indicating successful authentication
+- Verifies that the response contains a valid access token in the 'data' field

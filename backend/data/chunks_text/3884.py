@@ -1,0 +1,1 @@
+- Imports `TestClient` class and `app` object from a specific tutorial in Flask documentation for testing multiple parameters using Python 3.10. - Creates an instance of `TestClient` with the imported `app`. - Returns the created `TestClient` instance to be used elsewhere in the program.

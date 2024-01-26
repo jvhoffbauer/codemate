@@ -1,0 +1,1 @@
+{"original_code": "def test_websocket():\n    client = TestClient(app)\n    with client.websocket_connect(\"/ws\") as websocket:\n        data = websocket.receive_json()\n        assert data == {\"msg\": \"Hello WebSocket\"}"}

@@ -1,0 +1,2 @@
+- Tests the `/query` endpoint using Flask's built-in testing client (client) and asserts that it returns a status code of 422 (Unprocessable Entity).
+- Uses Pytest's assert function to check if the JSON response matches either the expected error message for missing query parameters in Pydantic v1 or the new error format introduced in Pydantic v2. The `IsDict` type hint is used to ensure that the JSON response is indeed a dictionary with an appropriate structure.

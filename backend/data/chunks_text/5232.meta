@@ -1,0 +1,1 @@
+{"original_code": "@dataclass\nclass BidxParams(DefaultDependency):\n    \"\"\"Band Indexes parameters.\"\"\"\n\n    indexes: Optional[List[int]] = Query(\n        None,\n        title=\"Band indexes\",\n        alias=\"bidx\",\n        description=\"Dataset band indexes\",\n        examples={\"one-band\": {\"value\": [1]}, \"multi-bands\": {\"value\": [1, 2, 3]}},\n    )"}

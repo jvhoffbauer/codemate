@@ -1,0 +1,1 @@
+- Overrides `get_select()` method of parent class to filter deleted records from query results using SQLAlchemy's WHERE clause with a condition that checks if delete time is null for the model being queried. - Returns filtered query results as a Select object.

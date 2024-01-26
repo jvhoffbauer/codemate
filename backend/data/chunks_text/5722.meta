@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: \"AdminApp\"):\n        RouterAdmin.__init__(self, app)\n        if self.page_path is None:\n            self.page_path = f\"/{self.__class__.__module__}/{self.__class__.__name__}\"\n        PageSchemaAdmin.__init__(self, app)"}

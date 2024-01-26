@@ -1,0 +1,2 @@
+- Tests if Swagger UI HTML page is accessible by making a GET request to /docs endpoint and checking status code.
+- Checks for presence of required static files (swagger-ui-bundle.js and swagger-ui.css) within the HTML response body.

@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/required`.
+- Uses FastAPI's `Query` parameter decorator to validate that the query string parameter 'foo' has a minimum length of 1 using Pydantic's `Annotated` type annotation.
+- Returns a JSON response with the validated value of 'foo'.

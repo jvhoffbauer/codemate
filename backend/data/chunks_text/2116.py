@@ -1,0 +1,2 @@
+- Defines a GET request for the path "/path/str" with a dynamic parameter "item_id".
+- The function returns the value of the "item_id" parameter as a string.

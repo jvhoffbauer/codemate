@@ -1,0 +1,3 @@
+- Defines a function named `post_root` that takes two arguments of type `Item`, called `item1` and `item2`.
+- Returns a tuple containing both input items (`item1` and `item2`) without any further processing or computation.
+- The `pragma: nocover` statement is used to indicate that this function should not be covered by unit tests, as it's intended for use in other parts of the application outside of testing contexts.

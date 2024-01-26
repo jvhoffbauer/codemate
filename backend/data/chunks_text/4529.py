@@ -1,0 +1,1 @@
+- Tests authentication failure with an invalid token (nonexistent) for a GET request to /users/me endpoint using Pytest and FastAPI frameworks. - Asserts that the server returns HTTP status code 401 Unauthorized along with error message "Could not validate credentials". - Verifies that WWW-Authenticate header is set correctly with Bearer scheme and required scope ("me").

@@ -1,0 +1,3 @@
+- This function tests the login endpoint of an API using a session object from `aiohttp`.
+- It provides sample input data for username and password, which are hardcoded values defined in environment variables (using `secretsmanager`) to keep them secure.
+- The response status is checked against expected value, and JSON content is verified for specific keys' presence.

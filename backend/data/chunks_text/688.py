@@ -1,0 +1,1 @@
+- Defines a function called `task2` that logs an informational message to the logger and schedules the execution of another asynchronous task (represented by `task3`) using Celery's delay method.

@@ -1,0 +1,1 @@
+{"original_code": "def test_override_server_error_exception_response():\n    client = TestClient(app, raise_server_exceptions=False)\n    response = client.get(\"/server-error\")\n    assert response.status_code == 500\n    assert response.json() == {\"exception\": \"server-error\"}"}

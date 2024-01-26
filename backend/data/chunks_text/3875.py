@@ -1,0 +1,3 @@
+- Sends a PUT request to /items/5 with no JSON data in the body
+- Expects a HTTP status code of 422 (Unprocessable Entity)
+- Verifies that the server returns an error message containing details about missing required fields ('item', 'user', and 'importance') using either Pytest-Pydantic or Pydantic's built-in validation mechanism

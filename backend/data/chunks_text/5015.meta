@@ -1,0 +1,1 @@
+{"original_code": "    def __getattr__(self, item: str) -> Any:\n        self._ensure_var(item)\n        try:\n            return self._vars[item].get()\n        except LookupError:\n            self._vars[item].set(None)\n            return None"}

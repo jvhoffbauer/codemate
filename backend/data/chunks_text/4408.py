@@ -1,0 +1,5 @@
+- Tests CORS functionality using FastAPI's built-in `TestClient`.
+- Sends a pre-flight request with specific headers to check for allowed origins and headers.
+- Verifies that the pre-flight response is successful and contains expected values.
+- Makes a regular GET request with an origin header set, verifying that the response includes the correct Access-Control-Allow-Origin value.
+- Confirms that a non-CORS request still returns the expected data without any additional CORS headers.

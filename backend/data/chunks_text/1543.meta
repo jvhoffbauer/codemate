@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\")\nasync def read_items(q: list[str] | None = Query(default=None)):\n    query_items = {\"q\": q}\n    return query_items"}

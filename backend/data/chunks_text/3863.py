@@ -1,0 +1,2 @@
+- Imports `TestClient` class and creates an instance of it using Flask application defined in a specific module (`docs_src.body_multiple_params.tutorial003_an_py39`)
+- Returns the created `TestClient` object for further usage

@@ -1,0 +1,4 @@
+- Imports `TestClient` and `tutorial001` modules from a local directory (docs_src).
+- Reloads the `tutorial001` module to ensure any changes are reflected in the returned `TestClient`.
+- Creates an instance of `TestClient` using the app defined in the `tutorial001` module, which is assumed to be a Flask application with OpenAPI definitions.
+- Returns the created `TestClient` object for use by other parts of the program or tests.

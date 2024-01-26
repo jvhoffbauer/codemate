@@ -1,0 +1,3 @@
+- Retrieves two heroes from the database using SQLAlchemy's `Session`.
+- Updates and adds changes to both heroes in memory, then commits those changes back to the database.
+- Refreshes the objects in memory to ensure they reflect the updated data in the database.

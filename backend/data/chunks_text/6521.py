@@ -1,0 +1,3 @@
+- Defines a fixture named `app` for use in pytest tests
+- Initializes an instance of JSONRPC API and binds it to the specified entry point (EP) using the `bind_entrypoint` method
+- Returns the initialized API object for use in test functions that require access to the server's functionality

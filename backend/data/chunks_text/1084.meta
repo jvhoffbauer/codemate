@@ -1,0 +1,1 @@
+{"original_code": "def verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)"}

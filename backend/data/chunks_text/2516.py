@@ -1,0 +1,2 @@
+- Tests if an incorrect authorization scheme is provided in the HTTP request header for security purposes (HTTP Digest)
+- Verifies that a 403 Forbidden status code and error message are returned by the server when the provided authorization credentials are incorrect or invalid

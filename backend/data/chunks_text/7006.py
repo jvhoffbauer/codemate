@@ -1,0 +1,3 @@
+- This endpoint is accessed via a POST request to `/test-email`.
+- It returns a JSON response with a message indicating that an email has been successfully sent (status code 201).
+- The user making this request must have superuser privileges (dependency `deps.get_current_active_superuser`) before being allowed to access this endpoint.

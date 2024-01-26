@@ -1,0 +1,1 @@
+{"original_code": "def get_superuser_auth_header(client: TestClient) -> dict[str, str]:\n    return get_auth_header(\n        client=client,\n        email=settings.FIRST_SUPERUSER,\n        password=settings.FIRST_SUPERUSER_PASSWORD,\n    )"}

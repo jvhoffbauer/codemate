@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a single argument named `strange_header`.
+- The type of this argument is specified using Pydantic's `Annotated` decorator with two possible types: a string or `None`.
+- The header for this parameter is also defined using Pydantic's `Header` class, which allows converting underscores to camelCase (or vice versa) in the request headers. This conversion is disabled here by passing `convert_underscores=False`.

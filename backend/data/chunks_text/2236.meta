@@ -1,0 +1,1 @@
+{"original_code": "def duplicate_dependency(item: Item):\n    return item"}

@@ -1,0 +1,1 @@
+- Defines an asynchronous function `timed()` that returns a dictionary with a single key-value pair containing a string message.

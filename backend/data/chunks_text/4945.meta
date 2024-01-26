@@ -1,0 +1,1 @@
+{"original_code": "def test_celery_asyncio_cpu_bound():\n    # assume cpu bound\n    return task_cpu_bound()"}

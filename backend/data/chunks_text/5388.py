@@ -1,0 +1,4 @@
+- Uses `asyncio`'s `async` decorator to mark a function as asynchronous
+- Creates an instance of `concurrent.futures.ThreadPoolExecutor` for parallel processing using threads
+- Maps a function (`f`) over a sequence (`range(1)`) in parallel using `concurrent.futures.ThreadPoolExecutor`, returns first result from the resulting iterator
+- Returns a dictionary containing the result obtained by mapping the function on the input data

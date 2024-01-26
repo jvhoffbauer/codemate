@@ -1,0 +1,1 @@
+{"original_code": "    def test_scalar_type_str(self):\n        assert annotation_outer_type(str) == str"}

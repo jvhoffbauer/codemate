@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_query` that takes a parameter `query_or_default`, which is annotated with both `str` and `Depends(query_or_cookie_extractor)`.
+- The `Depends()` decorator passes control to another function called `query_or_cookie_extractor`, which extracts either a value from a cookie or a URL query string based on some condition (not explicitly shown in this snippet).
+- Inside the `read_query` function, the extracted value is returned inside a dictionary with a key "q_or_cookie".

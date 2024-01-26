@@ -1,0 +1,3 @@
+- Generates authentication headers for a regular user with the provided email and password using the `user_authentication_headers()` function
+- Returns the generated headers as a dictionary
+- Can be used to authenticate requests made by regular users in tests

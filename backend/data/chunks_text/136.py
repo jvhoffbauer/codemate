@@ -1,0 +1,1 @@
+- Defines a function called `select` that takes four arguments of type `_TCCA` (type annotations ignored for simplicity). These arguments represent iterables or collections. - Returns an object of type `Select`, which is a generic class representing a selection operation on multiple inputs. The input types are specified as tuple elements `(_T0, _T1, _T2, _T3)`.

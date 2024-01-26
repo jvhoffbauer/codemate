@@ -1,0 +1,1 @@
+{"original_code": "        async def custom_route_handler(request: Request) -> Response:\n            request = GzipRequest(request.scope, request.receive)\n            return await original_route_handler(request)"}

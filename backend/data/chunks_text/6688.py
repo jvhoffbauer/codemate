@@ -1,0 +1,3 @@
+- Sends a batch request with multiple requests to the `probe` method using JSON RPC version 2.0
+- Asserts that the response contains the expected result format and shared data between responses (stored in `"shared-1"` variable)
+- Verifies that unique values are returned by each individual request

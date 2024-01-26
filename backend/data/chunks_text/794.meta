@@ -1,0 +1,1 @@
+{"original_code": "    async def get_public_apis(self) -> PublicAPIsResponse:\n        async with self.client as client:\n            response = await client.get(\"/entries\")\n\n            return PublicAPIsResponse.model_validate_json(response.read())"}

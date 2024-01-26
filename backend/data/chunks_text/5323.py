@@ -1,0 +1,3 @@
+- Defines a GET request for the URL `/first`.
+- Accepts query parameters through the `params` argument, which is an instance of `Dependencies.BidxParams`.
+- Returns an object containing the requested indexes from the `params.indexes` attribute.

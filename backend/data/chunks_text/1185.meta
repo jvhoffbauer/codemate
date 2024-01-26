@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, **kwargs):\n        super().__setattr__(\"_state\", db_state)\n        super().__init__(**kwargs)"}

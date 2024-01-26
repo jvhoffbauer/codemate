@@ -1,0 +1,2 @@
+- This function takes a `User` object as an argument named `current_user`, which is obtained using the `Depends()` decorator and the `get_current_user()` method from the FastAPI dependency injection system (`deps`)
+- The function returns the value of the `current_user` parameter, effectively returning the currently authenticated user's details for use in other functions or routes

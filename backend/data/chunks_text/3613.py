@@ -1,0 +1,2 @@
+- Defines a GET request handler for the root URL (/) using FastAPI's `@app.get` decorator
+- Returns a dictionary with a single key-value pair containing a greeting message as its value

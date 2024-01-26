@@ -1,0 +1,3 @@
+- Retrieves the OpenAPI (Swagger) specification for ChimichangApp using a GET request to `/openapi.json`.
+- Asserts that the status code is 200 and checks the text of the response if necessary.
+- Verifies that the JSON returned by the server matches the expected schema defined in the `response.json()` method call. The schema includes information about the application title, summary, description, terms of service, contact details, license, version, and endpoints with their respective operations and responses.

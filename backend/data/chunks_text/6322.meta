@@ -1,0 +1,1 @@
+{"original_code": "async def read_current_user(\n    current_user: User = Depends(deps.get_current_user),\n):\n    \"\"\"Get current user\"\"\"\n    return current_user"}

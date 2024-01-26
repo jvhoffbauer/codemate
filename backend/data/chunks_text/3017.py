@@ -1,0 +1,1 @@
+- Overrides a dependency (`common_parameters`) with a specific implementation (`overrider_dependency_simple`) for testing purposes. - Makes an HTTP GET request to a URL using Flask's built-in `client`. - Asserts that the response status code and JSON body match the expected values provided as arguments. - Resets the dependency override dictionary after the test is complete.

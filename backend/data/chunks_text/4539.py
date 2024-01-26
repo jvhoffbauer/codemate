@@ -1,0 +1,2 @@
+- Tests authentication for accessing user information using a Bearer token with limited scope (only "me")
+- Verifies that an unauthorized status code is returned and includes a WWW-Authenticate header specifying the required scope for authorization

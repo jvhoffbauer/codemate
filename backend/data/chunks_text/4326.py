@@ -1,0 +1,2 @@
+- Imports and runs a deprecated function (`test_read_items`) while catching its DeprecationWarning using `pytest.warns`.
+- The purpose of this test is to ensure that the deprecation warning is properly handled in case users still rely on the old functionality.

@@ -1,0 +1,3 @@
+- This function decodes a JSON Web Token (JWT) using Flask-JWT-Extended library's `jwt.decode()`.
+- The secret key for decoding is obtained from the `settings.SECRET_KEY` variable in the application configuration.
+- Only JWT tokens signed with the specified algorithm (`ALGORITHM`) are accepted for decoding. If an invalid token or incorrect signature is detected, a customized HTTP error response is raised instead of the default one provided by Flask-JWT-Extended.

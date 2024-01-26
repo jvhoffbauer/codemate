@@ -1,0 +1,1 @@
+{"original_code": "def test_redirect_response_class():\n    response = client.get(\"/fastapi\", follow_redirects=False)\n    assert response.status_code == 307\n    assert response.headers[\"location\"] == \"https://fastapi.tiangolo.com\""}

@@ -1,0 +1,2 @@
+- Tests if accessing protected resource without a token results in a 401 Unauthorized status code and returns an error message with detail 'Not authenticated'
+- Also checks that the WWW-Authenticate header is set to Bearer, indicating that authentication requires a bearer token

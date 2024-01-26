@@ -1,0 +1,5 @@
+- Generates temporary output directory for testing purposes
+- Creates a new `lock` file from `Pipefile` using `pipenv lock` command and saves it to `req_test_file_path`
+- Creates another `lock` file from `Pipefile`, but this time specifying `--dev-only` flag, and saves it to `req_dev_test_file_path`
+- Compares contents of original `requirements.txt` and `requirements-dev.txt` files with generated ones in temporary directories
+- Deletes temporary output directory after tests

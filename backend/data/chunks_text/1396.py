@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a required or optional argument `ads_id`.
+- The default value of `ads_id` is set to `None` using the built-in `Cookie` class in Pydantic.
+- If `ads_id` is provided (either as a string or through the cookie), it will be included in the dictionary returned by the function with key "ads_id".

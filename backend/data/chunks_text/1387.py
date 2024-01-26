@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_users()` that returns a list containing one dictionary with a key 'username' and value 'johndoe'.

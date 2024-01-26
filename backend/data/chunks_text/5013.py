@@ -1,0 +1,3 @@
+- Resets all variables stored in `_vars` dictionary to `None`.
+- Method called when an instance of this class needs to be cleared or restarted.
+- Does not return any value (specified by `-> None`) since it modifies internal state instead.

@@ -1,0 +1,4 @@
+- Tests for point endpoint with missing assets and expression
+- Uses `mock_RequestGet` and `mock_rasterio_open` to simulate HTTP requests and rasterio functions respectively
+- Verifies that correct status codes are returned when required parameters (URL, coordinates) are missing or invalid
+- Confirms that expected values are returned in JSON format for valid parameter combinations

@@ -1,0 +1,1 @@
+- Tests if GET request to "/path/bool/0" returns expected boolean value (False) in JSON format with status code of 200 OK.

@@ -1,0 +1,1 @@
+{"original_code": "        @app.post(\"/\", response_model=test_type)\n        def post_endpoint(input: test_type):\n            return input"}

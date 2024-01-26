@@ -1,0 +1,2 @@
+- Tests getting all users with an invalid token in the X-Token header
+- Asserts that a HTTP status code of 400 is returned and the error message is correct

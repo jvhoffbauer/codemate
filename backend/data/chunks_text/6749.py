@@ -1,0 +1,4 @@
+- Defines a custom error `MyError`, which inherits from `jsonrpc.BaseError`.
+- Decorates a method with `@ep.method(errors=[MyError])` to indicate that it can raise this error.
+- Binds the endpoint to the Flask application using `app.bind_entrypoint(ep)`.
+- Retrieves the OpenRPC specification for the application and checks that the new error is correctly defined in the schema.

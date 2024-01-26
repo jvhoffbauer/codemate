@@ -1,0 +1,1 @@
+- This method is defined in a base class and must be implemented by subclasses to register their routers with the application's router registry. - It raises an exception if not overridden, indicating that it should be implemented by derived classes for proper functionality of the framework.

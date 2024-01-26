@@ -1,0 +1,4 @@
+- Defines an asynchronous function `read_items()` that takes a positional argument `strange_header`.
+- The type of `strange_header` can be either a string or `None`, and it is converted to snake case using the `Header` decorator with `convert_underscores=False`.
+- If `strange_header` is not provided (i.e., `None`), its default value is `None`.
+- The function returns a dictionary containing the `strange_header` key with the corresponding value passed in as an argument.

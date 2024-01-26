@@ -1,0 +1,2 @@
+- Tests that the OpenAPI schema can be retrieved successfully with a GET request to `/openapi.json`.
+- Asserts that the status code is 200 and the JSON response matches the expected structure, including server URLs for staging and production environments using `IsOneOf`, as well as a path operation for reading data from an app endpoint.

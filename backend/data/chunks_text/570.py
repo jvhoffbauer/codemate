@@ -1,0 +1,6 @@
+- Imports `test_tutorial` function and `expected_calls` list from a clear_sqlmodel context manager.
+- Imports `tutorial002_py310` module from the `docs_src.tutorial.relationship_attributes` package.
+- Sets SQLAlchemy URL to an in-memory database and creates an engine for it.
+- Patches builtin print function using `get_testing_print_function` decorator and saves its reference in `new_print`.
+- Calls `main` method of imported module inside patched print function.
+- Asserts that the list of printed messages matches the `expected_calls` list.

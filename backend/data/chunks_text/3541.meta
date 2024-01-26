@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\n    \"/b\",\n    responses={\n        502: {\"description\": \"Error 2\"},\n        \"4XX\": {\"description\": \"Error with range, upper\"},\n    },\n)\nasync def b():\n    return \"b\""}

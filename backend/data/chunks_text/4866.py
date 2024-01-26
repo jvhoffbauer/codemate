@@ -1,0 +1,4 @@
+- This endpoint allows users to initiate a password reset process by sending an email containing a unique link and token generated for their account.
+- The `crud.user.get()` function is used to retrieve the user's details from the database based on their provided username. If the user doesn't exist, a customized error message is returned using FastAPI's built-in exception handling mechanism.
+- A new password reset token is created using the `generate_password_reset_token()` function, which may be implemented as part of the application's security measures.
+- An email is then sent to the user's registered email address using the `send_reset_password_email()` function, passing along the necessary parameters such as the recipient's email address, username, and password reset token.

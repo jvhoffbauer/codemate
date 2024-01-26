@@ -1,0 +1,1 @@
+- Initializes class attributes `bins` and `range` using user input or default values. - Splits comma separated strings for `bins` and `range`, converts to lists of floats (if possible), and assigns to corresponding class variables. - If no value is provided for `bins`, sets it to a default value of 10.

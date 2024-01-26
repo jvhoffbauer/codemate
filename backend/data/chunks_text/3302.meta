@@ -1,0 +1,1 @@
+{"original_code": "        async def get(foo: Annotated[int, Query(min_length=1), Query()]):\n            pass  # pragma: nocover"}

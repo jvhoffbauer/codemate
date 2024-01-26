@@ -1,0 +1,1 @@
+- This function is a decorator for shutting down a model in a FastAPI application. - It takes an instance of the FastAPI class as its argument and sets the `model` attribute to `None`. - The purpose of this function is to ensure that resources associated with the model are released when the server shuts down, preventing memory leaks or other issues related to resource management.

@@ -1,0 +1,1 @@
+{"original_code": "    def setUp(self):\n        self.asgi_client = TestClient(APP)\n        self.date = DATETIME_STRING"}

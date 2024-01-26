@@ -1,0 +1,3 @@
+- Tests a POST request to the `/login/` endpoint with JSON body containing username and password fields
+- Asserts that the status code is 422 (Unprocessable Entity) and the response text contains an error message
+- Verifies that the response JSON matches the expected structure of either Pydantic's or Django Rest Framework's validation errors

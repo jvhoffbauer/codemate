@@ -1,0 +1,1 @@
+{"original_code": "def db() -> Generator:\n    db = SessionLocal()\n    init_db(db)\n    yield db\n    db.close()"}

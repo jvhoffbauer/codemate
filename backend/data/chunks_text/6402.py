@@ -1,0 +1,2 @@
+- Defines a class method `get_default_description()` for the current class (accessed using `cls`)
+- Returns a string representation of the default description, which includes the class's CODE and MESSAGE attributes formatted as a template literal

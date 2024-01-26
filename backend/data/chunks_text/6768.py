@@ -1,0 +1,3 @@
+- Initializes a function called `init()` that returns no value (`None`)
+- Uses a try-except block to handle any exceptions raised during execution of the function body
+- Attempts to create a SQLAlchemy session using the provided engine, and executes a SELECT query on it to ensure database connectivity

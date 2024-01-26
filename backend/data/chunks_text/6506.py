@@ -1,0 +1,3 @@
+- Defines a method named `not_tagged_method` using the `@tagged_api.method()` decorator from the `starlette-openapi` package.
+- The method takes a single argument, `data`, of type `dict`.
+- The method returns a dictionary (`dict`) without any further processing or modification to its input data.

@@ -1,0 +1,1 @@
+- Automatically runs Alembic database migrations before each test session (scope="session"). - Prints a message to indicate that migrations are running. - Uses `os.system()` to execute Alembic commands for upgrading and downgrading the database schema.

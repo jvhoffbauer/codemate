@@ -1,0 +1,3 @@
+- This method is called when an instance of this class is used as a function (i.e., `my_gen = MyGen(); print(next(my_gen))`)
+- It takes a single argument `value`, which is expected to be a string
+- The method returns a generator object that yields the given `value` and has no return type specified (None), indicating it doesn't return anything explicitly

@@ -1,0 +1,3 @@
+- Defines a coroutine function called `route3`.
+- The docstring provides a brief description of what this function does.
+- Returns the string 'yeah' when executed asynchronously using an await statement.

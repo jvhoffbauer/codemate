@@ -1,0 +1,1 @@
+- This method, named `_maxzoom`, is a private (underscore prefix) function of an object called `self`. - The purpose of this method is to return the maximum zoom level supported by the Tile Map Service (TMS) used by `self`. - In other words, it returns the highest resolution at which tiles can be requested from the server using this specific TMS implementation.

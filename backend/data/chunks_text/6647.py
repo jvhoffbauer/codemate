@@ -1,0 +1,5 @@
+- Defines three middleware functions `mw_first`, `mw_exception_enter`, and `mw_last`. Each function takes a context manager decorator `@contextlib.asynccontextmanager` to be executed before or after request handling.
+- Creates an instance of `jsonrpc.Entrypoint` with the given endpoint path and specified middleware list. The `middlewares` parameter is a list of callables that will be called in order for each incoming request.
+- Registers a method named 'probe' using the `@ep.method()` decorator. This method accepts a single argument `data` which can be passed as JSON body. It returns the same value received from the client.
+- Initializes a dictionary `_calls` to store information about requests and responses. Inside the middleware functions, this dictionary is used to append tuples containing metadata such as ID, enter/exit status, raw request/response objects, and any exceptions raised during execution.
+- Finally, sets the `ep.calls` attribute to the initialized `_calls` dictionary so it can be accessed later by tests.

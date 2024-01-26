@@ -1,0 +1,7 @@
+- Defines an endpoint for uploading files using FastAPI's `@app.router.post` decorator
+- Accepts a single argument of type `UploadFile`, which is provided by FastAPI's built-in `File` class
+- Extracts the filename from the uploaded file and creates a path to save it in a directory specified by `self.file_directory`
+- Creates the parent directory if it doesn't already exist using Python's `os.makedirs` function
+- Reads the contents of the uploaded file into memory and checks whether its length exceeds the maximum allowed size (specified by `self.file_max_size`)
+- Saves the file content to disk at the previously created location using `aiofiles.open`
+- Returns a customized response object containing metadata about the uploaded file, including its name and URL (which can be accessed via a static resource served by Starlette)

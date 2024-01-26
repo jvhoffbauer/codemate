@@ -1,0 +1,7 @@
+- This test case uses `pytest-mock` to mock out the builtin print function and capture its output using a custom testing print function provided by `get_testing_print_function`.
+- The `clear_sqlmodel` fixture is used to clear any existing SQLAlchemy metadata before running each test case.
+- The `create_engine` function from SQLAlchemy's core module is called to create an engine instance based on the URL specified in the `sqlite_url` variable of the `mod` (short for module) object imported from the `docs_src/tutorial/where` directory.
+- A list named `calls` is initialized to store the captured printing statements.
+- The main function of the `mod` module is executed inside a context manager created by `patch`, which replaces the builtin `print` function with our custom one.
+- After executing the main function, we check if all the expected printing statements are present in the `calls` list, removing them after checking so they don't interfere with further checks.
+- Finally, we ensure that there are no remaining unexpected printing statements left in the `calls` list.

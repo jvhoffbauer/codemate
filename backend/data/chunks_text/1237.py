@@ -1,0 +1,2 @@
+- Defines a field named `user` using Strawberry's decorator syntax, which generates GraphQL schema and resolver functions automatically.
+- The returned value is an instance of `User`, defined elsewhere in the application, with hardcoded values for name and age.

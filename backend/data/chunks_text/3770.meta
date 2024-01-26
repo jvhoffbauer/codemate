@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_get_plane(client: TestClient):\n    response = client.get(\"/items/item2\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\n        \"description\": \"Music is my aeroplane, it's my aeroplane\",\n        \"type\": \"plane\",\n        \"size\": 5,\n    }"}

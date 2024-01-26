@@ -1,0 +1,1 @@
+- This function is a view that handles GET requests to the `/confirmed` endpoint. - It retrieves data for confirmed COVID-19 cases using the `get_category()` asynchronous function and stores it in the `confirmed_data` variable. - The function returns the `confirmed_data`.

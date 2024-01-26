@@ -1,0 +1,3 @@
+- Sends a PUT request to /items/5 with an empty list as JSON body using FastAPI's built-in testing client
+- Asserts that the server returns a HTTP status code of 422 (Unprocessable Entity)
+- Verifies that the server responds with a dictionary containing validation errors in the correct format according to Pydantic's error handling conventions

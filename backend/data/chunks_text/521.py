@@ -1,0 +1,6 @@
+- This is a unit test for `docs_src/tutorial/connect/select/tutorial001_py310.py`.
+- It uses pytest's `@pytest.fixture` to clear SQLModel's metadata and sessionmaker, simulating a clean database state before each test run.
+- The test imports the module being tested (`tutorial001_py310`) and sets its connection URL and engine using SQLAlchemy's `create_engine()`.
+- A mock function called `get_testing_print_function()` is used to capture all print statements made during execution of the module's main function.
+- The `patch()` decorator replaces Python's built-in `print()` function with our own mock implementation that captures output in the `expected_calls` list.
+- Finally, we call the module's main function inside this patched context, running the tests. Afterward, we check if the captured prints match what was expected by comparing them against the `expected_calls` list.

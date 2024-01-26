@@ -1,0 +1,4 @@
+- This endpoint is an asynchronous function that returns a dictionary called `state`.
+- It takes two arguments: `tasks`, which allows us to add background tasks using FastAPI's built-in `BackgroundTasks` class, and `state`, which we retrieve from our context manager (`Depends(context_b)`) for this specific request.
+- Inside the function, we define an asynchronous function `bg()` that accepts the same argument type as `state`. We then use `tasks.add_task()` to schedule this function to run in the background. The result of running this function will be stored in the `sync_bg` key inside the `state` dictionary.
+- Finally, we return the updated `state` dictionary with any changes made by the scheduled task.

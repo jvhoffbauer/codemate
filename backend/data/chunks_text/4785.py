@@ -1,0 +1,2 @@
+- Defines a function `get_doc_id` that takes in a parameter `username`.
+- Returns a string with format `USERPROFILE_DOC_TYPE::username`, where `USERPROFILE_DOC_TYPE` is assumed to be a constant or global variable representing the document type for user profiles.

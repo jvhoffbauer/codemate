@@ -1,0 +1,3 @@
+- This method is called when an instance of this class is used as a function (i.e., `my_class()`)
+- It takes a single argument `value`, which is expected to be a string
+- The method returns the same string that was passed in (i.e., it doesn't modify or transform the input in any way)

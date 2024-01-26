@@ -1,0 +1,3 @@
+- Handles `custom_exc.TokenExpired` exceptions that occur during a request
+- Logs an error message with details about the request and headers using the `logger` module
+- Returns a failed response with an error message set by the exception's `err_desc` attribute

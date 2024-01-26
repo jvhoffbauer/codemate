@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"session\")\ndef staff_client(staff: Staff):\n    client = ApiClient(app, staff)\n    token = gen_jwt('{\"admin\":1}', 60 * 24)\n    client.headers.update({\"Authorization\": f\"Bearer {token}\"})\n    return client"}

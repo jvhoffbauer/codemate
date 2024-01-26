@@ -1,0 +1,1 @@
+- This endpoint uses a dependency function `asyncgen_state_try` that returns an asynchronous generator to simulate long computations with exceptions. - The `OtherDependencyError` is raised inside this endpoint, which demonstrates how FastAPI handles errors in dependencies and propagates them upstream.

@@ -1,0 +1,3 @@
+- This function tests a specific tutorial (tutorial001 in advanced/decimal directory of docs_src) using pytest fixtures `clear_sqlmodel`, `get_testing_print_function`.
+- It sets up necessary variables and functions for testing, such as SQLAlchemy engine and custom print function to capture output during execution.
+- The main method of the tutorial is called within a context manager that patches builtin `print` function with our own implementation to collect its usage. Finally, we check if the collected outputs match what's expected based on the tutorial's behavior.

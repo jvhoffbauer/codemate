@@ -1,0 +1,5 @@
+- Defines a property `route_delete` that returns an asynchronous function called `route`. This function is used to define a FastAPI endpoint for deleting items from a many-to-many relationship table.
+- The `route` function takes three arguments: `Request`, `link_id`, and `item_id`. These are parsed using `IdStrQuery` and `self.pk_admin.AnnotatedItemIdList` respectively.
+- It checks whether the user has permission to update the related items by calling `self.pk_admin.has_update_permission()`. If not, it returns an error message.
+- A SQL statement is constructed to delete rows from the many-to-many relationship table based on the provided `link_id` and `item_id`.
+- The resulting row count is returned in a JSON response format using `BaseApiOut`.

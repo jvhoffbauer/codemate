@@ -1,0 +1,3 @@
+- Tests the WebSocket endpoint `/router-ws-depends/`, which is dependent on a socket connection
+- Uses Flask's built-in testing client to simulate an HTTP request and establish a WebSocket connection
+- Verifies that the initial message received from the server is "Socket Dependency", indicating successful establishment of the socket dependency

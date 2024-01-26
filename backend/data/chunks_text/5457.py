@@ -1,0 +1,1 @@
+- Endpoint for health check (/healthz). - Returns a JSON response with key 'ping' and value 'pong!'. - Used to verify that the application is running properly.

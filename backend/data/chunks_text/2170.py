@@ -1,0 +1,3 @@
+- Defines a GET route at `/query/param`.
+- Uses FastAPI's Query class to parse and validate a required or optional query parameter named 'query'. If not provided, sets its default value to None.
+- Returns either "foo bar" (if no query param was passed) or concatenates "foo bar" with the parsed query parameter value.

@@ -1,0 +1,5 @@
+- Defines a subclass of `django_celery_beat.schedulers:PeriodicTask` called `SimpleSchedule`.
+- Overrides the `__call__()` method to set up periodic tasks using Celery Beat's scheduler API.
+- Uses Celery Beat's built-in `every()`, `minutes()`, and `days()` functions for defining schedules.
+- Allows specifying task name, function, arguments, options, and schedule through constructor parameters or class attributes.
+- Provides helper methods for common use cases such as running a command every day at midnight (`run_daily()`) and sending an email notification once a week on Monday mornings (`send_weekly_email()`).

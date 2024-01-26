@@ -1,0 +1,1 @@
+- Tests HTTP Basic authentication for accessing user information using FastAPI and Pytest frameworks. - Sends a GET request to "/users/me" with username "john" and password "secret" as basic authentication credentials. - Verifies that the server returns a successful response (HTTP status code 200) containing the requested user's details in JSON format.

@@ -1,0 +1,2 @@
+- Defines a function named `main_route` that takes a single argument, `callback_url`, of type `HttpUrl`.
+- The function body is currently empty and marked as not being tested with the `pragma: no cover` directive.

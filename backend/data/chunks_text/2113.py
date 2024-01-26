@@ -1,0 +1,1 @@
+- Defines a function named `get_text()` that returns a string literal containing the text "Hello World".

@@ -1,0 +1,4 @@
+- Defines a DELETE request handler for deleting a deployment with ID `id`.
+- Sets the HTTP status code to 204 (No Content).
+- Returns no content and sets the response model to None.
+- If an error occurs during execution, returns a custom error message ("Status overwritten") instead of the default one.

@@ -1,0 +1,1 @@
+- Defines a function `get_path_param_lt_gt_int` that takes an optional argument `item_id`, which is required to be of type integer and has default values for lower than (`lt`) and greater than (`gt`) parameters set to 3 and 1 respectively using Pydantic's `Path` class. - Returns the value of `item_id`.

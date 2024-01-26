@@ -1,0 +1,1 @@
+{"original_code": "def get_user_by_email(*, session: Session, email: str) -> User | None:\n    statement = select(User).where(User.email == email)\n    session_user = session.exec(statement).first()\n    return session_user"}

@@ -1,0 +1,1 @@
+- This function is a decorator that checks if certain email configuration settings are enabled based on provided boolean value (v) and dictionary of values (values). - It returns True if SMTP_HOST, SMTP_PORT, and EMAILS_FROM_EMAIL keys exist in the values dictionary with non-empty values; otherwise, it returns False.

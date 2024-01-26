@@ -1,0 +1,3 @@
+- Tests a specific endpoint (URL) in Flask application using `client.get()`.
+- Asserts that HTTP status code is expected value and displays error message if not.
+- Verifies JSON response contains expected data for given key/value pairs.

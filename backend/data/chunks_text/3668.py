@@ -1,0 +1,3 @@
+- Tests if a request with query parameter 'token' equal to 'jessica' returns expected JSON response and HTTP status code
+- Uses Flask-Testing library for testing Flask applications
+- Demonstrates how to write unit tests using Python's unittest framework

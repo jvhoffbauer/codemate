@@ -1,0 +1,2 @@
+- Tests GET request to `/items/validdict-exclude-unset`, which returns a dictionary with aliases for some keys using Flask-RESTful's exclude_unset option
+- Verifies that the returned JSON matches the expected structure and values

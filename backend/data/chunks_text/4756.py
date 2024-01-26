@@ -1,0 +1,1 @@
+- Defines a fixture named `client` using pytest's `@pytest.fixture` decorator. - Imports the Flask application defined in `app_pv1.py`. - Creates an instance of FlaskTestClient, passing it the imported Flask application as an argument. - Returns the created FlaskTestClient for use by other tests that require a client to interact with the server.

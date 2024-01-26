@@ -1,0 +1,5 @@
+- Imports `test_tutorial` function and `create_engine`, `get_testing_print_function` functions from SQLAlchemy's testing module (`clearsqlmodel`)
+- Assigns a URL to `mod.sqlite_url` for creating an engine using `create_engine`
+- Patches builtin `print` function using `patch` decorator from unittest.mock library and saves it in `new_print` variable
+- Calls `mod.main()` inside patched print context
+- Asserts that expected output is printed by comparing actual list of dictionaries returned by `get_testing_print_function` with expected list of dictionaries

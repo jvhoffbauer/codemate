@@ -1,0 +1,4 @@
+- Defines an asynchronous generator method `asynchronous_gen()` in a class context (presumably for some larger object).
+- Takes a single argument `value`, which is expected to be of type string.
+- Yields this `value` and returns it as part of the generated sequence using the `AsyncGenerator` protocol.
+- The return type is specified as `None`, indicating that no value will be returned by the generator itself; instead, each individual item yielded during iteration will be passed along separately.

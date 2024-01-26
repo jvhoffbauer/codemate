@@ -1,0 +1,1 @@
+{"original_code": "def insert_dependencies(target: Dependant, dependencies: Sequence[Depends] = None):\n    assert target.path\n    if not dependencies:\n        return\n    for depends in dependencies[::-1]:\n        target.dependencies.insert(\n            0,\n            get_parameterless_sub_dependant(depends=depends, path=target.path),\n        )"}

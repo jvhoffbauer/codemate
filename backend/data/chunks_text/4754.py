@@ -1,0 +1,1 @@
+- This endpoint returns a `RecursiveItemViaSubmodel` object, which is defined as a subclass of Pydantic's BaseModel with recursive fields for `sub_items1` and `sub_items2`. - The returned data contains an item with nested lists of subitems that contain their own sublists, demonstrating how to handle deeply nested models in FastAPI using recursion through submodels.

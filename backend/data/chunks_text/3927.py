@@ -1,0 +1,1 @@
+- Tests if a GET request to /items/ returns an empty query parameter (q=None). - Asserts that the status code is 200 and displays the text of the response body in case of failure. - Verifies that the JSON response contains an empty q key.

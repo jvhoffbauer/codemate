@@ -1,0 +1,3 @@
+- This function is a PUT request handler for updating an existing item with ID `item_id`.
+- The `Item` object passed in as an argument represents the new values to update the item with.
+- The updated item data is returned as a dictionary that combines both the original item ID and the new item data.

@@ -1,0 +1,3 @@
+- Loads data with ID `data_id` from `data` and saves it in Redis cache under a specific key (`data_id`) for a specified time period (`cache_life`).
+- The function takes an optional argument `namespace`, which is used to specify a unique prefix for keys in the cache. This helps prevent collisions between different applications or services using the same Redis server.
+- If successful, logs a message indicating that the cache has been loaded. Closes the connection to Redis after loading the data.

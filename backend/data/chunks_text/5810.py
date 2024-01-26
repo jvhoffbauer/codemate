@@ -1,0 +1,3 @@
+- Defines a method called `router_prefix()` for the current class (presumably a subclass of Flask's `RouteBase`)
+- The method returns an string that starts with a forward slash and is followed by the name of the current class, effectively setting up a prefix for all routes defined in this class
+- This allows for better organization and easier identification of routes within larger applications using Flask's built-in routing system

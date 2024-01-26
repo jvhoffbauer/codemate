@@ -1,0 +1,3 @@
+- Calls `importlib.reload()` on two modules (`app_mod` and `test_mod`) to reload their contents, including any registered SQLModel classes.
+- Executes this step after clearing the SQLModel cache with `clear_sqlmodel`.
+- Helps ensure that tests run with up-to-date definitions of database tables and other model objects.

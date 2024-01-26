@@ -1,0 +1,1 @@
+{"original_code": "def ping():\n    \"\"\"Health check.\"\"\"\n    return {\"ping\": \"pong!\"}"}

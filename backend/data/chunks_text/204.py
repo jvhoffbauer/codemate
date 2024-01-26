@@ -1,0 +1,1 @@
+- This function creates a new `Hero` object and saves it to the database using FastAPI's built-in SQLAlchemy support. - The `response_model` parameter specifies that the returned value should be of type `Hero`. - After saving, the session is refreshed to ensure any changes are properly loaded into memory before returning the updated `Hero` object.

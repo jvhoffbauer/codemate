@@ -1,0 +1,2 @@
+- This method is called when a property is assigned a new name during class definition using metaclasses (i.e., `@cache_property`)
+- It checks whether an attribute with the given name already exists as a cached property by storing it in `self.attrname`. If so, raises a `TypeError` exception with an error message that includes both old and new names. Otherwise, sets the current name as the value of `self.attrname`.

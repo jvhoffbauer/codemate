@@ -1,0 +1,1 @@
+{"original_code": "def get_client(app: FastAPI):\n    client = TestClient(app)\n\n    return client"}

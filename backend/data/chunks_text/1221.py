@@ -1,0 +1,1 @@
+- This function is a GET request for all items, with a response model of List[Item]. - It returns a list containing two dictionaries representing item objects, each with keys 'name' and 'price'.

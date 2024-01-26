@@ -1,0 +1,1 @@
+- Tests creating a new task and getting its content using PUT request on /get-or-create-task endpoint with different keys (foo and bar). - Asserts that the status codes are correct for each operation (200 for existing key, 201 for non-existing key), as well as checking the returned text and JSON data.

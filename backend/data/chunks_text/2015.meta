@@ -1,0 +1,1 @@
+{"original_code": "async def read_user(username: str):\n    return {\"username\": username}"}

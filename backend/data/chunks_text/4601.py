@@ -1,0 +1,1 @@
+- Tests if login with incorrect password returns a 400 Bad Request status code and an error message containing 'Incorrect username or password' in the JSON response body. - Uses Flask's built-in `client` object to simulate HTTP requests from a browser. - Utilizes Python's `assert` statement for testing conditions and raising exceptions when they fail.

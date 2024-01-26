@@ -1,0 +1,3 @@
+- The `@deprecated` decorator adds a warning message for using this function (`execute`) in favor of another one (`exec`) due to potential confusion or better alternatives.
+- The deprecation message explains why `execute` should be replaced with `exec` and provides examples of how to make the switch.
+- Both functions ultimately return results from executing an SQL query, but `exec` may provide more convenient syntax or behavior for certain use cases.

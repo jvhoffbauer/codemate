@@ -1,0 +1,3 @@
+- Defines a parameterized test using `pytest.mark.parametrize`.
+- Makes multiple requests to an API endpoint with different query parameters and asserts that the responses match the expected status codes and JSON data.
+- Uses the `TestClient` fixture provided by Flask's testing module for making HTTP requests against the application under test.

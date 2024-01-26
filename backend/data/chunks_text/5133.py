@@ -1,0 +1,5 @@
+- Defines an asynchronous function `send_wrapper()` that takes a `Message` object as input.
+- Checks whether the type of the incoming message is 'http.response.start'.
+- Creates a mutable headers dictionary called `response_headers`, which contains the HTTP request's scope information.
+- If caching is enabled but there are no cache control headers present, it checks certain conditions to determine whether or not to add cache control headers based on the method, status code, and requested URL.
+- Calls the `send()` function with the modified message to complete the sending process.

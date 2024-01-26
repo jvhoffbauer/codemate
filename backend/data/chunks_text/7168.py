@@ -1,0 +1,3 @@
+- Handles exceptions related to user authentication using a `custom_exc.TokenAuthError`.
+- Logs an error message with details about the request and headers, as well as the exception traceback.
+- Returns a response with status code `404` (Resource Not Found) and a custom error message set by the exception object's `err_desc` attribute.

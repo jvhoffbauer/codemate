@@ -1,0 +1,1 @@
+{"original_code": "async def read_item(item_id: str):\n    if item_id == \"foo\":\n        return {\"id\": \"foo\", \"value\": \"there goes my hero\"}\n    else:\n        return JSONResponse(status_code=404, content={\"message\": \"Item not found\"})"}

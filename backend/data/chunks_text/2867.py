@@ -1,0 +1,2 @@
+- Tests that `Cookie.__repr__()` returns a string representing either `"Cookie(PydanticUndefined)"` or `"Cookie(Ellipsis)"` depending on whether it is initialized with ellipses (i.e., `Cookie(...)`)
+- Helps ensure consistency and clarity in how cookie objects are represented as strings, which can be useful for debugging and logging purposes

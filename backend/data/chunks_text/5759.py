@@ -1,0 +1,1 @@
+- Defines a method `router_prefix()` for customizing URL prefixes in Django Rest Framework's routers. - Checks whether the current class inherits from DRF's built-in `ModelAdmin`. - If it does, returns a URL prefix based on the name of the current class. - Otherwise, returns a URL prefix based on the name of the model being managed by this viewset/view.

@@ -1,0 +1,3 @@
+- Defines a GET request for endpoint `/d`.
+- Includes response definitions using FastAPI's `responses` decorator, specifying error and success cases separately.
+- Returns a simple string value upon successful execution of the function.

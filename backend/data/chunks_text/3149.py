@@ -1,0 +1,2 @@
+- Defines a GET request endpoint with URL path "/server-error" using FastAPI's decorator syntax (@app.get)
+- Raises a custom error (RuntimeError) with message "Oops!" when this endpoint is accessed, indicating a server-side issue

@@ -1,0 +1,9 @@
+- Initializes a new instance of an API route with an `EntryPoint`, a URL path, optional arguments, and default values for various options.
+- Extracts the format string from the given URL path using `compile_path()`.
+- Creates a new dependency object representing the shared dependencies between multiple routes that share this same `EntryPoint`.
+- If there are any specified common dependencies (i.e., dependencies used by multiple routes), they are added to the shared dependency object and fixed up so that query parameter dependencies are handled correctly.
+- A custom request class is created based on the `RequestClass` argument provided, which may include additional parameters derived from the shared dependency object.
+- An empty function called `endpoint()` is defined as a placeholder for the actual implementation of the route handler.
+- The `responses` attribute is initialized with error responses corresponding to the specified list of exception types.
+- The base FastAPI route constructor is called with the extracted URL path, the `endpoint()` function, HTTP method restrictions ("POST"), a unique name for the route, the desired response class, and a model for handling JSON-RPC responses.
+- The final step involves creating a cloned version of the original dependency object without any shared `Body` parameters, adding it to the main dependency object along with any other relevant information such as headers, cookies, security requirements, etc. Finally, the app is registered with the FastAPI framework using the `handle_http_request()` method.

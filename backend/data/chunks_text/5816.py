@@ -1,0 +1,5 @@
+- Initializes a private variable `__register_lock` to False before calling the parent class's `register_router` method.
+- Creates an admin instance for all registered routers using `_create_admin_instance_all`.
+- Registers pre-hooks for all registered routers using `_register_admin_router_all_pre`.
+- Finally registers all registered routers using `_register_admin_router_all`.
+- Sets `__register_lock` to True after completing all registration tasks.

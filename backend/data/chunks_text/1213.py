@@ -1,0 +1,1 @@
+- Defines a new endpoint `POST /user/` for creating a new user using FastAPI's decorator syntax. - Accepts a JSON request body containing a `UserIn` object, which is automatically converted to a Python dictionary and passed as an argument to the function. - Returns the newly created `BaseUser` object, which can be customized by subclasses of `BaseUser`.

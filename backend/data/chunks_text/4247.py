@@ -1,0 +1,1 @@
+- This function tests the `client.get("/users/")` request using a customized dependency (`docs_src.dependency_testing.tutorial001_py310`) instead of the default one. - The expected status code and JSON response are checked against actual values returned by the API call.

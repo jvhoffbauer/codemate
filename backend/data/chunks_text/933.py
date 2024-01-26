@@ -1,0 +1,3 @@
+- Initializes a new instance of the class with a sequence of errors and an optional body (default is `None`)
+- Calls the constructor of the parent class to set up error handling behavior
+- Assigns the provided body value to the `body` attribute of the current object

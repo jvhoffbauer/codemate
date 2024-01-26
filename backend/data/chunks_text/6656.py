@@ -1,0 +1,1 @@
+- Defines a function `probe` with a required positional argument `data` of type `str`. The default value is set using Pydantic's `Body` class, which allows for schema validation and example values. In this case, an example value of "123" is provided. - Returns the value of `data` as a string.

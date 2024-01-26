@@ -1,0 +1,1 @@
+- This method checks if a user has permission to perform an action with a specific name in the current page context. - It returns `True` or `False`, depending on whether the user is authorized to execute the requested action. - The authorization check is performed by calling another asynchronous method called `has_page_permission`.

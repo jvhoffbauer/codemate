@@ -1,0 +1,2 @@
+- Tests if a POST request is made to `/uploadfile/` without any body (i.e., no file attached)
+- Asserts that the server returns HTTP status code 200 and an appropriate error message in JSON format

@@ -1,0 +1,4 @@
+- Tests reading an existing item using a superuser token and verifies that the correct fields are returned by the API.
+- Creates a random item for testing purposes.
+- Uses `requests` library to make GET request to the specified endpoint with the provided headers.
+- Parses JSON response from the server and asserts that expected values match those in the database.

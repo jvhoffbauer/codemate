@@ -1,0 +1,3 @@
+- Defines a method `probe` using Pydantic's `@pydantic.maintenance.ModelMethodMixin.method()` decorator to add type hinting and validation for function arguments and return types.
+- Uses Pydantic's `Body` field validators to specify that the `data` parameter should be a list of strings with example values "111" and "222". The `amount` parameter must also be an integer greater than 5 with an example value of 10.
+- Deletes unused variables `data` and `amount` from the local scope before returning a fixed list of integers.

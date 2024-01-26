@@ -1,0 +1,3 @@
+- Tests sending and receiving messages through a WebSocket route using FastAPI's built-in `TestClient`.
+- Verifies that request ID header is correctly set for WebSockets connections.
+- Asserts that no logs are generated during the test (indicating successful handling of WebSocket requests). However, this test could potentially improve by adding more specific assertions or edge cases related to WebSocket functionality.

@@ -1,0 +1,1 @@
+- This endpoint accepts a list of binary data (i.e., multiple files) using FastAPI's `File` annotation with a custom description. - The function returns a dictionary containing the sizes of each uploaded file, obtained by iterating over the `files` list and calling its length method.

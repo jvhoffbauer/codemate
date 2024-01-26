@@ -1,0 +1,3 @@
+- Sends an HTTP GET request to the "/http" endpoint using Flask's built-in `client` object
+- Asserts that the status code of the response is 200 (OK)
+- Extracts and asserts the value returned by the server, which should be 42 in this case, from the JSON response body

@@ -1,0 +1,1 @@
+- Defines an asynchronous function `with_duplicates` that takes two arguments `item` and `item2`. The second argument is optional and has a default value provided by the `Depends()` decorator which calls another function called `duplicate_dependency`. - Returns a list containing both `item` and `item2`, potentially with duplicates if they are returned from `duplicate_dependency`.

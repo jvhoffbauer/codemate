@@ -1,0 +1,1 @@
+- Tests whether `__repr__()` method of `Param` class returns a string representation that includes its value when passed 'teststr' as an argument during initialization. - Verifies if the returned string is equal to the expected output, which in this case is simply 'Param(teststr)'.

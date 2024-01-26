@@ -1,0 +1,1 @@
+- Tests that sending a POST request to `/files/` without any body data results in a HTTP status code of 422 (Unprocessable Entity) and an error message indicating that the 'files' field is required. - Uses Pytest and FastAPI for testing and API development respectively. - Utilizes Pydantic for schema validation and error handling.

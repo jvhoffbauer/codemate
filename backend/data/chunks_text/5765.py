@@ -1,0 +1,2 @@
+- Retrieves a list of table columns to display in a Django admin view
+- Loops through each item displayed using `ListDisplay` and checks whether it's an instance of `BaseAmisModel`. If not, retrieves the corresponding model field using `get_modelfield()` from the parser. - Creates a new `TableColumn` object with the necessary information (either the original value or the parsed model field), and adds it to the list of columns. Returns the list at the end.

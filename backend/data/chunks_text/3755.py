@@ -1,0 +1,7 @@
+- Generates an OpenAPI schema for a FastAPI application using `client.get("/openapi.json")`.
+- Asserts that the status code is 200 and checks the text content if necessary.
+- Verifies that the JSON response matches the expected structure with specific keys such as 'openapi', 'info', 'paths', and 'components'.
+- Confirms that the paths object contains the correct endpoint URLs (e.g., '/items/' in this case) and their corresponding HTTP methods ('GET' here).
+- Checks that each path has the appropriate responses dictionary containing details about possible return values, including status codes, descriptions, and media types.
+- Ensures that summary and operationID fields are present for each endpoint.
+- Validates that components contain schemas for data models used by endpoints, which can be referenced elsewhere in the schema.

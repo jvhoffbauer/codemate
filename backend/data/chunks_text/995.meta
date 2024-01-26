@@ -1,0 +1,1 @@
+{"original_code": "def is_bytes_or_nonable_bytes_annotation(annotation: Any) -> bool:\n    if lenient_issubclass(annotation, bytes):\n        return True\n    origin = get_origin(annotation)\n    if origin is Union or origin is UnionType:\n        for arg in get_args(annotation):\n            if lenient_issubclass(arg, bytes):\n                return True\n    return False"}

@@ -1,0 +1,4 @@
+- Defines an asynchronous function `update_item` that takes three arguments: `item_id`, `q`, and `item`.
+- Uses Pydantic's `Annotated` decorator to add type hinting and validation for the `item_id` argument using a path validator with minimum and maximum values.
+- Allows passing optional query string (`q`) and item object (`item`) parameters, which are added to a dictionary called `results`.
+- Returns the resulting dictionary containing the updated keys.

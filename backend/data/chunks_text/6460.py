@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with `Request` object as an argument and passes it to the parent constructor along with an empty dictionary (representing initial environment variables) in a ChainMap. - Sets the `request` attribute of the current instance equal to the passed `Request` object for future reference within the class methods.

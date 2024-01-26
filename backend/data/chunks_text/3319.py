@@ -1,0 +1,1 @@
+- Defines an asynchronous function `test()` with a single parameter `var`, which is annotated as a required string argument (`Query()`) and has a default value of "bar". - The function returns a dictionary containing a key "foo" whose value is the variable passed to the function or its default value if not provided by the caller.

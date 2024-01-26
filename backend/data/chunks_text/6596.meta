@@ -1,0 +1,1 @@
+{"original_code": "def test_no_params(echo, json_request):\n    resp = json_request(\n        {\n            \"id\": 111,\n            \"jsonrpc\": \"2.0\",\n            \"method\": \"no_params\",\n        }\n    )\n    assert resp == {\"id\": 111, \"jsonrpc\": \"2.0\", \"result\": \"123\"}"}

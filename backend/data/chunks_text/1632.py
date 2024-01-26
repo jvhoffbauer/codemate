@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Uses the `Depends()` function to pass in a parameter, `query_or_default`, which is extracted from either the URL query string or a cookie using the `query_or_cookie_extractor` dependency function
+- Returns a dictionary containing the value of `query_or_default` as the key "q_or_cookie"

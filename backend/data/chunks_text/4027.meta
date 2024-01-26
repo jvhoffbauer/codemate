@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_post_with_str_float(client: TestClient):\n    response = client.post(\"/items/\", json={\"name\": \"Foo\", \"price\": \"50.5\"})\n    assert response.status_code == 200\n    assert response.json() == {\n        \"name\": \"Foo\",\n        \"price\": 50.5,\n        \"description\": None,\n        \"tax\": None,\n    }"}

@@ -1,0 +1,3 @@
+- Retrieves multiple documents from a specified Google Cloud Storage bucket using their keys and returns them as instances of a Pydantic model.
+- Quiet mode is enabled to avoid printing progress messages during the operation.
+- The function takes an optional argument `doc_model`, which specifies the type of Pydantic model that should be used to deserialize each document's data into Python objects. If not provided, it defaults to any.

@@ -1,0 +1,1 @@
+{"original_code": "def create_user_item(item: schemas.ItemCreate, user_id: int):\n    db_item = models.Item(**item.dict(), owner_id=user_id)\n    db_item.save()\n    return db_item"}

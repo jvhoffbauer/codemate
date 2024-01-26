@@ -1,0 +1,1 @@
+- Override common parameters dependency with a custom one that includes sub routers, and make an API request to verify it works as expected. - Clear the dependency override after making the request to ensure normal behavior in subsequent requests.

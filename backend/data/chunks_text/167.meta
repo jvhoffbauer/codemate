@@ -1,0 +1,1 @@
+{"original_code": "def select(*entities: Any) -> Union[Select, SelectOfScalar]:  # type: ignore\n    if len(entities) == 1:\n        return SelectOfScalar(*entities)\n    return Select(*entities)"}

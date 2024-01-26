@@ -1,0 +1,5 @@
+- This function handles a PUT request to update an existing item with ID `item_id`.
+- The updated item data is passed in as the `Item` object parameter.
+- Authentication and authorization are required for updating items; both the current user (passed through the `User` parameter) and the requested item's owner must match.
+- A minimum importance value of 1 is enforced using the `Body` decorator.
+- Optional query parameters can be included via the `q` parameter.

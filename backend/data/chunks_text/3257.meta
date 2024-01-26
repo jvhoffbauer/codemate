@@ -1,0 +1,1 @@
+{"original_code": "def test_read_list_no_alias():\n    response = client.get(\"/no-alias/list\")\n    assert response.status_code == 200, response.text\n    assert response.json() == [\n        {\"name\": \"Foo\"},\n        {\"name\": \"Bar\"},\n    ]"}

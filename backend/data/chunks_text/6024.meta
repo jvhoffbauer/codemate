@@ -1,0 +1,1 @@
+{"original_code": "async def test_IframeAdmin(site: AdminSite):\n    @site.register_admin\n    class TmpAdmin(admin.IframeAdmin):\n        src = \"https://docs.amis.work\"\n\n    ins = site.get_admin_or_create(TmpAdmin)\n    assert (\n        isinstance(ins.page_schema.schema_, amis.Iframe)\n        and ins.page_schema.schema_.src == \"https://docs.amis.work\"\n    )"}

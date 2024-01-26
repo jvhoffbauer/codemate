@@ -1,0 +1,1 @@
+{"original_code": "def test_call_valid():\n    response = client.post(\"/\", json={})\n    assert response.status_code == 200\n    assert response.json() == {}"}

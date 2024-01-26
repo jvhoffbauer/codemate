@@ -1,0 +1,1 @@
+- This function tests updating an item with ID 5 using PUT request in Flask application's API endpoints. - The updated item data is passed as JSON body to the server and a successful HTTP status code (200) is expected from the response. - The returned JSON response contains the updated item details along with its unique identifier (item_id).

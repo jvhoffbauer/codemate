@@ -1,0 +1,3 @@
+- Initializes a SQLAlchemy session and retrieves the first superuser from the database based on their email address using a SELECT statement.
+- If no superuser is found, creates a new one with the provided email and password hash using the `User` model defined elsewhere in the application. Adds it to the session and commits the changes. Prints a message indicating that the superuser was created.
+- If a superuser is found, prints a message indicating that they already exist in the database.

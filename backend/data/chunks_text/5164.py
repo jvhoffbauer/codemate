@@ -1,0 +1,6 @@
+- Defines an `statistics()` method to add statistics endpoints.
+- Includes both GET and POST methods for retrieving statistics.
+- Uses FastAPI dependencies (such as `path_dependency`, `layer_dependency`, etc.) to pass parameters to the underlying functions that calculate statistics.
+- Returns either plain JSON or GeoJSON depending on whether the request body is empty or contains a GeoJSON object respectively.
+- Calculates statistics using RasterIO's built-in `statistics()` function, passing various options through dependency arguments.
+- Updates properties of input features with calculated statistics before returning them as part of the output GeoJSON.

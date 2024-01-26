@@ -1,0 +1,3 @@
+- Defines a Flask route for accessing Celery's synchronous task queue using the `FlaskBlueprint` object `bp`.
+- Sends a new task to Celery with the name 'test_celery' and arguments 'words???' using the `send_task()` method of the Celery app instance `celery`.
+- Returns an HTTP response string "ok".

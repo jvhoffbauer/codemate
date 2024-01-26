@@ -1,0 +1,1 @@
+- Tests if GET request to /openapi.json returns a successful status code (200) and valid OpenAPI schema JSON response containing required elements such as version, title, paths with operations and responses. - Uses FastAPI's built-in testing client `client` to make requests instead of making external HTTP calls for faster and more reliable tests.

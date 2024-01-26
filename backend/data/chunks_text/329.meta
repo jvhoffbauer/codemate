@@ -1,0 +1,1 @@
+{"original_code": "def select_heroes():\n    with Session(engine) as session:\n        statement = select(Hero, Team).join(Team, isouter=True)\n        results = session.exec(statement)\n        for hero, team in results:\n            print(\"Hero:\", hero, \"Team:\", team)"}

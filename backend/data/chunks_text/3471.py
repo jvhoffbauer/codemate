@@ -1,0 +1,1 @@
+- Tests if a GET request to `/http-no-body-statuscode-exception` returns a status code of 204 (No Content) and an empty body, using Flask's built-in testing client. - Verifies that there is no content in the response by checking if the `content` attribute is None or empty.

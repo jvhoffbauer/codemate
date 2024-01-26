@@ -1,0 +1,2 @@
+- Tests if a token without required scope can be used to fetch user details using FastAPI's `TestClient`.
+- Verifies that the server returns a 401 Unauthorized status with an error message and specifies the missing scope in WWW-Authenticate header for authorization challenge.

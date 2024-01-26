@@ -1,0 +1,3 @@
+- This function returns a list of `DBUser` objects, which is annotated as having type `List[User]`.
+- The `User` class is not defined in this file and is instead forward referenced using quotes around its name.
+- This is called a forward reference because we're referring to another object (the `User` class) before it has been fully defined. In this case, we assume that `User` will be defined elsewhere in our application or library.

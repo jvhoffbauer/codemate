@@ -1,0 +1,5 @@
+- This function returns the basic information of a dataset in GeoJSON format as a single feature.
+- It takes dependencies for the path to the data, parameters for selecting specific bands or readers, and an environment dictionary.
+- The function uses RasterIO to open the file at the specified path with the given parameters, extracts its bounds, and creates a Polygon object from them.
+- Then it retrieves the requested band(s) using `rasterio.open()` again and passes their metadata (properties) to create a dictionary that is used as the feature's properties.
+- Finally, it returns the created feature containing both the geometrical shape and the associated attributes.

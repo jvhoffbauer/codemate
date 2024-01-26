@@ -1,0 +1,3 @@
+- Tests retrieving items with no token using a fake super secret token as header value
+- Verifies that a 422 Unprocessable Entity status is returned and an error message containing 'Field required' is included in the JSON body
+- Uses `IsDict` from Pytest-checks to validate the structure of the JSON response

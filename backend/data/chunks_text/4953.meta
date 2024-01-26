@@ -1,0 +1,1 @@
+{"original_code": "def unicorn_exception_handler(request: Request, exc: UnicornException):\n    return ORJSONResponse(\n        status_code=418,\n        content={\"detail\": f\"Oops! {exc.name} did something. There goes a rainbow...\"},\n    )"}

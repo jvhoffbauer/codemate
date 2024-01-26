@@ -1,0 +1,1 @@
+{"original_code": "async def parent_dep(result=Depends(response_status_setter)):\n    return result"}

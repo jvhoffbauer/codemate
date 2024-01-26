@@ -1,0 +1,1 @@
+- Defines an asynchronous function `multiple` that takes a parameter `foo` with type annotation of string and minimum length constraint using FastAPI's query decorator. - Returns a dictionary containing a key 'foo' with the value of the passed argument `foo`.

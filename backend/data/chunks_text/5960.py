@@ -1,0 +1,1 @@
+- Defines a fixture named `session` using PyTest's `@pytest.fixture` decorator. - Uses SQLAlchemy's `sync_db` context manager to create a new database connection and return it in a generator expression. - Yields the created session object, which can be used by tests that require access to the database.

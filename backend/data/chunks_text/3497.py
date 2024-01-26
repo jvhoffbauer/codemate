@@ -1,0 +1,2 @@
+- Tests if API returns valid JSON response with `None` value for owner IDs when requested from URL "/items/validnone"
+- Verifies HTTP status code is 200 OK and expected JSON data is returned in response body

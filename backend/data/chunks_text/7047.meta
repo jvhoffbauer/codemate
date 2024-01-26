@@ -1,0 +1,1 @@
+{"original_code": "    def assemble_cors_origins(cls, v: str | list[str]) -> str | list[str]:\n        if isinstance(v, str) and not v.startswith(\"[\"):\n            return [i.strip() for i in v.split(\",\")]\n        elif isinstance(v, (list, str)):\n            return v\n        raise ValueError(v)"}

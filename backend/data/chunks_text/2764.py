@@ -1,0 +1,2 @@
+- Tests a route that returns a model without annotation and uses Union return type hint for multiple possible models
+- Asserts that the HTTP status code is 200 and checks the response body to verify correct data is returned

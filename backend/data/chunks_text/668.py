@@ -1,0 +1,1 @@
+- Sets the correlation ID for Celery tasks using either the value in an HTTP request header or generates a new one if not present. - Uses the `sentry_extension` function to pass the correlation ID to Sentry (an error tracking tool). - The `@task_prerun.connect(weak=False)` decorator ensures that this function is called before each Celery task runs.

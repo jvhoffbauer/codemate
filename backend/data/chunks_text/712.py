@@ -1,0 +1,2 @@
+- This function returns a `Response` object with status code 204 (No Content).
+- It sets two cookies, 'access_token_cookie' and'refresh_token_cookie', both containing test values ('test-access-token' and 'test-refresh-token').

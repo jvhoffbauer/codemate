@@ -1,0 +1,1 @@
+- Tests HTTP Basic Authentication with invalid credentials by sending a request with an incorrect base64 token in the Authorization header and verifies that it returns a 401 Unauthorized status code with the WWW-Authenticate header set to 'Basic' and a detailed error message in the JSON body.

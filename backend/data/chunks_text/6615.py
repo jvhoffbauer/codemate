@@ -1,0 +1,4 @@
+- Defines a fixture `ep` that takes an existing endpoint (`ep`) as input and returns a modified version of it with a new method called `probe`.
+- The `probe` method is decorated with `@ep.method()`, which adds it to the list of methods on the endpoint object returned by `ep`.
+- The method accepts a single parameter, `whole_params`, which is an instance of a custom class `WholeParams` containing multiple parameters represented as attributes. This allows us to pass complex data structures as arguments without having to unpack them manually.
+- The method returns a list computed from the values of two attributes of `whole_params`, `data` and `amount`. By using these attributes instead of passing separate arguments, we can simplify the API and reduce the risk of errors due to incorrect argument order or names.

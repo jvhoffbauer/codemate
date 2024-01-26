@@ -1,0 +1,4 @@
+- Defines an asynchronous method `exec()` in a class that inherits from SQLAlchemy's `BaseQuery`.
+- Takes a single argument of type `SelectOfScalar`, which represents a SELECT query with a scalar result (e.g., retrieving a single value).
+- Allows optional arguments for passing parameters to the query and customizing its behavior through various options.
+- Returns a `ScalarResult` object containing the resulting scalar values after executing the query.

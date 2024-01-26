@@ -1,0 +1,3 @@
+- This method is a custom implementation of `__repr_args__`, which is called by Python's built-in repr function to display an object's arguments when it is printed or evaluated as an expression.
+- It filters out any argument names starting with "_sa_", which are internal SQLAlchemy attributes that should not be displayed.
+- The filtered list of tuples containing key-value pairs representing the remaining arguments is returned.

@@ -1,0 +1,1 @@
+- Retrieves total deaths data from a specified API endpoint using `get_category()` asynchronously and returns it.

@@ -1,0 +1,3 @@
+- Retrieves a specific user with ID `user_id`.
+- Checks whether the authenticated user (retrieved using `Depends(get_current_user)`) has sufficient permissions to access this resource. If they are the same user or an admin, returns the requested user; otherwise raises a permission error.
+- Uses the CRUD function for users (`crud_user`) to retrieve the user from the database and handle errors such as non-existence of the user.

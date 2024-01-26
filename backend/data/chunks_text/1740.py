@@ -1,0 +1,1 @@
+- Defines a function called `get_person_name` that takes in an argument of type `Person`. - The returned value is the name attribute of the passed `Person` object. - This function can be used to extract the name of a specific person from a list or dictionary containing multiple instances of the `Person` class.

@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/\", callbacks=callback_router.routes)\ndef main_route(callback_url: HttpUrl):\n    pass  # pragma: no cover"}

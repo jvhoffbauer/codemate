@@ -1,0 +1,4 @@
+- This function `authenticate()` takes a bucket and credentials (username and password) as arguments.
+- It retrieves the user with the given username from the specified bucket using the `get()` method of Google Cloud Storage Client Library for Python.
+- If the user is not found in the bucket, it returns `None`. Otherwise, it verifies the provided password against the hashed password stored in the user object using the `verify_password()` helper function.
+- If the passwords don't match, it also returns `None`, otherwise it returns the authenticated user object.

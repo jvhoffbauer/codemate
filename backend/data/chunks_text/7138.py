@@ -1,0 +1,4 @@
+- Endpoint for user login authentication with a `POST` request to `/login`.
+- Uses FastAPI's built-in dependency injection system (Pydantic models and OJETO) to validate input data using the `sys_user_schema.UserPhoneAuth` model.
+- Simplified implementation of login functionality that can be replaced by more complex business logic in a separate file called `UserLogic()`.
+- Generates an access token using FastAPI's built-in security module (jwt) with an expiration time specified in settings.py. The token contains the user ID.

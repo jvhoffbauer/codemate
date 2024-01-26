@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that takes a parameter `q`, which is annotated with both `List[str]` and `Query()`. This allows for either a list of strings or a SQLAlchemy query object to be passed in. - The function returns a dictionary called `query_items` containing a key "q" with the value of the input argument `q`.

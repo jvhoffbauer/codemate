@@ -1,0 +1,3 @@
+- Endpoint for creating a new file with PUT request method (not implemented in this example)
+- Accepts either binary data or no file at all as input using FastAPI's `File` parameter decorator
+- Returns message indicating absence of file or size of uploaded file, respectively

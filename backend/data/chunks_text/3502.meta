@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/valid2\", responses={\"500\": {\"model\": List[int]}})\ndef valid2():\n    pass"}

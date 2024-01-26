@@ -1,0 +1,1 @@
+{"original_code": "def test_routerprefixindex():\n    client = TestClient(app)\n    with client.websocket_connect(\"/prefix/\") as websocket:\n        data = json.loads(websocket.receive_text())\n        assert data == [\"app\", \"prefix_router2\", \"prefix_router\", \"routerprefixindex\"]"}

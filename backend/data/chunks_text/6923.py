@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with a specified `model` type as an argument. - Assigns the value of the `model` parameter to the private attribute `_model`. - Follows Python's constructor naming convention (`__init__`) and accepts one positional argument named `model`.

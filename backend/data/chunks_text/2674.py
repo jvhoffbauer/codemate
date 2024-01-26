@@ -1,0 +1,3 @@
+- Defines a function called `response_model_no_annotation_return_submodel_with_extra_data()`.
+- The function returns an instance of `DBUser`, which is assumed to be a subclass of Pydantic's BaseModel.
+- This specific example demonstrates returning a submodel with additional data that isn't part of its base model, in this case, the `password_hash` attribute. Without explicit type hinting or annotations for these extra attributes, they will still be automatically validated and serialized by Pydantic based on their naming conventions.

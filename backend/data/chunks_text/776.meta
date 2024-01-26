@@ -1,0 +1,1 @@
+{"original_code": "async def set_redis_key(redis_data: RedisData, *, is_transaction: bool = False) -> None:\n    async with redis_client.pipeline(transaction=is_transaction) as pipe:\n        await pipe.set(redis_data.key, redis_data.value)\n        if redis_data.ttl:\n            await pipe.expire(redis_data.key, redis_data.ttl)\n\n        await pipe.execute()"}

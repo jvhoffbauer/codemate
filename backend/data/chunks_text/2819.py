@@ -1,0 +1,1 @@
+- Tests if query parameter 'query' is required for endpoint '/query/param-required'. - Sends a GET request with query parameter 'query' set to '50'. - Asserts that status code of response is 200 and returns expected JSON response containing string 'foo bar 50'.

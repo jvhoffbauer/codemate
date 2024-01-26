@@ -1,0 +1,1 @@
+{"original_code": "def tuple_(\n    *clauses: Union[_ColumnExpressionArgument[Any], Any],\n    types: Optional[Sequence[\"_TypeEngineArgument[Any]\"]] = None,\n) -> Tuple[Any, ...]:\n    return sqlalchemy.tuple_(*clauses, types=types)  # type: ignore[return-value]"}

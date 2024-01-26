@@ -1,0 +1,1 @@
+- Defines an asynchronous function `ws_dependency()` that returns a string value representing a socket dependency. - This function is likely used to provide a required resource for WebSockets communication in an application or service.

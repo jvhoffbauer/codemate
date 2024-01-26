@@ -1,0 +1,1 @@
+- This endpoint is used to create a new offer using the `Offer` model defined in the application's data schema. - The request body should contain all necessary fields for creating an offer, as specified by the `Offer` class. - Upon successful creation of the offer, its details are returned in the response body.

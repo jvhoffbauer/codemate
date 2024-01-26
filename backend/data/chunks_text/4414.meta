@@ -1,0 +1,1 @@
+{"original_code": "def test_query_params_str_validations(path, expected_status, expected_response):\n    response = client.get(path)\n    assert response.status_code == expected_status\n    assert response.json() == expected_response"}

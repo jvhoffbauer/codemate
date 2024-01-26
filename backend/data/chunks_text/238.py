@@ -1,0 +1,3 @@
+- Creates a new hero object and adds it to the database using SQLAlchemy's `Session`.
+- Makes an HTTP DELETE request to delete the newly created hero from the API endpoint.
+- Retrieves the deleted hero from the database using its ID and checks if it exists or not.

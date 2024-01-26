@@ -1,0 +1,4 @@
+- This function takes a callable (a function or method) as input and returns its typed return annotation using Python's `inspect` module.
+- The function first gets the signature of the callable to access its return annotation. If there is no return annotation defined, it returns `None`.
+- To resolve any type hints used in the return annotation, the function uses another helper function called `get_typed_annotation()`, which searches for the type hint definition either within the current scope or globally.
+- Finally, the resolved return annotation is returned by the `get_typed_return_annotation()` function.

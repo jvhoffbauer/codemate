@@ -1,0 +1,2 @@
+- Retrieves a user from the database using their email and returns them
+- If the user doesn't exist, creates a new one with a predefined ID, email, and password hash, adds it to the database, commits the changes, and refreshes the object before returning it

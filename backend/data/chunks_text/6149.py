@@ -1,0 +1,3 @@
+- Defines a function `sort()` that takes an optional argument `targets` to specify which files or directories should be sorted (default is current directory).
+- Prints a message indicating that import sorting is in progress.
+- Creates a list of arguments for the `isort` command with options `--atomic` and passes it to the `Context` object's `run()` method to execute the command.

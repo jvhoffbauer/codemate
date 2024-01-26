@@ -1,0 +1,3 @@
+- Defines a function named `response_model_model1_annotation_model2_return_submodel_with_extra_data` that returns an instance of `Item`.
+- The returned object is created using the `DBUser` class, which has three attributes: 'name','surname', and 'password_hash'.
+- This function follows PEP8 naming conventions for functions (lowercase with underscores) and uses snake case for variable names within the function body.

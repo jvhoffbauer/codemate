@@ -1,0 +1,4 @@
+- Defines a function `websocket_route()` that takes two arguments `path` and `name`.
+- Returns another function called `decorator()`, which is used as a decorator for other functions.
+- The `decorator()` function adds the decorated function to the list of WebSocket routes using the `self.add_websocket_route()` method provided by some underlying framework or library (not specified).
+- Optionally sets a name for the route using the `name` argument passed to both `websocket_route()` and `decorator()`.

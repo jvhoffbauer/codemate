@@ -1,0 +1,1 @@
+{"original_code": "    def owned_by(self, user: User):\n        return self.owner == user"}

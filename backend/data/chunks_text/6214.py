@@ -1,0 +1,2 @@
+- Defines an asynchronous function called `sources()`.
+- The function returns a dictionary with a key "sources" and its value is a list containing all the keys from the `DATA_SOURCES` dictionary, which holds information about available data sources.

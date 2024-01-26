@@ -1,0 +1,1 @@
+- Initializes a CRUD object that provides standard methods for creating, reading, updating, and deleting data using SQLAlchemy models and Pydantic schemas as input parameters. - The constructor takes two arguments: a SQLAlchemy model class and an optional Pydantic schema class for validation purposes.

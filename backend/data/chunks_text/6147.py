@@ -1,0 +1,4 @@
+- This function named `get_quote` takes a string argument called `var_instrument`.
+- It makes an HTTP GET request to the Kite API endpoint for quotes using the `requests` library and saves the response in a variable called `quote_response`.
+- The JSON data from the response is extracted into a dictionary called `quote_response_dict`, which contains the requested instrument's last price under its key 'last_price'.
+- Finally, this function returns the value of 'last_price' for the given instrument.

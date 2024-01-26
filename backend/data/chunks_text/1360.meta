@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\")\nasync def read_items(user_agent: Annotated[Union[str, None], Header()] = None):\n    return {\"User-Agent\": user_agent}"}

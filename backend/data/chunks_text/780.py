@@ -1,0 +1,1 @@
+- This method checks if the current environment matches one of three predefined values (LOCAL, STAGING, or TESTING). - The `self` parameter represents the current environment being checked. - If the environment matches any of the defined values, the method returns True; otherwise, it returns False.

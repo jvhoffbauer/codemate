@@ -1,0 +1,3 @@
+- Tests the behavior of Celery's session feature by triggering three workers with correlation ID propagation between them.
+- Verifies that each worker generates a unique correlation ID and saves it to the next worker's logs.
+- Confirms that the current ID of each worker is correctly passed down as the parent ID to the subsequent one.

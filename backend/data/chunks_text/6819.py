@@ -1,0 +1,6 @@
+- Creates a new user without requiring login (open registration)
+- Checks if open registration is allowed and raises an error if it's not
+- Retrieves existing user by email using `crud.get_user_by_email()` function
+- Raises an error if such user already exists
+- Converts input data into `UserCreate` object using `UserCreate.from_orm()` method
+- Calls `crud.create_user()` function to save new user to database

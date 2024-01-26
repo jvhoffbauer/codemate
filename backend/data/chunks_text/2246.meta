@@ -1,0 +1,1 @@
+{"original_code": "def test_no_duplicates():\n    response = client.post(\n        \"/no-duplicates\",\n        json={\"item\": {\"data\": \"myitem\"}, \"item2\": {\"data\": \"myitem2\"}},\n    )\n    assert response.status_code == 200, response.text\n    assert response.json() == [{\"data\": \"myitem\"}, {\"data\": \"myitem2\"}]"}

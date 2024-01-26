@@ -1,0 +1,5 @@
+- Defines a function called `main` that executes multiple functions in sequence
+- Calls `create_db_and_tables`, which creates a database and its necessary tables
+- Calls `create_heroes`, which adds initial data to the newly created tables
+- Calls `update_heroes`, which updates existing records in the tables
+- Calls `delete_heroes`, which deletes specific records from the tables

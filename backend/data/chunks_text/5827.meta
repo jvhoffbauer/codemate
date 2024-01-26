@@ -1,0 +1,1 @@
+{"original_code": "    def router_path(self) -> str:\n        return self.settings.site_url + self.settings.site_path + self.router.prefix"}

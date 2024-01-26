@@ -1,0 +1,5 @@
+- Defines a function `get_sqlalchemy_type()` that takes a field object and returns its corresponding SQLAlchemy data type
+- Uses Pythons metaclassing to access the `field_info` attribute of fields defined using Pydantics V2 (if available). Otherwise, falls back to the older version's `field_info`.
+- Retrieves the `sa_type` attribute from the `field_info`, which should contain the SQLAlchemy data type for this field. If it exists, simply returns it.
+- If `sa_type` doesn't exist or isn't set, attempts to determine the appropriate SQLAlchemy data type based on the Python datatype of the field. This includes handling cases like strings with maximum lengths, decimal numbers, IP addresses, UUIDs, etc.
+- Raises a `ValueError` if the given field cannot be mapped to any SQLAlchemy data type.

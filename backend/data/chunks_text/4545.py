@@ -1,0 +1,2 @@
+- Tests authentication for accessing user information using a bearer token with insufficient scopes (in this case, just `me`)
+- Verifies that an unauthorized status is returned and includes an appropriate WWW-Authenticate header indicating the required scope

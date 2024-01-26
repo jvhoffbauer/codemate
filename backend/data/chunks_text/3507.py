@@ -1,0 +1,1 @@
+- Defines a function named `valid4` with no arguments or return value (pass statement) in Python syntax.

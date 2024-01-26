@@ -1,0 +1,1 @@
+- Tests if accessing a protected resource without credentials results in HTTP 403 Forbidden status and an error message indicating that authentication is required (as specified by Django REST Framework's security middleware)

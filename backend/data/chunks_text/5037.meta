@@ -1,0 +1,1 @@
+{"original_code": "    async def send(self, data):\n        await self.producer.send(settings.KAFKA_TOPIC, json.dumps(data))"}

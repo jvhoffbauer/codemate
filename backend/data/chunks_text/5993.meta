@@ -1,0 +1,1 @@
+{"original_code": "    @hybrid_property\n    def content_text(self):\n        return self.content.content if self.content else None"}

@@ -1,0 +1,1 @@
+{"original_code": "def ensure_enums_to_strs(items: Union[Sequence[Union[Enum, str]], Type[Enum]]):\n    str_items = []\n    for item in items:\n        if isinstance(item, Enum):\n            str_items.append(str(item.value))\n        else:\n            str_items.append(str(item))\n    return str_items"}

@@ -1,0 +1,3 @@
+- Defines a GET request for the path `"/path/param-le-int"` with an optional integer parameter named `item_id`.
+- The value of `item_id` must be less than or equal to 3, as specified by the `Path` decorator's `le` argument.
+- Returns the value of `item_id`, which is either provided in the URL query string or defaults to None if not present.

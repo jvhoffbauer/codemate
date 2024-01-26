@@ -1,0 +1,1 @@
+{"original_code": "async def load_cache(data_id: str, data, namespace: str = None, cache_life: int = 3600):\n    \"\"\"Load data into the cache.\"\"\"\n    cache = get_cache(namespace)\n    await cache.set(data_id, data, ttl=cache_life)\n    LOGGER.info(f\"{data_id} cache loaded\")\n    await cache.close()"}

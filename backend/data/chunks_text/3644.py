@@ -1,0 +1,1 @@
+- Sets environment variable ADMIN_EMAIL to 'admin@example.com' using a mock object (MonkeyPatch). - Imports and tests an application ('app') defined in tutorial001_pv1 of the settings module. - Makes a GET request to '/info', asserts that it returns status code 200, and checks if the JSON response contains expected keys with their respective values.

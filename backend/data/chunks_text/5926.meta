@@ -1,0 +1,1 @@
+{"original_code": "    def field_allow_none(field: ModelField) -> bool:\n        return field.allow_none"}

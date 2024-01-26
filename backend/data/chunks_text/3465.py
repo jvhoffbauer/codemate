@@ -1,0 +1,3 @@
+- Defines a GET request for an individual item with ID `item_id`.
+- Raises a custom HTTP exception (StarletteHTTPException) with status code 404 and error message "Item not found" when the requested item is not present in the dictionary `items`.
+- Returns a JSON response containing the requested item as key-value pair in dictionary format.

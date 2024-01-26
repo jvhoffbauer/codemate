@@ -1,0 +1,3 @@
+- Defines a custom exception handler for when a user tries to access a protected page without permission
+- Raises an `HTTPException` with a specific status code (307 Temporary Redirect) and detailed message ("No page permissions")
+- Includes a header in the response that redirects the user to the login page with a query parameter containing the original requested URL path

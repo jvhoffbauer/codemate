@@ -1,0 +1,1 @@
+- Defines a Celery task named `task3`, decorated with the `@shared_task()` decorator to make it asynchronous and shareable across multiple workers in a cluster. - Logs an informational message "test3" using the built-in Python logging module, which can be used for debugging or monitoring purposes.

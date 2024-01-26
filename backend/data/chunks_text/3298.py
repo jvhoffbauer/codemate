@@ -1,0 +1,1 @@
+- Defines an asynchronous function named `get` that takes a required integer parameter called `item_id`, which has a default value of 1 if not provided in the query parameters. - This function is marked with the `pragma: nocover` decorator to indicate that it should be skipped during testing coverage analysis.

@@ -1,0 +1,2 @@
+- This function takes a `ModelField` object as an argument and returns a dictionary containing extra JSON schema properties for that field based on its metadata stored in `field.field_info`.
+- If no additional JSON schema information is provided by the user through the `Extra` keyword argument of the model's Meta class, this function falls back to returning an empty dictionary.

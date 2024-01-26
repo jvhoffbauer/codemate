@@ -1,0 +1,8 @@
+- Imports `tutorial001_py310` module from the `docs_src/tutorial/relationship_attributes/back_populates` directory and assigns it to a variable named `mod`.
+- Sets the SQLAlchemy connection URL for the `mod` object using the `sqlite_url` attribute.
+- Creates an SQLAlchemy engine instance using the `create_engine()` function and sets it on the `mod` object.
+- Initializes a list called `calls` that will be used later in testing output.
+- Retrieves the built-in Python print function and saves its original behavior into a variable called `new_print`. This is done so we can replace the default print function temporarily during our tests without affecting other parts of the application.
+- Patches the built-in print function with a custom implementation that adds each printed message to the `calls` list instead of actually printing them to the console.
+- Issues a warning using the `pytest.warns()` decorator before executing the `mod.main()` method. The warning is caught by the `with` statement and ignored.
+- Asserts that the `calls` list contains the expected messages after running the `mod.main()` method.

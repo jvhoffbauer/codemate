@@ -1,0 +1,1 @@
+{"original_code": "        def append_event(event):\n            events.append(event)\n            return old_capture_event(event)"}

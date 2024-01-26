@@ -1,0 +1,3 @@
+- Defines a function `errors_responses()` that takes an optional sequence of BaseError subclasses as argument (defaults to none)
+- Initializes an empty dictionary called'responses' with a default key containing an empty dictionary
+- If errors are provided, generates fake HTTP status codes starting from 210 using the 'enumerate()' builtin function and stores them along with their corresponding error classes in the'responses' dictionary

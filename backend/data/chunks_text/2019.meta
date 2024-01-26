@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/headers-and-object/\")\ndef get_headers(response: Response):\n    response.headers[\"X-Cat-Dog\"] = \"alone in the world\"\n    return {\"message\": \"Hello World\"}"}

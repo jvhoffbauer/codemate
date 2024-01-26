@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, path):\n        self.path = path\n        self._load_local_model()"}

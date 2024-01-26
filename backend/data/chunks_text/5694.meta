@@ -1,0 +1,1 @@
+{"original_code": "    def values(cls):\n        return [value for value, _ in cls.choices]"}

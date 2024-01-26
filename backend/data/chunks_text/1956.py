@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that returns a string containing HTML content wrapped inside an async context manager (implicitly). - The returned value is a multi-line string with HTML tags and text, which can be used to generate dynamic web pages using frameworks like Flask or Django.

@@ -1,0 +1,4 @@
+- This function tests a GET request to retrieve an item with ID 3 using Flask's built-in `client`.
+- The expected HTTP status code is 418 (I'm a Teapot), which indicates that the resource cannot be found or is temporarily unavailable.
+- If the actual status code and text returned by the server differ from what we expect, an AssertionError will be raised.
+- Additionally, we check if the content of the response matches our expectation for this specific error case.

@@ -1,0 +1,1 @@
+{"original_code": "def test_cookie_repr_ellipsis():\n    assert repr(Cookie(...)) == IsOneOf(\n        \"Cookie(PydanticUndefined)\",\n        # TODO: remove when deprecating Pydantic v1\n        \"Cookie(Ellipsis)\",\n    )"}

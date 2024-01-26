@@ -1,0 +1,1 @@
+{"original_code": "def test_repr():\n    class Model(SQLModel):\n        id: Optional[int] = Field(primary_key=True)\n        foo: str = Field(repr=False)\n\n    instance = Model(id=123, foo=\"bar\")\n    assert \"foo=\" not in repr(instance)"}

@@ -1,0 +1,1 @@
+{"original_code": "def query_extractor(q: Union[str, None] = None):\n    return q"}

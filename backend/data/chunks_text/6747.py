@@ -1,0 +1,2 @@
+- Decorates a method with Flask-RESTful's `@ep.method` to define an endpoint for HTTP requests using Flask-Restful's Resource class (`Resource`)
+- Specifies tags 'tag1' and 'tag2' associated with this endpoint, which can be used for filtering or searching endpoints in documentation or other tools that support tagging functionality

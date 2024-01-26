@@ -1,0 +1,1 @@
+- Defines a Celery task named "test_celery". - Takes a single argument, `word`, of type string. - Returns a formatted string with the name of the function and the value of the input word. - Prints the same message to the console for debugging purposes.

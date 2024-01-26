@@ -1,0 +1,1 @@
+{"original_code": "def generate_reqs(ctx):\n    \"\"\"Generate requirements.txt\"\"\"\n    # NOTE: updated for pipenv 2020 release\n    # TODO: make backwards compatible\n    reqs = [\n        \"pipenv lock -r > requirements.txt\",\n        \"pipenv lock -r --dev-only > requirements-dev.txt\",\n    ]\n    [ctx.run(req) for req in reqs]"}

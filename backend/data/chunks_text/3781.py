@@ -1,0 +1,1 @@
+- Tests sending a POST request to `/index-weights/` with JSON body containing keys '2' and '3'. - Asserts that status code is 200 and response text is empty (no error message). - Asserts that server returns same JSON as input.

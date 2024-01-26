@@ -1,0 +1,2 @@
+- Initializes a connection to Redis with specified parameters and sets up decoding of responses for easier handling of data.
+- Checks whether the connection is successful by pinging the server; exits program if timeout occurs or authentication error arises during connection setup.

@@ -1,0 +1,2 @@
+- Defines a function `set_fields_set()` that takes in two arguments - `new_object`, which is an instance or type of SQLModel, and `fields`, which is a set containing FieldInfo objects representing the fields to be included in the model's validation process.
+- Sets the value of the private attribute `__pydantic_fields_set__` on the given `new_object` using Python's built-in `__setattr__()` method. This allows Pydantic to access this information during its own internal processing.

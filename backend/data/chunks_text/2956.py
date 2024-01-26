@@ -1,0 +1,2 @@
+- Defines an asynchronous function `__call__()` for a coroutine object (decorated with `@coroutine`) that takes a string argument `value`.
+- Yields the input `value` and returns an asynchronous generator that produces strings without returning any value upon completion (i.e., `None` is passed as the second type parameter).

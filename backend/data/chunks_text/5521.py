@@ -1,0 +1,1 @@
+- Tests the `/stac/preview` endpoint with a missing asset (B1111) using mocks for HTTP requests and RasterIO functions. - Asserts that the status code of the response is 404, indicating that the requested asset was not found.

@@ -1,0 +1,1 @@
+{"original_code": "@router.post(\"/\", response_model=Job, status_code=201)\nasync def create_task(message: str):\n    job = await redis.pool.enqueue_job(\"test_task\", message)\n    return {\"id\": job.job_id}"}

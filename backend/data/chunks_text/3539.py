@@ -1,0 +1,2 @@
+- Defines an endpoint `/a` using FastAPI's router decorator with status code response for error 1 (HTTP 501)
+- Returns the string 'a' when the endpoint is accessed successfully

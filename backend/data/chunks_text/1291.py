@@ -1,0 +1,1 @@
+- Defines an async function called `create_upload_files` that takes a list of `UploadFile` objects (representing uploaded files) as its argument, with a default value provided by FastAPI's `File` parameter decorator. - The returned dictionary contains a key "filenames" whose values are the filenames of each uploaded file obtained from their respective `UploadFile` instances.

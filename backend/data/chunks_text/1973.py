@@ -1,0 +1,2 @@
+- Defines a GET request for the `/sub` endpoint using Flask's decorator syntax
+- Returns a JSON response with a message when the endpoint is accessed

@@ -1,0 +1,3 @@
+- Tests deleting a single item and verifying it's deleted from database
+- Tests deleting multiple items at once using comma separated values in URL path parameter
+- Verifies that both individual and bulk deletes successfully remove corresponding records from the database

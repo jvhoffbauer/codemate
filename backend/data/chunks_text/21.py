@@ -1,0 +1,4 @@
+- This function initializes a subclass of `SQLModel`, which is used as a data transfer object (DTO) between FastAPI and databases like PostgreSQL or MySQL using SQLAlchemy ORM.
+- It checks whether at least one of the parent classes is also a `SQLModel`. If yes, it ensures that there can be only one such parent class because having multiple parents would lead to conflicts while creating tables in the database.
+- For each relationship attribute declared on the child class, it creates a corresponding SQLAlchemy relationship based on the annotated type and other attributes provided. The relationships are created lazily when accessed for the first time.
+- Finally, it calls the constructor of either `DeclarativeMeta` or `ModelMetaclass` depending on whether the child class inherits from both `Base` and `declared_attr` decorator or just `Base`.

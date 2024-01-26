@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\n    \"/d\",\n    responses={\n        \"400\": {\"description\": \"Error with str\"},\n        \"5XX\": {\"model\": ResponseModel},\n        \"default\": {\"model\": ResponseModel},\n    },\n)\nasync def d():\n    return \"d\""}

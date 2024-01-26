@@ -1,0 +1,1 @@
+{"original_code": "def test_redirect_status_code():\n    response = client.get(\"/pydantic\", follow_redirects=False)\n    assert response.status_code == 302\n    assert response.headers[\"location\"] == \"https://pydantic-docs.helpmanual.io/\""}

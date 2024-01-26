@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a query parameter named `hidden_query`.
+- The type of this parameter is either a string or None (optional).
+- If the value of `hidden_query` is not None, it returns a dictionary with 'hidden_query' key containing its value. Otherwise, it returns a dictionary with 'hidden_query' key set to 'Not found'.

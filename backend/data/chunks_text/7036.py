@@ -1,0 +1,3 @@
+- This endpoint is accessed using a POST request to `/test-token`.
+- It returns the authenticated user object associated with the access token included in the request headers, as obtained from the `Depends(deps.get_current_active_user)` dependency function.
+- The returned user object conforms to the schema defined by `schemas.User`, which can be used for further processing or validation if needed.

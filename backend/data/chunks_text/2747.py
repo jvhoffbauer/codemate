@@ -1,0 +1,3 @@
+- Tests the `/response_model_none-annotation-return_invalid_dict` endpoint using Flask's built-in testing client (client)
+- Asserts that the HTTP status code is 200 and returns a specific error message if it isn't
+- Verifies that the JSON response contains a key-value pair with the expected value for 'name', despite the annotation indicating that the return type should be None

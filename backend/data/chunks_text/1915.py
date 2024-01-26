@@ -1,0 +1,2 @@
+- Defines a GET request for retrieving user data with the specified username (stored in `username`) using FastAPI's decorator syntax (@app.get)
+- Returns a JSON response containing a personalized greeting message that includes the requested username, formatted as an f-string

@@ -1,0 +1,3 @@
+- Tests if a GET request to `"/path/param-lt-int/2"` returns expected value (2) and status code (200).
+- Uses Flask's built-in testing client to simulate HTTP requests.
+- Asserts that the JSON response is equal to 2 using Python's unittest framework.

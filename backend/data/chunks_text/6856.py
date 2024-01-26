@@ -1,0 +1,5 @@
+- Creates a new user with a randomly generated email and password using `UserCreate`.
+- Saves the newly created user to the database using `crud.user.create`.
+- Retrieves the saved user from the database by authenticating with their email and password using `crud.user.authenticate`.
+- Asserts that the retrieved user is not `None`, meaning authentication was successful.
+- Compares the email of the retrieved user with the original email used during creation to ensure they match.

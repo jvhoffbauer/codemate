@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/hidden_path/{hidden_path}\")\nasync def hidden_path(hidden_path: str = Path(include_in_schema=False)):\n    return {\"hidden_path\": hidden_path}"}

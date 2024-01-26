@@ -1,0 +1,1 @@
+{"original_code": "async def context_b(state: dict = Depends(context_a)):\n    state[\"context_b\"] = \"started b\"\n    try:\n        yield state\n    finally:\n        state[\"context_b\"] = f\"finished b with a: {state['context_a']}\""}

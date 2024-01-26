@@ -1,0 +1,2 @@
+- Defines a function called `response_model_none_annotation_return_same_model` that returns an instance of the `User` model with specific values for its attributes (`name` and `surname`)
+- The function's return type is explicitly defined as `User`, using Python's typing module to indicate that it will always return an object of this class, regardless of any potential exceptions or errors that may occur during execution

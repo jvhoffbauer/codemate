@@ -1,0 +1,3 @@
+- This function is an asynchronous method called `json`.
+- It returns the JSON data from a previous request made by the `Request` object (stored in `self.request`) using the `asyncio` library's `await` keyword.
+- The returned value is stored in a variable named `json_data`, which can be accessed outside of this function for further processing or display.

@@ -1,0 +1,1 @@
+{"original_code": "    def _bidx(params=Depends(dependencies.BidxParams)):\n        \"\"\"return indexes.\"\"\"\n        return params.indexes"}

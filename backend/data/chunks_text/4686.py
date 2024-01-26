@@ -1,0 +1,3 @@
+- Tests if a POST request is made to the `/files/` endpoint without any body data
+- Asserts that the server returns an HTTP status code of 200 and a JSON message containing "No file sent" in response
+- Verifies that no actual file was received by the server during this request

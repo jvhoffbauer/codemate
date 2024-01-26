@@ -1,0 +1,6 @@
+- This endpoint allows updating a specific user identified by their ID (`user_id`) using PUT request method.
+- The updated data is passed as `UserUpdate` object in the request body and merged with existing user's attributes before saving to database.
+- If the provided password is not empty or null, it gets hashed using `get_password_hash()` function from FastAPI security package and added to the updated user dictionary.
+- Before executing any updates, the user is fetched from the database using `crud_user.get()`. If the user doesn't exist, an error is raised with appropriate message.
+- After successful update, the updated user record is returned as JSON response.
+- Access to this endpoint is restricted to superusers only via `Depends(on_superuser)` decorator.

@@ -1,0 +1,3 @@
+- Defines a function `model_update_forward_refs` that takes in a type of BaseModel as an argument (`model`) and returns nothing (`None`)
+- Inside this function, it calls another method called `update_forward_refs` on the passed-in `model` object to update its forward references
+- This is likely used for managing relationships between models in SQLAlchemy or similar ORM frameworks

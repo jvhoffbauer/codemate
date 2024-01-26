@@ -1,0 +1,4 @@
+- Defines a function `event_processor` that takes an event and an unused argument (underscore) as input
+- Checks whether the `self.method_route` attribute is set (presumably for routing HTTP requests to specific functions)
+- If `self.method_route` is set, retrieves a transaction object from Sentry using the `sentry_transaction_from_function()` helper method with the function associated with the route as its argument
+- Returns the modified event with the new `"transaction"` key containing the retrieved transaction object

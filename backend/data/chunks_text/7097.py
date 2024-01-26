@@ -1,0 +1,2 @@
+- Retrieves a specific scheduled task (Job) with the given ID using `Schedule.get_job()`.
+- Checks whether the Job exists and returns an error message or success response containing relevant information about the Job's details such as its ID, function name, arguments, cron model, and next run time.

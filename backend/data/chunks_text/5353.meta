@@ -1,0 +1,1 @@
+{"original_code": "    def _endpoint(params=Depends(dependencies.ImageRenderingParams)):\n        \"\"\"return params.\"\"\"\n        return params"}

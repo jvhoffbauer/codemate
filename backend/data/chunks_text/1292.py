@@ -1,0 +1,3 @@
+- Endpoint `POST /files/` creates one or more files and returns a dictionary with their sizes.
+- The `File()` decorator is used to automatically parse incoming multipart requests containing binary data (i.e., files).
+- The `list[bytes]` type hint specifies that the function argument `files` should be a list of bytes objects representing uploaded files.

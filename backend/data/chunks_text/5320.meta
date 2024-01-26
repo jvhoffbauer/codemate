@@ -1,0 +1,1 @@
+{"original_code": "def test_default():\n    \"\"\"test default dep behavior.\"\"\"\n\n    @dataclass\n    class dep(dependencies.DefaultDependency):\n        v: int\n\n    # make sure we can unpack the class\n    assert dict(**dep(v=1)) == {\"v\": 1}\n    assert dep(v=1).v == 1"}

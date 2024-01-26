@@ -1,0 +1,1 @@
+{"original_code": "        @classmethod\n        def __get_pydantic_json_schema__(\n            cls, core_schema: CoreSchema, handler: GetJsonSchemaHandler\n        ) -> JsonSchemaValue:\n            return {\"type\": \"string\", \"format\": \"email\"}"}

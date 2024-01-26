@@ -1,0 +1,4 @@
+- Defines a FastAPI application and creates two endpoints to test serialization of `MyUuid`.
+- Uses `MyUuid`, an extension of SQLAlchemy's UUID type, in both endpoints.
+- Tests that `MyUuid` is correctly serialized as a string when using FastAPI's built-in JSON encoder (`return_fast_uuid()`) and when using Pydantic models (`return_some_user()`).
+- Demonstrates how to use Pydantic's `arbitrary_types_allowed` and `json_encoders` features to allow non-standard types like `MyUuid` in model fields.

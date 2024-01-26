@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/list\", response_model=List[Model], response_model_by_alias=False)\ndef read_list():\n    return [{\"alias\": \"Foo\"}, {\"alias\": \"Bar\"}]"}

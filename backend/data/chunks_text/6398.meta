@@ -1,0 +1,1 @@
+{"original_code": "    def __str__(self):\n        s = f\"[{self.CODE}] {self.MESSAGE}\"\n        if self.data:\n            s += f\": {self.data!r}\"\n        return s"}

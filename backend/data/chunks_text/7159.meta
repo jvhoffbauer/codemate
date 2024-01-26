@@ -1,0 +1,1 @@
+{"original_code": "def fail(resp: Resp) -> Response:\n    return JSONResponse(\n        status_code=resp.code,\n        content=jsonable_encoder(\n            {\n                \"status\": resp.status,\n                \"msg\": resp.msg,\n            }\n        ),\n    )"}

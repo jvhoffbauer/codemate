@@ -1,0 +1,4 @@
+- The function `check_calls()` takes a list of lists as an argument called `calls`.
+- It performs assertions on each sublist in `calls`, checking that they match expected values for SQLAlchemy ORM sessions and queries.
+- Specifically, it checks that the first element is a string representing the initial message before any interactions ("Before interacting with the database"), and then verifies that subsequent elements are either strings (representing messages) or nested lists containing tuples/dictionaries representing SQLAlchemy query parameters and results.
+- The function ensures that the correct number and types of queries and updates have been executed by comparing them against hardcoded expectations. This can be useful for testing the behavior of SQLAlchemy applications under different scenarios without having to manually execute all the necessary operations.

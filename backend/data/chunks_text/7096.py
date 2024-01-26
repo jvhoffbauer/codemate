@@ -1,0 +1,4 @@
+- Endpoint for retrieving details of a specific scheduled task (job).
+- Uses FastAPI's `Query()` decorator to extract the requested job ID from the query string parameter.
+- Retrieves the specified job using APScheduler's `Schedule.get_job()` method and returns an error response if it doesn't exist.
+- Returns a JSON response containing various attributes of the job, including its unique identifier, function name, arguments, cron expression, and next execution time.

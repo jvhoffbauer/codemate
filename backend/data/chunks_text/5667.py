@@ -1,0 +1,1 @@
+- Retrieves an asynchronous SQLAlchemy database connection with a specified alias (default is 'DEFAULT') using one of three methods: global scope, site context, or raises an error and prompts to set it up first. - Returns the retrieved database object for further usage in asynchronous functions.

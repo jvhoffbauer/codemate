@@ -1,0 +1,1 @@
+{"original_code": "    async def get_scheduler(self):\n        if self.scheduler is not None:\n            return self.scheduler\n        self.scheduler = self.scheduler_factory(**(self.scheduler_kwargs or {}))\n        return self.scheduler"}

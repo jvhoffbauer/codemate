@@ -1,0 +1,1 @@
+- This function takes in a plain text password and a hash of that password as arguments. - It uses the `pwd_context` object to verify whether the plain text password matches the hash using the `verify()` method. - Returns True if the plain text password matches the hash, False otherwise.

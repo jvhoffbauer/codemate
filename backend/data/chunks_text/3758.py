@@ -1,0 +1,1 @@
+- This function uses `aiohttp`'s `TestClient` to simulate a request for all keyword weights (`GET /keyword-weights/`) and asserts that the status code is 200 OK with an expected JSON response containing 'foo': 2.3 and 'bar': 3.4.

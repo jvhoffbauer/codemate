@@ -1,0 +1,3 @@
+- Adds dependencies to existing FastAPI routes based on specific endpoint scopes
+- Enables developers to add dependencies to previously defined routes without having to redefine them
+- Follows the same dependency handling as `APIRoute` and registers dependencies directly on the route instead of ignoring them during association with an application

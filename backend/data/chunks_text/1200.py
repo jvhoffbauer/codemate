@@ -1,0 +1,1 @@
+- Defines a new endpoint `POST /items/` for creating an item using FastAPI's decorator syntax. - Accepts a JSON request body containing an instance of the `Item` model, which is automatically parsed and validated by FastAPI. - Returns the newly created item as the response body in JSON format with the `response_model` parameter set to the `Item` class.

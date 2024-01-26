@@ -1,0 +1,3 @@
+- Tests retrieving a specific item using Starlette's built-in `Client` class
+- Asserts that the status code is 200 and displays the text if it fails
+- Verifies that the JSON response contains the expected value for the requested item

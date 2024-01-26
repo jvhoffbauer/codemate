@@ -1,0 +1,2 @@
+- Defines a function named `cron_task` that takes one argument `a1` of type string and returns no value (None).
+- Inside the function, prints the value of `a1` followed by the current date and time in the format 'YYYY-MM-DD HH:MM:SS'.

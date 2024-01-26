@@ -1,0 +1,1 @@
+- Tests if a ResponseModel without annotations raises a `ResponseValidationError` when returning an invalid dictionary. - Uses PyTest's `with pytest.raises()` to raise and catch the error. - Asserts that the error message contains'missing'.

@@ -1,0 +1,4 @@
+- Defines a function `test_a` to test endpoint `/a`.
+- Makes an HTTP GET request using Flask's built-in `client` object and stores the response in variable `response`.
+- Asserts that the status code of the response is equal to 200 (OK) and saves the text content for debugging purposes.
+- Uses Python's built-in `assert` statement to check if the JSON payload returned by the server matches the expected value 'a'.

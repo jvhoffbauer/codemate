@@ -1,0 +1,3 @@
+- This function tests the `PUT /items/{item_id}` endpoint with an invalid item ID (`"foo"`).
+- It uses Pytest's `TestClient` fixture from Starlette to make the request and check the status code and JSON response body.
+- The expected error message is checked using Pydantic's validation errors and their URL representation for debugging purposes.

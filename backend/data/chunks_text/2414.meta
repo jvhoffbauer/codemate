@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/sync_raise_other\")\nasync def get_sync_raise_other(state: str = Depends(generator_state_try)):\n    assert state == \"generator raise started\"\n    raise OtherDependencyError()"}

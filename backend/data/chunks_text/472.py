@@ -1,0 +1,7 @@
+- Imports `test_tutorial` function and `create_engine`, `get_testing_print_function` functions from SQLAlchemy's testing module (`clearsqlmodel`)
+- Assigns a URL to `sqlite_url` attribute of `mod` object imported from `docs_src/tutorial/where` directory
+- Creates an engine using `create_engine` method passing in `sqlite_url` value
+- Initializes `calls` list for storing print statements made during execution
+- Retrieves `new_print` function that replaces builtin `print` function temporarily
+- Patches `builtins.print` with `new_print` function and executes `mod.main()` method
+- Asserts that expected output is stored in `calls` list

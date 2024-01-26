@@ -1,0 +1,3 @@
+- Tests login with incorrect username using `TestClient`.
+- Expects HTTP status code of 400 and error message containing 'Incorrect username or password'.
+- Uses `@needs_py310` decorator to ensure Python version is at least 3.10.

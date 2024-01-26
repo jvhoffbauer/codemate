@@ -1,0 +1,1 @@
+{"original_code": "def PixelSelectionParams(\n    pixel_selection: PixelSelectionMethod = Query(\n        PixelSelectionMethod.first,\n        description=\"Pixel selection method.\",\n    )\n) -> MosaicMethodBase:\n    \"\"\"\n    Returns the mosaic method used to combine datasets together.\n    \"\"\"\n    return pixel_selection.method()"}

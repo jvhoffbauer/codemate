@@ -1,0 +1,1 @@
+- Defines a custom exception handler for Starlette HTTPExceptions using the `@app.exception_handler()` decorator. - The function takes in two arguments: the current request object and the raised exception instance (of type `StarletteHTTPException`). - Returns a plain text response with the error message as string and the corresponding HTTP status code set by the exception.

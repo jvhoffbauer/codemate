@@ -1,0 +1,5 @@
+- This function is a unit test for a method called `probe`.
+- It uses the `unittest` framework's `TestCase` class to define a new test case named `test_basic`.
+- The `test_basic()` function takes two arguments: `probe`, which represents an object that can be used to simulate making network requests, and `json_request`, which is a helper function provided by the testing library being used (in this example, it appears to be a custom implementation).
+- Inside the function, we create a JSON request with some specific values, including an ID of 123, a version number ("2.0") for the JSON RPC protocol, and a method name ("probe"). We pass this request into our `json_request()` helper function, which returns a response dictionary containing the original request data as well as any results returned from the server.
+- Finally, we use Python's built-in `assert` statement to check if the result matches what we expect - in this case, we want the `"result"` key to contain the string "probe". If everything checks out, the test passes; otherwise, an AssertionError will be raised.

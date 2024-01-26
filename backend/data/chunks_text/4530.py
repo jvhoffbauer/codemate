@@ -1,0 +1,3 @@
+- Tests authentication with an incorrect token (nonexistent) for accessing user information
+- Verifies that a 401 Unauthorized status is returned and includes an error message in the body
+- Confirms that the WWW-Authenticate header contains the expected format for Bearer tokens with a required scope of me

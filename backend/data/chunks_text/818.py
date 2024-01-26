@@ -1,0 +1,6 @@
+- This function handles a POST request to `/users/tokens`.
+- It takes an instance of `AuthUser` as input and returns an instance of `AccessTokenResponse`.
+- The user is authenticated using the `service.authenticate_user()` method.
+- A new refresh token is created for the user using `service.create_refresh_token()`.
+- The cookie with the refresh token value is set in the HTTP response using `response.set_cookie()`.
+- An access token is generated using `jwt.create_access_token()` and returned along with the refresh token.

@@ -1,0 +1,2 @@
+- Defines an asynchronous function called `override_dependency` that takes a parameter `session` of type `AsyncSession`.
+- Inside this function, it overrides the dependency for `get_session()` by assigning a new value to the `app.dependency_overrides` dictionary using a lambda function that returns the passed in `session` object.

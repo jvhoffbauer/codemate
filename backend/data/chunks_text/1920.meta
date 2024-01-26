@@ -1,0 +1,1 @@
+{"original_code": "async def redoc_html():\n    return get_redoc_html(\n        openapi_url=app.openapi_url,\n        title=app.title + \" - ReDoc\",\n        redoc_js_url=\"/static/redoc.standalone.js\",\n    )"}

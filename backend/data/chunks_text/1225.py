@@ -1,0 +1,1 @@
+- Defines an asynchronous function named `create_user` that takes a single argument of type `UserIn`. - Returns the input `UserIn` object without any modifications or further processing, indicating that this function is used to simply create new users with no additional logic required.

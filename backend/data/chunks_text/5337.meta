@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/first\")\n    def _bands(params=Depends(dependencies.BandsParams)):\n        \"\"\"return bands.\"\"\"\n        return params.bands"}

@@ -1,0 +1,3 @@
+- This method handles incoming requests and returns either a `Page` object or an `App` object based on whether the tabs mode is set in the page schema.
+- If the tabs mode is not specified (i.e., it's `None`), this method calls `_get_page_as_app()`.
+- Otherwise, it calls `_get_page_as_tabs()`.

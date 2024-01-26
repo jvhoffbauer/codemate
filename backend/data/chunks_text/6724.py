@@ -1,0 +1,4 @@
+- Defines a function `monkeypatch_test_transport` that takes a `monkeypatch` object as argument and returns another function (the inner function).
+- Inside this inner function, sets up a mock transport using `_TestTransport`, which has two callback functions `check_event` and `check_envelope`. These callbacks will be called when certain events occur during message sending or receiving.
+- The `check_event` callback checks whether all keys of the event dictionary are strings, recursively checking nested dictionaries as well. It also catches internal exceptions using `capture_internal_exceptions` from the `mock` library.
+- The `check_envelope` callback similarly checks whether there are no error items in the envelope (except for attachments), and ensures that event data is not included in such cases. Again, it uses `capture_internal_exceptions` to catch potential errors.

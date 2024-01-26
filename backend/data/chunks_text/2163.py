@@ -1,0 +1,3 @@
+- Defines a function `get_query_optional` that takes an optional argument `query`.
+- If `query` is not provided, returns the string "foo bar".
+- Otherwise, constructs and returns a formatted string with both "foo bar" and the given `query`.

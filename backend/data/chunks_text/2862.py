@@ -1,0 +1,2 @@
+- Tests whether `Header()` with ellipsis argument returns a string representation that includes either 'PydanticUndefined' or 'Ellipsis', depending on Python version (Python < 3.8 vs >= 3.8)
+- Helps ensure backward compatibility for users who may have used Ellipsis as an argument in previous versions of Pydantic before it was replaced by PydanticUndefined in newer versions

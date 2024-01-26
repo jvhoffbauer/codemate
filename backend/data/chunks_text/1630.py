@@ -1,0 +1,1 @@
+- Defines an async function `get_db` that returns a generator using the `yield` keyword. - Uses a context manager (`MySuperContextManager`) to manage resources, such as opening and closing a database connection. - Yields the generated value (the opened database connection) for use in other parts of the program.

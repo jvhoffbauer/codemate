@@ -1,0 +1,3 @@
+- Handles `custom_exc.AuthenticationError`, which is a custom exception for authentication errors
+- Logs an error message with the URL and HTTP method of the request using the built-in Python logging module (logger)
+- Returns a response object with status code 403 Forbidden (denied permission), provided by Tornado's `resp` module

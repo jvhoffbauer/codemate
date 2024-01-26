@@ -1,0 +1,1 @@
+- Tests if a non-existent user with ID 999 is accessed by making an HTTP GET request to /users/999 using Flask's built-in testing client. - Asserts that the expected status code of 404 (Not Found) is returned and displays the error message in the text attribute for debugging purposes.

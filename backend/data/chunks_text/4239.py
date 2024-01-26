@@ -1,0 +1,5 @@
+- Imports `app` and `client` from a specific module in the dependency testing tutorial for Python 3.9 (version 001)
+- Sets `app.dependency_overrides` to `None`, which disables dependency overriding during this function call
+- Makes an HTTP GET request using `client` with query parameters `"q"="foo"`, `"skip"="100"` and `"limit"="200"`
+- Asserts that the server returns a successful status code of 200 and saves the response text for debugging purposes
+- Extracts the JSON body of the response and asserts that it contains expected keys ("message" and "params") with correct values

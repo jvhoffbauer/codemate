@@ -1,0 +1,1 @@
+{"original_code": "    async def get(self, loc_id):  # pylint: disable=arguments-differ\n        # Get location at the index equal to the provided id.\n        locations = await self.get_all()\n\n        return locations[loc_id]"}

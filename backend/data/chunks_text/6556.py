@@ -1,0 +1,2 @@
+- Defines a function named `probe` that returns a string value of 'qwe' when called using the syntax `function_name()`.
+- The function has a single return type annotated as `str`, indicating its output will be a string data type.

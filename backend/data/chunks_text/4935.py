@@ -1,0 +1,5 @@
+- Creates a new user with a randomly generated lowercase email and password using `random_lower_string()`.
+- Uses the `UserCreate` class to pass in the username (which is also the email), email, and password as arguments.
+- Retrieves the default GCS bucket using `get_default_bucket()`.
+- Inserts or updates the user record into Cloud Datastore using `crud.user.upsert()`, passing in the created `UserCreate` object and specifying that it should be persisted immediately (`persist_to=1`).
+- Returns the newly created/updated user record.

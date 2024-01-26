@@ -1,0 +1,1 @@
+{"original_code": "def test_get_item_not_found():\n    response = client.get(\"/items/bar\")\n    assert response.status_code == 404, response.text\n    assert response.headers.get(\"x-error\") is None\n    assert response.json() == {\"detail\": \"Item not found\"}"}

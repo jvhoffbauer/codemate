@@ -1,0 +1,4 @@
+- Defines a function `search()` that takes in parameters such as `Bucket`, `query_string`, `skip`, and `limit`.
+- Uses the `utils.search_get_docs()` method to perform a full text search on the specified `IndexName` with the given `QueryString`.
+- Returns an iterable of documents matching the search criteria using the provided `DocModel`.
+- Allows for pagination by specifying `Skip` and `Limit` values.

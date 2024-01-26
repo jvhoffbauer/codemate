@@ -1,0 +1,1 @@
+- Defines a function `field_allow_none` that takes a single argument, `ModelField`. - The returned value of this function is determined by accessing the `allow_none` attribute of the passed `ModelField`. - This function can be used to check whether a Django model's field allows null values or not.

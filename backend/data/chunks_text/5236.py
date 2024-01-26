@@ -1,0 +1,5 @@
+- Defines parameters for working with assets, expressions, and band indices
+- Allows specifying one or multiple assets using their names
+- Provides an option to define a mathematical expression between assets
+- Enables defining per-asset band indexes using comma separation
+- Includes an optional flag to treat an asset as a single band dataset

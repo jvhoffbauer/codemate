@@ -1,0 +1,4 @@
+- Generates an OpenAPI schema for a FastAPI application using `client.get("/openapi.json")`.
+- Asserts that the status code is 200 and checks the JSON content of the response against expected values.
+- Defines the structure of endpoints (e.g., GET /items/) with their request parameters, responses, and summary descriptions.
+- Includes error handling by defining custom validation errors as schemas in the components section.

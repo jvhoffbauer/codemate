@@ -1,0 +1,1 @@
+- Tests creating a hero with an invalid `secret_name`, which is represented as a dictionary instead of a string in this case. - Uses Django Rest Framework's built-in testing client to make HTTP requests and verify responses. - Asserts that the server returns a 422 status code, indicating that the request body contains validation errors.

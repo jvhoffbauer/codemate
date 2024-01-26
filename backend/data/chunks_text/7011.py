@@ -1,0 +1,3 @@
+- Creates a new item with data provided in `item_in`.
+- Uses dependency injection to retrieve database session and current authenticated user from request context.
+- Calls CRUD operation (`crud.item.create_with_owner`) to persist item into database while setting its owner ID as specified by `user.id`.

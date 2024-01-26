@@ -1,0 +1,1 @@
+{"original_code": "def make_app(app=None, **kwargs):\n    app = app or FastAPI(**kwargs)\n    app.include_router(router)\n    app.include_router(prefix_router, prefix=\"/prefix\")\n    app.include_router(native_prefix_route)\n    return app"}

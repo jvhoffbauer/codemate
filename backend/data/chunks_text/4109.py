@@ -1,0 +1,1 @@
+- Tests if connecting to a websocket without credentials raises `WebSocketDisconnect` exception using PyTest's `with pytest.raises()` context manager and `client.websocket_connect()`. - If the connection is successful, fails the test using `pytest.fail()`. - This ensures that authentication or authorization mechanisms are in place for secure communication over web sockets.

@@ -1,0 +1,3 @@
+- Initializes Redis connection using `redis_client.init_redis_connect()`.
+- Initializes APScheduler scheduler using `schedule.init_scheduler()`.
+- Establishes database connection using `db.connect()`.

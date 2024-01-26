@@ -1,0 +1,1 @@
+- Retrieves current user's information using FastAPI's `HTTPBasicCredentials` dependency to authenticate with Basic Auth. - Returns a JSON response containing the username and password of the authenticated user for testing purposes or debugging.

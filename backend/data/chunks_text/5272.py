@@ -1,0 +1,3 @@
+- Returns a list of all algorithm names that are currently registered with the class's internal dictionary (`self.data`) as keys.
+- The function is decorated with `@classmethod`, which allows it to be called without instantiating an object of this class, making it more flexible and reusable in other parts of the application or library.
+- The returned list has type `List[str]`, indicating that its elements are strings representing algorithm names.

@@ -1,0 +1,5 @@
+- Registers an admin interface for `models.Article` with customized permissions and fields using Flask-Login's `@site.register_admin` decorator.
+- Defines a subclass of Django Admin's `BaseAuthFieldModelAdmin`, which provides authentication and authorization features.
+- Sets up readable fields (`read_fields`) to display in list view, including article ID, title, description, status, and category ID.
+- Specifies permission levels for different actions (viewing, updating, creating) using nested dictionaries inside `perm_fields`. For example, users can view all fields except 'title', update only'status' and 'title', and create new articles with 'description' and'status'.
+- Excludes certain fields from specific permission levels using `perm_fields_exclude`. This allows more fine-grained control over what data is displayed or editable based on user roles.

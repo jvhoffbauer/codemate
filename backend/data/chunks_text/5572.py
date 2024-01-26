@@ -1,0 +1,3 @@
+- Defines a static method `_parser_query_value` that takes a value, an optional operator, and a function to parse Python types as arguments.
+- If the value is a string with SQL operators like LIKE or IN, it extracts the operator key and replaces the operator syntax with wildcards for LIKE or splits by commas for IN. It then returns the operator and the parsed values accordingly.
+- For other operators like BETWEEN, it parses the start and end values separately and returns them as a tuple of parsed values.

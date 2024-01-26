@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/no_response_model-annotation-return_invalid_dict\")\ndef no_response_model_annotation_return_invalid_dict() -> User:\n    return {\"name\": \"John\"}"}

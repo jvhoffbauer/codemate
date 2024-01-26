@@ -1,0 +1,3 @@
+- Defines a method `probe` using Pytest-mock's `@ep.method()` decorator to create a mock function for testing purposes.
+- Accepts an optional argument `data`, which is decorated with Pydantic's `Body` and `examples` fields to provide default values and test cases respectively.
+- Returns a list of integers regardless of the value passed in as `data`. The variable `data` is then immediately deleted to prevent any side effects or unexpected behavior during testing.

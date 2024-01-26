@@ -1,0 +1,3 @@
+- Defines an asynchronous function `main()`.
+- Generates a response with HTML content that includes two forms for file uploads using the Flask-WTF extension's `HTMLResponse` class.
+- The first form submits to the `/files/` endpoint, while the second form submits to the `/uploadfiles/` endpoint. Both forms use the multipart/form-data encoding and POST request methods.

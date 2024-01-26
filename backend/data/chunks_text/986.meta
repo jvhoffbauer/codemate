@@ -1,0 +1,1 @@
+{"original_code": "    def create_body_model(\n        *, fields: Sequence[ModelField], model_name: str\n    ) -> Type[BaseModel]:\n        BodyModel = create_model(model_name)\n        for f in fields:\n            BodyModel.__fields__[f.name] = f  # type: ignore[index]\n        return BodyModel"}

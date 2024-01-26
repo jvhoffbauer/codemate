@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in a query parameter (`q`) with default value of `None`, maximum length of 50 characters, and converts it into a string using `Union`.
+- Returns a dictionary containing an array of items and optionally the search query (if provided).

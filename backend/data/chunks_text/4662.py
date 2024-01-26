@@ -1,0 +1,3 @@
+- Sends a POST request to `/files/` without any body data (i.e., no JSON payload)
+- Asserts that the server returns a HTTP status code of 422 (Unprocessable Entity), indicating invalid input
+- Verifies that the error message returned by the server is in the expected format and contains details about missing fields ('file', 'fileb', and 'token')

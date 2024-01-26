@@ -1,0 +1,2 @@
+- Defines a function `handler` that takes in a request and an exception as arguments
+- Returns a JSON response with a detail message set to the string representation of the exception and a status code specified by `status_code`

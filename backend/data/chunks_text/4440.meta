@@ -1,0 +1,1 @@
+{"original_code": "def test_get_invalid_one_users():\n    response = client.get(\"/users/\", headers={\"X-Token\": \"invalid\"})\n    assert response.status_code == 400, response.text\n    assert response.json() == {\"detail\": \"X-Token header invalid\"}"}

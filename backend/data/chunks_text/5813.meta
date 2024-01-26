@@ -1,0 +1,1 @@
+{"original_code": "    def _create_admin_instance_all(self) -> None:\n        [self.get_admin_or_create(admin_cls) for admin_cls in self._registered.keys()]"}

@@ -1,0 +1,1 @@
+- This endpoint returns a `User` object without specifying any response model or annotation in FastAPI's OpenAPI schema. - The returned `User` instance has two attributes, `name` and `surname`, with values "John" and "Doe", respectively. - Since there is no explicit return type specified for this function, FastAPI infers it as returning a generic JSON response by default.

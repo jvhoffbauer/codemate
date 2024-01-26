@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that takes a parameter `q`, which is optionally filled using Pydantic's `Form` decorator with a regular expression to match a fixed query string. - If the `q` value is provided and matches the regex pattern, returns a greeting message concatenating it with the input; otherwise, returns a default greeting message.

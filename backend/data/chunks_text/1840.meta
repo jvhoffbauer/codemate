@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/files/\")\nasync def create_file(\n    file: bytes = File(), fileb: UploadFile = File(), token: str = Form()\n):\n    return {\n        \"file_size\": len(file),\n        \"token\": token,\n        \"fileb_content_type\": fileb.content_type,\n    }"}

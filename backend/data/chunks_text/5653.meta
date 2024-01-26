@@ -1,0 +1,1 @@
+{"original_code": "    async def has_read_permission(\n        self, request: Request, item_id: Optional[List[str]], **kwargs\n    ) -> bool:\n        return True"}

@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_callable_gen_dependency()`.
+- Accepts a positional argument `value` with default dependency of `callable_gen_dependency`.
+- Returns the provided `value`, which can be any callable generator object, such as a database query or API request. This allows for easier and more efficient handling of dependencies in FastAPI applications by avoiding unnecessary repetition of common functions.

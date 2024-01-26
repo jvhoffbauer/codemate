@@ -1,0 +1,1 @@
+- This method, named `shutdown`, is asynchronous and takes no arguments. - It checks whether a scheduler object (presumably used for executing tasks at specific times) exists in the current instance of this class. - If the scheduler exists, it calls its `close()` method to gracefully stop all scheduled tasks and release any resources associated with it.

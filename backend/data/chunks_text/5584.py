@@ -1,0 +1,3 @@
+- Takes an object (TableModelT) from a database as input
+- Converts this object into a SchemaReadT using pydantic's `parse_obj_to_schema()` function
+- Returns the resulting SchemaReadT for further processing or use in other parts of the application

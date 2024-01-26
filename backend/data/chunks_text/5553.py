@@ -1,0 +1,3 @@
+- This function takes a `table_model` (a subclass of `sqlalchemy.orm.declarative.DeclarativeMeta`) and a `key` as arguments.
+- It searches through all attributes of the given `table_model`, looking for an instance of `InstrumentedAttribute`.
+- If it finds such an attribute with a matching `key`, it returns that attribute; otherwise, it returns `None`.

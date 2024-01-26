@@ -1,0 +1,1 @@
+{"original_code": "def response_model_no_annotation_return_same_model():\n    return User(name=\"John\", surname=\"Doe\")"}

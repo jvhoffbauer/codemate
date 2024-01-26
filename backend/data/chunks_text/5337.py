@@ -1,0 +1,3 @@
+- Defines a GET request for the URL "/first" using FastAPI's decorator syntax (@app.get)
+- Accepts an optional parameter, "params", which is dependent on the BandsParams class defined in dependencies.py (using Depends function from FastAPI)
+- Returns the value of the "bands" attribute within the BandsParams object passed as a dependency to this endpoint

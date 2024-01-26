@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method()\n    def probe() -> str:\n        raise HTTPException(401)"}

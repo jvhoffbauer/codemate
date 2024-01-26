@@ -1,0 +1,3 @@
+- This method is called `query` and takes a variable number (0 or more) of arguments of type `_ColumnsClauseArgument[Any]`, as well as keyword arguments of any type.
+- The method returns an object of type `_Query[Any]`, which is likely used for further database operations.
+- A warning message is displayed at the top of the docstring, suggesting alternative methods that may be more appropriate in certain situations. These alternatives are explained briefly below the warning.

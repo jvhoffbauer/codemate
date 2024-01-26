@@ -1,0 +1,5 @@
+- Defines a function `update` that takes several arguments related to updating an item in a Couchbase bucket.
+- Retrieves the document with ID `id` from the bucket using `get`.
+- Merges the new data provided by `ItemUpdate` into the existing document using Python's built-in dictionary merge method (`copy()`).
+- Optionally sets the `owner_username` field of the updated document based on the value passed as argument.
+- Calls the `utils.upsert()` function to either insert or replace the updated document in the bucket depending on whether it already exists or not. The `persist_to` and `ttl` parameters are used for managing time-based expiration policies.

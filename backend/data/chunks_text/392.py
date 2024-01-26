@@ -1,0 +1,7 @@
+- Tests if SQLAlchemy allows duplicate rows when unique constraint is set to False using `Field(unique=False)`.
+- Creates a new model called `Hero` and sets its attributes including an optional field for ID, required fields for name and secret_name (with unique constraint set to False), and an optional field for age.
+- Initializes two instances of `Hero`, one with the same value for `secret_name` as the other.
+- Creates a new database connection using `create_engine()` and creates tables based on the models defined in `SQLModel.metadata`.
+- Commits changes made by adding the first instance of `Hero` to the session and refreshes it afterwards.
+- Adds the second instance of `Hero` to the session and commits changes again. Refreshes both instances after that.
+- Queries all records from the `Hero` table using `Session.exec()` and `Session.all()`. Asserts that there are exactly two results returned.

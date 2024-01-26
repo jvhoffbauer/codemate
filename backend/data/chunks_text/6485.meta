@@ -1,0 +1,1 @@
+{"original_code": "    async def solve_shared_dependencies(\n        self,\n        http_request: Request,\n        background_tasks: BackgroundTasks,\n        sub_response: Response,\n    ) -> dict:\n        return await self.entrypoint_route.solve_shared_dependencies(\n            http_request,\n            background_tasks,\n            sub_response,\n        )"}

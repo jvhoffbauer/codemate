@@ -1,0 +1,2 @@
+- Creates a new task with specific start and end dates, repeat interval, and process delay using PUT request to /items endpoint
+- Extracts necessary information from the response body (such as start time of processing and duration) and compares it against the expected values

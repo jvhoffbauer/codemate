@@ -1,0 +1,3 @@
+- Defines a function `algorithm_metadata()` that retrieves the metadata for a specific algorithm using the `metadata()` function from an object called `self.supported_algorithm`.
+- The function takes an argument `algorithm`, which is required and must be one of the values in the list returned by `self.supported_algorithm.list()`. This argument can also be passed as an alias named "algorithmId".
+- If no value is provided for `algorithm`, it defaults to the first item in the list returned by `self.supported_algorithm.list()`.

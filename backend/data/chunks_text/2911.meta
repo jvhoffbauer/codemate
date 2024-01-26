@@ -1,0 +1,1 @@
+{"original_code": "def test_response():\n    response = client.get(\"/\", headers={\"someheader\": \"hello\"})\n    assert response.status_code == status.HTTP_200_OK\n    assert response.json() == {\"dep1\": \"hello\", \"dep2\": \"hello123\"}"}

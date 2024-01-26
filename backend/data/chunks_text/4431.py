@@ -1,0 +1,3 @@
+- This function uses `@needs_py39` decorator to ensure that Python version is at least 3.9.
+- It defines a parameterized test using `@pytest.mark.parametrize`. The test has five cases with different query parameters and expected responses.
+- For each case, it makes an HTTP GET request using `client.get`, saves the response in a variable called `response`, asserts that the status code matches the expected value, and then asserts that the JSON body of the response matches the expected one.

@@ -1,0 +1,1 @@
+- Initializes a connection pool to Redis using `aioredis` and sets it as a global variable for later use in the application. - Yields control back to the main event loop during startup phase. - Checks whether the current environment is testing or not. If it's not testing, disconnects from the Redis server at shutdown time.

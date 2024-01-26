@@ -1,0 +1,1 @@
+{"original_code": "def test(path, headers, expected_status, expected_response):\n    response = client.get(path, headers=headers)\n    assert response.status_code == expected_status\n    assert response.json() == expected_response"}

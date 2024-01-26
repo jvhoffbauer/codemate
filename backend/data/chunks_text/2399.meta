@@ -1,0 +1,1 @@
+{"original_code": "def generator_state(state: Dict[str, str] = Depends(get_state)):\n    state[\"/sync\"] = \"generator started\"\n    yield state[\"/sync\"]\n    state[\"/sync\"] = \"generator completed\""}

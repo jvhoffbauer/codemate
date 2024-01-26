@@ -1,0 +1,9 @@
+- Creates three `Hero` objects and prints their initial states before adding them to a SQLAlchemy session.
+- Adds all three heroes to the session using `session.add()`.
+- Commits changes made in the current transaction using `session.commit()`.
+- Prints the state of each hero after committing the session.
+- Retrieves the primary key (ID) values for each hero using `hero.id`.
+- Retrieves the `name` attribute values for each hero again.
+- Refreshes the object state of each hero using `session.refresh()`, which updates the object's attributes with the latest data from the database.
+- Prints the final state of each hero after refreshing them.
+- Closes the session and prints the final state of each hero outside the context manager block.

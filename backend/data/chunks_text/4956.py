@@ -1,0 +1,1 @@
+- Defines a function `setup_logging` that takes an instance of `FastAPI` as its argument. - This function is used to configure logging for the application, but in this case it's left empty (i.e., no logging configuration is provided).

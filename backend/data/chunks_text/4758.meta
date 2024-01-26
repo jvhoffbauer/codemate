@@ -1,0 +1,1 @@
+{"original_code": "@needs_pydanticv1\ndef test_filter_sub_model(client: TestClient):\n    response = client.get(\"/model/modelA\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\n        \"name\": \"modelA\",\n        \"description\": \"model-a-desc\",\n        \"model_b\": {\"username\": \"test-user\"},\n    }"}

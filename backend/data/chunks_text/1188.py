@@ -1,0 +1,2 @@
+- Defines a function `get_user` that takes an integer argument `user_id`.
+- Uses Django's ORM to filter for a User object with ID equal to `user_id`, and returns the first result (i.e., the single matching record, if any) using the `first()` method.

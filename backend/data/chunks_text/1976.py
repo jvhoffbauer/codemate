@@ -1,0 +1,3 @@
+- Defines a function `update_item` that takes an ID (str) and an item object as arguments
+- Converts the updated item to a JSON-serializable format using `jsonable_encoder` from FastAPI's built-in library
+- Returns a JSON response with the serialized data using `JSONResponse` from FastAPI's built-in library

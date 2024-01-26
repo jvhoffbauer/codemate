@@ -1,0 +1,1 @@
+{"original_code": "def create_cookie():\n    content = {\"message\": \"Come to the dark side, we have cookies\"}\n    response = JSONResponse(content=content)\n    response.set_cookie(key=\"fakesession\", value=\"fake-cookie-session-value\")\n    return response"}

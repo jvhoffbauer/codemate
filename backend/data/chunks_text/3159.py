@@ -1,0 +1,2 @@
+- Generates an OpenAPI v3.1.0 specification for a FastAPI application using the `client` object to make a GET request to the `/openapi.json` endpoint.
+- The returned JSON is compared against a predefined schema with expected keys and values such as version, info, paths, components, schemas, etc.

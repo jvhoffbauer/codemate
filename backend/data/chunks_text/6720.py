@@ -1,0 +1,1 @@
+- Defines a function named `probe2` that returns a string (type annotation) but never actually executes because it raises a `RuntimeError`. This could be used as a test case to check if error handling is working correctly in other parts of the program.

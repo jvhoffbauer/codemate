@@ -1,0 +1,1 @@
+{"original_code": "    @cached_property\n    def unique_id(self) -> str:\n        unique_str = f\"{self.__class__.__module__}:{self.__class__.__qualname__}\"\n        if self.app is not self:\n            unique_str += f\"{self.app.unique_id}\"\n        return md5_hex(unique_str)[:16]"}

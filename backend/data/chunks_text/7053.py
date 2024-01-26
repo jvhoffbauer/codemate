@@ -1,0 +1,3 @@
+- Defines a method `get_project_name()` that takes three arguments - class (cls), value from configuration file (v) and dictionary of all other configurations (values).
+- Checks whether the value passed in 'v' is empty or null, then returns the project name from the dictionary 'values'.
+- If the value passed in 'v' is present, it returns the same instead of retrieving from the dictionary.

@@ -1,0 +1,3 @@
+- Tests if an item with bar ID and token jessica can be retrieved using GET request
+- Sends a request to /items/bar with query parameter token set to jessica
+- Verifies that the status code is 404 (item not found) and returns appropriate error message in JSON format

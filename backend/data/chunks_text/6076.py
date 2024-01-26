@@ -1,0 +1,7 @@
+- Defines a fixture named `fake_users` using PyTest's `@pytest.fixture` decorator.
+- Accepts two arguments, an asynchronous SQLAlchemy session (`async_session`) and a reference to the User model (`models`).
+- Creates a list of five User objects with incrementing IDs from 1 to 5.
+- Sets their respective usernames, passwords, creation times, addresses, and attachments.
+- Adds all these users to the database using the `add_all()` method of the session object.
+- Commits the changes made during this transaction using the `commit()` method of the session object.
+- Returns the list of created Users.

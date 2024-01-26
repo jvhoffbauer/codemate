@@ -1,0 +1,9 @@
+- Imports and sets up necessary modules to run a SQLAlchemy tutorial example.
+- Defines a function `test_tutorial` that takes an argument `clear_sqlmodel`, which is used to clear out any existing data before running the tests.
+- Import the specific module (`tutorial001_py310`) containing the tutorial's implementation, and assign it to a variable called `mod`.
+- Sets up the database connection using `create_engine` method of SQLAlchemy.
+- Calls the main function of the tutorial module (`mod.main()`).
+- Retrieves all records from the table created by the tutorial using `Session` object provided by SQLAlchemy.
+- Creates a dictionary mapping each record's name to its corresponding instance.
+- Accesses individual records based on their names stored in the dictionary.
+- Asserts various properties of these records against expected values.

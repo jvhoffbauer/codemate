@@ -1,0 +1,3 @@
+- Defines a function `get_password_hash` that takes a password as an argument
+- Uses the `pwd_context` object to hash the password using the default algorithm (usually SHA256 or PBKDF2)
+- Returns the hashed password value

@@ -1,0 +1,3 @@
+- Retrieves all locations from the specified data source (JHU in this case) using FastAPI's dependency injection mechanism to pass the `Request` object and a default value for `Sources`.
+- Calculates the total number of confirmed cases, deaths, and recovered by mapping each location's corresponding values and summing them up.
+- Returns an object containing the latest statistics as a dictionary with keys 'latest' and its respective values.

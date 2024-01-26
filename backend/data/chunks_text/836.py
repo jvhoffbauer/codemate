@@ -1,0 +1,2 @@
+- Tests if registering with an email that already exists returns a Bad Request response and an error message indicating that the email is taken.
+- Uses `monkeypatch` to mock the `get_user_by_email` function of the `service` module in order to simulate an existing user with the given email.

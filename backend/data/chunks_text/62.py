@@ -1,0 +1,3 @@
+- This function sets a configuration value for an SQLModel instance or class using its `__config__` attribute.
+- It takes three arguments: the SQLModel object (either an instance or a class), the name of the configuration parameter to be set, and the new value for that parameter.
+- The function uses Python's built-in `setattr()` method to directly modify the `__config__` dictionary of the given SQLModel object/class, bypassing any validation or checking mechanisms provided by SQLModel itself. Note that this may have unintended consequences if used incorrectly.

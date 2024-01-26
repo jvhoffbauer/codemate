@@ -1,0 +1,1 @@
+{"original_code": "def read_user_me(session: SessionDep, current_user: CurrentUser) -> UserOut:\n    \"\"\"\n    Get current user.\n    \"\"\"\n    return current_user  # type: ignore"}

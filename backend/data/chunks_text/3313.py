@@ -1,0 +1,3 @@
+- Defines a GET route at `/unrelated` using FastAPI's decorator syntax
+- Accepts an argument named `foo`, which is annotated as both a string and an arbitrary Python object (using the `object()` type hint)
+- Returns a JSON response with a key called "foo" containing the value of the `foo` parameter

@@ -1,0 +1,3 @@
+- Defines an asynchronous function `home1()`.
+- Uses RasterIO's environment feature to set GDAL configuration option "GDAL_DISABLE_READDIR_ON_OPEN" to "FALSE".
+- Returns a dictionary containing the value of the configured setting.

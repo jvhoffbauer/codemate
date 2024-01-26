@@ -1,0 +1,1 @@
+{"original_code": "@app.put(\"/items/{item_id}\")\nasync def create_item(item_id: int, item: Item):\n    return {\"item_id\": item_id, **item.dict()}"}

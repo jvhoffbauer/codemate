@@ -1,0 +1,5 @@
+- Defines a base model `PersonBase`, which has fields for `name` and `lastname`.
+- Creates two derived models from `PersonBase` - `Person` and `PersonCreate`. Both inherit the same fields as their parent.
+- Creates another derived model `PersonRead` that adds an additional field called `full_name`. This is used to demonstrate reading with ORM mode enabled.
+- Initializes a FastAPI application and registers endpoints using the defined models. The endpoint `create_person` creates a new instance of `PersonCreate` and converts it into a database object (using `from_orm`) before returning it in the response body.
+- Uses Pytest's built-in testing framework to make requests against the API and verify responses. In this case, we are creating a new `Person` record via POST request and verifying its properties after conversion back to JSON format.

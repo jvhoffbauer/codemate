@@ -1,0 +1,4 @@
+- Defines a static method `user_login_logic()` that takes in phone number and password as arguments.
+- Retrieves the user with the given phone number using `User.single_by_phone()`. If no such user exists, raises an exception of type `custom_exc.TokenAuthError` with error description "账号或密码错误".
+- Verifies the password provided against the stored hash using `security.verify_password()`. If the verification fails, raises another instance of `custom_exc.TokenAuthError` with the same error message.
+- Creates an access token for the authenticated user using `security.create_access_token()`, specifying the expiration time (in minutes) from `settings.ACCESS_TOKEN_EXPIRE_MINUTES`. The ID of the user is passed to the function as an argument.

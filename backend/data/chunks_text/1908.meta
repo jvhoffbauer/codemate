@@ -1,0 +1,1 @@
+{"original_code": "async def update_item(item_id: str, item: Item):\n    stored_item_data = items[item_id]\n    stored_item_model = Item(**stored_item_data)\n    update_data = item.dict(exclude_unset=True)\n    updated_item = stored_item_model.copy(update=update_data)\n    items[item_id] = jsonable_encoder(updated_item)\n    return updated_item"}

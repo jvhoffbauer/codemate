@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/users/{user_id}\")\nasync def read_user(user_id: str):\n    return {\"user_id\": user_id}"}

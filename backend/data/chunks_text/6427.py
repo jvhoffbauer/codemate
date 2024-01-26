@@ -1,0 +1,1 @@
+- Adds specified dependencies to the beginning of a list of dependencies for a given dependent (i.e., target) object. - Allows specifying multiple dependencies at once through a sequence parameter. - Handles cases where no dependencies are provided by returning immediately without any action.

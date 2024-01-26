@@ -1,0 +1,3 @@
+- Tests if an exception is raised when trying to update a non-existent user (state["except"] becomes true)
+- Ensures that finally block executes regardless of whether there's an exception or not (state["finally"] becomes true)
+- Verifies that database remains unchanged after failed request (fake_database["rick"] still equals "Rick Sanchez")

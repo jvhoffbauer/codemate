@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/items/\", response_model=Item, status_code=status.HTTP_201_CREATED)\nasync def create_item(item: Item):\n    return item"}

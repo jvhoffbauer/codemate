@@ -1,0 +1,2 @@
+- This function takes a `ModelField` as an argument and returns its outer type using the `outer_type_` attribute.
+- The returned value is of any data type, represented by the `Any` type hint in Python.

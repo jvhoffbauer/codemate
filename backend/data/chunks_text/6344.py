@@ -1,0 +1,3 @@
+- Creates an `AsyncClient` object using FastAPI's built-in `AsyncClient` class and passes in our app instance and a custom base URL of 'http://test'.
+- Sets the value of the 'Host' header to 'localhost' for this specific request.
+- Yields the `AsyncClient` object so it can be used by other parts of our application that require access to a live HTTP connection.

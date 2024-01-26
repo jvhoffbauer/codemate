@@ -1,0 +1,3 @@
+- Defines a GET request endpoint for `/test` with an HTTP response status of 200 (OK).
+- Returns a dictionary containing a key-value pair ("test": "test").
+- Logs a debug message to the application's logging system using the built-in `logging` module.

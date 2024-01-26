@@ -1,0 +1,3 @@
+- This method retrieves an existing admin object of type `admin_cls` from the registry or creates a new one if it doesn't exist yet.
+- It searches through all registered apps (of type `AdminApp`) and checks whether they contain an already created admin object with the given class `admin_cls`. If found, this object is returned immediately. Otherwise, the search continues recursively within that specific app until either an admin object is found or none are left to check.
+- The method returns `None` if no matching admin object could be found after checking all registered apps.

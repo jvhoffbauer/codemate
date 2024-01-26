@@ -1,0 +1,1 @@
+- Defines a function named `probe` that returns a string value of 'ok' when called (type annotation used)

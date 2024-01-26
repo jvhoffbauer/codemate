@@ -1,0 +1,1 @@
+- Sends GET requests to four different URLs (/valid1, /valid2, /valid3, and /valid4) using Flask's built-in `client` object. - Asserts that each request returns a status code of 200 OK with the help of Python's `assert` statement. - If any of the tests fail, an error message is displayed along with the failed test case's text content for debugging purposes.

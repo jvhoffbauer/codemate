@@ -1,0 +1,1 @@
+{"original_code": "def test_query_query_baz():\n    response = client.get(\"/query?query=baz\")\n    assert response.status_code == 200\n    assert response.json() == \"foo bar baz\""}

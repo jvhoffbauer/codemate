@@ -1,0 +1,1 @@
+- Tests if `FastAPI` raises a `RuntimeError` when `multipart` package is not installed and tries to use its file upload feature (`UploadFile`) in a form request handler. - Uses PyTest's `monkeypatch` module to temporarily remove `multipart` version attribute so that it appears as though `multipart` is not installed during testing.

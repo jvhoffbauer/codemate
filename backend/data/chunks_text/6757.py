@@ -1,0 +1,1 @@
+- Defines a method named `my_method__with_typehints` that takes an argument of type `Input` and returns a dictionary with type `Output`. - Uses Python's type hinting feature to provide information about the expected types of arguments and returned values, making it easier for other developers to understand how this function should be used.

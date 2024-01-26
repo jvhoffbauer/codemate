@@ -1,0 +1,1 @@
+{"original_code": "    @dataclass\n    class GenerateJsonSchema:  # type: ignore[no-redef]\n        ref_template: str"}

@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method()\n    def probe(whole_params: WholeParams = Params(...)) -> List[int]:\n        return [int(item) + whole_params.amount for item in whole_params.data]"}

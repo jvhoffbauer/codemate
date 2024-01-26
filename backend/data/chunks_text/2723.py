@@ -1,0 +1,3 @@
+- Defines a FastAPI route with GET method and path `/no_response_model-annotation_union-return_Model1`.
+- Returns an object of type `Union[User, Item]`, which is either a `DBUser` or a `DBItem`. In this case, it always returns a `DBUser` instance.
+- The returned `DBUser` has attributes `name`, `surname`, and `password_hash`.

@@ -1,0 +1,6 @@
+- Defines a function `test_sa_column_no_type` that raises a `RuntimeError`.
+- Creates a new SQLAlchemy model called `Item`, inheriting from both SQLModel and having a table defined (table=True).
+- Initializes an optional integer field named 'id' for the `Item` model using the `Field` decorator. The `default` parameter is set to `None`, indicating that this field will be nullable by default.
+- Specifies the data type of the `id` field as an integer using the `sa_type` parameter. This tells SQLAlchemy how to map the Python object to its corresponding database column.
+- Sets up the primary key constraint on the `id` field using the `sa_column` parameter. Here we pass in a Column instance created using SQLAlchemy's built-in Column constructor.
+- Attempts to raise a `RuntimeError` exception when running the function using PyTest's `pytest.raises` context manager.

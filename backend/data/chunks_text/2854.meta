@@ -1,0 +1,1 @@
+{"original_code": "def test_path_repr():\n    assert repr(Path()) == IsOneOf(\n        \"Path(PydanticUndefined)\",\n        # TODO: remove when deprecating Pydantic v1\n        \"Path(Ellipsis)\",\n    )\n    assert repr(Path(...)) == IsOneOf(\n        \"Path(PydanticUndefined)\",\n        # TODO: remove when deprecating Pydantic v1\n        \"Path(Ellipsis)\",\n    )"}

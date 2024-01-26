@@ -1,0 +1,1 @@
+- Retrieves a specific hero from the database using SQLAlchemy's `Session` and `get()` methods. - The ID of the hero to retrieve is hardcoded (9001). - Prints out the retrieved hero object in string format for debugging purposes.

@@ -1,0 +1,1 @@
+- Defines a method named `user()` that returns an instance of the `User` class with specific values for its attributes (`name` and `age`)

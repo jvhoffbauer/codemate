@@ -1,0 +1,2 @@
+- Creates a new access token with data containing 'foo' using the `create_access_token()` function from an external library or module (not specified)
+- Assigns the generated access token to the variable `access_token` and asserts that it is not null or empty

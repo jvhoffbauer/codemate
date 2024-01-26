@@ -1,0 +1,1 @@
+- Tests the `validator_skip_blank()` function with a non-empty string argument of type `str`. - Asserts that the returned value is equal to the input string, indicating successful validation without skipping blank values.

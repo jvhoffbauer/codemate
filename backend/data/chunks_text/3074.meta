@@ -1,0 +1,1 @@
+{"original_code": "def test_router_b_a_override():\n    with client:\n        response = client.get(\"/b/a/override\")\n    assert response.content == b\"Hello B A\"\n    assert response.headers[\"content-type\"] == html_type"}

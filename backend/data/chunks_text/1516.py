@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a query parameter `q`.
+- The type of `q` is either a string or `None`, and it's required to have a minimum length of 3 characters (using Pydantic's `Annotated` decorator).
+- If `q` is not `None`, it updates a dictionary called `results` with a new key named 'q'. This allows us to pass the search term back in the response for further filtering by clients.

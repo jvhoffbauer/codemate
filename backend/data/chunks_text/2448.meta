@@ -1,0 +1,1 @@
+{"original_code": "def test_context_b():\n    response = client.get(\"/context_b\")\n    data = response.json()\n    assert data[\"context_b\"] == \"started b\"\n    assert data[\"context_a\"] == \"started a\"\n    assert state[\"context_b\"] == \"finished b with a: started a\"\n    assert state[\"context_a\"] == \"finished a\""}

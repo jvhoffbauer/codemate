@@ -1,0 +1,4 @@
+- Defines an asynchronous function `update_item` that takes several arguments and returns a dictionary called `results`.
+- The `*` before `item_id` indicates that it's a positional argument (required). Other arguments are optional with default values of `None`.
+- The `Annotated` decorator is used to add type hinting for the `importance` parameter using Pydantic's validation features. Here, we ensure that the value passed in is greater than zero.
+- If the `q` parameter is not `None`, its value will be added to the `results` dictionary under the key 'q'. This allows us to easily filter or search through our updated items later on.

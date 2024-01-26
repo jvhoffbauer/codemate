@@ -1,0 +1,1 @@
+{"original_code": "    async def parse_body(self, http_request) -> Any:\n        try:\n            req = await http_request.json()\n        except ValueError:\n            raise ParseError()\n        return req"}

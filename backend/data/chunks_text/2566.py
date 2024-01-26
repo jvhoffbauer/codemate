@@ -1,0 +1,1 @@
+- Tests if the custom response schema for 'Item' is correctly defined in the OpenAPI specification by making a GET request to '/openapi.json', checking the status code and comparing the JSON response with the expected schema.

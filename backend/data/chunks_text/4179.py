@@ -1,0 +1,3 @@
+- Tests that setting a negative price for an item results in a HTTP status code of 422 (Unprocessable Entity) and returns an error message indicating that input must be greater than zero.
+- Uses Pytest's `TestClient` to simulate sending a PUT request with a JSON body containing an invalid price (-3.0).
+- Asserts that the server responds with the expected error message using Pytest's built-in assertions. The error message includes details about the location of the error (the 'price' field within the 'item' object), as well as information about the validation constraint being violated ('greater_than').

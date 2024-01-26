@@ -1,0 +1,3 @@
+- Defines three event listeners using SQLAlchemy events `before_update`, `after_update`, and `set`.
+- The first two listeners increment a counter variable called `event_counter` when the corresponding event is triggered on an instance of `models.User`.
+- The third listener listens to the `set` event specifically on the attribute `username` of `models.User`. It also checks that the updated object is indeed an instance of `models.User`.

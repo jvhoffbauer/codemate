@@ -1,0 +1,1 @@
+{"original_code": "    @router.post(\n        \"/router\",\n        response_model=List[Item],\n        responses={404: {\"model\": List[Message]}},\n    )\n    def post_router(item1: Item, item2: Item):\n        return item1, item2  # pragma: nocover"}

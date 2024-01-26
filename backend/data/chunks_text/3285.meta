@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/users/me\")\ndef read_current_user(current_user: Optional[User] = Depends(get_current_user)):\n    if current_user is None:\n        return {\"msg\": \"Create an account first\"}\n    return current_user"}

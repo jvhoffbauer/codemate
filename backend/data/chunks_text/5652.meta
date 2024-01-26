@@ -1,0 +1,1 @@
+{"original_code": "    async def has_create_permission(\n        self, request: Request, obj: Optional[SchemaCreateT], **kwargs\n    ) -> bool:\n        return True"}

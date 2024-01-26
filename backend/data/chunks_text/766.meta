@@ -1,0 +1,1 @@
+{"original_code": "def downgrade() -> None:\n    op.drop_table(\"auth_refresh_token\")\n    op.drop_table(\"auth_user\")"}

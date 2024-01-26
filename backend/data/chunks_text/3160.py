@@ -1,0 +1,4 @@
+- This function tests the Swagger UI endpoint (/docs) using Flask's built-in `Client()`.
+- It asserts that the status code is 200 and checks the content type header.
+- The text of the response is checked for the presence of'swagger-ui-dist', which indicates that the Swagger UI files are being served correctly.
+- Finally, it prints out the base URL of the application and checks that a specific OAuth2 configuration parameter ('oauth2RedirectUrl') is not present in the HTML output, indicating that authentication is not required to access the Swagger UI.

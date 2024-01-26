@@ -1,0 +1,1 @@
+- This endpoint receives a message (represented by the `Msg` model) and its associated user (retrieved using FastAPI's dependency injection). - It sends this message to a Celery task called `test_celery`, which is defined in the `app.worker` module of our Celery app. - The function returns a simple success message.

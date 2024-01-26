@@ -1,0 +1,1 @@
+{"original_code": "@overload\ndef select(  # type: ignore\n    entity_0: _TScalar_0,\n    entity_1: _TScalar_1,\n    entity_2: _TScalar_2,\n    entity_3: _TScalar_3,\n) -> Select[Tuple[_TScalar_0, _TScalar_1, _TScalar_2, _TScalar_3]]:\n    ..."}

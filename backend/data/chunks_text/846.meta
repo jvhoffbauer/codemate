@@ -1,0 +1,1 @@
+{"original_code": "    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:\n        if self.root_path:\n            scope[\"root_path\"] = self.root_path\n        await super().__call__(scope, receive, send)"}

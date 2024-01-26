@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/synchronous-method-dependency\")\nasync def get_synchronous_method_dependency(\n    value: str = Depends(methods_dependency.synchronous),\n):\n    return value"}

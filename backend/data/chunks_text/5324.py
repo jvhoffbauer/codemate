@@ -1,0 +1,3 @@
+- Defines a function named `_bidx` that takes an optional argument `params`.
+- The `params` parameter is required to have a type of `Depends[BidxParams]`, which means it's a dependency provided by the `dependencies` module with a specific name (`BidxParams`) and can be used in other functions as well.
+- Inside the function, we simply return the value of the `indexes` attribute from the `params` object. This could potentially come from some external configuration or input data, but here we assume it's already available through the `params` dependency.

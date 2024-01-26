@@ -1,0 +1,1 @@
+{"original_code": "    async def handle_exception(self, exc) -> dict:\n        raise exc"}

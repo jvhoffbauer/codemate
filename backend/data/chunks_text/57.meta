@@ -1,0 +1,1 @@
+{"original_code": "    def _calculate_keys(\n        self: \"SQLModel\",\n        include: Optional[Mapping[Union[int, str], Any]],\n        exclude: Optional[Mapping[Union[int, str], Any]],\n        exclude_unset: bool,\n        update: Optional[Dict[str, Any]] = None,\n    ) -> Optional[AbstractSet[str]]:  # pragma: no cover\n        return None"}

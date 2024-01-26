@@ -1,0 +1,1 @@
+{"original_code": "    def f(r):\n        return get_gdal_config(\"GDAL_DISABLE_READDIR_ON_OPEN\")"}

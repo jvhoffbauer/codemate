@@ -1,0 +1,1 @@
+- Tests if optional query parameter 'query' with value 'baz' is passed to endpoint '/query/optional'. - Verifies that the status code of the API response is 200 OK. - Asserts that the expected string 'foo bar baz' is returned in the JSON body of the response.

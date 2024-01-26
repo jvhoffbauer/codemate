@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/query\")\ndef read_query(q: Union[str, None]):\n    return q"}

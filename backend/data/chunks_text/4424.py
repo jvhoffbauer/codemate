@@ -1,0 +1,3 @@
+- Defines a function `get_client()` that imports and returns an instance of Flask's test client for the application defined in `docs_src/dependencies/tutorial004_py310`.
+- The imported module is named `app`, which suggests it contains a Flask application object.
+- By returning the `TestClient` object, this function provides a convenient way to make requests against the application without having to create a new server or start one up each time.

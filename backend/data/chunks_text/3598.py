@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/mixed`.
+- Returns an instance of `Model3`, with specific fields included and excluded in the JSON response using `response_model_include` and `response_model_exclude`.
+- The nested object `ref2` is also returned as part of the `Model3` response, but its `baz` field is excluded from the JSON output.

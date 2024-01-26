@@ -1,0 +1,2 @@
+- Defines a GET request for endpoint `/b`.
+- Includes custom error responses using FastAPI's `responses` decorator. Specifically, returns an HTTP status of 502 (Bad Gateway) and provides a description of "Error 2". Also includes a generic response for any client errors in the 4xx range, providing a description of "Error with range, upper".

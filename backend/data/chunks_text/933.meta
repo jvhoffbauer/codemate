@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, errors: Sequence[Any], *, body: Any = None) -> None:\n        super().__init__(errors)\n        self.body = body"}

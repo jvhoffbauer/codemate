@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\n    \"/response_model_filtering_model-annotation_submodel-return_submodel\",\n    response_model=User,\n)\ndef response_model_filtering_model_annotation_submodel_return_submodel() -> DBUser:\n    return DBUser(name=\"John\", surname=\"Doe\", password_hash=\"secret\")"}

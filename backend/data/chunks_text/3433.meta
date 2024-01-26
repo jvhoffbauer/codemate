@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: APIRouter, max_content_size: Optional[int] = None):\n        self.app = app\n        self.max_content_size = max_content_size"}

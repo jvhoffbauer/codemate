@@ -1,0 +1,1 @@
+{"original_code": "async def server_error_handler(request: Request, exc: Exception):\n    \"\"\"Internal server exception.Output a json response and throw the exception again.\"\"\"\n    return make_error_response(\n        status=HTTP_500_INTERNAL_SERVER_ERROR,\n        msg=_(\"Internal server exception\"),\n        exc=exc,\n    )"}

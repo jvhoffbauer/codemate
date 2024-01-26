@@ -1,0 +1,3 @@
+- Defines a web socket endpoint at `/ws`.
+- Accepts incoming connections and waits for messages to be received using an infinite loop.
+- Sends back the message text that it receives from the client, formatted as a string with the original message enclosed in quotes.

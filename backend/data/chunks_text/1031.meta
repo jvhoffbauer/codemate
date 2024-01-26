@@ -1,0 +1,1 @@
+{"original_code": "        @classmethod\n        def _validate(cls, __input_value: Any, _: Any) -> str:\n            logger.warning(\n                \"email-validator not installed, email fields will be treated as str.\\n\"\n                \"To install, run: pip install email-validator\"\n            )\n            return str(__input_value)"}

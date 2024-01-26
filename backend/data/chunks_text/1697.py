@@ -1,0 +1,1 @@
+- Defines an asynchronous function named `create_item` that takes a required parameter `name` of type string. - The function returns a dictionary with a single key "name" and its corresponding value, which is the input argument `name`.

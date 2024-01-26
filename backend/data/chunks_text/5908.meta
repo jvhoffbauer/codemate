@@ -1,0 +1,1 @@
+{"original_code": "    async def _call(self, admin: ModelAdmin, request: Request, sel: Select) -> Select:\n        user = await admin.site.auth.get_current_user(request)\n        if not user:  # \u672a\u767b\u5f55\n            return sel.where(False)\n        column = getattr(admin.model, self.user_column)\n        return sel.where(column == getattr(user, self.user_attr))"}

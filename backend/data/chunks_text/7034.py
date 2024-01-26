@@ -1,0 +1,3 @@
+- This function handles a POST request to `/access-token`.
+- It returns an access token using FastAPI's built-in authentication and authorization library (Python Standard Library's `security`) based on the provided username and password from the `OAuth2PasswordRequestForm` dependency.
+- The returned object contains both the generated access token and its type ("bearer").

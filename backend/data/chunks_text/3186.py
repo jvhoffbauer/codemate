@@ -1,0 +1,1 @@
+- Defines a serialization method for a datetime field named 'dt_field' using Django Rest Framework's `@field_serializer` decorator. - The `serialize_dt_field` function takes in a datetime object (`dt`) and returns its ISO format string with microseconds truncated and time zone set to UTC using Python's built-in `datetime.timetzone` class (`timezone.utc`).

@@ -1,0 +1,3 @@
+- Endpoint to retrieve a list of all users (GET request)
+- Path: /users/
+- Returns an array containing two user names ("Rick" and "Morty") as strings

@@ -1,0 +1,2 @@
+- Defines a method `decr()` in the current class (presumably a model manager or mixin) that takes two arguments: `field`, which is the name of the field to decrement, and `value`, which is an optional integer specifying how much to decrease by (default is 1)
+- Uses Django's `UpdateQuerySet` object returned from calling `FilterQueryset().update()` with a dictionary containing the updated values for the specified field using Django's `F()` expression syntax to subtract the given `value`. The resulting query will update all matching records with the new value.

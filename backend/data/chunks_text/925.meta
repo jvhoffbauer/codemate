@@ -1,0 +1,1 @@
+{"original_code": "        def decorator(func: DecoratedCallable) -> DecoratedCallable:\n            self.add_event_handler(event_type, func)\n            return func"}

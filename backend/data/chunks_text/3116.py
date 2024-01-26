@@ -1,0 +1,3 @@
+- Defines a function `cookie_examples()` that takes an optional argument `data`.
+- If no value is provided for `data`, it sets its initial value to be a `Cookie` object with a default of `None`.
+- The `examples` attribute of this `Cookie` object is set to contain two strings ("cookie1" and "cookie2").

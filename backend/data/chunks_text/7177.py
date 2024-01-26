@@ -1,0 +1,4 @@
+- Defines a function `register_hook` that takes an instance of `FastAPI` as input and returns nothing (`None`)
+- Registers a middleware called `logger_request` using the `@app.middleware()` decorator
+- The `logger_request` middleware is executed before each request and after each response in the application's lifecycle
+- Inside the middleware, it logs some information about the request such as HTTP method, URL, headers, and client IP address to a log file or database for future analysis

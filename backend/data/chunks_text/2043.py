@@ -1,0 +1,3 @@
+- Retrieves configuration data for English documentation from a YAML file using `mkdocs.utils.yaml_load`.
+- Returns the retrieved configuration as a dictionary with keys and values of any type.
+- The function is named `get_en_config` to indicate that it returns configuration specific to the English version of the documentation.

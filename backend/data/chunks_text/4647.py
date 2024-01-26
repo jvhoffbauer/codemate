@@ -1,0 +1,2 @@
+- Tests retrieving user information with a valid token using GET request to /users/me endpoint
+- Asserts that status code is 200 and returns expected JSON data for user 'johndoe'

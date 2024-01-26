@@ -1,0 +1,1 @@
+- Tests if an inactive user (represented by a JWT token with username 'alice') can access their own user information using GET request to '/users/me' endpoint. - Verifies that the server returns HTTP status code 400 and error message "Inactive user" when attempting this action for an inactive user.

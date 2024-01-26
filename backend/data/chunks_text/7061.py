@@ -1,0 +1,4 @@
+- Defines a function `send_new_account_email` that takes two arguments (`email_to` and `username`) and returns nothing (`None`)
+- Sets variables for the project name, subject of the email, and path to the HTML email template
+- Uses the `open` function to read in the contents of the HTML email template file
+- Calls the `send_email` function from another module or library, passing in various parameters including the recipient's email address, subject line, HTML content, and some dynamic data (such as the project name, username, email address, and server host URL) stored in an environment dictionary

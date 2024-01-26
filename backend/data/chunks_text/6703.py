@@ -1,0 +1,3 @@
+- Tests a single error scenario using `pytest.raises()` to verify that an exception is raised and logged as expected by middleware functions.
+- Uses `assert_log_errors()` helper function to check if logs are written with specific markers during runtime errors.
+- Calls both entry and exit methods of middleware functions for each endpoint call in order to capture all relevant log messages.

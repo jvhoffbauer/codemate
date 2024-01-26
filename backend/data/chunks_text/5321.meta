@@ -1,0 +1,1 @@
+{"original_code": "    @dataclass\n    class dep(dependencies.DefaultDependency):\n        v: int"}

@@ -1,0 +1,4 @@
+- Defines a new PyTest fixture named `prepare`.
+- The `preparre` fixture is dependent on another fixture called `clear_sqlmodel`, which suggests that it cleans up some data or state before running tests.
+- Inside the `prepare` fixture, we reload the module containing our application (`app_mod`) using Python's built-in `importlib.reload()` function. This may trigger any necessary initialization or registration steps for our SQLModel tables.
+- By calling this fixture before the main test session fixture (presumably `session_fixture`), we ensure that all required setup happens before the actual testing begins.

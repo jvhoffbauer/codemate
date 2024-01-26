@@ -1,0 +1,3 @@
+- Tests if accessing a protected resource without an OAuth2 bearer token results in a 403 Forbidden status and a detailed error message.
+- Uses Flask's built-in `client` object to simulate HTTP requests from outside the application.
+- Verifies that the server returns the expected JSON response with an appropriate error detail.

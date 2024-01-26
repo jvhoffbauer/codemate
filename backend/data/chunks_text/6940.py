@@ -1,0 +1,3 @@
+- Defines an asynchronous function `create_task` that takes a string argument `message`.
+- Uses Redis's `enqueue_job()` method to add a new task with label "test_task" and payload `message` to the queue managed by the connection pool provided by Redis.
+- Returns a dictionary containing the ID of the newly created job.

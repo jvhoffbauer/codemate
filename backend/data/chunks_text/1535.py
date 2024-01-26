@@ -1,0 +1,3 @@
+- Defines an endpoint `/items/` with GET request using FastAPI's decorator syntax
+- Uses Pydantic's Query class to parse query parameters and validate them against specific constraints (e.g., minimum length, maximum length, regular expression)
+- Returns a JSON response containing a list of item objects with optional query filtering based on user input

@@ -1,0 +1,1 @@
+{"original_code": "    def inner(*a, **kw):\n        hub = sentry_sdk.Hub.current\n        client = sentry_sdk.Client(*a, **kw)\n        hub.bind_client(client)\n        if \"transport\" not in kw:\n            monkeypatch_test_transport(sentry_sdk.Hub.current.client)"}

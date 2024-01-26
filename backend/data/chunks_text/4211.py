@@ -1,0 +1,4 @@
+- This function tests sending a notification to an email address and logging its execution.
+- If a file named 'log.txt' exists, it is deleted before running the test (skipped by coverage tool).
+- The function sends a POST request to '/send-notification/foo@example.com', expects a status code of 200, and checks that the JSON response contains the expected message.
+- It also reads the contents of 'log.txt' after the request and verifies that they contain a specific string indicating successful notification delivery.

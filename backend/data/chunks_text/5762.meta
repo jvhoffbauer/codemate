@@ -1,0 +1,1 @@
+{"original_code": "    async def get_list_filter(\n        self, request: Request\n    ) -> List[Union[SqlaField, FormItem]]:\n        return self.list_filter or list(model_fields(self.schema_filter).values())"}

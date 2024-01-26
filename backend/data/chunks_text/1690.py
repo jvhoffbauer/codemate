@@ -1,0 +1,3 @@
+- This function is a PUT request handler for updating an existing item with ID `item_id`.
+- The `Annotated` decorator from FastAPI's built-in type hinting system is used to validate and parse the incoming JSON body as an instance of the `Item` model (defined elsewhere).
+- The updated item object is returned in a dictionary along with its original ID.

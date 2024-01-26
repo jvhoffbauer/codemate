@@ -1,0 +1,3 @@
+- Tests authentication with a token that doesn't have the required `sub` (subject) claim for accessing user information.
+- Sends an HTTP GET request to the `/users/me` endpoint with the provided authorization header and expects a 401 Unauthorized status code.
+- Verifies that the response body contains the expected error message ("Could not validate credentials") and checks the WWW-Authenticate header value, which should contain the Bearer scheme and specify the required scope ('scope="me"').

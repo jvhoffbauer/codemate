@@ -1,0 +1,1 @@
+{"original_code": "    def registered_admin_actions(self) -> Dict[str, \"AdminAction\"]:\n        admin_actions = {}\n        for maker in self.admin_action_maker:\n            admin_action = maker(self)\n            if admin_action:\n                admin_actions[admin_action.name] = admin_action\n        return admin_actions"}

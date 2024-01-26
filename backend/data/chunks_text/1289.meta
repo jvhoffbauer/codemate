@@ -1,0 +1,1 @@
+{"original_code": "async def create_files(\n    files: List[bytes] = File(description=\"Multiple files as bytes\"),\n):\n    return {\"file_sizes\": [len(file) for file in files]}"}

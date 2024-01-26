@@ -1,0 +1,3 @@
+- Defines a function called `no_response_model_annotation_union_return_model2`.
+- The function returns an object of type `Union[User, Item]`, which is either a `User` or an `Item`.
+- If the returned value is an `Item`, it has two attributes - 'name' and 'price'. In this case, we are returning an `Item` with name "Foo" and price 42.0.

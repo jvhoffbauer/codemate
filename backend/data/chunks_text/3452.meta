@@ -1,0 +1,1 @@
+{"original_code": "def test_security_api_key_no_key():\n    client = TestClient(app)\n    response = client.get(\"/users/me\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"msg\": \"Create an account first\"}"}

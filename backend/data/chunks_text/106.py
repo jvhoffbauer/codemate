@@ -1,0 +1,1 @@
+- Adds one or more expressions to the HAVING clause of a SELECT statement using SQLAlchemy's Select class. - Joins the new expressions to the current HAVING clause (if present) using logical AND operator. - Returns a new instance of Select with updated HAVING clause.

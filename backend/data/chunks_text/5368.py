@@ -1,0 +1,4 @@
+- Sets environment variable `GDAL_DISABLE_READDIR_ON_OPEN` to a custom value using `monkeypatch`.
+- Creates an instance of FastAPI and defines multiple endpoints that use GDAL configuration settings.
+- Tests each endpoint separately using PyTest's built-in testing framework (client).
+- Confirms that synchronous requests always override the environment variable set by `monkeypatch`, while asynchronous requests respect it.

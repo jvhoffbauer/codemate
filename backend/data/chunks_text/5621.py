@@ -1,0 +1,6 @@
+- Defines a method `route_update` that returns a callable function (a coroutine).
+- The returned coroutine is called `route`, and it takes three arguments: `Request`, `item_id` list, and `data`.
+- Checks for permission to update using `await has_update_permission(request, item_id, data)`. If no permission, returns an error response.
+- Applies preprocessing logic with `await on_update_pre(request, data, item_id=item_id)`. If empty result, returns an error response.
+- Updates the specified items using `update_items(request, item_id, values)`. Returns updated items.
+- Responds with the number of updated items as JSON payload.

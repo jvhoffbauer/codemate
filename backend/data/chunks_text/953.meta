@@ -1,0 +1,1 @@
+{"original_code": "    def _get_model_config(model: BaseModel) -> Any:\n        return model.model_config"}

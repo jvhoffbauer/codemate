@@ -1,0 +1,3 @@
+- Tests whether admin deleting authority is intercepted by checking HTTP status code and JSON response code
+- Uses `TestClient` from Flask's testing module to simulate a request with specific parameters (authority ID, path, method) and headers (superuser token)
+- Asserts that the expected HTTP status code and JSON response code are returned upon successful execution of the test case

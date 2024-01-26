@@ -1,0 +1,8 @@
+- Creates a temporary directory using `pytest.TempPathFactory`.
+- Changes working directory (`os.chdir`) to the newly created temp dir.
+- Initializes an SQLite database in this new directory, deleting any existing file by checking for its existence and removing it.
+- Imports the main function of the SQL app module, which creates the necessary tables when executed. This is done inside the fixture so that the table creation happens at the start of each test case.
+- Reloads the imported module to ensure all imports happen freshly during every test run.
+- Yields the Flask test client object, allowing other tests to use it.
+- Deletes the SQLite database again at the end of the fixture's execution.
+- Restores the original working directory before returning control back to PyTest.

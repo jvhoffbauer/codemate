@@ -1,0 +1,4 @@
+- Initializes a new asynchronous function `routerindex2`.
+- Accepts an incoming web socket connection and waits for it to be accepted using `await websocket.accept()`.
+- Sends a text message "Hello, router!" to the connected client via `await websocket.send_text("Hello, router!")`.
+- Closes the web socket connection after sending the message using `await websocket.close()`.

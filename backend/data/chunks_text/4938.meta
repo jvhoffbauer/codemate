@@ -1,0 +1,1 @@
+{"original_code": "def get_server_api():\n    server_name = f\"http://{config.SERVER_NAME}\"\n    return server_name"}

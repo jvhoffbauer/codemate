@@ -1,0 +1,1 @@
+{"original_code": "    def get_resp_model(cls):\n        if cls.__dict__.get(\"resp_model\") is not None:\n            return cls.resp_model\n        cls.resp_model = cls.build_resp_model()\n        return cls.resp_model"}

@@ -1,0 +1,4 @@
+- Updates item with ID 6 using PUT request
+- New values for name, price, description, and tax are provided in JSON format
+- Response status is checked to ensure successful update
+- Updated item data is verified against expected result

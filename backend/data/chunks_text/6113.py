@@ -1,0 +1,1 @@
+- Listens for the `before_update` event of SQLAlchemy's User model using Flask-Login's `@event.listens_for()` decorator. - Checks if the updated object is an instance of the User model using Python's built-in `isinstance()`. - Increments a counter variable named `event_counter.before` when the `before_update` event occurs.

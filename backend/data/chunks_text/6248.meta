@@ -1,0 +1,1 @@
+{"original_code": "    async def text(self):\n        return self.read_file(self.state)"}

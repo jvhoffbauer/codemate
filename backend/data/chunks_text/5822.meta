@@ -1,0 +1,1 @@
+{"original_code": "    async def get_page(self, request: Request) -> Union[Page, App]:\n        if self.page_schema.tabsMode is None:\n            return await self._get_page_as_app(request)\n        return await self._get_page_as_tabs(request)"}

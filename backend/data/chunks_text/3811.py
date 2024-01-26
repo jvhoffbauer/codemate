@@ -1,0 +1,1 @@
+- This function tests a GET request to a URL with optional query parameters using Flask's built-in testing client. - It asserts that the status code of the response is 200 and saves its text for debugging purposes if the assertion fails. - The JSON body of the response is compared against an expected value (provided in `data`) using Python's built-in json module.

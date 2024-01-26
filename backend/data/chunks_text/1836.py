@@ -1,0 +1,4 @@
+- Defines a web socket endpoint with the path `/items/{item_id}/ws`.
+- Accepts parameters such as `item_id`, `q`, and `cookie_or_token`.
+- Uses dependency injection to retrieve session information from a function called `get_cookie_or_token`.
+- Sends messages back to the client containing various pieces of information based on received input.

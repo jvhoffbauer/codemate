@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes two optional arguments: `item_id` and `q`.
+- Uses Pydantic's `Path` and `Query` decorators to validate and parse input values for these arguments.
+- Returns a dictionary called `results`, which contains either just the `item_id` or both `item_id` and `q`, depending on whether they were provided in the argument list.

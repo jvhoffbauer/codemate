@@ -1,0 +1,1 @@
+{"original_code": "    async def json(self):\n        return await self.request.json()"}

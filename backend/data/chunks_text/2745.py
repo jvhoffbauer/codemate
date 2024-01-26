@@ -1,0 +1,2 @@
+- Tests a Flask route with `ResponseModel` annotation that returns the same model as input (no transformation)
+- Sends a GET request to the route and checks for expected status code and JSON response body

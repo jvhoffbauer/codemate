@@ -1,0 +1,1 @@
+- This method, `profile()`, returns the default image profile for a specific raster data format handled by the `rio-tiler` library (stored in the `img_profiles` dictionary). - If the requested format is not recognized by `rio-tiler`, an empty dictionary is returned instead of raising an error or exception.

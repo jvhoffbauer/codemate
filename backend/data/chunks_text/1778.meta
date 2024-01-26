@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/users/{username}\", response_model=User)\ndef read_user(username: str):\n    bucket = get_bucket()\n    user = get_user(bucket=bucket, username=username)\n    return user"}

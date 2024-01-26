@@ -1,0 +1,3 @@
+- Initializes SQLAlchemy engine with an in-memory database and sets it as a global variable for the application module (`app_mod`)
+- Calls `on_startup()`, which is assumed to be a method defined elsewhere that performs some startup tasks, possibly including creating tables or loading data from external sources
+- Creates an instance of SQLAlchemy's `Inspector` class to check if a table exists in the database using its name obtained dynamically through introspection of the Hero model (assuming there is such a model defined in the same module)

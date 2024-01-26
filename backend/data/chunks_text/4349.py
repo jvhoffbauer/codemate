@@ -1,0 +1,3 @@
+- Tests the `/items/` endpoint using a `TestClient`.
+- Asserts that the status code is 200 and checks the JSON response body.
+- Verifies that the application shuts down by checking for a specific string in the logs.

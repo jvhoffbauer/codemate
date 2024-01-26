@@ -1,0 +1,3 @@
+- This method is called when an attribute of the object is assigned a new value (i.e., `obj.attribute = new_value`)
+- It saves the updated value in a dictionary stored inside another object (_state) instead of directly setting it on the instance itself
+- The reason for this behavior could be to provide some kind of state management or persistence mechanism within the class design

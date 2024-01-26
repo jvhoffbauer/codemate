@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/files/\")\nasync def create_file(file: Annotated[bytes | None, File()] = None):\n    if not file:\n        return {\"message\": \"No file sent\"}\n    else:\n        return {\"file_size\": len(file)}"}

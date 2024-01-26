@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items` that returns a list of dictionaries containing item names and prices using a generator expression. - The returned values are typed with the `Any` type hint, indicating that this function can potentially return any object (in practice, it will always be a list).

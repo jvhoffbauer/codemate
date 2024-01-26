@@ -1,0 +1,2 @@
+- Creates a new channel with name 'test channel', slug 'test_channel_slug' and currency 'USA'. Asserts that ID is returned.
+- Updates the created channel to disable it (sets `isActive=False`) while keeping other details intact. Asserts that updated status is reflected in response.

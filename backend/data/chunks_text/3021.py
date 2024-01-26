@@ -1,0 +1,3 @@
+- Override `common_parameters` dependency with a subclass that adds an additional parameter in `test_override_with_sub_decorator_depends`.
+- Make a GET request to `"/decorator-depends/"`, expecting a validation error due to missing query parameter 'k'.
+- Verify the HTTP status code and JSON response body matches expected format for both Pydantic v1 and current versions (using `IsDict` from `asgi_testing`).

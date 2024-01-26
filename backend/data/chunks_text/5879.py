@@ -1,0 +1,3 @@
+- Decorates a method with `@cached_property`.
+- Caches the result of calling `get_permission_fields()` with "create" as an argument and returns it when called again.
+- Creates permission fields for creating objects based on the returned dictionary from `get_permission_fields()`.

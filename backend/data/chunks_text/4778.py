@@ -1,0 +1,3 @@
+- Sends an email to a new user's email address containing their username and temporary password.
+- The email includes information about the project name and provides a link to access the application.
+- Uses Flask-Mailer to handle sending the email using a customized HTML template and dynamic variables from the environment dictionary.

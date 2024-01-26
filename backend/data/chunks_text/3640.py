@@ -1,0 +1,1 @@
+- Tests `main.py`'s `get_settings()` function by setting an environment variable and checking specific values in the resulting Settings object. - Uses Pytest's `MonkeyPatch` fixture to simulate modifying environment variables during testing, which can be useful for testing how your app behaves with different configurations without actually changing the real environment.

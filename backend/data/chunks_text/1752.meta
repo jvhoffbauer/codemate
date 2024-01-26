@@ -1,0 +1,1 @@
+{"original_code": "def say_hi(name: Optional[str]):\n    print(f\"Hey {name}!\")"}

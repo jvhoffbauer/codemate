@@ -1,0 +1,3 @@
+- This method is called when a `FormWidget`'s value changes or is accessed (i.e., its `__get__()` and `__set__()` methods are called).
+- It takes two arguments: the new value of the widget (`value`) and an optional language string for translation purposes (`language`).
+- The method returns the translated version of the value using the `gettext()` function from the Babel library, which handles internationalization and localization.

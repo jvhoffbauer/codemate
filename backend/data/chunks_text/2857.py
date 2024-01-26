@@ -1,0 +1,1 @@
+- Tests whether `Query(...)` is correctly represented as a combination of `IsOneOf("Query(PydanticUndefined)")` and `"Query(Ellipsis)"` (to be removed in future versions). - Uses the `assert` statement to verify that the expected string representation matches the actual one returned by the `repr()` function for an instance of the `Query` class with ellipsis values.

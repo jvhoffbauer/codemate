@@ -1,0 +1,3 @@
+- Defines a new FastAPI route for receiving notifications about specific invoices using HTTP POST requests to `/$callback_url/invoices/${invoice_ID}`
+- Uses the `@invoices_callback_router.post()` decorator to register this endpoint with the `invoices_callback_router`, which is likely an instance of FastAPI's built-in router class (e.g., `FastAPIRouter`)
+- Specifies that the expected request body format should match the structure defined by the `InvoiceEvent` model, and returns a response in the form of another custom data type called `InvoiceEventReceived`. This suggests that some kind of event notification or update message will be sent back as part of the API interaction.

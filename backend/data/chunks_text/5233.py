@@ -1,0 +1,3 @@
+- Defines a dataclass `ExpressionParams` that inherits from `DefaultDependency`, which is used to provide default values for command line arguments and configuration options.
+- Contains an optional query parameter called `expression` with a customized title, description, and example inputs. The `Query` decorator allows users to specify this argument when running the program or configuring it through a file format like YAML or JSON.
+- Allows multiple bands to be specified using semicolons as separators in the `multi-bands` example input. This feature could potentially enable more complex calculations involving multiple bands within rio-tiler.

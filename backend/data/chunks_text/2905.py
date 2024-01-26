@@ -1,0 +1,1 @@
+- This function tests strict login with password grant type using Flask's built-in `Client` class to simulate a request from an external application. - The expected status code is 200 (OK) and the JSON response contains the requested fields for username, password, grant type, scopes, client ID, and client secret, all set as expected based on the input parameters.

@@ -1,0 +1,2 @@
+- Defines a GET request for the URL "/route1" using FastAPI's decorator syntax (@app.get)
+- Returns a string response with the message "I am tired" when the endpoint is accessed

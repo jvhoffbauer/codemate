@@ -1,0 +1,1 @@
+- Tests GET request to /items/validlist endpoint with expected JSON response containing a list of items with aliased names, prices, and owner IDs (if any)

@@ -1,0 +1,3 @@
+- This function `available_assets()` returns a list of supported assets for a given input file path (specified by `src_path`) and optional parameters passed to the data reader (specified by `reader_params`).
+- The environment dependency (specified by `env`) is also passed in and used within the context manager provided by RasterIO's Env class.
+- Within this context manager, the data reader (specified by `self.reader`) is called with both the input file path and any necessary reader parameters, and its `assets` attribute is returned.

@@ -1,0 +1,1 @@
+{"original_code": "    def load_dialect_impl(self, dialect: Dialect) -> \"types.TypeEngine[Any]\":\n        impl = cast(types.String, self.impl)\n        if impl.length is None and dialect.name == \"mysql\":\n            return dialect.type_descriptor(types.String(self.mysql_default_length))\n        return super().load_dialect_impl(dialect)"}

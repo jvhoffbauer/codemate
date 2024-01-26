@@ -1,0 +1,1 @@
+{"original_code": "def resp_ok(*, code=0, msg=\"ok\", data: Union[list, dict, str] = None) -> dict:\n    return {\"code\": code, \"msg\": msg, \"data\": data}"}

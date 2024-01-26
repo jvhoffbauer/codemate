@@ -1,0 +1,3 @@
+- Tests whether a regular user can be created with superuser privileges using `crud.user.create`.
+- Asserts that the newly created user's superuser status should not be set to true after creation.
+- Uses `random_email` and `random_lower_string` functions for generating unique values in tests.

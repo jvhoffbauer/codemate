@@ -1,0 +1,3 @@
+- Tests if sending an invalid X-Token header in a PUT request results in a HTTP status code of 400 Bad Request and an error message containing 'X-Token header invalid' in the JSON body.
+- Uses FastAPI's built-in `TestClient` to simulate making requests against our API endpoints for testing purposes.
+- Asserts that the expected behavior is met by comparing the actual response object with the desired outcome using Python's built-in `assert`.

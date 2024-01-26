@@ -1,0 +1,1 @@
+{"original_code": "    def register_router(self):\n        if not self.__register_lock:\n            super(AdminApp, self).register_router()\n            self._create_admin_instance_all()\n            self._register_admin_router_all_pre()\n            self._register_admin_router_all()\n            self.__register_lock = True\n        return self"}

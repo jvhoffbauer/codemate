@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def router_prefix(self):\n        return f\"/{self.__class__.__name__}\""}

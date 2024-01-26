@@ -1,0 +1,1 @@
+{"original_code": "    def __post_init__(self):\n        \"\"\"Post Init.\"\"\"\n        if not self.bands and not self.expression:\n            raise MissingBands(\n                \"bands must be defined either via expression or bands options.\"\n            )"}

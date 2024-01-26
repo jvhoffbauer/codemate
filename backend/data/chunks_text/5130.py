@@ -1,0 +1,3 @@
+- Tests `stacExtension`, which adds a STAC API endpoint to GeoServer's FastAPI server
+- Verifies that adding this extension increases the number of routes by 1
+- Makes requests to the new STAC endpoint and checks for correct responses based on various parameters such as URL, ID, datetime range, and asset media type

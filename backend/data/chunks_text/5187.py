@@ -1,0 +1,3 @@
+- This function takes in a GeoJSON feature and generates an image based on it using RasterIO library.
+- It allows for customization of various parameters such as output image format, rescaling, color formulas, colormaps, and rendering options through dependencies.
+- The function returns the generated image as a response with appropriate headers based on the chosen output format.

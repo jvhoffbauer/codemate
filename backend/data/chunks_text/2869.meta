@@ -1,0 +1,1 @@
+{"original_code": "def test_cookie_repr_list():\n    assert repr(Cookie([])) == \"Cookie([])\""}

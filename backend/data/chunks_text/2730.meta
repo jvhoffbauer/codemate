@@ -1,0 +1,1 @@
+{"original_code": "def no_response_model_annotation_json_response_class() -> JSONResponse:\n    return JSONResponse(content={\"foo\": \"bar\"})"}

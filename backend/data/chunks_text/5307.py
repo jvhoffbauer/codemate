@@ -1,0 +1,1 @@
+- Initializes `nodata`, a class attribute representing missing data, after object initialization using the `__post_init__()` method. - Checks whether `nodata` has been provided as an argument during object creation and assigns it either as `numpy.nan` or a floating point number based on its value (either 'nan' or another numeric value).

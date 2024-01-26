@@ -1,0 +1,1 @@
+{"original_code": "@celery.task(name=\"test_celery\")\ndef test_celery(word: str) -> str:\n    f = f\"test_celery {word}\"\n    print(f)\n    return f"}

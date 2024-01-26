@@ -1,0 +1,4 @@
+- Defines a function `test_invalid_sequence` for testing an invalid sequence in FastAPI using PyTest's `with pytest.raises()`.
+- Creates a new instance of FastAPI called `app`.
+- Defines a model `Item` that inherits from Pydantic's `BaseModel`, which has a required field `title` of type string.
+- Defines a route decorated with `@app.get()` named `read_items` that takes a parameter `id` of type list of items, and passes control to the next statement without executing any statements (using `pass`) to avoid running this function during tests (using `pragma: no cover`).

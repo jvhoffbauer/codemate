@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/no-alias/dict\", response_model=ModelNoAlias)\ndef no_alias_dict():\n    return {\"name\": \"Foo\"}"}

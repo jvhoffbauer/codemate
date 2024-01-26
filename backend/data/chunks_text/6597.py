@@ -1,0 +1,3 @@
+- This function is a pytest parameterized test with two input values for `request_id`.
+- It uses the `echo` fixture to simulate an external service and checks that its history matches the expected value.
+- The `json_request()` function sends a JSON RPC request using the provided parameters and asserts that the response contains the correct data.

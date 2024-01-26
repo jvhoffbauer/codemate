@@ -1,0 +1,3 @@
+- Retrieves discussions related to Stack Overflow questions using GraphQL API
+- Takes `Settings`, `after` (optional cursor for pagination), and returns a list of discussion edges with their corresponding nodes
+- Uses helper function `get_graphql_response()` to make GraphQL request and parse response

@@ -1,0 +1,2 @@
+- Endpoint for creating multiple images at once using a `list` of `Image` objects as input
+- Returns the list of created images in response body

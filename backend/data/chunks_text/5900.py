@@ -1,0 +1,4 @@
+- Adds permissions filters to `sel`, a select object passed as an argument
+- Loops through all select permissions and checks whether they are instances of `SelectPerm`
+- If so, calls their corresponding functions with arguments (`self`, `request`, and `sel`) and returns the modified `sel` object
+- The function waits for coroutines using `asyncio.iscoroutine()` before returning them

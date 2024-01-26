@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with a `name` parameter passed in as an argument. - Sets the value of the `name` attribute to the provided `name`. - Follows Python's object-oriented programming (OOP) conventions by using a constructor method named `__init__()`.

@@ -1,0 +1,1 @@
+{"original_code": "    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:\n        await super().__call__(scope, receive, send)\n        if self.exc is not None:\n            raise self.exc"}

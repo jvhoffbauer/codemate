@@ -1,0 +1,1 @@
+{"original_code": "        @factory.router.get(\"/validate\", response_model=Info)\n        def validate(\n            src_path: str = Depends(factory.path_dependency),\n            strict: bool = Query(False, description=\"Treat warnings as errors\"),\n        ):\n            \"\"\"Validate a COG\"\"\"\n            return cog_info(src_path, strict=strict)"}

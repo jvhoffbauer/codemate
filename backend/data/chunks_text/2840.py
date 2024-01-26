@@ -1,0 +1,3 @@
+- Tests if `multipart` package is not installed and raises a `RuntimeError` with specific error message using PyTest's `monkeypatch`.
+- Defines a simple route that accepts an upload file using FastAPI's built-in `UploadFile` decorator from `starlette.responses`.
+- Returns the uploaded file as response to demonstrate successful handling of multipart requests (covered by other tests).

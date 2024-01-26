@@ -1,0 +1,1 @@
+{"original_code": "        def __post_init__(self) -> None:\n            self._type_adapter: TypeAdapter[Any] = TypeAdapter(\n                Annotated[self.field_info.annotation, self.field_info]\n            )"}

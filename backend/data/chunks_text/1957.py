@@ -1,0 +1,1 @@
+- This function is a route decorator for the root URL (/) in FastAPI. - It returns a `FileResponse`, which sends the contents of a file to the client as a response, instead of rendering HTML or JSON data. - The path to the file is passed as an argument to `FileResponse`.

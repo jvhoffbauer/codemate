@@ -1,0 +1,3 @@
+- This endpoint returns a dictionary instead of an instance of `User`, which is expected by FastAPI's default response schema (as specified in the function signature).
+- The returned dictionary doesn't match the structure defined by the `User` class, causing issues with deserialization and validation.
+- To avoid these problems, it's recommended to always adhere to the expected data types and structures when returning responses from endpoints.

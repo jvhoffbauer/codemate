@@ -1,0 +1,1 @@
+- This method is called when an iterator is needed from the object (e.g., when using a `for` loop). - It returns a generator expression that yields tuples containing each key and value pair from the object's dictionary attribute. - The `__dict__` attribute of the class instance is used to access its attributes as if they were variables within a dictionary.

@@ -1,0 +1,1 @@
+{"original_code": "    def update_from_dict(self, kwargs: Dict[str, Any]):\n        for k, v in kwargs.items():\n            setattr(self, k, v)\n        return self"}

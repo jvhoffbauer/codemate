@@ -1,0 +1,1 @@
+{"original_code": "def select_heroes():\n    with Session(engine) as session:\n        statement = select(Hero).where((Hero.age <= 35) | (Hero.age > 90))\n        results = session.exec(statement)\n        for hero in results:\n            print(hero)"}

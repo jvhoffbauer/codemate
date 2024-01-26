@@ -1,0 +1,2 @@
+- Tests GET request to `/users/{user_id}/items` endpoint with user ID 'abc123'
+- Asserts status code is 200 and response body contains an array of items belonging to user 'abc123', where item ID is 'i2'

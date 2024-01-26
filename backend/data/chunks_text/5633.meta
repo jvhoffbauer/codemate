@@ -1,0 +1,1 @@
+{"original_code": "    def schema_name_prefix(self):\n        return self.__class__.__name__"}

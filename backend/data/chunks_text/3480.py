@@ -1,0 +1,3 @@
+- This function, named `dependency_list`, returns an empty list of strings when called.
+- It follows Python's naming conventions for functions by starting with a lowercase letter and using snake_case.
+- The function has one parameter (none) and uses type hinting to specify that it will return a list of strings (List[str]).

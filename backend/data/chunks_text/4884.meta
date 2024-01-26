@@ -1,0 +1,1 @@
+{"original_code": "def get_allowed_username(username):\n    chars_to_remove = '()<>@,;:\"/\\[]?={}'\n    modified_username = username\n    for char in chars_to_remove:\n        modified_username = modified_username.replace(char, \"-\")\n    return modified_username"}

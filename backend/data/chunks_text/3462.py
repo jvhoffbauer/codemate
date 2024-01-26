@@ -1,0 +1,1 @@
+- This function raises an `HTTPException` with a status code of 204 (No Content). - In FastAPI, this exception is used to return a response without any body content when there's nothing new to send back to the client. - It can be called instead of returning an empty dictionary or list from a route handler for better consistency and clarity in API design.

@@ -1,0 +1,1 @@
+{"original_code": "def test_dummy_callback():\n    # Just for coverage\n    invoice_notification({})"}

@@ -1,0 +1,3 @@
+- This endpoint retrieves a specific pet with ID `pet_id`.
+- The returned data is formatted according to the `PetOut` model, which defines the expected shape of the JSON response.
+- Before returning the pet object, it creates a new `UserDB` and `PetDB` instance for demonstration purposes. These classes are not part of the actual application logic but rather used as examples here.

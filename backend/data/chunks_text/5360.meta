@@ -1,0 +1,1 @@
+{"original_code": "    def main(algorithm=Depends(algorithms.dependency)):\n        \"\"\"endpoint.\"\"\"\n        img = ImageData(arr)\n        if algorithm:\n            return algorithm(img).data.max().tolist()\n\n        return img.data.max().tolist()"}

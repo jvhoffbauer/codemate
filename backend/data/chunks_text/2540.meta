@@ -1,0 +1,1 @@
+{"original_code": "async def router_ws_custom_error(websocket: WebSocket):\n    raise CustomError()"}

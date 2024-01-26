@@ -1,0 +1,2 @@
+- Defines a route for GET requests to `/items/`.
+- Returns a JSON response with the key-value pair `{"hello": "world"}`.

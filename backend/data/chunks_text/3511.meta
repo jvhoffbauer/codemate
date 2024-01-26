@@ -1,0 +1,1 @@
+{"original_code": "        async def read_items(\n            q: Annotated[str | None, Form(regex=\"^fixedquery$\")] = None\n        ):\n            if q:\n                return f\"Hello {q}\"\n            else:\n                return \"Hello World\""}

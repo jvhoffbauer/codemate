@@ -1,0 +1,1 @@
+- Creates a function called `api_client()` that returns an instance of FastAPI's built-in testing client, `TestClient`. - Explains that this testing client is implemented using Python's popular HTTP request library, Requests.

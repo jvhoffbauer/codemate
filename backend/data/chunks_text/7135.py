@@ -1,0 +1,4 @@
+- Defines a class method `single_by_phone` that takes an optional argument `phone`.
+- Retrieves all user records from the database using SQLAlchemy's `select` statement and stores it in variable `db`.
+- Filters the results based on the value of `phone`, which is passed as an argument to the function. If no value for `phone` is provided (i.e., default value of zero), then all users are returned.
+- Returns the first record found after filtering or None if there are no matches.

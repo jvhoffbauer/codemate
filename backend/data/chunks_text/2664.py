@@ -1,0 +1,3 @@
+- Defines a function called `response_model_no_annotation_return_same_model()`.
+- The function returns an instance of the `User` class with name "John" and surname "Doe".
+- This implementation doesn't use Pydantic's model annotations to define the returned type, instead it directly returns the same `User` model used in the arguments.

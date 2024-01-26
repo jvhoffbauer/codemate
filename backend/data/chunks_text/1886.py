@@ -1,0 +1,1 @@
+- Defines a function `read_items` that returns a list of `Item` objects using type annotations for clarity and consistency. - Inside the function, creates two instances of `Item` with their respective attributes initialized in the constructor. - The items are then returned as a single list from the function.

@@ -1,0 +1,3 @@
+- Defines a new route for GET requests to `/two`.
+- Returns the string `'two'` as response body when the route is accessed.
+- Provides a docstring with a brief description of what the function does.

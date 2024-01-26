@@ -1,0 +1,1 @@
+{"original_code": "    def _model_dump(\n        model: BaseModel, mode: Literal[\"json\", \"python\"] = \"json\", **kwargs: Any\n    ) -> Any:\n        return model.model_dump(mode=mode, **kwargs)"}

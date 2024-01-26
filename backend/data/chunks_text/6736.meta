@@ -1,0 +1,1 @@
+{"original_code": "        def append_envelope(envelope):\n            for item in envelope:\n                if item.headers.get(\"type\") in (\"event\", \"transaction\"):\n                    test_client.transport.capture_event(item.payload.json)\n            return old_capture_envelope(envelope)"}

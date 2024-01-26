@@ -1,0 +1,3 @@
+- Tests synchronous context behavior by raising an error in `/sync_context_b_raise`.
+- Asserts that `context_b` is finished and contains expected value, despite the raised error in `context_a`.
+- Verifies that `context_a` is also finished as expected.

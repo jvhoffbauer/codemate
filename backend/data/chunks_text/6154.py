@@ -1,0 +1,3 @@
+- Defines a task called `lint` using invoke's decorator syntax
+- Uses the `ctx` object to pass arguments and environment variables between tasks
+- Runs the pylint tool with the argument 'app', which is assumed to be the name of the Python module or package being checked for style errors

@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional query parameter named `ads_id`, which can be either a string or not specified at all (represented by `Union[str, None]`)
+- Uses FastAPI's built-in cookie handling feature to retrieve and pass along the value of the `ads_id` cookie if it exists in the client's session (using `Cookie(default=None)`)

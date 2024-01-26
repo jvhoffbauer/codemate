@@ -1,0 +1,3 @@
+- This endpoint returns a JSON response with the ID of the currently authenticated user when accessed using GET request to `/users/me`.
+- The function is decorated with `@app.get`, indicating that it handles GET requests.
+- It follows RESTful API design principles by returning data about a resource (the user) identified by its path component ("me").

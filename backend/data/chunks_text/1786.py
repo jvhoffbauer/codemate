@@ -1,0 +1,3 @@
+- Defines a function `get_settings_override()` that returns an instance of `Settings`.
+- The returned `Settings` object has its `admin_email` attribute set to "testing_admin@example.com".
+- This function can be used as an alternative to loading settings from a file or database, for testing purposes or in development environments where default values are preferred over production ones.

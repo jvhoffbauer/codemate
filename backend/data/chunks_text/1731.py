@@ -1,0 +1,3 @@
+- Defines a function `write_notification` that takes an email address (`str`) and an optional message (also `str`) as arguments.
+- Opens a file named "log.txt" in write mode using a context manager to ensure proper closing of the file handle.
+- Formats a string containing the notification details using f-strings and writes it to the opened file.

@@ -1,0 +1,3 @@
+- Creates a new instance of `AsyncClient` from the default app and sets its base URL to "http://test"
+- Uses an async context manager to automatically close the connection after use
+- Yields the created `AsyncClient` object for further usage in generator functions or coroutines

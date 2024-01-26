@@ -1,0 +1,1 @@
+- Resets `fake_database` and `state` variables to their original values (stored in `initial_fake_database` and `initial_state`, respectively) using dictionary copying for shallow copies. - Global keyword is used to make these variable changes visible outside of this function scope.

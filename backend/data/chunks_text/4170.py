@@ -1,0 +1,2 @@
+- This function tests the `GET /items/` endpoint using a Pytest fixture called `TestClient`.
+- It asserts that the status code is 200 and checks the JSON response against expected data.

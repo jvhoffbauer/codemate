@@ -1,0 +1,5 @@
+- Defines a function `route_list` that returns another function called `route`. This is likely used to define routes in FastAPI.
+- The `route` function takes several arguments including `Request`, `sel` which represents a SQLAlchemy query, and `paginator` which contains options for pagination such as page size and current page number.
+- It also accepts an optional argument `filters` containing filter criteria passed through the API body.
+- If permission checks pass, it sets up the list schema with initial values and applies any necessary filters before executing the query using SQLAlchemy's `async_execute` method.
+- Finally, it passes the results back to the caller after applying any post-processing functions defined by subclasses of this class.

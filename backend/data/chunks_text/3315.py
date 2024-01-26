@@ -1,0 +1,3 @@
+- Defines a parameterized test using `pytest.mark.parametrize`.
+- Tests different URL paths with various query parameters and expects specific HTTP status codes and responses from the server.
+- Uses helper functions `foo_is_missing` and `foo_is_short` to simulate missing or incorrectly formatted query parameters for some tests.

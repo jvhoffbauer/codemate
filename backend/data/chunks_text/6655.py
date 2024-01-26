@@ -1,0 +1,2 @@
+- Defines a method named `probe` using OpenAPI's `@operationDecorator` (`@ep`) decorator from the `openapi_typescript` library.
+- Accepts an optional parameter `data` of type string with a default value provided by Pydantic's `Body` class, which allows for schema validation and example usage documentation. The `examples` attribute is used to provide sample values for the input field in Swagger UI.

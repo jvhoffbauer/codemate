@@ -1,0 +1,3 @@
+- Defines a special method `__getattr__` for this module to handle missing attributes dynamically
+- Checks whether the attribute exists in a global dictionary (`__faa_globals__`) or in some specific constants (`SYNC_DB_NAME`, `ASYNC_DB_NAME`, `SITE_NAME`) before raising an error
+- Provides a helper function `exists_global` to simplify checking for globally defined variables with optional aliases

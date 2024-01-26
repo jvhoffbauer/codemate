@@ -1,0 +1,3 @@
+- This function handles a GET request to `/users/me`.
+- It requires authentication using OAuth2 (as specified by the `Security()` decorator).
+- If no credentials are provided, it returns an error message; otherwise, it returns information about the user's authorization scheme and credentials.

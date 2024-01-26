@@ -1,0 +1,1 @@
+- Tests a WebSocket connection with a custom header (query parameter `token`) using Flask's built-in testing client and raises an exception if the session cookie or query token is not provided in the request headers. - Sends multiple messages through the WebSocket, receives them back, and verifies their contents and associated metadata such as item ID.

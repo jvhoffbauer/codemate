@@ -1,0 +1,1 @@
+- Creates a `TestClient` object for testing FastAPI applications using Starlette's built-in test client. - Passes the current `AdminSite` instance to the `FastAPI` application and sets it as the app for the `TestClient`. - Sets the base URL of the `TestClient` to "http://testserver".

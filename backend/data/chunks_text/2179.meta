@@ -1,0 +1,1 @@
+{"original_code": "def get_query_type_frozenset(query: FrozenSet[int] = Query(...)):\n    return \",\".join(map(str, sorted(query)))"}

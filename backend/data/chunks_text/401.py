@@ -1,0 +1,3 @@
+- Tests that Pydantic's JSON schema generation correctly inherits properties and definitions from parent classes using `@inherits(ParentClass)`.
+- Uses `@needs_pydanticv1` decorator to ensure compatibility with Pydantic v1 (as opposed to newer versions).
+- Verifies that the generated schema includes both inherited fields ("id" and "enum_field") as well as any additional ones defined in the child class ("my_list").

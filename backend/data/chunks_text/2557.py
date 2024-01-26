@@ -1,0 +1,4 @@
+- Defines a websocket middleware function called `catcher`.
+- Uses the `@websocket_middleware` decorator to register it with Starlette's WebSocket routing system.
+- Wraps another WebSocket handler (`call_next`) in a try/except block and returns its result if an exception is not raised.
+- If an exception is raised within `call_next`, catches it and adds it to a list of exceptions called `caught`. Then raises the same exception again to propagate it up the stack. This allows for centralized error handling across multiple WebSocket handlers without having to repeat the same logic in each one.

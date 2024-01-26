@@ -1,0 +1,1 @@
+{"original_code": "@dataclass\nclass Author:\n    name: str\n    items: List[Item] = field(default_factory=list)  # (3)"}

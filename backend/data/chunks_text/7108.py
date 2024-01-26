@@ -1,0 +1,2 @@
+- Defines a class method `undelete()` in the model class using SQLAlchemy's `@classmethod` decorator.
+- The method returns a query object that selects all records where the `deleted_at` column is null, which represents logically deleted records. This can be used to restore or "undo" deletion of such records without physically removing them from the database.

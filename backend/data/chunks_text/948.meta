@@ -1,0 +1,1 @@
+{"original_code": "        def __hash__(self) -> int:\n            # Each ModelField is unique for our purposes, to allow making a dict from\n            # ModelField to its JSON Schema.\n            return id(self)"}

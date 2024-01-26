@@ -1,0 +1,3 @@
+- Defines a custom exception handler for `RequestValidationError`.
+- Prints an error message to the console when this exception is raised.
+- Calls another function (presumably defined elsewhere in the application) called `request_validation_exception_handler()`, passing it both the original request and exception objects as arguments.

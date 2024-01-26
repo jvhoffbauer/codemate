@@ -1,0 +1,1 @@
+{"original_code": "def get_current_active_user(current_user: UserInDB = Security(get_current_user)):\n    if not crud.user.is_active(current_user):\n        raise HTTPException(status_code=400, detail=\"Inactive user\")\n    return current_user"}

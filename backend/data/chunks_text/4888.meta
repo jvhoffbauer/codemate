@@ -1,0 +1,1 @@
+{"original_code": "def setup_index_storage(*, cluster_url, username, password):\n    url = f\"{cluster_url}/settings/indexes\"\n    auth = HTTPBasicAuth(username, password)\n    r = requests.post(url, data={\"storageMode\": \"forestdb\"}, auth=auth)\n    return r.status_code == 200"}

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\", dependencies=[Depends(verify_token), Depends(verify_key)])\nasync def read_items():\n    return [{\"item\": \"Foo\"}, {\"item\": \"Bar\"}]"}

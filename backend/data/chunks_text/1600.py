@@ -1,0 +1,1 @@
+- Defines a function `read_items()` with default arguments for `skip` and `limit`. - Uses the `crud` module to retrieve a list of items from the database using the provided `Session` object (obtained through `Depends(get_db)`) and specified values for `skip` and `limit`. - Returns the retrieved list of items.

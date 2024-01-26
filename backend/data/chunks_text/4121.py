@@ -1,0 +1,3 @@
+- Generates an OpenAPI (Swagger) JSON schema for a FastAPI application using `fastapi add_route` and `app.include_router`.
+- The generated schema includes information about endpoints, request parameters, responses, error handling, and data types.
+- The schema follows the OpenAPI specification version 3.1.0 and uses components to define reusable schemas like HTTP validation errors.

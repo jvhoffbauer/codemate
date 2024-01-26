@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\ndef raw_request(app_client, ep_path):\n    def requester(body, path_postfix=\"\", auth=None):\n        resp = app_client.post(\n            url=ep_path + path_postfix,\n            content=body,\n            auth=auth,\n        )\n        return resp\n\n    return requester"}

@@ -1,0 +1,1 @@
+{"original_code": "    @raw_response.setter\n    def raw_response(self, value: dict):\n        self.on_raw_response(value)"}

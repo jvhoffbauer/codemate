@@ -1,0 +1,3 @@
+- Tests retrieving an existing user by ID using a superuser token and asserts that the status code is within the expected range (2xx).
+- Retrieves the API response JSON and compares it with the database record for the same user to ensure they match.
+- Verifies that the function `crud.user.get_by_email()` can retrieve the user from the database based on their email address.

@@ -1,0 +1,1 @@
+{"original_code": "    def create_with_owner(\n        self, db: Session, *, obj_in: CreateSchemaType, owner_id: int\n    ) -> ModelType:\n        obj_in_data = jsonable_encoder(obj_in)\n        db_obj = self.model(**obj_in_data, owner_id=owner_id)\n        db.add(db_obj)\n        db.commit()\n        db.refresh(db_obj)\n        return db_obj"}

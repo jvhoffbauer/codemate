@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def AnnotatedPage(self):\n        \"\"\"Annotated Page, for fastapi dependency injection\"\"\"\n        return Annotated[Page, Depends(self.get_page)]"}

@@ -1,0 +1,5 @@
+- Defines a Pydantic model `ModelWithDatetimeField` that includes a datetime field
+- Adds a custom serialization function for the datetime field using `@field_serializer` decorator to format it as ISO string without microseconds and time zone information
+- Creates an instance of the model with a specific datetime value
+- Registers an endpoint `/model` returning the created model with the same response type (i.e., `response_model`) defined in the endpoint's signature
+- Uses Pytest's built-in `TestClient` to make requests against the server and tests if the expected JSON output is returned

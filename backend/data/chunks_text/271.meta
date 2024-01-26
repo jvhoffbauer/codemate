@@ -1,0 +1,1 @@
+{"original_code": "def select_heroes():\n    with Session(engine) as session:\n        hero = session.get(Hero, 9001)\n        print(\"Hero:\", hero)"}

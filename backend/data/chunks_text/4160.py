@@ -1,0 +1,3 @@
+- Tests reading a list of items from an API endpoint using `TestClient`.
+- Asserts that the status code is 200 and displays the error message if it's not.
+- Verifies that the JSON response contains two dictionaries with expected keys and values for 'name' and 'description'.

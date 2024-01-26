@@ -1,0 +1,3 @@
+- Tests creating a new file with JSON body containing 'file' field missing
+- Asserts that server returns HTTP status code 422 (Unprocessable Entity) and error message in JSON format
+- Verifies that error message conforms to Pydantic validation schema for missing fields

@@ -1,0 +1,6 @@
+- Defines a method `register_router` that registers an endpoint for uploading files using FastAPI's router decorator.
+- The endpoint is defined using the `@self.router.post` decorator, which specifies the HTTP verb (POST), path (`self.file_path`), and expected response format (`response_model=BaseApiOut[self.UploadOutSchema]`).
+- The endpoint accepts a single argument of type `UploadFile`, which represents the file being uploaded. This argument is bound to the `File` parameter provided by FastAPI's built-in `File` class.
+- Inside the function body, the filename is extracted from the uploaded file using the `get_filename` helper method. A new directory is created at the specified location (`Path(self.file_directory)`) if it doesn't already exist.
+- The contents of the file are read into memory using the `asyncio` library's `aiofiles`. If the maximum allowed file size is set (`self.file_max_size`), its value is checked against the length of the file content.
+- Finally, the file is written to disk using another `aiofiles` context manager, and a customized response object containing relevant metadata about the uploaded file is returned. Any errors encountered during this process are handled appropriately and wrapped in a generic error message.

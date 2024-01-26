@@ -1,0 +1,1 @@
+{"original_code": "    def _model_rebuild(model: Type[BaseModel]) -> None:\n        model.model_rebuild()"}

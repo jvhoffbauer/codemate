@@ -1,0 +1,3 @@
+- Checks if environment is deployed (production mode) and SENTRY_DSN variable is empty or nonexistent
+- Raises a ValueError with message "Sentry is not set" in such case
+- Returns Config object for further configuration steps regardless of whether sentry validation passed or failed

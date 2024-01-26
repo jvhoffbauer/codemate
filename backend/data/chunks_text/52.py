@@ -1,0 +1,4 @@
+1. The `get_relationship_to()` function takes three arguments - `name`, `rel_info`, and `annotation`. It returns any value based on these inputs.
+2. This function checks the origin of the annotation using `get_origin()`. If it is none, it assumes that there is no direct relationship between entities, and returns the original annotation. Otherwise, it proceeds further.
+3. If the annotation is a Union type, this function gets its actual argument by calling `get_args()`. If both arguments are optional, it raises an error; otherwise, it selects one of them depending on whether it is non-None.
+4. Similarly, for lists, this function extracts the first element from the list to find the actual field.

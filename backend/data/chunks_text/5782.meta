@@ -1,0 +1,1 @@
+{"original_code": "    def register_router(self):\n        for form in self.link_model_forms:\n            form.register_router()\n        self.register_crud()\n        super(ModelAdmin, self).register_router()\n        return self"}

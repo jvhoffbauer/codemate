@@ -1,0 +1,3 @@
+- This constructor method takes two arguments `default` and `**kwargs`. The `**kwargs` argument allows for additional keyword arguments to be passed in.
+- It removes four specific keywords (`primary_key`, `nullable`, `foreign_key`, and `unique`) from the `**kwargs` dictionary using the `pop()` function. These are then assigned as attributes of the class instance.
+- If the `sa_column` attribute is set, it raises an error because certain other attributes cannot be specified at the same time. Specifically, `primary_key`, `nullable`, `foreign_key`, `unique`, `index`, `sa_type`, `sa_column_args`, or `sa_column_kwargs` should not be specified with `sa_column`.

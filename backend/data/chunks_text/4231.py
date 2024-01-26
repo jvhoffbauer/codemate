@@ -1,0 +1,1 @@
+- Imports a function `test_override_in_items_with_params` from another module and calls it directly in this script. - This is an example of how to override tests with parameters using pytest's `--filter` option or by passing arguments to `python -m pytest`. - The imported function demonstrates how to define multiple items with different parameter values for testing purposes.

@@ -1,0 +1,1 @@
+- Creates a list of items using Flask's built-in testing client and asserts that both clients return the same status code and JSON response. - Tests for separate input output schemas by creating another client with this option set to False. - Verifies that item descriptions are correctly handled in the JSON response.

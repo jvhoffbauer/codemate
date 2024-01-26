@@ -1,0 +1,2 @@
+- Tests GET request for user with ID 1 using Flask's built-in testing client
+- Asserts that status code is 200 and returns expected JSON keys (email and id)

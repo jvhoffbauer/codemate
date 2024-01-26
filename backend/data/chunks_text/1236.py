@@ -1,0 +1,3 @@
+- Defines a GraphQL query type called `Query`.
+- Includes a single field named `user`, which returns an instance of the `User` class defined elsewhere in the application.
+- The returned `User` object has a name of "Patrick" and an age of 100, hardcoded for simplicity.

@@ -1,0 +1,1 @@
+{"original_code": "def test_security_api_key():\n    response = client.get(\"/users/me?key=secret\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"username\": \"secret\"}"}

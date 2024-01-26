@@ -1,0 +1,1 @@
+{"original_code": "def __dataclass_transform__(\n    *,\n    eq_default: bool = True,\n    order_default: bool = False,\n    kw_only_default: bool = False,\n    field_descriptors: Tuple[Union[type, Callable[..., Any]], ...] = (()),\n) -> Callable[[_T], _T]:\n    return lambda a: a"}

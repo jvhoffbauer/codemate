@@ -1,0 +1,1 @@
+- Defines a function `read_items` with default arguments for `skip` and `limit`. - Uses the `crud` module to retrieve a list of items from a database or API using the specified `skip` and `limit` values. - Returns the retrieved list of items.

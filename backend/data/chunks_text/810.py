@@ -1,0 +1,3 @@
+- Defines a field validator for the `password` attribute using the `@field_validator()` decorator from Pydantic's ValidationError class.
+- The validator is applied after setting the value of the field (mode='after').
+- Uses regular expressions to check whether the password meets certain criteria defined by STRONG_PASSWORD_PATTERN. If it doesn't, raises a ValueError with an error message explaining what needs to be added to make the password strong enough.

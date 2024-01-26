@@ -1,0 +1,1 @@
+{"original_code": "def mixed():\n    return Model3(\n        name=\"mixed model3 name\",\n        age=3,\n        ref2=Model2(\n            ref=Model1(foo=\"mixed model foo\", bar=\"mixed model bar\"),\n            baz=\"mixed model2 baz\",\n        ),\n    )"}

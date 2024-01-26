@@ -1,0 +1,3 @@
+- Defines a GET endpoint with two annotations, `response_model` and `annotation`.
+- The `response_model` specifies that the returned value should be of type `User`, which is defined elsewhere in the application.
+- The `annotation` (in this case, "model1-annotation_model2-return_same_model") provides additional context about how these models are related to each other within the application's domain logic. This can help improve documentation and understanding for developers working on the project.

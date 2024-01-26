@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/http-exception\")\ndef route_with_http_exception():\n    raise HTTPException(status_code=400)"}

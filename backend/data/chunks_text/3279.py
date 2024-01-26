@@ -1,0 +1,3 @@
+- Converts a `datetime` object to ISO format with microseconds and time zone removed for serialization purposes.
+- Uses Python's built-in `datetime` module and Django's `timezone` library to manipulate date/time values.
+- Helps ensure consistency in serialized data by removing unnecessary details like microseconds and time zones that may cause issues during deserialization or comparison operations.

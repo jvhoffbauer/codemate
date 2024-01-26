@@ -1,0 +1,1 @@
+{"original_code": "def test_multi_query():\n    response = client.get(\"/items/?q=5&q=6\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"q\": [5, 6]}"}

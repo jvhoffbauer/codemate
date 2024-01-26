@@ -1,0 +1,1 @@
+- Defines a fixture named `client` that takes an argument `site`, which is of type `AdminSite`. - Returns an instance of `TestClient` from FastAPI and sets its app to be equal to the site's fastapi object. - Sets the base URL for the test server to "http://testserver". - Yields the created `TestClient` instance so it can be used in other tests within this fixture scope.

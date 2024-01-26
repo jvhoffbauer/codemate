@@ -1,0 +1,3 @@
+- Tests whether the `CeleryTracingIdsFilter` correctly truncates the current ID when it exceeds a specified length.
+- Uses the `UUID` module to generate a unique identifier for each task.
+- Sets the `celery_current_id` attribute of the logging context using the `set()` method provided by the `threading` module's `local()` class.

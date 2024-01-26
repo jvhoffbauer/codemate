@@ -1,0 +1,1 @@
+{"original_code": "    async def has_delete_permission(\n        self, request: Request, item_id: List[str], **kwargs\n    ) -> bool:\n        return False"}

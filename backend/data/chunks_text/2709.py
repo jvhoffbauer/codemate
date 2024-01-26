@@ -1,0 +1,3 @@
+- Defines a GET endpoint with specific path and response model (User).
+- Includes annotations for Model1 (DBUser) and Model2 (Item), which will be returned by the function as submodels with extra data.
+- Returns an instance of Model1 (DBUser) that conforms to the User schema defined in the response model. The returned object also includes additional fields from Model2 (Item) through its annotation.

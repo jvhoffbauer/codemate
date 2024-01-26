@@ -1,0 +1,1 @@
+{"original_code": "def field_annotation_is_scalar(annotation: Any) -> bool:\n    # handle Ellipsis here to make tuple[int, ...] work nicely\n    return annotation is Ellipsis or not field_annotation_is_complex(annotation)"}

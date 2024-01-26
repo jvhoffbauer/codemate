@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/multiple_headers_same_name\")\n    async def multiple_headers_response() -> Response:\n        response = Response(status_code=204)\n        response.set_cookie(\"access_token_cookie\", \"test-access-token\")\n        response.set_cookie(\"refresh_token_cookie\", \"test-refresh-token\")\n        return response"}

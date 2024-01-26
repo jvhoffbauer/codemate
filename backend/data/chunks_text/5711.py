@@ -1,0 +1,2 @@
+- Defines a cached property called `unique_id` for the current class using Python's built-in decorator `@cached_property`.
+- Calculates and returns a unique identifier string for this object based on its module, qualname (i.e., name within the module), and app instance (if provided). The hash function MD5 is used to generate a fixed-length hexadecimal representation of the string. Only the first 16 characters are returned to keep the length reasonable.

@@ -1,0 +1,3 @@
+- Defines a new endpoint `/router` using FastAPI's router decorator
+- Specifies that the expected HTTP method is POST and returns a list of `Item` objects as the response body (using `response_model`)
+- Includes an example error response for status code 404 with a custom model type (using `responses`)

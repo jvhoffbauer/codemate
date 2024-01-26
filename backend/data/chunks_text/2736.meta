@@ -1,0 +1,1 @@
+{"original_code": "def test_response_model_no_annotation_return_invalid_model():\n    with pytest.raises(ResponseValidationError) as excinfo:\n        client.get(\"/response_model-no_annotation-return_invalid_model\")\n    assert \"missing\" in str(excinfo.value)"}

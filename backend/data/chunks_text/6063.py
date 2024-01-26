@@ -1,0 +1,3 @@
+- Defines an `ArticleAdmin` for Django's admin interface using `django-rest-auth`.
+- Sets up readable fields (`read_fields`) and permission fields based on enum values (`perm_fields`, `perm_fields_exclude`).
+- Tests creation, updating, reading, listing, and filtering of permission fields by checking their presence in corresponding dictionaries returned by `ins.create_permission_fields`, `ins.update_permission_fields`, etc.

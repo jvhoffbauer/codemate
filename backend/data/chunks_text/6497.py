@@ -1,0 +1,1 @@
+- Registers an entry point (represented by `ep`) with the application's dependency overrides provider and adds its routes to the list of registered routes. - Binds a shutdown function from the entry point to the application's event handler for the "shutdown" event.

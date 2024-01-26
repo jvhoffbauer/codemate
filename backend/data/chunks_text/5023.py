@@ -1,0 +1,1 @@
+- Converts a file path (excluding the initial directory separator) from snake case to camelCase and returns the class name that would correspond to it in Python. - Uses `snake_convert()`, an assumed helper function, to convert between snake case and camelCase. - Replaces all forward slashes ('/') with underscores ('_').

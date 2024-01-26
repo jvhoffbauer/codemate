@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def AnnotatedItemIdList(self):\n        \"\"\"Annotated Item ID List, used to filter the id of the data that the user has permission to operate on.\n        And automatically perform fastapi dependency injection\n        \"\"\"\n        return Annotated[List[str], Depends(self.filtered_item_id)]"}

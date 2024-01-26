@@ -1,0 +1,2 @@
+- Defines a function `check_calls` that takes in a list of lists as an argument called `calls`.
+- Inside the function, there is an assert statement with a tuple containing the expected first element (a list) and its corresponding value for testing purposes. This test checks if the first call's arguments match the provided dictionary structure.

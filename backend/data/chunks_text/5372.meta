@@ -1,0 +1,1 @@
+{"original_code": "    def home():\n        \"\"\"Works and should return FALSE.\"\"\"\n        with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN=\"FALSE\"):\n            res = get_gdal_config(\"GDAL_DISABLE_READDIR_ON_OPEN\")\n        return {\"env\": res}"}

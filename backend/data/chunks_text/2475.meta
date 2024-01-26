@@ -1,0 +1,1 @@
+{"original_code": "def read_current_user(credentials: HTTPAuthorizationCredentials = Security(security)):\n    return {\"scheme\": credentials.scheme, \"credentials\": credentials.credentials}"}

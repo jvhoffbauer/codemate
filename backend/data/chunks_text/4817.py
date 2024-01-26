@@ -1,0 +1,3 @@
+- This function searches for documents of a specific type in an Elasticsearch index using a given query string and returns them as instances of a Pydantic model.
+- It takes several arguments including the name of the Elasticsearch bucket, the query string to search for, the name of the index to search within, the document type to filter by, a class representing the expected structure of each returned document (as defined by Pydantic), optional starting and limiting values for pagination purposes.
+- The function first calls `search_by_type_get_search_results()`, passing it all relevant parameters, then converts the resulting list of dictionaries into a list of objects based on the provided Pydantic model using `search_results_to_model()`.

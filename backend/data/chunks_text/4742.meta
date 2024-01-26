@@ -1,0 +1,1 @@
+{"original_code": "def test_post_a_invalid():\n    data = {\"a\": \"bar\", \"b\": \"foo\"}\n    response = client.post(\"/a/compute\", json=data)\n    assert response.status_code == 422, response.text"}

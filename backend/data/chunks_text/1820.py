@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `websocket_endpoint` that takes a single argument, a WebSocket object (`websocket`)
+- Calls the `await websocket.accept()` method to accept the initial handshake from the client and wait for it to complete
+- Enters an infinite loop where it receives text messages sent by the client using the `await websocket.receive_text()` method and sends back a response containing the received message using the `await websocket.send_text()` method with string interpolation

@@ -1,0 +1,2 @@
+- Retrieves a specific user from a Google Cloud Storage bucket using their provided username and returns their data as an object.
+- First creates a `Bucket` instance to access the storage resources, then retrieves the desired user's information by passing in both the created `Bucket` and the requested username as arguments for the `get_user()` function.

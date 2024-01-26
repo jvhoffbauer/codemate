@@ -1,0 +1,1 @@
+- This function takes a parameter `username`, annotated with both its data type (a string) and a dependency (the result of calling `get_current_username()`) from FastAPI's built-in authentication middleware. - The function returns a dictionary containing just the `username` key, which can be used in subsequent functions or views that require access to the current user's identity.

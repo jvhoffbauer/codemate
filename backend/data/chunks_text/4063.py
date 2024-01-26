@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `client.get("/openapi.json")`.
+- The generated schema includes information about the API's title, version, and paths (e.g., `GET /items/`) with associated request body schemas, responses, and error types.
+- The schema also defines custom error types such as HTTPValidationError and ValidationError that are used to handle validation errors in the API.

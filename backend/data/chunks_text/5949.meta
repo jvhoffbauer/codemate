@@ -1,0 +1,1 @@
+{"original_code": "async def startup():\n    await site.db.async_run_sync(SQLModel.metadata.create_all, is_session=False)"}

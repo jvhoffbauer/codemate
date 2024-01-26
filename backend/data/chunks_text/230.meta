@@ -1,0 +1,1 @@
+{"original_code": "def client_fixture(session: Session):\n    def get_session_override():\n        return session\n\n    app.dependency_overrides[get_session] = get_session_override\n    client = TestClient(app)\n    yield client\n    app.dependency_overrides.clear()"}

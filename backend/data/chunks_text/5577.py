@@ -1,0 +1,2 @@
+- Defines a method called `router_prefix()` for the current class (presumably a subclass of Django's `APIView`)
+- The method returns an string that starts with a forward slash and is equal to the name of the model associated with this view, converted to lowercase and separated by underscores (e.g., "MyModelName" becomes "/mymodelname")

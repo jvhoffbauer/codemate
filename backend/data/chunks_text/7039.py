@@ -1,0 +1,4 @@
+- This function allows users to reset their password by generating a new password reset token and sending it via email using `send_reset_password_email()`.
+- The function takes two arguments: `db`, which is retrieved from FastAPI dependency injection (using `Depends`) and `email`, which represents the user's email address.
+- If the user exists in the database, the function generates a new password reset token for that user using `generate_password_reset_token()` and sends an email with the token to the user's email address using `send_reset_password_email()`.
+- Otherwise, the function returns a message indicating that no matching user was found.

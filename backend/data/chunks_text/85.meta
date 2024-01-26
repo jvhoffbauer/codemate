@@ -1,0 +1,1 @@
+{"original_code": "def asc(\n    column: Union[_ColumnExpressionOrStrLabelArgument[_T], _T],\n) -> UnaryExpression[_T]:\n    return sqlalchemy.asc(column)  # type: ignore[arg-type]"}

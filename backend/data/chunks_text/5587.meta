@@ -1,0 +1,1 @@
+{"original_code": "    def list_item(self, values: Dict[str, Any]) -> SchemaListT:\n        \"\"\"Parse the database data query result dictionary into schema_list.\"\"\"\n        return self.schema_list.parse_obj(values)"}

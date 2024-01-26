@@ -1,0 +1,3 @@
+- Defines a method named `probe2` using Pytest's `@ep.method()` decorator in an Epypi test suite.
+- Takes a single argument, `data`, which is expected to be a list of Balance objects (presumably representing some financial information).
+- Returns the same input list without any modifications or transformations.

@@ -1,0 +1,3 @@
+- Defines a new route `/` with an HTTP method of POST using FastAPI's decorator syntax
+- Accepts a query parameter named 'username' as a string type, which is optional and can be omitted from the request URL (default value is empty)
+- Returns the value of the 'username' parameter passed in the request body as a JSON response

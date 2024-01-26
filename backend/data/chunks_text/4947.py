@@ -1,0 +1,3 @@
+- Defines a Celery task named `test_celery_asyncio_io_bound`.
+- Uses the `async_to_sync` decorator to convert an asynchronous function (`task_io_bound`) into a synchronous one, allowing it to be called within a Celery task.
+- Calls the converted synchronous version of the `task_io_bound` function using parentheses after the name.

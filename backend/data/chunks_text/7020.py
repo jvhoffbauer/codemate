@@ -1,0 +1,3 @@
+- Retrieves a list of all users from the database using `crud.user.get_multi()`.
+- Limits and skips results based on provided query parameters (`limit` and `skip`) using SQLAlchemy's `offset()` and `limit()` methods.
+- Returns the resulting list with `response_model` set to `list[schemas.User]`, which is defined in another part of the application as a Pydantic model representing a single user object.

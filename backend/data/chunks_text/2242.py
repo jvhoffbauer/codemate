@@ -1,0 +1,3 @@
+- Defines an asynchronous function `no_duplicates` that takes two arguments of type `Item`.
+- The second argument is optional and has a default value provided by the `Depends()` decorator, which returns an instance of `dependency`.
+- Returns a list containing both input items without any duplicates.

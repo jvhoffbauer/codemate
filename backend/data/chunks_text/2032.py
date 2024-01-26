@@ -1,0 +1,1 @@
+- This function takes a directory path as input and returns the content of a file called'missing-translation.md' located in its parent directory. - The returned string is encoded using UTF-8 encoding. - If the specified file doesn't exist, an exception will be raised by the `Path.read_text()` method.

@@ -1,0 +1,6 @@
+1. This function `geojson_statistics()` takes a GeoJSON object (either a single feature or a collection of features) and returns statistics calculated on its associated raster data using various dependencies provided by other functions.
+2. The function first checks whether the input is a single feature or a collection; if it's just one feature, it converts it to a collection containing that feature.
+3. It then opens the raster file specified by the `src_path` parameter using the `Reader` class created by another dependency function. Various parameters are passed to this function to customize how the raster is read.
+4. For each feature in the collection, the function extracts the relevant portion of the raster using the `feature()` method of the `SourceDataset` returned by the `Reader`. Other parameters are also passed here to control how the extraction is done.
+5. Using yet more dependencies, the extracted array is processed to calculate statistical measures such as mean, standard deviation, minimum, maximum, etc., which are stored in a dictionary called `stats`.
+6. These statistics are added to the properties of the corresponding feature in the GeoJSON object, under a new key named `statistics`. Each band of the raster is represented separately within this nested dictionary.

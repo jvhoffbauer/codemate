@@ -1,0 +1,4 @@
+- Defines a fixture `ep` that creates an instance of `jsonrpc.Entrypoint`.
+- Uses dependency injection to pass functions `get_shared_counter` and `get_common_counter` as arguments to the entrypoint's constructor.
+- Registers methods with their respective dependencies using `Depends`.
+- Returns the created entrypoint for use in tests.

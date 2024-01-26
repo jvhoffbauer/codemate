@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"module\")\ndef normal_user_token_headers():\n    return authentication_token_from_email(config.EMAIL_TEST_USER)"}

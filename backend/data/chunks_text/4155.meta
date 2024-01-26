@@ -1,0 +1,1 @@
+{"original_code": "def test_openapi_schema_sub():\n    response = client.get(\"/subapi/openapi.json\")\n    assert response.status_code == 200, response.text\n    assert response.json() == openapi_schema_sub"}

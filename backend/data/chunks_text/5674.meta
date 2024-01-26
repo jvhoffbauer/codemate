@@ -1,0 +1,1 @@
+{"original_code": "def exists_db(*, alias: str = DEFAULT_ALIAS, is_async: bool = False) -> bool:\n    \"\"\"Judge whether the database exists\"\"\"\n    if is_async:\n        return exists_global(ASYNC_DB_NAME, alias=alias)\n    else:\n        return exists_global(SYNC_DB_NAME, alias=alias)"}

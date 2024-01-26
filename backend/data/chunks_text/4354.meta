@@ -1,0 +1,1 @@
+{"original_code": "def test_create():\n    response = client.put(\"/items/red\", json={\"name\": \"Chillies\"})\n    assert response.status_code == 201, response.text\n    assert response.json() == {\"name\": \"Chillies\", \"size\": None}"}

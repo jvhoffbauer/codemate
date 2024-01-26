@@ -1,0 +1,1 @@
+- Defines a function `probe2` with a default argument for `jsonrpc_method`, which is obtained using the `Depends()` decorator and passed to it by `get_jsonrpc_method`. - Returns the value of `jsonrpc_method` as a string.

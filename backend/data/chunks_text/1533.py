@@ -1,0 +1,3 @@
+- This function is a GET request handler for the `/items/` endpoint in FastAPI app.
+- It takes an optional query parameter `q`, which can be either a string or `None`.
+- If `q` is provided, it updates the `results` dictionary with a new key-value pair containing the value of `q`.

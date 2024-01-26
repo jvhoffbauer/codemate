@@ -1,0 +1,3 @@
+- Defines a class method `validate()` for the given type (`cls`) of object (`Type["UploadFile"]`)
+- Takes an argument `v` of any data type and returns it after validation
+- Raises a `ValueError` with a custom error message if the input is not an instance of `StarletteUploadFile`

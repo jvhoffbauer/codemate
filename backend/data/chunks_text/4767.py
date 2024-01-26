@@ -1,0 +1,4 @@
+- Endpoint to retrieve ModelA with a specific name using FastAPI's `@app.get()` decorator
+- Uses path parameter `{name}` and returns an instance of `ModelA`, defined by `response_model` argument
+- Dependency injection for `model_c` from `get_model_c()` function is used in request body
+- Returns dictionary containing `name`, `description`, and `model_b` (which is retrieved through dependency injection)

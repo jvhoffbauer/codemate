@@ -1,0 +1,2 @@
+- Initializes a new instance of `BaseAdmin` and passes in the current `AdminApp` object as an argument to set its parent application context.
+- Initializes a new instance of `RouterMixin`, which is likely used for routing requests within the Flask-Admin framework.

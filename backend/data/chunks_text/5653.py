@@ -1,0 +1,3 @@
+- This method is called to check if a user has permission to read an object with the given ID (stored in `item_id`)
+- It returns `True`, indicating that all users have read permissions by default
+- The `Request` and `**kwargs` arguments are provided for customizing the permission checking logic based on specific use cases

@@ -1,0 +1,1 @@
+{"original_code": "    def AnnotatedSelect(self):\n        \"\"\"Annotated Select, used to automatically perform fastapi dependency injection\"\"\"\n        return Annotated[Select, Depends(self._select_maker)]"}

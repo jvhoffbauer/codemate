@@ -1,0 +1,1 @@
+- Tests if the OpenAPI schema can be retrieved successfully with a status code of 200 and returns expected JSON format. - Verifies that the returned JSON contains correct information such as FastAPI version, main endpoint summary, operation ID, and successful response description.

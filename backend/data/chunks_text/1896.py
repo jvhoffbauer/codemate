@@ -1,0 +1,2 @@
+- Defines a GET request endpoint at `/timed` using FastAPI router decorator
+- Returns a dictionary with a message as its value when the endpoint is accessed

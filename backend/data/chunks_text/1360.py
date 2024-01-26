@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional header parameter named `user_agent`, which can be either a string or none (using Pydantic's `Annotated` and `Header()` functions)
+- Returns a dictionary containing the value of the `user_agent` header if provided, otherwise returns an empty dictionary

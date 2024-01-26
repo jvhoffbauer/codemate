@@ -1,0 +1,1 @@
+{"original_code": "def get_user(db, username: str):\n    if username in db:\n        user_dict = db[username]\n        return UserInDB(**user_dict)"}

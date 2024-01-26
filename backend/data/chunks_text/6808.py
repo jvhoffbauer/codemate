@@ -1,0 +1,3 @@
+- Creates a new `Item` object from user input (`item_in`) and sets its owner to the currently logged in user's ID using an update dictionary.
+- Adds the newly created `Item` to the database session and commits the changes.
+- Refreshes the `Item` object to ensure it has all of its related data loaded before returning it as output.

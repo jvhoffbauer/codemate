@@ -1,0 +1,1 @@
+{"original_code": "def server_error_exception_handler(request, exception):\n    return JSONResponse(status_code=500, content={\"exception\": \"server-error\"})"}

@@ -1,0 +1,3 @@
+- Defines a function `hidden_cookie()` that takes an optional argument `hidden_cookie`.
+- The default value of `hidden_cookie` is set to None and it's not included in schema by setting `include_in_schema` flag to False.
+- Returns a dictionary with 'hidden_cookie' key containing the value passed as argument or its default value (if provided).

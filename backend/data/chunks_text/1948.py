@@ -1,0 +1,2 @@
+- This function is a FastAPI route with GET method and no parameters (decorated by `@app.get()`)
+- It returns an asynchronous response containing a streaming video using `StreamingResponse()` wrapper around `fake_video_streamer()` function, which generates fake video data for testing purposes

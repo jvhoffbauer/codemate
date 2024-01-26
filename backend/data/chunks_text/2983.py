@@ -1,0 +1,2 @@
+- Defines a GET request handler for the root URL of the sub router `/`.
+- Returns a dictionary with an 'id' key set to 'foo'.

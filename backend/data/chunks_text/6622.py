@@ -1,0 +1,3 @@
+- Defines a function called `body()` that returns JSON data in response to an HTTP request.
+- The returned JSON object contains four key-value pairs representing various aspects of the API call (ID, version, method, and parameters).
+- Uses Python's built-in `json` module to convert the dictionary into a formatted string for transmission over the network.

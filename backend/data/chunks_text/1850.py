@@ -1,0 +1,1 @@
+- Defines a function called `shutdown_event()` that writes a message to a file named "log.txt" when the application is closed or stopped. - The function uses a context manager (with statement) to ensure proper closing of the file, even if an exception occurs during writing. - The message written to the file includes a descriptive string ("Application shutdown").

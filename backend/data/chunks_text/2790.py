@@ -1,0 +1,1 @@
+- Defines a function `read_user` that takes two arguments `segment` and `id`. - The function returns an object with two keys `"segment"` and `"id"` containing their respective values passed as arguments to the function.

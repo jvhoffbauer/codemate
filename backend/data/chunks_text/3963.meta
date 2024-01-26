@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/check-class\")\nasync def check_gzip_request(request: Request):\n    return {\"request_class\": type(request).__name__}"}

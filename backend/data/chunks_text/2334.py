@@ -1,0 +1,3 @@
+- Generates HTML for Swagger UI with custom resources (JS, CSS, favicon) from a given OpenAPI URL and saves it to a variable `html`.
+- Retrieves the content of the generated HTML's body using Python's built-in `decode()` method and stores it in a variable called `body_content`.
+- Asserts that the provided custom JS, CSS, and favicon URLs are present within the generated HTML by checking if they appear as substrings inside the `body_content` string.

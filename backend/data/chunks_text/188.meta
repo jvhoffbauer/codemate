@@ -1,0 +1,1 @@
+{"original_code": "def read_heroes():\n    with Session(engine) as session:\n        heroes = session.exec(select(Hero)).all()\n        return heroes"}

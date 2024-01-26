@@ -1,0 +1,1 @@
+- This code uses `pytest.mark.parametrize` to define multiple tests with different input values for URL and request body. - The first two tests send a GET request to `/items/foo` and `/items/bar`, respectively, passing corresponding JSON bodies as arguments. - The third test sends a GET request to `/items/baz`, using an empty list for tags in the request body.

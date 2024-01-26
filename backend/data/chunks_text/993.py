@@ -1,0 +1,1 @@
+- Checks if a given Python annotation (represented by `annotation`) is a scalar type using the function `field_annotation_is_complex()`. - Handles the special case of `Ellipsis`, which represents variable length sequences in Python, allowing it to be considered as a scalar for certain purposes. - Returns True if the annotation is either `Ellipsis` or not complex, False otherwise.

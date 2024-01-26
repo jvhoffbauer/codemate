@@ -1,0 +1,3 @@
+- This function is a Starlette web socket endpoint with a path parameter `item_id`.
+- It accepts a connection from a client and sends back an initial message containing the `item_id` and the current URL path (obtained through the `route` object).
+- The returned JSON data can be used by the client to synchronize its state with the server's.

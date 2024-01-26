@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: \"AdminApp\") -> None:\n        super().__init__(app)\n        self._children: List[PageSchemaAdminT] = []"}

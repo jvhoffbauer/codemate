@@ -1,0 +1,1 @@
+- Defines a property named `raw_response` that returns the value of the private attribute `_raw_response`. - The type annotation specifies that the returned value is a dictionary (`dict`). - This method provides read-only access to the underlying HTTP response data, without any additional processing or formatting applied by other methods in this class.

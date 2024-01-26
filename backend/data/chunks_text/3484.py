@@ -1,0 +1,3 @@
+- Initializes a new `WebSocket` object and waits for its connection to be accepted (`await websocket.accept()`)
+- Sends a JSON representation of the dependency list (`DepList`) to the connected client using the `send_text()` method (`await websocket.send_text(json.dumps(deps))`)
+- Closes the web socket connection after sending the response (`await websocket.close()`)

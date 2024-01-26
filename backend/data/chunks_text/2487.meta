@@ -1,0 +1,1 @@
+{"original_code": "async def read_pet(pet_id: int):\n    user = UserDB(\n        email=\"johndoe@example.com\",\n        hashed_password=\"secrethashed\",\n    )\n    pet = PetDB(name=\"Nibbler\", owner=user)\n    return pet"}

@@ -1,0 +1,7 @@
+- Imports `tutorial005` module from the `docs_src.tutorial` package and assigns it to a variable named `mod`.
+- Sets the SQLAlchemy connection URL for the `mod` object using the `sqlite_url` attribute.
+- Creates an SQLAlchemy engine instance using the `create_engine()` function and sets it on the `mod` object.
+- Initializes a list called `calls` to store print statements made during execution of the `main()` method in the `mod` module.
+- Retrieves the built-in `print()` function and replaces it with a custom implementation that saves each printed statement to the `calls` list instead of displaying it directly. This is done using Python's `unittest.mock.patch()` decorator.
+- Calls the `main()` method of the `mod` module within the context of the mock `print()` replacement.
+- Asserts that the `calls` list contains exactly one item, which should be a dictionary representing the output of the query executed by the `main()` method. The contents of this dictionary match those provided in the example data given earlier.

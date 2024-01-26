@@ -1,0 +1,3 @@
+- Defines a property called `latest` for the class that returns the last element of the `timeline` dictionary, or 0 if it is empty.
+- The `@property` decorator makes this method behave like an attribute instead of a function call.
+- This allows us to access the latest value using `obj.latest`, which can be more convenient than calling a separate method.

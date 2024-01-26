@@ -1,0 +1,1 @@
+{"original_code": "def ok(\n    *,\n    data: Union[list, dict, str] = None,\n    pagination: dict = None,\n    msg: str = \"success\"\n) -> Response:\n    return JSONResponse(\n        status_code=http_status.HTTP_200_OK,\n        content=jsonable_encoder(\n            {\"status\": 200, \"msg\": msg, \"data\": data, \"pagination\": pagination}\n        ),\n    )"}

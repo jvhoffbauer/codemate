@@ -1,0 +1,1 @@
+{"original_code": "@router.delete(\"/users/tokens\")\nasync def logout_user(\n    response: Response,\n    refresh_token: dict[str, Any] = Depends(valid_refresh_token),\n) -> None:\n    await service.expire_refresh_token(refresh_token[\"uuid\"])\n\n    response.delete_cookie(\n        **utils.get_refresh_token_settings(refresh_token[\"refresh_token\"], expired=True)\n    )"}

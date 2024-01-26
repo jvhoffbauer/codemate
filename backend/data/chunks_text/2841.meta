@@ -1,0 +1,1 @@
+{"original_code": "def test_no_multipart_installed_file_bytes(monkeypatch):\n    monkeypatch.delattr(\"multipart.__version__\", raising=False)\n    with pytest.raises(RuntimeError, match=multipart_not_installed_error):\n        app = FastAPI()\n\n        @app.post(\"/\")\n        async def root(f: bytes = File()):\n            return f  # pragma: nocover"}

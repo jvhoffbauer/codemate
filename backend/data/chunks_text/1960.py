@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that returns a response object using the `ORJSONResponse` class from FastAPI's built-in JSON encoder, `orjson`. - The returned response contains a single dictionary with a key-value pair for 'item_id', whose value is set to 'Foo'.

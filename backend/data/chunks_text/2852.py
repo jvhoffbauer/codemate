@@ -1,0 +1,2 @@
+- Tests whether `__repr__()` method of `Param` class returns a string representation with value enclosed in parentheses for an instance initialized with integer argument (1)
+- Verifies that the returned string is equal to 'Param(1)'

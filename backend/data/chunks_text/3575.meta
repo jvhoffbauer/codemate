@@ -1,0 +1,1 @@
+{"original_code": "def read_current_user(credentials: Optional[HTTPBasicCredentials] = Security(security)):\n    if credentials is None:\n        return {\"msg\": \"Create an account first\"}\n    return {\"username\": credentials.username, \"password\": credentials.password}"}

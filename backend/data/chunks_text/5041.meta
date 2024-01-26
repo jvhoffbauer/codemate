@@ -1,0 +1,1 @@
+{"original_code": "@sio.on(\"drawing\")\nasync def on_drawing(sid, data):\n    await sio.emit(\"drawing\", data, broadcast=True)"}

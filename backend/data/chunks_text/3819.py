@@ -1,0 +1,1 @@
+- This function tests the `GET /items/{id}/name` endpoint using a Pytest fixture to create a client instance. - It asserts that the status code is 200 and saves the text for debugging purposes. - The JSON response is checked against expected values for the item name and description.

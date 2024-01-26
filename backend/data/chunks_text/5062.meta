@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app, prefix=\"\", user=None, *args, **kwargs):\n        self.user = user\n        self.prefix = prefix\n        super().__init__(app, *args, **kwargs)"}

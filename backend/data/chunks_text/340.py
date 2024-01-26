@@ -1,0 +1,5 @@
+- Defines a function `generate_readme` that generates the contents of the `README.md` file using the `main/index.md` as its base.
+- Prints a message to indicate the generation process has started.
+- Retrieves the path for the `README.md` file and saves it in a variable called `readme_path`.
+- Calls another function (not shown) named `generate_readme_content`, which returns the new content for the `README.md` file based on the `main/index.md` file.
+- Writes the newly generated content into the `README.md` file at the specified location using the `Path` class's `write_text` method with UTF-8 encoding.

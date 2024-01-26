@@ -1,0 +1,3 @@
+- Updates an existing user's information using PUT request and returns the updated user object.
+- Requires authentication as a superuser (using `Depends(get_current_active_superuser)`) to ensure data security.
+- Uses FastAPI's built-in dependency injection mechanism to retrieve necessary objects such as the database connection and the current authenticated user.

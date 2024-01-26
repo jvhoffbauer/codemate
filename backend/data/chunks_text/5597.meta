@@ -1,0 +1,1 @@
+{"original_code": "    async def delete_items(\n        self, request: Request, item_id: List[str]\n    ) -> List[TableModelT]:\n        \"\"\"Delete the database data by id.\"\"\"\n        return await self.db.async_run_sync(self._delete_items, item_id)"}

@@ -1,0 +1,2 @@
+- Creates a function called `duplicate_dependency` that takes an argument of type `Item`.
+- The function returns the same object passed as an argument, effectively duplicating it.

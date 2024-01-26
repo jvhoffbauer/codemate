@@ -1,0 +1,1 @@
+- Defines an asynchronous function `dep()` that is marked with a pragma directive to indicate it should not be covered by test coverage tools (e.g., pytest). - The body of the function is empty, indicating that this function may serve as a placeholder or dependency for other functions in the module.

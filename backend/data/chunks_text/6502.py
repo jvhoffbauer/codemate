@@ -1,0 +1,6 @@
+- Creates a fixture `api_package` that generates an API package with two endpoints (`mobile.py` and `web.py`) for testing purposes.
+- The generated package follows a specific directory structure (`api` containing `mobile.py` and `web.py`).
+- Both `mobile.py` and `web.py` have similar contents but differ in their endpoint paths ("/api/v1/mobile/jsonrpc" vs "/api/v1/web/jsonrpc").
+- Each file contains a single JSON-RPC entrypoint with a method called `probe`.
+- The parameters of this method are defined using FastAPI's `Body` decorator, which allows specifying default values, type hinting, and example values.
+- The parameter names used in each file can be customized by passing either "uniq-sig" or "same-sig" to the fixture's `params` argument.

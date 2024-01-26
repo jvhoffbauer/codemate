@@ -1,0 +1,1 @@
+{"original_code": "    def __class__(self):\n        return uuid.UUID"}

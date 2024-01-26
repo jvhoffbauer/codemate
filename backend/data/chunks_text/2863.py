@@ -1,0 +1,1 @@
+- Tests whether `__repr__()` method of `Header` class returns a string representation with the value passed as an argument when creating the object, in this case 1. - Verifies that the returned string is equal to the expected one ("Header(1)") using the `assert` statement.

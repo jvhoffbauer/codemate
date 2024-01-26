@@ -1,0 +1,5 @@
+- Defines a function `create_body_model()` that takes two arguments, `fields` and `model_name`.
+- Uses Pydantic's `create_model()` to generate an empty base class called `BodyModel`, with the given `model_name`.
+- Loops through each field provided in the `fields` sequence using a list comprehension (not shown).
+- Adds each field to the `BodyModel` dictionary of attributes by assigning it directly to the corresponding key. This is done despite a warning from mypy about indexing into an unsubscriptable object; this appears to be safe because we are modifying our own object here.
+- Returns the generated `BodyModel` class.

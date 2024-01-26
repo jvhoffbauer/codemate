@@ -1,0 +1,5 @@
+- Creates a new user with a randomly generated email and password using `UserCreate`.
+- Retrieves the newly created user from the database using `crud.user.get`.
+- Updates the user's password and superuser status using `UserUpdate`.
+- Retrieves the updated user again to ensure that it was successfully updated in the database.
+- Verifies that the hashed password matches the new one using `verify_password`.

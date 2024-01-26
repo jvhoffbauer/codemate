@@ -1,0 +1,2 @@
+- Defines a GET request for the path `"/path/param-ge/{item_id}"`, where `{item_id}` is a required parameter that must be greater than or equal to 3 (as specified by the `Path()` decorator)
+- The function returns the value of the `item_id` parameter, which can be accessed using the `item_id` variable inside the function body

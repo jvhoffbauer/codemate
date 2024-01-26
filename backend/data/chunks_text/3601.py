@@ -1,0 +1,1 @@
+- Defines a function `mixed_dict()` that returns a dictionary with nested dictionaries and strings as values. - The outermost dictionary has keys 'name', 'age' and'ref2'. - The value for key'ref' in the inner dictionary'ref2' is another dictionary containing keys 'foo' and 'bar'. - The value for key 'baz' in the inner dictionary'ref2' is a simple string.

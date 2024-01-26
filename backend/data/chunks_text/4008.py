@@ -1,0 +1,2 @@
+- Defines a function `client()` that imports and returns an instance of Flask's test client for the tutorial application in `docs_src/body/tutorial001`.
+- The `TestClient` class is provided by Flask to simulate HTTP requests against a running Flask application without actually starting it up. This allows testing of endpoints and responses without having to run the entire server.

@@ -1,0 +1,3 @@
+- This function is an asynchronous method that reads a specific item from a dictionary called `items`.
+- It takes an argument `item_id`, which should be a string representing the key of the desired item in the `items` dictionary.
+- If the specified item is not present in the `items` dictionary, it raises a custom HTTP exception with status code 404 and error message "Item not found". Otherwise, it returns a JSON response containing the requested item wrapped inside a dictionary with the key 'item'.

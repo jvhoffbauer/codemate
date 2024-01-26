@@ -1,0 +1,1 @@
+- Defines a new `ModelWithRoot` subclass of `BaseModel`, with an additional root field named `__root__`. - Creates a new instance of this custom model, passing in a value for the `__root__` field. - Asserts that encoding this custom model using `jsonable_encer()` returns the same string as if we encoded just the `__root__` field directly (i.e., "Foo").

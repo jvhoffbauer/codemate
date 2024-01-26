@@ -1,0 +1,7 @@
+- Imports `tutorial003_py310` module from `docs_src.tutorial`.
+- Sets SQLAlchemy URL and creates engine using `create_engine()`.
+- Calls main function of imported module, passing engine to it.
+- Retrieves all Hero objects from database using `Session` and `select()`.
+- Creates dictionary mapping hero names to their corresponding objects.
+- Accesses specific heroes by name from dictionary.
+- Asserts that various attributes are correct for each hero.

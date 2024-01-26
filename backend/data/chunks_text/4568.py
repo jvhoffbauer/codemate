@@ -1,0 +1,1 @@
+- This function uses `aiohttp`'s built-in testing client to simulate HTTP requests and responses for a login endpoint (`/token`) with provided credentials ("johndoe" and "secret"). - The function asserts that the server returns an HTTP status code of 200 (OK) and checks if the response body contains the expected JSON structure containing an access token and its type ('bearer').

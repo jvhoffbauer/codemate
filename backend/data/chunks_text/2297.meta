@@ -1,0 +1,1 @@
+{"original_code": "def test_route_converters_int():\n    # Test integer conversion\n    response = client.get(\"/int/5\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"int\": 5}\n    assert app.url_path_for(\"int_convertor\", param=5) == \"/int/5\"  # type: ignore"}

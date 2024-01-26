@@ -1,0 +1,1 @@
+- Defines a GET request handler for the `"/teleport"` endpoint using FastAPI's decorator syntax. - Returns a `RedirectResponse` object with the URL of a popular YouTube video as its destination, effectively redirecting the user to that page when they make a GET request to this endpoint.

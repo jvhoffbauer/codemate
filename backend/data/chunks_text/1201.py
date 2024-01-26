@@ -1,0 +1,1 @@
+- Defines an asynchronous function `create_item` that takes a single argument `item` of type `Item`. - Returns the input `item` without any modifications, using the `return` statement in an asynchronous context (i.e., with the `async` keyword). - The function is marked as returning any data type (`Any`) to indicate flexibility in what it returns.

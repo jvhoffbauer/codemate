@@ -1,0 +1,3 @@
+- Generates an OpenAPI schema for a FastAPI application using `pydantic_json` and `fastapi-swagger-ui`.
+- The generated JSON file is accessible at `/openapi.json`.
+- The schema includes information about endpoints (e.g., GET request to read items), parameters (e.g., query parameter `q` with optional string or null value), responses (e.g., successful response with empty content object), error handling (e.g., HTTP validation errors with nested ValidationErrors).

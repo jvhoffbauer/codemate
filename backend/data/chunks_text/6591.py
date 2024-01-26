@@ -1,0 +1,1 @@
+- Defines a function `echo` that takes an optional argument `data` of type string with a default value provided by the `Body` class and some example values specified in its `examples` attribute. - Appends the input `data` to a list called `echo_info.history`. - Returns the same `data` passed as an argument.

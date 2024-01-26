@@ -1,0 +1,2 @@
+- Tests reading a model without an alias using Flask's built-in testing client
+- Verifies that the status code is 200 and returns expected JSON data for the 'Foo' model with no alias

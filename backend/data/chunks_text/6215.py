@@ -1,0 +1,1 @@
+- Defines a function `country_code()` that takes a value as input and returns its corresponding ISO Alpha-2 country code based on a dictionary `COUNTRY_NAME__COUNTRY_CODE`. - If the value is not present in the dictionary, it defaults to a string constant `DEFAULT_COUNTRY_CODE`, which is logged with a debug message using the `LOGGER` object.

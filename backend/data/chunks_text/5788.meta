@@ -1,0 +1,1 @@
+{"original_code": "    async def has_update_permission(\n        self,\n        request: Request,\n        item_id: List[str],\n        data: SchemaUpdateT,\n        **kwargs,\n    ) -> bool:\n        return await self.has_page_permission(request, action=CrudEnum.update)"}

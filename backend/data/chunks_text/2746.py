@@ -1,0 +1,2 @@
+- Tests a Flask route that returns an exact dictionary with `None` annotations for some keys using the `ResponseModelMixin`.
+- Uses the Flask client to make a GET request and asserts that the status code is 200 and the JSON response matches the expected dictionary.

@@ -1,0 +1,1 @@
+- This endpoint creates a new item for an existing author with ID `author_id`. - The request body contains a list of Item objects to be associated with the author. - The method returns a dictionary containing the name and created items of the author.

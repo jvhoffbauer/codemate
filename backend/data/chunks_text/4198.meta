@@ -1,0 +1,1 @@
+{"original_code": "def test_get():\n    response = client.get(\"/\")\n    assert response.content == b'{\\n  \"message\": \"Hello World\"\\n}'"}

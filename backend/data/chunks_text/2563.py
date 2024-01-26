@@ -1,0 +1,3 @@
+- Defines a custom error handler for WebSockets using `asyncio`.
+- Takes in two arguments - the WebSocket object and an instance of a custom exception class (`CustomError`) defined elsewhere.
+- Closes the WebSocket connection with status code 1002 ("Policy violation") and reason "foo".

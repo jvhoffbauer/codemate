@@ -1,0 +1,1 @@
+- Defines a class method `get()` for the current model (represented by `Self`) that takes a primary key (`pk`) as an argument and returns a single object matching that primary key from the database using Django's built-in `get()` function on the default manager `objects`.

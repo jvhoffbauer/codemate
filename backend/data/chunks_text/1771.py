@@ -1,0 +1,3 @@
+- Defines a GET request for an item with a specific ID using FastAPI's decorator syntax
+- Specifies that the returned data should conform to the Item model and provides a default message for when the item is not found (HTTP status code 404)
+- Provides a customized HTTP response for when the item is successfully retrieved (HTTP status code 200), including a description of what the response represents and which media types are supported

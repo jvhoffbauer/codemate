@@ -1,0 +1,4 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in a query parameter (`q`) with default value of 'fixedquery'.
+- Minimum length constraint is set on the query parameter using the `Query` decorator from FastAPI's built-in Pydantic integration.
+- Returns a dictionary containing an array of items and optionally, the search query used.

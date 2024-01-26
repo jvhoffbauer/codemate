@@ -1,0 +1,1 @@
+- Tests the `/<state>` endpoint for retrieving data on deaths using JHU API and mocks datetime functions to simulate a specific date request. - Compares the JSON output from the server's response against a predefined JSON file containing expected results for that particular state (in this case, 'deaths').

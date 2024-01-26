@@ -1,0 +1,1 @@
+{"original_code": "    @app.post(\"/second\")\n    def post_second(item1: Item):\n        return item1  # pragma: nocover"}

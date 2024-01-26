@@ -1,0 +1,1 @@
+{"original_code": "def test_request_class():\n    response = client.get(\"/check-class\")\n    assert response.json() == {\"request_class\": \"GzipRequest\"}"}

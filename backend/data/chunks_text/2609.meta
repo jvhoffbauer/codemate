@@ -1,0 +1,1 @@
+{"original_code": "@app.patch(\"/items/{item_id}\")\ndef patch_item(item_id: str, item: Item):\n    return {\"item_id\": item_id, \"item\": item}"}

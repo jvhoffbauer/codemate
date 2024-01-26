@@ -1,0 +1,4 @@
+- This function defines a web socket endpoint at `/router`.
+- It requires a dependency called `routerindex`, which is created using the `create_dependency` helper function provided by FastAPI.
+- The function accepts a WebSocket connection and sends its list of dependencies (`DepList`) to the client as JSON in response.
+- After sending the initial message, it closes the WebSocket connection.

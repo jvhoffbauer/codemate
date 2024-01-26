@@ -1,0 +1,1 @@
+- Defines a function called `no_alias_model` that returns an instance of the `ModelNoAlias` class with the name "Foo". - The purpose of this function is to provide a way to create models without aliasing, which can be useful in certain scenarios where multiple instances of the same model need to coexist without conflicts.

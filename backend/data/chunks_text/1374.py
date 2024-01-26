@@ -1,0 +1,2 @@
+- Defines an asynchronous function `create_author_items()` that takes two arguments - `author_id` and a list of `Items`.
+- Returns a dictionary with keys 'name' and 'items', where 'name' is the value of `author_id`, and 'items' is the passed list of `Items`.

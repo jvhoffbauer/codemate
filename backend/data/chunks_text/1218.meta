@@ -1,0 +1,1 @@
+{"original_code": "async def get_portal(teleport: bool = False) -> Response | dict:\n    if teleport:\n        return RedirectResponse(url=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\")\n    return {\"message\": \"Here's your interdimensional portal.\"}"}

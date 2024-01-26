@@ -1,0 +1,1 @@
+- Tests if a websocket connection is successfully established without credentials using Flask's built-in testing client and raises an exception (WebSocketDisconnect) when it fails to connect due to missing authentication credentials. - If the connection is successful, asserts that the function did not raise any exceptions by calling `pytest.fail()`.

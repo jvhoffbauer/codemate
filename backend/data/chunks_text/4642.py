@@ -1,0 +1,1 @@
+- Imports a function `get_password_hash()` from a tutorial on Python 3.10 security features in Sphinx documentation. - Asserts that calling this function with an argument "secretalice" returns a truthy value, implying it successfully generates a password hash.

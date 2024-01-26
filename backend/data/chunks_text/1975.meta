@@ -1,0 +1,1 @@
+{"original_code": "@app.put(\"/items/{id}\")\ndef update_item(id: str, item: Item):\n    json_compatible_item_data = jsonable_encoder(item)\n    return JSONResponse(content=json_compatible_item_data)"}

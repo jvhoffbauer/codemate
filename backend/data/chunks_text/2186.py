@@ -1,0 +1,1 @@
+- This endpoint returns an object with both a counter and its corresponding subcounter. - The `Depends()` function is used to pass dependencies (functions that provide values) into the endpoint handler. - The `use_cache` parameter of the `dep_counter` dependency is set to False, disabling caching for this specific usage.

@@ -1,0 +1,1 @@
+{"original_code": "def is_mkdocs_insiders() -> bool:\n    version = metadata.version(\"mkdocs-material\")\n    return \"insiders\" in version"}

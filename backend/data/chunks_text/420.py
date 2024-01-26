@@ -1,0 +1,5 @@
+- Imports `tutorial003` module from `docs_src/tutorial` directory and assigns it to a variable named `mod`.
+- Sets SQLAlchemy's connection URL (`sqlite_url`) for the `mod` object, creates an engine using that URL, and saves it in the `mod` object.
+- Calls the `create_db_and_tables()` function of the `mod` object to create the database and tables defined by the `Hero` class.
+- Creates an instance of SQLAlchemy's `Inspector` class and uses it to check if the table created by the `Hero` class exists in the database.
+- Asserts that the `inspector` has found the table with the name obtained through the `__tablename__` attribute of the `Hero` class.

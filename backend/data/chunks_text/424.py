@@ -1,0 +1,8 @@
+- This test case uses `pytest-mock` to mock out the builtin print function and capture its output using a custom testing print function provided by `pytest-mock`.
+- The `clear_sqlmodel` fixture is used to clear any existing SQLAlchemy metadata before running each test case.
+- The `test_tutorial` function imports the `tutorial002` module from the `docs_src/tutorial` directory, which contains an example of creating an SQLAlchemy model and defining indexes on tables.
+- The `create_engine` function from SQLAlchemy is called to create a connection to a SQLite database specified by the `sqlite_url` variable defined within the imported module.
+- A list named `calls` is initialized to store the captured outputs from the mocked print function.
+- Within the context manager created by `patch`, the `builtins.print` function is replaced with our custom testing print function (provided by `pytest-mock`) and assigned to a variable named `new_print`.
+- After replacing the builtin print function, we call the main method of the imported module (which creates the SQLAlchemy models and defines their indexes).
+- Finally, we check if the captured outputs match what's expected based on the data inserted into the table during the execution of the main method. We also verify that the correct number of indexes were generated and added to the corresponding table.

@@ -1,0 +1,2 @@
+- Defines a GET request for `"/items/valid"` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Returns an Item object with name and price properties, which is automatically converted to JSON by FastAPI due to the use of `response_model` parameter

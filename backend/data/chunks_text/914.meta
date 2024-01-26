@@ -1,0 +1,1 @@
+{"original_code": "        def decorator(func: DecoratedCallable) -> DecoratedCallable:\n            self.add_route(\n                path,\n                func,\n                methods=methods,\n                name=name,\n                include_in_schema=include_in_schema,\n            )\n            return func"}

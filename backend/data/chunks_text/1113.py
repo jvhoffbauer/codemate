@@ -1,0 +1,1 @@
+- This function is a dependency for obtaining an access token using the `OAuth2PasswordRequestForm`. - It authenticates the user with the provided credentials from the fake database and raises an error if incorrect. - If authentication succeeds, it creates an access token with a specified expiration time and returns it along with the bearer token type.

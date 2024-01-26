@@ -1,0 +1,3 @@
+- Decorates a method with `@cached_property`.
+- Caches the result of calling `get_permission_fields()` with "list" as an argument using Python's built-in cache decorator (`functools.cache`) to improve performance by avoiding redundant function calls.
+- Returns a dictionary mapping permission field names to their corresponding labels for use in displaying permissions on lists.

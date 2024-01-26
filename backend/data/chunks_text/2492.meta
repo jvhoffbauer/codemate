@@ -1,0 +1,1 @@
+{"original_code": "def test_list_of_models():\n    response = client.get(\"/pets/\")\n    assert response.json() == [\n        {\"name\": \"Nibbler\", \"owner\": {\"email\": \"johndoe@example.com\"}},\n        {\"name\": \"Zoidberg\", \"owner\": {\"email\": \"johndoe@example.com\"}},\n    ]"}

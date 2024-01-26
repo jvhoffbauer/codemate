@@ -1,0 +1,3 @@
+- Defines a function named `response_model_none_annotation_return_submodel_with_extra_data` that returns an instance of `DBUser`.
+- The function's return type is annotated as `User`, which is a built-in Python class, but in this case, it refers to a custom subclass called `DBUser`.
+- The returned value is initialized with some sample data for testing purposes, including a name, surname, and hashed password stored in the `password_hash` attribute. Additionally, there might be other attributes or methods defined within the `DBUser` class that are not shown here.

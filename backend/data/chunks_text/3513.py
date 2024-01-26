@@ -1,0 +1,3 @@
+- Creates a Flask client object using `get_client()`.
+- Makes an HTTP POST request to the "/items/" endpoint without any query parameters.
+- Verifies that the server returns a successful HTTP status code (200) and a specific JSON response ("Hello World").

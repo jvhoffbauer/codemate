@@ -1,0 +1,2 @@
+- Retrieves current user's username and password using Basic Authentication with FastAPI's built-in security middleware (Security)
+- Returns a JSON response containing the retrieved username and password in separate keys

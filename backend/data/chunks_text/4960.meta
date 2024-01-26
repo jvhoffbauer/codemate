@@ -1,0 +1,1 @@
+{"original_code": "def setup_db_models(app):\n    import_submodules(\"tifa.models\")"}

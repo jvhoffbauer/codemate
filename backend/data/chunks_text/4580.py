@@ -1,0 +1,1 @@
+- Tests the `create_access_token()` function in tutorial005_py39 of the security module by passing a dictionary with data as an argument and verifies that it returns a non-empty string (i.e., an access token).

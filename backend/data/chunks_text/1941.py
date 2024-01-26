@@ -1,0 +1,3 @@
+1. Defines a generator function `iterfile()`.
+2. Uses a context manager to automatically close the opened file after reading its contents using the `with` statement and passing it to the `open()` function along with the desired read binary mode ("rb").
+3. Yields all the bytes in the file one by one using the `yield from` syntax, which is equivalent to calling `__aiter__()`, `__anext__()`, and `__next__()` on an iterator returned by the `file_like.__aiter__()` method.

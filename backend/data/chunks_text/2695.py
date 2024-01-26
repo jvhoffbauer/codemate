@@ -1,0 +1,3 @@
+- This endpoint returns a dictionary with user data as response, but it doesn't specify any specific schema for the returned object using `response_model`.
+- The `None` value passed to `response_model` indicates that no explicit model is required for this endpoint's output.
+- However, the function still returns a dictionary containing user information, which can be used by clients without requiring them to define their own custom models or schemas.

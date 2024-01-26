@@ -1,0 +1,2 @@
+- Tries to create a SQLAlchemy column for an optional integer field in a SQLModel subclass without setting it as required (i.e., making it non-null)
+- Raises a `RuntimeError` because SQLAlchemy requires columns to be either nullable or not nullable, but not both at once

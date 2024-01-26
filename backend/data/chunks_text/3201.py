@@ -1,0 +1,3 @@
+- Tests encoding of a Pydantic model with a custom root field using `jsonable_encoder()`.
+- Verifies that the encoded output is equal to the value of the root field instead of the entire object representation.
+- Demonstrates how to define a custom root field in a Pydantic model by setting the `__root__` attribute.

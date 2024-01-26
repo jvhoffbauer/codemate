@@ -1,0 +1,1 @@
+- `probe2()` is a function that takes in a list of `Balance` objects as an argument and returns the same list without any modifications (i.e., it's a no-op).

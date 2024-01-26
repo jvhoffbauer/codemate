@@ -1,0 +1,4 @@
+- Generates a URL with up to five optional path segments and appends a query parameter 'level5=foo'.
+- Sets the value of a header variable 'Content-Type' based on the number of non-empty path segments.
+- Includes additional headers for each non-empty path segment except for the last one ('level5').
+- Asserts that the JSON body is equal to 'foo', and checks the presence of specific headers based on the input parameters.

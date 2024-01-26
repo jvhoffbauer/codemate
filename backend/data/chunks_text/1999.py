@@ -1,0 +1,2 @@
+- Defines a GET request endpoint at the root URL (/) for the application
+- Returns a JSON response with a message when the endpoint is accessed

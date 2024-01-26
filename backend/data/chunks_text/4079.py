@@ -1,0 +1,3 @@
+- Tests a WebSocket connection with a session cookie using `FastAPI` and `TestClient`.
+- Raises an exception (`WebSocketDisconnect`) when closing the WebSocket connection without sending any messages.
+- Sends and receives multiple messages through the WebSocket connection to verify their correctness.

@@ -1,0 +1,1 @@
+{"original_code": "def test_return_exclude_unset_none():\n    response = client.get(\"/exclude_unset_none\")\n    assert response.json() == {\"y\": \"y\"}"}

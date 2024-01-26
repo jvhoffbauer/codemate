@@ -1,0 +1,5 @@
+- Defines a function `get_app_client` that takes an optional boolean argument `separate_input_output_schemas`.
+- Creates a new instance of FastAPI with the given value for `separate_input_output_schemas`, and assigns it to the variable `app`.
+- Registers three endpoints (routes) using decorators from FastAPI's router module, each accepting different input types and returning different output types.
+- Initializes a test client object called `client` using the `TestClient` class provided by FastAPI, passing in our newly created `app` as its constructor argument.
+- Returns the initialized `client` object at the end of the function.

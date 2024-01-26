@@ -1,0 +1,4 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in an optional query parameter (`q`) as a string or `None`, which is then validated using Pydantic's `Query()` decorator with an alias of `"item-query"`.
+- If the query parameter is provided, it updates a dictionary called `results` with a new key-value pair containing the query value.
+- Returns the updated `results` dictionary as JSON response.

@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/login\")\ndef login(form_data: OAuth2PasswordRequestFormStrict = Depends()):\n    return form_data"}

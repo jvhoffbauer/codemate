@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\ndef ep_path():\n    return \"/api/v1/jsonrpc\""}

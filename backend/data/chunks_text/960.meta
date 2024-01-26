@@ -1,0 +1,1 @@
+{"original_code": "    def is_bytes_field(field: ModelField) -> bool:\n        return is_bytes_or_nonable_bytes_annotation(field.type_)"}

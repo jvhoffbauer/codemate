@@ -1,0 +1,1 @@
+- Tests sending a PUT request to update an item with no body (i.e., empty JSON payload). - Expected behavior is that the server returns the existing item data without modifications, as specified by the `json=None` parameter in the `client.put()` method call. - The status code of the response should be 200 OK and the returned JSON object should contain just the original item ID.

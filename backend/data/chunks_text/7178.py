@@ -1,0 +1,1 @@
+- This is a middleware function for FastAPI's HTTP requests using Starlette framework. - It logs request information such as method, URL, headers, and client IP to the console before passing control to the next handler (call_next). - The `logger_request()` function can be used in conjunction with logging libraries like `logging` or `loguru`.

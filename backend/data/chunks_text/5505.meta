@@ -1,0 +1,1 @@
+{"original_code": "@patch(\"rio_tiler.io.stac.httpx\")\ndef test_bounds(httpx, app):\n    \"\"\"test /bounds endpoint.\"\"\"\n    httpx.get = mock_RequestGet\n\n    response = app.get(\"/stac/bounds?url=https://myurl.com/item.json\")\n    assert response.status_code == 200\n    body = response.json()\n    assert len(body[\"bounds\"]) == 4"}

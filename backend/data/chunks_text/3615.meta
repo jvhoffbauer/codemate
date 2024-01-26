@@ -1,0 +1,1 @@
+{"original_code": "    @app.on_event(\"startup\")\n    def app_startup() -> None:\n        state.app_startup = True"}

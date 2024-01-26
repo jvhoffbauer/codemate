@@ -1,0 +1,1 @@
+{"original_code": "def Default(value: DefaultType) -> DefaultType:\n    \"\"\"\n    You shouldn't use this function directly.\n\n    It's used internally to recognize when a default value has been overwritten, even\n    if the overridden default value was truthy.\n    \"\"\"\n    return DefaultPlaceholder(value)  # type: ignore"}

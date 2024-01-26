@@ -1,0 +1,1 @@
+{"original_code": "        def header_example(\n            data: Union[str, None] = Header(\n                default=None,\n                example=\"header1\",\n            ),\n        ):\n            return data"}

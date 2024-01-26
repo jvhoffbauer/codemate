@@ -1,0 +1,1 @@
+{"original_code": "    def is_scalar_sequence_field(field: ModelField) -> bool:\n        return field_annotation_is_scalar_sequence(field.field_info.annotation)"}

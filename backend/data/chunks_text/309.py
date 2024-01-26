@@ -1,0 +1,1 @@
+- Retrieves a specific Hero object named Spider-Boy from the database using SQLAlchemy's `Session` and `select()`. - Updates the age of the retrieved Hero to be 16, adds it back into the session, commits the changes, and refreshes the object in memory to ensure updated values are returned by future queries.

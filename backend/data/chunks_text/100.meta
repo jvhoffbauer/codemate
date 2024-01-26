@@ -1,0 +1,1 @@
+{"original_code": "def or_(  # type: ignore[empty-body]\n    initial_clause: Union[Literal[False], _ColumnExpressionArgument[bool], bool],\n    *clauses: Union[_ColumnExpressionArgument[bool], bool],\n) -> ColumnElement[bool]:\n    return sqlalchemy.or_(initial_clause, *clauses)  # type: ignore[arg-type]"}

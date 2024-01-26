@@ -1,0 +1,1 @@
+{"original_code": "async def test_root():\n    async with AsyncClient(app=app, base_url=\"http://test\") as ac:\n        response = await ac.get(\"/\")\n    assert response.status_code == 200\n    assert response.json() == {\"message\": \"Tomato\"}"}

@@ -1,0 +1,4 @@
+- This function replaces a previous one called `get_issues_experts()`, which retrieved experts from GitHub Issues using three separate functions for commenters, recent commenters, and issue authors.
+- The new version uses a single function called `get_discussions_experts()` that extracts experts from GitHub Discussions instead of Issues.
+- The results are stored in variables with similar names as before but prefixed with "discussions_". These variables contain dictionaries mapping usernames to scores representing their expertise level.
+- The final step combines some of these variables into larger ones containing all commenters, recent commenters, and authors across both Issue and Discussion sources.

@@ -1,0 +1,2 @@
+- Tests GET request to `/response_model_list_of_model-no_annotation` endpoint without annotation in Flask-RESTful
+- Asserts that HTTP status code is 200 and returns expected JSON list of dictionaries with keys 'name' and'surname'

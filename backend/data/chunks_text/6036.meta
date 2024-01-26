@@ -1,0 +1,1 @@
+{"original_code": "        async def get_page(self, request: Request) -> Dict[str, Any]:\n            return {\"username\": \"hello\"}"}

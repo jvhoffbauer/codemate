@@ -1,0 +1,3 @@
+- This function tests a POST request to create an item with a string price value using Pytest and FastAPI's built-in `TestClient`.
+- The expected status code is 200 (OK).
+- The JSON body contains a name key with the value 'Foo', and a price key with the value '50.5'. Since we didn't provide a description or tax field in the JSON body, they should be set to their default values of None by FastAPI.

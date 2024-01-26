@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, request: Request):\n        super().__init__(scope=ChainMap({}, request.scope))\n        self.request = request"}

@@ -1,0 +1,1 @@
+{"original_code": "    def websocket_route(\n        self, path: str, name: Union[str, None] = None\n    ) -> Callable[[DecoratedCallable], DecoratedCallable]:\n        def decorator(func: DecoratedCallable) -> DecoratedCallable:\n            self.add_websocket_route(path, func, name=name)\n            return func\n\n        return decorator"}

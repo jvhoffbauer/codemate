@@ -1,0 +1,7 @@
+- Defines a `test_router_events` function that tests event handling in FastAPI routers and application startup/shutdown events using the built-in `State` object for storing state between requests.
+- Creates an instance of the FastAPI application and registers routes and event handlers.
+- Registers event handlers at the application level (`@app.on_event`) and at the router level (`@router.on_event`).
+- Includes a nested router (`sub_router`) within another router (`router`), also registering its own set of event handlers.
+- Asserts initial values of all stored states are false before making any requests to ensure they're not initialized prematurely by other means.
+- Makes a request to the root endpoint (`"/"`) via a `TestClient`, which triggers all registered event handlers.
+- Asserts final values of all stored states after shutting down the server to verify correct cleanup behavior.

@@ -1,0 +1,3 @@
+- Endpoint to retrieve system status
+- Requires authentication using FastAPI's `Depends()` function and `get_current_user()` callback function from Starlette's security middleware
+- Returns a simple JSON response with a success message

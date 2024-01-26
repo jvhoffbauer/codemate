@@ -1,0 +1,2 @@
+- Tests whether a GET request to a specified route with a query parameter "value" returns the expected JSON response based on its value
+- Uses Flask's built-in `client` object for making requests and asserts that the status code is 200 and the response body matches the expected JSON data

@@ -1,0 +1,4 @@
+- Tests HTTP Basic Authentication with invalid credentials using Pytest and FastAPI's built-in `TestClient`.
+- Sends a GET request to the `/users/me` endpoint with an incorrect authorization header (not base64 encoded).
+- Asserts that the server returns a 401 Unauthorized status code and sets the WWW-Authenticate header to 'Basic'.
+- Verifies that the JSON body contains an error message indicating invalid authentication credentials ('detail': "Invalid authentication credentials").

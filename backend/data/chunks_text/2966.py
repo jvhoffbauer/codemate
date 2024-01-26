@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_async_callable_Dependency()`.
+- Takes a positional argument `value` with default value set by another dependency called `async_callable_dependency`.
+- Returns the value of the `value` parameter, which can be obtained from the `async_callable_dependency` dependency using the `Depends()` decorator.

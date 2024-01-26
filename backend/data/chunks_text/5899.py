@@ -1,0 +1,3 @@
+- This method is an asynchronous function that retrieves a `Select` object from its parent class and returns it after filtering it using another asynchronous method called `filter_select`.
+- The `Request` parameter represents a HTTP request made by the client to this server. It's passed down through the call stack for contextual purposes.
+- The `sel` variable holds the original `Select` object returned by the parent class. It's assigned to a local variable so we can modify it without affecting the original one.

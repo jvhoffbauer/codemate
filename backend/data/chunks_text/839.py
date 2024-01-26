@@ -1,0 +1,8 @@
+1. Creates a list `middleware` containing multiple instances of the `Middleware` class. Each instance represents a middleware function that will be applied to incoming requests.
+2. Retrieves configuration settings such as `debug`, `error_handler`, and `exception_handlers` from the current application object. These settings determine how errors should be handled and which middleware functions should be used.
+3. Initializes an empty dictionary called `exception_handlers`. This dictionary maps specific HTTP status codes or types of exceptions to corresponding middleware functions that handle them.
+4. Loops through each entry in the `exception_handlers` dictionary and adds it to the `exception_handlers` attribute of the current application object. Entries with keys equal to 500 or `Exception` are added to the `error_handler` variable instead.
+5. Combines the resulting lists of middleware functions into a single list called `middleware`. This list contains the original user-defined middleware functions, followed by two additional middleware functions provided by FastAPI.
+6. Sets the `app` variable to the current router object.
+7. Iterates over the `middleware` list in reverse order and applies each middleware function to the `app` object, passing any necessary arguments. This ensures that middleware functions are applied in the correct order.
+8. Returns the modified `app` object, which now includes all configured middleware functions.

@@ -1,0 +1,2 @@
+- Defines an asynchronous function `a()` that takes an argument `id`.
+- The function body is empty and marked with a pragma statement to ignore test coverage for this block of code.

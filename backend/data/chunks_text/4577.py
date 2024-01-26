@@ -1,0 +1,1 @@
+- Imports `get_password_hash()` function from tutorial on using Python 3.9's hashlib module for password hashing in Sphinx documentation. - Asserts that calling `get_password_hash()` with a secret string returns a non-empty value, verifying correct implementation of password hashing functionality.

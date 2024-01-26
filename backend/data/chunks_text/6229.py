@@ -1,0 +1,7 @@
+- Takes a dataset as input and returns a dictionary with all unique counties/states as keys and their corresponding confirmed cases and deaths as values, organized by date
+- Initializes an empty dictionary called `grouped_locations`
+- Loops through each row in the dataset using a generator expression
+- Extracts relevant information from the current row such as county, state, date, confirmed cases, and deaths
+- Checks whether the combination of county and state is already present in `grouped_locations`. If it's not, creates a new key-value pair containing two lists initialized with empty tuples representing confirmed cases and deaths respectively
+- Appends a tuple consisting of the date and number of confirmed cases or deaths to the appropriate list under the newly created key-value pair
+- Returns the final `grouped_locations` dictionary

@@ -1,0 +1,5 @@
+- Sends a POST request with an invalid JSON body to the `/items/` endpoint using Flask's built-in testing client.
+- Sets the `Content-Type` header to indicate that the request body is in JSON format.
+- Uses Pytest fixtures to inject a mock HTTP client and create a new instance of our API app for testing purposes.
+- Asserts that the server returns a 422 Unprocessable Entity status code and includes an appropriate error message in the response body.
+- Verifies that the error message conforms to the expected structure defined by Pydantic's validation schema.

@@ -1,0 +1,5 @@
+- This function tests creating a new user with an existing username using the `test_client`, `superuser_token_headers`, and `Session`.
+- The `UserCreate` object is created with the generated or provided `username` and `password`.
+- The `crud.user.create()` method creates the user in the database.
+- A request is made to create a new user with the same `username` and `password` using the `TestClient`'s `POST` method.
+- If the request fails (i.e., status code of 400), the response JSON should not contain the `_id` field.

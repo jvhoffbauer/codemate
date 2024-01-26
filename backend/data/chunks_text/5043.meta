@@ -1,0 +1,1 @@
+{"original_code": "@bp.get(\"/\", response_class=HTMLResponse)\nasync def index(request: Request):\n    return templates.TemplateResponse(\n        \"/whiteboard/index.html\", {\"request\": request, \"id\": 1}\n    )"}

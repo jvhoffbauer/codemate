@@ -1,0 +1,4 @@
+- Defines an asynchronous function `read_items()` that takes a required query parameter `q`.
+- The `Query` decorator is used to validate and sanitize user input for the `q` parameter with a minimum length of 3 characters.
+- If the `q` parameter is provided, it's added to the response dictionary under a new key called 'q'. Otherwise, it's skipped.
+- Returns a JSON-formatted dictionary containing either just the list of items or both the list of items and the filtered search results based on the value of `q`.

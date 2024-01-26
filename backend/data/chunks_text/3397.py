@@ -1,0 +1,1 @@
+- Tests if GET request to path "/path/param-lt/{num}" with num less than 2 returns status code 200 and value of num in JSON response (which is passed as argument to `test_path_param_lt_2`)

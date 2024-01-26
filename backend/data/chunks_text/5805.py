@@ -1,0 +1,5 @@
+- Retrieves a list of PageSchemas for all children nodes of the current node
+- Filters out children without a defined PageSchema or with certain types that should be excluded
+- Recursively retrieves PageSchemas from filtered children using `asyncio`'s `await` function
+- Appends filtered and recursive PageSchemas to a master list, sorting by sort order if provided
+- Returns the final list of PageSchemas

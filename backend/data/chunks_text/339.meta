@@ -1,0 +1,1 @@
+{"original_code": "@app.command()\ndef generate_readme() -> None:\n    \"\"\"\n    Generate README.md content from main index.md\n    \"\"\"\n    typer.echo(\"Generating README\")\n    readme_path = Path(\"README.md\")\n    new_content = generate_readme_content()\n    readme_path.write_text(new_content, encoding=\"utf-8\")"}

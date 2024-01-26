@@ -1,0 +1,3 @@
+- Endpoint `/items/validlist` returns a list of items with specific structure (bullet point for each field)
+- The returned list conforms to the defined schema using OpenAPI's `response_model` decorator
+- Each item in the list has a required 'name' field and optional 'price' and 'owner_ids' fields

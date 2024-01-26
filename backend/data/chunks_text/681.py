@@ -1,0 +1,3 @@
+- Initializes a new asynchronous event loop using `asyncio.get_event_loop_policy().new_event_loop()`.
+- Yields the newly created event loop to be used in other fixtures or tests that require an event loop.
+- Closes the event loop after all tests have finished executing, preventing resource leaks and ensuring proper cleanup.

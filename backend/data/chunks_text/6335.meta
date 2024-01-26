@@ -1,0 +1,1 @@
+{"original_code": "def verify_password(plain_password: str, hashed_password: str) -> bool:\n    \"\"\"Verifies plain and hashed password matches\n\n    Applies passlib context based on bcrypt algorithm on plain passoword.\n    It takes about 0.3s for default 12 rounds of SECURITY_BCRYPT_DEFAULT_ROUNDS.\n    \"\"\"\n    return PWD_CONTEXT.verify(plain_password, hashed_password)"}

@@ -1,0 +1,1 @@
+{"original_code": "    def model_insfields(self) -> List[SqlaInsAttr]:\n        return self.parser.filter_insfield(self.model.__dict__.values())"}

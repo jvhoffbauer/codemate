@@ -1,0 +1,1 @@
+{"original_code": "def probe(ep):\n    @ep.method()\n    def probe() -> str:\n        raise ZeroDivisionError\n\n    @ep.method()\n    def probe2() -> str:\n        raise RuntimeError\n\n    return ep"}

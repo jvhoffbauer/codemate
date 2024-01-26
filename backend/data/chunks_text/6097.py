@@ -1,0 +1,1 @@
+- Tests the existence of specific endpoints and schema components defined in the OpenAPI specification using FastAPI's built-in testing functionality (TestClient) and JSONPath queries. - Verifies that the expected CRUD operations are available for both users and tags, as well as their respective filters and lists.

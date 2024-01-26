@@ -1,0 +1,1 @@
+- Defines an asynchronous function named `path1_default` that takes a single argument, `level1`, of type string. - The function returns the value of `level1`. - This function is used by FastAPI to generate URL paths with default values for the `level1` parameter when no query or body parameters are provided.

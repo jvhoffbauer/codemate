@@ -1,0 +1,3 @@
+- Defines a function called `select` with four arguments and one positional parameter annotation (type hint).
+- The first three arguments are all of type `_TScalar`, which is likely a generic scalar data type used in this context.
+- The fourth argument has a more complex type hint that includes a tuple containing the previous three arguments as well as another generic list or array type `_TCCA`. This suggests that the `__ent3` parameter may be used to specify some kind of condition for selecting elements from the input sequence based on values from the first three parameters.

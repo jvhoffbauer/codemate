@@ -1,0 +1,4 @@
+- This method is an asynchronous function that checks if a user has permission to list resources using Starlette's built-in `Paginator`.
+- It takes four arguments: `Request`, `Paginator`, `SchemaFilterT`, and optional keyword arguments (`**kwargs`) passed from the parent class or decorator.
+- The `filters` argument represents any additional filtering criteria provided by the client in the query string or body of the request. If not specified, it defaults to `None`.
+- The method returns a boolean value indicating whether the user has permission to perform the 'list' operation based on the results of another method called `has_page_permission()`.

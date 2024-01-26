@@ -1,0 +1,3 @@
+- Defines a property called `is_debug` for the current class instance
+- The value of this property is determined by checking if the instance's environment (represented by constants LOCAL, STAGING, and TESTING) falls within one of these three values
+- This property can be used to easily check whether the application is currently running in debug mode without having to explicitly compare the environment against each possible value

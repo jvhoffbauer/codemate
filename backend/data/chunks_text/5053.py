@@ -1,0 +1,3 @@
+- Defines an asynchronous function `test_celery_async()`.
+- Uses Celery's `send_task()` to start a background task with name 'test_celery_asyncio_cpu_bound'.
+- Returns a string 'ok' immediately after starting the background task.

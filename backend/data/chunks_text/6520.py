@@ -1,0 +1,2 @@
+- Defines a function `ep` that takes an argument `ep_path`.
+- Returns an instance of `jsonrpc.Entrypoint` with the given path as input.

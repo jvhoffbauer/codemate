@@ -1,0 +1,5 @@
+- Defines a command named `build` for the Flask app using Typer's decorator syntax.
+- Prints the value of an environment variable called `INSIDERS_FILE`.
+- Checks whether MkDocs Insiders should be used by calling a helper function and prints a message accordingly.
+- Runs the `mkdocs build` command to generate the documentation, passing it as arguments to the `subprocess.run` method.
+- Displays a success message in green color using Typer's `secho` method.

@@ -1,0 +1,3 @@
+- Defines a function `write_log()` that takes a string argument `message`.
+- Opens a file named "log.txt" in append (`'a'`) mode using a context manager, and assigns it to a variable called `log`.
+- Writes the value of the `message` parameter to the end of the contents of the opened file using the `write()` method.

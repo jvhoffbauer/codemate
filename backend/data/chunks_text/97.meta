@@ -1,0 +1,1 @@
+{"original_code": "def label(\n    name: str,\n    element: Union[_ColumnExpressionArgument[_T], _T],\n    type_: Optional[\"_TypeEngineArgument[_T]\"] = None,\n) -> Label[_T]:\n    return sqlalchemy.label(name, element, type_=type_)  # type: ignore[arg-type]"}

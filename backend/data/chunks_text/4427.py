@@ -1,0 +1,4 @@
+- Generates an OpenAPI (Swagger) JSON schema for a FastAPI application using `fastapi generate --openapi`.
+- The generated schema is stored in the file `./openapi.json`.
+- The schema includes information about endpoints, request and response formats, error handling, and other details required by clients to interact with the API.
+- The schema follows the OpenAPI Specification version 3.1.0 standard.

@@ -1,0 +1,1 @@
+- This function takes a `user_id` as an argument and returns a boolean value indicating whether the user with that ID exists or not (true if user exists, false otherwise). - The function is marked asynchronous using the `async` keyword to allow it to be used in async functions or coroutines.

@@ -1,0 +1,1 @@
+- Tests if a GET request to "/path/str/True" returns a JSON response with value "True". - Verifies that the HTTP status code is 200 (OK).

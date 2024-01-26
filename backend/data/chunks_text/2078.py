@@ -1,0 +1,3 @@
+- Tests strict login with missing grant type parameter in request body
+- Asserts that a HTTP status code of 422 (Unprocessable Entity) is returned by the server
+- Verifies that an error message containing details about the missing grant type field is included in the JSON response

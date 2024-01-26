@@ -1,0 +1,1 @@
+{"original_code": "@sub_router.get(\"/\")\ndef read_item():\n    return {\"id\": \"foo\"}"}

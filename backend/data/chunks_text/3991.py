@@ -1,0 +1,4 @@
+- This test case uses `pytest-mock` to mock out Pydantic's version check and ensure that we are testing against an older version (pre-v1.8).
+- The YAML data provided in the request body is invalid due to a key named'sneaky' with value of type 'object'.
+- The server returns a HTTP status code of 422 (Unprocessable Entity), indicating that the input was well-formed but still could not be processed successfully.
+- The JSON response contains an error message detailing the specific validation failure, including the location ('loc') within the data structure where the issue occurred.

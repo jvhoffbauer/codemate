@@ -1,0 +1,1 @@
+- Defines a function `say_hi` with an optional parameter `name` of type string or NoneType (optional). - If `name` is provided, prints a greeting message using f-strings. - If `name` is not provided, prints a generic greeting message.

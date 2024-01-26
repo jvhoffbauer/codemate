@@ -1,0 +1,8 @@
+- Defines a function `test_openapi_schema` to test the OpenAPI schema of FastAPI application.
+- Makes an HTTP GET request to the endpoint `/openapi.json`.
+- Asserts that the status code is 200 and saves the text response for debugging purposes.
+- Verifies that the JSON response matches the expected structure defined in the `assertion`. The `response.json()` method returns a dictionary representation of the JSON data.
+- The `OpenAPI` version used by this API is 3.1.0.
+- The root object contains information about the API such as title, version, paths, components, etc.
+- There's a path definition for `GET /a/{id}` with specific responses (e.g., error or success) and parameters (i.e., required).
+- The `components` section defines reusable elements like schemas (e.g., Error or JsonApiError), which can be referenced elsewhere using their ID ($ref).

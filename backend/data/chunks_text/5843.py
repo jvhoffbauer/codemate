@@ -1,0 +1,2 @@
+- Returns a URL that combines the router path of the current application and the FastAPI docs URL from the site object
+- Provides an easy way to access the documentation for this specific resource without having to manually construct the URL each time it's needed

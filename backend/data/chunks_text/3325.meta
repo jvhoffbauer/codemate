@@ -1,0 +1,1 @@
+{"original_code": "def test_app():\n    with client:\n        response = client.get(\"/\")\n    assert response.json() == {\"msg\": \"Hello World\"}\n    assert response.headers[\"content-type\"] == json_type"}

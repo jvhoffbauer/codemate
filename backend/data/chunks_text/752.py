@@ -1,0 +1,1 @@
+- Defines a GET request handler for the root URL (/) of the application, which is excluded from schema generation using `include_in_schema=False`. - Returns a redirect response to the "/docs" endpoint, effectively serving as a landing page for documentation or help resources.

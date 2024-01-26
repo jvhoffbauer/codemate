@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/{item_id}` endpoint using FastAPI's decorator syntax
+- Accepts an argument named `item_id` of type string, which is passed to the function as a parameter
+- Returns the value associated with the given item ID from a dictionary called `items`, assuming it exists

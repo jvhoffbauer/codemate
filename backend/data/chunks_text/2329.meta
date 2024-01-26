@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/items/\")\ndef save_union_different_body(item: Union[ExtendedItem, Item]):\n    return {\"item\": item}"}

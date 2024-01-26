@@ -1,0 +1,3 @@
+- Defines a property called `AnnotatedItemIdList`, which returns an instance of `Annotated`.
+- The `AnnotatedItemIdList` is used to filter the item IDs based on user permissions and inject them into FastAPI dependencies using the `Depends()` decorator.
+- This allows for efficient and secure access control in API endpoints by avoiding unnecessary database queries or computations for unauthorized users.

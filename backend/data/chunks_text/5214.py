@@ -1,0 +1,3 @@
+- Defines a method `url_for` that takes in a Flask request object and an endpoint name as arguments
+- Returns the full URL with the router's prefix for the specified endpoint using the `url_path_for` function from the router
+- Concatenates the base URL of the request with the router's prefix (if provided), then returns the resulting absolute URL

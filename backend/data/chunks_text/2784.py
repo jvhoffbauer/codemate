@@ -1,0 +1,1 @@
+- Tests GET request to `/items` endpoint with a specific user ID (`abc123`) using Flask's built-in testing client. - Asserts that the status code of the response is 200 and its text content is empty. - Verifies that the JSON response contains an array with one item having an `item_id` value of 'i2' and a matching `user_id`.

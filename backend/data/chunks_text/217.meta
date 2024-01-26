@@ -1,0 +1,1 @@
+{"original_code": "def test_get_session():\n    app_mod.engine = create_engine(\"sqlite://\")\n    for session in app_mod.get_session():\n        assert isinstance(session, Session)\n        assert session.bind == app_mod.engine"}

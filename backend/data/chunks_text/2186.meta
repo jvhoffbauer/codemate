@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/sub-counter-no-cache/\")\nasync def get_sub_counter_no_cache(\n    subcount: int = Depends(super_dep),\n    count: int = Depends(dep_counter, use_cache=False),\n):\n    return {\"counter\": count, \"subcounter\": subcount}"}

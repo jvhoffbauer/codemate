@@ -1,0 +1,1 @@
+- Initializes `openrpc_schema` if it's not already set, using a helper method to retrieve it from some external source. - Checks whether fine names for components should be used based on configuration settings. If so, restores them by calling another helper method that modifies the schema structure. - Returns the finalized `openRPCSchema`.

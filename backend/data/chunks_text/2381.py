@@ -1,0 +1,4 @@
+- Tests if level1 query parameter is correctly overridden and returned as JSON response body
+- Verifies that correct content type header is set for Level 1 responses
+- Confirms presence of headers 'X-Level0' (inherited from base class) and 'X-Level1' (set by this method)
+- Asserts absence of headers 'X-Level2', 'X-Level3', 'X-Level4', and 'X-Level5' (not set by this method or its parent classes)

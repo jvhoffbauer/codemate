@@ -1,0 +1,4 @@
+- Tests WMTS endpoints using Flask application and mocked rasterio functions
+- Retrieves WMTSCapabilities XML document with URL of COG file as input parameter
+- Verifies HTTP status code, content type, cache control header, and presence of expected text in response body
+- Generates tile URLs for Web Mercator Quad coordinate system at different scales and formats

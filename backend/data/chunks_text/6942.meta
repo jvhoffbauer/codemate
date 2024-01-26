@@ -1,0 +1,1 @@
+{"original_code": "async def get_task(task_id: str):\n    job = ArqJob(task_id, redis.pool)\n    return await job.info()"}

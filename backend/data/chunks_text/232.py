@@ -1,0 +1,3 @@
+- Creates a new hero with name 'Deadpond' and secret name 'Dive Wilson' using POST request to '/heroes/' endpoint
+- Verifies that status code of response is 200 (OK)
+- Extracts JSON response body and asserts that expected fields are present with correct values, while other fields have default or null values

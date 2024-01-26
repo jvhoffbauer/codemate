@@ -1,0 +1,3 @@
+- This test checks if posting an invalid YAML data to the `/items/` endpoint returns a 422 status code and includes a detailed error message in JSON format using Pydantic's validation features.
+- The YAML data contains an incorrect value for the'sneaky' tag (an object instead of a string), which triggers a validation error from Pydantic.
+- The expected error message is returned by Pydantic as part of the HTTP response body.

@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with an attribute `data`, which is passed as an argument to the constructor. - The value of `data` is assigned to the `data` attribute of the newly created object.

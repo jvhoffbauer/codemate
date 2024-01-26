@@ -1,0 +1,1 @@
+{"original_code": "    def validate(self):\n        \"\"\"Register /validate endpoint.\"\"\"\n\n        @self.router.post(\"/validate\")\n        def validate(body: MosaicJSON):\n            \"\"\"Validate a MosaicJSON\"\"\"\n            return True"}

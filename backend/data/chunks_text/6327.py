@@ -1,0 +1,6 @@
+- Endpoint for creating a new user with `POST /register`.
+- Accepts a request body of type `UserCreateRequest`, which contains an email and password to create the user with.
+- Retrieves existing users from the database using SQLAlchemy's `select()` function and filters by email. If a matching user exists, raises a `HTTPException` with status code 400 and error message "Cannot use this email address".
+- Creates a new `User` object with the provided email and password hash generated using FastAPI's built-in `get_password_hash()` helper method.
+- Adds the new user to the database session and commits changes.
+- Returns the newly created user as a JSON response in the format specified by the `response_model` decorator (`UserResponse`).

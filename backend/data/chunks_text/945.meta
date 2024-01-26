@@ -1,0 +1,1 @@
+{"original_code": "        def get_default(self) -> Any:\n            if self.field_info.is_required():\n                return Undefined\n            return self.field_info.get_default(call_default_factory=True)"}

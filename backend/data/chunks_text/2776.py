@@ -1,0 +1,1 @@
+- Defines a function named `get_user` that takes in a required parameter `user_id` of type string. - Inside the function, creates and returns a dictionary with a key "user_id" whose value is the same as the input argument `user_id`.

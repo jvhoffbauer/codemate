@@ -1,0 +1,3 @@
+- This function is a test case named `test_tutorial`. It takes two arguments - `prepare` and `session`.
+- The `prepare` argument is not used in this example, but it's typically used to set up data or environment for testing purposes.
+- The `Session` object represents an active database connection that can be passed around between functions as needed. In this case, we pass it into the `test_create_hero()` function defined in the `test_mod` module to perform some tests related to creating heroes using SQLAlchemy ORM.

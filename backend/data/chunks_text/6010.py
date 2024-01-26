@@ -1,0 +1,5 @@
+- Defines a function `admin_cls_list()` that takes in a single argument `models`.
+- Inside this function, it creates two classes - `UserAdmin` and `BlogApp`.
+- The `UserAdmin` class is derived from Django's built-in `admin.ModelAdmin`, which provides functionality for managing database objects through an administrative interface. Here we set its `model` attribute to be our custom user model (`models.User`) defined elsewhere.
+- The `BlogApp` class is also derived from Django's built-in `admin.AdminApp`, which allows us to group related models together into a logical unit within the administration site. We pass the name of our application as an argument to this constructor.
+- Within the initializer method of `BlogApp`, we call another method called `register_admin()` on the parent class `admin.AdminApp`. This method registers the `UserAdmin` instance with the blog application so that it will appear when accessing the administration site.

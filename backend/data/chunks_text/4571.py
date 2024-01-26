@@ -1,0 +1,3 @@
+- Tests that accessing a protected resource without authentication returns a 401 Unauthorized status with WWW-Authenticate header set to Bearer
+- Uses FastAPI's built-in `TestClient` for integration testing
+- Verifies that the error message returned is correct and matches the expected format

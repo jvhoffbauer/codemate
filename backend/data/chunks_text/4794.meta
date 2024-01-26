@@ -1,0 +1,1 @@
+{"original_code": "def authenticate(bucket: Bucket, *, username: str, password: str):\n    user = get(bucket, username=username)\n    if not user:\n        return None\n    if not verify_password(password, user.hashed_password):\n        return None\n    return user"}

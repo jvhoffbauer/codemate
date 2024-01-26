@@ -1,0 +1,3 @@
+- Creates a new `Dependent` object with empty attributes
+- Copies over all attribute values from the input `Depend Anton` to the newly created one
+- Returns the cloned `Depend Anton`

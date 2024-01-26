@@ -1,0 +1,1 @@
+{"original_code": "def test_use_access_token(superuser_token_headers):\n    server_api = get_server_api()\n    r = requests.post(\n        f\"{server_api}{config.API_V1_STR}/login/test-token\",\n        headers=superuser_token_headers,\n    )\n    result = r.json()\n    assert r.status_code == 200\n    assert \"username\" in result"}

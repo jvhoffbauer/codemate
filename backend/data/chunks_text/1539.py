@@ -1,0 +1,4 @@
+- Defines a GET request for `/items/`.
+- Uses Pydantic's `Query` decorator to parse and validate query parameters.
+- Sets defaults, minimum length, maximum length, and regular expression constraints on the `q` parameter using keyword arguments passed to `Query`.
+- Returns a dictionary with two items, one of which is updated based on the value of `q`.

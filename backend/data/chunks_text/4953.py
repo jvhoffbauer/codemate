@@ -1,0 +1,1 @@
+- Defines a custom exception handler for `unicorn_exceptions`, which is a subclass of `BaseException`. - Takes in two arguments: `Request` and `UnicornException`. - Returns an instance of `ORJSONResponse` with a custom HTTP response status (418) and a message containing details about the error caused by the `UnicornException`.

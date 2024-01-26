@@ -1,0 +1,3 @@
+- Defines a custom JSON encoder for the `dt_field` attribute of the `ModelWithCustomEncoder` and its subclass using Pydantic's `FieldSerializer`.
+- The custom encoder formats the date time as ISO format with microseconds set to zero and UTC time zone.
+- Tests that both the base class and its subclass use the same custom encoder by encoding them into JSON using `jsonable_encoder()`.

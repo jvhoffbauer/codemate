@@ -1,0 +1,3 @@
+- Defines an OpenAPI schema for a FastAPI application with version 3.1.0 and title 'FastAPI' (line 5)
+- Includes information about endpoints, parameters, responses, schemas, etc. In JSON format (lines 9-67)
+- Uses PyYAML to convert Python objects into YAML documents that can be easily consumed by other tools or services (implicitly)

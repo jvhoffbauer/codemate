@@ -1,0 +1,4 @@
+- Defines a function `get_docs()` that takes several arguments related to Couchbase's document storage system (Couchbase Buckets and Documents).
+- The function returns a list of objects created from documents retrieved using Couchbase's query API.
+- It allows specifying the type of documents to retrieve through the `doc_type` parameter, as well as options for pagination via `skip` and `limit`.
+- Additionally, it accepts an optional argument `doc_model`, which is used to convert the raw document data into instances of a specific Pydantic model class.

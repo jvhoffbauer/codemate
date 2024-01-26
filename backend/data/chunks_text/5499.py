@@ -1,0 +1,5 @@
+- Tests the `GET /mosaicjson/point` API endpoint for retrieving a single tile from a GeoJSON file using Flask's built-in testing framework (unittest).
+- Uses a fixture to load the JSON data into memory and patches the backend method to return this data instead of reading it from disk.
+- Sends an HTTP request to the server with parameters specifying the location to retrieve and the name of the input GeoJSON file.
+- Asserts that the response status is 200 OK and parses the response body as JSON.
+- Verifies that exactly one value is returned, which contains both the URL path to the corresponding TIFF file and its associated pixel values.

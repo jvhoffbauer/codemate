@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_item()` that takes a required parameter `item_id`.
+- Checks whether the given `item_id` is present in the dictionary `items`, and raises a `HTTPException` with specific error details and a custom header if it's not found.
+- Returns a JSON response containing the value of the requested key from the `items` dictionary wrapped inside a dictionary with a single key 'item'.

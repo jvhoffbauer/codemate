@@ -1,0 +1,3 @@
+- Defines a function `get_default_description()` that takes an instance of a class as its argument (implicitly through the `cls` parameter)
+- Returns a string representation of the default description for the given class, using the values of two attributes `CODE` and `MESSAGE` specific to each subclass implementing this decorator
+- The returned string is formatted using Python's f-strings syntax

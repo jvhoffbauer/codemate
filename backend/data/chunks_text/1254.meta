@@ -1,0 +1,1 @@
+{"original_code": "def test_override_in_items_with_q():\n    response = client.get(\"/items/?q=foo\")\n    assert response.status_code == 200\n    assert response.json() == {\n        \"message\": \"Hello Items!\",\n        \"params\": {\"q\": \"foo\", \"skip\": 5, \"limit\": 10},\n    }"}

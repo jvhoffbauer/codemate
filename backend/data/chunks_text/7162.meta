@@ -1,0 +1,1 @@
+{"original_code": "def register_router(app: FastAPI) -> None:\n    \"\"\"\n    \u6ce8\u518c\u8def\u7531\n    :param app:\n    :return:\n    \"\"\"\n    # \u9879\u76eeAPI\n    app.include_router(\n        api_v1_router,\n    )"}

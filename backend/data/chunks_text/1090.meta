@@ -1,0 +1,1 @@
+{"original_code": "async def get_current_active_user(\n    current_user: Annotated[User, Security(get_current_user, scopes=[\"me\"])]\n):\n    if current_user.disabled:\n        raise HTTPException(status_code=400, detail=\"Inactive user\")\n    return current_user"}

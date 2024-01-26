@@ -1,0 +1,3 @@
+- Creates an administrative instance of each registered model using `get_admin_or_create()`.
+- The list comprehension iterates over all keys (model classes) in the `_registered` dictionary, which presumably contains mappings between models and their corresponding Django Admin classes.
+- The method is named `_create_admin_instance_all`, implying that it's a private helper function used by other methods within this class.

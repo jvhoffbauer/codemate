@@ -1,0 +1,3 @@
+- Defines a new endpoint `GET /items/invalid` using FastAPI's decorator syntax
+- Returns an item with an invalid price value of type string instead of float or int, causing a validation error during JSON parsing by clients like web browsers and RESTful API consumers
+- Demonstrates how to use FastAPI's built-in schema system for input and output data validation at the endpoint level

@@ -1,0 +1,4 @@
+- Defines a function `test_get` that takes four arguments: `path`, `expected_status`, `expected_response`, and an instance of Flask's `TestClient`.
+- Makes a GET request to the specified path using the `client` object and stores the response in a variable called `response`.
+- Asserts that the status code of the response is equal to the value stored in `expected_status`.
+- Asserts that the JSON representation of the response body is equivalent to the value stored in `expected_response`.

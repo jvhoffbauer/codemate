@@ -1,0 +1,3 @@
+- Defines a function `get_heartbeat` that returns an object of type `HearbeatResult`.
+- The returned object contains a boolean flag called `is_alive`, which is set to True in this implementation.
+- This function can be used to check if a system or service is currently running and healthy, by calling it periodically and checking the value of `is_alive`.

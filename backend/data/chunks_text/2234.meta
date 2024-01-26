@@ -1,0 +1,1 @@
+{"original_code": "def test_is_bytes_sequence_annotation_union():\n    # For coverage\n    # TODO: in theory this would allow declaring types that could be lists of bytes\n    # to be read from files and other types, but I'm not even sure it's a good idea\n    # to support it as a first class \"feature\"\n    assert is_bytes_sequence_annotation(Union[List[str], List[bytes]])"}

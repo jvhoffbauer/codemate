@@ -1,0 +1,2 @@
+- Defines a function named `test_email` that takes an argument `email_to` of type `EmailStr`.
+- The function calls another function called `send_test_email` with the argument `email_to`, and returns a dictionary containing a message string.

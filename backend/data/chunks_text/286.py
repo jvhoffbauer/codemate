@@ -1,0 +1,4 @@
+- Defines a function named `main`.
+- The function is called at program execution using an exclamation mark (!).
+- Initializes database and tables by calling `create_db_and_tables()`, which may involve creating necessary SQL statements to define table structures.
+- Populates the database with initial data through `create_heroes()`, potentially involving inserting rows into defined tables.

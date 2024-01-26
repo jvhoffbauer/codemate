@@ -1,0 +1,1 @@
+{"original_code": "def test_read_users():\n    response = client.get(\"/users/42\")\n    assert response.status_code == 200, response.text"}

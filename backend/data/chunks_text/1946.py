@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()`.
+- Returns a simulated HTTP response with a predefined HTML content and a status code of 200 (OK).
+- The returned object is an instance of `HTMLResponse`, which is a subclass of `Response` from the `responses` library for mocking HTTP responses during testing.

@@ -1,0 +1,1 @@
+- Creates an asynchronous database session using `async_db.session_maker()`. - Yields the session object for use in other functions or methods that require a database connection. - Automatically closes the session when it is no longer needed, freeing up resources and preventing potential memory leaks.

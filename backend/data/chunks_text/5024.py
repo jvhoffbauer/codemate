@@ -1,0 +1,6 @@
+- Defines a function `item()` that creates an endpoint for retrieving an item with the given `path`.
+- The function takes optional arguments `out`, `summary`, and `tags`.
+- If the `summary` doesn't already contain '-Item', it is appended to it.
+- A class name is generated based on the `path` using `path_to_cls_name()`.
+- An instance of the model created by `create_model()` (from Pydantic) is returned as the response schema.
+- The endpoint is registered using FastAPI's `get()` method, passing the `response_model`, `tags`, and `summary` arguments.

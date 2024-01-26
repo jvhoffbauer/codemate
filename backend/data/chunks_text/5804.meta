@@ -1,0 +1,1 @@
+{"original_code": "    def remove_child(self, unique_id: str) -> None:\n        self._children = [\n            admin for admin in self._children if admin.unique_id != unique_id\n        ]\n        for admin in self._children:\n            if isinstance(admin, AdminGroup):\n                admin.remove_child(unique_id)"}

@@ -1,0 +1,4 @@
+- Defines an OpenAPI schema for a FastAPI application with version 3.1.0 and title 'FastAPI' (line 5)
+- Includes information about endpoints, responses, parameters, and error handling using JSON Schema (lines 9-67)
+- Uses `IsDict` from pydantic to validate query parameter types (line 28)
+- Implements HTTP validation errors by referencing a custom schema called `HTTPValidationError` (lines 52-58)

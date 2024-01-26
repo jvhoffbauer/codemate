@@ -1,0 +1,4 @@
+- Defines an `/assets` endpoint for retrieving lists of Cloud Optimized GeoTiffs (COGs) that intersect with specific spatial extents or locations using FastAPI and RasterIO libraries.
+- Provides two methods to retrieve asset lists based on different input formats: one accepts four coordinates representing a bounding box, while another takes longitude and latitude values for a single location. The third method uses Mercator tile coordinates (zoom level, column, row).
+- Dependencies are passed through functions like `Path`, `Query`, `Depends`, and `EnvironmentDependency`. These dependencies provide path information, query parameters, environment variables, and other required inputs for executing the endpoints.
+- Uses RasterIO's `Reader` class to open the dataset and access its metadata and data. It also provides helper methods such as `assets_for_bbox()`, `assets_for_point()`, and `assets_for_tile()` to efficiently extract relevant assets from the dataset.

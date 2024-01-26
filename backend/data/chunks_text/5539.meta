@@ -1,0 +1,1 @@
+{"original_code": "    def get_column(self, field: SqlaInsAttr) -> Optional[Column]:\n        \"\"\"sqlalchemy Column\"\"\"\n        if isinstance(field, InstrumentedAttribute):\n            return field.class_.__table__.columns.get(field.key)\n        elif isinstance(field, str):\n            return self.__table__.columns.get(field)\n        return None"}

@@ -1,0 +1,1 @@
+- Tests the `validator_skip_blank()` function with an enum type and a string value, ensuring that it returns `None` when the input is blank.

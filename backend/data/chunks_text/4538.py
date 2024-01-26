@@ -1,0 +1,3 @@
+- Tests the `create_access_token()` function defined in tutorial005 of the security module for Python 3.10 documentation
+- Passes a dictionary with data as an argument to generate an access token and stores it in the variable `access_token`
+- Asserts that the generated access token is not empty or null

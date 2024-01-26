@@ -1,0 +1,1 @@
+- Defines a function named `no_params` that takes no parameters and returns a string value of "123". - The function is annotated with a type hint for its return value, which specifies that it should return a string. This helps to improve code readability and catch potential errors at compile time.

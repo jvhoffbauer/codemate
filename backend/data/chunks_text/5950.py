@@ -1,0 +1,4 @@
+- Defines an admin interface for a custom login form using Amis Admin's `@site.register_admin` decorator.
+- Configures the form information with a customized page schema and optional form properties.
+- Creates a data model based on Pydantic to represent the form submission data.
+- Handles the submitted data by implementing a method called `handle()`, which returns a response object containing either success or error messages along with any necessary data.

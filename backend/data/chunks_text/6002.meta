@@ -1,0 +1,1 @@
+{"original_code": "    async def handle(\n        self, request: Request, data: BaseModel, **kwargs\n    ) -> BaseApiOut[Any]:\n        ret = data.dict()\n        return BaseApiOut(data={**ret, \"extra\": \"success\"})"}

@@ -1,0 +1,5 @@
+- This function uses `@needs_py310` decorator to ensure Python version >= 3.10.
+- It defines a parameterized test using `@pytest.mark.parametrize`. The parameters are: path (URL), headers (request headers with x-token key), expected status code, and expected JSON response body.
+- For each set of parameters, it sends an HTTP GET request using `client.get`, passing in the URL and optional headers.
+- It asserts that the response status code matches the expected value.
+- It also asserts that the response JSON body matches the expected value by comparing them using `assert response.json() == expected_response`.

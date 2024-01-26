@@ -1,0 +1,2 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Returns a list containing one dictionary with a key of 'name' and value of 'Katana', representing an item in this hypothetical API's inventory

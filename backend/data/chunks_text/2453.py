@@ -1,0 +1,3 @@
+- Tests synchronous and asynchronous functionality by making a GET request to `/sync_async`.
+- Asserts that the status code is 200 and the response text matches expected value.
+- Asserts that the async function completes successfully based on the value of `state` dictionary.

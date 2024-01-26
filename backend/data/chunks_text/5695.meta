@@ -1,0 +1,1 @@
+{"original_code": "    def __str__(self):\n        \"\"\"\n        Use value when cast to str, so that Choices set as model instance\n        attributes are rendered as expected in templates and similar contexts.\n        \"\"\"\n        return str(self.value)"}

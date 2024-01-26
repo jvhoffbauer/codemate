@@ -1,0 +1,1 @@
+- Defines a function named `probe` that returns a string (type annotation) but never actually executes because it raises a `ZeroDivisionError`. This is likely used for testing or debugging purposes to intentionally trigger an error in other parts of the program.

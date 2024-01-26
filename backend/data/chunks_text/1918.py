@@ -1,0 +1,3 @@
+- Generates HTML for Flask-Swagger's customizable Swagger UI page
+- Uses `get_swagger_ui_html()` function from Flask-Swagger to generate HTML with specified options
+- Customizes the title of the Swagger UI page by appending the application's title and a space followed by "- Swagger UI"

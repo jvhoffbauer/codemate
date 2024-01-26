@@ -1,0 +1,1 @@
+{"original_code": "def is_couchbase_user_created(*, cluster_url, username, password, new_user_id):\n    url = f\"{cluster_url}/settings/rbac/users/local/{new_user_id}\"\n    auth = HTTPBasicAuth(username, password)\n    r = requests.get(url, auth=auth)\n    return r.status_code == 200"}

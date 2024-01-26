@@ -1,0 +1,2 @@
+- Defines a function `get_client` that returns an instance of `TestClient`.
+- Imports and uses the Flask application defined in `docs_src/separate_openapi_schemas/tutorial001_py39.py` to create the `TestClient` object.

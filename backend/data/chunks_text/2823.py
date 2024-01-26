@@ -1,0 +1,1 @@
+- Tests a GET request to the `/query/frozenset/` endpoint with three query parameters (`query=1`, `query=1`, and `query=2`) of type string. - Asserts that the status code is 200 OK. - Asserts that the JSON response contains the values '1' and '2', joined by a comma ('1,2').

@@ -1,0 +1,1 @@
+{"original_code": "def test_multi_query_values():\n    url = \"/items/?q=baz&q=foobar\"\n    response = client.get(url)\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"q\": [\"baz\", \"foobar\"]}"}

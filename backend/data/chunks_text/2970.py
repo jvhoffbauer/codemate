@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_synchronous_method_dependency()`.
+- Accepts a positional argument `value` with default value provided by `Depends()`, which is a decorator that binds dependencies to functions in FastAPI applications.
+- The dependency passed to `Depends()` is `methods_dependency.synchronous`, which returns a synchronous method from another module called `methods_dependency`. This allows for reusability of methods across different parts of the application, while still maintaining asynchronicity where necessary.

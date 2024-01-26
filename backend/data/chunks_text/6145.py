@@ -1,0 +1,3 @@
+- Retrieves live stock price for a given instrument using Kite Connect API and stores it in local database
+- Uses OAuth2 authentication to authenticate with Kite Connect API
+- Handles errors by logging them and returning None instead of crashing the program

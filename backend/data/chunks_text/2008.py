@@ -1,0 +1,3 @@
+- This function takes an `item_id` as input and returns a dictionary containing the name of the item with that ID from a hypothetical database called `fake_items_db`.
+- If the `item_id` is not present in the `fake_items_db`, it raises a customized HTTP exception with status code 404 (not found) and a message explaining why the request failed.
+- The returned dictionary contains both the name of the item and its unique identifier for future reference or updates.

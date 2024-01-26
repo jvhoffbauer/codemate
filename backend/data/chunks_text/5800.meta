@@ -1,0 +1,1 @@
+{"original_code": "    def route_submit(self):\n        async def route(\n            request: Request,\n            item_id: self.admin.AnnotatedItemIdList,  # type:ignore\n            data: Annotated[self.schema, Body()] = None,  # type:ignore\n        ):\n            return await self.handle(request, item_id, data)\n\n        return route"}

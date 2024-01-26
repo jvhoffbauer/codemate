@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a default optional argument `user_agent`.
+- The type hint for this parameter is `Union[str, None]`, which means it can be either a string or `None`.
+- If no value is provided, the header will use its default value of `None`, which is set by the `Header` decorator.

@@ -1,0 +1,1 @@
+{"original_code": "def get_auth_header(\n    *, client: TestClient, email: EmailStr, password: str\n) -> dict[str, str]:\n    return _get_auth_header_from_credentials(\n        client, {\"username\": email, \"password\": password}\n    )"}

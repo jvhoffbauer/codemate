@@ -1,0 +1,2 @@
+- Tests if `Validator` is cloned when making a request using Flask's built-in testing client (`TestClient`)
+- Raises a `ResponseValidationError` and checks that it contains an error message about the model name ending in 'A'

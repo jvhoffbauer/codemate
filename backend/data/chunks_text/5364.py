@@ -1,0 +1,1 @@
+- Tests if the image type returned by Selenium's WebDriver corresponds to the expected image profile for a given browser (Chrome, Firefox, etc.) using Python's built-in enum and dictionary data structures. - Verifies that the image profiles retrieved from an external module match those provided by Selenium's WebDriver for each supported browser.

@@ -1,0 +1,7 @@
+- Defines a function `get_current_user()` that takes an optional argument `token`.
+- If no token is provided, raises an exception with specific details and headers.
+- Decodes the token using the secret key and algorithm specified in the configuration.
+- Extracts the username from the decoded payload and creates a new object containing it.
+- Raises another exception if the username cannot be found or extracted.
+- Retrieves the user from a fake database based on the username stored in the token data.
+- Returns the user if found; otherwise, raises an exception again.

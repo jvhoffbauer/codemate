@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/dict\", response_model=Model, response_model_by_alias=False)\ndef read_dict():\n    return {\"alias\": \"Foo\"}"}

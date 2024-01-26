@@ -1,0 +1,1 @@
+- Initializes a new COVID-19 case object with general information and statistics from an API response. - Sets the `state` and `county` attributes of the object based on input parameters. - Calls the parent class' constructor (`super()`) to set common properties like country, ID, and timestamp.

@@ -1,0 +1,4 @@
+- Defines a function `get_headers()` that returns a response object using FastAPI's `JSONResponse`.
+- Inside the function, creates a dictionary called `content` with a single key-value pair containing a message string.
+- Creates another dictionary called `headers`, which contains two key-value pairs representing custom HTTP request headers to be sent along with the response.
+- Returns the `JSONResponse` object created by passing both the `content` and `headers` dictionaries as arguments.

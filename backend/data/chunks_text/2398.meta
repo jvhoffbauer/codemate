@@ -1,0 +1,1 @@
+{"original_code": "async def asyncgen_state(state: Dict[str, str] = Depends(get_state)):\n    state[\"/async\"] = \"asyncgen started\"\n    yield state[\"/async\"]\n    state[\"/async\"] = \"asyncgen completed\""}

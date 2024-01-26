@@ -1,0 +1,1 @@
+- This test case demonstrates how to override a query parameter in the `client.get()` method using the `q` parameter value 'foo'. - The expected status code and JSON response are verified after making the GET request with the overridden query parameters.

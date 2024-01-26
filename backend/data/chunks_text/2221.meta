@@ -1,0 +1,1 @@
+{"original_code": "def test_additional_properties_post():\n    response = client.post(\"/foo\", json={\"items\": {\"foo\": 1, \"bar\": 2}})\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"foo\": 1, \"bar\": 2}"}

@@ -1,0 +1,1 @@
+- Defines a function `get_client()` that returns an instance of Flask's test client, initialized with the application defined in `docs_src/bigger_applications/app_an/main.py`. - Imports the necessary modules and classes to create the test client (Flask's `TestClient`, and the main module of our application).

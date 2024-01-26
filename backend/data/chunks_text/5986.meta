@@ -1,0 +1,1 @@
+{"original_code": "    def test_scalar_type_choices(self):\n        class UserStatus(IntegerChoices):\n            NORMAL = 1, \"\u6b63\u5e38\"\n            DISABLED = 2, \"\u7981\u7528\"\n\n        assert annotation_outer_type(UserStatus) == UserStatus"}

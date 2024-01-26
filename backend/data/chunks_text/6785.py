@@ -1,0 +1,3 @@
+- This method checks if a given `User` object has superuser privileges by calling its `is_superuser()` attribute.
+- It returns a boolean value indicating whether the user is a superuser or not.
+- The method can be used to restrict access to certain functionalities based on user permissions in Django applications.

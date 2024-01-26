@@ -1,0 +1,1 @@
+{"original_code": "    @router.get(\"/simple\")\n    def home():\n        \"\"\"Works and should return FALSE.\"\"\"\n        res = get_gdal_config(\"GDAL_DISABLE_READDIR_ON_OPEN\")\n        return {\"env\": res}"}

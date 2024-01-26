@@ -1,0 +1,1 @@
+- Defines a function named `web` that takes an optional argument `TileMatrixSetId`, with a default value of "WebMercatorQuad" obtained from a query (not shown). - The function returns the value of `TileMatrixSetId`.

@@ -1,0 +1,1 @@
+{"original_code": "def response_model_no_annotation_return_invalid_dict():\n    return {\"name\": \"John\"}"}

@@ -1,0 +1,4 @@
+- Defines a function `health_check` that takes an `application` and a `health_url`.
+- Returns a wrapper function called `health_check_wrapper` which is used to handle requests for the specified `health_url`.
+- If the requested URL doesn't match the `health_url`, passes control back to the main `application`.
+- Otherwise, sends a response with status 200 and content type text/plain.

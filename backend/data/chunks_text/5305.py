@@ -1,0 +1,5 @@
+- Defines a new asynchronous function called `route3`.
+- The function takes in an instance of the `Response` class from FastAPI's built-in library.
+- Inside the function, it sleeps for one second using Python's built-in `time` module.
+- After sleeping, it sets a custom header named 'Server-Timing' with two values separated by semicolons (';'). The first value is 'atime', which indicates that this metric represents the amount of time spent waiting for I/O operations to complete. The second value is 'dur', which stands for duration and specifies the number of milliseconds taken to execute the operation. In our case, we set its value to 2000ms or 2 seconds.
+- Finally, the function returns a string containing a message indicating successful execution.

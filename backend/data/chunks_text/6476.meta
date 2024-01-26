@@ -1,0 +1,1 @@
+{"original_code": "    def __hash__(self):\n        return hash(self.entrypoint_route.path)"}

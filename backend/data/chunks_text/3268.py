@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Includes a query parameter named `q`, which is optional and has a default value of None when not provided by the client
+- Uses Pydantic's `Query` function to parse the `q` parameter as a tuple containing two `Item` objects, where `Item` is assumed to be a custom data model defined elsewhere in the application

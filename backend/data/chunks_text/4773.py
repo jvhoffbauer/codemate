@@ -1,0 +1,3 @@
+- Initializes a function called `init()`.
+- Tries to establish a connection to the default Couchbase database bucket using the `get_default_bucket()` method and logs a message if successful.
+- Raises an exception (and its original error message) if there's any issue connecting to the database.

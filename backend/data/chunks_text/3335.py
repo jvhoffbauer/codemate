@@ -1,0 +1,3 @@
+- Defines a function `hidden_query()` that takes an optional query parameter called `hidden_query`.
+- Sets the default value of this parameter to None and excludes it from being included in the schema using the `include_in_schema` argument of the `Query` decorator.
+- Returns a dictionary with the key "hidden_query" containing the value passed as the `hidden_query` parameter (if provided).

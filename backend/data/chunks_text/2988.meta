@@ -1,0 +1,1 @@
+{"original_code": "def save_union_body(item: Union[OtherItem, Item]):\n    return {\"item\": item}"}

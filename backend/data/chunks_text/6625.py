@@ -1,0 +1,3 @@
+- Defines a method called `probe` using FastAPI's decorator syntax (@ep).
+- Accepts an optional argument `user`, which is obtained from the `Depends` function that wraps the `HTTPBasicCredentials` class provided by FastAPI for handling basic authentication.
+- Returns the username of the authenticated user as a string.

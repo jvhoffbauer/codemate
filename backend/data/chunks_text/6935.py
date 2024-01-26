@@ -1,0 +1,3 @@
+- Creates a new SQLAlchemy database session using `SessionLocal()`.
+- Uses an asynchronous context manager to automatically close the session after it's used in a block of code (yielded).
+- Allows multiple concurrent requests to use their own separate sessions, improving scalability and reducing contention issues.

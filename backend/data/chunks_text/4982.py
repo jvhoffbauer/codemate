@@ -1,0 +1,3 @@
+- Starts a Whiteboard application using Uvicorn and Tifa frameworks
+- Runs on localhost at port 8001 with logging level set to info
+- Enables automatic module reloading for development purposes

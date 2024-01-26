@@ -1,0 +1,1 @@
+{"original_code": "def get_sync_context_b_raise(state: dict = Depends(context_b)):\n    assert state[\"context_b\"] == \"started b\"\n    assert state[\"context_a\"] == \"started a\"\n    raise OtherDependencyError()"}

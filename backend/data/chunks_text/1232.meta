@@ -1,0 +1,1 @@
+{"original_code": "async def create_user(user: UserIn) -> UserIn:\n    return user"}

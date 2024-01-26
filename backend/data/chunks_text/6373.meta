@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, account_id, owner, amount, currency):\n        self.account_id = account_id\n        self.owner = owner\n        self.amount = amount\n        self.currency = currency"}

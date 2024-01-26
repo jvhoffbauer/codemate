@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/sync\")\nasync def get_sync(state: str = Depends(generator_state)):\n    return state"}

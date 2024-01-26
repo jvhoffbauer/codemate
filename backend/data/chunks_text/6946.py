@@ -1,0 +1,2 @@
+- Defines an asynchronous function called `another()`.
+- The function returns a string "Another Hello World!".

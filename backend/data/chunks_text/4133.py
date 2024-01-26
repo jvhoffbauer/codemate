@@ -1,0 +1,2 @@
+- Generates an OpenAPI (Swagger) JSON schema for a FastAPI application using `client.get("/openapi.json")`.
+- Asserts that the status code is 200 and checks if the returned JSON matches the expected structure with nested dictionaries representing the API endpoints, components, schemas, etc.

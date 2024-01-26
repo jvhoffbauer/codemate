@@ -1,0 +1,2 @@
+- Tests the GET request to the root URL (/) using a Flask testing client
+- Asserts that the status code is 200 and checks the content for the presence of an HTML form tag

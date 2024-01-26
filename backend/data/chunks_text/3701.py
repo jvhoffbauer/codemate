@@ -1,0 +1,3 @@
+- Tests if an invalid X-Token header is sent in a POST request to /admin endpoint
+- Asserts that the server returns HTTP status code 400 and error message detailing X-Token header invalidity
+- Uses `@needs_py39` decorator for Python version constraint

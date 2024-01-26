@@ -1,0 +1,5 @@
+- Initializes an instance of the `APIKeyHeader` class with options for configuring its behavior.
+- Accepts arguments for setting the header's name, security scheme name, description, and whether automatic error handling should occur when the header is missing.
+- Creates an associated `APIKey` object with the specified header configuration.
+- Sets the security scheme name based on user input or defaults to the class name.
+- Stores the value of the `auto_error` argument for later use during runtime.

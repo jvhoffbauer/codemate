@@ -1,0 +1,1 @@
+{"original_code": "        def _openapi_compatible(value: dict):\n            assert (\n                packaging.version.parse(value[\"openapi\"]) in supported_openapi_versions\n            )\n            value[\"openapi\"] = ANY\n            return value"}

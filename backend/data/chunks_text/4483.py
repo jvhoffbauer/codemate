@@ -1,0 +1,3 @@
+- Tests getting a list of items with valid authentication headers (X-Token and X-Key) using `TestClient`.
+- Asserts that the status code is 200 and saves the text for debugging purposes.
+- Asserts that the JSON response contains two dictionaries with an 'item' key containing 'Foo' and 'Bar'.

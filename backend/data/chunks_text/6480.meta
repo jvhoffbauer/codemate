@@ -1,0 +1,1 @@
+{"original_code": "    async def shutdown(self):\n        if self.scheduler is not None:\n            await self.scheduler.close()"}

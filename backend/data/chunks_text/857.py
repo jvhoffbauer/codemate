@@ -1,0 +1,3 @@
+- Defines a function called `middleware` that takes an argument `middleware_type`, which is currently limited to "http".
+- Returns a decorator function (also named `decorator`) that adds HTTP middleware using the `self.add_middleware` method provided by the class containing this function.
+- Provides documentation explaining what middleware is and how to use it with examples.

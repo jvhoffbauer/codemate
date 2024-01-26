@@ -1,0 +1,1 @@
+{"original_code": "def select_heroes():\n    with Session(engine) as session:\n        hero = session.exec(select(Hero).where(Hero.name == \"Deadpond\")).one()\n        print(\"Hero:\", hero)"}

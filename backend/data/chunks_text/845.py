@@ -1,0 +1,5 @@
+- This function is an asynchronous view that generates a ReDoc HTML document for Swagger/OpenAPI specifications.
+- It takes a `Request` object as input and returns an `HTMLResponse`.
+- The `root_path` variable is retrieved from the request scope to determine the base URL of the application.
+- The OpenAPI URL is constructed by appending it to the `root_path`, with any trailing slashes removed.
+- The `get_redoc_html()` function from the `pydantic-swagger` library is called with the generated OpenAPI URL and a customized title (the original title plus "ReDoc"), which will be displayed in the browser tab and header.

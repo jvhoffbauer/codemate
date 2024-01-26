@@ -1,0 +1,1 @@
+- Endpoint to retrieve a specific model with alias "Foo" using FastAPI's `@app.get()` decorator and `response_model` parameter for automatic JSON serialization of returned data. - The endpoint returns an instance of the `Model` class, which is defined elsewhere in the application, passing its alias as argument during instantiation.

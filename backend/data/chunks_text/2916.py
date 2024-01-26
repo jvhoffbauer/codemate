@@ -1,0 +1,1 @@
+- Tests HTTP Basic Authentication with invalid credentials by passing an incorrect base64 token as Authorization header and verifies that a 401 Unauthorized status is returned along with WWW-Authenticate header containing the simple realm value. - The JSON body of the response contains an error message indicating Invalid authentication credentials.

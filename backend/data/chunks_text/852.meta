@@ -1,0 +1,1 @@
+{"original_code": "        def decorator(func: DecoratedCallable) -> DecoratedCallable:\n            self.add_api_websocket_route(\n                path,\n                func,\n                name=name,\n                dependencies=dependencies,\n            )\n            return func"}

@@ -1,0 +1,4 @@
+- This function `point()` retrieves the value of a specific location on a mosaic using its longitude and latitude coordinates.
+- It takes several dependencies including path, layers, datasets, backends, readers, and environment variables to configure the processing pipeline.
+- The number of concurrent threads used during computation is specified by an environmental variable or defaulted to a maximum limit.
+- The function returns a dictionary containing the coordinates and corresponding values at those locations from all available sources.

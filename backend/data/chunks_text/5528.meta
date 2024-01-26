@@ -1,0 +1,1 @@
+{"original_code": "    def __getattr__(self, item):\n        if item == \"cloned_field\":\n            return self.__dict__[item]\n        return self.__dict__[\"_update\"].get(\n            item, getattr(self.__dict__[\"_modelfield\"], item)\n        )"}

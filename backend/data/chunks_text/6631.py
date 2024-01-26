@@ -1,0 +1,5 @@
+- Defines a middleware function `ep_middleware` that takes an endpoint (`ep`) as input and adds it to its list of middlewares using the `append` method.
+- Creates a new ContextVar called `credentials`. This variable will be used to store authentication information for each request.
+- Wraps the original endpoint with another async context manager, which sets the value of the `credentials` ContextVar based on the results of two functions: `security` and `auth_user`. The `yield` statement allows other middlewares or handlers to execute before returning control back to this one.
+- Resets the value of the `credentials` ContextVar after the execution of the wrapped endpoint.
+- Adds a new method named `probe` to the endpoint, which returns the username associated with the current user's authentication information stored in the `credentials` ContextVar.

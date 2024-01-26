@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with optional arguments for content, status code, headers, media type, and background task. - Sets an exception (if provided) to be associated with this response object. - Calls the parent constructor with the given parameters.

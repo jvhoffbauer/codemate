@@ -1,0 +1,2 @@
+- Initializes a new instance of the class with an optional error description for token expiration (default is "Token has expired")
+- Sets the value of the `err_desc` attribute to either the provided argument or the default value if no argument is passed

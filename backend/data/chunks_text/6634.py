@@ -1,0 +1,1 @@
+- Defines a method named `probe` using the `@ep.method()` decorator in the Flask-RESTful extension, EasyPeasy (ep). - The method returns the value of the `username` attribute from an instance variable called `credentials_var`. This assumes that `credentials_var` is already initialized and contains a valid object with a `username` property or attribute.

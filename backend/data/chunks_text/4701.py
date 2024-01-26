@@ -1,0 +1,3 @@
+- This test checks if the server can handle large file uploads by creating a temporary file with size greater than the default Pydantic max size and sending it to the server using `client.post`.
+- The expected behavior is that the server returns a successful response with the correct file size in JSON format.
+- If the server fails to handle the large file or returns an error message instead of the expected JSON, the test will fail.

@@ -1,0 +1,1 @@
+- Tests if accessing user information without a security API key results in a specific error message being returned by the server. - Uses Flask's built-in testing client to simulate HTTP requests and responses for unit tests. - Asserts that the expected status code (401 Unauthorized) is returned along with a custom error message provided by the application.

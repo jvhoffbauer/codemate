@@ -1,0 +1,2 @@
+- Defines a GET request handler for the "/hello" endpoint using FastAPI's router decorator
+- Returns a dictionary with a key-value pair containing a username value of "hello" as the response body

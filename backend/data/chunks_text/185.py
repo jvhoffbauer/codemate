@@ -1,0 +1,4 @@
+- This function creates a new hero and returns its details in JSON format using FastAPI's `@app.post` decorator.
+- The request body is parsed into a `HeroCreate` object, which is then validated against the `Hero` model using SQLAlchemy's `ModelValidate`.
+- A new database record for the hero is created using SQLAlchemy's `Session`, committed to the database, and refreshed to ensure that any changes made during the commit are reflected in memory.
+- Finally, the newly created hero is returned as a `HeroRead` object, which is defined elsewhere in the application.

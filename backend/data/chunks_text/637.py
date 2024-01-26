@@ -1,0 +1,6 @@
+- Imports and sets up a module called `tutorial001_py310` in the `docs_src/tutorial` directory for Py3.10
+- Sets SQLAlchemy's connection URL to an in-memory SQLite database
+- Creates an engine using SQLAlchemy's `create_engine()` function
+- Patches Python's built-in print statement to capture its output during testing
+- Calls the main function of the imported module, passing it the patched print statement
+- Asserts that the captured print statements match expected outputs

@@ -1,0 +1,4 @@
+- Defines a custom admin view for managing routers using FastAPI's `AdminSite`.
+- Registers a new endpoint at `/router/hello` that returns a simple JSON response when accessed via HTTP GET request.
+- Retrieves and asserts the path of the registered router to ensure it is correctly configured within the admin interface.
+- Makes an actual HTTP request to the newly created endpoint and checks its returned data matches expectations.

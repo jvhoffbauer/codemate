@@ -1,0 +1,4 @@
+- Defines a GET route for `"/header_example/"`, which takes an optional query parameter named `data`.
+- The type of `data` is either a string or `None`, and it's specified using Pydantic's `Union` class.
+- If no value is provided for `data` in the request, its default value (which is also set by Pydantic) will be used instead. This default value can be customized using the `default` argument passed to the `Header` constructor. In this case, it's set to `None`.
+- Additionally, an example value for `data` can be provided using the `example` argument. This helps users understand what kind of values are expected when they use this endpoint.

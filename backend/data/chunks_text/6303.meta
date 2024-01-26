@@ -1,0 +1,1 @@
+{"original_code": "async def test_get_locations(mock_client_session):\n    data = await csbs.get_locations()\n\n    assert isinstance(data, list)\n\n    # check to see that Unknown/Unassigned has been filtered\n    for d in data:\n        assert d.county != \"Unknown\"\n        assert d.county != \"Unassigned\""}

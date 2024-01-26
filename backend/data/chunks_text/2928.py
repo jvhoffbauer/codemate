@@ -1,0 +1,3 @@
+- Defines a GET request for the `/product` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts a `Product` object as an argument to the function, which is automatically parsed from the request body by FastAPI's Pydantic integration
+- Returns the `Product` object directly, allowing it to be easily serialized and returned in JSON format

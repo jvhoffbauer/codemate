@@ -1,0 +1,1 @@
+{"original_code": "    def _get_band_url(self, band: str) -> str:\n        \"\"\"Validate band's name and return band's url.\"\"\"\n        return os.path.join(self.input, f\"{band}.tif\")"}

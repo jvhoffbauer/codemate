@@ -1,0 +1,3 @@
+- Tests getting user information using the `TestClient` and an ordinary token header
+- Asserts that the status code is 200 and the API returns a success message (code 200)
+- Verifies that the nickname returned by the API is of type string

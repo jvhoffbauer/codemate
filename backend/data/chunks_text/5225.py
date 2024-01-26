@@ -1,0 +1,1 @@
+- Retrieves metadata for a specific algorithm using its ID or name (alias "algorithmId") from the list of supported algorithms. - Returns an instance of AlgorithmMetadata class containing information about the selected algorithm. - Uses FastAPI's router decorator to define the endpoint and provide additional metadata such as summary, operation ID, and parameter descriptions.

@@ -1,0 +1,3 @@
+- This test case demonstrates how to override a query parameter in the `client` object provided by the tutorial's example application.
+- The `get()` method of the `client` object is called with a URL containing a 'q' parameter set to 'foo'.
+- The expected behavior is that the server returns an HTTP status code of 200 and includes both the original request parameters ('q','skip', 'limit') as well as the overridden value for 'q' in the JSON response body.

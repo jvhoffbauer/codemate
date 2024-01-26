@@ -1,0 +1,4 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `fastapi.OpenAPIRouter`.
+- Defines the API's endpoints and their responses (success or error).
+- Includes detailed information about request parameters and response formats.
+- Provides validation error handling through custom schemas defined in the `components` section of the OpenAPI specification.

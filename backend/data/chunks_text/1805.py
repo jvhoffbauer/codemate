@@ -1,0 +1,1 @@
+- Defines an asynchronous function `get_items()` that returns a list of dictionaries containing item names. - The items in this list are represented by keys 'name' with corresponding values 'wand' and 'flying broom'.

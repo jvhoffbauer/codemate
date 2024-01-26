@@ -1,0 +1,1 @@
+{"original_code": "    async def __aexit__(self, *exc_details):\n        assert self.jsonrpc_context_token is not None\n        _jsonrpc_context.reset(self.jsonrpc_context_token)\n        return await self.exit_stack.__aexit__(*exc_details)"}

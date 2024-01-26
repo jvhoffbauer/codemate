@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items` with a default parameter for `x_token`.
+- The type hint for `x_token` is `Union[List[str], None]`, which means it can be either a list of strings or `None`.
+- Uses the decorator `Header` from the `starlette` library to set the header value based on the provided `x_token` argument, if any. If not provided, uses the default value (which could also be `None`) specified by the decorator.

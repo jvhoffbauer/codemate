@@ -1,0 +1,5 @@
+- Defines a method `op()` that takes several arguments including `path`, `out`, `summary`, and `tags`.
+- The `summary` argument is modified using the `suffix_summary()` function to include the file path.
+- A class name is generated based on the file path using the `path_to_cls_name()` function.
+- An SQLAlchemy model called `item_schema` is created for this specific operation using the `create_model()` function from FastAPI's built-in ORM library. This model has an attribute named 'item', which can be any data type (represented by ellipsis).
+- Finally, the `POST` request is made with the specified parameters, including the newly created schema as the response model. Tags are also passed in if provided.

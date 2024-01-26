@@ -1,0 +1,4 @@
+- This method is a private helper function called `_read_items`.
+- It takes two arguments - `Session` and `item_id`, which are passed to another private method `_fetch_item_scalars`.
+- The returned list of objects from `_fetch_item_scalars` is then mapped using a list comprehension with the `read_item` method applied to each object.
+- The resulting list of transformed objects is returned by this method.

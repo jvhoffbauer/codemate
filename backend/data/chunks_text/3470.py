@@ -1,0 +1,1 @@
+- Tests if a GET request to an unknown Starlette item returns a 404 status code and checks for the absence of x-error header in the response headers. - Verifies that the JSON body returned by the server contains the expected error message when accessing a non-existent resource.

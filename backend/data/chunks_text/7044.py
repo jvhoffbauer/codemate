@@ -1,0 +1,3 @@
+- Defines a decorator called `@declared_attr`.
+- Inside this decorator, defines a class attribute named `__tablename__`, which is set to the lowercase version of the current class name (i.e., the table's name).
+- This allows us to avoid having to manually define and manage the table names for our SQLAlchemy models, as they will be automatically generated based on their class names.

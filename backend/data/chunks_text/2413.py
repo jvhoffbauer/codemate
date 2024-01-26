@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_async_raise_other` that takes a dependency `state` from `Depends(asyncgen_state_try)`.
+- Asserts that the value of `state` is equal to a specific string, indicating some expected behavior or input condition for this function.
+- Raises a custom exception `OtherDependencyError`, which may be handled by the caller or propagated upstream in the application's error handling mechanism.

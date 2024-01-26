@@ -1,0 +1,3 @@
+- Defines a function `route()` that takes several arguments and returns another function (a decorator).
+- The returned decorator accepts a callable as an argument, wraps it with some additional functionality, and returns the wrapped function.
+- Inside the decorator, the `add_route()` method of the class is called to register the specified route for the given HTTP methods, name, and inclusion in schema.

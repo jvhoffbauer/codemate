@@ -1,0 +1,3 @@
+- This function tests the strict login endpoint with no request body (data=None).
+- It asserts that a HTTP status code of 422 is returned and the error message contains details about missing grant_type, username, and password fields in the request body.
+- The error message follows either the new or old format depending on whether Pydantic version 1 is being used.

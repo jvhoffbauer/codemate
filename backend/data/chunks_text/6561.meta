@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method(middlewares=[middleware])\n    def probe() -> str:\n        return \"qwe\""}

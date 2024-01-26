@@ -1,0 +1,1 @@
+{"original_code": "    def get(self, name: str) -> BaseAlgorithm:\n        \"\"\"Fetch a TMS.\"\"\"\n        if name not in self.data:\n            raise KeyError(f\"Invalid name: {name}\")\n\n        return self.data[name]"}

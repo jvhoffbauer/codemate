@@ -1,0 +1,4 @@
+- This method is a class method of `User` model and can be called without creating an instance of it.
+- It takes two optional arguments `page` (default value is 1) and `page_size` (default value is 10).
+- The method retrieves all deleted users from the database using SQLAlchemy's `undeleted()` function and selects specific columns using `select()`.
+- It then passes the result to Pagination library's `paginator()` function with specified parameters for paginating the results based on given `page` and `page_size`, and returns both the list of fetched records and the pagination object.

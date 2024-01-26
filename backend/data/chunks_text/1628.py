@@ -1,0 +1,1 @@
+- Initializes a context manager that returns the database object (self.db) when entered, allowing for easy access to it within the scope of the with statement. - Enables automatic closing and connection release after leaving the block using the `__exit__()` method defined in the base class ContextManager.

@@ -1,0 +1,1 @@
+- Retrieves all heroes from the database using SQLAlchemy's `Session` and `select()` functions, filtering out any heroes named "Deadpool" using a WHERE clause. - Loops through each resulting row (i.e., Hero object) and prints it to the console using Python's built-in `print()` function.

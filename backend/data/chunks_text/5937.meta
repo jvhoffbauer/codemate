@@ -1,0 +1,1 @@
+{"original_code": "        def __init__(self, func):\n            self.func = func\n            self.attrname = None\n            self.__doc__ = func.__doc__\n            self.lock = RLock()"}

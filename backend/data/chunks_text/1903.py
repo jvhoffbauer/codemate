@@ -1,0 +1,3 @@
+- Defines a function `read_root` that takes in an argument `item_id` of type string and a parameter `request` of type `Request`.
+- Inside the function, it retrieves the hostname of the client making the request using the `client` attribute of the `request` object.
+- The function returns a dictionary with two keys - 'client_host' containing the value of the client hostname, and 'item_id' containing the passed-in `item_id` argument.

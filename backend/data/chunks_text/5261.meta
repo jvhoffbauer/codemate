@@ -1,0 +1,1 @@
+{"original_code": "    @DynamicClassAttribute\n    def mediatype(self):\n        \"\"\"Return image media type.\"\"\"\n        return MediaType[self._name_].value"}

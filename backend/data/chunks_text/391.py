@@ -1,0 +1,3 @@
+- Tests if duplicate rows are allowed in a database table without unique constraint using SQLAlchemy's `SQLModel`.
+- Creates two instances of `Hero` model with same values for `name` and `secret_name`, adds them to the database, commits changes, and refreshes objects.
+- Queries all records from the `Hero` table using `Session` and checks that there are two results with identical names.

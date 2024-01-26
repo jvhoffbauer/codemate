@@ -1,0 +1,1 @@
+- Tests creating an item with name 'Plumbus' using two different Flask clients to ensure separate input and output schemas are working correctly. - Asserts that both requests return a status code of 200 and have identical JSON responses containing the expected key-value pairs for 'name', 'description', and'sub'.

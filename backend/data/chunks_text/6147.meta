@@ -1,0 +1,1 @@
+{"original_code": "def get_quote(var_instrument: str):\n    quote_response = requests.get(\n        url=KITE_QUOTE_ENDPOINT + var_instrument, headers=HEADERS\n    )\n    quote_response_dict = quote_response.json()\n    return quote_response_dict[\"data\"][var_instrument][\"last_price\"]"}

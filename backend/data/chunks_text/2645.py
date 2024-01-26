@@ -1,0 +1,3 @@
+- Tests if a GET request to the explicit query endpoint with required and non-nullable fields returns a validation error (HTTP status code 422)
+- Uses Flask's built-in `client` object for making requests against our app, simulating an actual HTTP request from a browser or another server
+- Asserts that the expected HTTP status code is returned by comparing it to the value stored in the `response.status_code` attribute

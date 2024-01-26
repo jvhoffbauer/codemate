@@ -1,0 +1,1 @@
+{"original_code": "def get_query_param_required(query=Query()):\n    return f\"foo bar {query}\""}

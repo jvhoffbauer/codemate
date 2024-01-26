@@ -1,0 +1,4 @@
+- Defines a function `send_new_account_email` that takes three arguments (`email_to`, `username`, and `password`) and returns nothing (`None`)
+- Sets variables for the project name, subject of the email, and path to the HTML email template file
+- Uses Python's built-in `open` function to read in the contents of the HTML email template file
+- Creates an instance of the `send_email` class from another module or library using keyword arguments such as `email_to`, `subject_template`, `html_template`, and an optional dictionary called `environment`. The `environment` dictionary contains key-value pairs that can be used within the HTML email template to dynamically generate content based on the values passed into it. In this case, we pass in variables like `project_name`, `username`, `password`, `email`, and `link`.

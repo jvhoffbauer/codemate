@@ -1,0 +1,1 @@
+{"original_code": "def test_security_http_basic(client: TestClient):\n    response = client.get(\"/users/me\", auth=(\"john\", \"secret\"))\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"username\": \"john\", \"password\": \"secret\"}"}

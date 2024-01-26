@@ -1,0 +1,1 @@
+- Defines a GET request handler for the root URL (/) in the API using FastAPI's decorator syntax. - Returns a JSON response with a message of "Hello World".

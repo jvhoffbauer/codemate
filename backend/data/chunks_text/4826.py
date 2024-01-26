@@ -1,0 +1,4 @@
+- This function allows searching for items based on their owner's username (specified by `username`) as well as a keyword or phrase (specified by `*query_string:`).
+- It creates a filter string to include the owner's username in the search query if it is not already included.
+- The function calls another helper function called `utils.search_get_docs()`, passing various arguments such as the bucket name, search query, and document model class.
+- The results are returned as a list of documents that match both the keyword/phrase and the specified owner's username.

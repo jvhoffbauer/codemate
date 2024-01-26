@@ -1,0 +1,1 @@
+{"original_code": "    def model_update_forward_refs(model: Type[BaseModel]):\n        model.model_rebuild()"}

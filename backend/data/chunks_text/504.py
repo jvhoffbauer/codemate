@@ -1,0 +1,4 @@
+- Imports and sets up necessary modules for testing SQLModel's select feature in Python 3.10 (Python version specified by `@needs_py310`)
+- Creates a SQLAlchemy engine using an SQLite database URL, which is passed to SQLModel for use during queries
+- Patches the built-in print function to capture its output during execution of the `main()` method of the selected module (`docs_src.tutorial.select.tutorial001_py310`)
+- Verifies that the expected print statements were called during the test run using the `check_calls()` function provided by Pytest

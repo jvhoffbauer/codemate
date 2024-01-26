@@ -1,0 +1,6 @@
+- Defines a new asynchronous function called `custom_route_handler`.
+- Accepts an instance of FastAPI's built-in request object (`Request`) and returns an instance of its built-in response object (`Response`).
+- Measures the execution time of the original route handler using Python's built-in `time` module, stores it in a variable named `before`, and calculates the difference between this value and the current time to get the actual duration.
+- Sets a custom header for the response with the calculated duration using the `Headers` attribute of the `Response` class.
+- Prints out some debugging information about the route execution, including the duration, the response itself, and its headers.
+- Returns the modified response back to the caller.

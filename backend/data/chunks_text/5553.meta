@@ -1,0 +1,1 @@
+{"original_code": "def get_insfield_by_key(\n    table_model: Type[TableModelT], key: str\n) -> Optional[InstrumentedAttribute]:\n    \"\"\"Get the field of the model according to the alias\"\"\"\n    for insfield in table_model.__dict__.values():\n        if isinstance(insfield, InstrumentedAttribute) and insfield.key == key:\n            return insfield\n    return None"}

@@ -1,0 +1,1 @@
+- Tests GET request to endpoint `"/path/param-le-ge"` with query parameter `"3"` for both `le` and `ge`. - Asserts that status code is 200 OK and returned JSON value is 3, which should be the integer value passed as a query parameter in this case.

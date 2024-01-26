@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_portal()` that takes a boolean argument `teleport`.
+- If `teleport` is true, returns a redirect response to a specific YouTube video URL (a meme).
+- Otherwise, returns a JSON response with a message about the portal.

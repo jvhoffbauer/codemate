@@ -1,0 +1,3 @@
+- Defines a new endpoint `/` with an HTTP POST method using FastAPI's decorator syntax
+- Accepts an optional parameter named `foo`, which can be either of type `Foo` or `None` (meaning it is not required)
+- Returns the value of the `foo` parameter as the response body

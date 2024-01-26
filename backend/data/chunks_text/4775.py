@@ -1,0 +1,4 @@
+- Defines a function `send_email()` that takes several arguments related to sending an email (e.g., recipient's email address, email subject and body templates, optional environment variables).
+- Uses Flask-Mail library to create an email message with Jinja2 templating engine.
+- Configures SMTP settings based on application configurations.
+- Sends the email using the created message object and logs the result.

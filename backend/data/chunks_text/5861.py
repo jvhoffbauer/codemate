@@ -1,0 +1,1 @@
+- This function is an asynchronous handler for internal data validation exceptions that occur during API requests. - It returns a JSON response with error details and throws the original exception to propagate it further up the call stack. - The `make_error_response()` function is used to create the JSON response object.

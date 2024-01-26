@@ -1,0 +1,2 @@
+- Defines an asynchronous function `get_token_header` that takes a default argument `x_token` of type `Header`.
+- Checks whether the value of `x_token` is not equal to a specific string ("fake-super-secret-token"). If it's different, raises a customized HTTP exception with status code 400 and error message "X-Token header invalid".

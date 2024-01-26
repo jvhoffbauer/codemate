@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/with-duplicates\")\nasync def with_duplicates(item: Item, item2: Item = Depends(duplicate_dependency)):\n    return [item, item2]"}

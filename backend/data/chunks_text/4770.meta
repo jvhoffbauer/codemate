@@ -1,0 +1,1 @@
+{"original_code": "@celery_app.task(acks_late=True)\ndef test_celery(word: str):\n    return f\"test task return {word}\""}

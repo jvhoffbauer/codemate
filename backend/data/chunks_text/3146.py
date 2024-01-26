@@ -1,0 +1,2 @@
+- Defines a function called `route_with_http_exception()`.
+- Inside this function, an instance of `HTTPException` is raised with a status code of 400 (Bad Request). This will trigger FastAPI's error handling mechanism and return a customized response to the client instead of a generic server error message.

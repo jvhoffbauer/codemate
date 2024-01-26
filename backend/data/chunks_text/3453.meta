@@ -1,0 +1,1 @@
+{"original_code": "def test_swagger_ui():\n    response = client.get(\"/docs\")\n    assert response.status_code == 200, response.text\n    print(response.text)\n    assert \"ui.initOAuth\" in response.text\n    assert '\"appName\": \"The Predendapp\"' in response.text\n    assert '\"clientId\": \"the-foo-clients\"' in response.text"}

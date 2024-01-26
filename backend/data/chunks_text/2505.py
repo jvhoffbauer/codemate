@@ -1,0 +1,1 @@
+- Defines a function `post_tuple_of_models` that takes in a tuple of type `Tuple[Coordinate, Coordinate]`, where `Coordinate` is some custom class representing coordinates. - The function returns this input tuple without any modifications (i.e., it's an identity function).

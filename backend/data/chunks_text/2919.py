@@ -1,0 +1,3 @@
+- Defines a function `get_user` that takes an argument `required_scopes` of type `SecurityScopes`.
+- The function returns a tuple containing two values, 'john' and the list of scopes specified in `required_scopes`.
+- This function is likely used to retrieve user information along with their required permissions for accessing resources.

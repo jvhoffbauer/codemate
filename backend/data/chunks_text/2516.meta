@@ -1,0 +1,1 @@
+{"original_code": "def test_security_http_digest_incorrect_scheme_credentials():\n    response = client.get(\n        \"/users/me\", headers={\"Authorization\": \"Other invalidauthorization\"}\n    )\n    assert response.status_code == 403, response.text\n    assert response.json() == {\"detail\": \"Invalid authentication credentials\"}"}

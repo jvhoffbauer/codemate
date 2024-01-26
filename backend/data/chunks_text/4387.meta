@@ -1,0 +1,1 @@
+{"original_code": "def test(path, cookies, expected_status, expected_response):\n    from docs_src.cookie_params.tutorial001_an_py39 import app\n\n    client = TestClient(app, cookies=cookies)\n    response = client.get(path)\n    assert response.status_code == expected_status\n    assert response.json() == expected_response"}

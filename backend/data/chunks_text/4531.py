@@ -1,0 +1,3 @@
+- Tests authentication with an invalid token type (in this case, "Notexistent") using a `TestClient`.
+- Verifies that the server returns a HTTP status code of 401 Unauthorized and includes a JSON error message detailing that the user is not authenticated.
+- Checks that the WWW-Authenticate header contains the Bearer scheme, indicating that the authorization mechanism used by the server requires bearer tokens for authentication.

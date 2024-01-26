@@ -1,0 +1,4 @@
+- This function tests a specific endpoint with query parameter `needy=very`.
+- It uses Flask's built-in testing client to simulate HTTP requests and responses.
+- The expected status code is checked against the actual one returned by the server.
+- The JSON body of the response is also verified for correctness based on the input parameters.

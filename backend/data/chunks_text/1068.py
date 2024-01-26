@@ -1,0 +1,3 @@
+- Retrieves comments related to a specific translation discussion using GraphQL queries and mutations provided by the `Settings` object (presumably containing authentication information).
+- Uses recursion to fetch all comments associated with the given discussion until no more edges are returned from the API.
+- Returns a list of Comment objects representing the retrieved comments.

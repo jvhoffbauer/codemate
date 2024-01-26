@@ -1,0 +1,1 @@
+- Defines a function `default` with an asynchronous context manager (`async`) and takes a parameter `foo` of type string with a query decorator (`Query()`) with a default value of "foo". - Returns a dictionary with a key "foo" containing the value passed to the `foo` argument or the default value if no value is provided in the request parameters.

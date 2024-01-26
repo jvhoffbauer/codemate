@@ -1,0 +1,2 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Returns an array containing a single item with an ID of 'Foo', formatted as JSON using UJSON (a lightweight alternative to Python's built-in json module)

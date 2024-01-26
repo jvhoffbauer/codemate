@@ -1,0 +1,4 @@
+- Defines a function `process_items` that takes in two arguments `items_t` and `items_s`.
+- The type annotations specify that `items_t` is a tuple with elements of types `int`, `int`, and `str`.
+- The type annotation for `items_s` specifies that it's a set containing bytes data.
+- The function returns a tuple consisting of both input parameters (i.e., no modifications are made).

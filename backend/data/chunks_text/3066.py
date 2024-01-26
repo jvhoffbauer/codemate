@@ -1,0 +1,3 @@
+- Tests if `GET /a/override` returns expected content and header using a Flask client
+- Uses context manager to ensure server is stopped after testing
+- Asserts that returned content matches "Hello A" string and Content-Type header is correct

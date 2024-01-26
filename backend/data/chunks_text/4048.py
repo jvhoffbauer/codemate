@@ -1,0 +1,1 @@
+- Marks a pytest function as an async test using `@pytest.mark.asyncio`. - Uses the `async/await` syntax to call another function, `test_root`, which is assumed to be an asynchronous function that performs some testing logic. - Implicitly waits for any I/O operations in the `test_root` function to complete before continuing with other tests or exiting the test runner.

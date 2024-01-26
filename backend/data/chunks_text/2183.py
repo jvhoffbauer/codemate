@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_counter` that takes a default argument `count` with a dependency of type `Depends`.
+- The dependency is provided by another function called `dep_counter`, which likely returns some value related to a counter.
+- Inside the `get_counter` function, the returned dictionary contains a key "counter" whose value is the same as the `count` parameter passed in or obtained from the dependency.

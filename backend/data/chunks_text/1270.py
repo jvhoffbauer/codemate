@@ -1,0 +1,3 @@
+- Defines a GET route for the root URL of the application (/)
+- Returns an HTML response with two forms that allow users to upload files using multipart/form-data encoding and POST requests
+- The first form submits data to /files, while the second form submits data to /uploadfiles

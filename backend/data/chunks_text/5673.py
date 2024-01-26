@@ -1,0 +1,3 @@
+- Sets a specific database (either synchronous or asynchronous) as the default for the application using `set_global()`.
+- Allows specifying an optional alias to identify the database within the app context.
+- Provides options to override existing settings and raise an error if the provided object is not of type `Database` or `AsyncDatabase`.

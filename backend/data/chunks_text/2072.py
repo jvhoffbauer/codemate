@@ -1,0 +1,3 @@
+- This endpoint returns the authenticated user's information when accessed with a valid JWT token.
+- If no token is provided, it returns a message to create an account instead.
+- The `Depends()` function from FastAPI's middleware is used to pass the currently logged in user as a parameter to the view function.

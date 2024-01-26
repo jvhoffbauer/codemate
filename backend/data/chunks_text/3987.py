@@ -1,0 +1,3 @@
+- This test uses `pytest-mock` to simulate a REST API request with Pydantic as the data validation library.
+- The YAML data is passed in the request body and deserialized into a dictionary using PyYAML.
+- Pydantic validates the input against its schema definition and returns a JSON response containing the sanitized data.

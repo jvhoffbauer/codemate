@@ -1,0 +1,1 @@
+{"original_code": "def custom_generate_unique_id2(route: APIRoute):\n    return f\"bar_{route.name}\""}

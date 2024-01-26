@@ -1,0 +1,2 @@
+- Tests GET request with valid parameters (client_id) and expects a successful HTTP status code of 200
+- Verifies that expected JSON data is returned in the response body, containing keys for 'client_id' and 'client_tag'

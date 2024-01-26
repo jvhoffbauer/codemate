@@ -1,0 +1,3 @@
+- Defines a property called `route_submit` that returns an asynchronous function named `route`.
+- The `route` function takes three arguments: `Request`, `item_id` (a list of IDs for items to submit), and `data` (optional submission data).
+- The `route` function calls another method called `handle` with the `Request`, `item_id`, and `data` arguments, returning its result.

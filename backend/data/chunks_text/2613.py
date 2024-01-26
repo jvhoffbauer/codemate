@@ -1,0 +1,2 @@
+- Tests GET request to /items endpoint with parameter 'foo'
+- Asserts that status code is 200 and returns JSON object containing item ID 'foo' in response body

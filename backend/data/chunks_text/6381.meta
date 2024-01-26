@@ -1,0 +1,1 @@
+{"original_code": "@api_v1.method()\ndef get_balance(\n    account: Account = Depends(get_account),\n) -> Balance:\n    return Balance(\n        amount=account.amount,\n        currency=account.currency,\n    )"}

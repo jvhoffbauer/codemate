@@ -1,0 +1,8 @@
+- Imports and sets up a module for testing SQLModel's many-to-many relationships in Python 3.9 (Python 3.9 is required due to `typing.TypedDict`)
+- Defines a function called `test_tutorial` that takes an argument `clear_sqlmodel`, which appears to be used for clearing some state related to SQLModel
+- Uses the `docs_src.tutorial.many_to-many` module, which presumably contains examples of working with many-to-many relationships using SQLModel
+- Sets the URL for the database connection to use SQLite, creates an engine object, and passes it to the imported module
+- Creates a list called `calls` to store print statements made during execution
+- Patches the built-in `print` function to replace its behavior with a custom implementation that stores each call in the `calls` list
+- Calls the main function of the imported module while passing the patched `print` function
+- Asserts that the `calls` list matches what was expected based on the output of running the example without any modifications

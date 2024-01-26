@@ -1,0 +1,1 @@
+{"original_code": "    def iterfile():  # (1)\n        with open(some_file_path, mode=\"rb\") as file_like:  # (2)\n            yield from file_like  # (3)"}

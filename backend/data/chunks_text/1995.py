@@ -1,0 +1,3 @@
+- Defines a GET request for an item with ID `item_id`.
+- Includes optional query parameter `q`, which is passed as an argument to the function and can be used to filter or search for items based on user input.
+- Returns either just the requested item (if no query parameter was provided) or both the item and the query string (if it was).

@@ -1,0 +1,1 @@
+{"original_code": "def ep(ep_path):\n    ep = Entrypoint(\n        ep_path,\n        dependencies=[Depends(auth_user)],\n    )\n\n    @ep.method()\n    def probe() -> str:\n        return \"ok\"\n\n    return ep"}

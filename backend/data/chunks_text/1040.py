@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with an `ASGIApp` object and an optional `context_name`. - Sets the values of `self.app` and `self.context_name` attributes to the provided arguments.

@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/user/\")\nasync def create_user(user: UserIn) -> BaseUser:\n    return user"}

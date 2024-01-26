@@ -1,0 +1,4 @@
+- Receives a POST request with a body containing a YAML document representing an item to be created
+- Converts the request body to a Python dictionary using PyYAML's `yaml.safe_load()` function and raises a `HTTPException` if the input is not valid YAML
+- Attempts to validate the incoming data against FastAPI's built-in schema validation system (using Pydantic's `Item.model_validate()`) and raises a `ValidationError` if there are any issues
+- Returns the newly created item object

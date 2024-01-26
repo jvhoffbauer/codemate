@@ -1,0 +1,4 @@
+- Defines an asynchronous function `read_item` with three positional arguments and one keyword argument (default value)
+- The first argument `item_id` is required and should be a string representing the unique identifier of the item to retrieve
+- Optional query parameter `q` can be passed as either a string or `None`, which will update the dictionary `item` accordingly
+- An optional boolean flag `short` determines whether to include a longer description in the returned dictionary; defaults to false

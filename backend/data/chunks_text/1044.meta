@@ -1,0 +1,1 @@
+{"original_code": "def get_parameterless_sub_dependant(*, depends: params.Depends, path: str) -> Dependant:\n    assert callable(\n        depends.dependency\n    ), \"A parameter-less dependency must have a callable dependency\"\n    return get_sub_dependant(depends=depends, dependency=depends.dependency, path=path)"}

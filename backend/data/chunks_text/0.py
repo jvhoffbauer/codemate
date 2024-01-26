@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with a specified `value`. - Sets the value attribute of the object to the provided `value`. - Creates an empty constructor for the class that accepts a single argument named 'value' and assigns it to the internal variable'self.value'.

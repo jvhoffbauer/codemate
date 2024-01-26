@@ -1,0 +1,5 @@
+- This function is a pytest test using FastAPI's built-in testing framework `TestClient`.
+- It uses parameterized tests with three different scenarios to test the behavior of sending custom HTTP request headers and verifying the server's response status and body content.
+- The first scenario sends no headers and expects a successful (200 OK) response with the default user agent string set by FastAPI.
+- The second scenario sends an invalid header key but still expects a successful response with the original user agent string.
+- The third scenario sends a valid user agent header value and expects that it will be used instead of the default one in the response.

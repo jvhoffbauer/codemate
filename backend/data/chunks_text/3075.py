@@ -1,0 +1,3 @@
+- Tests a GET request to the URL "/b/a/c" using the Flask client object `client`.
+- Asserts that the response content is "Hello B A C", which should be returned by the corresponding route handler in the app's module.
+- Also asserts that the Content-Type header of the response matches the expected value, which is stored in the variable `html_type`.

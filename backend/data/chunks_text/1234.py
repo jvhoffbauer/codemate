@@ -1,0 +1,2 @@
+- Defines an asynchronous function `read_items` that returns a list of `Item` objects synchronously (using list comprehension)
+- Each item is represented by a custom `Item` class with attributes for name and price

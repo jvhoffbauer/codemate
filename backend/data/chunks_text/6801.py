@@ -1,0 +1,1 @@
+- Sends a test email to the specified `email_to` address using the `send_test_email()` function. - Requires authentication with an active superuser (admin). - Returns a success message upon completion.

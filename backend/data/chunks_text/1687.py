@@ -1,0 +1,3 @@
+- Endpoint to retrieve a list of items with FastAPI's `GET` request method
+- Response model is defined as a list containing Item objects, which are represented by dictionaries in this case
+- The endpoint is tagged under 'items', making it easier for clients and developers to find related endpoints

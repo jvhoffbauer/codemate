@@ -1,0 +1,1 @@
+- Retrieves task with ID `task_id` from Redis using Arq library's `ArqJob` class. - Returns information about the retrieved task as a JSON response.

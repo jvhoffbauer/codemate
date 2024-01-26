@@ -1,0 +1,3 @@
+- Endpoint to retrieve a list of items using GET request
+- Tagged with 'items' for easy identification and organization in documentation or monitoring tools
+- Returns an array containing two item names as strings

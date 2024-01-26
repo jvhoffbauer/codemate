@@ -1,0 +1,1 @@
+- Defines a class method `create()` for creating new objects of this model using Django's built-in `create()` function from the `Model` base class. - Takes keyword arguments (`**kwargs`) and passes them to the `create()` function as parameters. - Returns the newly created object instance.

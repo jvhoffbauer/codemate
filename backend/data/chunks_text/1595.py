@@ -1,0 +1,3 @@
+- This function handles a GET request to retrieve a specific user with ID `user_id`.
+- It uses FastAPI's dependency injection feature (`Depends`) to pass an instance of SQLAlchemy session (`Session`) from the database connection pool to the function as an argument named `db`.
+- The function calls a CRUD operation (`crud.get_user()`) provided by some external library or module to fetch the requested user from the database using the given `user_id`, and returns it in JSON format according to the specified schema (`response_model=schemas.User`). If the user doesn't exist, a customized error message is raised instead.

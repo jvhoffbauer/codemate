@@ -1,0 +1,3 @@
+- Sends a GET request to `/items/` with query parameters `q=5` and `q=6`.
+- Asserts that the status code is 200 and saves the response text for debugging purposes (optional).
+- Parses the JSON response body and asserts that it contains an object with a key 'q' containing arrays of values corresponding to each query parameter.

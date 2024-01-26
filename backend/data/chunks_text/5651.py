@@ -1,0 +1,3 @@
+- Defines a method called `has_filter_permission` that takes in three arguments: `request`, `filters`, and optional keyword arguments (`**kwargs`)
+- The method returns a boolean value indicating whether the user has permission to apply the specified filter(s) to the requested resource
+- By default, this method always returns `True`, meaning all filters are allowed by default

@@ -1,0 +1,5 @@
+- Initializes a logging object called `logger`.
+- Tries to connect to the database using Alembic's `SessionLocal()` function, which creates a new SQLAlchemy session for each request. If an exception occurs during this process, it logs an error message and raises the exception.
+- Checks whether the environment variable `RUN_MIGRATION` is set to false, indicating that migrations should not be run. In such case, skips migration steps. Otherwise, runs the `run_alembic_migrations()` function to apply any pending database schema changes.
+- Calls another function named `init_db()`, passing in the created database connection, to initialize some data or perform other setup tasks specific to the application.
+- Logs a final message indicating successful initialization of the service.

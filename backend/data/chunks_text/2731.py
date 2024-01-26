@@ -1,0 +1,2 @@
+- Tests endpoint `/no_response_model-no_annotation-return_Model` without a response model or annotation
+- Asserts that HTTP status code is 200 and returns expected JSON data in response body

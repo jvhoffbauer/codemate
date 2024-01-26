@@ -1,0 +1,5 @@
+- This method calculates a set of attribute names to be included in JSON serialization using SQLModel's ORM.
+- It takes several optional arguments including `include`, `exclude`, `update`, and `exclude_unset`. These parameters allow fine-grained control over which fields are serialized.
+- If neither `include` nor `exclude` is provided, all fields are included by default. However, this behavior has been updated to exclude SQLAlchemy attributes and relationships to prevent potential issues with infinite recursion.
+- The `exclude_unset` parameter determines whether unset values should also be excluded from the output. By default, they are not excluded.
+- Finally, the resulting set of field names is returned.

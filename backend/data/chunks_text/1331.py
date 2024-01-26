@@ -1,0 +1,1 @@
+- This function, named `read_user_me`, is an asynchronous (awaitable) function that returns a dictionary with one key-value pair containing the ID of the currently logged in user. - The function name follows Flask RESTful API conventions for resource methods and uses camelCase naming style. - It's used to retrieve information about the authenticated user making the request.

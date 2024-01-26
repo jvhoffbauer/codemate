@@ -1,0 +1,3 @@
+- Generates an OpenAPI (Swagger) JSON schema for a FastAPI application using `pydantic_swagger`.
+- The generated schema includes information about endpoints, request and response formats, error handling, and documentation.
+- The schema follows the OpenAPI Specification version 3.1.0 format with components such as schemas and responses defined separately.

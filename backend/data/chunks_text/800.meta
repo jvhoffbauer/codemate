@@ -1,0 +1,1 @@
+{"original_code": "async def get_user_by_email(email: str) -> dict[str, Any] | None:\n    select_query = select(auth_user).where(auth_user.c.email == email)\n\n    return await fetch_one(select_query)"}

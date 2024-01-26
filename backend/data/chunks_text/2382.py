@@ -1,0 +1,4 @@
+- Tests GET request to `/default1` with query parameter `level1=foo`.
+- Asserts that response body is equal to 'foo'.
+- Verifies Content-Type header value as 'application/x-level-0'.
+- Checks if 'X-Level-0' header exists and other headers ('X-Level-1', 'X-Level-2', 'X-Level-3', 'X-Level-4', 'X-Level-5') don't exist.

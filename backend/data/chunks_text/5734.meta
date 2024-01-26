@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: \"AdminApp\"):\n        assert self.templates, \"templates:Jinja2Templates is None\"\n        assert self.template_name, \"template_name is None\"\n        self.page_path = self.page_path or f\"/{self.template_name}\"\n        super().__init__(app)"}

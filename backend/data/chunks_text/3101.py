@@ -1,0 +1,3 @@
+- Defines a GET route for `"/query_example/"`, with an optional parameter named `data`.
+- Uses FastAPI's `Query` decorator to define a query string parameter called `data`, which has a default value of `None` and an example value of "query1".
+- Returns the value of the `data` parameter passed in the request or its default value if not provided.

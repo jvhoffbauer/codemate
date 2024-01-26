@@ -1,0 +1,3 @@
+- Defines an `before_request()` function that is called before each Flask request
+- Checks whether the requested URL path is allowed (stored in `ALLOW_LIST`) or requires authentication
+- If authentication is required, extracts and verifies a JWT token from the Authorization header using `decode_jwt()`, retrieves user information from it, and sets the corresponding Flask global variable for later use by views

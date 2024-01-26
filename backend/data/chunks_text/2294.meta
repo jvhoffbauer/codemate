@@ -1,0 +1,1 @@
+{"original_code": "def path_convertor(param: str = Path()):\n    return {\"path\": param}"}

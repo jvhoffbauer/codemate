@@ -1,0 +1,3 @@
+- This function is a GET request handler for the `/items/` endpoint in an app built using FastAPI framework.
+- It accepts a query parameter named 'q' with a minimum length of 3 characters (using Pydantic's Annotations).
+- If the 'q' parameter is provided, it updates the response dictionary ('results') to include the search term as well.

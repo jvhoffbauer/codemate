@@ -1,0 +1,1 @@
+{"original_code": "        def example_examples(\n            item: Item = Body(\n                example={\"data\": \"Overridden example\"},\n                examples=[\n                    {\"data\": \"examples example_examples 1\"},\n                    {\"data\": \"examples example_examples 2\"},\n                ],\n            ),\n        ):\n            return item"}

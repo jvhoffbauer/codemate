@@ -1,0 +1,2 @@
+- This function, `test_get`, tests a GET request to the root URL ("/").
+- It asserts that the JSON response contains a specific message and checks if a certain header is present or absent.

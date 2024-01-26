@@ -1,0 +1,9 @@
+- Imports `tutorial001_py310` module from `docs_src/tutorial/relationship_attributes/back_populates` directory and assigns it to a variable named `mod`.
+- Sets SQLAlchemy's connection URL for testing purposes using `sqlite://` protocol.
+- Creates an engine instance using the set URL.
+- Initializes a list called `calls` which will be used later in the test case.
+- Retrieves the built-in print function and replaces it temporarily with a custom one that saves each call made by print into the `calls` list.
+- Patches the built-in print function with the temporary replacement.
+- Enables warnings related to SAWarning during execution of the `main()` method of the imported module.
+- Executes the main() method of the imported module while capturing any warning messages generated.
+- Asserts that the captured warning messages match the expected ones stored in the `expected_calls` list.

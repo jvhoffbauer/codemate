@@ -1,0 +1,1 @@
+{"original_code": "def test_incorrect_token(client: TestClient):\n    response = client.get(\"/users/me\", headers={\"Authorization\": \"Bearer nonexistent\"})\n    assert response.status_code == 401, response.text\n    assert response.json() == {\"detail\": \"Could not validate credentials\"}\n    assert response.headers[\"WWW-Authenticate\"] == 'Bearer scope=\"me\"'"}

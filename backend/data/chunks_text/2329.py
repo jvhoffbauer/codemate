@@ -1,0 +1,3 @@
+- Defines a new endpoint `POST /items/` for saving items using FastAPI's decorator syntax
+- Accepts an argument `item` of type `Union[ExtendedItem, Item]`, which can be either an instance of `ExtendedItem` or `Item` class (both defined elsewhere)
+- Returns a JSON response with the saved item as its value

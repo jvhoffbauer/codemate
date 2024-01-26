@@ -1,0 +1,2 @@
+- Defines a function named `process_items` that takes a list of strings as an argument (named `items`)
+- Iterates over each string in the input list using a `for` loop and prints it to the console using the built-in `print()` function inside the body of the loop

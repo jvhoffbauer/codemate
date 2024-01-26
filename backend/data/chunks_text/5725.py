@@ -1,0 +1,1 @@
+- This method is asynchronous and takes a `Request` object as an argument. - It returns either the current page (stored in the class variable `self.page`) or creates a new empty page if no page has been set yet.

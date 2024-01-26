@@ -1,0 +1,7 @@
+- Defines a fixture named `client` that returns an instance of `TestClient` for testing purposes.
+- Initializes a new FastAPI application and assigns it to the variable `app`.
+- Imports Pydantic's `BaseModel` and `computed_field` decorator.
+- Creates a subclass of `BaseModel`, called `Rectangle`, with two integer fields (`width` and `length`) and a computed field (`area`) calculated using the `computed_field` decorator.
+- Registers a GET route at the root path ("/"), which returns an instance of `Rectangle` with default values for `width` and `length`.
+- Instantiates a `TestClient` object with the initialized FastAPI application as its argument and stores it in the `client` variable.
+- Returns the `client` object so it can be used by other tests in this module or session.

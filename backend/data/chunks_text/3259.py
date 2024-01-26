@@ -1,0 +1,4 @@
+- Defines a parameterized test using `pytest.mark.parametrize`.
+- Specifies three sets of input values for the path, expected status, and expected response in a list comprehension.
+- Calls the Flask application's `client` object to make GET requests to each specified path.
+- Asserts that the HTTP status codes and JSON responses match the expected values.

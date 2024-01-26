@@ -1,0 +1,3 @@
+- Tests if Swagger UI, Redoc, and OpenAPI JSON can be accessed by making a GET request to the specified route using Flask's `api_client`.
+- Prints out the response content for debugging purposes.
+- Asserts that the status code is 200 (OK).

@@ -1,0 +1,2 @@
+- Creates a function `get_object()` that returns an instance of class `Item`.
+- Initializes the object with specific values for its attributes 'name', 'date', 'price' and 'owner_ids'.

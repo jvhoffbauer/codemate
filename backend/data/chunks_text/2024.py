@@ -1,0 +1,3 @@
+- Defines an asynchronous function `upsert_item()` that takes three arguments: `item_id`, `name` (optional), and `size` (optional).
+- Checks whether `item_id` exists in a dictionary called `items`. If it does exist, updates its 'name' and'size' fields with the new values passed through the `name` and `size` parameters respectively. Returns the updated item from the `items` dictionary.
+- If `item_id` doesn't exist in the `items` dictionary, creates a new dictionary for this item with the given `name` and `size` values, adds it to the `items` dictionary, and returns the newly created item along with HTTP status code of CREATED (201).

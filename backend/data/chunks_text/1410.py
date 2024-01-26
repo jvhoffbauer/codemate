@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_item` that takes a required integer argument `item_id`. - If `item_id` is equal to 3, raises a custom HTTP exception with status code 418 and detailed message "Nope! I don't like 3." - Otherwise, returns a dictionary containing the passed `item_id` keyed under "item_id".

@@ -1,0 +1,2 @@
+- Tests GET request to `/users/{user_id}` with user ID 'abc123'
+- Asserts status code is 200 and response body contains expected JSON object

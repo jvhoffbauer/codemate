@@ -1,0 +1,3 @@
+- Defines a function called `get_settings()` that takes keyword arguments (`**`) and returns an instance of `BaseSettings`.
+- Docstrings provide usage instructions for calling the function, including how to pass in optional environment variables via the `_env_file` parameter.
+- The function logs a message using the `CFG_LOGGER`, which is likely defined elsewhere in the application's configuration setup.

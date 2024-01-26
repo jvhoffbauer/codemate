@@ -1,0 +1,1 @@
+{"original_code": "def test_value_extracting_by_http():\n    response = client.get(\"/http\")\n    assert response.status_code == 200\n    assert response.json() == 42"}

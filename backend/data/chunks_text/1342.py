@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional header parameter named `x_token`, which can be either a list of strings or none, and is annotated with the `Header()` function from Pydantic to validate its format
+- Returns a dictionary containing the value of the `x_token` header if provided, otherwise returns an empty dictionary

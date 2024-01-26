@@ -1,0 +1,1 @@
+- Defines a GET request for the `/users/` endpoint with the tag 'users' using FastAPI's router decorator. - Returns an array of dictionaries containing usernames as response data.

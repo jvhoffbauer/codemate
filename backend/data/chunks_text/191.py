@@ -1,0 +1,3 @@
+- This function is a GET request for all heroes (`/heroes/`) and returns them in `HeroRead` format using FastAPI's built-in decorator `@app.get`.
+- The SQLAlchemy session is created within this function to retrieve all rows from the `hero` table using the `select` statement, which are then returned as a list of `HeroRead` objects.
+- The `response_model` parameter specifies that the API should automatically convert the query results into a list of `HeroRead` objects based on their schema definition.

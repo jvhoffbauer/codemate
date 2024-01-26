@@ -1,0 +1,3 @@
+- Endpoint to create a new item using POST request
+- Request body is expected in `Item` format as defined by FastAPI schema
+- Returns created item object in `Item` format as defined by FastAPI schema

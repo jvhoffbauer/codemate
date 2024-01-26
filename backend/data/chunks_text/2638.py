@@ -1,0 +1,2 @@
+- Defines a function `read_query` that takes an argument `q` of type union (either string or none)
+- Returns the value of `q` without any modifications

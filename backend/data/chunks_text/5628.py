@@ -1,0 +1,3 @@
+- Defines a custom exception handler called `error_no_router_permission`.
+- Takes in an instance of FastAPI's built-in `Request` class as its argument.
+- Raises a new HTTPException with a status code of 401 (Unauthorized) and a detailed message explaining that no router permissions are available.

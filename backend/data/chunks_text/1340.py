@@ -1,0 +1,2 @@
+- Defines a GET request endpoint for retrieving all users at `/users`.
+- Returns an array containing two user names, "Bean" and "Elfo".

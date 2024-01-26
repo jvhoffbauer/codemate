@@ -1,0 +1,5 @@
+- Defines a function `upsert` that takes in a bucket and a `UserCreate` object as arguments
+- Calls another function `upsert_in_db` to perform database operations on the given `UserCreate` object with optional persistence level (default is 0 for no persistence)
+- Creates a new `UserSyncIn` object from the original `UserCreate` object and updates its `name` field with the username
+- Inserts the newly created `UserSyncIn` object into Sync Gateway using `insert_sync_gateway` helper function
+- Returns the updated `User` object obtained from calling `upsert_in_db`

@@ -1,0 +1,1 @@
+- Tests a GET request to `/query/optional`, which returns an optional value (in this case, 'foo bar') using Flask's built-in testing client. - Asserts that the status code of the response is 200 OK and that the JSON body contains the expected string ('foo bar').

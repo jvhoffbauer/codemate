@@ -1,0 +1,3 @@
+- Checks if a given Django model field has annotated type that represents a sequence of bytes (e.g., `BinaryField`, `TextField` with binary data).
+- Returns True if the field's type is a byte sequence, False otherwise.
+- Used to determine whether a specific database column should be included in a query for binary data.

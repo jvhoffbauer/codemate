@@ -1,0 +1,1 @@
+{"original_code": "async def get_cookie_or_token(\n    websocket: WebSocket,\n    session: Annotated[str | None, Cookie()] = None,\n    token: Annotated[str | None, Query()] = None,\n):\n    if session is None and token is None:\n        raise WebSocketException(code=status.WS_1008_POLICY_VIOLATION)\n    return session or token"}

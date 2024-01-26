@@ -1,0 +1,1 @@
+- Tests default values for various data types using Python's built-in `Default` class from the typing module. - Asserts that the default value is returned when accessing an uninitialized object of each type, except for lists which are initialized with an empty list instead.

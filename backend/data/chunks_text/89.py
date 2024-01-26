@@ -1,0 +1,3 @@
+- Defines a function called `case()` that takes multiple arguments of either tuple or dictionary format for condition and result pairs (`*whens`)
+- Returns an instance of SQLAlchemy's `Case` object with provided conditions and results (`return sqlalchemy.case(*whens...)`)
+- Optionally accepts values to be returned when no conditions are met (`value`) and a default value in absence of any matches (`else_`)

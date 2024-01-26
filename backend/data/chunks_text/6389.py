@@ -1,0 +1,1 @@
+- Takes a sequence of any type (`Sequence[Any]`) as input and returns a list of dictionaries (`List[Dict[str, Any]]`) containing normalized error messages. - The function is private (_) to prevent direct access from outside the class or module. - It's possible that this method is used for formatting or standardizing error messages before returning them to the user.

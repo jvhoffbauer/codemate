@@ -1,0 +1,3 @@
+- Sends a PUT request to update an item with ID 'bar' using FastAPI's built-in `TestClient`.
+- Passes a JSON body containing updated values for 'name', 'price', and omits 'description'.
+- Asserts that the server returns the expected updated object in its response, including calculated tax value based on price.

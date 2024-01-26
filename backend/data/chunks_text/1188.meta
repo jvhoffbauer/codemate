@@ -1,0 +1,1 @@
+{"original_code": "def get_user(user_id: int):\n    return models.User.filter(models.User.id == user_id).first()"}

@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get` that takes a database session and optional arguments/keywords as parameters.
+- Uses SQLAlchemy's `select`, `filter`, and `filter_by` methods to retrieve a single instance of the model from the database based on provided filters (arguments and keywords).
+- Returns the first row returned by the query using `result.scalars().first()`. If no rows are found, returns None.

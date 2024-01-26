@@ -1,0 +1,3 @@
+- Initializes a new instance of the class with a given UUID string stored in the `uuid` attribute.
+- The constructor takes a single argument `uuid_string`, which is expected to be a valid UUID string representation (e.g., version 4).
+- If an invalid or unexpected value is passed as `uuid_string`, it's up to the caller to handle any potential exceptions that may arise during initialization.

@@ -1,0 +1,2 @@
+- Defines a function named `convert_error` that returns an integer (type hint)
+- Inside the function, raises a custom exception called `MyErrorToConvert` without returning any value

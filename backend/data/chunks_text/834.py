@@ -1,0 +1,3 @@
+- This function uses `pytest.mark.asyncio` to mark it as an async test and `TestClient` fixture from FastAPI's testing utilities to create a client for sending requests.
+- It sends a POST request to the `/auth/users` endpoint with email and password in JSON format, and stores the response in `resp`.
+- The function checks that the HTTP status code is 201 CREATED, extracts the response body (JSON), and compares it against expected output ({"email": "email@fake.com"}).

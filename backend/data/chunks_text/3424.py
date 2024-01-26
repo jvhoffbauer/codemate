@@ -1,0 +1,1 @@
+- This function tests a GET request to the path `"/path/param-lt-gt-int"` with an integer parameter value of `2`. - The expected status code is `200`, and the returned JSON should be equal to `2`.

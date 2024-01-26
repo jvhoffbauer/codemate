@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, q: Union[str, None] = None, skip: int = 0, limit: int = 100):\n        self.q = q\n        self.skip = skip\n        self.limit = limit"}

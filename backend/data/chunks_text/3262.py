@@ -1,0 +1,3 @@
+- Tests if GET request to /redoc endpoint returns a successful HTTP status code (200) and saves the response text for further testing.
+- Checks that the Content-Type header is set correctly as 'text/html' with UTF-8 encoding.
+- Verifies the presence of'redoc@next' string in the HTML content returned by the server.

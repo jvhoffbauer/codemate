@@ -1,0 +1,3 @@
+- Defines a function called `decorator` that takes in a decorated callable (a function with decorators applied to it).
+- Adds an API route using FastAPI's router object based on provided parameters such as path, method, and response model.
+- Returns the original decorated callable without any modifications.

@@ -1,0 +1,3 @@
+- Defines a new `Attribute` with a specific ID and properties (e.g., name, input type).
+- Adds two values to this attribute using the `AttributeValue` model. Each value has its own unique slug based on the value and attribute ID.
+- Commits changes to the database using the `AsyncDAL` session object.

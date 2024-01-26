@@ -1,0 +1,1 @@
+{"original_code": "    async def page_permission_depend(self, request: Request) -> bool:\n        return await self.has_page_permission(\n            request, action=\"page\"\n        ) or self.error_no_page_permission(request)"}

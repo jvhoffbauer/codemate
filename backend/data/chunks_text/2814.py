@@ -1,0 +1,2 @@
+- Tests the `/query/int/default` endpoint with a query parameter of '50' using Flask's built-in testing client (client)
+- Asserts that the HTTP status code is 200 and the JSON response contains the string 'foo bar 50'

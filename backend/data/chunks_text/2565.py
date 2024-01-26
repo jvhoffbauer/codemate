@@ -1,0 +1,1 @@
+- Defines a function named `foo()` that returns a dictionary with one key-value pair containing the string 'Foo item' as its value and an unspecified key (presumably 'name') as its key.

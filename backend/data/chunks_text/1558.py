@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` with a single parameter `q`.
+- The type of `q` is defined using Pydantic's `Annotated` decorator, which allows us to specify both the Python type and validation rules (in this case, a union of strings or `None`, required by the `Query` class).
+- If `q` is not `None`, it will be passed through the `Query` validator, which checks its length (minimum of 3) and adds it to the dictionary returned by the function under the key 'q'.

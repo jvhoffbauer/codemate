@@ -1,0 +1,3 @@
+- Tests GET request for item header with a specific ID (foo) using Flask's built-in testing client
+- Asserts that the status code is 200 and displays an error message if it isn't or returns the text of the response body
+- Verifies that the JSON response contains the expected value ("The Foo Wrestlers") under the key 'item'

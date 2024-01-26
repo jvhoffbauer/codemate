@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a query parameter (optional).
+- Uses Pydantic's `Query` decorator to validate and parse the query parameter with default value of `None`, minimum length of 3 characters, and descriptive title.
+- Returns a dictionary containing two items ("items") and an optional query result ("q"). The query result is added dynamically based on whether the query parameter was provided or not.

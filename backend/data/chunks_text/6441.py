@@ -1,0 +1,4 @@
+- Defines an `@asynccontextmanager` decorator called `_handle_exception`.
+- Inside a `try` block, yields control to another part of the program. If an exception occurs within this block, it's caught by the `except` statement.
+- The caught exception is checked against a condition - whether it's different from the current value of `self.exception`. If yes, then the `handle_exception()` method of the entrypoint object is invoked with the exception as its argument. This method returns either the original response or a new one that replaces the error message with something more user-friendly.
+- After handling the exception, the function checks whether there's any unhandled exception in the system. If so, it logs the details using Python's built-in logging module.

@@ -1,0 +1,1 @@
+- This endpoint returns a dictionary with keys `"k1"`, `"k2"`, and `"k3"` as values of type `Item`. - The returned dictionary is annotated using Pydantic's `response_model` decorator to specify its structure. - Each item in the dictionary has additional properties set through keyword arguments passed to the constructor of the `Item` class.

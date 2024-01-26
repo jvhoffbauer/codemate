@@ -1,0 +1,5 @@
+- Defines a method `remove` that takes in an SQLAlchemy session (db), and an ID as arguments.
+- Retrieves the object with the given ID from the database using SQLAlchemy's querying functionality.
+- Deletes the retrieved object using SQLAlchemy's delete function.
+- Commits the changes to the database using SQLAlchemy's commit function.
+- Returns the deleted object for further processing or display purposes.

@@ -1,0 +1,3 @@
+- Defines an `async_client()` function that takes two arguments: a FastAPI application (`app`) and a preparation function for the database (`prepare_database`).
+- Uses the `asynccontextlib.asyncgenerator` context manager to create an instance of `AsyncClient`, which is a synchronous HTTP client for asynchronous applications built on top of `aiohttp`. The `base_url` parameter specifies the URL prefix for all requests made by this client.
+- Yields the created `AsyncClient` object so it can be used in other parts of the program using a generator expression or comprehension. Afterwards, the `yield from` statement returns control back to the caller, effectively closing the connection and freeing up resources.

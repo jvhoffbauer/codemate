@@ -1,0 +1,3 @@
+- Tests logging in with a custom access token using `TestClient`.
+- Retrieves user information from the API response and asserts that an email key is present.
+- Verifies that the status code of the request is successful (200).

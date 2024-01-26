@@ -1,0 +1,4 @@
+- Retrieves API endpoint for server and configuration values for first superuser credentials
+- Makes POST request to `/login/access-token` with provided username and password
+- Extracts access token from response JSON and creates dictionary of authorization header format
+- Returns dictionary containing authorization header for use in subsequent API calls as an authenticated superuser

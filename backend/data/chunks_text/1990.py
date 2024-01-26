@@ -1,0 +1,4 @@
+- Defines an asynchronous function `read_user_item()` with four arguments: `user_id`, `item_id`, optional query string (`q`) and boolean flag for short response (`short`)
+- Creates a dictionary called `item` containing `item_id` and `owner_id` (i.e., `user_id`)
+- If a query string is provided, updates the `item` dictionary with a new key-value pair of `'q': q`
+- If the `short` flag is false, adds another key-value pair to the `item` dictionary with a longer value for `'description'`.

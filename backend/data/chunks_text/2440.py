@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_sync_context_b_bg()` that takes in two arguments: `tasks`, which is a background task manager from FastAPI's built-in library, and `state`, which is a dictionary with dependencies provided by the `Depends()` decorator using the context variable `context_b`.
+- The inner function `bg()` accepts the same argument `state` and sets a new key called'sync_bg' to a string value containing both the current values of 'context_b' and 'context_a'. This operation runs in the background using the `BackgroundTasks` class.
+- Finally, the outer function returns the original `state` dictionary after adding the newly created background task to it via the `add_task()` method.

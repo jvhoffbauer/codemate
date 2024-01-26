@@ -1,0 +1,1 @@
+- Creates a new model called `<schema_name_prefix>Update` using the `create_model_by_model()` function from Django's built-in utilities. - Excludes the primary key field (stored in `self.pk_name`) during model creation to avoid conflicts with the original schema's PK. - Sets nullable fields to None by default through the `set_none` parameter of `create_model_by_model()`.

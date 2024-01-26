@@ -1,0 +1,1 @@
+{"original_code": "def test_read_hero_not_found(client: TestClient):\n    response = client.get(\"/heroes/9000\")\n    assert response.status_code == 404"}

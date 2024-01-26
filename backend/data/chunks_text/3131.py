@@ -1,0 +1,1 @@
+- This endpoint returns a single item with specific attributes using FastAPI's `Item` model as the response type. - The returned object includes a 'name', 'date', 'price', and an array of 'owner_ids'. - No additional data is included in the response body beyond what is defined by the `Item` class.

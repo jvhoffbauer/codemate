@@ -1,0 +1,1 @@
+- Creates a new `models.Item` object with data from the `schemas.ItemCreate` schema and sets its `owner_id` to the provided `user_id`. - Adds the newly created item to the database session using `db.add()`. - Commits the changes made in this session using `db.commit()`. - Refreshes the state of the item in memory by calling `db.refresh()`. - Returns the updated item object.

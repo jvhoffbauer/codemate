@@ -1,0 +1,1 @@
+- Defines a function `main` with two arguments: `some_arg` and an optional argument `q`. The default value for `q` is `None`. - Returns a dictionary containing both `some_arg` and `q`, if provided. If not, then just `some_arg`.

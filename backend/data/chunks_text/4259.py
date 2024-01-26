@@ -1,0 +1,1 @@
+- Imports a function `test_override_in_items_with_params` from another module and calls it directly in this script. - This is an example of how to override tests with parameters using pytest's `--parametrize` feature for testing dependencies. - The imported function serves as a tutorial or demonstration on how to use this functionality effectively.

@@ -1,0 +1,1 @@
+{"original_code": "@component_name(f\"_Request\")\nclass JsonRpcRequest(BaseModel):\n    jsonrpc: Literal[\"2.0\"] = Field(\"2.0\", json_schema_extra={\"example\": \"2.0\"})\n    id: Union[StrictStr, int] = Field(None, json_schema_extra={\"example\": 0})\n    method: StrictStr\n    params: dict = Field(default_factory=dict)\n\n    model_config = ConfigDict(extra=\"forbid\")"}

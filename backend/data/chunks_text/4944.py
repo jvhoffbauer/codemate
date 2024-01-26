@@ -1,0 +1,1 @@
+- Defines a Celery task named `test_celery_asyncio_cpu_bound`. - The function `task_cpu_bound()`, assumed to be CPU-bound, is called inside this task definition. - This task can be executed asynchronously using Celery's scheduling system.

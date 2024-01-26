@@ -1,0 +1,1 @@
+{"original_code": "    def _normalize_errors(errors: Sequence[Any]) -> List[Dict[str, Any]]:\n        return errors  # type: ignore[return-value]"}

@@ -1,0 +1,3 @@
+- Tests retrieving a specific location using its ID in version 2 of the API (`GET /v2/locations/:id`)
+- Uses `mock` library to simulate datetime objects and their formatting for testing purposes
+- Compares actual JSON output from server against expected JSON output stored in a local file

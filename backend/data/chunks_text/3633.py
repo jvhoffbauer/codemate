@@ -1,0 +1,6 @@
+- Defines an OpenAPI schema (v3.1.0) for FastAPI app version 0.1.0
+- Includes information about the API title and version
+- Contains paths and webhook definitions
+- Specifies request body content types and required fields
+- Provides responses for successful requests and validation errors
+- Uses HTTP Bearer authentication scheme

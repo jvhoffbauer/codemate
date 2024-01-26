@@ -1,0 +1,1 @@
+{"original_code": "    def render(self, content: Any) -> bytes:\n        return orjson.dumps(content)"}

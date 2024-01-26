@@ -1,0 +1,4 @@
+- Endpoint for logging out a user by revoking their refresh token and deleting associated cookies from client's browser
+- Uses `Depends()` decorator to pass validated refresh token as argument to function
+- Calls `service.expire_refresh_token()` method to remove token from database
+- Deletes corresponding cookie using `Response.delete_cookie()` with settings provided by helper function `utils.get_refresh_token_settings()`

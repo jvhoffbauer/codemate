@@ -1,0 +1,3 @@
+- This method `read()` reads a specified number of bytes (default is all remaining bytes) from the file and returns them as a byte string.
+- It takes an optional argument `size`, which specifies how many bytes to read. If not provided, it will read until the end of the file.
+- The function is marked asynchronous using the `async` decorator, allowing it to be used within an asynchronous context such as an event loop or coroutine. However, since reading files can be I/O bound, it's still executed in a separate thread pool for better performance.

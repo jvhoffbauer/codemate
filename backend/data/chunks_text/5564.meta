@@ -1,0 +1,1 @@
+{"original_code": "    @cached_property\n    def _filter_entities(self) -> Dict[str, Union[InstrumentedAttribute, Label]]:\n        return {\n            self.parser.get_alias(sqlfield): sqlfield\n            for sqlfield in self.parser.filter_insfield(\n                self.list_filter, save_class=(Label,)\n            )\n        }"}

@@ -1,0 +1,1 @@
+{"original_code": "        async def endpoint(__request__: _Request):\n            del __request__"}

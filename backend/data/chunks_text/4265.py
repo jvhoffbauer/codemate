@@ -1,0 +1,3 @@
+- This function tests the `client.get()` method with query parameters passed in as URL arguments (`q`, `skip`, and `limit`) using the `docs_src.dependency_testing.tutorial001_an_py310` module's `client`.
+- The expected status code is checked against the actual status code returned by the server. If they don't match, an error message containing both codes and responses is printed to stdout for debugging purposes.
+- The JSON response body is compared against a predefined dictionary that contains the expected values of the keys'message', 'params'. If there are any discrepancies between them, an AssertionError exception will be raised.

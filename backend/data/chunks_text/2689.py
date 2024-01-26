@@ -1,0 +1,1 @@
+- This endpoint returns a dictionary with user information as the response body, but it is annotated to have no specific schema (i.e., `response_model=None`) using FastAPI's OpenAPI annotations. - The returned dictionary exactly matches the shape of the JSON payload that will be sent back to the client, without any additional wrapping or conversion.

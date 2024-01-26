@@ -1,0 +1,1 @@
+{"original_code": "def main() -> None:\n    logger.info(\"Initializing service\")\n    init()\n    logger.info(\"Service finished initializing\")"}

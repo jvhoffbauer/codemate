@@ -1,0 +1,3 @@
+- This function is a PUT request handler for saving an item with ID `item_id`.
+- It doesn't accept any body data in the request, as indicated by the lack of parameter in the function signature and the absence of `json()` or similar decorators.
+- The function returns a simple dictionary containing the saved item ID.

@@ -1,0 +1,1 @@
+- This function tests the `crud.item.get()` method by first creating a new item using `ItemCreate`, then storing it in the default bucket with an ID generated randomly. The function asserts that the retrieved item matches the original one based on its ID, title, description, and owner username.

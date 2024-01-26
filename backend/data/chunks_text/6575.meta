@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method()\n    def probe2(\n        data: List[Balance],\n    ) -> List[Balance]:\n        return data"}

@@ -1,0 +1,3 @@
+- Defines a function named `response_model_model1_annotation_model2_return_dict_with_extra_data` that returns an instance of the `Item` class (presumably defined elsewhere).
+- The returned dictionary contains three key-value pairs, with keys 'name','surname' and 'password_hash'.
+- The value for the 'password_hash' key is set to the string literal'secret'. This suggests that this data may be used as part of user authentication or password storage functionality in some context.

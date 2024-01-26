@@ -1,0 +1,2 @@
+- Defines a function `response_model_none_annotation_return_invalid_model` that returns an instance of class `Item`.
+- The returned object has two attributes, `name` and `price`, but the function's return type is annotated as `User`, which is not the same as the actual return value. This can cause issues with type hinting and validation in certain frameworks or libraries.

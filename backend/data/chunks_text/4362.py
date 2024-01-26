@@ -1,0 +1,2 @@
+- Imports `TestClient` and `app` from a specific module within the `docs_src` directory
+- Creates an instance of `TestClient` using `app`, which is likely a Flask application, and returns it for use in other functions or tests

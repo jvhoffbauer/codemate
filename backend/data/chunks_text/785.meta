@@ -1,0 +1,1 @@
+{"original_code": "def generate_random_alphanum(length: int = 20) -> str:\n    return \"\".join(random.choices(ALPHA_NUM, k=length))"}

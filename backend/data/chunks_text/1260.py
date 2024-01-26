@@ -1,0 +1,3 @@
+- Defines a GET endpoint for retrieving users at `"/users"`
+- Accepts a dictionary of common parameters as an argument using FastAPI's dependency injection system (Depends) and Pydantic's model validation (Annotated)
+- Returns a JSON response containing a greeting message and the passed in parameter values

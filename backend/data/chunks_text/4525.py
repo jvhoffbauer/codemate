@@ -1,0 +1,1 @@
+- Tests that accessing a protected resource without authentication results in a 401 Unauthorized status and includes the WWW-Authenticate header with Bearer value. - Uses `TestClient` from FastAPI's testing utilities to simulate an HTTP request. - Asserts that the expected behavior is met by checking the response status code, text, JSON body, and headers.

@@ -1,0 +1,1 @@
+- Defines a GET request for the path `"/path/param-gt0/{item_id}"`, where `{item_id}` is replaced with a floating point number greater than zero, passed as a parameter to this endpoint. - Uses Pydantic's `Path` class to validate that the `item_id` parameter is a positive floating point value. - Returns the validated `item_id`.

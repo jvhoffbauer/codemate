@@ -1,0 +1,1 @@
+{"original_code": "        def available_algorithms(request: Request):\n            \"\"\"Retrieve the list of available Algorithms.\"\"\"\n            return {k: metadata(v) for k, v in self.supported_algorithm.data.items()}"}

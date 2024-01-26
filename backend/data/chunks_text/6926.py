@@ -1,0 +1,1 @@
+- Defines an asynchronous function `get_multi` that takes a SQLAlchemy session and optional arguments for filtering and pagination. - Uses the `select`, `filter`, `filter_by`, `offset`, and `limit` methods of SQLAlchemy to construct a query with the given parameters. - Executes the query using `session.execute` and returns a list of scalars (i.e., rows) from the resulting cursor.

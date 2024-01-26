@@ -1,0 +1,1 @@
+{"original_code": "        def _range_check(datarange):\n            \"\"\"\n            Utility to check if data range is outside of precision for 3 digit base 256\n            \"\"\"\n            maxrange = 256**3\n\n            return datarange > maxrange"}

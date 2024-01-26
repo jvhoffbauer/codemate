@@ -1,0 +1,1 @@
+- Defines a function `read_dict()` that returns a dictionary with one key-value pair, where the value is an alias string "Foo".

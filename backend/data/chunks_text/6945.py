@@ -1,0 +1,1 @@
+- Defines a new route with path "/another/" using FastAPI's router decorator `@router.get()`. - Returns a string response containing "Another Hello World!".

@@ -1,0 +1,2 @@
+- Defines a function named `test_celery` that takes a single argument called `word`.
+- The function returns a string with the format "test task return [word]".

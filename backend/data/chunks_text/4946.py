@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `task_io_bound()`.
+- Uses the `await` keyword to wait for a future operation (in this case, `asyncio.sleep(1)`) before continuing with the rest of the function.
+- Returns a string value after completing the IO-bound operation.

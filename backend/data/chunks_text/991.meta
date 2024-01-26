@@ -1,0 +1,1 @@
+{"original_code": "def _annotation_is_complex(annotation: Union[Type[Any], None]) -> bool:\n    return (\n        lenient_issubclass(annotation, (BaseModel, Mapping, UploadFile))\n        or _annotation_is_sequence(annotation)\n        or is_dataclass(annotation)\n    )"}

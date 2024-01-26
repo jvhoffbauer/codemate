@@ -1,0 +1,1 @@
+{"original_code": "def mocked_timeline(*args, **kwargs):\n    class TestTimeline:\n        def __init__(self, latest):\n            self.latest = latest\n\n    return TestTimeline(args[0])"}

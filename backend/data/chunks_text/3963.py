@@ -1,0 +1,3 @@
+- This function is a FastAPI route with the path `/check-class`.
+- It returns an object containing the name of the request class as determined by introspection using Python's built-in `type()` and attribute access (`Request.__class__`).
+- The response format is JSON, which is automatically handled by FastAPI due to the use of the `Response` subclass returned from the function.

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\", response_model=List[Item])\nasync def read_items():\n    return items"}

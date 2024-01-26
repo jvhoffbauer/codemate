@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `overrider_dependency_simple`.
+- Takes a single optional positional argument named `q`, which is of type str.
+- Returns a dictionary with three keys - 'q','skip' and 'limit'. The values for these keys are determined based on the value passed to the `q` parameter (if any) and hardcoded values ('skip': 5, 'limit': 10).

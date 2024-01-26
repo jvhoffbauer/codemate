@@ -1,0 +1,3 @@
+- Retrieves a list of items from the database using `crud.item.get_multi()`.
+- Checks whether the current user is an administrator (`crud.user.is_superuser()`) and returns all items in that case. Otherwise, it filters by the ID of the current user (`user.id`) using `crud.item.get_multi_by_owner()`.
+- Returns the resulting list of items.

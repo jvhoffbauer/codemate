@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: \"AdminApp\"):\n        PageAdmin.__init__(self, app)\n        AdminGroup.__init__(self, app)\n        self.engine = self.engine or self.app.engine\n        self.db = get_engine_db(self.engine)\n        self._registered: Dict[Type[BaseAdminT], Optional[BaseAdminT]] = {}\n        self.__register_lock = False"}

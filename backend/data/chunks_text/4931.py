@@ -1,0 +1,1 @@
+- This function tests getting an access token by making a POST request to the `/login/access-token` endpoint with the first superuser's credentials. - The `requests` library is used to make the HTTP request and parse the response as JSON. - Assertions are made on the status code of the response (200) and the presence and validity of the 'access_token' key in the response body.

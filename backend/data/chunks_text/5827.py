@@ -1,0 +1,3 @@
+- Returns a URL path for the current router by concatenating the site URL, site path, and prefix of the router
+- Used to generate absolute URLs for views in Django's built-in router system
+- Helps with creating links between pages within an application without hardcoding URLs

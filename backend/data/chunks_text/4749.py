@@ -1,0 +1,2 @@
+- Tests recursive data structures in Flask application using Pytest and JSON responses
+- Verifies correct HTTP status codes and expected JSON output for two different endpoints with nested lists and dictionaries

@@ -1,0 +1,1 @@
+- Defines a function `say_hi` with an optional parameter `name` of type `Optional[str]`. If no value is provided, it defaults to `None`. - Inside the function, checks whether the `name` argument has been passed or not using the conditional statement `if name is not None:`. - Prints a customized greeting message based on the presence/absence of the `name` argument.

@@ -1,0 +1,6 @@
+- This function takes a `Playwright` object as an argument and launches a Chromium browser in headless mode (set to False here).
+- A new context is created with specific viewport dimensions and a new page is opened at the specified URL.
+- The user clicks on a link labeled "GET /items/Read Items".
+- The user switches to a tab labeled "Schema".
+- The user expands all schema elements using a button labeled "Expand all".
+- Finally, the current page is saved as a screenshot named 'image03' in the 'docs/en/docs/img/tutorial/' directory.

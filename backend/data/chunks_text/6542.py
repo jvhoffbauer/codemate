@@ -1,0 +1,4 @@
+- Defines a method `handle_exception()` that takes an exception object as input and returns None (async function)
+- Checks whether the exception is of type `MyErrorToUnhandledException`. If yes, raises another exception `MyUnhandledException` with custom message "My unhandled exception"
+- Checks whether the exception is of type `MyErrorToConvert`. If yes, raises a new exception `MyConvertedError` instead
+- For any other exceptions, raises `NotImplementedError`, indicating that this specific handling logic has not been implemented yet

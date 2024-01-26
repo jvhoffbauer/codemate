@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, capture_event_callback, capture_envelope_callback):\n        Transport.__init__(self)\n        self.capture_event = capture_event_callback\n        self.capture_envelope = capture_envelope_callback\n        self._queue = None"}

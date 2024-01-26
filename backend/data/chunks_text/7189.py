@@ -1,0 +1,1 @@
+- Defines a function `db` that returns a generator object. - The generator yields an instance of `SessionLocal`, which is a context manager for creating database sessions in SQLAlchemy. - This allows multiple functions to access the same session without having to create and manage it themselves, improving performance and reducing resource usage.

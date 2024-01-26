@@ -1,0 +1,1 @@
+{"original_code": "    def test_scalar_type_datetime(self):\n        from datetime import datetime\n\n        assert annotation_outer_type(datetime) == datetime"}

@@ -1,0 +1,3 @@
+- Retrieves a list of running processes inside a Docker container using `Container.top()`.
+- Filters out all processes except those containing 'gunicorn' using list comprehension and string slicing (index 7).
+- Returns the resulting list of Gunicorn process names as output.

@@ -1,0 +1,1 @@
+- Retrieves environment variables for PostgreSQL credentials (username, password, hostname/IP address, and database name) using `os.getenv()`. - Constructs a connection string in the format required by Python's psycopg2 library using an f-string that interpolates these values. - Returns this connection string to be used elsewhere in the application as needed.

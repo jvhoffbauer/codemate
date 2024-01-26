@@ -1,0 +1,4 @@
+1. This function takes an `ImageData` object as input and returns a new `ImageData` with a hillshade overlay created using the Digital Elevation Model (DEM) in the original dataset.
+2. The function extracts the elevation values and masks from the input `ImageData`, along with its bounding box and coordinate reference system (CRS). It also accepts optional arguments for buffering the output image and adjusting the angle of incidence for the sun's rays.
+3. Using NumPy functions, it calculates the slopes, aspects, and azimuths based on the gradient of the elevations. These are then used to create a shading factor that ranges between -1 (deep shadow) and 1 (full sunlight).
+4. Finally, the resulting hillshade array is expanded into a three-dimensional tensor with one channel, converted to unsigned integer format, and returned as a new `ImageData`. If buffering was requested, the output image is cropped accordingly and the bounding box is adjusted accordingly.

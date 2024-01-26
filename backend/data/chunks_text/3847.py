@@ -1,0 +1,3 @@
+- Tests if a PUT request with no body and query parameter 'q' set to 'bar' returns expected JSON response for item ID 5
+- Verifies that status code is 200 OK
+- Asserts that returned JSON contains correct values for item ID and query parameter 'q'

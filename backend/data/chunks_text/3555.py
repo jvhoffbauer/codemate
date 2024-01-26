@@ -1,0 +1,1 @@
+- Tests that the OpenAPI schema can be retrieved successfully with a status code of 200 and returns expected JSON structure. - Verifies that the correct URLs for different environments (default, staging, production) are included in the `servers` list. - Confirms that the endpoint documentation is accurate, including summary and operation ID.

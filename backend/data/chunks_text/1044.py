@@ -1,0 +1,5 @@
+- Defines a function `get_parameterless_sub_dependant()` that takes two arguments `depends` and `path`.
+- The `*` before `depends:` is used to indicate that this argument can be passed as a keyword argument instead of positional argument.
+- This function returns an instance of `Dependant`, which represents a sub-dependency in Pytest's plugin system.
+- It checks if the `dependency` attribute of the `depends` object (which should be a `params.Depends` object) is callable using an assert statement. If it's not callable, it raises an exception with an error message.
+- Otherwise, it calls another helper function `get_sub_dependant()` passing the `depends` object, its `dependency` attribute, and the `path` argument.

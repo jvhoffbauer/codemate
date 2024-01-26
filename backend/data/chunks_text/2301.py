@@ -1,0 +1,1 @@
+- Tests if Flask's `url_path_for()` function generates the correct URL path for a given route and argument using the `path_convertor` blueprint. - Verifies that passing "some/example" as an argument to the `path_convertor` view returns the expected URL path of "/path/some/example".

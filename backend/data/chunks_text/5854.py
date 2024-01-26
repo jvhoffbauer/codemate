@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with provided `Settings`, optional `FastAPI` and `SqlalchemyDatabase`. - Calls the parent constructor (`super().__init__`) passing in the same arguments. - Registers three specific admin classes for use within this application's administration interface.

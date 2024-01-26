@@ -1,0 +1,1 @@
+{"original_code": "def test_validate_cog(app, url):\n    \"\"\"test /validate endpoint\"\"\"\n    response = app.get(f\"/cog/validate?url={os.path.join(DATA_DIR, 'cog.tif')}\")\n    assert response.status_code == 200\n    assert response.json()[\"COG\"]"}

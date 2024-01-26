@@ -1,0 +1,2 @@
+- Endpoint `/sources` returns a JSON response containing an array of all available data sources, as keys in the global dictionary `DATA_SOURCES`.
+- This endpoint can be used to discover which data sources are currently supported by the application.

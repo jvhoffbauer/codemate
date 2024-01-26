@@ -1,0 +1,1 @@
+{"original_code": "def float_convertor(param: float = Path()):\n    return {\"float\": param}"}

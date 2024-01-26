@@ -1,0 +1,1 @@
+- Defines an asynchronous function called `callback0` that takes a single argument, `level0`, of type string. - The body of the function is empty and marked with a pragma statement to suppress coverage analysis tools from flagging it as uncovered. This may indicate that this function serves as a placeholder or stub for future implementation.

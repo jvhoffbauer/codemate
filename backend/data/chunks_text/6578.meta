@@ -1,0 +1,1 @@
+{"original_code": "def get_auth_token(\n    auth_token: str = Header(..., alias=\"auth-token\"),\n) -> str:\n    return auth_token"}

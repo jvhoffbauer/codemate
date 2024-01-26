@@ -1,0 +1,6 @@
+- Initializes a new instance of `SqlalchemySelector` class with provided arguments for `model`, `engine`, `fields`, and `router`. If `engine` is not specified, it uses the existing one from the object itself (`self.engine`).
+- Asserts that `engine` is not `None` to prevent further execution when it's missing.
+- Retrieves the database connection using `get_engine_db()` function based on the given `engine`.
+- Calls the constructor of parent classes `SqlalchemySelector` and `BaseCrud` respectively with appropriate parameters.
+- Parses the table model into its corresponding schema model using `TableModelParser.get_table_model_schema()` method. This step is optional as we can provide our own customized schema model instead.
+- Finally, initializes an instance of `BaseCrud` class with parsed schema model and provided `router`.

@@ -1,0 +1,2 @@
+- Retrieves an item with the given ID (`item_id`) from a database or API and returns it as JSON in response to a GET request.
+- Optionally includes the authenticated user's ID (`user_id`) in the response based on whether it was provided in the URL query parameters.

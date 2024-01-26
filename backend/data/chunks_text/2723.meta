@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/no_response_model-annotation_union-return_model1\")\ndef no_response_model_annotation_union_return_model1() -> Union[User, Item]:\n    return DBUser(name=\"John\", surname=\"Doe\", password_hash=\"secret\")"}

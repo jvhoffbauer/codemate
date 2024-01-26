@@ -1,0 +1,3 @@
+- Tests deleting a dependency with ID 1 using Flask's built-in testing client (client)
+- Asserts that the status code of the response is 400 Bad Request, indicating an error in the request
+- Verifies that the response body contains an error message ("Status overwritten") and the deleted dependency's ID (1)

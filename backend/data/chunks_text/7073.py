@@ -1,0 +1,5 @@
+- Creates a new item with given title and description using authenticated user's token (superuser).
+- Sends a POST request to /api/v1/items endpoint with JSON body containing title and description fields.
+- Asserts that server returns HTTP status code 200 OK.
+- Extracts the newly created item from the response body as JSON object.
+- Verifies that extracted item contains expected values for title, description, ID, and owner_ID fields.

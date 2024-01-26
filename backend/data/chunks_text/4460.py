@@ -1,0 +1,3 @@
+- Tests getting items with an invalid X-Token header using a `TestClient`.
+- Asserts that the status code is 400 and the error message matches the expected detail string.
+- Uses the `@needs_py39` decorator to ensure Python 3.9 or higher is required for this test.

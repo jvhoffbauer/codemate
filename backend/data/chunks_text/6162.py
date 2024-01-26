@@ -1,0 +1,1 @@
+- This middleware adds a `dataSource` object to the request's state for use in subsequent handlers. - The `dataSource` is retrieved from the query parameter'source'. If it isn't present or can't be found, a 404 error is returned instead of continuing execution. - The `LOGGER` is used to log which `dataSource` class has been selected.

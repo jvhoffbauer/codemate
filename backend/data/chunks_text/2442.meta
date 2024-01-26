@@ -1,0 +1,1 @@
+{"original_code": "def test_async_state():\n    assert state[\"/async\"] == \"asyncgen not started\"\n    response = client.get(\"/async\")\n    assert response.status_code == 200, response.text\n    assert response.json() == \"asyncgen started\"\n    assert state[\"/async\"] == \"asyncgen completed\""}

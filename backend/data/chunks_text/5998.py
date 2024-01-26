@@ -1,0 +1,4 @@
+- Clears `sites`, ensures testing environment
+- Returns false when no site set
+- Raises ValueError if no site set or accessed without setting
+- Sets site and checks existence and accessibility of site object

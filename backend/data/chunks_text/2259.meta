@@ -1,0 +1,1 @@
+{"original_code": "async def websocket_item(item_id: str, websocket: WebSocket):\n    route: APIWebSocketRoute = websocket.scope[\"route\"]\n    await websocket.accept()\n    await websocket.send_json({\"item_id\": item_id, \"path\": route.path})"}

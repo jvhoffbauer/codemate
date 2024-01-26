@@ -1,0 +1,1 @@
+- Defines a function `get_invalid()` that returns a dictionary with an invalid key for the name (should be a string) and an invalid value for price (should be a number).

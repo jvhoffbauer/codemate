@@ -1,0 +1,1 @@
+- Defines an asynchronous function named `create_offer` that takes a single argument, `offer`, of type `Offer`. - The function returns the input `Offer` object without any modifications or additional processing.

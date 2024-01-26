@@ -1,0 +1,6 @@
+- Defines a middleware function `catcher` using the decorator `@websocket_middleware`.
+- The middleware catches any exceptions raised by the wrapped websocket handler and appends them to a list called `caught`, then raises again to propagate the exception upstream.
+- Creates an instance of the application `myapp` with this new middleware added to its stack.
+- Uses PyTest's `TestClient` class to simulate a WebSocket connection request for the endpoint `"/depends-validate/"`, which should trigger a validation error due to a missing required parameter.
+- Asserts that the expected exception (`WebSocketDisconnect`) is raised, and checks some details about it such as the HTTP status code returned to the browser.
+- Verifies that the original exception was not accidentally leaked outside the middleware context.

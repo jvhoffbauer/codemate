@@ -1,0 +1,1 @@
+{"original_code": "async def create_note(note: NoteIn):\n    query = notes.insert().values(text=note.text, completed=note.completed)\n    last_record_id = await database.execute(query)\n    return {**note.dict(), \"id\": last_record_id}"}

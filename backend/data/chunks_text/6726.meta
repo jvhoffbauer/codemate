@@ -1,0 +1,1 @@
+{"original_code": "        def check_string_keys(map):\n            for key, value in map.items:\n                assert isinstance(key, str)\n                if isinstance(value, dict):\n                    check_string_keys(value)"}

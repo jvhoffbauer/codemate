@@ -1,0 +1,3 @@
+- Defines an asynchronous function named `post` with a single required positional argument called `foo`.
+- The type of `foo` can be either `Foo` or `None`, making it optional.
+- Returns the value of `foo`. If `foo` is not provided, returns `None`.

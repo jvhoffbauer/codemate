@@ -1,0 +1,3 @@
+- Defines a new FastAPI route for retrieving the bounds (extent) of a specific dataset using the `/bounds` endpoint.
+- Uses dependency injection to pass in necessary arguments such as the path to the dataset and parameters for reading it.
+- Returns a dictionary containing the geographic bounds of the dataset obtained from the RasterIO library.

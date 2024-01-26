@@ -1,0 +1,4 @@
+- Retrieves a list of `LinkModelForm` objects from the current Django admin view using the `get_form()` method of each related model's form class bound to the current ModelAdmin instance and the corresponding inline field name (`insfield`)
+- Filters out any forms that are `None`, possibly due to missing or invalid models
+- Assigns the resulting non-null forms to an attribute called `link_model_forms` on the current ModelAdmin instance
+- Returns the assigned `link_model_forms` list

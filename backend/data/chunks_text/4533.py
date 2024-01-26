@@ -1,0 +1,1 @@
+- Imports `fake_users_db` and `verify_password` functions from a tutorial on Python 3.10's new security features. - Asserts that calling `verify_password()` with "secret" as plaintext password and hashed password for user "johndoe" in `fake_users_db` returns True (i.e., verifies the password).

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/elements/\", tags=[\"items\"], deprecated=True)\nasync def read_elements():\n    return [{\"item_id\": \"Foo\"}]"}

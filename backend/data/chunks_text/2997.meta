@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/router-depends/\")\nasync def router_depends(commons: dict = Depends(common_parameters)):\n    return {\"in\": \"router-depends\", \"params\": commons}"}

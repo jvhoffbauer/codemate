@@ -1,0 +1,1 @@
+{"original_code": "def get_data():\n    return [1, 2, 3]"}

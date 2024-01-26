@@ -1,0 +1,1 @@
+{"original_code": "async def create_upload_file(\n    file: Annotated[UploadFile, File(description=\"A file read as UploadFile\")],\n):\n    return {\"filename\": file.filename}"}

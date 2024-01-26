@@ -1,0 +1,1 @@
+{"original_code": "def mixed_dict():\n    return {\n        \"name\": \"mixed_dict model3 name\",\n        \"age\": 3,\n        \"ref2\": {\n            \"ref\": {\"foo\": \"mixed_dict model foo\", \"bar\": \"mixed_dict model bar\"},\n            \"baz\": \"mixed_dict model2 baz\",\n        },\n    }"}

@@ -1,0 +1,1 @@
+{"original_code": "    def unhandled_exception() -> int:\n        raise MyErrorToUnhandledException()"}

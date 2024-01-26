@@ -1,0 +1,3 @@
+- Retrieves a dictionary of `InstrumentedAttribute` objects from an instance of a subclass of `TableModel`.
+- The method takes as input the type (i.e., class) of the TableModel and returns a dictionary with keys being column names and values being their corresponding SQLAlchemy `InstrumentedAttribute` instances.
+- This function is used to extract metadata about columns in a database table represented by a `TableModel` object without actually querying the database itself.

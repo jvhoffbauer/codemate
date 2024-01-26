@@ -1,0 +1,4 @@
+- Generates HTML for the Swagger UI page with customized settings
+- Customizes the title of the Swagger UI to include the FastAPI app's name and a separator (-)
+- Provides an OAuth2 redirect URL for authentication purposes (if enabled in FastAPI)
+- Uses external resources for Swagger UI JavaScript and CSS files instead of bundling them within the application

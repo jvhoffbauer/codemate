@@ -1,0 +1,4 @@
+- Creates a temporary JSON file for storing a mosaic definition using `tempfile`.
+- Loads assets into a `MosaicJSON` object and saves it to the temporary file using `FileBackend`.
+- Yields the name of the temporary file so that it can be used in other parts of the program.
+- Deletes the temporary file after use using `os.remove`.

@@ -1,0 +1,1 @@
+{"original_code": "def test_trace():\n    response = client.request(\"trace\", \"/items/foo\")\n    assert response.status_code == 200, response.text\n    assert response.headers[\"content-type\"] == \"message/http\""}

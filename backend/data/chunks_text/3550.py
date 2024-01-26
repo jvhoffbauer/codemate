@@ -1,0 +1,2 @@
+- Tests if GET request to /d endpoint returns expected JSON response with status code 200
+- Uses Flask's built-in `client` object for making requests and asserts that the response is successful (status code 200) and contains the string 'd' in its body

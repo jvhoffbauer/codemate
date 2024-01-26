@@ -1,0 +1,1 @@
+- Defines a custom GraphQL type called `User`, which has two fields, `name` and `age`. - The `str` and `int` types are used to specify that these fields should contain strings and integers respectively. - This definition can be used in a GraphQL schema to create queries and mutations for working with users.

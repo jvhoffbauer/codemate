@@ -1,0 +1,1 @@
+{"original_code": "def read_main(request: Request):\n    return {\"message\": \"Hello World\", \"root_path\": request.scope.get(\"root_path\")}"}

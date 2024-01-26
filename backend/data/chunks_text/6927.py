@@ -1,0 +1,5 @@
+- Defines an `update` method that takes a database session and updates an existing object based on user input (either passed as a schema or directly as a dictionary).
+- If no object is provided, it retrieves the object from the database using the `get` method of this class.
+- It merges the new data with the current state of the object, updating its attributes accordingly.
+- The updated object is added to the session and committed to the database.
+- Returns the updated object.

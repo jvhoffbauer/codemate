@@ -1,0 +1,1 @@
+{"original_code": "            async def custom_route_handler(request: Request) -> Response:\n                with rasterio.Env(**self.config):\n                    response: Response = await original_route_handler(request)\n                return response"}

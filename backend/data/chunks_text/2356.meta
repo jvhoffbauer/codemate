@@ -1,0 +1,1 @@
+{"original_code": "async def callback3(level3: str):\n    pass  # pragma: nocover"}

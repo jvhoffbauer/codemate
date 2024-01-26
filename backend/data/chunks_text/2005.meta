@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/\")\nasync def read_items():\n    return fake_items_db"}

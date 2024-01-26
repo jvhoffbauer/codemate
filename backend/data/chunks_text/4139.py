@@ -1,0 +1,3 @@
+- Imports `TestClient` class and `app` object from a specific module in the `docs_src.header_params.tutorial003_an_py310` package
+- Creates an instance of `TestClient` using the imported `app` object, which is likely a Flask application
+- Returns the newly created `TestClient` instance for use elsewhere in the program

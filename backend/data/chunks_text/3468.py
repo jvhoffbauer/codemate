@@ -1,0 +1,3 @@
+- Tests retrieving an item that doesn't exist by making a GET request to /items/bar and checking for HTTP status code 404
+- Verifies that a custom error header is included in the response with value 'Some custom header'
+- Asserts that the JSON body of the response contains a detail key with value 'Item not found'

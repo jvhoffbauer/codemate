@@ -1,0 +1,3 @@
+- This function is a PUT request handler for updating an existing item with ID `item_id`.
+- The updated item data is passed in the request body as JSON using FastAPI's built-in `Body()` parameter decorator.
+- The `examples` attribute of the `Item` model provides sample input values that can be used to test the endpoint.

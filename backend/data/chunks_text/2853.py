@@ -1,0 +1,1 @@
+- Tests whether `Param()` with an empty list as argument returns a string representation that includes the empty list in parentheses. - Verifies that the `repr()` function correctly represents an instance of `Param` class initialized with an empty list using the syntax `Param([])`.

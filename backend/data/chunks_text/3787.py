@@ -1,0 +1,1 @@
+- Defines a function `get_client()` that returns an instance of Flask's built-in test client, `TestClient`, for interacting with our application's endpoints without actually making network requests or starting up a server. - Imports the necessary module and class (`docs_src.body_nested_models.tutorial009`) to obtain the Flask application object required by `TestClient`.

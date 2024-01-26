@@ -1,0 +1,1 @@
+- Tests if sending an invalid X-Token header in a GET request results in a HTTP status code of 400 Bad Request and an error message containing 'X-Token header invalid' in the JSON body.

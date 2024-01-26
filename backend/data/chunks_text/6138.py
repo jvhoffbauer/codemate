@@ -1,0 +1,4 @@
+- Defines a custom CRUD for `sqlalchemy` models using `FastAPI`'s built-in SQLAlchemy support and `Pydantic`'s `LabelField`.
+- Registers the CRUD with the main application instance to make it available as an endpoint.
+- Tests the generated OpenAPI documentation by accessing the API through the client and checking that expected data is returned.
+- Verifies that specific fields are included or excluded from various parts of the API (e.g., list response, filter parameters, etc.).

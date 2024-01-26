@@ -1,0 +1,4 @@
+- This test checks if a non-regular expression query returns an error with a specific message and status code (422).
+- The `get_client()` function is used to obtain a Flask client for making requests to the server.
+- The `response` object contains information about the HTTP request, including its status code and JSON body.
+- The `assert` statement is used to verify that the expected behavior occurred during the test.

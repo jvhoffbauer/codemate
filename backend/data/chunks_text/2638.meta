@@ -1,0 +1,1 @@
+{"original_code": "def read_query(q: Union[str, None]):\n    return q"}

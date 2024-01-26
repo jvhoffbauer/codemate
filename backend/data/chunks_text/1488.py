@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a single optional argument `q`.
+- The default value of this argument is set to `None`, which can be overridden by passing in a list of strings when calling the function.
+- If a list of strings is passed, it will be used as the value for the 'q' parameter in a dictionary called `query_items`, which is then returned from the function.

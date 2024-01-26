@@ -1,0 +1,1 @@
+{"original_code": "    def foo(foo: Union[str, List[int]]):\n        return foo"}

@@ -1,0 +1,3 @@
+- Defines a GET endpoint for retrieving the application's health status (heartbeat).
+- Returns an instance of `HearbeatResult`, which contains a boolean flag indicating whether the app is alive or not.
+- Uses FastAPI's decorator syntax to register this route with the router object and assign it a unique name ("heartbeat").

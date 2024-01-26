@@ -1,0 +1,1 @@
+{"original_code": "    def route_page(self) -> Callable:\n        async def route(\n            request: Request,\n            page: self.AnnotatedPage,  # type:ignore\n        ):\n            return await self.page_parser(request, page)\n\n        return route"}

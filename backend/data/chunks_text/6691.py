@@ -1,0 +1,3 @@
+- Defines an asynchronous context manager using `@contextlib.asynccontextmanager`.
+- Catches `RuntimeError` exceptions within the context and logs them with a stack trace using `logging.exception()`.
+- Raises a custom error, `_TestError`, with a unique marker (`unique_marker2`) to indicate that this exception was raised during testing.

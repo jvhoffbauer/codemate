@@ -1,0 +1,1 @@
+{"original_code": "    @classmethod\n    def all(cls) -> QuerySet[Self] | list[Self]:\n        return cls.objects.all()"}

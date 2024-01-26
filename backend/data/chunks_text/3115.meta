@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/cookie_examples/\")\n    def cookie_examples(\n        data: Union[str, None] = Cookie(\n            default=None,\n            examples=[\"cookie1\", \"cookie2\"],\n        ),\n    ):\n        return data"}

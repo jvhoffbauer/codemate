@@ -1,0 +1,1 @@
+{"original_code": "def test_override_server_error_exception_raises():\n    with pytest.raises(RuntimeError):\n        client.get(\"/server-error\")"}

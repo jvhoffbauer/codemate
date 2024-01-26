@@ -1,0 +1,2 @@
+- Defines a function named `two` with an docstring explaining its purpose.
+- The body of the function simply returns the string 'two'.

@@ -1,0 +1,3 @@
+- Creates a new user with a disabled status using `UserCreate` and `crud.user.upsert`.
+- Uses `get_default_bucket()` to retrieve the default database for storing data.
+- Asserts that the returned value of `crud.user.is_active()` is false since the user has been marked as inactive (disabled).

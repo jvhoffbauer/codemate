@@ -1,0 +1,1 @@
+- This function tests the default query values for a GET request to the `/items/` endpoint using Flask's built-in testing client (client). - The expected status code is 200 and the text of the response body should be checked as an additional assertion. - The JSON response from the server should contain two keys named 'q', each with the value 'foo' and 'bar'.

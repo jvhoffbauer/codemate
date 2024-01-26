@@ -1,0 +1,3 @@
+- Defines a function called `read_sub` that returns a dictionary with one key-value pair containing a message string.
+- The message is hardcoded as "Hello World from sub API".
+- This function can be used to provide a simple response for testing or demonstration purposes in an application's sub module.

@@ -1,0 +1,3 @@
+- Imports and sets up SQLModel, engine, and database connection using `create_engine`.
+- Runs a tutorial example (`test_tutorial`) that creates three Hero records in the database.
+- Retrieves all Hero records using `Session`, stores them in a dictionary by name, and accesses specific Hero objects to verify their attributes.

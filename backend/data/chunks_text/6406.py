@@ -1,0 +1,4 @@
+- Defines a function `get_error_model` that takes a class as an argument (`cls`)
+- Checks whether the error model attribute exists in the given class' dictionary using the `__dict__` method
+- If it doesn't exist, creates a new instance of the error model by calling the `build_error_model` method and sets it to the `error_model` attribute of the class
+- Returns the error model for the given class

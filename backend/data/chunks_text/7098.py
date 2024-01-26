@@ -1,0 +1,4 @@
+- This endpoint allows scheduling a recurring task with an interval of specified duration in seconds using APScheduler library.
+- The `job_id`, `seconds`, and `run_time` parameters are required for creating a new scheduled job.
+- If a job with the given `job_id` already exists, an error message is returned instead of creating a duplicate job.
+- The created job's details (ID) are included in the response body.

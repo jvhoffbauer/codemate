@@ -1,0 +1,1 @@
+{"original_code": "def get_password_hash(password: str) -> str:\n    \"\"\"Creates hash from password\n\n    Applies passlib context based on bcrypt algorithm on plain passoword.\n    It takes about 0.3s for default 12 rounds of SECURITY_BCRYPT_DEFAULT_ROUNDS.\n    \"\"\"\n    return PWD_CONTEXT.hash(password)"}

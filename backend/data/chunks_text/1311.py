@@ -1,0 +1,1 @@
+- Defines an asynchronous function `create_file` that takes a parameter `file`, which is both an instance of bytes and a file object (using Pydantic's `File()` class). - Returns a dictionary with a single key "file_size", whose value is the length of the provided byte string/file content.

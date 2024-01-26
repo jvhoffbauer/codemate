@@ -1,0 +1,2 @@
+- Creates a new instance of `CorrelationIdFilter` with default value '-'
+- Asserts that the `default_value` attribute of the created filter is equal to '-'

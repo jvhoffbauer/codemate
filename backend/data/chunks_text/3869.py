@@ -1,0 +1,3 @@
+- Sends a PUT request to update item with ID 5 with an empty list as body
+- Asserts that the server returns a HTTP status code of 422 (Unprocessable Entity)
+- Verifies that the server's JSON response contains a dictionary representing validation errors, including three missing field error messages for 'item', 'user', and 'importance'. The message is consistent between PyDantic versions 1 and 2.

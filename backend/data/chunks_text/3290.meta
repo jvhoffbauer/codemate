@@ -1,0 +1,1 @@
+{"original_code": "@app.delete(\n    \"/{id}\",\n    status_code=204,\n    response_model=None,\n)\nasync def delete_deployment(\n    id: int,\n    response: Response,\n) -> Any:\n    response.status_code = 400\n    return {\"msg\": \"Status overwritten\", \"id\": id}"}

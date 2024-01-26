@@ -1,0 +1,2 @@
+- Defines a custom SQLAlchemy model `CustomType` that has a validation method called `validate`.
+- Uses PyTest to raise an error when trying to create another SQLModel (`Item`) that uses this custom type without specifying its SQLite database column type. This is done by passing `None` as the default value for the `Field`'s `sqlite_type` parameter and relying on SQLAlchemy's automatic type detection feature. However, since our custom type doesn't have a defined SQLite type, we get a `ValueError` exception.

@@ -1,0 +1,3 @@
+- Generates HTML documentation for Flask application using ReDoc library
+- Takes URL of OpenAPI specification and customizes title and JavaScript file path to be used by ReDoc
+- Returns generated HTML content asynchronously through `get_redoc_html()` function provided by ReDoc

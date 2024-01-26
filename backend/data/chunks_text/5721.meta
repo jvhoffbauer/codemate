@@ -1,0 +1,1 @@
+{"original_code": "    def router_path(self) -> str:\n        if self.router is self.app.router:\n            return self.app.router_path\n        return self.app.router_path + self.router.prefix"}

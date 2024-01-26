@@ -1,0 +1,3 @@
+- Defines a function `transfer_correlation_id` that takes in two arguments - `headers` (a dictionary of HTTP headers) and optional keyword arguments `**kwargs`.
+- The function sets the value of a variable `cid` equal to the current correlation ID stored in the `correlation_id` global object. If no correlation ID is present, `cid` remains unset.
+- If `cid` has been set, the function adds its value to the `headers` dictionary under the key specified by the `header_key` constant.

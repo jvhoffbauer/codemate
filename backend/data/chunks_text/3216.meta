@@ -1,0 +1,1 @@
+{"original_code": "        def lower_username(cls, name: str, info: ValidationInfo):\n            if not name.endswith(\"A\"):\n                raise ValueError(\"name must end in A\")\n            return name"}

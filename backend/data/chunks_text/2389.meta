@@ -1,0 +1,1 @@
+{"original_code": "        @computed_field\n        @property\n        def area(self) -> int:\n            return self.width * self.length"}

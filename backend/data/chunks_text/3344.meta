@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/form/python-list\")\ndef post_form_param_list(items: list = Form()):\n    return items"}

@@ -1,0 +1,1 @@
+- Defines an asynchronous function called `fake_video_streamer()`. - Uses a generator expression to repeatedly yield byte arrays representing "some fake video bytes". - Intended to be used with libraries like `aiohttp` or `uvicorn` that support streaming responses, allowing you to simulate serving large videos over HTTP without actually storing them on disk.

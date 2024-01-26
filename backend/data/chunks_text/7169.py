@@ -1,0 +1,3 @@
+- Defines a custom exception handler for `custom_exc.AuthenticationError`.
+- Logs an error message with the URL and HTTP method when this exception is raised.
+- Returns a response with status code 403 (Forbidden).

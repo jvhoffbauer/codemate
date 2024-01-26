@@ -1,0 +1,1 @@
+{"original_code": "    def serialize(self):\n        \"\"\"\n        Serializes the coordinates into a dict.\n\n        :returns: The serialized coordinates.\n        :rtype: dict\n        \"\"\"\n        return {\"latitude\": self.latitude, \"longitude\": self.longitude}"}

@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(name=\"client\")\ndef get_client(app: FastAPI):\n    client = TestClient(app)\n    return client"}

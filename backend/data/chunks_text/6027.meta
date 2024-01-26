@@ -1,0 +1,1 @@
+{"original_code": "    @site.register_admin\n    class TmpAdmin(admin.RouterAdmin):\n        router_prefix = \"/router\"\n\n        def register_router(self):\n            @self.router.get(\"/hello\")\n            def hello():\n                return {\"username\": \"hello\"}"}

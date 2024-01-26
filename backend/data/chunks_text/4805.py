@@ -1,0 +1,3 @@
+- Takes a list of document results from Couchbase and converts them into instances of a Pydantic model
+- For each document result, extracts its data and passes it to the constructor of the Pydantic model
+- Appends the resulting instance to a list and returns that list

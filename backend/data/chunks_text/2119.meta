@@ -1,0 +1,1 @@
+{"original_code": "def get_int_id(item_id: int):\n    return item_id"}

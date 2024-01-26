@@ -1,0 +1,5 @@
+- Imports and sets up a module called `mod` from the SQLModel tutorial (version 005 for Python 3.10).
+- Defines an engine using the provided URL and creates it using `create_engine`.
+- Patches the builtin `print` function to capture its output in a list of dictionaries called `calls`.
+- Calls the main function of the module `mod`, passing the captured print function as an argument.
+- Asserts that the resulting `calls` list contains exactly one dictionary representing the expected output of the program.

@@ -1,0 +1,1 @@
+{"original_code": "def test_default_route(test_client) -> None:\n    response = test_client.get(\"/\")\n    assert response.status_code == 404"}

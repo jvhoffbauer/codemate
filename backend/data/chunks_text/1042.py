@@ -1,0 +1,3 @@
+- Checks if a form field has `params.Form` as its field info class
+- Imports `multipart` module to verify its installation by checking version and presence of specific functions
+- Logs errors related to incorrect or missing `multipart` installation and raises runtime error with corresponding messages

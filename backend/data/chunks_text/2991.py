@@ -1,0 +1,1 @@
+- Tests if user is authenticated without credentials (i.e., no token) by making a GET request to "/users/me" and checking for status code and error message in response body.

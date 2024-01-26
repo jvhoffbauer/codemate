@@ -1,0 +1,2 @@
+- Tests if sending a PUT request with no body returns the item's data as JSON response
+- Verifies that the status code is 200 (OK) and the returned JSON object contains the expected item ID

@@ -1,0 +1,3 @@
+- Tests creating a new item with no JSON body using `TestClient`.
+- Asserts that the server returns a HTTP status code of 422 (Unprocessable Entity).
+- Verifies that the server's response contains an error message indicating that a required field is missing from the request body.

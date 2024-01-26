@@ -1,0 +1,2 @@
+- Tests OAuth2 password authentication with a custom authorization header value ("Other footokenbar")
+- Verifies that the API returns expected JSON data for authenticated user information when using this alternative header format

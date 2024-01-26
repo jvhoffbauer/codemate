@@ -1,0 +1,3 @@
+- This endpoint is accessed using GET request to `http://localhost:8000/items/`.
+- It requires two dependency functions, `verify_token` and `verify_key`, both of which are annotated with `Depends()` decorator from FastAPI's built-in middleware library.
+- The response body contains a list of dictionaries representing items, each containing a key-value pair for item name.

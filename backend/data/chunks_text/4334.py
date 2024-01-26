@@ -1,0 +1,3 @@
+- This function tests the PUT request to update an item with ID 'bar' using Flask-Restful's `TestClient`.
+- The updated values for name and price are passed as a JSON object in the request body.
+- The expected response is checked against the actual response received from the server.

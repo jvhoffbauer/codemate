@@ -1,0 +1,3 @@
+- This method is a property decorator that returns the value of `schema_name_prefix`.
+- The value returned by this method is based on the name of the current class (i.e., `self.__class__.__name__`).
+- This property can be used to automatically prefix table names with the corresponding model's name when creating database schemas using an ORM like SQLAlchemy or Django.

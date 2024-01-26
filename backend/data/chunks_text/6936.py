@@ -1,0 +1,3 @@
+- This function takes a `token` parameter and returns a `TokenPayload`. If no value is provided for `token`, it uses the default dependency `oauth2`.
+- The function decodes the JWT token using the `jwt.decode()` method with the `settings.SECRET_KEY` as the key and the `ALGORITHM` algorithm.
+- If an error occurs during decoding or validation, a `HTTPException` is raised with status code 403 and a detailed message. Otherwise, the decoded payload is returned as a `TokenPayload` object.

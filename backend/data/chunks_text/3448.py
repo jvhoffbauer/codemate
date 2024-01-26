@@ -1,0 +1,2 @@
+- Tests uploading a file with given contents using `UploadFile` class from anyio library
+- Verifies that initial read of the file returns expected content, checks its size, writes additional bytes to it, reads again to ensure new content is present, seeks back to beginning, and finally closes the file handle

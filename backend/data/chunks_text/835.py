@@ -1,0 +1,3 @@
+- This function tests the registration endpoint using a `TestClient`.
+- It sends a POST request to `/auth/users` with an email and password in JSON format.
+- The response is checked for HTTP status code (201 CREATED), and the returned JSON object is compared against expected values ({'email': 'email@fake.com'}).

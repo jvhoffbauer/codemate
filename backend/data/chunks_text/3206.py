@@ -1,0 +1,1 @@
+- Tests if `jsonable_encoder()` function can encode a decimal number (specifically, `Decimal(2)`) into its integer equivalent when encoding JSON data with Python's built-in `json` module. - Verifies that the encoded output is equal to the expected result of converting the decimal value to an integer before encoding it as JSON.

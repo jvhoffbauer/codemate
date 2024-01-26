@@ -1,0 +1,5 @@
+- This function `__get__()` is a descriptor method that returns an object or attribute value when accessed using its name. It takes three arguments - `self`, `instance`, and `owner`. If `instance` is none, then this function returns itself instead of raising any error.
+- The function checks whether the `attrname` attribute has been set or not. If it hasn't been set, it raises a `TypeError` exception.
+- The function tries to access the dictionary `__dict__` of the given `instance`. However, some classes may define slots instead of dictionaries, so in such cases, the function throws a `TypeError` exception with an appropriate message.
+- After getting the dictionary, the function retrieves the value associated with the `attrname` key. If the value isn't found, it sets a flag variable `val` as `_NOT_FOUND`.
+- Then, the function acquires the lock to ensure thread safety during multiple concurrent requests. Inside the lock, it again checks whether the value exists in the dictionary or not. If still not found, it calculates the value by invoking the `func()` method and stores it back into the dictionary. Finally, it releases the lock.

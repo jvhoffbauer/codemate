@@ -1,0 +1,1 @@
+- This function tests the validity of query parameters passed as strings in a POST request to the `/items/` endpoint using FastAPI's built-in testing framework (TestClient). - It creates a new item with name 'Foo' and price 42, and checks that the status code is 200 and the returned JSON matches the expected format (with default values for description, tax, and tags).

@@ -1,0 +1,3 @@
+- This test imports a module called `tutorial004_py310` from the `docs_src.tutorial.where` directory and runs its main function while capturing print statements using the `get_testing_print_function`.
+- The SQLAlchemy engine is created with an SQLite URL and passed to the imported module's `engine` attribute.
+- Four records are fetched using WHERE clauses with different conditions (ID, name, secret_name, age), and their output is compared against the captured print statements.

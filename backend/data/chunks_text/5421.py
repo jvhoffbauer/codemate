@@ -1,0 +1,3 @@
+- Defines a new `/bounds` endpoint for retrieving the bounds (spatial extent) of a MosaicJSON dataset using FastAPI's router decorator.
+- Uses dependency injection to pass required arguments such as path, environment variables, and reader options to the function implementing the endpoint logic.
+- Returns a dictionary containing the geographic bounds of the dataset read from the specified source file using RasterIO library.

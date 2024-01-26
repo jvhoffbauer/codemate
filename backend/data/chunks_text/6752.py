@@ -1,0 +1,4 @@
+- Defines two custom errors `FirstError` and `SecondError`, each with a unique data model (`DataModel`)
+- Binds both errors to the same method using the `errors` parameter in the OpenRPC specification
+- Verifies that the merged error response contains both error definitions as possible values for the 'data' field
+- Checks that the individual error definitions are correctly included in the JSON Schema under their respective namespaces

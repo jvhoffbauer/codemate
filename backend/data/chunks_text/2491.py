@@ -1,0 +1,2 @@
+- Sends a GET request to /pets/1 using Flask's built-in testing client (client)
+- Asserts that the JSON response contains the expected data for pet with ID 1, including its name and owner email address retrieved from the second level model (Owner)

@@ -1,0 +1,2 @@
+- Sends a PUT request to update item with ID 5 without providing any data in the body
+- Expects a HTTP status code of 422 (Unprocessable Entity) and returns an error message containing details about missing required fields 'item', 'user', and 'importance'

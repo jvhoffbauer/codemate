@@ -1,0 +1,1 @@
+- This method returns the two-letter ISO 3166-1 numeric code for the country represented by the object. - If no valid country can be determined, it falls back to a default value ('XX'). - The returned string is uppercased.

@@ -1,0 +1,4 @@
+- Creates a new item with a randomly generated title and description using `ItemCreate`.
+- Persists the item to the default bucket for the current user.
+- Updates the description of the item using `ItemUpdate`, while preserving other fields such as ID, title, and owner username.
+- Compares the original and updated items to ensure that they have the expected differences in their descriptions.

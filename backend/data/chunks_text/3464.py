@@ -1,0 +1,2 @@
+- Defines an asynchronous function `no_body_status_code_with_detail_exception()`.
+- Raises a custom exception of type `HTTPException` with status code 204 (No Content) and a detailed error message "I should just disappear!"

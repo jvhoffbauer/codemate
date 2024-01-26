@@ -1,0 +1,3 @@
+- Defines a function `cookie_example` with a single argument `data`.
+- The type of `data` can be either a string (`str`) or `None`, and is specified using Python's built-in `Union` type annotation.
+- If no value for `data` is provided when calling the function, it defaults to `None`. Otherwise, if a value is provided, it should conform to the format of a valid cookie string as defined by RFC6265. An example value for this case is "cookie1". This behavior is configured through the use of the `Cookie` class from the `httpx` library, which provides additional functionality such as parsing and serializing cookies.

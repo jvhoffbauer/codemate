@@ -1,0 +1,1 @@
+- Defines a new endpoint `POST /users/` for creating a new user using FastAPI's decorator syntax. - Accepts a JSON request body containing a `UserCreate` object, which is defined elsewhere in the application. - Returns the newly created `User` object as the response body, with its type annotated using Pydantic's `response_model`.

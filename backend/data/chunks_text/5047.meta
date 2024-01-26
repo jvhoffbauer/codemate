@@ -1,0 +1,1 @@
+{"original_code": "async def http_exception_handler(request, exc):\n    return ORJSONResponse(\n        {\n            \"detail\": exc.detail,\n        },\n        status_code=exc.status_code,\n    )"}

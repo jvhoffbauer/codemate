@@ -1,0 +1,1 @@
+{"original_code": "                async def process_fn(\n                    fn: Callable[[], Coroutine[Any, Any, Any]]\n                ) -> None:\n                    result = await fn()\n                    results.append(result)  # noqa: B023"}

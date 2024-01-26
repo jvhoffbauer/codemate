@@ -1,0 +1,1 @@
+{"original_code": "def get_user(*, db: Session = Depends(deps.get_db), user_id: int):\n    user = crud.user.get(db, id=user_id)\n    if not user:\n        raise HTTPException(\n            status_code=status.HTTP_404_NOT_FOUND,\n            detail=\"User not found.\",\n        )\n    return user"}

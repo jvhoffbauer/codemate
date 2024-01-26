@@ -1,0 +1,4 @@
+- Defines a new SQLAlchemy model `Item` that inherits from `SQLModel`. The `table=True` argument creates an actual database table for this model.
+- Sets up an optional integer field called `id`, which has a default value of `None`. This field's behavior is controlled by two different attributes - `Field` and `sa_column`.
+- Uses `Field` to set the initial value of the field when it's created (i.e., before any data is inserted into the database). In this case, we want it to be `None`.
+- Uses `sa_column` to specify how this field should behave in the underlying SQLite database. Here, we're setting its name ("id"), making it the primary key, and specifying that it cannot contain NULL values. By providing both `Field` and `sa_column`, we can ensure that our ORM and database schema are consistent.

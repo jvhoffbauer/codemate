@@ -1,0 +1,1 @@
+{"original_code": "def test_get():\n    fake_content = b\"some fake video bytes\"\n    response = client.get(\"/\")\n    assert response.content == fake_content * 10"}

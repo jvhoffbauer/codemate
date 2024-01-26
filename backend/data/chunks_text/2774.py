@@ -1,0 +1,1 @@
+- Defines a function `get_users()` that returns a list of dictionaries representing user objects with a key 'user_id' containing unique identifiers for each user.

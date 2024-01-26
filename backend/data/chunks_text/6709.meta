@@ -1,0 +1,1 @@
+{"original_code": "    async def ep_middleware(ctx: JsonRpcContext):\n        ctx.http_response.set_cookie(key=\"ep_middleware_enter\", value=\"1\")\n        yield\n        ctx.http_response.set_cookie(key=\"ep_middleware_exit\", value=\"2\")"}

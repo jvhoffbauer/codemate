@@ -1,0 +1,1 @@
+- Tests if accessing `/items` without a token returns a 401 Unauthorized status code and an error message of 'Not authenticated' in the JSON body.

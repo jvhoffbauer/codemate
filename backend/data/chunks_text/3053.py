@@ -1,0 +1,1 @@
+- Defines a GET request handler for the "/override" path at router_b using HTMLResponse as the response class. - Returns a string "Hello B". This function overrides any existing route handling for this path in other routers or applications, and returns customized content instead.

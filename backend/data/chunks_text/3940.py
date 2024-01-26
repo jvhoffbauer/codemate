@@ -1,0 +1,1 @@
+- Tests if a hidden query parameter is present in the URL by making a GET request to the `/items` endpoint and checking that it returns an HTTP status code of 200 with a JSON response containing a message indicating that the hidden query was not found.

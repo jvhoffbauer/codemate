@@ -1,0 +1,5 @@
+- Sets up a temporary directory for testing and changes working directory to it
+- Creates a new SQLite database named "test.db" in the temporary directory, deletes any existing file with that name (skipping coverage check)
+- Imports `test_sql_app` module from another package, creates a new Python interpreter instance to execute its initialization logic (creating tables), then unloads it again
+- Runs a specific test function from `test_sql_app`, which should create a user record in the newly created database
+- Deletes the temporary database at the end of the test case

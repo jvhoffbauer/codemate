@@ -1,0 +1,1 @@
+{"original_code": "async def websocket_request_validation_exception_handler(\n    websocket: WebSocket, exc: WebSocketRequestValidationError\n) -> None:\n    await websocket.close(\n        code=WS_1008_POLICY_VIOLATION, reason=jsonable_encoder(exc.errors())\n    )"}

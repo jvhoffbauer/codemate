@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `client.get("/openapi.json")`.
+- The generated schema includes information about endpoints (e.g., GET request to root path), responses (e.g., successful response with content type of `application/json` and reference to Model3 schema), components (e.g., definitions of models like Model, Model2, and Model3).
+- Each model has its own title, required fields, and references to other models as needed (e.g., Model2 requires field 'a' which is defined by Model).

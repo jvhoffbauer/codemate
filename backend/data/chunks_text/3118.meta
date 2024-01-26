@@ -1,0 +1,1 @@
+{"original_code": "        def cookie_example_examples(\n            data: Union[str, None] = Cookie(\n                default=None,\n                example=\"cookie_overridden\",\n                examples=[\"cookie1\", \"cookie2\"],\n            ),\n        ):\n            return data"}

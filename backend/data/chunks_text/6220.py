@@ -1,0 +1,2 @@
+- Defines a function `is_date()` that takes a string and an optional boolean flag `fuzzy`.
+- The function returns `True` if the given string can be parsed as a valid date using Python's built-in `datetime.strptime()` or `parse()` functions with the specified `fuzzy` option (ignoring unknown tokens). Otherwise, it returns `False`.

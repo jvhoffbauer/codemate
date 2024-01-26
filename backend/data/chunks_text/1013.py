@@ -1,0 +1,5 @@
+- Initializes a security schema for OAuth2 authentication using FastAPI's built-in `Security` decorator.
+- Accepts options for customizing the schema, including a dictionary of OAuth2 flows, a security scheme name, a description, and whether to automatically error on missing authorization headers.
+- Creates an instance of `OAuth2Model` from the flow dictionary and any specified description.
+- Sets the security scheme name based on either user input or the class name as a fallback.
+- Stores the `auto_error` flag for later use by the decorator.

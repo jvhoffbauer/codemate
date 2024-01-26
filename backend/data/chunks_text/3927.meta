@@ -1,0 +1,1 @@
+{"original_code": "def test_query_no_values(client: TestClient):\n    url = \"/items/\"\n    response = client.get(url)\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"q\": None}"}

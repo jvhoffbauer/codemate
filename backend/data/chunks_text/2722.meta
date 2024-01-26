@@ -1,0 +1,1 @@
+{"original_code": "def response_model_union_no_annotation_return_model2():\n    return Item(name=\"Foo\", price=42.0)"}

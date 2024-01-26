@@ -1,0 +1,3 @@
+- This fixture is a context manager that automatically runs after all tests have finished executing, thanks to `autouse=True`.
+- It captures error logs from both setup and test functions using `caplog`, which provides access to PyTest's internal logger.
+- If any errors are found (i.e., log level WARNING or higher), it fails the entire test run with an informative message containing the list of error messages.

@@ -1,0 +1,1 @@
+{"original_code": "    async def websocket(websocket: \"WebSocket\"):\n        # Check we get the right headers back\n        assert websocket.headers.get(\"x-request-id\") is not None\n\n        await websocket.accept()\n        await websocket.send_json({\"msg\": \"Hello WebSocket\"})\n        await websocket.close()"}

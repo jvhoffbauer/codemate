@@ -1,0 +1,1 @@
+{"original_code": "@dataclass\nclass Item:\n    name: str\n    price: float\n    tags: List[str] = field(default_factory=list)\n    description: Union[str, None] = None\n    tax: Union[float, None] = None"}

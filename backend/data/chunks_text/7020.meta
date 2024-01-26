@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\n    \"\",\n    response_model=list[schemas.User],\n    dependencies=[Depends(deps.get_current_active_superuser)],\n)\ndef read_users(\n    db: Session = Depends(deps.get_db),\n    skip: int = 0,\n    limit: int = 100,\n):\n    \"\"\"Retrieve users.\"\"\"\n    return crud.user.get_multi(db, skip=skip, limit=limit)"}

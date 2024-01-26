@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with three arguments: `status`, `msg`, and `code`. - Assigns each argument to its corresponding attribute within the object (i.e., `self.status = status`, etc.).

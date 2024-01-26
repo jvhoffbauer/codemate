@@ -1,0 +1,1 @@
+{"original_code": "def mocked_strptime_isoformat(*args, **kwargs):\n    \"\"\"Mock return value from datetime.strptime().isoformat().\"\"\"\n\n    date = args[0]\n    strformat = args[1]\n\n    return DateTimeStrpTime(date, strformat)"}

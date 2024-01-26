@@ -1,0 +1,1 @@
+{"original_code": "async def test__get_page_as_app(site: AdminSite):\n    pass"}

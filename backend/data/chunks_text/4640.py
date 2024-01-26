@@ -1,0 +1,1 @@
+- Imports `fake_users_db` and `verify_password` functions from a tutorial on password hashing using Python 3.10's new hashlib.scrypt() function. - Asserts that `verify_password` correctly verifies a plaintext password against its corresponding hashed password in `fake_users_db`.

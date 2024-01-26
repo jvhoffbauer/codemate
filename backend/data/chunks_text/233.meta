@@ -1,0 +1,1 @@
+{"original_code": "def test_create_hero_incomplete(client: TestClient):\n    # No secret_name\n    response = client.post(\"/heroes/\", json={\"name\": \"Deadpond\"})\n    assert response.status_code == 422"}

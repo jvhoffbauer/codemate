@@ -1,0 +1,3 @@
+- Defines a GET request for the root URL (/) using FastAPI's `@app.get()` decorator
+- Uses Pydantic's `Annotated` to create a query parameter called 'item_id', with an initial default value of 1
+- The function body is empty and marked as "no coverage" with `pragma: nocover`, indicating that it should not be executed during testing or debugging

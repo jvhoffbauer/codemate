@@ -1,0 +1,1 @@
+- This middleware function is asynchronous and takes a `JsonRpcContext` object as input. - It sets a cookie with key "method_middleware_enter" and value "3". - After executing its logic, it yields control to the next middleware or handler in the chain using the `yield` keyword. - Finally, it sets another cookie with key "method_middlewares_exit" and value "4".

@@ -1,0 +1,3 @@
+- Tests that the X-Request-ID header is included and matches the value provided by the user when making requests using FastAPI's built-in `AsyncClient`.
+- Verifies that multiple requests with different IDs are correctly handled and propagated through the application.
+- Confirms that if no request ID is specified, a new one will be generated automatically.

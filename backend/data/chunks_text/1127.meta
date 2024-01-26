@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\")\nasync def read_items(token: str = Depends(oauth2_scheme)):\n    return {\"token\": token}"}

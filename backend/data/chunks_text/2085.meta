@@ -1,0 +1,1 @@
+{"original_code": "def test_schema():\n    response = client.get(\"/openapi.json\")\n    assert response.status_code == status.HTTP_200_OK\n    actual_schema = response.json()\n    assert actual_schema == expected_schema"}

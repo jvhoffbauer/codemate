@@ -1,0 +1,1 @@
+- Tests whether the `CorrelationIdFilter` sets the `LogRecord`'s `correlation_id` attribute to its default value when the `context` variable (i.e., `correlation_id`) is not present in the current scope. - Uses a helper function `reset()` from the `mock` library to reset the `correlation_id` fixture between tests for better isolation and predictability of results.

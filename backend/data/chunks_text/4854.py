@@ -1,0 +1,1 @@
+- Retrieves the currently authenticated user using `Depends(get_current_active_user)`. - Returns the retrieved user as a JSON response with the `response_model` decorator set to `User`.

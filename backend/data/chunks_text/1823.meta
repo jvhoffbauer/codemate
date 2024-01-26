@@ -1,0 +1,1 @@
+{"original_code": "    def disconnect(self, websocket: WebSocket):\n        self.active_connections.remove(websocket)"}

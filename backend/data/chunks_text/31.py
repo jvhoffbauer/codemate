@@ -1,0 +1,3 @@
+- Defines a function called `model_validate` that takes several arguments related to SQLAlchemy's validation process for models.
+- The function returns the result of calling another function named `sqlmodel_validate`, passing in the same arguments with some possible defaults.
+- This wrapper function allows us to use our custom `sqlmodel_validate` implementation instead of SQLAlchemy's default one by importing it and setting up an app-level registry as shown earlier.

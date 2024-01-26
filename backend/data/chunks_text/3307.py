@@ -1,0 +1,3 @@
+- Defines a GET endpoint at `/default`.
+- Accepts an optional query parameter named `foo`, with a default value of 'foo'.
+- Returns a JSON response containing the value of the `foo` argument.

@@ -1,0 +1,1 @@
+{"original_code": "def lint(ctx):\n    \"\"\"Run linter.\"\"\"\n    ctx.run(\" \".join([\"pylint\", \"app\"]))"}

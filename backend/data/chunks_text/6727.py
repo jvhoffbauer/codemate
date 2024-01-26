@@ -1,0 +1,3 @@
+- The `check_envelope` function takes an envelope as input and checks certain conditions using context managers called `capture_internal_exceptions`.
+- If none of the items in the envelope is an attachment, this function asserts that there should be no error events or event data associated with those items.
+- This behavior is necessary for compatibility reasons but may not always hold true when attachments exist within the envelope.

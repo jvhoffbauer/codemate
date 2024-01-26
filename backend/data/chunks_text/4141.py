@@ -1,0 +1,3 @@
+- Generates an OpenAPI schema for a FastAPI application using Pytest and Pydantic
+- Includes information about the API's title, version, paths, components (such as schemas), responses, parameters, and more
+- Uses decorators like `@needs_py310` to ensure compatibility with Python 3.10 or higher

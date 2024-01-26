@@ -1,0 +1,1 @@
+- This fixture clears the SQLAlchemy metadata and disposes of the default SQLModel registry before executing tests using `yield`. - After each test, it again clears the metadata and disposes of the registry to ensure a clean state for subsequent tests.

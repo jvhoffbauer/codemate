@@ -1,0 +1,3 @@
+- Initializes `celery_current_id` with either the given `task_id` or a generated one (if `use_internal_celery_task_id` is false).
+- Sets `celery_parent_id` to the value of the header key in the request, if present. This allows for tracking the relationship between tasks that are spawned from each other.
+- If `celery_parent_id` was set, saves its value in `celery_parent_id`. This can be useful for debugging purposes or for implementing dependency relationships between tasks.

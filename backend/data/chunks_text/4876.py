@@ -1,0 +1,3 @@
+- Defines a function `ensure_create_primary_index` that takes in a Couchbase bucket as an argument (`Bucket`)
+- Initializes a `BucketManager` object for the given bucket and returns it
+- Calls the `N1QLIndexCreatePrimary` method of the `BucketManager` with the `ignoreExists` flag set to true, which creates or updates the primary index on the specified bucket if it doesn't already exist

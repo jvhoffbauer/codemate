@@ -1,0 +1,3 @@
+- Defines a new endpoint `/` with an HTTP POST method using FastAPI's decorator syntax
+- Accepts a parameter named `item1` of type `Item`, which is defined elsewhere in the application
+- Returns the value of the `item1` argument, effectively passing it back to the client that made the request

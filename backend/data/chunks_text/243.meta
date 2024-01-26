@@ -1,0 +1,1 @@
+{"original_code": "def read_teams(\n    *,\n    session: Session = Depends(get_session),\n    offset: int = 0,\n    limit: int = Query(default=100, le=100),\n):\n    teams = session.exec(select(Team).offset(offset).limit(limit)).all()\n    return teams"}

@@ -1,0 +1,1 @@
+{"original_code": "async def read_item(item_id: str, q: str | None = None):\n    if q:\n        return {\"item_id\": item_id, \"q\": q}\n    return {\"item_id\": item_id}"}

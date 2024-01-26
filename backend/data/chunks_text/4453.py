@@ -1,0 +1,3 @@
+- This function uses `@needs_py310` decorator to ensure Python version is at least 3.10.
+- It defines a parameterized test using `@pytest.mark.parametrize`.
+- The test sends GET requests with different query parameters and checks the status codes and responses against expected values.

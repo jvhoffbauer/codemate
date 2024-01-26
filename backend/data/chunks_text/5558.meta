@@ -1,0 +1,1 @@
+{"original_code": "    def decorator(model: Type[TableModelT]) -> Type[TableModelT]:\n        model.__pydantic_model__ = schema\n        return model"}

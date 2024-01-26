@@ -1,0 +1,1 @@
+{"original_code": "def test_create_access_token():\n    access_token = create_access_token(data={\"data\": \"foo\"})\n    assert access_token"}

@@ -1,0 +1,6 @@
+- This function defines a websocket endpoint at the root URL ("/").
+- It requires a dependency called "index" to be created using create_dependency().
+- The function accepts a WebSocket connection and stores it in the variable `websocket`.
+- It also receives a list of dependencies (Deplist) from the application context using the deps parameter.
+- After accepting the connection, the function sends back the list of dependencies as JSON to the client.
+- Finally, the function closes the WebSocket connection.

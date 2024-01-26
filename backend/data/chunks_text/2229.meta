@@ -1,0 +1,1 @@
+{"original_code": "@needs_pydanticv2\ndef test_get_model_config():\n    # For coverage in Pydantic v2\n    class Foo(BaseModel):\n        model_config = ConfigDict(from_attributes=True)\n\n    foo = Foo()\n    config = _get_model_config(foo)\n    assert config == {\"from_attributes\": True}"}

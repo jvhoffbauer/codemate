@@ -1,0 +1,1 @@
+- Generates a dictionary of headers for an authenticated request with a regular (non-admin) user's credentials using the `user_authentication_headers()` function and passing in the provided Flask test client instance. - The fixture is scoped to the module level, meaning it will be created once per module and reused across all tests within that module.

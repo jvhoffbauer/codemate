@@ -1,0 +1,1 @@
+- Tests whether the middleware ignores non-UUID request IDs by passing an invalid one in the header. - Expects a warning message to be logged using `caplog`. - Asserts that the original request ID is not included in the response headers.

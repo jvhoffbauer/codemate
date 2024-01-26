@@ -1,0 +1,1 @@
+{"original_code": "    async def has_create_permission(\n        self, request: Request, data: SchemaCreateT, **kwargs\n    ) -> bool:  # type self.schema_create\n        return await self.has_page_permission(request, action=CrudEnum.create)"}

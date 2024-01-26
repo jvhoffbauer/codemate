@@ -1,0 +1,1 @@
+- Tests if `annotation_outer_type()` correctly identifies the outer type of a Python `datetime` object, which is also its own inner type. - Imports the necessary module for working with dates and times in Python (`datetime`) to create a sample input value for testing.

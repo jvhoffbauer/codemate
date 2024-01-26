@@ -1,0 +1,1 @@
+{"original_code": "def setup_sentry(app):\n    import sentry_sdk\n\n    sentry_sdk.init(\n        \"sentry_sdk\",\n    )"}

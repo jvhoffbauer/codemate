@@ -1,0 +1,3 @@
+- Tests the `update_request_header_middleware` by using it in a FastAPI app and making requests through an `AsyncClient`.
+- Verifies that the middleware adds a new X-Request-ID header or updates its existing value with a valid UUIDv4 string when no initial value is present or an invalid one is passed respectively.
+- Confirms that the added/updated X-Request-ID header matches the expected value from the original request's headers.

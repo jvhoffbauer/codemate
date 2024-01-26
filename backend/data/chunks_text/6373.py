@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with specified parameters for account ID, owner, amount, and currency. - Sets values to attributes 'account_id', 'owner', 'amount', and 'currency' respectively using keyword arguments passed during object creation.

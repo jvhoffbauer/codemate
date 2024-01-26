@@ -1,0 +1,1 @@
+- Imports `app` variable from a specific tutorial in the documentation using a context manager to suppress deprecation warnings. - Yields the imported `app` object for use by tests within this function's scope.

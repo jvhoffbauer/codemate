@@ -1,0 +1,1 @@
+{"original_code": "    async def get_list_display(\n        self, request: Request\n    ) -> List[Union[SqlaField, TableColumn]]:\n        return self.list_display or list(model_fields(self.schema_list).values())"}

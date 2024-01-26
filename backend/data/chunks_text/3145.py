@@ -1,0 +1,2 @@
+- Defines a GET request endpoint named `/http-exception`.
+- Raises an HTTPException with status code 400 (Bad Request).

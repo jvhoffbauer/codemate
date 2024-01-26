@@ -1,0 +1,1 @@
+{"original_code": "    def is_bytes_field(field: ModelField) -> bool:\n        return lenient_issubclass(field.type_, bytes)"}

@@ -1,0 +1,3 @@
+- Tests a custom request class (`CustomRequest`) by making a JSON RPC request using `json_request()`.
+- The request contains an additional parameter `"extra_value"` with value 'test'.
+- Asserts that the response from the server is as expected, containing the result of the method call ('probe') and matching ID and JSONRPC version.

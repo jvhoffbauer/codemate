@@ -1,0 +1,1 @@
+{"original_code": "def test_notify(echo, raw_request):\n    resp = raw_request(\n        json_dumps(\n            {\n                \"jsonrpc\": \"2.0\",\n                \"method\": \"echo\",\n                \"params\": {\"data\": \"data-123\"},\n            }\n        )\n    )\n    assert not resp.content\n    assert echo.history == [\"data-123\"]"}

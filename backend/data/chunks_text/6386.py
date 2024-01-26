@@ -1,0 +1,1 @@
+- Defines a function `echo` that takes an optional argument `data`, which is parsed using Pydantic's `Body` class and has an example value of "123". - If `data` equals "error", raises a custom exception called `MyError` with a dictionary containing details as its data. - Otherwise, returns the input `data`.

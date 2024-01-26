@@ -1,0 +1,1 @@
+- Defines a function called `event_counter` that returns an instance of the `EventsCounter` class, which is likely used to count events or track some kind of activity in a program. - This function provides a convenient way to create and use instances of the `EventsCounter` class without having to call its constructor directly.

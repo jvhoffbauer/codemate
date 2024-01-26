@@ -1,0 +1,1 @@
+{"original_code": "def create_env_file_and_remove_env_template():\n    env_template_file = Path(\".env.template\")\n    env_file = Path(\".env\")\n\n    env_file.write_text(env_template_file.read_text())\n    env_template_file.unlink()"}

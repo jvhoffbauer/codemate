@@ -1,0 +1,1 @@
+{"original_code": "async def update_item(item_id: int, item: Item = Body(embed=True)):\n    results = {\"item_id\": item_id, \"item\": item}\n    return results"}

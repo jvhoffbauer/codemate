@@ -1,0 +1,1 @@
+{"original_code": "def test_dummy_webhook():\n    # Just for coverage\n    app.webhooks.routes[0].endpoint({})"}

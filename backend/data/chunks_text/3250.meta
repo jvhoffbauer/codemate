@@ -1,0 +1,1 @@
+{"original_code": "def test_read_model():\n    response = client.get(\"/model\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"name\": \"Foo\"}"}

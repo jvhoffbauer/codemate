@@ -1,0 +1,1 @@
+{"original_code": "        @property\n        def full_name(self) -> str:\n            return f\"{self.name} {self.lastname}\""}

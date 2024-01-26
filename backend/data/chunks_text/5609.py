@@ -1,0 +1,4 @@
+- Defines a method `filtered_item_id` which returns a callable function called `depend`.
+- The `depend` function takes two arguments - `item_id` and `sel`, where `item_id` is a list of IDs and `sel` represents an SQL query with a select statement.
+- Inside the `depend` function, it converts the input `item_id` into a list using `list(map())` and then filters the items based on their primary key (PK) values using the `where()` clause in the SQL query.
+- Finally, it retrieves the filtered PK values from the database using `async_scalars()` and returns them as a list.

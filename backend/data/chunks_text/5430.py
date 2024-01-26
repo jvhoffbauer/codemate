@@ -1,0 +1,1 @@
+- Defines an endpoint called `map` that returns HTML content when accessed via GET requests. - Allows query parameters such as `src_path`, `TileMatrixSetId`, and others to customize the output. - Uses FastAPI's dependency injection system to pass arguments between functions. - Returns a template using Jinja2 templating language with dynamic data from the function arguments.

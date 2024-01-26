@@ -1,0 +1,3 @@
+- Defines a GET request handler for the root URL (/) with a query parameter `level0`.
+- The function body is empty, indicating that this endpoint serves as a placeholder or entry point to other endpoints in the application.
+- This decorator is used to register the function as an endpoint with FastAPI's router system.

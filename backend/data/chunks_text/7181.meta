@@ -1,0 +1,1 @@
+{"original_code": "    @app.on_event(\"startup\")\n    async def init_connect():\n        # \u8fde\u63a5redis\n        redis_client.init_redis_connect()\n\n        # \u521d\u59cb\u5316 apscheduler\n        schedule.init_scheduler()\n\n        db.connect()"}

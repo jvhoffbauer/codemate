@@ -1,0 +1,1 @@
+{"original_code": "async def routerprefixindex(websocket: WebSocket):\n    await websocket.accept()\n    await websocket.send_text(\"Hello, router with prefix!\")\n    await websocket.close()"}

@@ -1,0 +1,2 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Uses the `Query` parameter to accept an optional list of strings as a query parameter named 'q', with a default value of `None`. This allows clients to filter items based on their names by passing a comma-separated list of string values in the URL query parameters, e.g., `http://localhost:8000/items?q=item1,item2`. The resulting dictionary is passed to the function body as the `q` argument. - Returns the filtered item dictionary from the function body.

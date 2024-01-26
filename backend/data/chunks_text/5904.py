@@ -1,0 +1,4 @@
+- Defines a `RecentTimeSelectPerm` class that extends `SelectPerm`, specifically for selecting recent data based on a specified time period (default is one week).
+- The `td` attribute can be either an integer representing seconds or a `timedelta`. If it's an integer, it's converted to a `timedelta`.
+- In the `__post_init__` method, we check whether `td` is an integer and convert it to a `timedelta` if necessary.
+- The `_call` method returns a modified version of the original select query with a WHERE clause filtering by the selected time range.

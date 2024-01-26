@@ -1,0 +1,1 @@
+- Defines a method `partial_from_dict()` that takes an object (`obj`) and optional list of fields as arguments. - If no fields are provided, sets all keys from `obj` to corresponding attributes on self. - Otherwise, iterates over the specified fields and sets their values on self using dictionary lookup.

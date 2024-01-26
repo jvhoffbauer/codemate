@@ -1,0 +1,1 @@
+{"original_code": "def test_valid_none_none():\n    response = client.get(\"/items/validnone\", params={\"send_none\": \"true\"})\n    data = response.json()\n    assert response.status_code == 200\n    assert data is None"}

@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_value_by_http()`.
+- Accepts a positional argument `value` with default value provided by dependency injection using `Depends()`.
+- Returns the value passed to it, which is obtained from HTTP connection through `extract_value_from_http_connection()` dependency.

@@ -1,0 +1,2 @@
+- Defines a relationship between two SQLAlchemy models using Flask-SQLAlchemy's `Relationship()` decorator.
+- Allows customization of the relationship through optional arguments for specifying the name of the foreign key column (back_populates), defining an intermediate join table (link_model), and passing additional arguments/keywords to SQLAlchemy's `relationship()` function (sa_relationship_args/sa_relationship_kwargs).

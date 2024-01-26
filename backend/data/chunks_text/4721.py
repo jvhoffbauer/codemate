@@ -1,0 +1,3 @@
+- Tests uploading multiple files using `FastAPI`'s built-in testing client (`TestClient`) and temporary directory management provided by `pytest`.
+- Uses a context manager to automatically close opened files after reading their contents into memory.
+- Verifies that both files were successfully uploaded and returned in the API response JSON body.

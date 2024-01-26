@@ -1,0 +1,1 @@
+- Tests if an error is raised when a request with an invalid X-Key header is made to the /users endpoint using the provided Flask client and fake authentication token. - Asserts that the status code of the response is 400 Bad Request and its text contains the expected error message. - Verifies that the JSON body of the response matches the expected error detail string.

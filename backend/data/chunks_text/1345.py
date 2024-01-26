@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()`.
+- Accepts a single argument named `strange_header`, which is optionally annotated with either a string or `None`.
+- The annotation for this parameter uses Pydantic's `Header` class to indicate that it should be interpreted as a header value (i.e., prefixed by "X-" and converted from snake case). However, in this case we disable conversion using the `convert_underscores=False` keyword argument.

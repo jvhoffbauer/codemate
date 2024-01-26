@@ -1,0 +1,1 @@
+{"original_code": "def test_get_response():\n    response = client.get(\"/a\")\n    assert response.status_code == 204, response.text\n    assert \"content-length\" not in response.headers\n    assert response.content == b\"\""}

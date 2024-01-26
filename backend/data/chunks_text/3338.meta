@@ -1,0 +1,1 @@
+{"original_code": "def test_hidden_cookie(path, cookies, expected_status, expected_response):\n    client = TestClient(app, cookies=cookies)\n    response = client.get(path)\n    assert response.status_code == expected_status\n    assert response.json() == expected_response"}

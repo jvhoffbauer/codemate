@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(\n        self, dependency: Optional[Callable[..., Any]] = None, *, use_cache: bool = True\n    ):\n        self.dependency = dependency\n        self.use_cache = use_cache"}

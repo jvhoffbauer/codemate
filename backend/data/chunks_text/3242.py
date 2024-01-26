@@ -1,0 +1,1 @@
+- Defines a function called `by_alias_list()` that returns a list of dictionaries, each containing an 'alias' key with values 'Foo' and 'Bar', respectively.

@@ -1,0 +1,1 @@
+{"original_code": "async def parse_jwt_user_data_optional(\n    token: str = Depends(oauth2_scheme),\n) -> JWTData | None:\n    if not token:\n        return None\n\n    try:\n        payload = jwt.decode(\n            token, auth_config.JWT_SECRET, algorithms=[auth_config.JWT_ALG]\n        )\n    except JWTError:\n        raise InvalidToken()\n\n    return JWTData(**payload)"}

@@ -1,0 +1,3 @@
+- Defines a function `ensure_couchbase_username_password` that takes arguments `cluster_url`, `username`, and `password`.
+- Calls another function `setup_couchbase_username_password` with these arguments to set up authentication credentials for Couchbase Server. If this succeeds, returns true immediately.
+- Otherwise, calls another function `check_couchbase_username_password` with these arguments to verify whether the provided credentials are valid. Returns true if they are, false otherwise.

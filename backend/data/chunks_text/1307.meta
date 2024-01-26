@@ -1,0 +1,1 @@
+{"original_code": "async def create_upload_files(\n    files: list[UploadFile] = File(description=\"Multiple files as UploadFile\"),\n):\n    return {\"filenames\": [file.filename for file in files]}"}

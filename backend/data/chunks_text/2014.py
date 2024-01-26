@@ -1,0 +1,3 @@
+- Defines a GET request for retrieving user information with the specified `username`.
+- Uses FastAPI's router decorator to register this endpoint under the "users" tag.
+- Returns a JSON response containing just the requested `username`.

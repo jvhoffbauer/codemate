@@ -1,0 +1,1 @@
+- Retrieves the currently logged in user from the session and returns their data as a `UserOut` object. - Ignore mypy warning about returning an unannotated variable (the `current_user` is already typed by FastAPI). - This function can be used to easily access the authenticated user's information throughout the application without having to pass it around explicitly.

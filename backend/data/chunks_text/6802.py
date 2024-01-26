@@ -1,0 +1,3 @@
+- This function is called `test_email`, and it tests sending an email to a specified recipient (stored in the `email_to` parameter).
+- The `current_user` argument is used to ensure that only superusers can access this endpoint, which helps prevent unauthorized use of the email feature.
+- If the email is successfully sent, the function returns a dictionary with a message indicating success ("Test email sent").

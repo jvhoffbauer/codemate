@@ -1,0 +1,1 @@
+- Defines a fixture named `client` using PyTest's `@pytest.fixture` decorator. - Imports the Flask application defined in `docs_src/body_fields/tutorial001.py`. - Creates a new instance of Flask's built-in testing client, passing it the imported application as an argument. - Returns the newly created test client for use by other tests that require access to a live Flask server.

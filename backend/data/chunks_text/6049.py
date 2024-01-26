@@ -1,0 +1,5 @@
+- Defines a `User` model with an integer field named 'age' and sets its default value to 18 using FastAPI's `Field()`.
+- Retrieves the `age` field from the `User` model using `model_fields()`, which returns a dictionary of all fields in the model.
+- Converts the retrieved `age` field into a FormItem object using `amis_parser.as_form_item()`. The resulting FormItem has type `input-number`, label `年龄`, and initial value 18 (set by `set_default=True`).
+- Repeats step 2 but for a FilterItem instead of a FormItem. Here, we pass `is_filter=True` as an argument to indicate that this item should be used as part of a search query rather than during data entry or editing. This causes the resulting FilterItem to have type `input-text` instead of `input-number`.
+- Finally, converts the `age` field into a TableColumn object using `amis_parser.as_table_column()`. Since this method doesn't take any arguments beyond the field itself, it simply creates a basic Column object without any additional options like width or alignment.

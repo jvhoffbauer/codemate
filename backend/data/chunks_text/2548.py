@@ -1,0 +1,1 @@
+- This test case overrides the `ws_dependency` dependency in the application context using a lambda function that returns a string value of 'Override'. - The `TestClient` is used to make a WebSocket connection to the '/router-ws-depends/' endpoint, and the received message from the server is checked against the expected value of 'Override' returned by the override function.

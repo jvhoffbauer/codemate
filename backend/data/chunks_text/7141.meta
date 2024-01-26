@@ -1,0 +1,1 @@
+{"original_code": "def get_user_info(*, current_user: User = Depends(deps.get_current_user)) -> Any:\n    \"\"\"\n    \u83b7\u53d6\u7528\u6237\u4fe1\u606f \u8fd9\u4e2a\u8def\u7531\u5206\u7ec4\u6ca1\u6709\u9a8c\u8bc1\u6743\u9650\n    :param current_user:\n    :return:\n    \"\"\"\n    return resp.ok(data=model_to_dict(current_user))"}

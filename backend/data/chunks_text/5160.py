@@ -1,0 +1,5 @@
+- Defines a GET request for retrieving information about a specific dataset using FastAPI's `@app.get` decorator and specifies the endpoint URL (`/info`) and expected response format (`response_model=Info`, `response_class=JSONResponse`)
+- Includes optional query parameters that can be passed to the function via dependency injection (`src_path`, `reader_params`, `env`)
+- Uses the `responses` dictionary to provide an HTTP status description for the successful response (status code 200)
+- Imports necessary dependencies from RasterIO library and passes them to the function through dependency injection (`rasterio.Env`, `self.reader`, `self.path_dependency`, `self.reader_dependency`, `self.environment_dependency`)
+- Retrieves the requested data by opening the specified file using RasterIO's context manager syntax (`with rasterio.Env(**env):... With self.reader(src_path, **reader_params) as src_dst:`) and returns it in the required JSON format (`return src_dst.info()`)

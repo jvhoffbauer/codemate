@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\ndef ep_method_auth(ep):\n    @ep.method()\n    def probe(user: HTTPBasicCredentials = Depends(auth_user)) -> str:\n        return user.username\n\n    return ep"}

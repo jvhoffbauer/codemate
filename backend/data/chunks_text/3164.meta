@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/\", dependencies=[Depends(parent_dep)])\nasync def get_main():\n    return {\"msg\": \"Hello World\"}"}

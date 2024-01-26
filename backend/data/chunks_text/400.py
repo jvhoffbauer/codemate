@@ -1,0 +1,1 @@
+- Defines a JSON schema for Pydantic's `FlatModel`, which is a simple data class with fields and no inheritance hierarchy. - The schema includes definitions for all field types, including strings (with UUID format) and enums (referenced from their own definition). - Required fields are specified in the'required' list.

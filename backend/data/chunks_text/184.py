@@ -1,0 +1,1 @@
+- This function is called when Flask application starts up. - It creates a database and its required tables using `create_db_and_tables()`. - The created database will be available for use throughout the application's runtime.

@@ -1,0 +1,2 @@
+- Imports `test_main` function from a specific module in the `docs_src` package and executes its tests for creating existing/new items, reading an item with valid/invalid token.
+- Does not modify any global state or variables.

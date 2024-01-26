@@ -1,0 +1,3 @@
+- Tests a specific endpoint (`test_context_vars`) with a custom `request_id`.
+- Makes an HTTP request using Flask's built-in `make_response()` function to simulate server behavior.
+- Asserts that the expected response is returned from the API call, including any middleware values added during request processing.

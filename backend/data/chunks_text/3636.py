@@ -1,0 +1,3 @@
+- Defines a function named `test_dummy_callback()` to satisfy unit testing framework's requirement of having at least one test method with name starting with 'test'.
+- The function takes no arguments and returns nothing (i.e., it is a pure function).
+- It calls another function `invoice_notification(data)`, passing an empty dictionary as argument, just to ensure that this function gets called during tests and its behavior can be verified by assertions in other test methods.

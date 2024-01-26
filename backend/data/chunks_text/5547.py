@@ -1,0 +1,5 @@
+- Defines a method `filter_modelfield()` that filters a list of SQLAlchemy model fields based on certain criteria.
+- Accepts an iterable of fields as input, along with options to specify which types of fields should be included (`save_class`) and which ones should be excluded (`exclude`).
+- Filters out any non-model fields using another helper function called `filter_insfield()`.
+- Creates a new list containing clones of each filtered model field using the `clone()` method provided by SQLAlchemy's `InstrumentedAttribute` class.
+- Removes any None values or excluded fields from the resulting list.

@@ -1,0 +1,1 @@
+{"original_code": "def test_not_allow_instantiation_without_arguments_if_not_table():\n    class Item(SQLModel):\n        id: Optional[int] = Field(default=None, primary_key=True)\n        name: str\n        description: Optional[str] = None\n\n    with pytest.raises(ValidationError):\n        Item()"}

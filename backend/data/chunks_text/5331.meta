@@ -1,0 +1,1 @@
+{"original_code": "    def _assets(params=Depends(dependencies.AssetsParams)):\n        \"\"\"return assets.\"\"\"\n        return params.assets"}

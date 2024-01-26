@@ -1,0 +1,1 @@
+{"original_code": "    async def dep():\n        pass  # pragma: nocover"}

@@ -1,0 +1,1 @@
+{"original_code": "    def __setattr__(self, name, value):\n        self._state.get()[name] = value"}

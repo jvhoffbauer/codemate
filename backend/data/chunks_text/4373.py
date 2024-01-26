@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using Pydantic models and validators.
+- Defines paths with GET requests that return either success or validation errors, along with their responses, summaries, operation IDs, parameters (with required fields), and content types.
+- Includes components such as schemas for error handling, which can be referenced by other parts of the API definition.

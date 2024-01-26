@@ -1,0 +1,3 @@
+- Generates a list of language directories using `get_lang_paths()`.
+- Filters out non-directories from the list.
+- Prints the resulting list as JSON using `json.dumps()`.

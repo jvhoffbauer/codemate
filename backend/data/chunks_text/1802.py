@@ -1,0 +1,3 @@
+- Endpoint to retrieve a list of users (GET request)
+- URL path is `/users/`
+- Returns an array with two objects, each containing a key-value pair for 'name'

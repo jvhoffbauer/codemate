@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/second\")\n    def _assets_expr(params=Depends(dependencies.AssetsBidxExprParams)):\n        \"\"\"return params.\"\"\"\n        return params"}

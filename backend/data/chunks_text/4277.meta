@@ -1,0 +1,1 @@
+{"original_code": "def test_post_body_example():\n    response = client.put(\n        \"/items/5\",\n        json={\n            \"name\": \"Foo\",\n            \"description\": \"A very nice Item\",\n            \"price\": 35.4,\n            \"tax\": 3.2,\n        },\n    )\n    assert response.status_code == 200"}

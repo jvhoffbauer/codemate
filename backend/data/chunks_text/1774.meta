@@ -1,0 +1,1 @@
+{"original_code": "async def read_item(item_id: str, img: Union[bool, None] = None):\n    if img:\n        return FileResponse(\"image.png\", media_type=\"image/png\")\n    else:\n        return {\"id\": \"foo\", \"value\": \"there goes my hero\"}"}

@@ -1,0 +1,2 @@
+- Checks if `child` class is a direct attribute of `owner` class or an optional version of it, both with the same qualname and module as `owner`.
+- Used to determine whether a variable's scope is inside another scope in Python's lexical scoping rules for nested functions and classes.

@@ -1,0 +1,6 @@
+- Tests encoding of a `ModelWithDefault` object with default values using `jsonable_encoder()`.
+- Verifies that unset fields are excluded by passing `exclude_unset=True`.
+- Confirms that default values are included in output when `exclude_defaults=False`, and omitted otherwise (when `exclude_defaults=True`).
+- Demonstrates how to selectively include or exclude specific attributes via keyword arguments `include` and `exclude`.
+- Shows how to completely omit all fields from the result set by passing an empty dictionary as value for `include`.
+- Illustrates how to force inclusion of all fields by passing an empty dictionary as value for `exclude`.

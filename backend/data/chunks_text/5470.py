@@ -1,0 +1,3 @@
+- Tests the `/bounds` endpoint using a mocked version of rasterio's open function (provided by the `@patch` decorator)
+- Verifies that the expected HTTP status code is returned and checks the JSON response structure
+- Asserts that the Cache-Control header contains the correct value for caching behavior

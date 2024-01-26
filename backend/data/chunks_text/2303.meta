@@ -1,0 +1,1 @@
+{"original_code": "async def read_items(token: Optional[str] = Security(oauth2_scheme)):\n    if token is None:\n        return {\"msg\": \"Create an account first\"}\n    return {\"token\": token}"}

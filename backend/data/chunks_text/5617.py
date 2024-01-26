@@ -1,0 +1,3 @@
+- Defines a property called `route_read` that returns a callable function (a coroutine).
+- The returned function is an asynchronous view function for handling HTTP GET requests to retrieve one or more items identified by their IDs.
+- Before returning the requested items, it checks whether the user has read permission using the `has_read_permission()` method and raises an error response if necessary.

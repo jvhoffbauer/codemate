@@ -1,0 +1,1 @@
+{"original_code": "def test_sync_sync_state():\n    response = client.get(\"/sync_sync\")\n    assert response.status_code == 200, response.text\n    assert response.json() == \"generator started\"\n    assert state[\"/sync\"] == \"generator completed\""}

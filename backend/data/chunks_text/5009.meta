@@ -1,0 +1,1 @@
+{"original_code": "    def partial_from_dict(self, obj: dict[str, Any], *fields: str):\n        if not fields:\n            for k, v in obj.items():\n                setattr(self, k, v)\n        else:\n            for field in fields:\n                setattr(self, field, obj[field])"}

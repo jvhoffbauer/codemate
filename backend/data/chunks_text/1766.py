@@ -1,0 +1,2 @@
+- Defines an asynchronous function `create_index_weights` that takes a dictionary `weights` with integer keys and floating point values as input
+- Returns the same dictionary `weights`, implying that it is used to store index weights for some purpose in the context of this function's usage

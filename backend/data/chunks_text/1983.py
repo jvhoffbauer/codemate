@@ -1,0 +1,5 @@
+- This function is a GET request for an item with ID `item_id`.
+- It takes optional query parameters `needy`, `skip`, and `limit`.
+- The `needy` parameter specifies who needs this item (e.g., "homeless shelter").
+- The `skip` parameter allows pagination by skipping over a certain number of items.
+- The `limit` parameter limits the number of items returned in the response.

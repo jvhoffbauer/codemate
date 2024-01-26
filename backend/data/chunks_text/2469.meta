@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/invalidlist\", response_model=List[Item])\ndef get_invalidlist():\n    return [\n        {\"name\": \"foo\"},\n        {\"name\": \"bar\", \"price\": \"bar\"},\n        {\"name\": \"baz\", \"price\": \"baz\"},\n    ]"}

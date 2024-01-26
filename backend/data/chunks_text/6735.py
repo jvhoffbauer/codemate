@@ -1,0 +1,2 @@
+- Defines a function `append_event` that takes an argument `event`.
+- Appends the event to a list called `events`, and then returns the result of calling another function `old_capture_event` with the same argument `event`.

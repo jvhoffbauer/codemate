@@ -1,0 +1,2 @@
+- Tests a Flask route that returns a dictionary without using any model or annotation classes
+- Verifies that the HTTP status code is 200 and checks the returned JSON data matches expected values

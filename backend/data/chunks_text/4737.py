@@ -1,0 +1,3 @@
+- This function tests uploading a file using PyTest and FastAPI's `UploadFile` class.
+- It creates a temporary directory (`tmp_path`) to store the test file, writes some content into it, opens it in binary mode ('rb'), and passes it to the `client.post()` method along with an empty dictionary for other form data.
+- The server returns a JSON response containing the filename of the uploaded file, which is checked against the expected value.

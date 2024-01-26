@@ -1,0 +1,3 @@
+- Creates a new singleton class by overriding `__new__()`.
+- Checks if an instance already exists (`_instance`) and returns it instead of creating a new one.
+- Uses `object.__new__()` to create the initial instance.

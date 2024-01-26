@@ -1,0 +1,2 @@
+- Defines an async function called `create_upload_file` that takes a single argument, `file`, of type `UploadFile`. This argument is optional and has a default value of None (implicitly defined by passing in `File()`). The description for this parameter explains what kind of data it expects to be passed in - in this case, a file object that can be read using FastAPI's built-in `UploadFile` class.
+- Returns a dictionary with a key "filename" containing the name of the uploaded file provided through the `UploadFile` object.

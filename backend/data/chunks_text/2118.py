@@ -1,0 +1,1 @@
+- Defines a GET request for the path "/path/int/{item_id}" where {item_id} is replaced with an integer value passed as a parameter in the URL. - The function returns the integer value of the item ID provided in the URL.

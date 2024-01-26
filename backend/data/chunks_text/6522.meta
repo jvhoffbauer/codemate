@@ -1,0 +1,1 @@
+{"original_code": "def app(ep):\n    app = jsonrpc.API()\n    app.bind_entrypoint(ep)\n    return app"}

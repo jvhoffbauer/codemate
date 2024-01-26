@@ -1,0 +1,1 @@
+{"original_code": "    def _update_items(\n        self, session: Session, item_id: List[str], values: Dict[str, Any]\n    ) -> List[TableModelT]:\n        items = self._fetch_item_scalars(session, item_id)\n        for item in items:\n            self.update_item(item, values)\n        return items"}

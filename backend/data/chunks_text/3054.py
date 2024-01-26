@@ -1,0 +1,1 @@
+- Defines a function called `get_b_path_override()` that returns a string value 'Hello B' when invoked. This function can be used to override the default path for accessing module 'B'.

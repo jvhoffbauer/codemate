@@ -1,0 +1,3 @@
+- This function tests the `GET /items/object` endpoint by making a request using Flask's built-in `client`.
+- The response is checked for success status and its JSON content is compared against an expected dictionary with specific keys and values.
+- The `owner_ids` key contains a list of IDs representing users who own this object.

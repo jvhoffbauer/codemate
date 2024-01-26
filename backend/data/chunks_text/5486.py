@@ -1,0 +1,3 @@
+- Mocks `RasterIO`'s `open()` method to simulate a file that doesn't exist
+- Sends a GET request for an out-of-bounds tile with a custom URL and rescale factor
+- Asserts that Flask returns a 404 error status code and sets appropriate cache control headers

@@ -1,0 +1,1 @@
+{"original_code": "async def test_async_save(tmp_path, name, content, kwargs):\n    test_path = tmp_path / name\n    assert not test_path.exists()\n\n    result = await app.io.AIO.save(test_path, content, **kwargs)\n    assert result == test_path\n    assert test_path.exists()"}

@@ -1,0 +1,1 @@
+- Tests if an empty path in a request returns expected status and JSON response using Flask's `client` object for making requests to our app. - Uses `assert` statements to check that the HTTP status codes and responses are as expected.

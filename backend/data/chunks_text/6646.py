@@ -1,0 +1,1 @@
+- Sends a batch request with two requests to `probe()` and `probe2()`. - Uses the built-in Python library `httpx` for making HTTP requests. - Asserts that the response is in the expected format (a list of dictionaries) with the correct results from each function call.

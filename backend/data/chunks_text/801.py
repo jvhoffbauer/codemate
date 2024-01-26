@@ -1,0 +1,3 @@
+- Generates a new refresh token (if none provided) using `utils.generate_random_alphanum()`.
+- Inserts the new or existing refresh token into the database with an expiration time based on `auth_config.REFRESH_TOKEN_EXP`.
+- Returns the generated/existing refresh token to be used in future requests.

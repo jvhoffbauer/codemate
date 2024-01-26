@@ -1,0 +1,1 @@
+{"original_code": "@app.on_event(\"startup\")\nasync def startup_event():\n    items[\"foo\"] = {\"name\": \"Fighters\"}\n    items[\"bar\"] = {\"name\": \"Tenders\"}"}

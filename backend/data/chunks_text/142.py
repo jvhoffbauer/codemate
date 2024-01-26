@@ -1,0 +1,4 @@
+- Defines a function called `select` with four arguments (`__ent0`, `__ent1`, `entity_2`, and `entity_3`) that returns an object of type `Select` containing tuples of types `(_T0, _T1, _TScalar_2, _TScalar_3)`.
+- The first two arguments are both iterable containers of some unknown types `_T0` and `_T1`.
+- The last two arguments represent scalar values of types `_TScalar_2` and `_TScalar_3`.
+- This function is decorated with a type hinting comment to suppress mypy's warning about unused parameters `__ent0` and `__ent1`.

@@ -1,0 +1,3 @@
+- Defines a GET request for the root URL (/) using FastAPI's decorator syntax (@app.get).
+- Returns a JSON object with two keys, 'c' and 'd'. The value of 'd' is another nested dictionary with one key, 'a'.
+- Uses Pydantic's Model3 to define the expected structure of the returned data. This allows for more detailed validation and type hinting in the API documentation.

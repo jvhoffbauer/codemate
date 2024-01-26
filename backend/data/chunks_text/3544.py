@@ -1,0 +1,1 @@
+- Defines an asynchronous function `c()` that returns a string value 'c'

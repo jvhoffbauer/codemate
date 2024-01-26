@@ -1,0 +1,1 @@
+{"original_code": "def main():\n    cookiecutter(\n        template=str(ROOT_FOLDER),\n        no_input=True,\n        extra_context={\n            \"project_name\": \"minimal_project\",\n        },\n    )"}

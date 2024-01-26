@@ -1,0 +1,1 @@
+{"original_code": "def test_items_plumbus_token_jessica(client: TestClient):\n    response = client.get(\n        \"/items/plumbus?token=jessica\", headers={\"X-Token\": \"fake-super-secret-token\"}\n    )\n    assert response.status_code == 200\n    assert response.json() == {\"name\": \"Plumbus\", \"item_id\": \"plumbus\"}"}

@@ -1,0 +1,1 @@
+{"original_code": "    @cached_property\n    def read_permission_fields(self) -> Dict[str, str]:\n        \"\"\"\u8bfb\u53d6\u6743\u9650\u5b57\u6bb5\"\"\"\n        return self.get_permission_fields(\"read\")"}

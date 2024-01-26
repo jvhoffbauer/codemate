@@ -1,0 +1,1 @@
+{"original_code": "async def prepare_database(models) -> AsyncGenerator[None, None]:\n    async with db.engine.begin() as conn:\n        await conn.run_sync(models.Base.metadata.drop_all)\n        await conn.run_sync(models.Base.metadata.create_all)\n        yield\n        await conn.run_sync(models.Base.metadata.drop_all)"}

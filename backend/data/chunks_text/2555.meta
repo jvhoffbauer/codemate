@@ -1,0 +1,1 @@
+{"original_code": "            async def call_next():\n                return await app(scope, receive, send)"}

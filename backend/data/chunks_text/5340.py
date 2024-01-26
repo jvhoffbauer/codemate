@@ -1,0 +1,3 @@
+- Defines a function named `_bands_expr` that takes an optional parameter `params`.
+- The `Depends` decorator is used to specify that this function should be called when its dependencies change, in this case, the `dependencies.BandsExprParams` class.
+- This function simply returns the value of the `params` argument without any modifications or calculations.

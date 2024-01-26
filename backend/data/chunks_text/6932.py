@@ -1,0 +1,3 @@
+- This method named `dict()` returns a dictionary with keys as column names and values as corresponding attribute of the object (i.e., self) using the `getattr()` function.
+- The dictionary is created by iterating over the columns defined in the class's mapper using `inspect().mapper`.
+- The key-value pairs are generated using a list comprehension where each column's name (`c.key`) becomes the dictionary key and its value is obtained from the corresponding attribute of the object (`getattr(self, c.key)`).

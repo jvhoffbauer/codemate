@@ -1,0 +1,3 @@
+- Tests closing a websocket connection due to invalid data by raising `WebSocketDisconnect`.
+- Uses PyTest's built-in `TestClient` for testing FastAPI applications and their endpoints, including web sockets.
+- Demonstrates how to use PyTest's `with` statement to automatically clean up resources after tests are finished running (i.e., disconnecting from the websocket).

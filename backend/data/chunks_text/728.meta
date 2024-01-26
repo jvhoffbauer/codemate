@@ -1,0 +1,1 @@
+{"original_code": "def test_celery_filter_adds_current_id(cid: str, log_record: LogRecord):\n    filter_ = CeleryTracingIdsFilter()\n    celery_current_id.set(\"b\")\n\n    assert not hasattr(log_record, \"celery_current_id\")\n    filter_.filter(log_record)\n    assert log_record.celery_current_id == \"b\""}

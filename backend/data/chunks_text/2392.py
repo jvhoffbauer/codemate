@@ -1,0 +1,1 @@
+- Defines a function `read_root` that returns an instance of the `Rectangle` class with initial width and length values of 3 and 4 respectively (type hinting used for clarity).

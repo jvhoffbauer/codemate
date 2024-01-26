@@ -1,0 +1,1 @@
+- Imports `test_main` function from `docs_src.app_testing.app_b_py310`, which is a module for testing app B in Python 3.10 environment. - Calls various test functions within `test_main` to perform different tests, such as creating existing and new items, reading non-existent and existent items with valid and invalid tokens.

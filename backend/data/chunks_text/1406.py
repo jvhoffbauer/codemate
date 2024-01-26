@@ -1,0 +1,3 @@
+- Defines a function called `custom_http_exception_handler` that takes in two arguments - `request` and `exc`.
+- Prints an error message using string formatting with f-strings when an HTTP error occurs (represents exception object).
+- Calls the built-in `http_exception_handler()` function to handle the error further.

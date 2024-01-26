@@ -1,0 +1,2 @@
+- Defines a function `probe` that takes an optional argument `whole_params`, which is set to a default value of a `WholeParams` object with some parameters (...)
+- The returned value is a list of integers obtained by adding each element of the `data` attribute of the `whole_params` object to its `amount` attribute, both attributes being part of the `WholeParams` class

@@ -1,0 +1,3 @@
+- Tests synchronous sync functionality by making a GET request to `/sync_sync`.
+- Asserts that the status code is 200 and the response text contains "generator started".
+- Asserts that the value of `state['/sync']` after running the function is "generator completed".

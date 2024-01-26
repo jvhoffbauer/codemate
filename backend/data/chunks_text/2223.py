@@ -1,0 +1,3 @@
+- Tests that a model field with no default value specified has an undefined default using `ModelField`.
+- Imports and uses `pydanticv2` to access the updated version of Pydantic's `ModelField` class, which now supports specifying a default value for fields in models.
+- Verifies that the `Undefined` constant from pydantic is returned when there is no explicit default provided for the field.

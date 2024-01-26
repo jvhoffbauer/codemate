@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: \"AdminApp\"):\n        BaseAdmin.__init__(self, app)\n        RouterMixin.__init__(self)"}

@@ -1,0 +1,1 @@
+- Defines a function `validate` that takes two arguments: `cls`, which is the type of the object being validated (in this case, `UploadFile`), and `v`, which is the value to be validated. - The function returns the input value `v` after checking whether it's an instance of `StarletteUploadFile`. If it's not, it raises a `ValueError` with a custom error message.

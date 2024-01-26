@@ -1,0 +1,1 @@
+- Establishes a WebSocket connection to `/router2` using the `TestClient` from Flask's built-in testing framework. - Receives and verifies that the initial message sent by `Router2` is "Hello, router!".

@@ -1,0 +1,3 @@
+- Defines a function named `post_callback` that takes two arguments of type `Item`, called `item1` and `item2`.
+- The function returns a tuple containing both items as its result.
+- This function is marked with the `pragma: nocover` statement to indicate that it should not be covered by unit tests (i.e., it's an implementation detail).

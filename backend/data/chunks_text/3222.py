@@ -1,0 +1,1 @@
+- Tests that a `ResponseValidationError` is raised when making a GET request to an invalid model endpoint (`"/model/modelX"`). - Verifies that the error message returned by FastAPI's validation system matches the expected format for both Pydantic versions 1 and 2.

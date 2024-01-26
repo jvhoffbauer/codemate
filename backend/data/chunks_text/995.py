@@ -1,0 +1,4 @@
+- This function takes an `Annotation` object as input and returns a boolean value indicating whether it represents either `bytes` type or a union of types that include `bytes`.
+- It first checks if the given annotation is directly subclassed from `bytes`, which would indicate that it's representing the `bytes` type itself.
+- If not, it retrieves the original annotation using `get_origin()` and checks if it's either `Union` or `UnionType`. In this case, it iterates over all arguments passed to the union and recursively calls itself on each argument until it finds one that matches our criteria (i.e., `lenient_issubclass(arg, bytes) == True`).
+- Finally, if none of these conditions are met, it simply returns `False`.

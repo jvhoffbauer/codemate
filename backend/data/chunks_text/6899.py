@@ -1,0 +1,3 @@
+- Initializes a `HousePriceModel` object with the default path and assigns it to the application state for later use in endpoints.
+- The `_startup_model()` function is called during startup of the FastAPI application, as defined by its decorator (not shown).
+- This setup allows for easy swapping out or configuration of the machine learning model used throughout the API without requiring changes to individual endpoint functions.

@@ -1,0 +1,1 @@
+{"original_code": "def test_required_nonable_explicit_query_value():\n    response = client.get(\"/explicit-query\", params={\"q\": \"foo\"})\n    assert response.status_code == 200\n    assert response.json() == \"foo\""}

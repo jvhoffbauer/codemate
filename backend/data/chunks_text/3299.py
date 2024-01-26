@@ -1,0 +1,3 @@
+- Tests that it is not possible to define multiple `Annotated` decorators on the same argument of a function decorated by `@app.get`.
+- Tests that it is not possible to use both `Depends` and a default value at the same time when defining an `Annotated` decorator.
+- Tests that it is not possible to combine a FastAPI annotation (in this case, `Query`) and `Depends` as a default value for an `Annotated` decorator.

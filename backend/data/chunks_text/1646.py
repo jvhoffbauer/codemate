@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that returns a list of dictionaries containing a key 'item' with values 'Foo' and 'Bar'. - The use of async/await syntax indicates that this function can be used in conjunction with other asynchronous functions or coroutines to build more complex workflows.

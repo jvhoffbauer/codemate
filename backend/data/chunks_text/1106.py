@@ -1,0 +1,3 @@
+- This function is a mock implementation of Flask's `jwt_manager().verify_identity()`.
+- It takes in a token as an argument and returns a simulated user object with a modified decoded value for testing purposes.
+- The returned user object includes a customized username, email address, and full name that can be used to verify authentication during unit tests.

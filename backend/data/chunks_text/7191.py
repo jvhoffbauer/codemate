@@ -1,0 +1,3 @@
+- Creates a FastAPI application using `create_app()`.
+- Wraps it in a generator context manager provided by Pytest's `TestClient`.
+- Yields the generated test client for use within pytest tests.

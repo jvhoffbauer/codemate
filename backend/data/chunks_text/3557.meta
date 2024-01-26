@@ -1,0 +1,1 @@
+{"original_code": "def test_partial():\n    response = client.get(\"/?q=bar\")\n    data = response.json()\n    assert data == {\"some_arg\": \"foo\", \"q\": \"bar\"}"}

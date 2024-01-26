@@ -1,0 +1,1 @@
+{"original_code": "def fake_decode_token(token):\n    # This doesn't provide any security at all\n    # Check the next version\n    user = get_user(fake_users_db, token)\n    return user"}

@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method(errors=[FirstError, SecondError])\n    def my_method__with_mergeable_errors() -> None:\n        return None"}

@@ -1,0 +1,4 @@
+- Defines a function `test_batch()` that tests batch requests using the `json_request()` decorator to simulate multiple requests in one HTTP request/response cycle.
+- Sends two requests with different IDs and data values for testing purposes.
+- Asserts that the response contains both results as expected.
+- Verifies that middleware functions are called correctly during each request's lifecycle by checking the contents of the `ep.calls` dictionary after executing the decorated function.

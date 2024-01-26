@@ -1,0 +1,2 @@
+- Sends a POST request to /api/model/predict with an empty JSON payload and API key in header
+- Asserts that the server returns HTTP status code 422 (Unprocessable Entity)

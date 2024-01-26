@@ -1,0 +1,1 @@
+{"original_code": "    def serializable_dict(self, **kwargs):\n        \"\"\"Return a dict which contains only serializable fields.\"\"\"\n        default_dict = self.model_dump()\n\n        return jsonable_encoder(default_dict)"}

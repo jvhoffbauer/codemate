@@ -1,0 +1,1 @@
+{"original_code": "def test_router():\n    client = TestClient(app)\n    with client.websocket_connect(\"/router\") as websocket:\n        data = websocket.receive_text()\n        assert data == \"Hello, router!\""}

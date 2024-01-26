@@ -1,0 +1,1 @@
+{"original_code": "    async def custom_handler(websocket: WebSocket, exc: CustomError) -> None:\n        await websocket.close(1002, \"foo\")"}

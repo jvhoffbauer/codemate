@@ -1,0 +1,1 @@
+{"original_code": "def _is_union_type(t: Any) -> bool:\n    return t is UnionType or t is Union"}

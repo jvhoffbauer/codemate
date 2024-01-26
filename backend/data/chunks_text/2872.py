@@ -1,0 +1,1 @@
+- Tests whether `Body(...)` is correctly represented as either `Body(PydanticUndefined)` or `Body(Ellipsis)`, depending on the version of Pydantic being used (v1 vs v2). - Helps ensure that `Body(...)` can be properly serialized and deserialized, even in cases where its value is not fully known at runtime.

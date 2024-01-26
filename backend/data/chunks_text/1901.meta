@@ -1,0 +1,1 @@
+{"original_code": "async def sum_numbers(numbers: List[int] = Body()):\n    return sum(numbers)"}

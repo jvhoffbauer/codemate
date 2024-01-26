@@ -1,0 +1,1 @@
+- Creates a POST request to add items for author 'foo' with names 'Bar' and 'Baz' (with description 'Drop the Baz') using Flask's built-in `client` object. - Asserts that the status code of the response is 200, indicating success. - Extracts the JSON response body and asserts that it contains the expected data structure, including the newly added item(s).

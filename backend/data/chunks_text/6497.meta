@@ -1,0 +1,1 @@
+{"original_code": "    def bind_entrypoint(self, ep: Entrypoint):\n        ep.bind_dependency_overrides_provider(self)\n        self.routes.extend(ep.routes)\n        self.on_event(\"shutdown\")(ep.shutdown)"}

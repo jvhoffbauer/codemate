@@ -1,0 +1,3 @@
+- Registers a callback function `shutdown_connect` to be executed when the Flask application is being shut down (i.e., the server is stopping).
+- Closes the database connection using SQLAlchemy's `db.close()`.
+- Stops the scheduler using APScheduler's `schedule.shutdown()`.

@@ -1,0 +1,1 @@
+- Defines a function named `get_str_id` that takes an argument `item_id` of type string. - The function returns the value of `item_id`. - This function can be used to extract and return just the string part of an ID, which may contain both numeric and non-numeric characters.

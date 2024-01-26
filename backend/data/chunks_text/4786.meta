@@ -1,0 +1,1 @@
+{"original_code": "def get(bucket: Bucket, *, username: str):\n    doc_id = get_doc_id(username)\n    return utils.get_doc(bucket=bucket, doc_id=doc_id, doc_model=UserInDB)"}

@@ -1,0 +1,1 @@
+{"original_code": "            async def openrpc(_: Request) -> JSONResponse:\n                return JSONResponse(self.openrpc())"}

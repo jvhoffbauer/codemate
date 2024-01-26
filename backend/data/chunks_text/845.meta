@@ -1,0 +1,1 @@
+{"original_code": "            async def redoc_html(req: Request) -> HTMLResponse:\n                root_path = req.scope.get(\"root_path\", \"\").rstrip(\"/\")\n                openapi_url = root_path + self.openapi_url\n                return get_redoc_html(\n                    openapi_url=openapi_url, title=self.title + \" - ReDoc\"\n                )"}

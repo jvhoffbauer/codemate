@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/\", response_class=FileResponse)\nasync def main():\n    return some_file_path"}

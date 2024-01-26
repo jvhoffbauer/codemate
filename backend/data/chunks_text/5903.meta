@@ -1,0 +1,1 @@
+{"original_code": "    def __post_init__(self):\n        if self.call is None and hasattr(self, \"_call\"):\n            self.call = self._call\n        assert self.call is not None, \"call must be set\""}

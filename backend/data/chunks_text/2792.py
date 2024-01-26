@@ -1,0 +1,3 @@
+- Tests if user is not authenticated when making a request with HTTP Bearer authentication and no credentials provided
+- Sends GET request to "/users/me" endpoint without providing any credentials for HTTP Bearer authentication
+- Verifies that server returns a 403 Forbidden status code and detailed error message indicating that user is not authenticated

@@ -1,0 +1,4 @@
+- This test case uses `TestClient` from Flask's testing module to simulate HTTP requests and responses for a specific endpoint (`/send-notification`) of an application called `app`.
+- The script checks whether a file named 'log.txt' exists and deletes it before running the tests (skipped by coverage tool).
+- It sends a POST request to the specified URL with parameters ('foo@example.com','some-query') using `client.post()`, expects a status code of 200 OK, and verifies that the returned JSON contains the expected message ("Message sent").
+- Additionally, it reads the contents of the 'log.txt' file created during the execution of the previous line and ensures that it includes the provided query string ('some-query').

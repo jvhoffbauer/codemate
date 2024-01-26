@@ -1,0 +1,1 @@
+- Defines a GET endpoint for retrieving items with ID `Foo`. - Uses the `operation_id` parameter to assign a specific identifier to this endpoint, which can be used in Swagger UI and other tools for documentation purposes. - Returns an array containing a single item object with an `item_id` property set to `Foo`.

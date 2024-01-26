@@ -1,0 +1,1 @@
+{"original_code": "def test_get(client: TestClient, html: str):\n    response = client.get(\"/\")\n    assert response.text == html"}

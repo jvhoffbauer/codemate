@@ -1,0 +1,3 @@
+- Tests that creating an API object with fine names but no entrypoints raises no errors and returns a valid OpenAPI JSON response.
+- Uses `TestClient` to simulate HTTP requests against the FastAPI application created by `JSONRPC`'s `API`.
+- Verifies that the returned status code is 200 (OK).

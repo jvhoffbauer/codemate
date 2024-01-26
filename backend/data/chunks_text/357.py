@@ -1,0 +1,2 @@
+- Defines a function `get_testing_print_function` that takes a single argument `calls`, which is a list of lists containing serialized objects or nested lists of serialized objects (using Pydantic's `BaseModel`)
+- Returns an inner function called `new_print` that overrides the built-in Python print statement and appends each passed argument to the `calls` list after serializing it using Pydantic's `model_dump()` method, if it's a `BaseModel`. Nested lists are also flattened before being added to the `calls` list.

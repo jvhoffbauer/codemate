@@ -1,0 +1,1 @@
+- Retrieves OpenAPI documentation for a FastAPI application using Pydantic's built-in `get_client()` function. - Verifies that GET requests to `/docs`, `/redoc`, and `/openapi.json` return expected status codes and content. - Confirms that the returned JSON from `/openapi.json` matches the expected structure as defined by the OpenAPI specification version 3.1.0.

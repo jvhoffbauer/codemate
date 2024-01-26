@@ -1,0 +1,3 @@
+- Tests creating items with incorrect Content-Type headers (text/plain, application/geo+json-seq, and application/not-really-json) using Pytest's built-in `TestClient`.
+- Asserts that each request returns a HTTP status code of 422 (Unprocessable Entity), which indicates that the server understands the content type but is unwilling to process it.
+- Verifies that the JSON response body contains an error message indicating that the input is not in the correct format for the specified model attributes. The URL for this error message is also included as part of the error details. This behavior is implemented by Pydantic's `ValidationError`, which raises a custom exception containing detailed information about the validation errors encountered during deserialization.

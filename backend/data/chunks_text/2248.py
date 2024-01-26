@@ -1,0 +1,1 @@
+- Tests endpoint `/with-duplicates-sub` with input data'myitem' using Flask's built-in testing client (client) and asserts that it returns a status code of 200 and expected JSON output containing both single item and list of duplicated items.

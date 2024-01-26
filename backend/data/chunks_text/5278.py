@@ -1,0 +1,2 @@
+- This method is called when an instance of this class is used as a function (i.e., `my_algorithm(img)`)
+- It takes in an image represented as a PIL ImageData object and returns another modified ImageData object after applying the algorithm defined within the method body

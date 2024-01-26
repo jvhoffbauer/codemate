@@ -1,0 +1,1 @@
+{"original_code": "def test_double_invalid():\n    with pytest.raises(ResponseValidationError):\n        client.get(\"/items/innerinvalid\")"}

@@ -1,0 +1,3 @@
+- Tests if excluding an unset field in a JSON object works correctly by making a GET request to `/items/valid-exclude-unset`.
+- Verifies that the expected data is returned as a dictionary with keys 'aliased_name' and 'price'.
+- Raises an exception (4xx or 5xx) if the server returns an error status instead of 200 OK.

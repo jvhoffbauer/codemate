@@ -1,0 +1,3 @@
+- Starts a global scheduler with name "start_scheduler" under the group worker command in Celery.
+- This scheduler is executed using the `celery beat` command, which runs periodically to perform scheduled tasks defined by Celery's Beat Scheduler.
+- The purpose of this scheduler is likely to automate repetitive or time-bound tasks that need to be performed at specific intervals.

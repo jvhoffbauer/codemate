@@ -1,0 +1,1 @@
+- This method `owned_by()` takes a parameter `user`, which is an instance of the `User` class. - The method returns True if the owner attribute of the current object (i.e., the object on which this method is called) matches the given user, False otherwise.

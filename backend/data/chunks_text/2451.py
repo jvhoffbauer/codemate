@@ -1,0 +1,3 @@
+- Tests that calling `client.get("/sync_raise")` raises a `SyncDependencyError`.
+- Asserts that the value of `state['/sync_raise']` is 'generator raise finalized'.
+- Checks if '/sync_raise' exists in the `errors` dictionary and clears it afterwards.

@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in a query parameter (`q`) with a minimum length of 3 characters.
+- If `q` is not empty, updates the response dictionary with a new key containing its value.

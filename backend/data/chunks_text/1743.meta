@@ -1,0 +1,1 @@
+{"original_code": "def process_item(item: int | str):\n    print(item)"}

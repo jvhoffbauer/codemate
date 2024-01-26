@@ -1,0 +1,1 @@
+{"original_code": "def test_required_nonable_body_embed_no_content():\n    response = client.post(\"/body-embed\")\n    assert response.status_code == 422"}

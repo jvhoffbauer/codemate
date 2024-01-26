@@ -1,0 +1,6 @@
+- Defines a function `put_invalid_user` with two positional arguments and one keyword argument.
+- The first argument is named `user_id`, of type string.
+- The second argument is optional (default value provided), named `name`, and its type is inferred from the `Body()` decorator.
+- A dictionary called `db` is passed as an argument using the `Depends()` decorator to retrieve it from the `get_database()` function.
+- Inside the function body, the key `user_id` is added to the `db` dictionary with the value of the `name` parameter or the default value if not specified.
+- Finally, a custom exception `HTTPException` is raised with status code 400 and a message "Invalid user".

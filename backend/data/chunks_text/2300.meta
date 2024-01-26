@@ -1,0 +1,1 @@
+{"original_code": "def test_route_converters_query():\n    # Test query conversion\n    response = client.get(\"/query\", params={\"param\": \"Qu\u00e9 tal!\"})\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"query\": \"Qu\u00e9 tal!\"}"}

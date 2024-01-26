@@ -1,0 +1,3 @@
+- Returns a dictionary containing the permission fields for listing resources in this viewset.
+- Calls `get_permission_fields()` with "list" as the action to retrieve the appropriate set of permissions.
+- Used by Django Rest Framework's permission classes to determine which permissions are required for accessing the resource list.

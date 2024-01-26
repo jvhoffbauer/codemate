@@ -1,0 +1,1 @@
+{"original_code": "@app.websocket_route(\"/\")\nasync def index(websocket: WebSocket):\n    await websocket.accept()\n    await websocket.send_text(\"Hello, world!\")\n    await websocket.close()"}

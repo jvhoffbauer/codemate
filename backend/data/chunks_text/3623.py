@@ -1,0 +1,2 @@
+- Registers a startup event for the `sub_router`.
+- Sets a global variable (`state`) to indicate that the `sub_router` has started up successfully.

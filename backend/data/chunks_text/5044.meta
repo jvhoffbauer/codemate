@@ -1,0 +1,1 @@
+{"original_code": "async def index(request: Request):\n    return templates.TemplateResponse(\n        \"/whiteboard/index.html\", {\"request\": request, \"id\": 1}\n    )"}

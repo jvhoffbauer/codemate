@@ -1,0 +1,3 @@
+- Defines a GET route for `/no_response_model-annotation_json_response_class`.
+- Returns an instance of `JSONResponse`, which is annotated with its content as a dictionary containing a key-value pair `{"foo": "bar"}`.
+- The response format will be in JSON, and FastAPI's default serialization logic will handle converting Python objects to JSON automatically.

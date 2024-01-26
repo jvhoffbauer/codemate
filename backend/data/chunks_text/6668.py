@@ -1,0 +1,5 @@
+- Defines a fixture `ep` that takes an argument `ep_path`, which is assumed to be the path of an entrypoint file in a package.
+- Creates an instance of `Entrypoint` class with the given `ep_path`.
+- Sets up a dependency for this entrypoint using the `dependencies` parameter and passing it the `auth_user` fixture as a function decorator (i.e., `Depends(auth_user)`).
+- Registers a method called `probe` on the created `Entrypoint` object using the `method` attribute. This method returns a string value `'ok'`.
+- Returns the newly created `Entrypoint` object.

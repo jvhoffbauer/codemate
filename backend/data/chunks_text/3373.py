@@ -1,0 +1,3 @@
+- Tests if a GET request to `"/path/bool/True"` returns a JSON value of true with status code 200
+- Uses Flask's built-in testing client (client) to simulate HTTP requests and responses
+- Asserts that the expected status code and JSON value are returned by comparing them using Python's assert statement

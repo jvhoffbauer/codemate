@@ -1,0 +1,3 @@
+- Tests if a required query parameter can be set to None (in this case, it's not possible since we are passing 'foo')
+- Makes an HTTP GET request with a query string containing 'q=foo' and asserts that the server returns a status code of 200 OK
+- Asserts that the JSON response body is equal to 'foo'

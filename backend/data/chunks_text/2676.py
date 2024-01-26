@@ -1,0 +1,2 @@
+- Defines a function named `no_response_model_annotation_return_same_model` that returns an instance of the `User` model with specific values for its attributes (`name` and `surname`)
+- The function's return type is explicitly specified as `User`, indicating to the caller what kind of object will be returned by this function

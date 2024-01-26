@@ -1,0 +1,3 @@
+- Fetches data for a specific category (adhering to a naming convention) by making an HTTP GET request to a JHU API endpoint and parsing the resulting CSV file.
+- Checks local and remote caches before fetching new data to improve performance and reduce server load.
+- Returns a dictionary containing the fetched data, including location histories, totals, and metadata about the source of the information.

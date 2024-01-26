@@ -1,0 +1,3 @@
+- Sends a GET request to `http://localhost:5000/models/lenet` using Flask's built-in `client` object.
+- Asserts that the status code of the response is 200 (OK).
+- Parses the JSON response and asserts that it contains expected keys with specific values.

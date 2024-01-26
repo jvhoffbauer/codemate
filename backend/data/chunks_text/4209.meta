@@ -1,0 +1,1 @@
+{"original_code": "def test_get(tmp_path: Path):\n    file_path: Path = tmp_path / \"large-video-file.mp4\"\n    tutorial009b.some_file_path = str(file_path)\n    test_content = b\"Fake video bytes\"\n    file_path.write_bytes(test_content)\n    response = client.get(\"/\")\n    assert response.content == test_content"}

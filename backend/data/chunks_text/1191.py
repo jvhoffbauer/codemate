@@ -1,0 +1,5 @@
+- Defines a function `create_user` that takes an argument of type `schemas.UserCreate`.
+- Generates a fake hashed password by concatenating the original password with a string ("notreallyhashed").
+- Creates a new instance of the `models.User` class and sets its email property to the value in the input parameter's `email` field. Sets its `hashed_password` property to the generated fake hash.
+- Saves the newly created user object into the database using the `db_user.save()` method.
+- Returns the saved user object for further processing or use elsewhere in the application.

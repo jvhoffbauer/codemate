@@ -1,0 +1,5 @@
+- Retrieves the current page using `super().get_page()`.
+- Fetches a list of child pages for this page from the database (using `self.get_page_schema_children()`).
+- Creates a new instance of `PageSchema`, passing in the list of child pages and the current page's `tabsMode` property. This object represents the layout and behavior of the page's tabbed interface.
+- Converts the `PageSchema` into a string representation that can be used as the body content of the HTML page (using `as_page_body()`).
+- Sets the resulting string as the value of the `body` attribute on the `Page` object returned by `super().get_page()`.

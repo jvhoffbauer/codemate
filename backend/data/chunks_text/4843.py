@@ -1,0 +1,3 @@
+- Retrieves an item with a specific ID from a database using FastAPI's dependency injection system to pass in the user making the request for authorization purposes.
+- If the item is not found or the user attempting to access it doesn't have sufficient privileges, raises an appropriate error response.
+- Returns the retrieved item object.

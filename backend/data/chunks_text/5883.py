@@ -1,0 +1,3 @@
+- Decorates a method with `@cached_property`.
+- Caches the result of calling `get_permission_fields()` with "update" as an argument and returns it when this method is called again in future requests.
+- Updates permission fields for the current object based on the cached value returned by `get_permission_fields()`.

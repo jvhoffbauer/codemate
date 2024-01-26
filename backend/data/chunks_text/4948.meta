@@ -1,0 +1,1 @@
+{"original_code": "def test_celery_asyncio_io_bound():\n    async_to_sync(task_io_bound)()"}

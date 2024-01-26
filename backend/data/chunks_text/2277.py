@@ -1,0 +1,1 @@
+- Returns a list of `Item` objects with optional fields excluded from JSON serialization if they are unset (i.e., have default values). - Uses the `response_model_exclude_unset` parameter to exclude unset fields in the returned model's JSON representation. - Demonstrates how to define an `Item` class that can be used as a response model for this endpoint.

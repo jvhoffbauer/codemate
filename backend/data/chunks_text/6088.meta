@@ -1,0 +1,1 @@
+{"original_code": "def prepare_database(models) -> Generator[None, None, None]:\n    models.Base.metadata.create_all(db.engine)\n    yield\n    models.Base.metadata.drop_all(db.engine)"}

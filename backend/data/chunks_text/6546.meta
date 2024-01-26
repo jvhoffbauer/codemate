@@ -1,0 +1,1 @@
+{"original_code": "    def convert_error() -> int:\n        raise MyErrorToConvert()"}

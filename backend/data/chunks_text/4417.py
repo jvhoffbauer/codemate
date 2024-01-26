@@ -1,0 +1,3 @@
+- This function tests the `GET /users/` endpoint using Flask's built-in testing client (client).
+- It asserts that the status code of the response is 200 and saves its text for debugging purposes.
+- The JSON content of the response is compared to a list containing the expected user names ("Rick" and "Morty").

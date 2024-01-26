@@ -1,0 +1,1 @@
+- Initializes a new instance of the class with an optional `user`, `prefix`, and other arguments passed to its parent constructor (`super()`) using Python's variable argument syntax (*args, **kwargs). - Sets the values of `user` and `prefix` attributes for future use within the object.

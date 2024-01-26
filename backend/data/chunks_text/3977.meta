@@ -1,0 +1,1 @@
+{"original_code": "def test_get_enums_resnet():\n    response = client.get(\"/models/resnet\")\n    assert response.status_code == 200\n    assert response.json() == {\"model_name\": \"resnet\", \"message\": \"Have some residuals\"}"}

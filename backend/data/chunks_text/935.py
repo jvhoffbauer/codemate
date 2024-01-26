@@ -1,0 +1,5 @@
+- Defines a `ModelField` dataclass with fields for storing information about a model's attributes and their validation/serialization behavior.
+- Provides properties for accessing various aspects of the attribute metadata, such as the alias, whether it's required, its default value, etc.
+- Initializes an adapter object for converting between Python types and JSON schema types using Pydantic's `TypeAdapter`.
+- Implements methods for validating input data against the attribute constraints and serializing/deserializing them in different modes (JSON vs. Python).
+- Overrides the hash method to make each instance unique based on its identity, allowing us to use it as keys in dictionaries later.

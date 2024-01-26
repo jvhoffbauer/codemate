@@ -1,0 +1,3 @@
+- Tests GET request for all locations data using V1 API endpoint (/all).
+- Mocks datetime module to set a specific date and time, which is used in JHU's location service to generate JSON output.
+- Compares actual JSON response from server against expected JSON output read from file.

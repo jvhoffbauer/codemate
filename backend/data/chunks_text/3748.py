@@ -1,0 +1,3 @@
+- Creates a new item with title 'Foo' and description 'Something that fights' using POST request to /users/1/items/ endpoint
+- Verifies successful creation by checking status code, JSON data of created item, and presence of ID and owner_ID fields
+- Retrieves the newly created item from the list of items belonging to the user (/users/1 GET request), verifying its correctness based on the original input values

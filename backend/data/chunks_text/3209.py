@@ -1,0 +1,3 @@
+- Defines an asynchronous function named `a()`.
+- The body of the function is empty, indicating that it doesn't perform any operations and returns immediately.
+- Since Python 3.5, async functions are supported by the language, allowing for non-blocking I/O and concurrent programming using coroutines.

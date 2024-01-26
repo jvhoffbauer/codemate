@@ -1,0 +1,1 @@
+{"original_code": "    def op(self, url: str, json=None, **kwargs) -> Response:\n        res = super().post(url, None, json, **kwargs).json()\n        if \"item\" in res:\n            return res[\"item\"]\n        return res"}

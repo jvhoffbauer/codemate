@@ -1,0 +1,5 @@
+- Defines a property called `route_list` that returns a callable function named `route`. This function is used to define an API endpoint for listing items in the database.
+- The `route` function takes several arguments including a request object, a Select statement representing the query to execute, and dependencies such as a pagination object and filter options.
+- It checks permissions before executing the query and applies any necessary filters or ordering based on user input.
+- If total item count should be shown, it calculates this using a subquery and returns it along with the list of results.
+- Finally, it calls custom functions defined by the developer to perform additional processing after the query has been executed and returns the resulting JSON response.

@@ -1,0 +1,3 @@
+- Endpoint for creating a new STAC item using FastAPI router decorator
+- Accepts various query parameters such as source file path, datetime, extensions, collection information, additional properties, etc.
+- Returns a dictionary representation of the created STAC item after processing through the `create_stac_item` function

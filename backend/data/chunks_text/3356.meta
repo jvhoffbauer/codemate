@@ -1,0 +1,1 @@
+{"original_code": "        def post_endpoint(input: test_type):\n            return input"}

@@ -1,0 +1,1 @@
+{"original_code": "    async def connect(self, websocket: WebSocket):\n        await websocket.accept()\n        self.active_connections.append(websocket)"}

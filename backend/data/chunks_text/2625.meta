@@ -1,0 +1,1 @@
+{"original_code": "def get_c():\n    return {\"msg\": \"C\"}"}

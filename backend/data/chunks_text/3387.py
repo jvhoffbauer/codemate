@@ -1,0 +1,2 @@
+- Tests that a GET request to `/path/param-min_maxlength/foobar` returns a 422 status code and an error message indicating that the path parameter 'item_id' is too long (has more than 3 characters)
+- Uses Pytest-mock to simulate HTTP requests using Flask's built-in testing client, and asserts that the expected error message is returned in JSON format

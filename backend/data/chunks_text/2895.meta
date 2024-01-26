@@ -1,0 +1,1 @@
+{"original_code": "def test_query_params_str_validations_q_fixedquery():\n    client = get_client()\n    response = client.get(\"/items/\", params={\"q\": \"fixedquery\"})\n    assert response.status_code == 200\n    assert response.json() == \"Hello fixedquery\""}

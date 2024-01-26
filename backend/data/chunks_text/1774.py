@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_item` that takes two arguments: `item_id`, a required string, and `img`, an optional boolean or `None`.
+- If `img` is true (or not `None`), returns a file response with the image at path 'image.png' and sets its MIME type to 'image/png'.
+- Otherwise, returns a dictionary containing keys 'id' and 'value', with values 'foo' and 'there goes my hero', respectively.

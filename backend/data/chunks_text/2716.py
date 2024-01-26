@@ -1,0 +1,1 @@
+- Defines a function `no_response_model_annotation_list_of_model` that returns a list of `DBUser` objects without specifying any response annotations or decorators. - The returned list contains two instances of `DBUser`, each with name, surname, and password hash attributes set to string values.

@@ -1,0 +1,3 @@
+- Defines an endpoint `/a` using FastAPI's decorator syntax and sets its HTTP method to GET.
+- Specifies that the response format should follow JSON API conventions by passing in `response_class`.
+- Includes a custom error model for handling server errors with status code 500 through the `responses` dictionary.

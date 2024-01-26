@@ -1,0 +1,4 @@
+- Tests the `PathParamMinMaxLengthF` class for a path parameter with minimum and maximum length constraints, using FastAPI's built-in error handling to validate input values.
+- Makes an HTTP GET request to the endpoint `"/path/param-min_maxlength/f"` which violates both minimum and maximum length constraints (the item ID is too short).
+- Asserts that the server returns a status code of 422 (Unprocessable Entity) indicating invalid input data.
+- Verifies that the JSON response contains an error message detailing the specific validation errors encountered by Pydantic during deserialization. The error messages are provided in two formats - one from pydantic itself and another from fastapi's own error handler.

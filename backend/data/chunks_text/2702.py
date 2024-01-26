@@ -1,0 +1,1 @@
+- Defines a function named `response_model_model1_annotation_model2_return_exact_dict` that returns an instance of the `Item` class with exact dictionary representation. - The returned object has two keys, 'name' and'surname', both set to string values ('John' and 'Doe').

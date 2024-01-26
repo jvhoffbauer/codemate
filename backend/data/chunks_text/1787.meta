@@ -1,0 +1,1 @@
+{"original_code": "def test_app():\n    response = client.get(\"/info\")\n    data = response.json()\n    assert data == {\n        \"app_name\": \"Awesome API\",\n        \"admin_email\": \"testing_admin@example.com\",\n        \"items_per_user\": 50,\n    }"}

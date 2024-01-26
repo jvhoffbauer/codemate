@@ -1,0 +1,1 @@
+- Defines a function called `read_users()` that returns a list containing two strings ("Rick" and "Morty") when it is invoked (called).

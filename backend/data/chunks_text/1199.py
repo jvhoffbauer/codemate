@@ -1,0 +1,3 @@
+- Defines a function `custom_openapi()` that returns the FastAPI application's OpenAPI schema (if it exists) or creates and sets it using `get_openapi()`.
+- Customizes the generated OpenAPI schema by passing additional arguments to `get_openapi()`, such as a custom title, version, summary, and description.
+- Adds an X-LOGO property to the info dictionary in the OpenAPI schema, which contains a URL for a logo image to be displayed alongside the API documentation.

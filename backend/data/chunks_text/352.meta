@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture()\ndef clear_sqlmodel():\n    # Clear the tables in the metadata for the default base model\n    SQLModel.metadata.clear()\n    # Clear the Models associated with the registry, to avoid warnings\n    default_registry.dispose()\n    yield\n    SQLModel.metadata.clear()\n    default_registry.dispose()"}

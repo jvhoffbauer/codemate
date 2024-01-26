@@ -1,0 +1,3 @@
+- This method is a private helper function called `_create_schema_read`.
+- It returns an optional type hint for `SchemaReadT`, which represents how to read data from a schema in this context.
+- If no specific implementation of `SchemaReadT` is needed, it simply returns `None`.

@@ -1,0 +1,1 @@
+- Defines an asynchronous function `create_item` that takes in two arguments: `item_id` (an integer) and `item` (an instance of the `Item` class). - The function returns a dictionary with two keys: 'item_id' (equal to the input argument `item_id`) and all other key-value pairs from the `item` object converted into a dictionary using the `dict()` method.

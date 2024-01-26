@@ -1,0 +1,2 @@
+- Defines a custom exception handler for `pydantic.error_wrappers.ValidationError`.
+- Returns a JSON response with an error message and HTTP status code 422 (Unprocessable Entity).

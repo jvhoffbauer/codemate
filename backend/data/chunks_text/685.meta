@@ -1,0 +1,1 @@
+{"original_code": "@shared_task\ndef task1():\n    logger.info(\"test1\")\n    task2.delay()"}

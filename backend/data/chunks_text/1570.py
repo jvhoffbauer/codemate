@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that takes a query parameter (optional) with default value and minimum length of 3 characters. - Uses Pydantic's `Query` class to parse and validate the query string. - Returns a dictionary containing a list of items, along with an optional 'q' key for filtering based on user input.

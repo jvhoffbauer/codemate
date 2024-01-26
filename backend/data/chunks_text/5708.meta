@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: \"AdminApp\"):\n        self.app = app\n        assert self.app, \"app is None\""}

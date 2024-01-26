@@ -1,0 +1,3 @@
+- Defines a middleware function for FastAPI using `@app.middleware()`.
+- Takes in two arguments - `request` and `call_next`, which is used to invoke the next middleware or endpoint handler.
+- Sets a new header named 'custom' with value 'foo' on the response object returned by invoking the next middleware/endpoint handler.

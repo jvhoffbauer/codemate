@@ -1,0 +1,3 @@
+- Overrides `get_page()` method of parent class (`Admin`) to customize behavior for specific view (`FormAdmin`)
+- Retrieves current page object using `super().get_page()` and stores it in a variable called `page`
+- Uses asynchronous function `await self.get_form(request)` to retrieve HTML form content based on request data, then assigns this value to the `body` attribute of the `Page` object stored in `page`. This allows us to dynamically generate the body content of the page at runtime instead of hardcoding it into the template.

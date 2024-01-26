@@ -1,0 +1,2 @@
+- Defines a function `read_main()` that takes in a `Request` object as an argument (request)
+- Returns a dictionary with two keys,'message' and 'root_path'. The value for'message' is set to 'Hello World', while the value for 'root_path' is obtained from the `Request` scope using the `get()` method.

@@ -1,0 +1,1 @@
+- This endpoint raises a `HTTPException` with status code 204 (No Content) and detailed message "I should just disappear!" to indicate that there is no content returned in response to the request. - The use of `raise` statement throws an exception immediately, causing FastAPI to return the specified error response instead of executing any further statements in the function body.

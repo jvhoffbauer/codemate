@@ -1,0 +1,6 @@
+- Imports `tutorial001` module from `docs_src/tutorial/relationship_attributes` and assigns it to a variable called `mod`.
+- Sets SQLAlchemy's connection URL for testing purposes using `sqlite://`.
+- Creates an engine instance using the set URL.
+- Patches the built-in print function to capture its output in a list of strings called `calls`.
+- Calls the main method of the imported module within the context manager provided by `patch`, passing the captured print function as a replacement for the original one.
+- Asserts that the list of string outputs matches some predefined values stored in another variable named `expected_calls`.

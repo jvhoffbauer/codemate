@@ -1,0 +1,3 @@
+- Defines a `User` model with a `created_at` field of type `datetime`.
+- Uses the `amis_parser` to generate different UI components for the same `Field` object based on its usage context (form item, filter, or table column).
+- Verifies that each generated component has the expected properties and behavior.

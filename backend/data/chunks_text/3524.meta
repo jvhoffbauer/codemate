@@ -1,0 +1,1 @@
+{"original_code": "def test_invalid_dict():\n    with pytest.raises(AssertionError):\n        app = FastAPI()\n\n        class Item(BaseModel):\n            title: str\n\n        @app.get(\"/items/{id}\")\n        def read_items(id: Dict[str, Item]):\n            pass  # pragma: no cover"}

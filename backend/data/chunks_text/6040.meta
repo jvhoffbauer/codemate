@@ -1,0 +1,1 @@
+{"original_code": "    @site.register_admin\n    class UserAdmin(admin.ModelAdmin):\n        model = models.User\n        list_display = [models.User.id, models.User.username]"}

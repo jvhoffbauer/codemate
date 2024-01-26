@@ -1,0 +1,1 @@
+- Tests that accessing `/items/foo` with no query parameter 'needy' returns a HTTP status code of 422 (Unprocessable Entity) and an error message indicating that the 'needy' field is required. - The expected error message is returned in either the new or old format depending on whether Pydantic version 1 is being used.

@@ -1,0 +1,1 @@
+{"original_code": "def decode_jwt(token):\n    try:\n        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[ALGORITHM])\n        return payload\n    except jwt.JWTError:\n        raise ApiException(\n            status_code=403,\n            message=\"Could not validate credentials\",\n        )"}

@@ -1,0 +1,5 @@
+- Defines a function `update_heroes` that uses a SQLAlchemy session to interact with a database containing Hero objects.
+- Queries for two specific heroes using a SELECT statement and filters based on their names.
+- Retrieves each hero from the query result set, prints its details, and then updates some of its attributes.
+- Adds both updated heroes back into the session, commits the changes, and refreshes them in memory.
+- Prints the final states of both heroes after updating and committing the changes.

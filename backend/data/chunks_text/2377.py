@@ -1,0 +1,1 @@
+- Defines a GET request for `/override5`, tagged with `"path5a"` and `"path5b"`, with customized HTTP status codes (405 and 505) and deprecation warning using FastAPI's built-in decorators. - Uses dependency injection to pass in a value from `dep5`. - Returns the passed-in string as the response body wrapped inside a customized `ResponseLevel5` class.

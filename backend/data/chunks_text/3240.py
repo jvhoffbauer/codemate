@@ -1,0 +1,1 @@
+- Defines a function `by_alias_model()` that returns an instance of `Model` with an alias set to "Foo". - This can be useful in situations where multiple models share similar attributes but have different names, allowing for easier access and manipulation of specific data sets without having to specify the full model name every time.

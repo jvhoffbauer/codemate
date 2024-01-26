@@ -1,0 +1,5 @@
+- Generates an OpenAPI schema for a FastAPI application using `client.get("/openapi.json")`.
+- Asserts that the status code is 200 and checks the JSON content of the response against expected values.
+- Defines the structure of endpoints (e.g., paths) with their request methods (e.g., GET, POST), responses, summary, operation ID, and request body schema.
+- Includes definitions for data types used in requests or responses (e.g., Item).
+- Uses Pydantic's validation error handling to define custom error messages and structures.

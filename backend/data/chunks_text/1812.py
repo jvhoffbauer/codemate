@@ -1,0 +1,4 @@
+- This function is a PUT request handler for updating an existing item with ID `item_id`.
+- It takes two arguments: `item_id`, which is required and passed as a path parameter, and `item`, which is also required and contains the updated data to be saved in the database.
+- The function returns a dictionary called `result` that includes both the original `item_id` and any new key-value pairs from the `Item` object's `dict()` method.
+- If the optional query string parameter `q` is provided, it will be added to the `result` dictionary under the key "q".

@@ -1,0 +1,1 @@
+{"original_code": "def main_route(callback_url: HttpUrl):\n    pass  # pragma: no cover"}

@@ -1,0 +1,1 @@
+{"original_code": "def lang_callback(lang: Optional[str]) -> Union[str, None]:\n    if lang is None:\n        return None\n    if not lang.isalpha() or len(lang) != 2:\n        typer.echo(\"Use a 2 letter language code, like: es\")\n        raise typer.Abort()\n    lang = lang.lower()\n    return lang"}

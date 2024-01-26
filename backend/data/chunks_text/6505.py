@@ -1,0 +1,3 @@
+- Defines a new entry point with specific tags using `jsonrpc.Entrypoint`.
+- Registers methods under this entry point and specifies additional tags for some of them.
+- Generates OpenAPI documentation that includes the specified tags in the paths section.

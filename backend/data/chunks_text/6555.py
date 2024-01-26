@@ -1,0 +1,2 @@
+- Defines a method named `probe` using Pytest-Epypi's decorator `@ep.method()`.
+- Returns a string value 'qwe'.

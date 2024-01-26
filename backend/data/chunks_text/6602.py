@@ -1,0 +1,3 @@
+- Tests that sending a JSON RPC request with an invalid version (3.0 instead of 2.0) results in a validation error response from the server.
+- The expected error message and details are checked against the actual response received from the server.
+- The `echo()` function is not called during this test case as it is not relevant to testing the JSON RPC validation error handling logic.

@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1.0 schema for a FastAPI application using `pytest` and `TestClient`.
+- Verifies that the API returns a successful status code (200) when requesting the schema at `/openapi.json`.
+- Asserts that the generated JSON schema contains expected elements such as version information, path definitions, component schemas, and response details.

@@ -1,0 +1,3 @@
+- This method checks if a user has permission to update an item using FastAPI's built-in `has_page_permission()`.
+- It takes four arguments: `request`, which is the incoming HTTP request; `item_id`, which is a list of IDs for the items being updated; `data`, which is the new data for the items; and optional keyword arguments (not used in this implementation).
+- The method returns a boolean value indicating whether the user has permission or not. If true, the update will proceed; otherwise, an error will be raised.

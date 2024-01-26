@@ -1,0 +1,3 @@
+- Tests the `MosaicTilerFactory` class with strict zoom mode enabled using a mock environment variable and creates an instance of it.
+- Registers the router created by this instance to a FastAPI application, which is then tested using a `TestClient`.
+- Verifies that tiles are served successfully for valid zoom levels (level 7), while returning HTTP status code 400 and error message for invalid zoom levels (levels 6 and 11).

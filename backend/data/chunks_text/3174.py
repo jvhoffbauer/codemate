@@ -1,0 +1,1 @@
+- Defines a dataclass named `Item` with two attributes, `name` (a string) and `count` (an integer). - The `dataclass` decorator is used to automatically generate some useful methods for working with this class, such as `__init__`, `__repr__`, and `__eq__`. - This approach can simplify writing boilerplate code when defining classes that have simple data structures.

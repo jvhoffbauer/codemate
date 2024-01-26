@@ -1,0 +1,1 @@
+- Defines a function `get_not_decorated` that takes an argument `item_id` of type string and returns a dictionary with a key 'item_id' equal to the input value.

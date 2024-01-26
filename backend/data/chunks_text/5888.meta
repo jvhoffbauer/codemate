@@ -1,0 +1,1 @@
+{"original_code": "    def filter_permission_fields(self) -> Dict[str, str]:\n        \"\"\"\u8fc7\u6ee4\u7b5b\u9009\u6743\u9650\u5b57\u6bb5\"\"\"\n        return self.get_permission_fields(\"filter\")"}

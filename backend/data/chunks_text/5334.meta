@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/third\")\n    def _assets_bidx(params=Depends(dependencies.AssetsBidxParams)):\n        \"\"\"return params.\"\"\"\n        return params"}

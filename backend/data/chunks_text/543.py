@@ -1,0 +1,5 @@
+- Imports `tutorial002` module from `docs_src/tutorial/relationship_attributes/back_populates` and assigns it to a variable named `mod`.
+- Sets SQLAlchemy connection URL for `mod`, creates an engine using that URL, and saves them in `mod`.
+- Creates a mock function called `get_testing_print_function` which captures print statements made during execution of `mod.main()`.
+- Patches builtin `print` function with this mock function.
+- Executes `mod.main()` and checks if the list of captured print statements matches the expected ones.

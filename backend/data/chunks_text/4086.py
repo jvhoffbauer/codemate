@@ -1,0 +1,3 @@
+- Tests if connecting to a websocket without credentials raises `WebSocketDisconnect`.
+- Uses PyTest's built-in `TestClient` for testing web applications.
+- Fails the test if it doesn't raise an exception, which is covered by the `pragma: no cover` directive.

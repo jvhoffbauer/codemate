@@ -1,0 +1,3 @@
+- Defines an asynchronous function `a()`.
+- The function body is empty, so it doesn't perform any action.
+- The decorator `pragma: no cover` tells tools like coverage to ignore this function during testing, since it's not meant to be tested.

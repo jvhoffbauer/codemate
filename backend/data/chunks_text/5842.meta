@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: \"AdminApp\"):\n        super().__init__(app)\n        if self.app.site.fastapi.docs_url:\n            self.register_admin(DocsAdmin)\n        if self.app.site.fastapi.redoc_url:\n            self.register_admin(ReDocsAdmin)"}

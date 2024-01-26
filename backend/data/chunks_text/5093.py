@@ -1,0 +1,1 @@
+- Generates a JSON Web Token (JWT) with a payload of'staff:1' and an expiration time of 30 seconds using the `gen_jwt()` function. - Decodes the JWT using the `decode_jwt()` function to retrieve its payload, which should contain a sub field equal to'staff:1'. - Asserts that the decoded payload matches the expected value for the sub field ('staff:1').

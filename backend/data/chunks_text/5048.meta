@@ -1,0 +1,1 @@
+{"original_code": "@bp.get(\"/test_celery_sync\")\ndef test_celery():\n    celery.send_task(\"test_celery\", args=(\"words????\",))\n    return \"ok\""}

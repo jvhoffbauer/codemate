@@ -1,0 +1,3 @@
+- This function is a FastAPI endpoint with the `POST` method and path `"/uploadfiles/"`.
+- It accepts multiple files using the `File` parameter decorator, which returns a list of `UploadFile` objects representing each uploaded file.
+- The returned dictionary contains the filenames of all uploaded files.

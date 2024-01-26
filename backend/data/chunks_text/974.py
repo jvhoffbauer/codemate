@@ -1,0 +1,2 @@
+- Retrieves the configuration dictionary of a given `BaseModel` instance using its private attribute `__config__`.
+- The use of `type: ignore[attr-defined]` is to suppress an error that occurs due to Pydantic's internal implementation, which defines this attribute dynamically at runtime instead of during class definition.

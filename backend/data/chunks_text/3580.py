@@ -1,0 +1,4 @@
+- Defines a function `examples()` that takes an optional argument `item`.
+- If provided, sets the `examples` and `openapi_examples` attributes of the `Item` object passed as an argument to this function.
+- The `examples` attribute is set with a list containing one dictionary representing an example for the body parameter.
+- The `openapi_examples` attribute is set with two dictionaries representing examples for the body parameter. Each dictionary contains a summary, description, and value (which is itself a dictionary).

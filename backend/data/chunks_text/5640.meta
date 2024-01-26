@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def route_list(self) -> Callable[..., Any]:\n        raise NotImplementedError"}

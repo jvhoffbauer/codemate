@@ -1,0 +1,1 @@
+{"original_code": "def generate_unique_id(route: \"APIRoute\") -> str:\n    operation_id = route.name + route.path_format\n    operation_id = re.sub(r\"\\W\", \"_\", operation_id)\n    assert route.methods\n    operation_id = operation_id + \"_\" + list(route.methods)[0].lower()\n    return operation_id"}

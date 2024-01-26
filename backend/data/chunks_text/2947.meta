@@ -1,0 +1,1 @@
+{"original_code": "async def set_up_request_state_dependency():\n    request_state = {\"user\": \"deadpond\"}\n    contextvar_token = legacy_request_state_context_var.set(request_state)\n    yield request_state\n    legacy_request_state_context_var.reset(contextvar_token)"}

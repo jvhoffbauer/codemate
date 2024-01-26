@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/offers/\")\nasync def create_offer(offer: Offer):\n    return offer"}

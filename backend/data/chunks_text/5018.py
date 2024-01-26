@@ -1,0 +1,3 @@
+- This method is an asynchronous function that takes three arguments `scope`, `receive`, and `send`.
+- It initializes a global variable called `glb` and resets it using the `reset()` method.
+- After initialization, it calls another asynchronous function `app` with the same arguments passed to this method.

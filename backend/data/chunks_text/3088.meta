@@ -1,0 +1,1 @@
+{"original_code": "    def schema_extra(item: Item):\n        return item"}

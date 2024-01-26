@@ -1,0 +1,1 @@
+{"original_code": "async def dependency_a():\n    dep_a = generate_dep_a()\n    try:\n        yield dep_a\n    finally:\n        dep_a.close()"}

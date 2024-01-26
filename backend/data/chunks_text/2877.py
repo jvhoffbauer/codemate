@@ -1,0 +1,4 @@
+- Defines a PUT endpoint for updating an invalid user with ID `user_id`.
+- Accepts two arguments - `user_id` and `name`, where `name` is optional and passed as JSON body using FastAPI's `Body()` parameter decorator.
+- Retrieves the database dictionary (assumed to be a simple key-value store) from the dependency injection system using `Depends()` and passing in `get_database()`.
+- Updates the value of the specified user ID in the database with the new `name` provided by the request body or raises a custom HTTP exception with status code 400 and error message "Invalid user".

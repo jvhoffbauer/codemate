@@ -1,0 +1,1 @@
+{"original_code": "def data_source(source):\n    \"\"\"\n    Retrieves the provided data-source service.\n\n    :returns: The service.\n    :rtype: LocationService\n    \"\"\"\n    return DATA_SOURCES.get(source.lower())"}

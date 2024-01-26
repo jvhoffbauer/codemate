@@ -1,0 +1,3 @@
+- Defines a function named `endpoint` that takes an argument called `_Request`. This is a required parameter for Flask applications to define endpoints.
+- The body of the function immediately deletes this argument, effectively ignoring it and not using its value in any way within the function.
+- This implementation may be used as a placeholder or stub for an actual endpoint definition when prototyping or testing an application's structure without needing to implement specific functionality at that point.

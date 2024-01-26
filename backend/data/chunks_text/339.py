@@ -1,0 +1,5 @@
+- Defines a command named `generate_readme` using Typer's decorator syntax
+- Prints a message to the console indicating that the README is being generated
+- Retrieves the path of the README file and stores it in a variable called `readme_path`
+- Calls a function named `generate_readme_content` to create new content for the README
+- Writes the newly created content to the README file at the specified location using Python's built-in `Path` class

@@ -1,0 +1,3 @@
+- Fetches a list of public APIs from an API endpoint using `asyncio` and `aiohttp`.
+- Uses the `ClientSession` class to create a session for making requests, which is then used in a context manager (`with`) to automatically close it after use.
+- Returns a `PublicAPIsResponse` object containing the parsed JSON data returned by the server.

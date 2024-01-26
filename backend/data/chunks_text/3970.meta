@@ -1,0 +1,1 @@
+{"original_code": "def test_get():\n    response = client.get(\"/\")\n    assert response.json() == {\"message\": \"Not timed\"}\n    assert \"X-Response-Time\" not in response.headers"}

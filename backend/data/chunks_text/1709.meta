@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/{item_id}\")\nasync def read_items(\n    *,\n    item_id: int = Path(title=\"The ID of the item to get\", ge=0, le=1000),\n    q: str,\n    size: float = Query(gt=0, lt=10.5),\n):\n    results = {\"item_id\": item_id}\n    if q:\n        results.update({\"q\": q})\n    return results"}

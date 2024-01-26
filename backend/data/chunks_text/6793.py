@@ -1,0 +1,7 @@
+- Defines a method `update` that takes three arguments: a database session (`db`), an object to be updated from the database (`db_obj`) and either an instance of UpdateSchemaType or a dictionary containing updates (`obj_in`)
+- Converts both `db_obj` and `obj_in` into JSON serializable objects using `jsonable_encoder`
+- If `obj_in` is a dictionary, it's used directly as the update data; otherwise, it's converted to a dictionary with excluded unset fields using `dict(exclude_unset=True)`
+- Loops through all attributes of `obj_data`, which contains the original state of `db_obj`. For each attribute found in `update_data`, its value is copied over to `db_obj` using `setattr`
+- Adds the modified `db_obj` back to the database session and commits changes
+- Refreshes the fetched object to ensure any new relationships are loaded
+- Returns the refreshed object

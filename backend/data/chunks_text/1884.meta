@@ -1,0 +1,1 @@
+{"original_code": "def read_items() -> list[Item]:\n    return [\n        Item(\n            name=\"Portal Gun\",\n            description=\"Device to travel through the multi-rick-verse\",\n        ),\n        Item(name=\"Plumbus\"),\n    ]"}

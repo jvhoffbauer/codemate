@@ -1,0 +1,2 @@
+- Tests if two `Default` objects with equal values are considered equal using Python's built-in equality operator (`==`)
+- Uses a context manager called `Default` to provide default values for variables that may not be initialized yet, in this case "foo" is used as the default value

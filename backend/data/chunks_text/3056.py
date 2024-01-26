@@ -1,0 +1,2 @@
+- Defines a function named `get_b_a()` that returns a string "Hello B A".
+- This function can be called to retrieve the specified message.

@@ -1,0 +1,2 @@
+- Defines a `User` model with three fields, including an email field with a default value and a timestamp field that is automatically set to the current time when creating a new instance of the model.
+- Tests the behavior of the `__fields_set__` attribute by creating instances of the `User` model with different sets of initialized fields and checking whether the corresponding keys are present in the dictionary returned by this attribute (which represents the names of the fields that have been explicitly set).

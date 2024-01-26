@@ -1,0 +1,8 @@
+- Imports `tutorial001_py310` module from the 'docs_src' package and assigns it to a variable named `mod`.
+- Sets the value of `mod.sqlite_url` to a SQLite URL string.
+- Creates an engine using the `create_engine()` function provided by SQLAlchemy, passing in the `mod.sqlite_url` string as its argument.
+- Initializes a list called `calls`, which will be used later for testing purposes.
+- Calls the `get_testing_print_function()` function (which is not defined here), passing in the `calls` list as an argument, and stores the result in a variable called `new_print`. This allows us to capture all print statements made during the execution of the `test_tutorial()` function.
+- Patches the built-in `print()` function, replacing it with our custom implementation `new_print`.
+- Executes the `main()` method of the `mod` object, which presumably contains some database operations that generate output via the `print()` statement.
+- Asserts that the `calls` list now contains the same sequence of strings that would have been printed to the console if we had not patched the `print()` function.

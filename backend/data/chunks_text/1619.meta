@@ -1,0 +1,1 @@
+{"original_code": "async def read_items(commons: CommonsDep):\n    return commons"}

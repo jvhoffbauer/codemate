@@ -1,0 +1,3 @@
+- Applies a pre-trained NLP model using SpaCy's pipeline function to extract named entities from text documents represented as dictionary objects.
+- Takes a list of such dictionary objects representing documents as input and returns a list of responses containing the ID of the corresponding document and a list of extracted entities along with their names, labels, and locations within the text.
+- Uses the KBID feature of SpaCy to identify known entities by their unique identifiers, falling back to the entity text itself when no identifier is available.

@@ -1,0 +1,1 @@
+{"original_code": "def get_url():\n    user = os.getenv(\"POSTGRES_USER\", \"postgres\")\n    password = os.getenv(\"POSTGRES_PASSWORD\", \"\")\n    server = os.getenv(\"POSTGRES_SERVER\", \"db\")\n    db = os.getenv(\"POSTGRES_DB\", \"app\")\n    return f\"postgresql+psycopg://{user}:{password}@{server}/{db}\""}

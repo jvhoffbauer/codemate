@@ -1,0 +1,3 @@
+- Tests whether a regular user's request to delete an authority is intercepted
+- Sends a POST request with necessary parameters and headers containing an ordinary token to the `/del/auth` endpoint
+- Verifies that the expected HTTP status code (200) and error message ("Code: 4003") are returned by the server

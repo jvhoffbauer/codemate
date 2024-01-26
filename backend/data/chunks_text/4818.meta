@@ -1,0 +1,1 @@
+{"original_code": "def get_doc_id(id: str):\n    return f\"{ITEM_DOC_TYPE}::{id}\""}

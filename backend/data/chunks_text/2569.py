@@ -1,0 +1,3 @@
+- Defines a function called `set_indirect_cookie` that takes an optional argument `dep`.
+- The `Depends` decorator is used to pass the result of calling another function (`set_cookie`) as a dependency for this function.
+- This allows us to reuse the logic from `set_cookie` in other functions by passing it as a dependency instead of repeating the same code multiple times.

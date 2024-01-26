@@ -1,0 +1,3 @@
+- Defines an exception handler for `unicornException`, which is a custom exception class created by the developer
+- Returns a JSON response with a specific HTTP status code (418 - I'm a Teapot), message containing details about the error and its cause
+- Helps to provide more contextual information to users when such errors occur in the application

@@ -1,0 +1,3 @@
+- Defines a method `deep_data` using Pydantic's `@pydantic.maintenance.ModelMethodMixin.method()` decorator, which allows for custom validation and conversion logic.
+- Accepts an optional argument `data`, of type list containing objects that conform to the `DataItem` class defined by Pydantic (not shown here). This is passed through as-is via the `Body` function from Pydantic, which automatically converts JSON or form data into Python objects based on their respective schemas.
+- Returns the input `data` without modification. This can be useful in cases where you want to perform additional processing before returning the final result, while still preserving the original structure of the data.

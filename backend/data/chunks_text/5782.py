@@ -1,0 +1,3 @@
+- Registers router functions defined on link models and CRUD views of this admin class
+- Calls `register_crud()` method to register URL patterns for CRUD operations
+- Delegates registration to parent `ModelAdmin` class

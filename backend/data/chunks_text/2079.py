@@ -1,0 +1,3 @@
+- Tests incorrect grant type in login request using `client.post("/login")`.
+- Asserts that a status code of 422 (Unprocessable Entity) is returned.
+- Verifies that an error message containing a string pattern mismatch for the grant_type field is included in the JSON response body.

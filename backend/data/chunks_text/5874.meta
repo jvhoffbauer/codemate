@@ -1,0 +1,1 @@
+{"original_code": "    def delete_item(self, obj: SchemaModelT) -> None:\n        obj.delete_time = datetime.now()"}

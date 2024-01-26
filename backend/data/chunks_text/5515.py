@@ -1,0 +1,3 @@
+- Tests preview endpoints using Flask application and mocked requests and rasterio functions
+- Verifies missing assets or expression returns a 400 status code
+- Confirms successful retrieval of preview image with specified assets, rescale, max size, width, height, and expression parameters

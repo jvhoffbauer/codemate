@@ -1,0 +1,1 @@
+{"original_code": "def test_no_body_status_code_with_detail_exception_handlers():\n    response = client.get(\"/http-no-body-statuscode-with-detail-exception\")\n    assert response.status_code == 204\n    assert not response.content"}

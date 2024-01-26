@@ -1,0 +1,3 @@
+- Establishes a WebSocket connection to the specified endpoint using `client.websocket_connect`.
+- Receives JSON data from the server and stores it in the variable `data`.
+- Asserts that the received JSON data contains expected keys ("item_id" and "path").

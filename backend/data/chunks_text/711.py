@@ -1,0 +1,3 @@
+- This function defines a route with the path `/multiple_headers_same_name`.
+- It returns a `Response` object that has two cookies set, both named `"access_token_cookie"` and `"refresh_token_cookie"` respectively.
+- The status code of the response is set to `204`, indicating no content will be returned in the body.

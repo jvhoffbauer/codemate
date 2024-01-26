@@ -1,0 +1,1 @@
+- Endpoint to retrieve all user information using FastAPI's `Query` parameter for pagination and page size customization. - The `User()` class is called to fetch all users with specified pagination parameters, which are passed as arguments. - A response object is returned containing both the fetched user list and pagination metadata.

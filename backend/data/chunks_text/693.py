@@ -1,0 +1,4 @@
+- Defines an asynchronous function `test_view()`.
+- Logs a debug message to the logger.
+- Uses Celery's delay method to schedule a background task (task1).
+- Waits for the scheduled task to complete within a timeout of 10 seconds using Celery's get method.

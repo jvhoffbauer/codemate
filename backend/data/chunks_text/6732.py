@@ -1,0 +1,1 @@
+- Defines a fixture `capture_events` that uses MonkeyPatch to replace Sentry's transport methods with custom functions that append captured events and envelopes to a list instead of sending them directly to Sentry. - Returns the list of appended events from the fixture.

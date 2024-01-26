@@ -1,0 +1,5 @@
+- Initializes a function `build_all` that builds an MkDocs website for all languages supported by the application.
+- Removes any existing site directory (if present).
+- Retrieves a list of directories containing language configurations using `get_lang_paths`.
+- Limits the number of processes used during building to four times the number of CPU cores available on the system, using Python's built-in `multiprocessing` module.
+- Uses the `Pool` class from `multiprocessing` to map the `build_lang` function over the list of language names obtained earlier.

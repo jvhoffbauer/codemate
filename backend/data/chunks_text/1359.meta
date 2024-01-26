@@ -1,0 +1,1 @@
+{"original_code": "async def read_items(user_agent: Annotated[str | None, Header()] = None):\n    return {\"User-Agent\": user_agent}"}

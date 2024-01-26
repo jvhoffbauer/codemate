@@ -1,0 +1,3 @@
+- Override `common_parameters` dependency with a subclass that adds an additional parameter 'k' to the query string in `test_override_with_sub_router_depends`.
+- Make a GET request to '/router-depends/' with 'q=foo' as the query parameter and expect a status code of 422 (Unprocessable Entity) due to missing 'k'.
+- Verify the error message returned by FastAPI is correct according to Pydantic validation rules for missing parameters.

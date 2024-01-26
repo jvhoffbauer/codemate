@@ -1,0 +1,3 @@
+- This function is a unit test using Pytest and FastAPI's built-in `TestClient`.
+- It tests the endpoint `GET /users/foo` with query parameter `token="jessica"`.
+- The expected behavior is an HTTP status code of 200 and JSON response containing the username 'foo'.

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\n    \"/items/validlist-exclude-unset\",\n    response_model=List[Item],\n    response_model_exclude_unset=True,\n)\ndef get_validlist_exclude_unset():\n    return [\n        Item(aliased_name=\"foo\"),\n        Item(aliased_name=\"bar\", price=1.0),\n        Item(aliased_name=\"baz\", price=2.0, owner_ids=[1, 2, 3]),\n    ]"}

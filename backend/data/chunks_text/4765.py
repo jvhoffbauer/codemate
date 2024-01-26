@@ -1,0 +1,3 @@
+- Defines a class method `lower_username` that takes two arguments - `name` and `values`.
+- Checks whether the last character of the username is 'A' or not using the `endswith()` function. If it's not 'A', raises an error with message "name must end in A".
+- Returns the original value of `name` without any modification otherwise.

@@ -1,0 +1,1 @@
+{"original_code": "    @event.listens_for(models.User, \"before_insert\")\n    def receive_before_insert(mapper, connection, target):\n        \"listen for the 'before_insert' event\"\n        assert isinstance(target, models.User)\n        event_counter.before += 1"}

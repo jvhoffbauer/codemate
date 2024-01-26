@@ -1,0 +1,1 @@
+- Tests if a ResponseValidationError is raised when making a GET request to an endpoint without a response model annotation and returns invalid data (in this case, missing key). - Uses PyTest's `with` statement to capture any exceptions that may be raised during execution of the test. - Asserts that the error message contains the string'missing'.

@@ -1,0 +1,3 @@
+- Defines a function `CustomPathParams` that takes an optional query parameter `directory`.
+- The `description` attribute is used to provide a helpful message when running the command with `--help`.
+- Returns the value of the `directory` argument as a string, which can be used as a dependency in other functions or classes.

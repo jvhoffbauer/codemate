@@ -1,0 +1,7 @@
+- Imports `tutorial003_py310` module from the `docs_src.tutorial.select` package and assigns it to a variable named `mod`.
+- Sets the value of `mod.sqlite_url` to a SQLAlchemy URL for an in-memory SQLite database.
+- Creates a SQLAlchemy engine using `create_engine()` function and sets its value to `mod.engine`.
+- Initializes a list called `calls` which will be used later to verify that certain functions were called during testing.
+- Retrieves the built-in print function, saves it in a temporary variable (`new_print`) and replaces the original one with a mock object created by the `get_testing_print_function()` function. This allows us to capture all printed output during the execution of our tests.
+- Calls the main function of the `tutorial003_py310` module inside a context manager provided by the `patch()` decorator. The `patch()` decorator is used here to replace the standard library's `print()` function with our own implementation so we can easily assert on what was printed during the test run.
+- Verifies that the expected functions were called during the test run by checking if their names appear in the `calls` list after running the test. In this case, we are expecting some SQL queries to be executed against the in-memory SQLite database.

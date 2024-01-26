@@ -1,0 +1,2 @@
+- Defines a function named `trace_item` that takes an argument `item_id` of type string.
+- Returns a JSON response with no content and sets the media type to "message/http". This is commonly used for tracing requests in distributed systems.

@@ -1,0 +1,3 @@
+- Defines a function `simple_exclude()` that returns an instance of `Model2`.
+- The returned `Model2` object has a reference to another `Model1` object with values for 'foo' and 'bar'.
+- The `Model2` object also contains its own value for 'baz'.

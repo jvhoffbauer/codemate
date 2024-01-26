@@ -1,0 +1,3 @@
+- Initializes a new instance of the class with an AdminApp object as argument and performs two assertions to ensure required attributes are not null.
+- Sets the page path for this template based on its name if it's missing, otherwise uses the provided value.
+- Calls the constructor of the parent class (FlaskViewMixin) passing in the same AdminApp object.

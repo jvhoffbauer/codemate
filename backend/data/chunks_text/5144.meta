@@ -1,0 +1,1 @@
+{"original_code": "def exception_handler_factory(status_code: int) -> Callable:\n    \"\"\"\n    Create a FastAPI exception handler from a status code.\n    \"\"\"\n\n    def handler(request: Request, exc: Exception):\n        return JSONResponse(content={\"detail\": str(exc)}, status_code=status_code)\n\n    return handler"}

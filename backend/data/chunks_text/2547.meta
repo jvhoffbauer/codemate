@@ -1,0 +1,1 @@
+{"original_code": "def test_router_ws_depends():\n    client = TestClient(app)\n    with client.websocket_connect(\"/router-ws-depends/\") as websocket:\n        assert websocket.receive_text() == \"Socket Dependency\""}

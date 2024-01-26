@@ -1,0 +1,2 @@
+- Defines a function named `post_with_callback` that takes two arguments of type `Item`, called `item1` and `item2`.
+- Returns a tuple containing both items without any further processing or side effects (indicated by the `pragma: nocover` comment).

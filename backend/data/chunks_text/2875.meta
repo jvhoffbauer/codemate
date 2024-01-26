@@ -1,0 +1,1 @@
+{"original_code": "def test_depends_repr():\n    assert repr(Depends()) == \"Depends(NoneType)\"\n    assert repr(Depends(get_user)) == \"Depends(get_user)\"\n    assert repr(Depends(use_cache=False)) == \"Depends(NoneType, use_cache=False)\"\n    assert (\n        repr(Depends(get_user, use_cache=False)) == \"Depends(get_user, use_cache=False)\"\n    )"}

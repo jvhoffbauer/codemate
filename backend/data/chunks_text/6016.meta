@@ -1,0 +1,1 @@
+{"original_code": "async def test_BaseAdmin(site: AdminSite):\n    @site.register_admin\n    class TmpAdmin(admin.BaseAdmin):\n        pass\n\n    ins = site.get_admin_or_create(TmpAdmin)\n    assert ins.site is site\n    assert ins.unique_id"}

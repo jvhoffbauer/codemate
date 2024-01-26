@@ -1,0 +1,5 @@
+- Defines a function `query_or_cookie_extractor` that takes two arguments `q` and `last_query`.
+- The argument `q` is annotated with `Annotated[str, Depends(query_extractor)]`, which means it's a string parameter that depends on another function called `query_extractor`. This allows us to pass in a dependency (in this case, our `query_extractor`) when we call this function later.
+- The second argument `last_query` is also annotated, but with `Cookie()`. This tells FastAPI that we want to extract a cookie named "last_query" from the request headers. If no such cookie exists, its value will be `None`.
+- Inside the function body, we first check whether `q` is truthy (i.e., not empty or null). If so, we simply return `q`. Otherwise, we fall back to returning `last_query`.
+- By using both query parameters and cookies like this, we can provide users with multiple ways of specifying search terms without having to choose just one method.

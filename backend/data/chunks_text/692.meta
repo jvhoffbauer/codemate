@@ -1,0 +1,1 @@
+{"original_code": "    @default_app.get(\"/celery-test\", status_code=200)\n    async def test_view():\n        logger.debug(\"Test view\")\n        task1.delay().get(timeout=10)"}

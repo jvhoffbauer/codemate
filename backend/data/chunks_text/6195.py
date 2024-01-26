@@ -1,0 +1,3 @@
+- This method is called `country_population()`.
+- It returns the population of the current location based on its country code using a function named `country_population()`, which takes a country code as an argument.
+- The returned value has type `int`.

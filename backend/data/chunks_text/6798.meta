@@ -1,0 +1,1 @@
+{"original_code": "def get_current_active_superuser(current_user: CurrentUser) -> User:\n    if not current_user.is_superuser:\n        raise HTTPException(\n            status_code=400, detail=\"The user doesn't have enough privileges\"\n        )\n    return current_user"}

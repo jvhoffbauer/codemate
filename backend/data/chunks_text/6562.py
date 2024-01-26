@@ -1,0 +1,1 @@
+- Defines a new method `probe` with a custom middleware that raises an HTTP exception (HTTPException(401)) after executing the original function. - Sends a JSON RPC request to the defined endpoint and checks if the response status is 401 and the error message matches the expected one ("Unauthorized").

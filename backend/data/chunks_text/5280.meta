@@ -1,0 +1,1 @@
+{"original_code": "def mock_rasterio_open(asset):\n    \"\"\"Mock rasterio Open.\"\"\"\n    assert asset.startswith(\"https://myurl.com/\")\n    asset = asset.replace(\"https://myurl.com\", DATA_DIR)\n    return rasterio.open(asset)"}

@@ -1,0 +1,3 @@
+- Tests a GET request to the `/items/` endpoint using Flask's built-in testing client (client)
+- Asserts that the status code of the response is 200 and saves it in a variable called'response'
+- Asserts that the JSON response body contains a key 'hello' with value 'world'

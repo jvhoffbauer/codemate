@@ -1,0 +1,1 @@
+{"original_code": "def test_valid_exclude_unset():\n    response = client.get(\"/items/valid-exclude-unset\")\n    response.raise_for_status()\n    assert response.json() == {\"aliased_name\": \"valid\", \"price\": 1.0}"}

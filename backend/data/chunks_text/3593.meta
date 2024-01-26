@@ -1,0 +1,1 @@
+{"original_code": "def simple_include_dict():\n    return {\n        \"ref\": {\n            \"foo\": \"simple_include_dict model foo\",\n            \"bar\": \"simple_include_dict model bar\",\n        },\n        \"baz\": \"simple_include_dict model2 baz\",\n    }"}

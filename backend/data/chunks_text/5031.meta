@@ -1,0 +1,1 @@
+{"original_code": "    async def http_exception_handler(request: Request, exc: HTTPException):\n        return JSONResponse(\n            status_code=exc.status_code,\n            content={\"message\": exc.detail},\n        )"}

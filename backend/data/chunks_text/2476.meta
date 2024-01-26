@@ -1,0 +1,1 @@
+{"original_code": "def test_security_http_base():\n    response = client.get(\"/users/me\", headers={\"Authorization\": \"Other foobar\"})\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"scheme\": \"Other\", \"credentials\": \"foobar\"}"}

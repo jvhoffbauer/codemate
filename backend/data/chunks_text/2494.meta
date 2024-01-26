@@ -1,0 +1,1 @@
+{"original_code": "        @app.get(\"/\", response_model=NonPydanticModel)\n        def read_root():\n            pass  # pragma: nocover"}

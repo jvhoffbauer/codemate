@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_item` that takes a string argument `item_id`. - Returns the value associated with the given `item_id` from a dictionary called `items`, which is assumed to be defined elsewhere in the program.

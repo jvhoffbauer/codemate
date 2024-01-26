@@ -1,0 +1,1 @@
+{"original_code": "def test_users_me_token_jessica(client: TestClient):\n    response = client.get(\"/users/me?token=jessica\")\n    assert response.status_code == 200\n    assert response.json() == {\"username\": \"fakecurrentuser\"}"}

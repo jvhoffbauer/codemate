@@ -1,0 +1,3 @@
+- Creates a new User object with the first user's email and password hash using SQLAlchemy's `AsyncSession`.
+- Checks whether an existing User with that email already exists in the database. If not, adds the new User to the session and commits the changes.
+- Sets the `is_superuser` flag for this special user.

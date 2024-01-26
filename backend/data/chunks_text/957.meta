@@ -1,0 +1,1 @@
+{"original_code": "    def is_scalar_field(field: ModelField) -> bool:\n        from fastapi import params\n\n        return field_annotation_is_scalar(\n            field.field_info.annotation\n        ) and not isinstance(field.field_info, params.Body)"}

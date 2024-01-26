@@ -1,0 +1,3 @@
+- Defines a GET request for an item with ID `item_id`.
+- Returns the requested item (represented by the `Item` model) in the response body.
+- Includes optional image attachment based on the value of parameter `img`, which can be either `True` or `None`. If `img` is `True`, returns a file named 'image.png' as a binary stream instead of the JSON response. The content type is set to 'image/png'.

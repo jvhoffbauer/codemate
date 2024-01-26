@@ -1,0 +1,1 @@
+- Defines an asynchronous function `create_files` that takes a list of bytes (representing binary data) as input, and expects each byte array to be passed using FastAPI's `File()` decorator. - The function returns a dictionary with a single key "file_sizes", which contains the length of each uploaded file represented by its corresponding byte array.

@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, model: Type[ModelType]) -> None:\n        self._model = model"}

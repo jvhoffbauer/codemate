@@ -1,0 +1,4 @@
+- Generates an OpenAPI (Swagger) JSON schema for a FastAPI application using `client.get("/openapi.json")`.
+- Asserts that the status code is 200 and the returned JSON matches the expected structure with specific keys such as 'openapi', 'info', 'paths', 'components'.
+- Describes the GET request to retrieve items ('/items') including its responses (success or validation error), summary, operation ID, parameters, and headers.
+- Defines two schemas in the components section: ValidationError and HTTPValidationError, which are used to describe errors related to data validation and HTTP requests respectively.

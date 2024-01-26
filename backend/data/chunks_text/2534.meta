@@ -1,0 +1,1 @@
+{"original_code": "@router.websocket(\"/depends-err/\")\nasync def router_ws_depends_err(websocket: WebSocket, data=Depends(ws_dependency_err)):\n    pass  # pragma: no cover"}

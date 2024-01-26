@@ -1,0 +1,2 @@
+- Tests the `model_json_schema()` method of Pydantic's inheritance feature with a custom enum subclass in version 2.x (marked by `@needs_pydanticv2`)
+- Verifies that the JSON schema generated for an inherited model includes the base class properties and any additional ones, as well as references to defined enums

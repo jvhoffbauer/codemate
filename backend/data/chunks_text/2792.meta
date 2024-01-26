@@ -1,0 +1,1 @@
+{"original_code": "def test_security_http_bearer_no_credentials():\n    response = client.get(\"/users/me\")\n    assert response.status_code == 403, response.text\n    assert response.json() == {\"detail\": \"Not authenticated\"}"}

@@ -1,0 +1,1 @@
+{"original_code": "    def update_from_kwargs(self, **kwargs):\n        return self.update_from_dict(kwargs)"}

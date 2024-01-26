@@ -1,0 +1,1 @@
+- Defines a method `model_insfields()` that returns a list of SQLAlchemy's `SqlaInsAttr` objects for all instance attributes of the current class (i.e., the model). - Uses the `parser` attribute to filter out any non-instance attributes using SQLAlchemy's `filter_insfield()` function.

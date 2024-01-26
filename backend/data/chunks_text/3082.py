@@ -1,0 +1,3 @@
+- Defines a function `create_person` that takes an argument of type `PersonCreate`.
+- Uses SQLAlchemy's `ModelValidate()` method to validate the input data against the schema defined in the `Person` model.
+- Returns the validated instance as a result, which can be used for further operations or stored directly into the database using ORM.

@@ -1,0 +1,3 @@
+- Defines a base class `Base` with an attribute `__name__`.
+- Uses SQLAlchemy's declarative mixin to automatically generate table names based on class names using the `humps` library.
+- Provides a method `dict` that returns a dictionary representation of the object by iterating over its attributes and column definitions from the mapper.

@@ -1,0 +1,4 @@
+- Imports and sets up necessary modules for testing SQLModel's automatic ID generation feature in Python 3.10 (Python version specified by `@needs_py310`)
+- Creates a SQLAlchemy engine using an SQLite database URL, which is passed to the module being tested (`mod`)
+- Patches the built-in print function to capture its output during execution of the module's main method
+- Calls the module's main method while passing the patched print function, and checks that expected methods were called using the `check_calls` function provided by Pytest

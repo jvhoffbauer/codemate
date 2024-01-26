@@ -1,0 +1,1 @@
+{"original_code": "    async def test_view() -> dict:\n        logger.debug(\"Test view\")\n        return {\"test\": \"test\"}"}

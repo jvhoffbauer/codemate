@@ -1,0 +1,4 @@
+- Retrieves AMIS configuration from a Pydantic model field's `extra` dictionary using the specified `name`.
+- If the `extra` value is a function, calls it and returns its result instead.
+- Deep copies any non-AMISNode or string values to ensure they are not mutated in place.
+- Converts strings into AMIS nodes with type "input" by default.

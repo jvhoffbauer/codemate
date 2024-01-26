@@ -1,0 +1,2 @@
+- Imports `app` variable from a specific location in the project using a context manager to handle deprecation warnings.
+- Yields the imported `app` object for further use within the test suite.

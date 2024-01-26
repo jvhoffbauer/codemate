@@ -1,0 +1,3 @@
+- Defines a function named `get_name_with_age` that takes two arguments: `name` (a string) and `age` (an integer).
+- Concatenates the input `name` with a message containing the input `age`, and assigns it to a variable called `name_with_age`.
+- Returns the value of `name_with_age`.

@@ -1,0 +1,1 @@
+- This endpoint returns a response with a plain text body containing 4000 'x' characters (approximately 80 KB). - The `PlainTextResponse()` function is used to create a simple text response without any additional formatting or headers. - The `status_code` parameter is set to 200 to indicate that the request was successful.

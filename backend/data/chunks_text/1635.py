@@ -1,0 +1,3 @@
+- Defines a method `__call__()` for the class (implicitly creates a callable object)
+- Takes an optional argument `q` of type string with default value ""
+- Returns True if the fixed content is present in the given query string; otherwise returns False

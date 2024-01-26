@@ -1,0 +1,1 @@
+- Retrieves a list of items belonging to the authenticated user (identified by `current_user`) with permission level 'items' granted through the `Security()` decorator and `scopes` parameter. - Returns an array containing item IDs ('Foo') and their respective owners (the username of the authenticated user).

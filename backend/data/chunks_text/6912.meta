@@ -1,0 +1,1 @@
+{"original_code": "def get_url() -> str:\n    return \"{scheme}://{user}:{password}@{host}/{db}\".format(\n        scheme=\"postgresql+asyncpg\",\n        user=os.getenv(\"POSTGRES_USER\"),\n        password=os.getenv(\"POSTGRES_PASSWORD\"),\n        host=os.getenv(\"POSTGRES_HOST\"),\n        db=os.getenv(\"POSTGRES_DB\"),\n    )"}

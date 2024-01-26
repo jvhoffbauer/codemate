@@ -1,0 +1,3 @@
+- Tests the `GET /a/a` endpoint of the router, which should return a JSON object containing a message 'Hello A A' and set the content type header to 'application/json'.
+- Uses Flask Client to simulate HTTP requests and responses for testing purposes.
+- Asserts that the expected JSON data is returned by the server and checks the value of the Content-Type header in the response headers.

@@ -1,0 +1,1 @@
+{"original_code": "def test_model_with_tuple_valid():\n    data = {\"items\": [[\"foo\", \"bar\"], [\"baz\", \"whatelse\"]]}\n    response = client.post(\"/model-with-tuple/\", json=data)\n    assert response.status_code == 200, response.text\n    assert response.json() == data"}

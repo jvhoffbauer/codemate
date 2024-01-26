@@ -1,0 +1,3 @@
+- Defines a GET request endpoint at `/second`.
+- Uses FastAPI's dependency injection system to pass in an instance of `BidxExprParams`, which is defined elsewhere in the application.
+- Returns the passed-in parameters as the response body.

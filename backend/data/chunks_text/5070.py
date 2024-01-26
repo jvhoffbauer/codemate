@@ -1,0 +1,1 @@
+- Defines a fixture named `staff` with session scope for use in tests across multiple modules or classes (PyTest's "session" scope). - Creates an instance of `Staff` using `AsyncDAL` and sets its `name` attribute to 'admin'. - Commits changes made by `AsyncDAL`. - Returns the newly created `Staff` object for use in other test functions that require it.

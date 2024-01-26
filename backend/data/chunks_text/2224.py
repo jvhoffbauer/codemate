@@ -1,0 +1,1 @@
+- Creates a `ModelField` object with a default value of None (represented by `Undefined`) for its 'foo' attribute, using the built-in Python string type as the data type. - This test ensures that when no explicit default value is provided in the model definition, the framework correctly sets the default to None.

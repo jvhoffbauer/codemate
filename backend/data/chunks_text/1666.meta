@@ -1,0 +1,1 @@
+{"original_code": "async def dependency_c(dep_b: Annotated[DepB, Depends(dependency_b)]):\n    dep_c = generate_dep_c()\n    try:\n        yield dep_c\n    finally:\n        dep_c.close(dep_b)"}

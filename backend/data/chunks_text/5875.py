@@ -1,0 +1,1 @@
+- Overrides `get_list_table()` method of parent class to add footable feature for list view using Django-Bootstrap4's `Footable` library. - Returns a customized `TableCRUD` object with added footable property set to true.

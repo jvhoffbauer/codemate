@@ -1,0 +1,1 @@
+- This function is a decorator that modifies the headers of an HTTP response by adding a new header named `x-level4`. - The value assigned to this header will be set to `'True'`, indicating some level of dependency or requirement for another resource. - Since it's asynchronous, it can be used in conjunction with other async functions and won't block the main thread.

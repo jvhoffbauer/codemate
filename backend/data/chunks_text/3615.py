@@ -1,0 +1,2 @@
+- Defines a startup event for the Flask application using `@app.on_event('startup')`.
+- Assigns a boolean value to the `state.app_startup` variable, indicating that the application has started up successfully.

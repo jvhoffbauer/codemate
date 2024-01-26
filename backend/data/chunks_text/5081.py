@@ -1,0 +1,1 @@
+- Defines a new product attribute called "Color" with a slug of "color". - Sets the attribute's name to "Color", its type to PRODUCT, and specifies that it should be searchable in both storefront and dashboard views. - Enables sorting by this attribute in grid view. - Adds two initial values for the Color attribute ("Red" and "Blue").

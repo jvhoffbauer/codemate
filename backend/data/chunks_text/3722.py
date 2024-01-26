@@ -1,0 +1,2 @@
+- Tests if a non-existent user with ID 999 is retrieved using GET request
+- Verifies that the server returns HTTP status code 404 and displays an error message in the response body

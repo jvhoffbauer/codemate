@@ -1,0 +1,3 @@
+- This function takes a `models.User` object as an argument named `current_user`, which is obtained using the `Depends()` decorator and passed to it from another function called `_get_current_user`.
+- The function checks whether the active state of the user (i.e., `crud.user.is_active`) is true or false for the given `current_user`. If it's false, then it raises an exception with a custom error message.
+- Otherwise, the function returns the same `current_user` object that was passed in as an argument.

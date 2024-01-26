@@ -1,0 +1,6 @@
+- Defines an asynchronous context manager called `mocked_session_get`.
+- Takes arguments `*args` and `**kwargs`, which are passed to the underlying `client_session.get` method.
+- Extracts the URL from the first argument of `args`.
+- Retrieves the file name from the URL using slicing and list indexing.
+- Cleans up the file name by removing the ID token (in this case, 'deaths') and converting it to title case.
+- Yields a mock response object called `FakeRequestsGetResponse` with the extracted URL, filename, and cleaned-up state.

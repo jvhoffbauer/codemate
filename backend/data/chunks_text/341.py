@@ -1,0 +1,3 @@
+- Verifies the contents of `README.md` against the generated content using Typer's command decorator and function signature conventions.
+- Raises an Abort exception with a red error message if there is a discrepancy between the two, indicating that the `README.md` file needs to be updated manually.
+- Prints a green success message otherwise, confirming that both files match.

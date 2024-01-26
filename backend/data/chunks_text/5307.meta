@@ -1,0 +1,1 @@
+{"original_code": "    def __post_init__(self):\n        \"\"\"post init.\"\"\"\n        if self.nodata is not None:\n            self.nodata = numpy.nan if self.nodata == \"nan\" else float(self.nodata)"}

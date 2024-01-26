@@ -1,0 +1,3 @@
+- Defines a GET request for the URL `/route3`.
+- Returns the string "yeah" in response to the request.
+- Does not take any arguments or parameters.

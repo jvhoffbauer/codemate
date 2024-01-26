@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/enum-status-code\", status_code=http.HTTPStatus.CREATED)\ndef get_enum_status_code():\n    return \"foo bar\""}

@@ -1,0 +1,1 @@
+{"original_code": "    def create_permission_fields(self) -> Dict[str, str]:\n        \"\"\"\u521b\u5efa\u6743\u9650\u5b57\u6bb5\"\"\"\n        return self.get_permission_fields(\"create\")"}

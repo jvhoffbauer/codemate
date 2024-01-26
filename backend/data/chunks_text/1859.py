@@ -1,0 +1,3 @@
+- This function is a PUT request handler for updating an item with the given `item_id`.
+- It accepts two optional arguments: `q`, which filters items based on their name or description (if provided), and `item`, which allows passing in a new value for the updated item (if not provided, it will be fetched from the database).
+- The function returns a dictionary containing the updated item's ID and any additional information specified by the user through query parameters or the body of the request.

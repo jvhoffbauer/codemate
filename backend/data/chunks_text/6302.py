@@ -1,0 +1,1 @@
+- Tests the `csbs.get_locations()` function using a mock client session (provided by pytest). - Asserts that the returned value is a list. - Checks if all locations have non-unknown and non-unassigned county names.

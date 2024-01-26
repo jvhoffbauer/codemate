@@ -1,0 +1,1 @@
+{"original_code": "    def field_outer_type(field: ModelField) -> Any:\n        return field.outer_type_"}

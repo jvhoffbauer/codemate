@@ -1,0 +1,3 @@
+- Tests GET request to `/models/resnet` endpoint
+- Verifies HTTP status code is 200 OK
+- Asserts that JSON response contains expected model name and message

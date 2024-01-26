@@ -1,0 +1,1 @@
+- Defines a GET endpoint for retrieving an item with ID 'validnone' and returns either the Item object or `None`. - Uses the `response_model` decorator to specify that the expected response is either an `Item` object or `None`. - Includes a query parameter called `send_none`, which when set to True will cause the function to return `None` instead of an actual `Item` object.

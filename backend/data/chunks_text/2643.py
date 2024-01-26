@@ -1,0 +1,1 @@
+- Tests if a GET request to the "/query" endpoint with no query parameter returns a status code of 422 (Unprocessable Entity) due to the required and non-nullable query parameter being missing.

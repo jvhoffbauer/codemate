@@ -1,0 +1,3 @@
+- This function searches for user profiles in a specified Google Cloud Storage (GCS) bucket using Elasticsearch's full text search feature with the given `query_string`.
+- The results are returned as a list of dictionaries representing User objects stored in GCS.
+- The `skip` and `limit` parameters allow pagination through large result sets.

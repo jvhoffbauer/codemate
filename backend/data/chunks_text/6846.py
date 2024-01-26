@@ -1,0 +1,3 @@
+- Defines a function `client` that returns a generator
+- Uses the context manager `with TestClient(app) as c:` to create and automatically close an instance of Flask's test client, which can be used for making requests against our app during testing
+- Yields the created client object so it can be accessed by other functions in the same scope (e.g., tests)

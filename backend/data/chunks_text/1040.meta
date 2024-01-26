@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: ASGIApp, context_name: str = \"fastapi_astack\") -> None:\n        self.app = app\n        self.context_name = context_name"}

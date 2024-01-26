@@ -1,0 +1,1 @@
+{"original_code": "def read_roles(current_user: UserInDB = Depends(get_current_active_superuser)):\n    \"\"\"\n    Retrieve roles.\n    \"\"\"\n    roles = crud.utils.ensure_enums_to_strs(RoleEnum)\n    return {\"roles\": roles}"}

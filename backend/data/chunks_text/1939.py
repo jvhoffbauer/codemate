@@ -1,0 +1,3 @@
+- Defines a route for the root URL of the application
+- Uses FastAPI's `StreamingResponse` to stream video content back to the client
+- Creates an iterator function called `iterfile()` that reads data from a specified file using a context manager and yields each byte using the `yield from` syntax

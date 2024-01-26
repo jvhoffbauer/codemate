@@ -1,0 +1,3 @@
+- Defines a function named `receive_before_delete` that takes three arguments (`mapper`, `connection`, and `target`) when called as an event listener.
+- Asserts that the type of `target` is `models.User`.
+- Increments a counter variable named `event_counter.before` by 1 whenever this function is executed during the `before_delete` event.

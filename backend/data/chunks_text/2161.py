@@ -1,0 +1,1 @@
+- Defines a function `get_query` that takes in a parameter `query`. - Inside the function, uses string formatting to concatenate three strings ("foo ", "bar ", and the value of `query`) into a single query string. - Returns this newly constructed query string.

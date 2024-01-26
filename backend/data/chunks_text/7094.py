@@ -1,0 +1,3 @@
+- Endpoint `/jobs/all` retrieves all scheduled jobs using FastAPI's decorator `@app.get`.
+- The endpoint is tagged with'schedule', indicating its relation to scheduling tasks.
+- It returns a list of dictionaries containing details about each job, including ID, function name and arguments, cron model, and next run time.

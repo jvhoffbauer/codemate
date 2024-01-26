@@ -1,0 +1,4 @@
+- Defines a custom `CustomRenderParams` class that extends from `ImageRenderingParams`.
+- Adds two new optional parameters to this class: `nodata` and `compress`.
+- The `nodata` parameter can be set as either a string ("nan") or a numeric value (float/int). If it's a string, it will be interpreted as NaN; otherwise, it will be converted to a floating point number. This parameter sets the value used for missing data in the output TIFF file.
+- The `compress` parameter allows setting the TIFF compression algorithm for the output image. It accepts a string representing the desired compression scheme.

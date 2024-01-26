@@ -1,0 +1,3 @@
+- Defines a function called `main`.
+- Calls two other functions, `create_db_and_tables` and `create_heroes`, inside the `main` function.
+- This is likely an entry point for executing the program's logic.

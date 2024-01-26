@@ -1,0 +1,1 @@
+- Defines a function named `route2` with an asynchronous context using the `async` keyword. - The function returns a string value "yeah".

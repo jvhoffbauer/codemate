@@ -1,0 +1,6 @@
+- Sets `FAA_GLOBALS` environment variable and imports `globals` module using it instead of hardcoding path
+- Clears previously imported modules to ensure freshness
+- Imports `globals` again with updated environment variable value
+- Removes a global variable named 'x' (simulated by setting `g2.x`)
+- Asserts that `g` still has its own internal dictionary for storing variables (`__faa_globals__`)
+- Checks if default values are correctly loaded for `site`, `sync_db`, and `async_db` based on their availability in the `site` object (`g2`)

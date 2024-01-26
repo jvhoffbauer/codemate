@@ -1,0 +1,4 @@
+- Initializes a new instance of the class with an AdminApp object as input
+- Calls the parent constructor using Python's built-in `super()` function to inherit its behavior
+- Retrieves the page schema for this view from some internal method called `get_page_schema()`, which is assumed to be implemented by subclasses
+- Checks whether the retrieved page schema has both a URL property and a non-empty value; if so, modifies it by removing the site root URL (assumed to be stored in the settings dictionary under the key'site_url')

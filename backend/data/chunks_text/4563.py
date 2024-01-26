@@ -1,0 +1,6 @@
+- Generates an OpenAPI v3.1.0 schema for a FastAPI application using `fastapi.testclient`.
+- Retrieves the JSON representation of the schema by making a GET request to `/openapi.json`.
+- Asserts that the status code is 200 and saves the response text in case of failure.
+- Verifies that the generated schema matches the expected structure with specific keys such as 'openapi', 'info', 'paths', 'components'.
+- Checks that the 'Paths' object contains a route definition for '/items/' with appropriate properties like 'GET','responses','summary', 'operationID','security'.
+- Confirms that the 'Components' section includes a security scheme named 'OAuth2PasswordBearer' with correct type ('oauth2') and flow details ('password').

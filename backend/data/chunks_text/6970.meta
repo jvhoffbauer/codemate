@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(autouse=True)\nasync def override_dependency(session: AsyncSession):\n    app.dependency_overrides[get_session] = lambda: session"}

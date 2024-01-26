@@ -1,0 +1,5 @@
+- Imports `tutorial002` module from `docs_src.tutorial` and assigns it to a variable called `mod`.
+- Sets SQLAlchemy's connection URL (`sqlite_url`) for the `mod` object, creates an engine using that URL, and saves it in the `mod` object.
+- Creates a mock function named `new_print`, which replaces Python's built-in print function during testing. This is done by calling `get_testing_print_function` from Pytest-mock library and passing its return value to `new_print`.
+- Wraps the main function of the `mod` module inside a context manager provided by pytest-mock, which patches the original `print` function with our custom `new_print` function.
+- Calls `check_calls` from Pytest-mock to verify if all expected print statements were made during execution.

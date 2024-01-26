@@ -1,0 +1,1 @@
+{"original_code": "def route_with_http_exception():\n    raise HTTPException(status_code=400)"}

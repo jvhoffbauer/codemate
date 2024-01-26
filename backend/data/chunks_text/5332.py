@@ -1,0 +1,3 @@
+- Defines a GET request for the `/second` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional parameter, `params`, which is dependent on the `AssetsBidxExprParams` class from the `dependencies` module
+- Returns the value of the `params` object when the endpoint is accessed

@@ -1,0 +1,10 @@
+- Tests for `field_annotation_is_scalar()`, which checks if a given type or annotation represents a scalar value (i.e., not a sequence or mapping).
+- Scalar types tested include strings, integers, datetime objects, and optional wrappers around them.
+- The function also handles union and literal types as scalars.
+- Tests for `field_annotation_is_scalar_sequence()`, which checks if a given type or annotation represents a sequence of scalar values.
+- Sequence types tested include lists, sets, tuples, and optional wrappers around them.
+- Tests for `field_annotation_is_complex()`, which checks if a given type or annotation represents a complex object (i.e., not a scalar or sequence).
+- Complex types tested include custom classes, dictionaries, and list/set comprehensions.
+- Testing for origin of generic types using `get_origin()`.
+- Tests for `field_annotation_is_sequence()`, which checks if a given type or annotation represents a sequence (i.e., can be indexed with integer keys).
+- Sequence types tested include lists and sequences containing nested models.

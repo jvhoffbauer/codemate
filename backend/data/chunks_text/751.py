@@ -1,0 +1,4 @@
+- Initializes an `Engine` object from Alembic configuration using SQLAlchemy's `engine_from_config()`.
+- Associates a connection with the current context for executing database operations during migration.
+- Configures the context with the connection and metadata of the target database schema.
+- Begins a transaction within which the actual migration process is executed by calling `context.run_migrations()`.

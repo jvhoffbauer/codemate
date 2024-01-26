@@ -1,0 +1,3 @@
+- Defines a property called `client` for this class that returns an instance of AsyncHTTPX's `AsyncClient`.
+- Sets the base URL and timeout value for the client using keyword arguments passed to the constructor.
+- Allows easy access to a preconfigured HTTP client within methods or functions defined in this class without having to create a new one each time.

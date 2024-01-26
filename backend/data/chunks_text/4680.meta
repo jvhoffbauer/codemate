@@ -1,0 +1,1 @@
+{"original_code": "def test_post_file(tmp_path):\n    path = tmp_path / \"test.txt\"\n    path.write_bytes(b\"<file content>\")\n\n    client = TestClient(app)\n    with path.open(\"rb\") as file:\n        response = client.post(\"/files/\", files={\"file\": file})\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"file_size\": 14}"}

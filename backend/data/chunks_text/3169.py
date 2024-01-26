@@ -1,0 +1,3 @@
+- Defines a new route for HTTP POST requests at the root URL ("/") of the application (`@app.post("/",...)`)
+- Includes a `callbacks` parameter with a reference to the router object created earlier (`callbacks=callback_router.routes`)
+- The function body is currently empty, but could contain any necessary logic for handling incoming requests (`pass`)

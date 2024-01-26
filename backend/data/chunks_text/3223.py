@@ -1,0 +1,1 @@
+- Tests that a `ResponseValidationError` is raised when making a GET request to an invalid model endpoint (`"/model/modelX"`). - Verifies that the error message returned by FastAPI's validator matches the expected format defined by PyDantic's validation errors. - Demonstrates how to write tests for custom validation logic using PyTest and FastAPI's built-in testing utilities.

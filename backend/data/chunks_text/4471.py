@@ -1,0 +1,1 @@
+- This function tests the `GET /users/` endpoint with valid authentication headers using FastAPI's built-in testing framework (TestClient). - The `X-Token` and `X-Key` headers are set to fake values for demonstration purposes. - If the request is successful, the status code should be 200 and the JSON response should contain an array of user objects with 'username' keys.

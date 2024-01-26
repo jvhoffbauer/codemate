@@ -1,0 +1,3 @@
+- Endpoint for creating multiple images at once using a list of Image objects as input
+- Each image in the list is validated and saved to the database separately before returning all created images in the list
+- Uses FastAPI's `List` parameter decorator to accept an array of Image objects instead of individual ones

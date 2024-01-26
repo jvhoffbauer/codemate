@@ -1,0 +1,4 @@
+1. This function is an asynchronous method called before updating a schema object in FastAPI. It takes three arguments - `Request`, `SchemaUpdateT`, and `item_id`. The `**kwargs` parameter allows passing additional keyword arguments to this function.
+2. Inside this function, we first call another asynchronous method `self.get_deny_fields()` which returns a list of fields that should be excluded from the update operation based on user permissions.
+3. We then create a copy of the `obj` (the updated object) with the `exclude` field set to the value returned by `self.get_deny_fields()`. This effectively removes any fields that are not allowed for updating based on user permissions.
+4. Finally, we pass the modified `obj` and other parameters to the parent class's `on_update_pre()` method and return its result.

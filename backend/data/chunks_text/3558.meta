@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\")\ndef read_items(q: Optional[str] = Param(default=None)):  # type: ignore\n    return {\"q\": q}"}

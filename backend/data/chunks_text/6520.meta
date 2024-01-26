@@ -1,0 +1,1 @@
+{"original_code": "def ep(ep_path):\n    return jsonrpc.Entrypoint(ep_path)"}

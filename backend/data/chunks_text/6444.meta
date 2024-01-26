@@ -1,0 +1,1 @@
+{"original_code": "        def event_processor(event, _):\n            if self.method_route is not None:\n                event[\"transaction\"] = sentry_transaction_from_function(\n                    self.method_route.func\n                )\n            return event"}

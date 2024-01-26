@@ -1,0 +1,1 @@
+{"original_code": "def test_get_item():\n    response = client.get(\"/items/next\")\n    assert response.status_code == 200\n    assert response.json() == {\n        \"name\": \"Island In The Moon\",\n        \"price\": 12.99,\n        \"description\": \"A place to be be playin' and havin' fun\",\n        \"tags\": [\"breater\"],\n        \"tax\": None,\n    }"}

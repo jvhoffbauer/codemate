@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_items_bar_token_jessica(client: TestClient):\n    response = client.get(\n        \"/items/bar?token=jessica\", headers={\"X-Token\": \"fake-super-secret-token\"}\n    )\n    assert response.status_code == 404\n    assert response.json() == {\"detail\": \"Item not found\"}"}

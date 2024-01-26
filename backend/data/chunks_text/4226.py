@@ -1,0 +1,1 @@
+- Imports a function `test_override_in_items` from another module (`docs_src.dependency_testing.tutorial001_an_py39`) and executes it in this test case. - This is an example of how to override tests for specific Python versions using the `@needs_python_version(...)` decorator provided by Pytest. In this case, we're testing that our package works with Python 3.9 specifically.

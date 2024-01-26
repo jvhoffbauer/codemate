@@ -1,0 +1,1 @@
+{"original_code": "def test_python_set_param_as_form():\n    response = client.post(\n        \"/form/python-set\", data={\"items\": [\"first\", \"second\", \"third\"]}\n    )\n    assert response.status_code == 200, response.text\n    assert set(response.json()) == {\"first\", \"second\", \"third\"}"}

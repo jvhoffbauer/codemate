@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes three arguments: `item_id`, `q`, and `size`.
+- Uses Pydantic's `Annotated` decorator to add type hinting and validation for each argument using its built-in validators (`Path` and `Query`) with custom constraints (`ge` and `lt`).
+- Returns a dictionary called `results` containing the values passed in by the user for `item_id` and `q`, unless either is omitted. The value returned will be used as query parameters when making API requests later on.

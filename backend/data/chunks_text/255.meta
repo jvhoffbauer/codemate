@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/heroes/\", response_model=list[HeroRead])\ndef read_heroes(offset: int = 0, limit: int = Query(default=100, le=100)):\n    with Session(engine) as session:\n        heroes = session.exec(select(Hero).offset(offset).limit(limit)).all()\n        return heroes"}

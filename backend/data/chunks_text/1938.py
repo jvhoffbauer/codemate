@@ -1,0 +1,2 @@
+- Defines an asynchronous function `redirect_pydantic()`.
+- The function returns a string containing a URL for Pydantic documentation.

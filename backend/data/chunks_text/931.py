@@ -1,0 +1,3 @@
+- Initializes a new instance of the class with a sequence of errors as an argument (`errors`) and assigns it to the `_errors` attribute internally.
+- The `__init__()` method is called when creating a new object of this class.
+- This constructor takes in a sequence of any type of error objects or values that can be used later for debugging purposes.

@@ -1,0 +1,1 @@
+{"original_code": "    async def get_page(self, request: Request) -> Page:\n        page = await super(ModelAdmin, self).get_page(request)\n        page.body = await self.get_list_table(request)\n        return page"}

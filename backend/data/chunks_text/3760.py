@@ -1,0 +1,3 @@
+- Generates an OpenAPI schema for a FastAPI application using `fastapi-openapi-codegen`.
+- Tests the generated schema by making requests to the API endpoints and comparing the responses with expected JSON schemas.
+- Verifies that the schema conforms to the OpenAPI specification version 3.1.0.

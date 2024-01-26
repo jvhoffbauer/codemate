@@ -1,0 +1,2 @@
+- Tests OAuth2 authentication by making a request to `/users/me` with an access token in the Authorization header
+- Verifies that the server returns a successful HTTP status code (200) and includes the user's username in the JSON response body

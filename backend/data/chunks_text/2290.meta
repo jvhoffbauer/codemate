@@ -1,0 +1,1 @@
+{"original_code": "def int_convertor(param: int = Path()):\n    return {\"int\": param}"}

@@ -1,0 +1,3 @@
+- This is a class method that returns an instance of the model defined by `cls`.
+- It takes keyword arguments as input and filters the objects based on them using Django's `get_object_or_404()` function.
+- If no object matches the filter criteria, it raises a HTTP 404 error instead of returning None.

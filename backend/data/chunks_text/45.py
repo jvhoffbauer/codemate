@@ -1,0 +1,4 @@
+- Defines a generator function called `partial_init` that returns no value (type annotation `-> Generator[None, None, None]`)
+- Inside the function body, creates a new variable named `token` and assigns it the result of calling `finish_init.set(False)`. This sets the initial value of the `finish_init` flag to False.
+- Yields nothing using the `yield` statement.
+- After the `yield`, resets the `finish_init` flag back to its original state by passing in the previously created `token` as an argument to `finish_init.reset(token)`.

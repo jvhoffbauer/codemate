@@ -1,0 +1,1 @@
+{"original_code": "    def set_fields_set(\n        new_object: InstanceOrType[\"SQLModel\"], fields: Set[\"FieldInfo\"]\n    ) -> None:\n        object.__setattr__(new_object, \"__pydantic_fields_set__\", fields)"}

@@ -1,0 +1,1 @@
+{"original_code": "    def home2():\n        \"\"\"Doesn't work and should return the value from env.\"\"\"\n        with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN=\"FALSE\"):\n            with futures.ThreadPoolExecutor() as executor:\n                res = list(executor.map(f, range(1)))[0]\n        return {\"env\": res}"}

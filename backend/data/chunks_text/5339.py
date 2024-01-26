@@ -1,0 +1,3 @@
+- Defines a GET request for the `/second` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional query parameter named `params`, which is parsed and validated by the `Dependencies` class from FastAPI's built-in dependency injection system (`Depends(dependencies.BandsExprParams)`)
+- Returns the parsed and validated `params` object as JSON response

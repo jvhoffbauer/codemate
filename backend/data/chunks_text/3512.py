@@ -1,0 +1,2 @@
+- This function tests the endpoint `/items/` without passing any query parameters using a Pytest fixture called `get_client()`.
+- It makes an HTTP POST request to create a new item and asserts that the server returns a status code of 200 (OK) with a JSON body containing the string "Hello World".

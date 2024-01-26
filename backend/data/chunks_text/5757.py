@@ -1,0 +1,8 @@
+- Initializes a new instance of the class with an AdminApp object and a SQLAlchemy engine.
+- Checks that both arguments are provided and raises an AssertionError otherwise.
+- Sets the `app`, `engine`, `amis_parser`, `parser`, and `schema_model` attributes based on the input parameters.
+- Retrieves the list display fields from the parser and filters them to exclude any fields marked as `save=False`. This list is used for listing purposes.
+- Determines the list filter fields by combining the existing list filter (if present) with the remaining searchable fields (excluding those already included in the list display).
+- Calls the parent constructor of SqlalchemyCrud to initialize common crud functionality.
+- Adds the list display fields to the `fields` attribute.
+- Initializes the base ActionAdmin class with the AdminApp object.

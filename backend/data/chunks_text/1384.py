@@ -1,0 +1,3 @@
+- Endpoint to retrieve a list of items (GET request)
+- Tagged as part of the 'items' resource group
+- Returns a JSON response with an array containing one item object, where each item has a name and price property

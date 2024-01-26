@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes a query parameter (optional) and returns a dictionary with two keys, 'items' and 'q'.
+- The 'items' key contains a list of dictionaries representing items, each with an 'item_id' field.
+- If a query is provided, it will be added to the returned dictionary under the 'q' key.

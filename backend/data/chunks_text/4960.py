@@ -1,0 +1,1 @@
+- Imports all models from submodules of `tifa.models` and registers them with Flask-SQLAlchemy in the given Flask application (`app`) using the `import_submodules()` function provided by Flask-ImportExport. - This is a convenient way to automatically register multiple SQLAlchemy models without having to manually call `db.create_all()`.

@@ -1,0 +1,5 @@
+1. Establishes a database connection using SQLAlchemy's `Session()` function and assigns it to the variable `session`. This is done inside a context manager, which ensures that the connection is automatically closed after use.
+2. Defines a query object representing the SELECT statement we want to execute against our Hero table. We pass the `Hero` class from our ORM model to this method.
+3. Executes the query defined earlier by passing it into the `exec()` method of the `session` object. The result set is assigned to the `results` variable.
+4. Loops through each row returned by the previous step and prints out its contents using Python's built-in `print()` function.
+5. Closes the database connection explicitly, although this isn't strictly necessary since it will be handled automatically when the context manager exits.

@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"session\")\ndef db() -> Generator:\n    yield SessionLocal()"}

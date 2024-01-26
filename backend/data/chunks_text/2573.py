@@ -1,0 +1,1 @@
+- Defines a function `get_indirect_cookie` that takes an optional argument `dep` with default value set by another function `set_indirect_cookie`. - Returns a dictionary containing the value of the `dep` parameter and its own name as key. This can be used to pass data between dependencies in FastAPI applications, without having to explicitly define it multiple times.

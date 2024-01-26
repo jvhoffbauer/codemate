@@ -1,0 +1,9 @@
+- Defines a class method `build_data_model` that returns an instance of Pydantic's `BaseModel`.
+- Checks whether the model has already been defined and returns it with renaming if necessary.
+- Retrieves the error model for this data model using another helper function.
+- Determines whether errors are required based on a flag.
+- Creates dictionary of fields for the new model, including optional errors list.
+- Generates a unique name for the new model by concatenating "_ErrorData" and the error model's name.
+- Uses Pydantic's `create_model` to generate the new model with the given base classes and module.
+- Wraps the generated model in a decorator from another helper function to add scope information.
+- Returns the newly created model.

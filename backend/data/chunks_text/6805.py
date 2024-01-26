@@ -1,0 +1,3 @@
+- Retrieves an item with a specific ID from the database using SQLAlchemy's `Session`.
+- Raises a `HTTPException` with status code 404 if the item is not found in the database.
+- Checks whether the user has sufficient permissions to access the item based on its owner ID and their own user ID. If they are not authorized, raises another `HTTPException` with status code 400. Otherwise, returns the requested item as defined by the `ItemOut` schema.

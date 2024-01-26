@@ -1,0 +1,2 @@
+- Resets the state of a SQLAlchemy session and dictionary used to store default values for tables, restoring them to their initial values defined in `db_state_default`.
+- Allows for testing or debugging by allowing the user to revert changes made during development without affecting the actual database.

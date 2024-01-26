@@ -1,0 +1,5 @@
+- Defines a method called `probe` using the OpenRPC EntryPoint (EP) decorator with two required parameters `data` and `amount`.
+- Uses the `Body` decorator to specify example values for both parameters as well as validation constraints such as minimum value of 5 for `amount`.
+- Returns a list containing integers from 1 to 3 without modifying input arguments `data` and `amount`, which are deleted instead.
+- Binds the EP to the Flask application and retrieves its JSON schema using the client provided by Flask-OpenRPC.
+- Asserts that the returned JSON contains the expected structure including parameter definitions, result type, tags, and errors.

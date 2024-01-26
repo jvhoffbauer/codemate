@@ -1,0 +1,5 @@
+- Creates a list of Tag objects with IDs from 1 to 5 and names "Tag_1",..., "Tag_5".
+- Adds these Tags to the database using SQLAlchemy's `Session`.
+- Links each Article (with IDs from 1 to 5) to its corresponding Tag by adding an instance of `ArticleTagLink` to the session.
+- Commits changes made to the session.
+- Returns the list of created Tags.

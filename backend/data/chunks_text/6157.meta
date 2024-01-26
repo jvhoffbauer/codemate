@@ -1,0 +1,1 @@
+{"original_code": "def test(ctx):\n    \"\"\"Run pytest tests.\"\"\"\n    ctx.run(\" \".join([\"pytest\", \"-v\"]))"}

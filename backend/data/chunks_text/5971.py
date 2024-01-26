@@ -1,0 +1,1 @@
+- Tests whether `validator_skip_blank()` returns `None` when passed an empty string and a function that converts to integer type (`int`) as its second argument. - Verifies if `validator_skip_blank()` skips blank values while checking for validity using custom conversion functions provided by user.

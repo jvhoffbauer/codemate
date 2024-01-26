@@ -1,0 +1,3 @@
+- Initializes a web socket connection with `await websocket.accept()`.
+- Sends a message to the client using `await websocket.send_text("Hello, router!")`.
+- Closes the web socket connection using `await websocket.close()`.

@@ -1,0 +1,3 @@
+- Defines a new route for HTTP POST requests to `"/tuple-of-models/"`.
+- Accepts a tuple of two `Coordinate` objects as input parameter named `square`.
+- Returns the received tuple without any modifications.

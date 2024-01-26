@@ -1,0 +1,7 @@
+- Retrieves a specific hero (Spider-Boy) and a specific team (Preventers) from the database using SQLAlchemy's `Session`.
+- Prints out details of both the hero and team, including their associated relationships (i.e., Spider-Boy is on Preventers' roster).
+- Removes Spider-Boy from the Preventers team by setting his `team` attribute to `None`.
+- Commits changes made in this session back to the database.
+- Refreshes the session to ensure that any object state changes are updated in memory.
+- Confirms that Spider-Boy no longer belongs to the Preventers team, but still exists in the database.
+- Checks whether removing Spider-Boy affected the list of heroes for the Preventers team; it should not have been removed automatically since we explicitly set its value to `None`.

@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's query parameter decorator to accept an optional string parameter named `q`, with default value of `None`, minimum length of 3 characters and maximum length of 50 characters.
+- Returns a dictionary containing two items - one with key 'items', which contains a list of dictionaries representing item objects, and another with key 'q' (only added when `q` is not `None`) that holds the search query provided by the user.

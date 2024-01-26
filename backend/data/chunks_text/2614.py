@@ -1,0 +1,3 @@
+- Tests if a GET request to an API route without decoration returns expected JSON data and status code (200)
+- Uses Flask's built-in `client` object for making requests against our app instance
+- Asserts that the returned HTTP status code is as expected using Python's `assert` statement

@@ -1,0 +1,3 @@
+- This function tests the generation of HTML for a custom Redoc instance using Flask's `get_template` and `render_template`.
+- It sets up fake URLs for the Redoc JavaScript file (`redoc_js_url`) and favicon image (`redoc_favicon_url`).
+- The generated HTML is stored in the `html` variable and its contents are checked to ensure that both URLs appear within it.

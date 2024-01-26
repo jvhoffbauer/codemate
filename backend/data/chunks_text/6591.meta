@@ -1,0 +1,1 @@
+{"original_code": "    def echo(\n        data: str = Body(..., examples=[\"123\"]),\n    ) -> str:\n        echo_info.history.append(data)\n        return data"}

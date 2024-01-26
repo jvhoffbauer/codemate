@@ -1,0 +1,3 @@
+- Tests if decorator function is called with 'q' parameter set to 'foo'
+- Checks status code and JSON response of GET request to '/decorator-depends/' endpoint with query string 'q=foo'
+- Asserts that decorated view returns expected value ('in': 'decorator-depends') in JSON format

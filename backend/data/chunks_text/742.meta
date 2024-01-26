@@ -1,0 +1,1 @@
+{"original_code": "async def retrieve_user(id: int):\n    user: ORMUser = await ORMUser.get(id)\n    return User.from_orm(user)"}

@@ -1,0 +1,1 @@
+{"original_code": "def get_user(bucket: Bucket, username: str):\n    doc_id = f\"userprofile::{username}\"\n    result = bucket.get(doc_id, quiet=True)\n    if not result.value:\n        return None\n    user = UserInDB(**result.value)\n    return user"}

@@ -1,0 +1,7 @@
+- Defines a new route handler function called `custom_route_handler`.
+- Uses an `async` decorator to make it an asynchronous function.
+- Tries to call the existing `original_route_handler` and returns its response.
+- Catches `RequestValidationError`, which is raised by FastAPI's built-in validation system when there are errors in the request data.
+- Converts the request body into a string using `await request.body()`.
+- Creates a dictionary with error messages from the exception (`exc.errors()`) and the request body (`body.decode()`).
+- Raises a new HTTPException with status code 422 (Unprocessable Entity) and passes the error details as arguments.

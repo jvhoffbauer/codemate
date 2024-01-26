@@ -1,0 +1,3 @@
+- Prepares a database for testing by dropping and recreating all tables defined in `models.Base`.
+- Uses an SQLAlchemy connection to perform these operations synchronously within a transaction using the `db.engine` object provided by Alembic's `DatabaseContext`.
+- Yields control back to PyTest so that other fixtures or tests can use this prepared state before cleaning up again at the end of the test session.

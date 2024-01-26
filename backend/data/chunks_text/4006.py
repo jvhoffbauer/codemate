@@ -1,0 +1,3 @@
+- This function tests the OpenAPI schema of our FastAPI application by making a GET request to `/openapi.json`.
+- It asserts that the status code is 200 and saves the text for debugging purposes.
+- The JSON response is compared against an expected dictionary with specific keys (OpenAPI version, app title & version, empty paths).

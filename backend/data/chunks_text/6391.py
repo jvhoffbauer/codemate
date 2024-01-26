@@ -1,0 +1,10 @@
+- Defines a function `component_name` that takes two arguments `name` and `module`. The second argument is optional and defaults to `None`.
+- Adds an OpenAPI component decorator using Python's built-in `@decorator` syntax. This allows us to apply this functionality to our classes without having to modify them directly.
+- Checks whether the decorated object inherits from `BaseModel`, which is required for use as an OpenAPI component. If it doesn't inherit from `BaseModel`, raises an AssertionError.
+- Creates a dictionary called `opts` containing metadata about the class being decorated. This includes its base classes, module, and fields with their types and names.
+- Removes the current class itself from the list of bases so we don't include it twice.
+- If the decorated class has any configuration options specified via `model_config`, removes the `__base__` option from `opts` and adds a new one called `__config__`.
+- Uses the `create_model` function from Pydantic's internal API to recreate the decorated class with the updated metadata. This ensures that the JSON schema generated during class initialization uses the provided name instead of the default one based on the class name.
+- Sets the module attribute of the newly created class to the value passed into the decorator, unless it was already set beforehand. This is necessary because Pydantic's introspection mechanism relies on the `__module__` attribute to determine where a type came from.
+- Stores the resulting class in a dictionary called `components` along with a tuple representing its fully qualified name (i.e., class name plus module). This allows us to easily look up previously defined components later on.
+- Returns the newly created class, allowing it to be used normally within our application.

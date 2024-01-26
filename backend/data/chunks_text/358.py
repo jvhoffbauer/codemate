@@ -1,0 +1,5 @@
+- Defines a function `new_print()` that takes any number of arguments (`*args`) and stores them in a list called `data`.
+- Iterates through each argument using a generator expression (`for arg in args:`).
+- Checks whether the type of the argument is an instance of `BaseModel`, which is likely a custom model class used by Flask-RESTful or another framework. If so, it appends its serialized representation to the `data` list using the `model_dump()` method provided by the `marshmallow` library.
+- Similarly, checks whether the argument is a list, and recursively applies this process to all items inside the list. This allows nested lists with mixed types to be handled correctly.
+- Appends the resulting list of values to the `calls` list, presumably for later use.

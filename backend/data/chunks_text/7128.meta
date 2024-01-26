@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, err_desc: str = \"Permission denied\"):\n        self.err_desc = err_desc"}

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/object\", response_model=Item)\ndef get_object():\n    return Item(\n        name=\"object\", date=datetime(2021, 7, 26), price=1.0, owner_ids=[1, 2, 3]\n    )"}

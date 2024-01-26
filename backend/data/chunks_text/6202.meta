@@ -1,0 +1,1 @@
+{"original_code": "async def get_confirmed():\n    \"\"\"Confirmed cases.\"\"\"\n    confirmed_data = await get_category(\"confirmed\")\n\n    return confirmed_data"}

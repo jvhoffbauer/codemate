@@ -1,0 +1,1 @@
+{"original_code": "    def probe() -> str:\n        return \"qwe\""}

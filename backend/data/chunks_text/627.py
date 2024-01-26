@@ -1,0 +1,3 @@
+- This function tests a tutorial in SQLModel's documentation by running it and checking if the output matches what is expected using `get_testing_print_function`.
+- The `test_tutorial` function takes an argument called `clear_sqlmodel`, which is likely used to clear any previous data or configurations before executing the tutorial.
+- It imports the necessary classes (`app` and `database`) from the tutorial file located at `docs_src/tutorial/code_structure/tutorial001_py310`. These objects are then configured for testing purposes.

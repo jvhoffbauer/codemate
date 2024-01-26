@@ -1,0 +1,3 @@
+- Defines a generator function called `event_loop` that creates and returns an asynchronous event loop using the default policy provided by Python's `asyncio`.
+- Yields the newly created event loop, allowing it to be used in other functions or context managers within the scope of this generator function.
+- Closes the event loop when the generator function exits, freeing up system resources.

@@ -1,0 +1,2 @@
+- Defines a cached property called `_filter_entities`.
+- Returns a dictionary that maps SQL field aliases to either an InstrumentedAttribute or Label object based on the result of filtering the list_filter using the parser's `filter_insfield()` method and specifying that we want to save both InstrumentedAttributes and Label objects as values.

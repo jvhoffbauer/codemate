@@ -1,0 +1,2 @@
+- Defines a GET request for an item with ID `item_id`, which defaults to 1 if not provided in URL path
+- Uses FastAPI's `@app.get()` decorator and `Path()` parameter annotation to extract the `item_id` from the URL path

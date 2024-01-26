@@ -1,0 +1,1 @@
+{"original_code": "async def get_db():\n    with MySuperContextManager() as db:\n        yield db"}

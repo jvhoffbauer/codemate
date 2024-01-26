@@ -1,0 +1,4 @@
+- This function tests the `ItemsController`'s override behavior for query parameters using Flask-RESTful's `reqparse`.
+- The `client` object is used to simulate a GET request with specific query parameters (`q`, `skip`, and `limit`) that are passed as arguments to the `test_override_in_items_with_params()` function.
+- The expected status code of 200 is checked against the actual response from the server.
+- The JSON response body is verified to contain the correct message string ("Hello Items!") and updated parameter values after overriding by the controller.

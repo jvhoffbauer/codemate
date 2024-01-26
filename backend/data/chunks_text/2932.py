@@ -1,0 +1,3 @@
+- Defines a GET request for the root URL (/) using FastAPI's `@app.get` decorator
+- Returns an instance of `ModelSubclass`, which is a subclass of Pydantic's `BaseModel`. The returned object has three fields:'sub', 'y', and 'z'.
+- Uses two optional arguments provided by Pydantic to customize the behavior of the API endpoint: `response_model` specifies that the response should be serialized according to the schema defined in `ModelSubclass`, while `response_model_exclude_unset` tells Pydantic not to include any unset or null values in the JSON output.

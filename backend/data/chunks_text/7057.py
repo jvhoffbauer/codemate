@@ -1,0 +1,6 @@
+- Defines a function `create_access_token` that takes in parameters for subject (required), expiration time delta (optional), and additional keyword arguments (optional).
+- Raises an error if subject is not a string.
+- Calculates current UTC timestamp and sets expiration time based on provided delta or default value from settings.
+- Creates dictionary with required fields plus any optional ones passed as keywords.
+- Encodes dictionary into JWT using secret key and specified signature algorithm from settings.
+- Returns encoded JWT.

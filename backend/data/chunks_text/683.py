@@ -1,0 +1,3 @@
+- Creates an instance of FastAPI's `AsyncClient` class using the `default_app` and a custom base URL for testing purposes (in this case "http://test").
+- The fixture is scoped to the module level, meaning it will be created once per test file and reused across all tests in that file.
+- Yields the `client` object so it can be used within other fixtures or test functions.

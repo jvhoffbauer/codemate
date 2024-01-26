@@ -1,0 +1,1 @@
+- This method `common_dependencies()` is defined within a class (not shown) that has an attribute called `entrypoint_route`. - The method returns the value of the `common_dependencies` attribute of the `entrypoint_route` object, which presumably contains information about dependencies required by multiple entrypoints in this application.

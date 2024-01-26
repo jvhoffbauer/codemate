@@ -1,0 +1,7 @@
+- Defines an asynchronous function `update_item()` that takes in two arguments - `item_id` and `item`.
+- Retrieves the existing data of the specified item from a dictionary called `items`, using its ID (`item_id`) as key.
+- Creates a new instance of the `Item` class with the retrieved data, which is then assigned to a variable named `stored_item_model`.
+- Excludes any unset fields while encoding the updated item into a JSON format using the `jsonable_encoder()` method provided by Pydantic's `BaseModel`.
+- Copies the original `stored_item_model` object and updates it with the newly encoded values obtained from the `update_data` dictionary. This results in a new object being created with the updated attributes.
+- Updates the value at the corresponding index in the `items` dictionary with this new object.
+- Returns the updated item object for further use or processing.

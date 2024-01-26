@@ -1,0 +1,1 @@
+- Defines a function `setup_cli` that takes an instance of `FastAPI` as its argument. - This function is used to set up command line interface (CLI) functionality for the application, but in this case it's left empty. - The purpose of defining this function here instead of elsewhere is to make it easily discoverable by other parts of the framework when setting up CLI commands.

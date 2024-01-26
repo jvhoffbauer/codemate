@@ -1,0 +1,3 @@
+- Defines a method `handle` that takes in a FastAPI request object and a Pydantic model as arguments.
+- The method returns an instance of `BaseApiOut`, which is a custom response class provided by FastAPI's built-in ORM (Object Response Model).
+- Inside the method, we convert the input Pydantic model to a dictionary using its `dict()` method, then merge it with another dictionary containing our own key-value pairs ("extra", "success"). This allows us to add additional fields to the API response without modifying the original model schema.

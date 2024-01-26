@@ -1,0 +1,3 @@
+- Defines a function named `post_second` that takes an argument of type `Item`.
+- The body of the function simply returns the value passed as an argument (i.e., it doesn't perform any additional operations).
+- This function is marked with the `pragma: nocover` directive, which tells tools like coverage.py to ignore this function when calculating test coverage.

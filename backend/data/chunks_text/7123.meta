@@ -1,0 +1,1 @@
+{"original_code": "    def __delitem__(self, name):\n        del self._redis_client[name]"}

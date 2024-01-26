@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_root()` that returns a dictionary containing a string message and its corresponding value. - The message includes information about the environment in which the application is running, such as the version of Python being used.

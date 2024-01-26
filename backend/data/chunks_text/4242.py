@@ -1,0 +1,1 @@
+- Imports a function `test_override_in_items_with_Q` from another module in the project's documentation source directory. - Calls the imported function to execute its tests for Python version 3.10 with Pytest Q. - This is an example of how to override tests using Pytest Q in the dependency testing tutorial provided by the project's documentation.

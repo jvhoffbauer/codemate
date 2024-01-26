@@ -1,0 +1,1 @@
+{"original_code": "    def to_response(self):\n        return ORJSONResponse(\n            self.value,\n            status_code=self.status_code,\n        )"}

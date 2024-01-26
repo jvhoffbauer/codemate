@@ -1,0 +1,5 @@
+- Imports and sets up necessary modules for testing SQLModel's select feature in Python 3.10 (Python version specified by `@needs_py310`)
+- Creates a mock print function to capture output during execution of the `main()` method in the `tutorial002_py310` module, which is imported from the `docs_src/tutorial/select` directory
+- Patches the built-in `print()` function using the `patch()` decorator provided by Pytest, replacing it with the custom mock function created earlier
+- Executes the `main()` method within this patched context, allowing us to verify that expected output is generated without actually printing to the console
+- Verifies that the correct number and content of print statements were captured by checking against an array of expected outputs stored in the `check_calls()` function provided by Pytest

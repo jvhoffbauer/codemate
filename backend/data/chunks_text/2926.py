@@ -1,0 +1,4 @@
+- Override a dependency (in this case `get_data`) with a new function (`get_data_override`) using Flask's `app.dependency_overrides`.
+- Make an API request to retrieve user data from the application.
+- Assert that the expected JSON response is returned, including the overridden value for the `data` key.
+- Clear the dependency override after making the request.

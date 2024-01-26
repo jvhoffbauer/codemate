@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/users/me\")\ndef read_current_user(credentials: Annotated[HTTPBasicCredentials, Depends(security)]):\n    return {\"username\": credentials.username, \"password\": credentials.password}"}

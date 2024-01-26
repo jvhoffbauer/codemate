@@ -1,0 +1,2 @@
+- Defines a fixture named `cov_tmp_path`, which takes an existing temporary directory path (`Path`) as input and yields it to be used by other tests.
+- After each test that uses this fixture, it deletes all files with extensions ".coverage" from the temporary directory and copies them to a specific location ("top_level_path") using the `shutil.copy()` function. This is likely done to preserve coverage data across multiple tests or runs of the same test suite.

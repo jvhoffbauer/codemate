@@ -1,0 +1,3 @@
+- Tests that passing a non-matching query parameter value to `item-query` raises a validation error with a specific message and location (in this case, `nonregexquery`)
+- Uses Pytest's `@needs_py39` fixture to ensure Python 3.9 is used for testing
+- Imports `IsDict` from pytest-checks to simplify JSON comparison in asserts

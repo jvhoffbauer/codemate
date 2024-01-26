@@ -1,0 +1,4 @@
+- Retrieves data from a cache with a specific ID and optional namespace using `redis.StrictRedis`.
+- Returns the cached value if found or `None` otherwise.
+- Logs a message indicating that the specified item was retrieved from the cache.
+- Closes the Redis connection after use to conserve resources.

@@ -1,0 +1,3 @@
+- Defines a function `get_items()` that takes an optional parameter `user_id`.
+- If `user_id` is not provided, returns a list of dictionaries containing item IDs and user IDs (default behavior).
+- If `user_id` is provided, returns a modified list with only items associated with that specific user ID.

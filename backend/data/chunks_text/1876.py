@@ -1,0 +1,3 @@
+- Sets up an instance of `AsyncClient` from FastAPI's testing client for integration tests
+- Makes a GET request to the root endpoint (/) using the `ac` object and saves the response in `response` variable
+- Asserts that the status code is 200 and the JSON body contains the expected message "Tomato"

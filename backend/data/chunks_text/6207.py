@@ -1,0 +1,1 @@
+- Retrieves all locations from the specified data source (default is JHU). - Returns an object containing the total number of confirmed cases, deaths, and recovered individuals across all retrieved locations.

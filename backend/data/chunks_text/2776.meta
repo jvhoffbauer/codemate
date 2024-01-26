@@ -1,0 +1,1 @@
+{"original_code": "def get_user(user_id: str):\n    return {\"user_id\": user_id}"}

@@ -1,0 +1,1 @@
+{"original_code": "    def incr(self, field, value=1):\n        return self.__class__.objects.filter(id=self.id).update(\n            **{field: F(field) + value}\n        )"}

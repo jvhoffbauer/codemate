@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/multiple\")\nasync def multiple(foo: Annotated[str, object(), Query(min_length=1)]):\n    return {\"foo\": foo}"}

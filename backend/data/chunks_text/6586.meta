@@ -1,0 +1,1 @@
+{"original_code": "    def probe2(\n        auth_token: str = Depends(get_auth_token),\n        probe2_dep: int = Depends(get_probe2_dep),\n    ) -> int:\n        del auth_token\n        del probe2_dep\n        return 1"}

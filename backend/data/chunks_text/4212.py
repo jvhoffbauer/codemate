@@ -1,0 +1,3 @@
+- Creates a file named 'log.txt' and checks if it already exists. If so, removes it (skipped during testing).
+- Sends a notification using Flask's `client` object for an email address ('foo@example.com') with a query parameter ('some-query'). Asserts that the status code is 200 and the response body contains the expected message.
+- Reads the contents of the newly created 'log.txt' file and asserts that it includes the query string and recipient email address.

@@ -1,0 +1,4 @@
+- Initializes a dictionary `request_state` with a value for the key 'user' (in this case, 'deadpond')
+- Sets the global variable `legacy_request_state_context_var` to the initialized `request_state` using its `set()` method and saves the token returned by it in a variable called `contextvar_token`. This is done so that we can reset the state later.
+- Yields the `request_state` object which makes it available as a local variable inside coroutines that are awaited after this function call.
+- Resets the `legacy_request_state_context_var` back to its original value before returning from the function using its `reset()` method and passing the saved `contextvar_token`.

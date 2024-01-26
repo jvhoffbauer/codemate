@@ -1,0 +1,3 @@
+- Defines a FastAPI route with path `/callable-gen-dependency`.
+- Uses the `Depends()` decorator to pass a callable generator function as a dependency for the `value` parameter of the route handler function.
+- Returns the value returned by the passed callable generator function.

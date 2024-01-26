@@ -1,0 +1,2 @@
+- Creates all database tables defined by Flask-SQLAlchemy's `Base` class using SQLite's engine (`db.engine`) and yields control to the test function.
+- Drops all created tables after the tests are completed.

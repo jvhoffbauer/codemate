@@ -1,0 +1,4 @@
+- Sends GET request to `/sync_context_b` endpoint and retrieves JSON response
+- Asserts that the value of `context_b` in the response is'started b'
+- Asserts that the value of `context_a` in the response is'started a', which indicates that `sync_context_a` was called before `sync_context_b`
+- Asserts that the final values of both contexts are as expected, based on their respective functions being executed synchronously

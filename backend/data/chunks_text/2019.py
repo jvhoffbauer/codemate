@@ -1,0 +1,3 @@
+- This function defines a GET route with the path "/headers-and-object/" and takes an argument `response`.
+- The `Response` object is assigned to the variable `response`, which allows us to manipulate its headers before returning it to the client.
+- A new header named "X-Cat-Dog" is added to the response's headers, with a value of "alone in the world".

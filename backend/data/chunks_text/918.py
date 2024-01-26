@@ -1,0 +1,3 @@
+- Defines a method called `add_api_websocket_route` that adds a new WebSocket route to an existing FastAPI application instance.
+- Takes four arguments: `path`, `endpoint`, `name`, and `dependencies`.
+- Copies the current list of dependencies (if any), extends it with the provided ones, creates a new `APIWebSocketRoute` object, appends it to the routes list, and saves the provider for overriding dependencies in case needed.

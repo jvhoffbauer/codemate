@@ -1,0 +1,1 @@
+{"original_code": "async def logging_middleware(ctx: jsonrpc.JsonRpcContext):\n    logger.info(\"Request: %r\", ctx.raw_request)\n    try:\n        yield\n    finally:\n        logger.info(\"Response: %r\", ctx.raw_response)"}

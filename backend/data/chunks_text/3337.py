@@ -1,0 +1,3 @@
+- Tests two scenarios for accessing a hidden cookie using Flask's `TestClient`.
+- The first scenario tests when no cookie is provided and expects an empty value for the hidden cookie in the response JSON.
+- The second scenario provides a custom cookie with a specific value for the hidden cookie and expects that same value to be present in the response JSON.

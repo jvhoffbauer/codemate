@@ -1,0 +1,4 @@
+- Registers multiple Blueprints (BPs) with FastAPI's `app`.
+- Uses the `tifa.apps` module to access BPs for different functionalities like user management, health checks, and administration.
+- Skips registering an administrative BP in this example, but it can be added by uncommenting its registration line.
+- Also registers a Prometheus metrics endpoint using the `make_asgi_app()` function provided by uvicorn-prometheus.

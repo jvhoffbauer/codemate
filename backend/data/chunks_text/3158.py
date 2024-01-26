@@ -1,0 +1,3 @@
+- Sends a GET request to the /users endpoint with an ID of 42 using Flask's built-in testing client (client)
+- Asserts that the status code returned by the server is 200 and saves it in the variable'response'. If the status code is not 200, the text of the response body is also saved in the variable'response'.
+- Compares the value of'response.status_code' against 200 using Python's assert statement. This ensures that the expected HTTP status code is returned when making requests to the API endpoints.

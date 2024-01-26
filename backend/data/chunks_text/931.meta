@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, errors: Sequence[Any]) -> None:\n        self._errors = errors"}

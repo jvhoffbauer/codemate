@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using Pydantic models as schemas.
+- The `test_openapi_schema` function tests that the generated schema is correct by making a GET request to the `/openapi.json` endpoint and checking its status code and content against expected values.
+- The resulting schema includes information about the API's endpoints (in this case, just the root path), responses with detailed descriptions and media types, and components such as schemas defined in Pydantic classes.

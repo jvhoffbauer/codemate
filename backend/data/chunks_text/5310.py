@@ -1,0 +1,3 @@
+- Tests the functionality of passing a custom colormap through the `colormap_dependency` parameter to the `TilerFactory`.
+- Uses FastAPI and its testing framework, `testclient`, to make requests and verify responses.
+- Verifies that the correct pixels are returned based on the specified band index (`bidx`) and custom colormap name ('cmap1'). Also checks for an error when using an invalid custom colormap name ('another_cmap').

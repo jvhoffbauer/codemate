@@ -1,0 +1,1 @@
+- Defines an asynchronous function called `fake_getter` that takes any number of positional arguments (stored in the `args` tuple) and keyword arguments (stored in the `kwargs` dictionary). - The function returns a boolean value `True`. - This function can be used to replace a real getter method with a mock implementation for testing purposes.

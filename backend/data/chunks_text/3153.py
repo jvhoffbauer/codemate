@@ -1,0 +1,1 @@
+- Tests if a custom exception (RuntimeError) is raised when making a GET request to an endpoint that returns a server error (4xx or 5xx status code). - Uses the `pytest.raises()` decorator to assert that the specified exception is raised during execution of the function being tested (in this case, the `client.get()` method).

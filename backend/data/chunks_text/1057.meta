@@ -1,0 +1,1 @@
+{"original_code": "def is_gen_callable(call: Callable[..., Any]) -> bool:\n    if inspect.isgeneratorfunction(call):\n        return True\n    dunder_call = getattr(call, \"__call__\", None)  # noqa: B004\n    return inspect.isgeneratorfunction(dunder_call)"}

@@ -1,0 +1,4 @@
+- Defines a function `get_shared_counter()` that takes an optional argument `shared`.
+- Initializes a global variable `_shared_counter` with no value (nonlocal).
+- Increments and updates the value of `_shared_counter` inside the function body using the shorthand assignment syntax.
+- Returns a string concatenated from the provided `shared` argument, a hyphen (-), and the updated value of `_shared_counter`.

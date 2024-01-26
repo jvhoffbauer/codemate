@@ -1,0 +1,3 @@
+- Defines a GET endpoint with the path `/response_model-no_annotation-return_dict_with_extra_data`.
+- Specifies that the returned data should conform to the User model, but doesn't actually annotate the function parameter or return type as required by Pydantic.
+- Returns a dictionary containing additional keys (`"password_hash"` in this case), which will be automatically converted into a User object by FastAPI and passed back to the client.

@@ -1,0 +1,3 @@
+- This function is called `test_get`. It tests a GET request to the endpoint `/invoices/`.
+- The `client` object is used to make the HTTP request. A POST request with JSON data is sent instead of a GET request because we want to create an invoice first before retrieving it.
+- The expected status code and response message are checked using Python's built-in `assert` statement. If the actual result doesn't match the expectation, an AssertionError will be raised.

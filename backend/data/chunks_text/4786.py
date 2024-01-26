@@ -1,0 +1,3 @@
+- Retrieves a user's data from a specified Google Cloud Storage bucket using their provided username as the document ID.
+- Returns the retrieved user object in UserInDB format.
+- Utilizes helper functions `get_doc_id()` and `utils.get_doc()`.

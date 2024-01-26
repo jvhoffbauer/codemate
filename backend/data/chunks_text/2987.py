@@ -1,0 +1,1 @@
+- Defines a POST endpoint for saving items with either type of data (OtherItem or Item) using Pydantic's `Union` decorator to validate input types. - Returns a JSON response containing the saved item object.

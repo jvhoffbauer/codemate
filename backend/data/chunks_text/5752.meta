@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def route_submit(self):\n        async def route(request: Request, data: self.schema):  # type:ignore\n            return await self.handle(request, data)  # type:ignore\n\n        return route"}

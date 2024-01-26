@@ -1,0 +1,1 @@
+{"original_code": "def client():\n    from docs_src.body.tutorial001 import app\n\n    client = TestClient(app)\n    return client"}

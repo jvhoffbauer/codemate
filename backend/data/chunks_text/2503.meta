@@ -1,0 +1,1 @@
+{"original_code": "def post_model_with_tuple(item_group: ItemGroup):\n    return item_group"}

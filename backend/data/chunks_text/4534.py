@@ -1,0 +1,1 @@
+- Imports `fake_users_db` and `verify_password` functions from a tutorial on password hashing using Python's built-in library `hashlib`. - Asserts that `verify_password()` function returns true when passed "secret" as plaintext password and the hash of "johndoe" user's password stored in `fake_users_db`.

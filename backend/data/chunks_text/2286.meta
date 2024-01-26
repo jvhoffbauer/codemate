@@ -1,0 +1,1 @@
+{"original_code": "def test_coerce_exclude_unset():\n    response = client.get(\"/items/coerce-exclude-unset\")\n    response.raise_for_status()\n    assert response.json() == {\"aliased_name\": \"coerce\", \"price\": 1.0}"}

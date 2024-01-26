@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture()\nasync def session(connection: AsyncConnection):\n    async with AsyncSession(connection, expire_on_commit=False) as _session:\n        yield _session"}

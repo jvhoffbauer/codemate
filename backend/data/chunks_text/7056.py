@@ -1,0 +1,3 @@
+- Defines a function `verify_password` that takes two arguments `plain_password` and `hashed_password`.
+- Uses the `pwd_context` module to compare the plain text password with its corresponding hashed value using the `verify()` method.
+- Returns a boolean value indicating whether the plain text password matches the hashed password or not.

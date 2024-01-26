@@ -1,0 +1,3 @@
+- Tests availability of Swagger UI, Redoc, and OpenAPI JSON by making GET requests to corresponding routes using `api_client`.
+- Prints responses for debugging purposes.
+- Asserts HTTP status code is 200 for all three tests.

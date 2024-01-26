@@ -1,0 +1,1 @@
+{"original_code": "def get_site(*, alias: str = DEFAULT_ALIAS) -> AdminSite:\n    \"\"\"Get site\"\"\"\n    return get_global(SITE_NAME, alias=alias)"}

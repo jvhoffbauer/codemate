@@ -1,0 +1,3 @@
+- This test case uses pytest and PyTest's `@needs_py310` fixture to ensure that Python version is at least 3.10.
+- It imports a function named 'app' from a file called tutorial002_an_py310.py located inside the background_tasks directory of the docs_src folder.
+- The test creates an instance of Flask's testing client (TestClient), sends a POST request to '/send-notification/' endpoint passing email address ('foo@example.com') and query parameter ('some-query'), checks for HTTP status code and JSON response body, and finally reads the contents of a local text file ('log.txt').

@@ -1,0 +1,5 @@
+- This method is a private helper function called `_delete_items`.
+- It takes two arguments - `Session` and `item_id`, which is a list of IDs to delete.
+- The method fetches all the records with the given IDs using another private helper method `_fetch_item_scalars`.
+- For each record found, it passes it to the public `delete_item()` method to actually remove it from storage.
+- Finally, it returns a list containing all the deleted records as TableModelT objects.

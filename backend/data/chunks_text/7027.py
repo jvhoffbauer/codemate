@@ -1,0 +1,3 @@
+- This function updates a user's information using the `crud.user.update()` method from the FastAPI SQLAlchemy extension (Cruddy).
+- The updated data is passed in as an argument of type `schemas.UserUpdate`.
+- The current authenticated user is retrieved and used to ensure that only the owner of the account can make changes.

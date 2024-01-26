@@ -1,0 +1,1 @@
+{"original_code": "def get_password_hash(password: str):\n    return pwd_context.hash(password)"}

@@ -1,0 +1,3 @@
+- Tests that a POST request with an invalid JSON body (negative age) returns a HTTP status code of 422 and an error message in the JSON response format specified by Pydantic's `JsonableEncoder`.
+- Verifies that the error message includes details about the specific validation failure (in this case, the age being less than zero).
+- Checks for compatibility with both current and upcoming versions of Pydantic (v1 and v2 respectively).

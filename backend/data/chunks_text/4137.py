@@ -1,0 +1,5 @@
+- Generates an OpenAPI (Swagger) JSON schema for a FastAPI application using `docstring` and `Pydantic` model documentation.
+- Defines the HTTP request method GET for the endpoint '/items/' with success and error responses, summary, operation ID, and header parameter'strange_header'.
+- Includes validation errors in both the response body and the HTTP status codes.
+- Uses `IsDict` to define optional dictionary headers with string or null values.
+- Imports required modules and classes from FastAPI and its dependencies.

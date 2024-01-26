@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/path/{param:path}\")\ndef path_convertor(param: str = Path()):\n    return {\"path\": param}"}

@@ -1,0 +1,4 @@
+- Defines a method `register_routes()` to register endpoints for the API.
+- Uses FastAPI's router decorator to define two routes with path parameters `param1` and `param2`.
+- The first route (`/<str:param2>.json`) returns the URL of another endpoint using FastAPI's built-in `url_for()` function.
+- The second route (`/<str:param2>`) simply returns the value of the `param2` parameter.

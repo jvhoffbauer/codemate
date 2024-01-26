@@ -1,0 +1,2 @@
+- Defines a method named `my_method` that takes an argument of type `Input`.
+- Returns an object of type `Output`, with a single element in its `result` list, which is equal to the value of the `x` attribute of the input parameter passed to this function.

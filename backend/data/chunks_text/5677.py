@@ -1,0 +1,1 @@
+- Defines a function `set_global()` that sets a global variable with optional aliasing and overwriting behavior. - Takes four arguments: `name`, `value`, `alias` (default to `DEFAULT_ALIAS`) and `overwrite`. - Returns `True` on success or `False` when trying to overwrite an existing global variable without permission.

@@ -1,0 +1,1 @@
+{"original_code": "def get_query(background_tasks: BackgroundTasks, q: Union[str, None] = None):\n    if q:\n        message = f\"found query: {q}\\n\"\n        background_tasks.add_task(write_log, message)\n    return q"}

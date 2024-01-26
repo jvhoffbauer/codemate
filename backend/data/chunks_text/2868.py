@@ -1,0 +1,1 @@
+- Tests whether `Cookie(1)` is correctly represented as a string using Python's built-in `repr()` function, which should return `"Cookie(1)"` for this case.

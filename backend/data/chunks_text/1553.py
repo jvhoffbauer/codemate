@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Uses the `Query` parameter to retrieve a list of optional query parameters from the URL, with a default value of an empty list if no query is provided (`default=[]`)
+- Returns an object containing the original query and any additional items filtered by it (`query_items`)

@@ -1,0 +1,4 @@
+- Defines a function called `search_users` that takes four arguments (`q`, `skip`, `limit`, and `current_user`)
+- The function uses the `Bleve` library to perform a full text search on user data stored in an indexed database
+- The `query_string` parameter is used to specify a search query using the Bleve Query String syntax
+- The `typeahead` feature of this syntax allows for partial matches by appending a wildcard character (*) at the end of a search term

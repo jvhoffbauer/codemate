@@ -1,0 +1,4 @@
+- Defines a function `test_get` that takes three arguments (a path, an expected status code, and an expected JSON response).
+- Makes a GET request to the specified path using Flask's built-in testing client.
+- Asserts that the HTTP status code of the response is equal to the provided expected value.
+- Unpacks the JSON body of the response and asserts that it matches the expected JSON response passed in as an argument.

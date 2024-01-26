@@ -1,0 +1,1 @@
+- Tests if a user with username 'foo' and token 'jessica' can be retrieved successfully from the server using GET request to '/users/foo'. - Asserts that the status code of the response is 200 (OK). - Verifies that the JSON response contains the expected key-value pair for the requested user ('foo').

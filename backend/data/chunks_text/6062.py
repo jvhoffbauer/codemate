@@ -1,0 +1,5 @@
+- Registers an admin interface for `models.Article` with customized behavior and fields using Django's built-in `django-admin` framework.
+- Defines a subclass of `admin.BaseAuthFieldModelAdmin`, which provides basic authentication and authorization functionality.
+- Sets the `model` attribute to specify that this admin interface is for `models.Article`.
+- Specifies which fields should be displayed in the list view (`read_fields`) by providing their names as a tuple or list.
+- Excludes certain permissions from being applied to specific field types through the use of a dictionary mapping permission enums to lists of excluded fields. This allows fine-grained control over what users can see, edit, and create in the admin interface based on their role.

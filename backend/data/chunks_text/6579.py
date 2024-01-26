@@ -1,0 +1,3 @@
+- Defines a function `get_common_dep()` that takes an optional argument `common_dep`.
+- If `common_dep` is provided, it returns its value directly. Otherwise, it raises a TypeError with message "Missing required positional argument 'common_dep'".
+- The parameter `common_dep` has type `float`, and can be passed as ellipsis (...) to allow any floating point number.

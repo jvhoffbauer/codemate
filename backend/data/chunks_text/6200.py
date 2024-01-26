@@ -1,0 +1,3 @@
+- Retrieves data for three different COVID-19 statistics (confirmed cases, deaths, and recoveries) using `get_category()`.
+- Combines the retrieved data into a dictionary with keys corresponding to each statistic.
+- Includes an additional key called 'latest' that contains the most recent values of each statistic.

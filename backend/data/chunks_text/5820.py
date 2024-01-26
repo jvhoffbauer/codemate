@@ -1,0 +1,3 @@
+- Removes one or more specified `BaseAdmin` classes from the list of registered administrators.
+- Loops through each class passed as an argument and removes it from the internal dictionary of registered administrator classes (`self._registered`) if it is present there.
+- Uses a list comprehension to simplify the loop logic.

@@ -1,0 +1,3 @@
+1. Defines a migration function `upgrade()` that will be executed when running an upgrade on the database schema using Flask-Migrate and SQLAlchemy.
+2. Creates a new table named 'user' with columns for user ID, full name, email address (unique), hashed password, active status, and superuser flag. Primary key is set to 'ID'.
+3. Creates indexes for email addresses and full names in the 'user' table. Email addresses are made unique.

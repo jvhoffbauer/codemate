@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/callable-dependency\")\nasync def get_callable_dependency(value: str = Depends(callable_dependency)):\n    return value"}

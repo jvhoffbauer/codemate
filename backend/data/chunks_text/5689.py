@@ -1,0 +1,2 @@
+- Defines a property called `choices` for the current class (`cls`)
+- Returns an empty list with a tuple containing None and the value of the `__empty__` attribute (if it exists), followed by a list comprehension that creates tuples from each member's value and label

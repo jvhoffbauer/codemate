@@ -1,0 +1,1 @@
+- Defines a function `test_celery()` that sends a Celery task with name 'test_celery' and arguments ('words???'). - Returns a string 'ok'.

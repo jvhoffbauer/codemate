@@ -1,0 +1,3 @@
+- Retrieves a list of items owned by the currently authenticated user using FastAPI's dependency injection and `Depends()`.
+- The `read_own_items()` function takes in an argument `current_user`, which is automatically injected by FastAPI based on the `Annotated[]` decorator. This allows us to access the currently logged-in user without having to pass it as a parameter to every endpoint that requires authentication.
+- Returns a list containing dictionaries with item IDs and owner names (represented here as `"owner": current_user.username"`).

@@ -1,0 +1,1 @@
+{"original_code": "        async def handle_exception(self, exc):\n            if isinstance(exc, MyErrorToUnhandledException):\n                raise MyUnhandledException(\"My unhandled exception\")\n            elif isinstance(exc, MyErrorToConvert):\n                raise MyConvertedError\n            else:\n                raise NotImplementedError"}

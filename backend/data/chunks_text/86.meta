@@ -1,0 +1,1 @@
+{"original_code": "def collate(\n    expression: Union[_ColumnExpressionArgument[str], str], collation: str\n) -> BinaryExpression[str]:\n    return sqlalchemy.collate(expression, collation)  # type: ignore[arg-type]"}

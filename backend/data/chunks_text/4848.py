@@ -1,0 +1,4 @@
+- This function allows searching for users using Bleve's Query String Syntax (http://blevesearch.com/docs/Query-String-Query/)
+- The `q` parameter is used to pass in the user input query string
+- The `skip` and `limit` parameters are used for pagination of results
+- The `current_user` dependency ensures that only superusers can access this endpoint

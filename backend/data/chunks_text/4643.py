@@ -1,0 +1,1 @@
+- Tests the `get_password_hash()` function defined in tutorial005 of the security section for Python 3.10 documentation by passing a secret string "secretalice" and asserts its return value.

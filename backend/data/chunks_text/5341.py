@@ -1,0 +1,3 @@
+- Defines a GET request for the `/third` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional query parameter named `params`, which is parsed and validated by the `Dependencies` class from FastAPI's built-in dependency injection system (`dependencies.BandsExprParamsOptional`)
+- Returns the value of the `params` argument, which can be either provided in the URL query string or omitted if not required

@@ -1,0 +1,2 @@
+- Tests the `model_json_schema()` method of Pydantic's inheritance feature for JSON schema generation, specifically version 2 (V2)
+- Asserts that the generated JSON schema matches a specific structure with required fields 'id' and 'enum_field', as well as an enum definition for 'enum_field' referenced from the '$defs' section

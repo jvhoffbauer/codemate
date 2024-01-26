@@ -1,0 +1,3 @@
+- Defines a dataclass `BackendParams` that extends from `DefaultDependency`.
+- Contains two class variables, `minzoom` and `maxzoom`, both of type `int`.
+- These variables can be used to override the default minimum and maximum zoom levels for map rendering in the backend implementation.

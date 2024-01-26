@@ -1,0 +1,1 @@
+{"original_code": "    def __getitem__(self, name):\n        return self._redis_client[name]"}

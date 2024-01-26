@@ -1,0 +1,4 @@
+- Tests the router decorator with a dependency that requires a query parameter 'q' using Pytest and Flask-RESTful.
+- Verifies that a 422 Unprocessable Entity status is returned if the 'q' parameter is missing in the request URL.
+- Checks that the error message conforms to the JSON API specification for validation errors (IsDict).
+- Also checks for compatibility with older versions of Pydantic by including an alternative error format (TODO).

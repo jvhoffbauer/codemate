@@ -1,0 +1,4 @@
+- Creates a new user with a randomly generated email and password using `UserCreate`.
+- Saves the newly created user to the default bucket using `crud.user.upsert`.
+- Authenticates the user using their email (which is also their username in this case) and password using `crud.user.authenticate`.
+- Asserts that authentication was successful by checking if an object representing the user is returned from `crud.user.authenticate`, and asserts that the saved user's username matches the one obtained during authentication.

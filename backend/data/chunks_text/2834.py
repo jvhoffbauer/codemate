@@ -1,0 +1,3 @@
+- Defines a new route `/` with an HTTP POST method using FastAPI's decorator syntax
+- Accepts two query parameters, `username` and `password`, both of type string, through FastAPI's `Form` class
+- Returns the value of the `username` parameter without any further processing or validation (disabled by `pragma: nocover`)

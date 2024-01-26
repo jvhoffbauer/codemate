@@ -1,0 +1,7 @@
+- Defines a function `save` that takes several arguments related to saving data to a file.
+- The first argument `name` is a string representing the filename without the extension.
+- The second argument `content` can be either a string or a Python object (either dict or list).
+- By default, the file will be written in 'w' mode using the built-in `open()` function from Python standard library.
+- If `content` is a dictionary or a list, it gets converted into JSON format using `json.dumps()`.
+- Additional keyword arguments are passed through to `json.dumps()` for customization of output formatting.
+- Finally, the resulting content is written to the specified file and the corresponding PathLib object is returned.

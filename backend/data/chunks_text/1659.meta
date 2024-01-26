@@ -1,0 +1,1 @@
+{"original_code": "async def get_db():\n    db = DBSession()\n    try:\n        yield db\n    finally:\n        db.close()"}

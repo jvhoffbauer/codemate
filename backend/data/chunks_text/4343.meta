@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(name=\"app\", scope=\"module\")\ndef get_app():\n    with pytest.warns(DeprecationWarning):\n        from docs_src.events.tutorial001 import app\n    yield app"}

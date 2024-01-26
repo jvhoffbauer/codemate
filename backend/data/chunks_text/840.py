@@ -1,0 +1,3 @@
+- Generates the OpenAPI schema for the FastAPI app using the `get_openapi()` function from FastAPI's internal module.
+- Stores the resulting dictionary as an attribute of the app instance (`self`) so subsequent calls can be avoided.
+- Allows customization of the schema through various parameters passed to `get_openapi()`. See FastAPI documentation for details.

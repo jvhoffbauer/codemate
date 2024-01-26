@@ -1,0 +1,3 @@
+- Tests if an empty query returns a JSON object with an empty list for results (q).
+- Uses Pytest and Flask's built-in testing client to make HTTP requests and verify responses.
+- Asserts that the status code is 200 OK and checks the contents of the returned JSON data.

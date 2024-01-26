@@ -1,0 +1,4 @@
+- Defines a function `point()` that retrieves the value of a specific location (longitude and latitude) from a geospatial dataset using RasterIO library in Python.
+- Takes several dependencies including path to the data file, parameters related to layers, datasets, readers, and environment variables required by RasterIO.
+- Uses RasterIO's `Point()` method to extract values at specified coordinates based on provided layer and dataset parameters.
+- Returns a dictionary containing the extracted values along with their corresponding band names and coordinates.

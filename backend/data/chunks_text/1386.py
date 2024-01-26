@@ -1,0 +1,3 @@
+- Endpoint to retrieve a list of users (GET request)
+- Tagged as part of the 'users' resource group
+- Returns a JSON response with an array containing one user object, where each user is represented by a dictionary with a single key ('username') and value ('johndoe')

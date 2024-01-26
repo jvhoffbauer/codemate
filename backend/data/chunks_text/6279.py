@@ -1,0 +1,2 @@
+- Tests GET request to /v2/{state} endpoint for locations data using ASGI client and mocking datetime functions
+- Verifies that returned JSON matches expected output from a predefined file

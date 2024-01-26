@@ -1,0 +1,2 @@
+- Defines a method named `probe` using the `@ep.method()` decorator in an Epics class (assuming `ep` is an instance of the `Epics` class).
+- The method returns a string value "ok".

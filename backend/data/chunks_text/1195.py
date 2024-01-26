@@ -1,0 +1,3 @@
+- Adds a new header `"X-Process-Time"` to the HTTP response with the value of the processing time in seconds.
+- Wraps around all incoming requests using FastAPI's middleware mechanism.
+- Measures the processing time between request and response handling by storing the current timestamp at the beginning and subtracting it from the end.

@@ -1,0 +1,3 @@
+- Removes query parameters from a URL and returns just the path for `full_name_k1`.
+- Compares the resulting path with another key (`key2`) using the `util.key_match2()` function.
+- Returns True if both keys match or False otherwise.

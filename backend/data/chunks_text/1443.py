@@ -1,0 +1,3 @@
+- Creates a new item with given ID, title and description using POST request to /items endpoint
+- Includes an X-Token header with value 'coneofsilence' for authentication purposes
+- Returns a JSON response containing the newly created item with its properties

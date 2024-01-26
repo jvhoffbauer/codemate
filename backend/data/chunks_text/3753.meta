@@ -1,0 +1,1 @@
+{"original_code": "def test_path_operation_img():\n    shutil.copy(\"./docs/en/docs/img/favicon.png\", \"./image.png\")\n    response = client.get(\"/items/foo?img=1\")\n    assert response.status_code == 200, response.text\n    assert response.headers[\"Content-Type\"] == \"image/png\"\n    assert len(response.content)\n    os.remove(\"./image.png\")"}

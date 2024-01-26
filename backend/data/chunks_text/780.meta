@@ -1,0 +1,1 @@
+{"original_code": "    def is_debug(self):\n        return self in (self.LOCAL, self.STAGING, self.TESTING)"}

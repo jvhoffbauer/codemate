@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/{item_id}\")\ndef read_root(item_id: str, request: Request):\n    client_host = request.client.host\n    return {\"client_host\": client_host, \"item_id\": item_id}"}

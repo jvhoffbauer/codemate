@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/required\")\nasync def required(foo: Annotated[str, Query(min_length=1)]):\n    return {\"foo\": foo}"}

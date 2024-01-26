@@ -1,0 +1,1 @@
+{"original_code": "    async def get_list_columns(self, request: Request) -> List[TableColumn]:\n        columns = await super().get_list_columns(request)\n        for column in columns:\n            if column and column.name in self.toggled_columns:\n                column.toggled = False\n        return columns"}

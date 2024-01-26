@@ -1,0 +1,2 @@
+- Checks if a given Django model field has a type annotation that represents bytes or non-ASCII byte strings (i.e., `bytes`, `bytearray`, or `memoryview`) using a helper function called `is_bytes_or_nonable_bytes_annotation`.
+- Returns True if the field's type annotation is compatible with storing binary data, False otherwise.

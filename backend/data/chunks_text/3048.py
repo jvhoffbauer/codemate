@@ -1,0 +1,1 @@
+- Defines a function named `get_a_b()` that returns a string containing 'Hello A B' when called.

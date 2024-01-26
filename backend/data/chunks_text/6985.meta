@@ -1,0 +1,1 @@
+{"original_code": "def run_alembic_migrations():\n    import alembic.config\n\n    alembicArgs = [\n        \"--raiseerr\",\n        \"upgrade\",\n        \"head\",\n    ]\n    alembic.config.main(argv=alembicArgs)"}

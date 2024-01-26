@@ -1,0 +1,3 @@
+- The `AlgorithmFactory` class is a factory that creates an instance of the `FastAPI` router with predefined routes to handle requests related to algorithms.
+- It supports a specific set of algorithms defined by the `available_algorithms` attribute, which is a dictionary mapping algorithm names (keys) to their corresponding instances (values).
+- The `__post_init__` method registers two routes: one to retrieve the list of all available algorithms and another to get the metadata of a specific algorithm. Both methods use the `metadata` function to extract relevant information from each algorithm's schema.

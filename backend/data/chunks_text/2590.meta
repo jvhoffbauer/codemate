@@ -1,0 +1,1 @@
+{"original_code": "@app.websocket(\"/ws\")\nasync def get_value_by_ws(\n    websocket: WebSocket, value: int = Depends(extract_value_from_http_connection)\n):\n    await websocket.accept()\n    await websocket.send_json(value)\n    await websocket.close()"}

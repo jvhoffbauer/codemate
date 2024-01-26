@@ -1,0 +1,3 @@
+- Defines a mock function for the `get()` method of the `Request` module in the `csbs` service of the location module
+- Creates a fake response object called `FakeRequestsGetResponse` that returns data from a CSV file when called
+- Uses the `mock` library's context manager (`with`) to simulate reading a file and returning its contents as if it were an actual network request

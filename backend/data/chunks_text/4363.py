@@ -1,0 +1,1 @@
+- This function uses `aiohttp`'s `TestClient` to simulate a request with PUT method and JSON body containing 'name' key-value pair. - The expected status code is checked against the actual one returned by the server. - If the status code matches, the response text and JSON data are inspected for correctness.

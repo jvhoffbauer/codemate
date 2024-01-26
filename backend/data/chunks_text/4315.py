@@ -1,0 +1,3 @@
+- Creates a new note using POST request and saves it to database
+- Retrieves the created note using GET request and checks its contents and status code
+- Uses `TestClient` from FastAPI's testing module for integration tests

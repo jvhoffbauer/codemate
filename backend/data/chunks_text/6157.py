@@ -1,0 +1,3 @@
+- Defines a function named `test` that takes in a context object (`ctx`) as an argument.
+- The function's docstring provides a brief description of what it does, which is to run PyTest tests with verbose output (-v flag).
+- Inside the function body, the `ctx.run()` method is called with the command "python -m pytest -v" passed as arguments. This will execute all the tests defined in the project using PyTest and display detailed information about each test case.

@@ -1,0 +1,2 @@
+- Initializes a new object with an existing `Pool` instance passed as argument
+- Assigns the `Pool` to the `self.pool` attribute of the new object for future use within methods defined in this class

@@ -1,0 +1,3 @@
+- Defines an exception handler for `ValidationError` exceptions in FastAPI applications using the `@app.exception_handler` decorator.
+- Logs the error with a custom message and relevant details such as URL, headers, and stack trace using the built-in Python logging module (`logging`) and formats it using `traceback`.
+- Returns a failed response object with a business error containing the validation errors from the original exception.

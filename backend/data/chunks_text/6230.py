@@ -1,0 +1,5 @@
+- `get_locations()` function retrieves and parses NYT COVID-19 data for US counties, caches it for an hour, and returns a dictionary of normalized locations.
+- It first checks whether there's any result in the shared cache, then requests the data from the API endpoint if necessary.
+- After receiving the raw data, it parses the CSV file into a list of dictionaries representing each location's statistics over time.
+- Then it groups them based on their states/counties, creates separate lists for confirmed cases and deaths, and normalizes the items into a format suitable for storing in Redis.
+- Finally, it saves the resulting dictionary to both local memory and Redis cache.

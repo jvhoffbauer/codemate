@@ -1,0 +1,4 @@
+- Endpoint to retrieve all scheduled jobs using FastAPI's `@router.get()` decorator with a descriptive summary and name.
+- Uses Python's built-in `schedule` library to access all registered jobs via `schedule.get_jobs()`.
+- Loops through each job and creates a dictionary containing relevant information such as ID, function reference, arguments, cron model, next run time, which is then appended to an empty list called `schedules`.
+- Returns a JSON response containing the list of dictionaries representing all scheduled jobs using FastAPI's `resp.ok()` method.

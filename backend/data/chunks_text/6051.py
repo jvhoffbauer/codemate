@@ -1,0 +1,7 @@
+- Defines an `IntegerChoices` enum called `UserStatus`.
+- Creates a `User` model with a field named'status' of type `Field`, initialized to `UserStatus.NORMAL` and titled as '状态'.
+- Retrieves the `Modelfield` object for the'status' field using `model_fields()`.
+- Parses the `Modelfield` into a FormItem using `amis_parser.as_FormItem()`, setting its default value to `UserStatus.NORMAL`.
+- Asserts that the resulting FormItem has the correct properties (e.g., label, options).
+- Repeats steps 4-6 but sets the `is_filter` flag to True to create a FilterItem instead of a FormItem.
+- Finally, parses the `Modelfield` into a TableColumn using `amis_parser.as_TableColumn()` and asserts that it has the expected properties (i.e., label and mapping keys).

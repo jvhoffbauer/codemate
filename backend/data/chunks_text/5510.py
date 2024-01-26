@@ -1,0 +1,3 @@
+- Tests the `/stac/tiles` endpoint for missing assets and returns a 400 status code.
+- Retrieves a raster image with specified asset (band) and rescale factor using query parameters in URL.
+- Retrieves an expression raster image with specified band and rescale factor using query parameters in URL.

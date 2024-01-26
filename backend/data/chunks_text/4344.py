@@ -1,0 +1,3 @@
+- Imports a Flask application named `app` from a specific location in the project's documentation sources (docs_src).
+- Warns about deprecation of this method and returns the imported object for use by other tests or functions that require it temporarily.
+- Yields the returned object, allowing its usage within the context of the function without actually returning it as output.

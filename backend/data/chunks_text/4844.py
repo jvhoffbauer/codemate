@@ -1,0 +1,5 @@
+- Deletes an item with a specific ID from the database using FastAPI's dependency injection to retrieve the necessary objects.
+- Checks whether the requested item exists in the database; raises a `HTTPException` with status code 404 if it doesn't exist.
+- Verifies that the user making the request has sufficient privileges to perform this action based on the ownership of the item being deleted; raises a `HTTPException` with status code 400 if insufficient permissions are detected.
+- Removes the specified item from the database using Crudify's `crud.item.remove()` function.
+- Returns the removed item as the API response body.

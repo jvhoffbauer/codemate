@@ -1,0 +1,4 @@
+- Defines a FastAPI application and creates an endpoint for retrieving the ID of the Web Mercator Quad tile matrix set using the `Query` parameter decorator to validate input values.
+- Creates another endpoint that returns the list of available tile matrix sets, which is passed as a tuple to the `Literal` type hint to restrict allowed inputs.
+- Uses Pytest's built-in testing framework (TestClient) to make requests against the endpoints defined above and tests their responses with assertions.
+- Demonstrates how to use query parameters to filter results based on specific criteria or constraints.

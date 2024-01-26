@@ -1,0 +1,1 @@
+- Automatically registers SQLAlchemy CRUD operations for User and Tag models as endpoints in a FastAPI application using `TableModelParser`, `SqlalchemyCrud`, and `Router`. - Uses autouse fixture to run this setup at test suite startup.

@@ -1,0 +1,3 @@
+- Filters Django queryset based on a specific time column and a specified time delta (in this case `datetime.now() - td`) using SQL WHERE clause.
+- Assigns the filtered queryset to a variable called `sel`.
+- Returns the filtered queryset as a new `Select` object for further processing or rendering in views.

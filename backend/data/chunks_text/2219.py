@@ -1,0 +1,3 @@
+- Defines a new endpoint `/foo` using FastAPI's decorator syntax
+- Accepts an argument of type `Items`, which is defined elsewhere in the application
+- Returns all the items contained within the `Items` object, making them available to be consumed by clients that make requests to this endpoint

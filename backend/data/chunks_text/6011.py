@@ -1,0 +1,1 @@
+- Initializes a new instance of Django's AdminSite class with the provided `AdminApp` object as its application context. - Calls the parent constructor (i.e., `super().__init__(app)`) to set up common behavior for all subclasses of `AdminSite`. - Registers the `UserAdmin` class as an administrative view for managing user accounts using Django's built-in authentication system.

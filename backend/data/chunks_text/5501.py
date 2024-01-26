@@ -1,0 +1,2 @@
+- Tests the `GET /mosaicjson/WMTSCapabilities.xml` endpoint using a mock file backend to simulate reading from disk
+- Verifies that the XML response is returned with the correct URLs for tiles at different scales

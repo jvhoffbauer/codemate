@@ -1,0 +1,3 @@
+- This endpoint returns a JSON object with an item's name, price, and owner IDs using FastAPI's `response_model`.
+- The value for the price field is set to "foo" which is not a valid number or float, causing it to be considered as inner invalid data by OpenAPI.
+- The list of owner IDs contains both "foo" and "bar", where "foo" is also considered as inner invalid data due to its non-numeric format.

@@ -1,0 +1,1 @@
+- Defines a GET request for the `/query/optional` endpoint with an optional parameter called `query`. - If the `query` parameter is not provided, returns a fixed string ("foo bar"). - Otherwise, concatenates the fixed string and the value of the `query` parameter using an f-string.

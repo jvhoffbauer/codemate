@@ -1,0 +1,2 @@
+- Defines an asynchronous function `bg` that takes a dictionary `state` as its argument
+- Sets a key'sync_bg' in the `state` dictionary with a value containing a command to be executed synchronously using the `set` utility, where 'b' and 'a' are values obtained from context variables 'context_b' and 'context_a', respectively

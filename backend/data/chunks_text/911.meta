@@ -1,0 +1,1 @@
+{"original_code": "    def matches(self, scope: Scope) -> Tuple[Match, Scope]:\n        match, child_scope = super().matches(scope)\n        if match != Match.NONE:\n            child_scope[\"route\"] = self\n        return match, child_scope"}

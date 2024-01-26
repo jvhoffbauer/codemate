@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `fastapi add_route` and `fastapi openapi`.
+- Defines endpoints with request parameters, headers, responses, status codes, summaries, operation IDs, and error handling (using Pydantic's ValidationError).
+- Includes custom schemas for HTTP errors (using $ref to reference other schemas).

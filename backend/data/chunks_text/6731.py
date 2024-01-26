@@ -1,0 +1,5 @@
+- Defines a function `inner` that takes variable number of arguments (positional and keyword).
+- Retrieves the current Sentry Hub instance using `Hub.current`.
+- Creates a new Sentry Client object with the provided arguments and keywords.
+- Binds the newly created client to the current Hub's list of clients.
+- If the 'transport' argument is missing from the input dictionary, calls `monkeypatch_test_transport()` on the currently bound client.

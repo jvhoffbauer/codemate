@@ -1,0 +1,1 @@
+{"original_code": "def test_path_float_42_5():\n    response = client.get(\"/path/float/42.5\")\n    assert response.status_code == 200\n    assert response.json() == 42.5"}

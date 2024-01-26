@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional list of items as a query parameter named `q`, which is converted to a Python list using Pydantic's `Annotated` type hinting and validation feature (`Query()`)
+- Returns a dictionary containing the original query parameters with the added `q` key if provided by the client, otherwise an empty dictionary

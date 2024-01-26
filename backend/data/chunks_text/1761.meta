@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/index-weights/\")\nasync def create_index_weights(weights: dict[int, float]):\n    return weights"}

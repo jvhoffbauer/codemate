@@ -1,0 +1,1 @@
+- This function, `test_partial`, tests a partial GET request with query parameter 'q' set to 'bar'. - The Flask application returns a JSON response containing two key-value pairs ('some_arg': 'foo', 'q': 'bar'). - The expected result is that the returned dictionary matches this structure and contains the correct values for both keys.

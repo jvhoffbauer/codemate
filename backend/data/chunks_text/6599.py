@@ -1,0 +1,3 @@
+- This function named `test_notify` is testing a method called `echo`.
+- It sends a request with specific parameters to this method and expects no response content in return.
+- The value of the parameter 'data' (which should be 'data-123') is stored in a history list by another module called `echo`, which can later be accessed for further processing or verification.

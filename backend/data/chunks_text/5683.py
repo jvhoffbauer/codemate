@@ -1,0 +1,1 @@
+- The `exists_site()` function checks if a website with the given name (specified by the `SITE_NAME` constant) and optional alias (defaulting to `DEFAULT_ALIAS`) exists using the `exists_global()` helper function. - This function returns a boolean value indicating whether the site is present or not.

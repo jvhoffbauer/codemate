@@ -1,0 +1,3 @@
+- Tests if an invalid X-Token header is provided in a POST request to /admin endpoint
+- Asserts that the server returns HTTP status code 400 and error message detailing X-Token header invalidity
+- Uses Flask's built-in `TestClient` class for testing endpoints without starting the development server

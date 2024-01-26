@@ -1,0 +1,1 @@
+{"original_code": "def get_doc(\n    bucket: Bucket, *, doc_id: str, doc_model: Type[PydanticModel]\n) -> Optional[PydanticModel]:\n    result = bucket.get(doc_id, quiet=True)\n    if not result.value:\n        return None\n    model = doc_model(**result.value)\n    return model"}

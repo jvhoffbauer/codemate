@@ -1,0 +1,1 @@
+{"original_code": "    async def get(self, session: AsyncSession, *args, **kwargs) -> Optional[ModelType]:\n        result = await session.execute(\n            select(self._model).filter(*args).filter_by(**kwargs)\n        )\n        return result.scalars().first()"}

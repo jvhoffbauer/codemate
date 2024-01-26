@@ -1,0 +1,3 @@
+- Tests if an unauthorized user tries to access a protected resource by providing incorrect credentials (email and password).
+- Uses `crud.user.authenticate()` function from FastAPI's SQLAlchemy extension to authenticate the user with provided email and password.
+- Asserts that the returned user object should be `None`, indicating failed authentication.

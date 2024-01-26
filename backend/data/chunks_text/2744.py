@@ -1,0 +1,4 @@
+- Tests if a view function with no `ResponseModelAnnotation` returns a submodel with extra data in its JSON response
+- Sends an HTTP GET request to the specified URL using Flask's built-in `client` object
+- Asserts that the status code is 200 and saves the response text for debugging purposes (optional)
+- Converts the response body into a Python dictionary and asserts that it contains specific keys and values

@@ -1,0 +1,1 @@
+- Tries to create a SQLAlchemy column for an `Optional[int]` field in a SQLModel subclass without passing any SA keyword arguments (`sa_column`) or using the `PrimaryKeyConstraint` decorator (`sa_column_kwargs`). - Raises a `RuntimeError` because both options are required when defining a primary key column in SQLAlchemy.

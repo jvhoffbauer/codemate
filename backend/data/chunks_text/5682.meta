@@ -1,0 +1,1 @@
+{"original_code": "def set_site(\n    site: AdminSite,\n    *,\n    alias: str = DEFAULT_ALIAS,\n    overwrite: bool = False,\n) -> bool:\n    \"\"\"Set site\"\"\"\n    return set_global(SITE_NAME, site, alias=alias, overwrite=overwrite)"}

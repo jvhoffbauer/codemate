@@ -1,0 +1,1 @@
+{"original_code": "    def load_dialect_impl(self, dialect: Dialect) -> TypeEngine[Any]:\n        if dialect.name == \"postgresql\":\n            return dialect.type_descriptor(UUID())\n        else:\n            return dialect.type_descriptor(CHAR(32))"}

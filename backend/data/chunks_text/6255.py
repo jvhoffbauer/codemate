@@ -1,0 +1,3 @@
+- Defines a mock function `mocked_session_get` that returns a fake HTTP response when called with specific arguments and keywords
+- Extracts URL components to generate a unique file name and state value based on the requested resource
+- Yields an instance of `FakeRequestsGetResponse`, which is likely a custom class used in this context to simulate an actual HTTP request/response cycle

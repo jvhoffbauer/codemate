@@ -1,0 +1,3 @@
+- Defines a class method called `from_orm` that takes three arguments: `cls`, `obj`, and `update`.
+- Marks this method as deprecated using the `@deprecated` decorator with an explanation message.
+- Inside the function body, calls another method of the same class (`model_validate`) to perform the actual conversion from ORM object to model instance. The result is returned.

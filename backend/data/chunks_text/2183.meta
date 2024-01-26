@@ -1,0 +1,1 @@
+{"original_code": "async def get_counter(count: int = Depends(dep_counter)):\n    return {\"counter\": count}"}

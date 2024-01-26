@@ -1,0 +1,1 @@
+{"original_code": "@app.put(\"/items/{item_id}\")\nasync def update_item(item_id: int, item: Item, user: User, importance: int = Body()):\n    results = {\"item_id\": item_id, \"item\": item, \"user\": user, \"importance\": importance}\n    return results"}

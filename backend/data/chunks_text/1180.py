@@ -1,0 +1,1 @@
+- Defines a function `create_item_for_user` that takes in two arguments: `user_id` and an instance of `schemas.ItemCreate`. - The returned value is the result of calling `crud.create_user_item()`, passing in the `item` argument from the input parameters and the `user_id` extracted from the first parameter.

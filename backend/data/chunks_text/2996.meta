@@ -1,0 +1,1 @@
+{"original_code": "async def decorator_depends():\n    return {\"in\": \"decorator-depends\"}"}

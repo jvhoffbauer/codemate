@@ -1,0 +1,1 @@
+- Retrieves a list of items from the database using SQLAlchemy's session object (db) and returns them as a list. - Allows for optional parameters `skip` and `limit`, which are used to paginate through large result sets by specifying an offset and number of results to retrieve at once.

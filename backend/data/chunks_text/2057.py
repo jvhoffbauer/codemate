@@ -1,0 +1,3 @@
+- Starts a simple web server on port 8008 for serving the MkDocs generated website after building all languages using `build-all`.
+- Warns against using it for development and suggests using `live` or `mkdocs serve` instead.
+- Provides context about its purpose as an alternative way of previewing translated websites without rebuilding them every time.

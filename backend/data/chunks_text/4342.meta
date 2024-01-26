@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_put(client: TestClient):\n    response = client.put(\n        \"/items/bar\", json={\"name\": \"Barz\", \"price\": 3, \"description\": None}\n    )\n    assert response.json() == {\n        \"name\": \"Barz\",\n        \"description\": None,\n        \"price\": 3,\n        \"tax\": 10.5,\n        \"tags\": [],\n    }"}

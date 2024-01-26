@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/\", openapi_extra={\"x-aperture-labs-portal\": \"blue\"})\nasync def read_items():\n    return [{\"item_id\": \"portal-gun\"}]"}

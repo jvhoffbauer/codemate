@@ -1,0 +1,3 @@
+- Tests retrieving user information as a superuser using the `TestClient`.
+- Asserts that the response contains the expected user data (including email and active status).
+- Verifies that the user has superuser privileges.

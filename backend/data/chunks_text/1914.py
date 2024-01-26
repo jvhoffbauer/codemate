@@ -1,0 +1,3 @@
+- Generates HTML documentation for Flask application using ReDoc library
+- Retrieves OpenAPI specification from app's URL and sets it as input to ReDoc
+- Customizes ReDoc UI by setting a new title and loading external JavaScript file

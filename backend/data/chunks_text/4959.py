@@ -1,0 +1,1 @@
+- Registers a new application (`StaticFiles`) to serve static files from a specified directory (`settings.STATIC_DIR`) at a specific URL path (`settings.STATIC_PATH`) under the main FastAPI instance (`app:`). - The registered `StaticFiles` application is named "static" for future reference in other parts of the application.

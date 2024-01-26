@@ -1,0 +1,1 @@
+{"original_code": "def test_get_invalid():\n    response = client.get(\"/foo\")\n    assert response.status_code == status.HTTP_422_UNPROCESSABLE_ENTITY"}

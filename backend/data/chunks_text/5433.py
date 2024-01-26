@@ -1,0 +1,6 @@
+- Defines an `@app.route('/point/{lon},{lat}')` endpoint using FastAPI's decorator syntax to register it under the `/point` path.
+- Specifies that the endpoint returns a `Point` object and uses JSON format for responses.
+- Provides detailed documentation on the required parameters through the use of Pydantic's `Path()` function.
+- Dependencies such as environment variables, path dependencies, layer dependencies, etc., are passed into the endpoint via keyword arguments.
+- Uses RasterIO library to read data from a specific location based on longitude and latitude coordinates provided by the user.
+- Returns a dictionary containing the requested coordinate pair along with its corresponding values from all available layers.

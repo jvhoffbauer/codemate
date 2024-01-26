@@ -1,0 +1,3 @@
+- Defines a function named `_bidx_expr` that takes an optional argument `params`.
+- The `Depends` decorator is used to specify dependencies for this function, in this case `dependencies.BidxExprParams`.
+- This function simply returns the value of the `params` argument without any modifications or calculations.

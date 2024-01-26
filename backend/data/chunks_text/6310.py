@@ -1,0 +1,3 @@
+- Initializes a migration context with the given database connection and metadata objects
+- Begins a transaction within the context
+- Executes SQL migrations using `context.run_migrations()`, comparing the current state of the database to the desired schema defined in the metadata objects

@@ -1,0 +1,3 @@
+- Initializes a FastAPI application called `tifa.app:create_app`.
+- Runs it using Uvicorn's `run()` function with various options such as `factory`, `reload`, and `log_level`.
+- Binds to all network interfaces (`host`) on port 8000 for HTTP requests.

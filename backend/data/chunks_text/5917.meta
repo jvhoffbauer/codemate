@@ -1,0 +1,1 @@
+{"original_code": "    def field_allow_none(field: ModelField) -> bool:\n        if is_union(field.field_info.annotation):\n            for t in get_args(field.field_info.annotation):\n                if is_none_type(t):\n                    return True\n        return False"}

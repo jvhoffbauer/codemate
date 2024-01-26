@@ -1,0 +1,3 @@
+- This endpoint is named `read_query_checker`.
+- It uses FastAPI's dependency injection to pass a boolean value called `fixed_content_included` from an instance of the `Checker` class (defined elsewhere) into the function as a parameter.
+- The function returns a dictionary containing a key-value pair where the key is "fixed_content_in_query" and the value is the passed boolean value.

@@ -1,0 +1,3 @@
+- Defines an endpoint `/` with HTTP GET method using FastAPI's decorator syntax
+- Assigns values to variables 'a' and 'b', where 'b' is concatenated string of 'b' and 'a'
+- Returns a dictionary containing key 'hello world' and value assigned to variable 'b' as response body

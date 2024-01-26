@@ -1,0 +1,3 @@
+- This method is called when an attribute of the object is accessed that doesn't exist in its dictionary (i.e., `self.__dict__`)
+- It checks whether the missing attribute is 'cloned_field'. If so, it returns the value stored under this key in `self.__dict__`. Otherwise...
+-...it retrieves the value from a nested dictionary called '_update', which contains updated values for certain attributes during cloning. If the requested attribute isn't found there either, it falls back to getting it from another dictionary ('_modelfield') associated with the original model field.

@@ -1,0 +1,2 @@
+- Defines a function `model_config_attr` that takes three arguments: `model`, which is an instance of Pydantic's BaseModel class; `name`, which is the attribute or configuration option to retrieve from the model's config dictionary; and `default`, which is an optional value to use if the specified key is not found in the config dict (default is `None`)
+- The function returns either the value associated with the given `name` key in the `model.model_config` dictionary, or the provided `default` value if the key doesn't exist

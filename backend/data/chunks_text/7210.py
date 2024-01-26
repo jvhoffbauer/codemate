@@ -1,0 +1,1 @@
+- Defines a function `_alchemy_encoder` to handle serialization of specific data types (datetime.dates and decimal.Decimals). - Converts datetime.dates to a string format with specified formatting using strftime(). - Converts decimal.Decimals to floating point numbers for easier handling during deserialization by converting them back to their original type after deserializing.

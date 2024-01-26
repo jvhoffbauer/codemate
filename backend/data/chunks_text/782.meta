@@ -1,0 +1,1 @@
+{"original_code": "    def is_testing(self):\n        return self == self.TESTING"}

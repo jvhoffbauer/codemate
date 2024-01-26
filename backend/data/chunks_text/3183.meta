@@ -1,0 +1,1 @@
+{"original_code": "def test_encode_unsupported():\n    unserializable = Unserializable()\n    with pytest.raises(ValueError):\n        jsonable_encoder(unserializable)"}

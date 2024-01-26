@@ -1,0 +1,3 @@
+- Defines a function `Field` that takes various arguments to customize fields in data models and APIs using Pydantic and SQLAlchemy.
+- Allows setting defaults, aliases, titles, descriptions, exclusion/inclusion rules, constraints, limits, mutability flags, regular expressions, primary keys, foreign keys, uniqueness, nullability, indices, and additional schema information for Amis UI integration.
+- Validates input values before returning a `FieldInfo` object representing the configured field properties.

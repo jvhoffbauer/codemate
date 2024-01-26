@@ -1,0 +1,1 @@
+- Initializes a new object with various attributes related to COVID-19 data, including ID, country and province names, geographic coordinates, and statistics on confirmed cases, deaths, and recoveries. - Uses the `pylint` tool to suppress an error message about having too many arguments in the function signature (a common pattern for initializer methods).

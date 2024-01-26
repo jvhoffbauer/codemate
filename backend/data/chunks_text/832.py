@@ -1,0 +1,3 @@
+- Creates a fixture named `client` using the `pytest_asyncio.fixture` decorator in Pytest.
+- The function returns an `AsyncGenerator` that yields a `TestClient` object from FastAPI's built-in testing utility.
+- The `scope` parameter is set to a dictionary containing the IP address and port number of the test server being used for integration tests. This allows us to simulate requests coming from specific clients during our tests.

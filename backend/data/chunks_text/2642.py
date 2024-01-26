@@ -1,0 +1,3 @@
+- Defines a function `send_body_embed()` that takes an optional argument `b`.
+- The type of `b` can be either a string or `None`, and if it's not `None`, its value is assigned to the `Body` object with the `embed` parameter set to True.
+- Returns the modified `Body` object (if provided) as the result of the function call.

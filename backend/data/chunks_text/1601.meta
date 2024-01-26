@@ -1,0 +1,1 @@
+{"original_code": "@app.middleware(\"http\")\nasync def db_session_middleware(request: Request, call_next):\n    response = Response(\"Internal server error\", status_code=500)\n    try:\n        request.state.db = SessionLocal()\n        response = await call_next(request)\n    finally:\n        request.state.db.close()\n    return response"}

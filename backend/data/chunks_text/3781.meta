@@ -1,0 +1,1 @@
+{"original_code": "def test_post_body(client: TestClient):\n    data = {\"2\": 2.2, \"3\": 3.3}\n    response = client.post(\"/index-weights/\", json=data)\n    assert response.status_code == 200, response.text\n    assert response.json() == data"}

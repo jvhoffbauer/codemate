@@ -1,0 +1,1 @@
+- Attempts to create a SQLAlchemy model `Hero` with a dictionary field named 'tags'. - Raises a `ValueError` exception because SQLAlchemy doesn't support storing dictionaries in database tables directly. - This test ensures that our application handles this error gracefully and provides an informative message to the user.

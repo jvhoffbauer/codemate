@@ -1,0 +1,1 @@
+{"original_code": "def task2():\n    logger.info(\"test2\")\n    task3.delay()"}

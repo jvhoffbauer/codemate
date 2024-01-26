@@ -1,0 +1,4 @@
+- Defines an asynchronous context manager using `@contextlib.asynccontextmanager`.
+- Retrieves authentication credentials from a request and sets them in a variable called `credentials_var`.
+- Yields control to the enclosed block of code, which can access the `credentials` object through the `JsonRpcContext` parameter passed to it.
+- Resets the value of `credentials_var` to its original state (stored in `credentials_var_token`) after leaving the context manager.

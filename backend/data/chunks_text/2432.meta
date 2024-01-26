@@ -1,0 +1,1 @@
+{"original_code": "def get_sync_async_raise_other(state: str = Depends(asyncgen_state_try)):\n    assert state == \"asyncgen raise started\"\n    raise OtherDependencyError()"}

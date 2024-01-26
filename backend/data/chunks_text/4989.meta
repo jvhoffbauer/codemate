@@ -1,0 +1,1 @@
+{"original_code": "def get_object_or_404(queryset, *filter_args, **filter_kwargs) -> Model:\n    try:\n        return _get_object_or_404(queryset, *filter_args, **filter_kwargs)  # type: ignore\n    except (TypeError, ValueError, ValidationError):\n        raise Http404()"}

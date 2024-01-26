@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\n    \"/items/\",\n    response_model=Item,\n    summary=\"Create an item\",\n    description=\"Create an item with all the information, name, description, price, tax and a set of unique tags\",\n)\nasync def create_item(item: Item):\n    return item"}

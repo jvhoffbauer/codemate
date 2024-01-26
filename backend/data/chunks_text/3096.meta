@@ -1,0 +1,1 @@
+{"original_code": "        def path_example(\n            item_id: str = Path(\n                example=\"item_1\",\n            ),\n        ):\n            return item_id"}

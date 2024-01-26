@@ -1,0 +1,1 @@
+{"original_code": "def default_user_headers(default_user: User):\n    return {\"Authorization\": f\"Bearer {default_user_access_token}\"}"}

@@ -1,0 +1,7 @@
+- Defines a `CorrelationIdMiddleware` class that adds support for request tracing using UUIDs (Universally Unique Identifiers).
+- Allows customization of the middleware through various options such as the name of the HTTP header containing the ID, an ID generation function, an ID validation function, and an ID transformation function.
+- Loads the requested ID from the incoming request headers or generates a new one if necessary.
+- Cleans or mutates the ID according to user preferences before storing it globally and passing control to the application.
+- Updates the outgoing response headers with the stored ID when appropriate.
+- Provides optional integration with popular frameworks like Django Channels, Flask, FastAPI, Starlette, and Sanic via plugins.
+- Includes extension modules for integrations with Sentry and Celery.

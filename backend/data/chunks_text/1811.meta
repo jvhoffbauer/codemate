@@ -1,0 +1,1 @@
+{"original_code": "async def create_item(item: Item):\n    item_dict = item.dict()\n    if item.tax:\n        price_with_tax = item.price + item.tax\n        item_dict.update({\"price_with_tax\": price_with_tax})\n    return item_dict"}

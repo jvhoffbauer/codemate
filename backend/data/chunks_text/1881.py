@@ -1,0 +1,3 @@
+- Defines a new route for HTTP POST requests to `"/items/"`.
+- Accepts an object of type `Item`, which is defined elsewhere in the application, as request data.
+- Returns the received `Item` object without any modifications.

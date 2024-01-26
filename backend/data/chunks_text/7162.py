@@ -1,0 +1,1 @@
+- Registers a router named `api_v1_router` in the given FastAPI application (`app`) using the `include_router()` method. - The registered router contains endpoints defined in another module called `api_v1_router`. - This function is used to centralize and simplify the process of adding multiple routers to an application.

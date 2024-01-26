@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/with-duplicates-sub\")\nasync def no_duplicates_sub(\n    item: Item, sub_items: List[Item] = Depends(sub_duplicate_dependency)\n):\n    return [item, sub_items]"}

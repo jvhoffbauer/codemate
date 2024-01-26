@@ -1,0 +1,4 @@
+- Defines an asynchronous function named `server_error_handler` that takes in two arguments - `Request` object representing the current request being processed by FastAPI, and `Exception` object representing any internal server error encountered during processing of this request.
+- The function returns a JSON response with HTTP status code 500 (Internal Server Error) using the `make_error_response()` helper method provided by FastAPI's built-in error handling mechanism.
+- The returned JSON response includes a custom message ("Internal server exception") and the original exception object passed to the handler for debugging purposes.
+- After returning the JSON response, the function throws the same exception again so it can be handled further up the call stack if necessary.

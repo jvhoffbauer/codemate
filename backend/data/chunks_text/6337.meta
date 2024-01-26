@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"session\")\ndef event_loop():\n    loop = asyncio.new_event_loop()\n    asyncio.set_event_loop(loop)\n    yield loop\n    loop.close()"}

@@ -1,0 +1,3 @@
+- Defines an asynchronous context manager using `@contextlib.asynccontextmanager`.
+- Raises a `HTTPException` with status code 401 to indicate unauthorized access, preventing further execution of the request handler.
+- Yields control back to the caller after raising the exception (which is caught by FastAPI's error handling mechanism). This allows for cleaner and more concise implementation compared to wrapping the entire request handler in a try/except block.

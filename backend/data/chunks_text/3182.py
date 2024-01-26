@@ -1,0 +1,3 @@
+- Tests encoding of a dataclass using `jsonable_encoder()`, which converts Python objects to JSON serializable format
+- Demonstrates usage of optional arguments `include` and `exclude` to selectively encode or omit fields from the object
+- Shows how empty values for these parameters result in different behavior (empty dictionary vs full dictionary with all fields included)

@@ -1,0 +1,1 @@
+{"original_code": "@component_name(\"_Error\")\nclass ErrorModel(BaseModel):\n    loc: List[Union[str, int]]\n    msg: str\n    type: str\n    ctx: Optional[Dict[str, Any]] = None"}

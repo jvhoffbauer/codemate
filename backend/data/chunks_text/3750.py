@@ -1,0 +1,1 @@
+- This function tests a GET request to retrieve an item with ID 'foo' using Flask's built-in `client` object. - The expected status code is checked against the actual one returned by the server. If they don't match, an error message containing both values is raised. - The JSON response body is also verified for correctness and compared against the expected result.

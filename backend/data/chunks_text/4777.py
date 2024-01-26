@@ -1,0 +1,3 @@
+- Sends a password reset email to a specified email address using the `send_email` function from an external library (not shown in this snippet). The email contains a personalized message and a link to a specific URL on the web application's server where the user can change their password based on the provided token.
+- Uses string formatting to customize the email subject and includes dynamic variables such as the project name, username, and email address of the recipient.
+- Handles different types of tokens by checking whether it is already decoded or not before passing it to the HTML template. This ensures that the correct format is used when rendering the link in the email body.

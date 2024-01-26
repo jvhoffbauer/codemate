@@ -1,0 +1,10 @@
+1. Defines a function `get_openapi` that takes optional arguments to customize an OpenAPI specification. The main required parameters are `title`, `version`, and `openapi_version`.
+2. Populates the `info` dictionary with various metadata about the API, such as summary, description, terms of service, contact information, and licensing details.
+3. Creates a dictionary called `output` containing the basic structure of the OpenAPI document, including the `openapi` version number and the `info` dictionary created earlier.
+4. Initializes two empty dictionaries called `components` and `paths` to store additional data related to request/response schemas and endpoint URLs, respectively.
+5. Retrieves a list of all input and output models used across all defined endpoints (both regular routes and webhooks) using the `get_fields_from_routes` helper function. This is necessary to generate JSON Schema definitions for these types.
+6. Generates a mapping between each model's name and its corresponding reference string using another helper function called `get_compat_model_name_map`.
+7. Instantiates a `GenerateJsonSchema` object to help generate JSON Schemas based on the provided models.
+8. Calls the `get_definitions` helper function to retrieve a dictionary containing both the generated JSON Schemas and any other relevant definitions needed for the OpenAPI specification.
+9. Iterates over each defined route (including both regular routes and webhooks) and generates an OpenAPI path definition using the `get_openapi_path` helper function. If successful, this results in three values being returned: the actual path definition, a dictionary representing any associated security schemes, and a dictionary containing any additional definitions specific to this particular endpoint. These values are then added to their respective dictionaries (`paths` and `components`) as appropriate.
+10. Finally, combines everything into a single JSON-serializable representation of the OpenAPI specification using the `jsonable_encoder` utility from Pydantic.

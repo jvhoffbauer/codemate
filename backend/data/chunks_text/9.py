@@ -1,0 +1,3 @@
+- Defines a field in a Pydantic model with customizable options for validation and serialization
+- Accepts various keyword arguments such as defaults, exclusion/inclusion rules, data types constraints, length limits, regular expressions, and more
+- Can be used to create complex models with strict input requirements and clear output formats

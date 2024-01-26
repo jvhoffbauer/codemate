@@ -1,0 +1,6 @@
+- Defines an asynchronous function `update_item` that takes four arguments: `item_id`, `item`, `user`, and `importance`.
+- The `Item` type is not defined in this snippet but can be assumed to represent a specific object being updated.
+- The `User` type represents the user making the request or updating the item.
+- The `importance` argument is annotated with Pydantic's `Body()` decorator, indicating it will be passed from the request body.
+- Inside the function, a dictionary called `results` is created containing all of the input parameters along with their corresponding values.
+- Finally, the `results` dictionary is returned by the function.

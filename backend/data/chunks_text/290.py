@@ -1,0 +1,1 @@
+- Defines a function `delete_heroes` that uses SQLAlchemy to connect to a database, retrieve a specific hero (Spider-Man in this case), delete it from the table, and commit the changes. - Prints out information about the deleted hero for confirmation. - Retrieves the same hero again using another SELECT query to check whether it was successfully removed from the table.

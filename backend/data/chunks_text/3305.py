@@ -1,0 +1,3 @@
+- Defines a GET request endpoint at root URL (/) using FastAPI's `@app.get()` decorator
+- Accepts an optional query parameter named 'foo', which must be an integer with a minimum length of 1, using Pydantic's `Query()` function and FastAPI's `Depends()` dependency injection mechanism to retrieve its value from a previously defined function `dep()`.
+- The body of this function is empty due to the use of the `pragma: nocover` directive, indicating that it should not be executed during testing or debugging.

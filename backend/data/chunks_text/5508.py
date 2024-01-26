@@ -1,0 +1,4 @@
+- Tests the `/info` endpoint with and without asset requests using Flask's built-in testing client (app).
+- Mocks out external dependencies like HTTPX and RasterIO to ensure isolated tests.
+- Verifies that assets are returned when requested and included in the main STAC item if not specified explicitly.
+- Demonstrates support for multiple asset requests and returns a GeoJSON representation of the STAC item with geometry and asset properties.

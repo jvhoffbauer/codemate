@@ -1,0 +1,3 @@
+- Defines a function `match_pydantic_error_url` that takes an argument `error_type`.
+- Imports the module `dirty_equals`, which provides a decorator for type checking called `IsStr`.
+- Returns a callable object with a lambda expression using the `IsStr` decorator to check if the URL string matches a specific regex pattern related to Pydantic error pages, where `error_type` is replaced by the actual error type in the URL path.

@@ -1,0 +1,1 @@
+{"original_code": "async def execute(select_query: Insert | Update) -> None:\n    async with engine.begin() as conn:\n        await conn.execute(select_query)"}

@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `pytest-openapi`.
+- The generated schema includes information about endpoints (e.g., GET /items/{item_id}), request and response formats, error handling, and data models (e.g., Item).
+- The schema is organized into sections such as paths, components, schemas, responses, parameters, etc. And follows the standard OpenAPI format.

@@ -1,0 +1,4 @@
+- Creates a new user with an inactive status using `UserCreate`.
+- Saves the newly created user to the database using `crud.user.create`.
+- Retrieves the active status of the saved user using `crud.user.is_active`.
+- Asserts that the retrieved active status is False (since the user was created as inactive).

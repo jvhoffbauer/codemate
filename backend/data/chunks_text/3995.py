@@ -1,0 +1,1 @@
+- This function tests a POST request to the `/items/` endpoint with invalid JSON data in the body. - The expected status code for this request is 200 (OK), but the actual text of the response should be checked as well. - If the request succeeds, the response JSON should contain specific keys and values that match what's being tested.

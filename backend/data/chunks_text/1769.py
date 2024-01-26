@@ -1,0 +1,3 @@
+- Defines a GET request for an item with ID `item_id`, returning its details in JSON format (response model) using FastAPI's built-in decorator syntax (@app.get).
+- Includes error handling for when the requested item is not found by returning a customized HTTP status code and message (responses dictionary).
+- Uses string interpolation to dynamically generate the URL path parameter `{item_id}` as part of the endpoint definition.

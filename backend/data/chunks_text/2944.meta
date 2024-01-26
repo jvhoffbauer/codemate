@@ -1,0 +1,1 @@
+{"original_code": "def test_return_exclude_defaults():\n    response = client.get(\"/exclude_defaults\")\n    assert response.json() == {}"}

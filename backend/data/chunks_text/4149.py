@@ -1,0 +1,3 @@
+- Generates an OpenAPI schema for a FastAPI application using `docstrings`.
+- Includes information about endpoints (e.g., GET request to retrieve items), responses (success and error messages), headers (optional parameter with two possible types), and components such as schemas for validation errors.
+- Follows the OpenAPI specification version 3.1.0.

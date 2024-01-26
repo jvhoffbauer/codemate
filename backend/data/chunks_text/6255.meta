@@ -1,0 +1,1 @@
+{"original_code": "async def mocked_session_get(*args, **kwargs):\n    \"\"\"Mock response from client_session.get.\"\"\"\n\n    url = args[0]\n    filename = url.split(\"/\")[-1]\n\n    # clean up for id token (e.g. Deaths)\n    state = filename.split(\"-\")[-1].replace(\".csv\", \"\").lower().capitalize()\n\n    yield FakeRequestsGetResponse(url, filename, state)"}

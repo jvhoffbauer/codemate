@@ -1,0 +1,3 @@
+- This endpoint is accessed using a POST request to `/login`.
+- The function takes an argument of type `OAuth2PasswordRequestFormStrict`, which is provided by FastAPI's built-in dependency injection system (Depends()).
+- The function returns the contents of the `OAuth2PasswordRequestFormStrict` object, effectively exposing its fields as part of the API response.

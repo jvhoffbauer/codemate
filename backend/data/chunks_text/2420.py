@@ -1,0 +1,3 @@
+- This endpoint returns the current values of `context_b` and `context_a`, as well as any background task that sets the value of `bg`. The results are stored in a dictionary called `state`.
+- The `BackgroundTasks` object is used to schedule a new background task with the name `bg`. This function takes the `state` dictionary as an argument and updates it with a string representing the result of setting `bg`.
+- The updated `state` dictionary is returned to the client.

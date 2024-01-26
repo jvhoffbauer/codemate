@@ -1,0 +1,1 @@
+- This method is called `keys` and returns a list of all the key names in the current object's dictionary (`__dict__`) using Python's built-in `keys()` function. - It allows external classes to access the keys of an instance without having direct access to its internal dictionary, providing encapsulation and better organization of data.

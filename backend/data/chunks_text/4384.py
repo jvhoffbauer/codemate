@@ -1,0 +1,5 @@
+- Defines a function `test` that takes four arguments: `path`, `cookies`, `expected_status`, and `expected_response`.
+- Initializes a `TestClient` object with the Flask application (`app`) and the provided cookie dictionary (`cookies`).
+- Makes an HTTP GET request to the specified path using the initialized `TestClient` instance.
+- Asserts that the status code of the response is equal to the provided `expected_status`.
+- Asserts that the JSON content of the response matches the provided `expected_response`.

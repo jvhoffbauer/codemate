@@ -1,0 +1,1 @@
+{"original_code": "def test_use_access_token(\n    client: TestClient, superuser_token_headers: Dict[str, str]\n) -> None:\n    r = client.post(\n        f\"{settings.API_V1_STR}/login/test-token\",\n        headers=superuser_token_headers,\n    )\n    result = r.json()\n    assert r.status_code == 200\n    assert \"email\" in result"}

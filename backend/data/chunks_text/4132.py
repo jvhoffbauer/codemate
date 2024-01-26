@@ -1,0 +1,3 @@
+- Defines a parameterized test using `pytest.mark.parametrize`.
+- Sends GET requests to the specified path with optional custom headers and asserts that the status codes are correct.
+- Extracts the value of an X-Token header from the response and stores it in a dictionary for comparison against expected values.

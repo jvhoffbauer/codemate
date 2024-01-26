@@ -1,0 +1,3 @@
+- Defines a class method `get()` for retrieving an object with the given primary key (PK).
+- Returns the requested object as an instance of the current model class (Self).
+- Uses Django's built-in `get()` manager to efficiently retrieve the object from the database without raising any exceptions if it doesn't exist.

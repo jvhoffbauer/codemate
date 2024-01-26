@@ -1,0 +1,1 @@
+{"original_code": "def sort(ctx, targets=\".\"):\n    \"\"\"Sort module imports.\"\"\"\n    print(\"sorting imports ...\")\n    args = [\"isort\", \"--atomic\", targets]\n    ctx.run(\" \".join(args))"}

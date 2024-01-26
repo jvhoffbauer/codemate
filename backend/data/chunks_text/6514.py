@@ -1,0 +1,6 @@
+- Defines a fixture `assert_log_errors` that takes a CapLog object as an argument and returns a decorator function.
+- The decorated test function receives one or more arguments representing log messages or exceptions to expect during execution.
+- Inside the fixture, it checks whether each element of the list is either a message string or a PyTest raises context manager (RaisesContext). If it's a message string, it adds it to a list of expected messages; otherwise, it saves the RaisesContext instance for later use.
+- It then retrieves all ERROR level logs from the CapLog object and compares their messages against the saved list of expected messages.
+- For any RaisesContext instances found earlier, it executes them inside the raised exception context provided by the RaisesContext. This ensures that the tests fail with the correct exception type and traceback.
+- Finally, it clears the CapLog records for setup and call phases and resets the entire CapLog object.

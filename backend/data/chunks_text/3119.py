@@ -1,0 +1,3 @@
+- Tests API endpoints for various resources and query parameters using Flask's built-in testing framework `TestClient`.
+- Asserts that all responses have expected status codes and checks their contents as needed.
+- Endpoints tested include schema extra, examples, example_examples, path examples with different depths of nesting, query examples with different parameter values, header examples with different headers, cookie examples with different cookies, and a combination of these features in some cases (e.g., header_example_examples).

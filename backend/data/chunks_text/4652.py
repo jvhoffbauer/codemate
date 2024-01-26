@@ -1,0 +1,1 @@
+- This function tests the login functionality of an API using Pytest and Flask's built-in testing client (TestClient). - It sends a POST request to the "/token" endpoint with username and password as parameters. - The expected status code is 200 OK, and the response body should contain an access token in JSON format.

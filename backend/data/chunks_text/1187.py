@@ -1,0 +1,1 @@
+- This method is called when an attribute of the object is accessed that doesn't exist in its class or instance dictionary (i.e., it's a "missing" attribute). - It returns the value associated with the missing attribute from a nested dictionary stored in `_state`. - This allows for dynamic attributes to be added and retrieved without modifying the original class definition.

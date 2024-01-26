@@ -1,0 +1,3 @@
+- Defines a GET request for `"/items/"`, which returns a dictionary with a key called "ads_id".
+- The parameter `ads_id` is annotated as either a string or None using Pydantic's `Annotated` decorator and passed to FastAPI's cookie dependency injection system (`Cookie()`) to retrieve its value from the client's cookies.
+- If no `ads_id` cookie exists, it will be set to `None`.

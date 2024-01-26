@@ -1,0 +1,1 @@
+- Tests whether `validator_skip_blank()` function correctly returns a string value when passed an integer argument and a string type constraint using the `assert` statement in Python's unittest module. - Demonstrates how to use the `validator_skip_blank()` function with both integer and string types as arguments for validation purposes.

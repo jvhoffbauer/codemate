@@ -1,0 +1,2 @@
+- Tests reading system status without authentication token using FastAPI's built-in testing framework (TestClient)
+- Verifies that a 401 Unauthorized error is returned with an appropriate message and WWW-Authenticate header set to Bearer

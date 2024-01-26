@@ -1,0 +1,4 @@
+- This function tests a specific endpoint with query parameter `needy=very`.
+- It uses Pytest's built-in `TestClient` to simulate HTTP requests and responses.
+- The expected status code is checked against the actual one returned by the server.
+- The JSON body of the response is also verified for correctness using Python's built-in json module.

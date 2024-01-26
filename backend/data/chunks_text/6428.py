@@ -1,0 +1,6 @@
+- Defines a function `make_request_model` that takes three arguments: `name`, `module`, and `body_params`.
+- Checks whether there is more than one parameter with type `Params` in `body_params`. If yes, raises an error.
+- Splits `body_params` into two lists based on whether they have type `Params` or not. Raises an error if there are parameters without `Params` after using it once.
+- Creates a model called `_Params[name]` from the remaining list of parameters without `Params`. This model will be used as the value for the `params` field in the final request model.
+- Sets up the `_Request[name]` model with required fields such as JSONRPC version, ID, and method. The `params` field is set to the previously created `_Params[name]` model.
+- Returns the newly defined `_Request[name]` model.

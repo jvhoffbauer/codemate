@@ -1,0 +1,7 @@
+- Creates a new directory named after the specified language (LANG) in the 'docs' folder.
+- Checks if the directory already exists and raises an error or aborts execution.
+- If the directory doesn't exist yet, creates it using Python's built-in `Path.mkdir()`.
+- Writes a configuration file ('mkdocs.yml') to the newly created directory that inherits from the English version of this file.
+- Creates a subdirectory called 'docs' inside the new directory and sets up its structure based on the English documentation.
+- Copies the content of the index page from the English documentation into the new one, replacing missing translations with a placeholder message.
+- Displays a success message and updates the list of supported languages.

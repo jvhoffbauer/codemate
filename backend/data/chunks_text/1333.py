@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_user` that takes a string argument `user_id`. - Returns a dictionary with a key "user_id" and value equal to the input `user_id`.

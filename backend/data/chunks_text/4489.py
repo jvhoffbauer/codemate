@@ -1,0 +1,3 @@
+- This function defines a method called `get_client()`.
+- It imports the `TestClient` class and the Flask application `app` from a specific module (`docs_src.request_forms.tutorial001`) within our project's directory structure.
+- The function creates an instance of the `TestClient` class using the imported `app`, which can be used to make requests against our Flask application for testing purposes.

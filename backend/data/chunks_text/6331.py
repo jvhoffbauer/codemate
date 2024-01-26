@@ -1,0 +1,4 @@
+- Defines a computed field named `TEST_SQLALCHEMY_DATABASE_URI` using both `@computed_field` and `@cached_property`.
+- Uses the `PostgresDsn` class from the `aiorpg` library to build a connection string for connecting to a PostgreSQL database asynchronously.
+- Sets various parameters such as username, password, hostname, port, and database name in the connection string.
+- Returns the built connection string as a string.

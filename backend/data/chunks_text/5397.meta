@@ -1,0 +1,1 @@
+{"original_code": "    def _minzoom(self):\n        return self.tms.minzoom"}

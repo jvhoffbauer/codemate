@@ -1,0 +1,1 @@
+- Retrieves a list of user profiles from a specified Google Cloud Storage (GCS) bucket using App Engine's `utils` library to interact with GCS and the provided UserInDB model for parsing JSON data into Python objects. - Allows specifying an optional offset (`skip`) and maximum number of results (`limit`) through keyword arguments.

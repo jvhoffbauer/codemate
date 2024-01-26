@@ -1,0 +1,2 @@
+- Tests the end-to-end flow of a Celery task from an API endpoint through two workers using FastAPI's built-in Celery integration.
+- Verifies that the correlation ID is preserved throughout the process and that the parent ID of the second worker is set to the current ID of the first worker.

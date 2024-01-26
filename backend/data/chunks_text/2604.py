@@ -1,0 +1,2 @@
+- Defines a function `delete_item` that takes in an `item_id` and an instance of the `Item` class as arguments.
+- Returns a dictionary with two key-value pairs: 'item_id' containing the deleted item ID, and 'item' containing the deleted item object itself.

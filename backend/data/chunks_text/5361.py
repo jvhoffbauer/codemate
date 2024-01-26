@@ -1,0 +1,4 @@
+- Defines a parameterized test using `pytest.mark.parametrize()`.
+- Provides a list of tuples with three elements representing input parameters (value, driver, mediatype).
+- Calls a function named `test_imagetype()` for each tuple in the list.
+- Inside the function, asserts that the `ImageType` class's properties match the expected values based on the provided inputs.

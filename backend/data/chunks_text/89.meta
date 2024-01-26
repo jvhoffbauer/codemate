@@ -1,0 +1,1 @@
+{"original_code": "def case(\n    *whens: Union[\n        Tuple[Union[_ColumnExpressionArgument[bool], bool], Any], Mapping[Any, Any]\n    ],\n    value: Optional[Any] = None,\n    else_: Optional[Any] = None,\n) -> Case[Any]:\n    return sqlalchemy.case(*whens, value=value, else_=else_)  # type: ignore[arg-type]"}

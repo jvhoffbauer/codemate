@@ -1,0 +1,3 @@
+- Endpoint for retrieving statistical information about a given dataset using FastAPI framework
+- Uses dependency injection to pass arguments such as path, parameters for layers, images, datasets, statistics, and histogram options to the `merged_statistics()` method of the RasterIO library
+- Returns JSON response in format specified by `response_model` (in this case, `Statistics`) with status code 200 and description provided through `responses` dictionary

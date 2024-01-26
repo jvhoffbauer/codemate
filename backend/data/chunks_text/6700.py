@@ -1,0 +1,3 @@
+- Defines a Flask-EasyAPI endpoint decorated with `@ep.method`.
+- Applies middleware function `method_middleware` to this endpoint using `middlewares` parameter in decorator.
+- Returns tuple containing values of two global variables set by respective middleware functions (`ep_middleware_var` and `method_middleware_var`) for use within other endpoints or outside EasyAPI context.

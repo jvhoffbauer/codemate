@@ -1,0 +1,1 @@
+- Defines a function `resp_fail` with default arguments for error code (1), message ("fail"), and optional data (None) that can be passed as list, dictionary or string type. - Returns a dictionary containing keys 'code','msg' and 'data'. The values of these keys are determined by the argument values provided to the function.

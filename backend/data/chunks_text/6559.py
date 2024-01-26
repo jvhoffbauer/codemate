@@ -1,0 +1,1 @@
+- Defines a middleware function named `middleware` that takes in a JSON RPC context (`_ctx`) as an argument and returns nothing using the `yield` keyword. - After executing the middleware, raises a HTTP exception with status code 401 to indicate unauthorized access.

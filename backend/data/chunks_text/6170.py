@@ -1,0 +1,4 @@
+- Defines a class method `save` that saves content to a file in the `DATA` directory.
+- Takes arguments for the filename, content, and optional JSON serialization options like indentation and sorting keys.
+- Uses `aiofiles` to open the file asynchronously and writes the content using either the default 'w' mode or an alternative specified by the user.
+- Returns the saved file path.

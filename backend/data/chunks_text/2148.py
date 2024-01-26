@@ -1,0 +1,3 @@
+- Defines a GET request for the path `"/path/param-lt-int"` with an optional query parameter `item_id`.
+- The `Path` decorator is used to parse and validate the `item_id` argument, which must be less than 3 (specified by the `lt` keyword).
+- If no value is provided in the URL or it's greater than or equal to 3, FastAPI will raise a `HTTPException` with status code 422 ("Unprocessable Entity").

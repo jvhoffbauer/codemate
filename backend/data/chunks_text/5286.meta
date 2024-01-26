@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/route3\")\n    async def route3():\n        \"\"\"route3.\"\"\"\n        return \"yeah\""}

@@ -1,0 +1,3 @@
+- Tests login functionality by making a POST request to /token with username and password as parameters
+- Asserts that the status code is 200 (OK) and displays the text if it's not
+- Asserts that the JSON returned contains an access token of type bearer for user johndoe

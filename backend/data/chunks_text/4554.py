@@ -1,0 +1,3 @@
+- Tests reading system status without authentication token
+- Verifies HTTP 401 Unauthorized status code is returned
+- Confirms error message "Not authenticated" and WWW-Authenticate header with value Bearer are included in response body

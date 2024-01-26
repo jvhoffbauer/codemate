@@ -1,0 +1,1 @@
+{"original_code": "    def __str__(self) -> str:\n        message = f\"{len(self._errors)} validation errors:\\n\"\n        for err in self._errors:\n            message += f\"  {err}\\n\"\n        return message"}

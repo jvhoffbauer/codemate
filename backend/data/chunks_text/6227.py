@@ -1,0 +1,4 @@
+- `parse_history()` is a helper function that parses historical data based on a specific key.
+- It takes two arguments - `key`, which is a tuple containing the country and province codes, and `locations`, which is a list of dictionaries representing different locations' details including their histories.
+- The function iterates through each dictionary in the `locations` list using an enumerator variable `i`. If it finds a match between the provided `key` and the corresponding country and province values in the dictionary, it returns the associated historical data.
+- In case there are any issues during iteration or merging, such as missing keys or incorrect formats, the function logs an error message using the built-in Python logging module `logging` and returns an empty dictionary instead.

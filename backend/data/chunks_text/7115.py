@@ -1,0 +1,2 @@
+- Defines a method `__getitem__()` for the class
+- Takes in an argument `name` and returns the corresponding value from the dictionary `_schedule` using key `name`

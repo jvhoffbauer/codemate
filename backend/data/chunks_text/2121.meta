@@ -1,0 +1,1 @@
+{"original_code": "def get_float_id(item_id: float):\n    return item_id"}

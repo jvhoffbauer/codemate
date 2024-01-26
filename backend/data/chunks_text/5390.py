@@ -1,0 +1,4 @@
+- Defines a function `must_be_bob()` that takes an optional argument `security.HTTPBasicCredentials`, which is obtained using the `Depends()` decorator from FastAPI's built-in authentication middleware (`http_basic`)
+- Inside the function, it checks whether the username of the provided credentials matches 'bob'. If yes, returns `True`. Otherwise, raises a customized HTTP exception with a specific error message and WWW-Authenticate header for Basic Authentication
+
+2) How can I implement rate limiting in my FastAPI application to prevent excessive API requests by users or bots? Provide step-by-step instructions on how to install and configure the necessary dependencies, as well as any configuration settings required. Additionally, explain how to test the implemented rate limiter to ensure its effectiveness.

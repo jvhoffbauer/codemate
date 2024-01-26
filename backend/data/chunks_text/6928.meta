@@ -1,0 +1,1 @@
+{"original_code": "    async def delete(\n        self, session: AsyncSession, *args, db_obj: Optional[ModelType] = None, **kwargs\n    ) -> ModelType:\n        db_obj = db_obj or await self.get(session, *args, **kwargs)\n        await session.delete(db_obj)\n        await session.commit()\n        return db_obj"}

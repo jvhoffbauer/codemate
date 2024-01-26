@@ -1,0 +1,2 @@
+- Defines a method `probe_error` with middleware `method_middleware`.
+- Raises a custom error `RuntimeError` with unique marker for testing purposes.

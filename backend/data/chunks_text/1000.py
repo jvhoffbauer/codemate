@@ -1,0 +1,3 @@
+- Takes a `Decimal` value as input and returns either an `int` or a `float`, depending on whether the decimal has an exponent greater than or equal to zero.
+- Useful for converting `ConstrainedDecimal` values with no explicit precision back to their original numeric types without losing information during encoding/parsing.
+- Example usage shown using test cases that demonstrate successful conversion of both integers and floating point numbers.

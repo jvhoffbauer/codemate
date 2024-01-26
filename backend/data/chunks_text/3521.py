@@ -1,0 +1,5 @@
+- Defines a function `test_invalid_tuple` using PyTest's `pytest.fixture`.
+- Uses PyTest's `with` statement to raise an AssertionError if the function body raises any exceptions.
+- Initializes a new instance of FastAPI called 'app'.
+- Creates a custom model named 'Item', which inherits from Pydantic's BaseModel and has a required field 'title' of type string.
+- Defines a route handler for GET requests at '/items/{id}' that takes in a tuple containing two instances of the 'Item' model as its argument. The handler is marked as uncovered by Pragma's 'pragma: no cover' directive.

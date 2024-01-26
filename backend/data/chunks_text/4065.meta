@@ -1,0 +1,1 @@
+{"original_code": "def test_get_exception():\n    response = client.get(\"/unicorns/yolo\")\n    assert response.status_code == 418, response.text\n    assert response.json() == {\n        \"message\": \"Oops! yolo did something. There goes a rainbow...\"\n    }"}

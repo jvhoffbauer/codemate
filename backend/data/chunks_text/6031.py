@@ -1,0 +1,6 @@
+- Defines a custom `PageAdmin` subclass for testing purposes
+- Registers it with the admin site and retrieves its instance
+- Asserts that its properties are correct
+- Registers the router and tests accessing the page as JSON
+- Tests accessing the page as HTML using the generated content from the `Page` object
+- Updates the page through an AJAX call and verifies the response

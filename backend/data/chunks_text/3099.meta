@@ -1,0 +1,1 @@
+{"original_code": "        @app.get(\"/path_example_examples/{item_id}\")\n        def path_example_examples(\n            item_id: str = Path(\n                example=\"item_overridden\",\n                examples=[\"item_1\", \"item_2\"],\n            ),\n        ):\n            return item_id"}

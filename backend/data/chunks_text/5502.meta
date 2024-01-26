@@ -1,0 +1,1 @@
+{"original_code": "def test_mosaic_auth_error(app):\n    \"\"\"Raise auth error 401.\"\"\"\n    response = app.get(\"/mosaicjson\", params={\"url\": \"s3://bucket/mosaic.json\"})\n    assert response.status_code == 401"}

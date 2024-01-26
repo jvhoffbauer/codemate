@@ -1,0 +1,1 @@
+- Defines a function `is_sequence_field` that takes a `ModelField` as an argument and returns a boolean value based on whether its annotation is a sequence type (e.g., list, tuple). - Uses the helper function `field_annotation_is_sequence` to check if the annotation of the given `ModelField` is a sequence type.

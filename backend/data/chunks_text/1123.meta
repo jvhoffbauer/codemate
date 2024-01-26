@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/users/me/items/\")\nasync def read_own_items(\n    current_user: Annotated[User, Depends(get_current_active_user)]\n):\n    return [{\"item_id\": \"Foo\", \"owner\": current_user.username}]"}

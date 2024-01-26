@@ -1,0 +1,3 @@
+- Defines a GET request for `/items/`, with an optional query parameter `q`.
+- Uses Pydantic's `Query` decorator to parse and validate the `q` parameter, setting it as a default value of `None` and requiring a minimum length of 3 characters.
+- Returns a dictionary containing either just the list of items or also includes the search term in a new key called 'q'.

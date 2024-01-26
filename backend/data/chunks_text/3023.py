@@ -1,0 +1,4 @@
+- This test case demonstrates how to override a dependency using a subclass in Flask-Koji, which is called `overrider_dependency_with_sub`.
+- The `app.dependency_overrides` dictionary is used to store and manage the dependencies that need to be replaced during testing or development.
+- In this specific example, we're setting the value of `common_parameters` key in `app.dependency_overrides` with our customized `overrider_dependency_with_sub`, which will replace the default implementation provided by Flask-Koji for handling common parameters (e.g., 'k', 'q').
+- After executing the request, we clear the `app.dependency_overrides` dictionary to restore the original behavior of Flask-Koji.

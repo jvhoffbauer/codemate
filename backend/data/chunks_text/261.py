@@ -1,0 +1,3 @@
+- This function defines an endpoint `"/heroes/"`, which returns a list of Hero objects using SQLAlchemy's `Session`.
+- The `response_model` parameter specifies that the returned data should be formatted according to the `HeroRead` model (presumably a simplified version for API consumption).
+- Two query parameters are defined: `offset` and `limit`. These allow pagination by skipping over a certain number of results and returning only a limited subset. Default values are provided if no value is passed in the request URL.

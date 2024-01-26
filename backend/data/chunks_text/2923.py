@@ -1,0 +1,4 @@
+- Defines a GET endpoint for retrieving user information and associated data using FastAPI's decorator syntax (@app.get)
+- Uses dependency injection to pass in two arguments (user_data and data) to the function
+- The user_data argument is secured with the get_user function and requires both 'foo' and 'bar' scopes as defined by OpenID Connect (OIDC)
+- Returns a dictionary containing the user's details, their authorized scopes, and any related data obtained through another dependency (get_data)

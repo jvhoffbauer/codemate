@@ -1,0 +1,1 @@
+- Retrieves a user from the database using their email address as a filter condition in SQLAlchemy's query builder. - Returns the first matching result (i.e., the row with the given email) or `None`. - Takes a database session and an email string as arguments.

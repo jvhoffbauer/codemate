@@ -1,0 +1,3 @@
+- Creates a new `Hero` object and passes it to the function as an argument (`hero`)
+- Uses a database session to add the `Hero` object to the database, commit changes, and refresh the object's state in memory (using SQLAlchemy's ORM)
+- Returns the updated `Hero` object for further use or processing

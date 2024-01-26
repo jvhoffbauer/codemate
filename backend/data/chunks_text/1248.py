@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional dependency, `commons`, which is a dictionary of common parameters passed to this route and other routes that depend on it (using `Depends()`)
+- Returns a JSON response with a message and the values from the `commons` parameter dictionary

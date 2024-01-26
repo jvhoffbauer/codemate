@@ -1,0 +1,1 @@
+{"original_code": "    @site.register_admin\n    class UserAdmin(admin.ModelAdmin):\n        model = models.User\n        list_filter = [models.User.id, models.User.username.label(\"name\")]\n        search_fields = [models.User.username]"}

@@ -1,0 +1,1 @@
+{"original_code": "async def get_refresh_token(refresh_token: str) -> dict[str, Any] | None:\n    select_query = refresh_tokens.select().where(\n        refresh_tokens.c.refresh_token == refresh_token\n    )\n\n    return await fetch_one(select_query)"}

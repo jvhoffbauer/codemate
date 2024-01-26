@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/path/param-lt-int/{item_id}\")\ndef get_path_param_lt_int(item_id: int = Path(lt=3)):\n    return item_id"}

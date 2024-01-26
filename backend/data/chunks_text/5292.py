@@ -1,0 +1,4 @@
+- Defines a function `test_tilejson_model()` to validate the TileJSON class's behavior when initializing it with different inputs.
+- Creates an instance of TileJSON with default values for all parameters except 'tiles'. Asserts that these defaults are correct.
+- Creates another instance of TileJSON with customized values for 'center' and'scheme', asserts that they have been correctly set.
+- Tests raising a ValidationError when passing an invalid value ('abc') for'scheme'.

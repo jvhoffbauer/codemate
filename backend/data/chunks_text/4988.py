@@ -1,0 +1,3 @@
+- Defines a method `__str__()` for the class, which is called when an object of this class is converted to a string representation using the built-in function str().
+- The method returns a formatted string that includes the unique identifier (ID) and sort number of the object as defined in its instance variables.
+- This customized string representation can be useful for debugging or displaying objects in user interfaces.

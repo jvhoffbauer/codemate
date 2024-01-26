@@ -1,0 +1,3 @@
+- Tests login with incorrect username using `TestClient`.
+- Expects HTTP status code of 400 and error message containing 'Incorrect username or password'.
+- Uses Python 3.9 (indicated by `@needs_py39`) to ensure compatibility with newer features in FastAPI.

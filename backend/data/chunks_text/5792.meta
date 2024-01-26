@@ -1,0 +1,1 @@
+{"original_code": "    async def get_action(self, request: Request, **kwargs) -> Action:\n        if not self.getter:\n            return self.action\n        action = self.getter(request)\n        if asyncio.iscoroutine(action):\n            action = await action\n        return action"}

@@ -1,0 +1,1 @@
+{"original_code": "def get_current_user(oauth_header: Optional[str] = Security(api_key)):\n    if oauth_header is None:\n        return None\n    user = User(username=oauth_header)\n    return user"}

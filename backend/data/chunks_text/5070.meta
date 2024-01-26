@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"session\")\nasync def staff(session: AsyncSession):\n    adal = AsyncDal(session)\n    ins = adal.add(\n        Staff,\n        name=\"admin\",\n    )\n    await adal.commit()\n    return ins"}

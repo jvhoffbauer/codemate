@@ -1,0 +1,3 @@
+- Tests a GET request to `/subapi/sub` using Flask's built-in testing client (client)
+- Asserts that the status code of the response is 200 and saves it in variable'response'
+- Asserts that the JSON response body contains a key'message' with value 'Hello World from sub API'

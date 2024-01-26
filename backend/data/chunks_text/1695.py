@@ -1,0 +1,3 @@
+- Defines a function `create_cookie()` that takes in a Flask `Response` object as an argument (`response`)
+- Sets a cookie named 'fakesession' with a value of 'fake-cookie-session-value' using the `set_cookie()` method on the `Response` object
+- Returns a dictionary containing a message for the user ("Come to the dark side, we have cookies")

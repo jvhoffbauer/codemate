@@ -1,0 +1,3 @@
+- This function is a GET request for retrieving all users from the database using FastAPI's decorator `@app.get`.
+- It returns a list of User objects with schema defined by `schemas.User`, which can be customized as needed.
+- The query parameters `skip` and `limit` are used to paginate through the results, allowing for efficient handling of large datasets.

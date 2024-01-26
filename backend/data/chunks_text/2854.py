@@ -1,0 +1,3 @@
+- Tests the representation of an empty Path object and a Path object with ellipses (...) using Pytest's `assert repr()`.
+- Uses Pytest fixtures `IsOneOf` to check if the string representations match expected values for both cases, which are either 'Path(PydanticUndefined)' or 'Path(Ellipsis)'.
+- The fixture `IsOneOf` is used to simplify the comparison by checking whether one value is in a list of possible values instead of writing multiple asserts. This makes the tests more readable and easier to maintain.

@@ -1,0 +1,2 @@
+- Defines a function called `options_item` that takes an argument `item_id`.
+- Returns a JSON response with no content but sets a custom header named "x-fastapi-item-id". This is used to provide additional information about the requested resource during preflight requests (OPTIONS method).

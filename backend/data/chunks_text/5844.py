@@ -1,0 +1,1 @@
+- Retrieves the router path and docs URL from FastAPI's site object, which is a part of the Starlette web server framework used by FastAPI. - Combines them to form the complete URL for accessing the API documentation using the `src()` method provided by an instance of this class (presumably a custom component or plugin).

@@ -1,0 +1,1 @@
+{"original_code": "def doc_result_to_model(\n    couchbase_result, *, doc_model: Type[PydanticModel]\n) -> PydanticModel:\n    data = couchbase_result[config.COUCHBASE_BUCKET_NAME]\n    doc = doc_model(**data)\n    return doc"}

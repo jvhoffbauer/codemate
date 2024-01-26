@@ -1,0 +1,3 @@
+- This function retrieves a list of `Item` objects from the database using SQLAlchemy's `Session`.
+- It takes four arguments: `session`, `current_user`, and optional parameters for pagination `skip` and `limit`.
+- If the user is an administrator (i.e., superuser), it returns all items starting at index `skip` with a maximum of `limit`. Otherwise, it filters by owner ID to show only the user's own items.

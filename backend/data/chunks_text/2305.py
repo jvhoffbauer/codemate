@@ -1,0 +1,1 @@
+- This function tests the authentication system by making a GET request to the `/items` endpoint with an authorization header containing a test token. - The expected status code is 200 and the JSON response should contain a key-value pair where the value is the same as the provided test token.

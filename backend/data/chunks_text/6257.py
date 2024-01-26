@@ -1,0 +1,3 @@
+- This function uses `pytest.mark.parametrize` to run multiple tests with different input values for `latitude` and `longitude`.
+- It creates a new instance of the `Coordinates` class using the provided arguments and stores it in `coord_obj`.
+- The function compares the serialized output of `coord_obj` against a predefined dictionary called `check_obj`, which contains the expected keys and values from the original inputs.

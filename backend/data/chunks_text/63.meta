@@ -1,0 +1,1 @@
+{"original_code": "    def get_model_fields(model: InstanceOrType[\"SQLModel\"]) -> Dict[str, \"FieldInfo\"]:\n        return model.__fields__  # type: ignore"}

@@ -1,0 +1,1 @@
+{"original_code": "def get_authorization_scheme_param(\n    authorization_header_value: Optional[str],\n) -> Tuple[str, str]:\n    if not authorization_header_value:\n        return \"\", \"\"\n    scheme, _, param = authorization_header_value.partition(\" \")\n    return scheme, param"}

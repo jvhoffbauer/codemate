@@ -1,0 +1,3 @@
+- Tests if query parameter 'q' with fixed value 'fixedquery' returns expected items from database
+- Uses FastAPI's built-in `TestClient` to simulate HTTP requests and responses for testing purposes
+- Asserts that the status code is 200 (OK) and the JSON response contains specific item IDs

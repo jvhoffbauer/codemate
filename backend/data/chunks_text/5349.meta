@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/nan\", response_class=JSONResponse)\n    def is_nan(params=Depends(dependencies.DatasetParams)):\n        \"\"\"return params.\"\"\"\n        return str(params.nodata)"}

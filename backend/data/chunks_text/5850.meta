@@ -1,0 +1,1 @@
+{"original_code": "    def mount_staticfile(self) -> str:\n        self.site.fastapi.mount(\n            self.file_path,\n            StaticFiles(directory=self.file_directory),\n            self.file_directory,\n        )\n        return self.site.router_path + self.file_path"}

@@ -1,0 +1,2 @@
+- Tests reading a single User resource with ID 1 and verifies its fields
+- Tests reading multiple Users with IDs 1, 2, and 4 using comma-separated values in URL query parameter and checks their presence

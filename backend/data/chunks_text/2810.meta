@@ -1,0 +1,1 @@
+{"original_code": "def test_query_int_optional():\n    response = client.get(\"/query/int/optional\")\n    assert response.status_code == 200\n    assert response.json() == \"foo bar\""}

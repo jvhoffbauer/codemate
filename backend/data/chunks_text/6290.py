@@ -1,0 +1,1 @@
+- Tests round trip functionality of saving and loading data using `app.io` module with customizable options (specified in `kwargs`) for a given file path and content. - Asserts that the saved file exists before attempting to load it back into memory. - Compares loaded data against original content to ensure accuracy during round trip operation.

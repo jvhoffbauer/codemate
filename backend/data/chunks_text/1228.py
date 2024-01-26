@@ -1,0 +1,2 @@
+- Defines a GET request for the `"/items/"` endpoint using FastAPI's decorator syntax
+- Returns a list of two `Item` objects, each with a name and price property, when the endpoint is accessed

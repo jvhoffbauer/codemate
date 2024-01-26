@@ -1,0 +1,4 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `client.get("/openapi.json")`.
+- Asserts that the HTTP status code is 200 OK and saves the resulting JSON as `actual_schema`.
+- Compares `actual_schema` with expected schema containing definitions of error types (`HTTPValidationError`, `ValidationError`) used in the API's responses.
+- Verifies that the generated schema includes information about the app's title, version, and endpoints, including query parameters with repeated aliases ("repeated_alias").

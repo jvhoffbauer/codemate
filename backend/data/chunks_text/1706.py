@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` with two optional arguments `item_id` and `q`.
+- Uses Pydantic's `Path` class for validating input values of `item_id`, specifying a title, minimum value greater than zero (gt) and maximum value less than or equal to 1000 (le).
+- If `q` is provided, it updates a dictionary called'results' with its key-value pair.

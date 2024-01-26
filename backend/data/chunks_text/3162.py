@@ -1,0 +1,1 @@
+- This function is an asynchronous function that takes a `Response` object as its argument. - It sets the status code of the response to 201, which indicates that the resource has been created successfully. - The function returns nothing and can be used in other functions or classes where a customized HTTP response is required.

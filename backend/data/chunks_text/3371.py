@@ -1,0 +1,2 @@
+- Tests GET request for a float value at path "/path/float/{value}" with {value} set to 42.5
+- Asserts that status code is 200 and JSON response matches expected value of 42.5

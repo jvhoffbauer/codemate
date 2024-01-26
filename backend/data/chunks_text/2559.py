@@ -1,0 +1,8 @@
+- Defines a new WebSocket middleware function `errorhandler` using the `@websocket_middleware` decorator.
+- Inside this middleware, tries to execute the next handler (`call_next`) and catches any exceptions thrown by it.
+- If an exception occurs, closes the WebSocket connection with an abnormal closure status and the exception message as the reason.
+- Creates a new FastAPI app called `myapp`, adding our newly defined middleware to its list of middlewares.
+- Uses PyTest's built-in `TestClient` class to simulate a real HTTP request from a browser or another server.
+- Connects to the WebSocket endpoint "/depends-err/" using the `client.websocket_connect` method.
+- Raises an expected `WebSocketDisconnect` exception due to the abnormal closure caused by our middleware handling an exception.
+- Verifies that the disconnection was handled correctly by checking the status code and reason provided by the exception object.

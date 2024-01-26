@@ -1,0 +1,3 @@
+- Tests the `/openapi.json` endpoint by making two requests and comparing the responses against each other.
+- Verifies that the status code is 200 for both requests and checks the content using JSON comparison.
+- Demonstrates how FastAPI caches the OpenAPI schema automatically with an expiration time of one hour (default). The second request returns the same cached result instead of generating a new one.

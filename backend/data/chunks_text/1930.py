@@ -1,0 +1,3 @@
+- Defines an asynchronous function `update_item` that takes two arguments: `item_id` and `item`.
+- The `Item` parameter is decorated with the `Body` decorator from Pydantic to parse JSON or form data in the request body.
+- The `examples` attribute of the `Item` model provides a default value for the response body when no input is provided by the client.

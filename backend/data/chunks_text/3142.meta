@@ -1,0 +1,1 @@
+{"original_code": "def http_exception_handler(request, exception):\n    return JSONResponse({\"exception\": \"http-exception\"})"}

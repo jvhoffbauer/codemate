@@ -1,0 +1,1 @@
+{"original_code": "def cyclic_generator(iterable: Iterable[_T]) -> Generator[_T, None, None]:\n    while True:\n        yield from iterable"}

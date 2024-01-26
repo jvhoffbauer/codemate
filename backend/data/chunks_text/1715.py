@@ -1,0 +1,3 @@
+- This function is a GET request for an item with the specified `item_id`.
+- The `Path` decorator extracts and validates the `item_id` parameter from the URL path.
+- The `Query` decorator handles optional query parameters passed in the URL query string (in this case, `q`). It also provides default values and aliases for easier usage.

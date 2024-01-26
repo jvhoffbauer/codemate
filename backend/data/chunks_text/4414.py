@@ -1,0 +1,2 @@
+- Tests if query parameters with string values are validated correctly in a GET request to the specified path (`path`)
+- Asserts that the HTTP status code returned is as expected (`expected_status`) and compares the JSON response body against an expected value (`expected_response`)

@@ -1,0 +1,3 @@
+- Generates an OpenAPI schema for a FastAPI application using `pydantic` and `starlette`.
+- The generated schema is retrieved by making a GET request to the `/openapi.json` endpoint.
+- The schema contains information about endpoints (e.g., paths), responses, security schemes, etc. In this case, it describes the `GET /items/` endpoint with authentication via OAuth2 password bearer.

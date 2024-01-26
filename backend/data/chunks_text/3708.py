@@ -1,0 +1,3 @@
+- Tests retrieving a user with ID 1 using FastAPI's built-in testing client
+- Asserts that the status code is 200 and saves the JSON response to `data` variable
+- Verifies that the required fields 'email' and 'id' are present in the response body

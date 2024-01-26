@@ -1,0 +1,1 @@
+- Defines a function `fun` that takes an argument `deps`, which is of type `DepList`. - Inside the function, the statement `deps.append(name)` adds the value of the variable `name` to the end of the list represented by `deps`. This operation modifies the original list and updates it with the new element.

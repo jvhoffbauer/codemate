@@ -1,0 +1,3 @@
+- This function takes optional HTTPBasicCredentials as a parameter and returns a dictionary containing username and password if provided, otherwise it returns an error message to create an account first.
+- The `Security()` decorator from FastAPI's security middleware is used to extract authentication information from incoming requests.
+- If no credentials are passed in, this function returns an error message instead of returning null or raising an exception.

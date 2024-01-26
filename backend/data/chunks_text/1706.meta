@@ -1,0 +1,1 @@
+{"original_code": "async def read_items(\n    *,\n    item_id: int = Path(title=\"The ID of the item to get\", gt=0, le=1000),\n    q: str,\n):\n    results = {\"item_id\": item_id}\n    if q:\n        results.update({\"q\": q})\n    return results"}

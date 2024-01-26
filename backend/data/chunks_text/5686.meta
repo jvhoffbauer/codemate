@@ -1,0 +1,1 @@
+{"original_code": "    def __contains__(cls, member):\n        if not isinstance(member, enum.Enum):\n            # Allow non-enums to match against member values.\n            return any(x.value == member for x in cls)\n        return super().__contains__(member)"}

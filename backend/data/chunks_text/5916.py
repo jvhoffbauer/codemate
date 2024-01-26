@@ -1,0 +1,3 @@
+- This function takes a `ModelField` as an argument and returns its outer type, which is defined by the `field_info.annotation`.
+- The `field_info` attribute of a `ModelField` provides additional information about the field, such as its name, database column, and data type.
+- By returning the outer type of a field's annotation, this function can be used to determine whether a given SQL query should use an OUTER JOIN or INNER JOIN based on the presence (or absence) of NULL values in the joined table.

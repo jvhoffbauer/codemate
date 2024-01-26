@@ -1,0 +1,1 @@
+- Tests if accessing a protected resource without authentication returns a 401 Unauthorized status code and includes the WWW-Authenticate header with Bearer value in the response headers. - Verifies that the error message returned is "Not authenticated".

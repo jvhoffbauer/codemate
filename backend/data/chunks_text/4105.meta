@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_main(app: FastAPI):\n    client = TestClient(app)\n    response = client.get(\"/\")\n    assert response.status_code == 200, response.text\n    assert b\"<!DOCTYPE html>\" in response.content"}

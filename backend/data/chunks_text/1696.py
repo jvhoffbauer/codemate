@@ -1,0 +1,3 @@
+- Defines a new endpoint `POST /items/` with an expected response status of 201 (Created).
+- Accepts a single parameter named 'name' of type string, passed in as part of the request body using the `@QueryItem()` decorator from FastAPI.
+- Returns a simple JSON object containing just the provided item name.

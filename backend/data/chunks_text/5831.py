@@ -1,0 +1,5 @@
+- This function takes a `ModelField`, an optional boolean flag for setting defaults (`set_default`), and another boolean flag for indicating whether this is a filter form (`is_filter`) as arguments.
+- It returns a `FormItem` object that represents a single input or output element in an Amis UI component.
+- The function first retrieves the appropriate `FormItem` instance based on the type of the `ModelField`.
+- It then updates some common attributes of the `FormItem` using information about the `ModelField` and the flags passed to the function.
+- Finally, it wraps the resulting `FormItem` with any necessary decorations before returning it.

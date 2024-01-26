@@ -1,0 +1,3 @@
+- Tests if query parameter 'item-query' with fixed value 'fixedquery' returns expected items and q parameter in response body
+- Uses `TestClient` from FastAPI to make GET request to '/items/' endpoint with query parameters
+- Asserts that status code is 200 and response JSON contains expected items array and 'q' parameter with fixed query value

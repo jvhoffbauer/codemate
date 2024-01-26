@@ -1,0 +1,3 @@
+- Defines a function `get_exclude_unset` that returns an instance of `ModelDefaults`.
+- The returned object has two attributes `x` and `y`, where `x` is set to `None` and `y` is set to the string value "y".
+- This function can be used to exclude unset values from model training by passing its result as an argument to a machine learning library's fitting method.

@@ -1,0 +1,1 @@
+- Tests the `get_locations()` function of the JHU service using a mock client session and datetime module. - Verifies that the returned value is a list containing Location objects. - Checks if the number of locations in the result matches the length of the confirmed, deaths, and recovered lists obtained from calling `get_category()`.

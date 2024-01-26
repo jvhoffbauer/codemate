@@ -1,0 +1,3 @@
+- Initializes a new instance of the class with a `fixed_content` parameter that is stored in an attribute called `fixed_content`.
+- The `__init__()` method is used to initialize object attributes when creating a new instance of the class.
+- The `str` type for the `fixed_content` parameter indicates that it should be treated as a string value.

@@ -1,0 +1,1 @@
+{"original_code": "    async def _call(self, admin: ModelAdmin, request: Request, sel: Select) -> Select:\n        if not self.values:\n            return sel\n        column = getattr(admin.model, self.column)\n        if len(self.values) == 1:\n            return sel.where(column == self.values[0])\n        return sel.where(column.in_(self.values))"}

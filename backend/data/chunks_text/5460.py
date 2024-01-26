@@ -1,0 +1,5 @@
+- Defines a pytest fixture named `set_env` that takes in a `monkeypatch` object as an argument.
+- Uses the `monkeypatch` module to set several environment variables related to AWS authentication and configuration.
+- Deletes the `AWS_PROFILE` variable without raising an error (raising=false).
+- Sets the value of the `AWS_CONFIG_FILE` variable to a temporary location for testing purposes.
+- Sets the value of the `TITILER_API_CACHECONTROL` variable to control how long cached data is kept by the Tile API service.

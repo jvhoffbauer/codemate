@@ -1,0 +1,3 @@
+- Retrieves a specific user with the given ID using `crud_user.get()`.
+- Checks whether the retrieved user matches the currently logged in user (`current_user`) to prevent unauthorized access. If they match, returns the current user instead of the requested one.
+- Raises an exception with a custom error message when the requesting user does not have sufficient permissions or the requested user cannot be found. The exception type and status codes are specified for better handling by clients.

@@ -1,0 +1,7 @@
+- Imports `tutorial004_py310` module from `docs_src/tutorial` directory and assigns it to a variable named `mod`.
+- Sets SQLAlchemy's connection URL (`sqlite_url`) for the engine creation process.
+- Creates an SQLAlchemy engine using the set URL.
+- Initializes a list called `calls` which will be used later in assertions.
+- Retrieves the built-in print function, saves its original behavior, and replaces it with a mock object that adds each call to the `calls` list.
+- Calls the main function of the imported module while passing the mock print function.
+- Asserts that the expected print statements were made by checking if they are present in the `calls` list.

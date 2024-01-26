@@ -1,0 +1,3 @@
+- Defines a method called `__get_validators__` for the current class (`cls`)
+- Yields the result of calling the `validate` attribute, which is assumed to be a validation function or decorator, as a validator for this class
+- This allows external libraries and frameworks that use Pydantic's built-in schema validation system to automatically validate instances of this class based on its defined structure

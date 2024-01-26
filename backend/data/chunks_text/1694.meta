@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/cookie-and-object/\")\ndef create_cookie(response: Response):\n    response.set_cookie(key=\"fakesession\", value=\"fake-cookie-session-value\")\n    return {\"message\": \"Come to the dark side, we have cookies\"}"}

@@ -1,0 +1,2 @@
+- Defines a GET request endpoint at `/v2` using FastAPI's decorator syntax
+- Returns a JSON response with a message of "Hello World" when the endpoint is accessed

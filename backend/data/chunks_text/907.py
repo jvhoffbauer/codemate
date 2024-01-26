@@ -1,0 +1,3 @@
+- Defines an asynchronous function `run_endpoint_function` that takes three arguments: `dependant`, `values`, and `is_coroutine`.
+- The function checks whether `dependant.call` (which represents some dependent computation or data fetching operation) has already been executed using the `assert` statement. If it hasn't, raises an exception with an error message.
+- Based on the value of `is_coroutine`, either returns the result of calling `dependant.call` synchronously using `run_in_threadpool()` or asynchronously using `await`. This allows for more efficient execution in cases where the dependent computation can be performed concurrently without blocking the main thread.

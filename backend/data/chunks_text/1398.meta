@@ -1,0 +1,1 @@
+{"original_code": "async def read_items(ads_id: str | None = Cookie(default=None)):\n    return {\"ads_id\": ads_id}"}

@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` with a required query parameter `q`.
+- The `Union` type hint allows passing either a string or `None` value for the query parameter.
+- If no query is provided (i.e., `None`), returns a dictionary containing two sample items. Otherwise, updates the dictionary with a new key `'q'` and its corresponding value from the query parameter.

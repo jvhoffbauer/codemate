@@ -1,0 +1,1 @@
+{"original_code": "    @event.listens_for(models.User, \"after_insert\")\n    def receive_after_insert(mapper, connection, target):\n        \"listen for the 'after_insert' event\"\n        assert isinstance(target, models.User)\n        event_counter.after += 1"}

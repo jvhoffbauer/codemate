@@ -1,0 +1,1 @@
+- This function tests the `client.get("/users/")` request and asserts that it returns a status code of 200 with a specific JSON response containing certain keys and values. - It imports the necessary module (`docs_src.dependency_testing.tutorial001_an_py310`) to access the `client` object for making requests.

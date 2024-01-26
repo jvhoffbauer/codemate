@@ -1,0 +1,2 @@
+- Defines a function named `post_endpoint` that takes an argument of type `test_type`.
+- The body of the function simply returns the value passed as an argument (i.e., it acts as a simple pass-through).

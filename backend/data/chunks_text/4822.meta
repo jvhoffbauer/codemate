@@ -1,0 +1,1 @@
+{"original_code": "def remove(bucket: Bucket, *, id: str, persist_to=0):\n    doc_id = get_doc_id(id)\n    return utils.remove(\n        bucket=bucket, doc_id=doc_id, doc_model=ItemInDB, persist_to=persist_to\n    )"}

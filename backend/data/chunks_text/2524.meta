@@ -1,0 +1,1 @@
+{"original_code": "@router.websocket(\"/router2\")\nasync def routerindex2(websocket: WebSocket):\n    await websocket.accept()\n    await websocket.send_text(\"Hello, router!\")\n    await websocket.close()"}

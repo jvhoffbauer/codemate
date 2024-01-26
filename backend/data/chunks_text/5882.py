@@ -1,0 +1,1 @@
+- Retrieves a dictionary containing field names for data that can be accessed with reading permissions using `get_permission_fields()` method and specifying'read' as permission level. - Returns this dictionary to be used elsewhere in the program.

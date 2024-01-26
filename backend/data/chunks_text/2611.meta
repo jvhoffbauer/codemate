@@ -1,0 +1,1 @@
+{"original_code": "@app.trace(\"/items/{item_id}\")\ndef trace_item(item_id: str):\n    return JSONResponse(None, media_type=\"message/http\")"}

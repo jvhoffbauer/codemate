@@ -1,0 +1,4 @@
+- Defines two SQLAlchemy models `Team` and `Hero`.
+- Creates a relationship between them using `Relationship`, specifying that it should be lazy loaded (i.e., not immediately fetched from the database).
+- Uses `sa_relationship_kwargs` to pass additional options to SQLAlchemy's internal `relationship()` function, which is used by FastAPI's ORM extension to create the actual relationship object.
+- Raises an error because passing `sa_relationship` as both a keyword argument and a positional argument is not allowed in Python. This demonstrates how PyTest can help catch potential errors during development.

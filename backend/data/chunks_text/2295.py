@@ -1,0 +1,3 @@
+- Defines a GET request endpoint at `"/query/"`, named `query_convertor`.
+- Accepts a single parameter, `param`, of type string, which is optional and can be passed as a query parameter in the URL (e.g., `http://localhost:8000/query?param=hello`) using FastAPI's built-in `Query` class for parsing query parameters.
+- Returns a JSON response with a key-value pair containing the parsed value of the `param` argument.

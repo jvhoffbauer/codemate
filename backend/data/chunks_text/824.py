@@ -1,0 +1,1 @@
+- This function is an asynchronous method that creates a new user (AuthUser). - It checks whether another user with the same email address already exists in the system using the `service.get_user_by_email()` method. - If such a user is found, it raises an exception of type `EmailTaken`. Otherwise, it returns the newly created user object (AuthUser).

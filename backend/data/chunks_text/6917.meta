@@ -1,0 +1,1 @@
+{"original_code": "async def create_redis_pool():\n    redis.pool = await create_pool(\n        RedisSettings(host=settings.REDIS_HOST, port=settings.REDIS_PORT)\n    )"}

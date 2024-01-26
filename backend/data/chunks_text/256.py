@@ -1,0 +1,4 @@
+- Defines a function `read_heroes` that takes optional arguments for offset and limit (defaults provided by SQLAlchemy's `Query`)
+- Uses a context manager to create a new database session using the engine passed in
+- Executes a SELECT query on the `Hero` model, specifying an offset and limit based on the input parameters
+- Returns the resulting list of Hero objects

@@ -1,0 +1,1 @@
+- Tests for cropping functionality using STAC API with required and optional parameters such as URL, assets, expression, rescale, max size, width, height. - Uses mocks to simulate HTTP requests and rasterio functions for testing purposes. - Verifies correct status codes, content types, and metadata values in responses.

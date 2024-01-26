@@ -1,0 +1,3 @@
+- Tests if user is not authenticated and tries to access protected resource (GET /users/me) using HTTP Bearer authentication without credentials
+- Expects a status code of 401 Unauthorized with message "Unauthorized" in response body
+- Instead receives expected error message "Create an account first", indicating that authentication failed due to missing credentials

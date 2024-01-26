@@ -1,0 +1,1 @@
+{"original_code": "def setup_logger(name, log_file, level=logging.INFO):\n    \"\"\"To set up as many loggers as you want\"\"\"\n\n    handler = logging.FileHandler(log_file)\n    handler.setFormatter(formatter)\n\n    logger = logging.getLogger(name)\n    logger.setLevel(level)\n    logger.addHandler(handler)\n\n    return logger"}

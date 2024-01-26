@@ -1,0 +1,1 @@
+{"original_code": "@item_router.get(\"/{item_id}\")\ndef get_item(item_id: str, user_id: Optional[str] = None):\n    if user_id is None:\n        return {\"item_id\": item_id}\n    else:\n        return {\"item_id\": item_id, \"user_id\": user_id}"}

@@ -1,0 +1,1 @@
+{"original_code": "    def _register_admin_router_all_pre(self):\n        [\n            admin.get_link_model_forms()\n            for admin in self._registered.values()\n            if isinstance(admin, ModelAdmin)\n        ]"}

@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(autouse=True, scope=\"session\")\ndef run_migrations() -> None:\n    import os\n\n    print(\"running migrations..\")\n    os.system(\"alembic upgrade head\")\n    yield\n    os.system(\"alembic downgrade base\")"}

@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(autouse=True)\ndef _setup_sync_db() -> Database:\n    yield sync_db\n    # Free connection pool resources\n    sync_db.close()  # type: ignore"}

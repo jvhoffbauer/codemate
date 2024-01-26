@@ -1,0 +1,1 @@
+- Defines a function `get_invalidlist()` that returns a list of dictionaries with invalid data types for price keys. - The first and third dictionary in the returned list have valid key-value pairs, while the second dictionary has an invalid string value for its 'price' key instead of a numeric value.

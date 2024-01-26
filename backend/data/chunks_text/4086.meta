@@ -1,0 +1,1 @@
+{"original_code": "def test_websocket_no_credentials(app: FastAPI):\n    client = TestClient(app)\n    with pytest.raises(WebSocketDisconnect):\n        with client.websocket_connect(\"/items/foo/ws\"):\n            pytest.fail(\n                \"did not raise WebSocketDisconnect on __enter__\"\n            )  # pragma: no cover"}

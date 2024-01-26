@@ -1,0 +1,1 @@
+- Tests that passing an invalid UUID (defined in `bad_uuids`) as the X-Request-ID header causes the middleware to ignore it and instead generate a new one for logging purposes. - Verifies that a warning message is logged using Pytest's built-in capture fixture (caplog). - Runs against three different apps defined in `default_app`, `transformer_app`, and `generator_app`.

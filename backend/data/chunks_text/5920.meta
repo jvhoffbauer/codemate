@@ -1,0 +1,1 @@
+{"original_code": "    def marge_model_config(\n        model: Type[BaseModel], update: Dict[str, Any]\n    ) -> Union[type, Dict[str, Any]]:\n        return {**model.model_config, **update}"}

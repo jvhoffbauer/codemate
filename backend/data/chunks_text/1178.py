@@ -1,0 +1,1 @@
+- This function takes a user ID as an argument and returns the corresponding User object from the database using `crud.get_user()`. - If the user with the given ID cannot be found in the database, it raises a HTTPException with status code 404 (Not Found).

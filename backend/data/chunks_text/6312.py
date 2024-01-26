@@ -1,0 +1,3 @@
+- Defines a migration function called `upgrade()` that will be executed when running database migrations using Alembic.
+- Creates a new table named 'user_model' with four columns: 'id', 'email', and 'hashed_password'. The primary key is set to 'id'.
+- Creates an index on the 'email' column, making it unique.

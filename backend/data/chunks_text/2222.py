@@ -1,0 +1,4 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `client.get("/openapi.json")`.
+- The generated schema includes information about endpoints (e.g., `POST /foo`) and their responses (e.g., success or validation errors).
+- It also defines data models used in requests and responses (e.g., `Items`, which is required when making a request to `POST /foo`).
+- These definitions are organized under components, including schemas that can be reused across multiple endpoints.

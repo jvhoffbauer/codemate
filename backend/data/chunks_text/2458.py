@@ -1,0 +1,4 @@
+- Tests synchronous and asynchronous error handling by raising a server error during an async function using `TestClient`.
+- Verifies that the sync endpoint returns a 500 status code with the error message instead of crashing the entire app.
+- Checks if the async function's exception is caught and stored in a global dictionary for later retrieval.
+- Clears the dictionary to prevent false positives in subsequent tests.

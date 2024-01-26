@@ -1,0 +1,1 @@
+- Defines a GET request handler for the root URL of router `B`'s subgroup under router `A`. - Returns a simple string response when this endpoint is accessed.

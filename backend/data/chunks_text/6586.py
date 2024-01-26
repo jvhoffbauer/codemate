@@ -1,0 +1,4 @@
+- This function `probe2()` takes two arguments, an authentication token (`auth_token`) and a dependency value (`probe2_dep`) that is retrieved using another function called `get_probe2_dep()`.
+- The `Depends()` decorator is used to pass these dependencies into the function.
+- Inside the function body, both `auth_token` and `probe2_dep` are deleted using the `del` statement, indicating they will not be used in this context.
+- Finally, the function returns an integer value of 1.

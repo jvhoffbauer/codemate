@@ -1,0 +1,4 @@
+- Defines a fixture `echo` using PyTest's `@pytest.fixture` decorator that returns an instance of `EchoInfo`.
+- Registers three methods (`echo`, `no_params`, and `deep_data`) with FastAPI's EndpointManager (`ep`) using its `@ep.method()` decorator.
+- Uses Pydantic's `Body` to define request body schemas for each endpoint. The `examples` parameter is used to provide example values for testing purposes.
+- Returns the `EchoInfo` object created in the fixture so it can be accessed by tests that use this fixture.

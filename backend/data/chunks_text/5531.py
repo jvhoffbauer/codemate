@@ -1,0 +1,4 @@
+- Initializes a new instance of the class with a specified `table_model`.
+- Checks if the `table_model` has an attribute called `__table__`, raising an exception otherwise.
+- Assigns the `table_model` and its associated SQLAlchemy `Table` object to internal variables for later use.
+- Retrieves a list of fields from the `table_model` using a helper method (not shown).

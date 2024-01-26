@@ -1,0 +1,3 @@
+- Configures Alembic context without creating an engine or requiring a database connection
+- Emits SQL statements to console instead of executing them against a database
+- Useful for testing migrations offline or debugging migration scripts

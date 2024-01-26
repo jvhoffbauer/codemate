@@ -1,0 +1,1 @@
+{"original_code": "async def read_items():\n    return \"\"\"\n    <html>\n        <head>\n            <title>Some HTML in here</title>\n        </head>\n        <body>\n            <h1>Look ma! HTML!</h1>\n        </body>\n    </html>\n    \"\"\""}

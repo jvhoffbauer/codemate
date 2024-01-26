@@ -1,0 +1,1 @@
+- Defines a function `process_item` that takes an argument `item` of type `int` or `str`. - Prints the value of the `item` to the console using Python's built-in `print()` function.

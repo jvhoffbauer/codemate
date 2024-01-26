@@ -1,0 +1,1 @@
+{"original_code": "    def set_msg(self, msg):\n        self.msg = msg\n        return self"}

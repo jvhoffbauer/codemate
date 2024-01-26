@@ -1,0 +1,1 @@
+- Tests if an inactive user (represented by a JWT token with Alice's username) can access their own user information using GET /users/me endpoint. - Asserts that the expected HTTP status code and error message are returned when attempting to access protected resources as an inactive user.

@@ -1,0 +1,1 @@
+- Sets GDAL environment variable "GDAL_DISABLE_READDIR_ON_OPEN" to "FALSE". - Retrieves current value of "GDAL_DISABLE_READDIR_ON_OPEN" using `rasterio.Env`. - Returns a dictionary containing the retrieved environment variable value.

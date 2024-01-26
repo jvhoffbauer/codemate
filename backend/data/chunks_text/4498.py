@@ -1,0 +1,1 @@
+- This function uses `aiohttp`'s built-in testing client to simulate a POST request with form data containing a username and password to the "/login/" endpoint. - The expected status code is checked, and if successful, the JSON response body is verified against an expected dictionary.

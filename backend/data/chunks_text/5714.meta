@@ -1,0 +1,1 @@
+{"original_code": "    async def has_page_permission(\n        self, request: Request, obj: \"PageSchemaAdmin\" = None, action: str = None\n    ) -> bool:\n        return self.app is self or await self.app.has_page_permission(\n            request, obj=obj or self, action=action\n        )"}

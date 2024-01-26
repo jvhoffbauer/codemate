@@ -1,0 +1,3 @@
+- Override common parameters dependency with a custom implementation that includes sub dependencies for testing purposes in a specific endpoint (/main-depends) using Flask's `app.dependency_overrides`.
+- Make an HTTP GET request to the specified endpoint and verify its status code and JSON response body are as expected, containing values from both the main and sub dependencies.
+- Remove the override after executing the test case.

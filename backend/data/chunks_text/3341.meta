@@ -1,0 +1,1 @@
+{"original_code": "def test_hidden_path():\n    client = TestClient(app)\n    response = client.get(\"/hidden_path/hidden_path\")\n    assert response.status_code == 200\n    assert response.json() == {\"hidden_path\": \"hidden_path\"}"}

@@ -1,0 +1,1 @@
+{"original_code": "def test_token(current_user: UserInDB = Depends(get_current_user)):\n    \"\"\"\n    Test access token.\n    \"\"\"\n    return current_user"}

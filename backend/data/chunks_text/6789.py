@@ -1,0 +1,2 @@
+- Retrieves a list of `Item` objects from the database using SQLAlchemy's session object and filtering by their associated `owner_id`.
+- Allows for pagination with optional `skip` and `limit` parameters to control starting point and number of items returned respectively.

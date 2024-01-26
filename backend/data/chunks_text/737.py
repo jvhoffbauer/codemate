@@ -1,0 +1,2 @@
+- Closes the database connection by popping the binding and closing it asynchronously using `aiomongoengine`.
+- Prevents resource leakage when the bot is stopped or restarted, ensuring efficient use of system resources.

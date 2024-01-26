@@ -1,0 +1,4 @@
+- This function is a pytest mark decorated asynchronous and parameterized using `pytest.mark.asyncio` and `pytest.mark.parametrize`.
+- It tests the API endpoint `/v2/latest` with various query parameters using the `async_api_client` provided by PyTest Fixtures.
+- The responses are printed to the console for debugging purposes.
+- Assertions are made on the status code, presence of confirmed cases, and deaths in the JSON response body.

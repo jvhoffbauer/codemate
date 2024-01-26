@@ -1,0 +1,3 @@
+- Defines a property called `route_page` that returns a callable function named `route`.
+- The `route` function is an asynchronous view function that takes two arguments - `Request` and `page`, which is annotated with our custom `AnnotatedPage` class (ignored for now).
+- Returns the result of calling another method `page_parser` on the current object (presumably the main class this property belongs to), passing in the `Request` and `page` objects.

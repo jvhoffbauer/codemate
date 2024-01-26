@@ -1,0 +1,3 @@
+- Initializes the `__post_init__` method of the current class (i.e., the derived class).
+- Calls the parent's `__post_init__` method to ensure proper initialization.
+- Checks whether the value assigned to `td` is an integer; if so, it converts it into a `timedelta` object with seconds equal to that integer. If not, it leaves `td` unchanged as a `timedelta` object.

@@ -1,0 +1,3 @@
+- This function `get_balance()` returns a `Balance` object that represents the current balance of an `Account`.
+- The `Account` parameter is optional and can be provided using the `Depends()` decorator with the `get_account()` dependency resolver.
+- The returned `Balance` object contains both the `amount` and `currency` properties of the associated `Account`.

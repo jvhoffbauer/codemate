@@ -1,0 +1,3 @@
+- Defines a dictionary `kv` with key-value pairs representing common API endpoints and their corresponding actions (e.g., "create" becomes "-Create")
+- Loops through each key-value pair in `kv`, checking whether the given `path` ends with that endpoint
+- If it does, appends the action from `kv` to the provided `summary` string unless it's already been added

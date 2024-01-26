@@ -1,0 +1,1 @@
+{"original_code": "def read_user_me(user: models.User = Depends(deps.get_current_active_user)):\n    \"\"\"Get current user.\"\"\"\n    return user"}

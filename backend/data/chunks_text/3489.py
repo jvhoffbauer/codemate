@@ -1,0 +1,1 @@
+- This function, `test_index()`, uses Flask's built-in testing client to simulate a web request and establish a WebSocket connection on the root URL ("/"). - The received message is parsed using JSON and compared against an expected list containing 'app' and 'index'. These values likely represent components or features of the application being tested in this scenario.

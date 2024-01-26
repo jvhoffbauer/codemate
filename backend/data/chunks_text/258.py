@@ -1,0 +1,6 @@
+- Defines a function `update_hero` that takes two arguments: `hero_id`, an integer representing the ID of the hero to be updated, and `hero`, an instance of `HeroUpdate`.
+- Uses SQLAlchemy's `Session` context manager to establish a database connection and retrieve the existing hero from the database using its ID. If the hero is not found, raises a `HTTPException` with status code 404 (Not Found).
+- Converts the incoming `hero` object into a dictionary called `hero_data` using Marshmallow's `model_dump` method, excluding any unset fields. This allows us to selectively update specific attributes of the hero without having to pass all of them again.
+- Iterates over each key-value pair in `hero_data` and sets the corresponding attribute on the retrieved hero object using Python's built-in `setattr` function.
+- Adds the modified hero back to the session and commits the changes to the database. Refreshes the hero object to ensure it has the latest data from the database.
+- Returns the updated hero object.

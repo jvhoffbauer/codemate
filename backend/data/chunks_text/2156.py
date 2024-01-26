@@ -1,0 +1,1 @@
+- Defines a GET route with path parameter `item_id`, which is an integer between 1 and 3 (inclusive) by default due to the `Path()` decorator's `lt` and `gt` keyword arguments. - The function returns the value of the `item_id` parameter passed in the URL query string or as part of the request body if using JSON or Form data formats.

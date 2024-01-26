@@ -1,0 +1,2 @@
+- Defines a property called `router_prefix` for this class
+- The value of the property is calculated using an f-string that includes the name of the model represented by this instance, prefixed with a forward slash (/) to indicate it's part of a URL path

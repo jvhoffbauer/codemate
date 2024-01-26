@@ -1,0 +1,1 @@
+- Defines an asynchronous function `get_token_header()` that takes a parameter `x_token` of type string with a default value provided by FastAPI's `Header()` decorator. - Checks whether the value of `x_token` is equal to a hardcoded string "fake-super-secret-token". If not, raises a customized HTTP exception (HTTP status code 400) with a detailed error message.

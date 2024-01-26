@@ -1,0 +1,3 @@
+- This endpoint is accessed using GET request to `http://localhost:8000/items/`.
+- The returned data will be a list of Item objects, as defined in our model.
+- The `response_model` parameter specifies that FastAPI should automatically convert the JSON response into a list of Item objects for us.

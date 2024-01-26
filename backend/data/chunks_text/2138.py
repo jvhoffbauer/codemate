@@ -1,0 +1,3 @@
+- Defines a GET request for the path `"/path/param-lt"` with a parameter named `item_id`.
+- The value of `item_id` is required and must be less than 3, as specified by the `Path()` decorator's `lt` keyword argument.
+- Returns the value of `item_id`, which will be passed to the function as an argument.

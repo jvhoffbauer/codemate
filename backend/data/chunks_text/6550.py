@@ -1,0 +1,2 @@
+- Defines a method named `probe` using FastAPI's decorator `@ep.method()`.
+- Returns a string value, but this is not used in the implementation as an exception (HTTPException with status code 401) is raised instead.

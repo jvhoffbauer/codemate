@@ -1,0 +1,1 @@
+{"original_code": "async def test_async_round_trip(tmp_path, name, content, kwargs):\n    test_path = tmp_path / name\n    assert not test_path.exists()\n\n    await app.io.AIO.save(test_path, content, **kwargs)\n    load_results = await app.io.AIO.load(test_path)\n    assert load_results == content"}

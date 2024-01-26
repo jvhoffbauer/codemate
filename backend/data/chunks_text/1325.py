@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` that takes multiple optional arguments for filtering and sorting items based on their processing requirements.
+- Converts some of these arguments (such as datetime objects) into Pydantic models using the `Annotated` decorator from FastAPI's built-in ORM library.
+- Calculates new values such as `start_process` and `duration`, which are added to the returned dictionary along with the original input parameters.

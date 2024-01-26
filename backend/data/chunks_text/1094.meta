@@ -1,0 +1,1 @@
+{"original_code": "async def read_users_me(\n    current_user: Annotated[User, Depends(get_current_active_user)]\n):\n    return current_user"}

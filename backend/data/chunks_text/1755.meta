@@ -1,0 +1,1 @@
+{"original_code": "def say_hi(name: Optional[str] = None):\n    if name is not None:\n        print(f\"Hey {name}!\")\n    else:\n        print(\"Hello World\")"}

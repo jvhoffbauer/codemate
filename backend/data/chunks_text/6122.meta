@@ -1,0 +1,1 @@
+{"original_code": "    @event.listens_for(models.User, \"after_delete\")\n    def receive_after_delete(mapper, connection, target):\n        \"listen for the 'after_delete' event\"\n        assert isinstance(target, models.User)\n        event_counter.after += 1"}

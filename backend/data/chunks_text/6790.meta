@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, model: Type[ModelType]):\n        \"\"\"\n        CRUD object with default methods to Create, Read, Update, Delete (CRUD).\n\n        **Parameters**\n\n        * `model`: A SQLAlchemy model class\n        * `schema`: A Pydantic model (schema) class\n        \"\"\"\n        self.model = model"}

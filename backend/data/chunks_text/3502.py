@@ -1,0 +1,2 @@
+- Defines a GET route with path "/valid2".
+- Includes an OpenAPI response definition for HTTP status code 500, specifying that the response body should be a list of integers (as defined by the "List[int]" type hint).

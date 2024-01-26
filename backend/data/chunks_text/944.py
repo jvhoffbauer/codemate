@@ -1,0 +1,2 @@
+- Initializes a private attribute `_type_adapter` with a new instance of `TypeAdapter`, which is created using another function called `TypeAdapter`. The argument passed to this inner function is an object that combines two other objects - `Annotated` and `self.field_info`. This combination represents some type information about the field being initialized in the constructor.
+- Note that the return type of `__post_init__()` is explicitly set as `None`, indicating that it doesn't return anything (i.e., it's a void method).

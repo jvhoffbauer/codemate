@@ -1,0 +1,1 @@
+{"original_code": "    def get_page_schema(self) -> Optional[PageSchema]:\n        if super().get_page_schema():\n            if self.page_schema.tabsMode is None:\n                self.page_schema.schemaApi = None\n        return self.page_schema"}

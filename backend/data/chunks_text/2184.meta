@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/sub-counter/\")\nasync def get_sub_counter(\n    subcount: int = Depends(super_dep), count: int = Depends(dep_counter)\n):\n    return {\"counter\": count, \"subcounter\": subcount}"}

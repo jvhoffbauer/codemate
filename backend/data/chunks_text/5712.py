@@ -1,0 +1,1 @@
+- Generates a unique identifier for an object based on its class module and name, as well as the app it belongs to (if provided). - Uses the `md5()` hash function to generate a fixed-length string representation of the concatenated strings. - Returns the first 16 hexadecimal characters of the resulting MD5 hash value.

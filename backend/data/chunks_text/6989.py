@@ -1,0 +1,9 @@
+- Defines a method `create` that takes in a database session (`Session`) and an object representing user input (`UserCreate` or `UserAdminCreate`).
+- Converts the input object to JSON serializable format using `jsonable_encoder`.
+- Generates a hashed password for the new user using `get_password_hash`, which is part of Flask-Login's security extensions.
+- Removes the plaintext password from the dictionary containing all other user attributes.
+- Creates a new `User` instance with the modified dictionary as arguments.
+- Adds the newly created user to the database session.
+- Commits changes made during this transaction to the database.
+- Refreshes the state of the added user by fetching it again from the database.
+- Returns the refreshed user object.

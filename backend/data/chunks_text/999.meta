@@ -1,0 +1,1 @@
+{"original_code": "def isoformat(o: Union[datetime.date, datetime.time]) -> str:\n    return o.isoformat()"}

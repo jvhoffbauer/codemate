@@ -1,0 +1,1 @@
+{"original_code": "def do_run_migrations(connection):\n    context.configure(\n        connection=connection, target_metadata=target_metadata, compare_type=True\n    )\n\n    with context.begin_transaction():\n        context.run_migrations()"}

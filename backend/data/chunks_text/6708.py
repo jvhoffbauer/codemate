@@ -1,0 +1,3 @@
+- Defines an asynchronous context manager using `@contextlib.asynccontextmanager`.
+- Sets a cookie named "ep_middleware_enter" with value "1" before yielding control to the next middleware or endpoint in the chain.
+- Sets a cookie named "ep_middleware_exit" with value "2" after returning from the decorated function, regardless of whether it completed successfully or raised an exception.

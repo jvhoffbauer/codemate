@@ -1,0 +1,1 @@
+- Creates a new database and its tables using SQLAlchemy's `create_all()` method, which is called on the metadata object of our SQLModel subclass (in this case, we assume it's named `SQLModel`) with the engine as an argument. - This function should be executed once during application initialization to set up the necessary schema for our data model.

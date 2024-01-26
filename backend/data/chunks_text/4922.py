@@ -1,0 +1,3 @@
+- Creates a new item with given title and description using superuser authentication
+- Sends a POST request to API endpoint for creating items
+- Verifies that returned JSON contains expected fields (title, description, ID, owner username)

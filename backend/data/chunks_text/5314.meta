@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/web/{TileMatrixSetId}\")\n    def web(TileMatrixSetId: Literal[\"WebMercatorQuad\"] = Query(...)):\n        \"\"\"return tms id.\"\"\"\n        return TileMatrixSetId"}

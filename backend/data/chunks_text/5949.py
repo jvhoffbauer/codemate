@@ -1,0 +1,1 @@
+- Initializes a function called `startup()` that is asynchronous (`async`) in nature. - Inside this function, it calls the `async_run_sync()` method of SQLAlchemy's database connection object to create all tables defined by SQLModel's metadata. - This operation is performed outside any session context using the `is_session=False` parameter passed to `async_run_sync()`.

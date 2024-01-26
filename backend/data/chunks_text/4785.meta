@@ -1,0 +1,1 @@
+{"original_code": "def get_doc_id(username: str):\n    return f\"{USERPROFILE_DOC_TYPE}::{username}\""}

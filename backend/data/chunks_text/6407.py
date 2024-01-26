@@ -1,0 +1,2 @@
+- Defines a class method `build_error_model()` that returns an error model object for this component's scope or its parent scopes (recursively)
+- If the ErrorModel attribute of the current component is already set and non-None, it gets renamed to avoid naming conflicts with child components in the same scope using `rename_if_scope_child_component()`. Otherwise, it returns None.

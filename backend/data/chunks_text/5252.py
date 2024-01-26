@@ -1,0 +1,5 @@
+- Defines a `StatisticsParams` dataclass that inherits from `DefaultDependency`.
+- Contains three optional parameters: `categorical`, `categories`, and `percentiles`.
+- The `categorical` parameter is a boolean flag indicating whether to calculate statistics for a categorical dataset (default is false).
+- The `categories` parameter is an optional list of pixel values used as category labels when calculating statistics for a categorical dataset. If not provided, all unique pixel values are considered categories.
+- The `percentiles` parameter is an optional list of integer percentile values to be calculated. Defaults to [2, 98].

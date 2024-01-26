@@ -1,0 +1,6 @@
+- Creates two teams (Preventers and Z-Force) and adds them to a database using SQLAlchemy ORM
+- Adds three heroes (Deadpool, Rusty Man, Spider Boy) to the same database, assigning each one to their respective teams
+- Refreshes the object state of all added heroes to ensure they have been properly persisted in the database
+- Updates Spider Boy's team affiliation from Sister Margaret's Bar to Sharp Tower
+- Commits changes made to the database and refreshes Spider Boy again to confirm update was successful
+- Removes Spider Boy's association with his previous team by setting its `team_id` attribute back to null before committing another change to the database

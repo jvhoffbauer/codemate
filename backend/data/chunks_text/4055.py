@@ -1,0 +1,1 @@
+- Tests if getting a non-existent resource with ID `foo` returns a HTTP status code of 400 Bad Request and displays appropriate error messages related to invalid path parameter and value type for integer input. - Deprecation notes indicate that these specific error message formats will eventually be removed from Pydantic version 1.

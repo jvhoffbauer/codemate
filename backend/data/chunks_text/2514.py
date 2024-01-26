@@ -1,0 +1,4 @@
+- Tests authentication using HTTP Digest with a hardcoded username and password (represented by 'foobar')
+- Makes an API request to '/users/me' with the provided authorization header
+- Asserts that the status code is 200 OK and saves the response text for debugging purposes
+- Verifies that the server returns the expected JSON response containing the used authentication scheme ('Digest') and credentials ('foobar').

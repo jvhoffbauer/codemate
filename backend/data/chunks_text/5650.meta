@@ -1,0 +1,1 @@
+{"original_code": "    async def has_list_permission(\n        self,\n        request: Request,\n        paginator: Optional[Paginator],\n        filters: Optional[SchemaFilterT],\n        **kwargs,\n    ) -> bool:\n        return True"}

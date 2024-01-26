@@ -1,0 +1,1 @@
+{"original_code": "    def __repr__(self) -> str:\n        attr = getattr(self.dependency, \"__name__\", type(self.dependency).__name__)\n        cache = \"\" if self.use_cache else \", use_cache=False\"\n        return f\"{self.__class__.__name__}({attr}{cache})\""}

@@ -1,0 +1,3 @@
+- Tests GET request to root URL (/) using Pytest's built-in `TestClient`.
+- Asserts that status code is 200 and saves response text for debugging purposes.
+- Deserializes JSON response body into a dictionary with expected keys and values.

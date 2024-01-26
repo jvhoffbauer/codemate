@@ -1,0 +1,1 @@
+- Tests whether `verify_password()` function correctly compares a plaintext password with its hashed equivalent in the database for user 'johndoe' using the mock data provided by `fake_users_db`. - Verifies that the `assert` statement passes when both inputs match, and raises an AssertionError if they don't.

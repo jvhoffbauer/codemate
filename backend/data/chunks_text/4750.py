@@ -1,0 +1,2 @@
+- Tests the `/items/recursive` and `/items/recursive-submodel` endpoints using Pytest and Pydantic v2's `TestClient`.
+- Verifies that both responses have a status code of 200 and contain expected JSON data with nested lists and dictionaries.

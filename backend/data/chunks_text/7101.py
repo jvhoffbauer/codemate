@@ -1,0 +1,3 @@
+- Defines an asynchronous function `add_date_job()` with two required arguments `run_time` and `job_id`.
+- Retrieves a scheduled task using its ID (if it exists).
+- Adds a new scheduled task to the system using the `Schedule.add_job()` method of the Celery Beat scheduler. The added task is defined by passing in the name of the function to be executed (cron_task), the type of trigger ("date"), the arguments for that function (in this case, just the job ID), the date/time at which the task should execute (converted from the user's input timestamp), and a unique identifier for the task (the same value passed in as `job_id`).

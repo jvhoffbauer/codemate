@@ -1,0 +1,3 @@
+- Defines a function `_parser_query_value` that takes three arguments: `value`, an optional `operator`, and a callback `python_type_parse`.
+- If `value` is a string, it checks for SQL operators using regular expressions and replaces them with their corresponding Python equivalents. It also handles special cases like LIKE and IN queries.
+- The resulting operator and values are returned as a tuple.

@@ -1,0 +1,2 @@
+- Tests GET request to endpoint with path parameter 'foo'
+- Asserts that status code is 200 and JSON response is 'foo'

@@ -1,0 +1,3 @@
+- Defines a function `read_user_me` that takes an optional argument `current_user`.
+- If no value is provided for `current_user`, it uses the `Depends()` decorator to retrieve the currently authenticated and authorized user from the request context using the `get_current_active_user()` function.
+- The resulting user object is returned by the function.

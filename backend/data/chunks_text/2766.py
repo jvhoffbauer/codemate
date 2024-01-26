@@ -1,0 +1,2 @@
+- Tests if a view without a ResponseModel annotation returns a JSONResponse with expected data when accessed via Flask's `client`.
+- Verifies that the HTTP status code is correct and checks the content of the returned JSON object using Python's built-in `assert` statement.

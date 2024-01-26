@@ -1,0 +1,1 @@
+- Calculates and returns the area of a rectangle object based on its width and length attributes using the formula width * length. - The method is named `area()`, has no parameters, and returns an integer value representing the calculated area. - This method can be called on any instance of the Rectangle class to determine its current size in square units.

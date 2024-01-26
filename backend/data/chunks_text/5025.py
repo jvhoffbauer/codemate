@@ -1,0 +1,3 @@
+- Defines a method called `list()` that lists resources at a given path and returns them as an array of objects with type `out`.
+- Allows specifying custom summary and tag names using optional arguments `summary` and `tags`, respectively.
+- Creates a schema for the returned list using FastAPI's `create_model()` function, which is passed the class name generated from the resource path (using `path_to_cls_name()`) and the item type `out`. The ellipsis (`...`) indicates that additional parameters can be added to this model definition later on.

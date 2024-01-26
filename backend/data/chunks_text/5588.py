@@ -1,0 +1,4 @@
+- This method is a private helper function called `_fetch_item_scalars`.
+- It takes two arguments - `session`, which is an instance of SQLAlchemy's `Session` class, and `item_id`, which is an iterable containing one or more ID values for items to fetch from the database.
+- The method uses SQLAlchemy's `select` statement to retrieve all columns (i.e., scalar values) from the table represented by the `self.model` attribute, where the primary key (PK) matches any of the provided IDs using the `IN` operator.
+- Finally, it returns a list of all the resulting rows as instances of the model type specified in the generic type parameter `TableModelT`.

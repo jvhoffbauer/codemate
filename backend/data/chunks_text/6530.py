@@ -1,0 +1,1 @@
+- Defines a function `requester` that takes in data and an optional path postfix as arguments. - Makes a raw request using another helper function `raw_request`, passing in JSON-encoded data and the specified path postfix (if provided). - Returns the response from the request as a dictionary after parsing its JSON content.

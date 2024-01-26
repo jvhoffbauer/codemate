@@ -1,0 +1,3 @@
+- Defines a fixture named `client` using PyTest's decorator syntax
+- Imports and retrieves an instance of Flask application called `app` from the file `docs_src/security/tutorial006_an.py`
+- Creates a new instance of Flask's built-in testing client, passing in the imported `app`, and returns it to be used by other tests

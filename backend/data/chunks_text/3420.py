@@ -1,0 +1,2 @@
+- Tests if GET request to path "/path/param-ge-int/" with parameter "greater than or equal to" and value of 42 returns a status code of 200 (OK)
+- Asserts that the JSON response is equal to the integer value of 42

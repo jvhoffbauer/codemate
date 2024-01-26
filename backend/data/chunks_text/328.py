@@ -1,0 +1,1 @@
+- Retrieves a list of heroes and their corresponding teams from the database using SQLAlchemy's `Session`, `select()`, and `exec()` methods. - Filters the query to include only heroes who belong to a specific team (identified by its ID), using an SQL expression provided to the `where()` method. - Prints out each selected hero and its associated team.

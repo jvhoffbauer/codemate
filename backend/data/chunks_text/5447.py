@@ -1,0 +1,3 @@
+- This function `method()` returns a specific subclass of `rio_tiler_mosaic.PixelSelection` based on the value of the instance's attribute `_value_`.
+- The name of the returned subclass is constructed by converting the titleized version of the `_value_` to uppercase and appending "Method".
+- The `getattr()` function is used to retrieve the specified subclass from the `defaults` module, which presumably contains all available options for this feature.

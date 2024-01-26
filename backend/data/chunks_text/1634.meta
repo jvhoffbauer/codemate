@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, fixed_content: str):\n        self.fixed_content = fixed_content"}

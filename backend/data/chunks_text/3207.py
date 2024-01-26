@@ -1,0 +1,1 @@
+- Tests if `jsonable_encoder()` function can encode a Deque object containing instances of a custom model (`Model`) and returns its JSON representation, with the first element being extracted from the list using indexing [0]. - Verifies that the encoded output contains the expected value for the 'test' field in the custom model instance within the Deque object.

@@ -1,0 +1,4 @@
+- Defines a function `upsert()` that takes in parameters such as `bucket`, `doc_id`, `doc_in`, `persist_to`, and `ttl`.
+- Encodes the input document (`doc_in`) into JSON format using `jsonable_encoder()`.
+- Performs an upsert operation on Couchbase using the provided `bucket`, `doc_id`, encoded data, and optional `persist_to` and `ttl` values.
+- Returns the original input document (`doc_in`) if the upsert operation is successful; otherwise, returns `None`.

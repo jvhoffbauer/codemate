@@ -1,0 +1,5 @@
+- Defines a function `ep` that takes an endpoint path as input and returns a JSON RPC entrypoint object with three middleware functions added to it.
+- Uses the `defaultdict` class from the built-in `collections` module to store information about each request/response pair in a dictionary indexed by their IDs.
+- Creates three context managers using the `@contextlib.asynccontextmanager` decorator for adding middleware functions at different stages of the request handling process. The first one is called before any other middleware or handler, the second raises an exception intentionally, and the third is executed after all others have completed.
+- Registers the `probe` method with the entrypoint object, passing its arguments through the `Body` decorator to validate them against an example value.
+- Assigns the `_calls` dictionary to the `calls` attribute of the entrypoint object so that it can be accessed later for debugging purposes.

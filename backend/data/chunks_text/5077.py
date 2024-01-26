@@ -1,0 +1,1 @@
+- Defines a function `user_client` that takes a `User` object as an argument and returns an instance of `ApiClient`, which is initialized with the given `User` and the current Flask application (`app`) as arguments. - This function can be used to easily create client objects for specific users without having to pass around the app or user context every time.

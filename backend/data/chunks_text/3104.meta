@@ -1,0 +1,1 @@
+{"original_code": "    def query_examples(\n        data: Union[str, None] = Query(\n            default=None,\n            examples=[\"query1\", \"query2\"],\n        ),\n    ):\n        return data"}

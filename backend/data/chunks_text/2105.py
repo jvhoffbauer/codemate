@@ -1,0 +1,2 @@
+- Defines a function called `event_callback` that takes an argument of type `Event`.
+- The body of the function is empty, indicated by the `pass` statement and the comment `pragma: nocover`, which tells the coverage tool to ignore this line during testing. This can be useful for functions that are required but not yet implemented or tested.

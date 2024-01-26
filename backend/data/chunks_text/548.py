@@ -1,0 +1,5 @@
+- Imports `test_tutorial` function and necessary modules for testing SQLModel's relationship attributes feature in Python version 3.9.
+- Defines a new module called `mod` with the contents of the tutorial on back-populating relationships using SQLModel.
+- Sets up an SQLAlchemy engine to connect to a local SQLite database.
+- Calls the main function of the imported module to execute its content.
+- Creates an SQLAlchemy inspector object to check if the expected tables have been created by SQLModel during execution.

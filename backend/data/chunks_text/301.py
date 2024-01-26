@@ -1,0 +1,3 @@
+- Retrieves a list of heroes from the database using SQLAlchemy's `Session` and `select()` functions
+- Filters the query to include only heroes whose age is greater than or equal to 35, using the `where()` function
+- Prints each selected hero object to the console using an iterative loop over the result set returned by `session.exec()`.

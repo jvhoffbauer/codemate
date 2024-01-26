@@ -1,0 +1,2 @@
+- Tests whether `__repr__()` method of a SQLAlchemy model (defined using FastAPI's SQLModel) excludes a specific attribute when called with `repr=False`.
+- Creates an instance of the model and asserts that the excluded attribute is not present in its string representation returned by `repr()`.

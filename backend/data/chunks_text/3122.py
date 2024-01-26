@@ -1,0 +1,1 @@
+- Defines a function `get_valid()` that returns a dictionary with three key-value pairs representing valid data for testing purposes. - The keys of the dictionary are 'name', 'date', and 'price'. - The values assigned to these keys are 'valid' (a string), a datetime object representing July 26th, 2021, and 1.0 (a float).

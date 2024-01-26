@@ -1,0 +1,1 @@
+- `probe1()` is a function that takes in a list of `Balance` objects as input and returns the same list without any modifications (i.e., it's an identity function).

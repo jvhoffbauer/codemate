@@ -1,0 +1,2 @@
+- Defines a GET request for the `callback_url` with path `"/$callback_url/callback/"`, using FastAPI's decorator syntax to register it as part of the `callback_router`.
+- Specifies that if an HTTP error status code of 400 is returned, the response should be handled by the `CustomModel` defined elsewhere in the application (presumably for customized error handling).

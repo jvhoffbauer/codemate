@@ -1,0 +1,1 @@
+- This function is a GET request for all Hero objects, identified by their primary key in the database table `hero`. - The returned data will be formatted according to the `HeroRead` model defined elsewhere in the application. - Uses SQLAlchemy's `Session` and `exec` methods to execute a SELECT query against the `hero` table and retrieve all rows.

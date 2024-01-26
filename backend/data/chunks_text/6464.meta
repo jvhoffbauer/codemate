@@ -1,0 +1,1 @@
+{"original_code": "    async def form(self, **kw):\n        return await self.request.form(**kw)"}

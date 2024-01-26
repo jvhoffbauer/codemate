@@ -1,0 +1,3 @@
+- This endpoint (GET /pets/) returns a list of all pets using FastAPI's built-in `response_model`.
+- The function creates two sample pets with an associated user object and returns them as a list in JSON format.
+- Note that this is just a simple example for demonstration purposes; in practice, you would likely retrieve actual data from a database or other external service instead of hardcoding it here.

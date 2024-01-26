@@ -1,0 +1,5 @@
+- Registers a default ModelAdmin for all models using `site.register_admin(admin.ModelAdmin)`. Raises an AssertionError because `model` is not specified.
+- Unregisters the default ModelAdmin.
+- Defines a custom UserAdmin for the `User` model and registers it using `@site.register_admin`. Retrieves the registered admin instance using `site.get_admin_or_create(UserAdmin)`. Asserts that the engine and fields are set correctly.
+- Calls `site.register_router()` to register the router for the admin views.
+- Tests the OpenAPI documentation by retrieving the FastAPI app's OpenAPI specification (`openapi`) and checking if the expected URLs for list, item, and item detail views exist under the correct prefix (`ins.router_prefix`).

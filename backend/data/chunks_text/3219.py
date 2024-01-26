@@ -1,0 +1,3 @@
+- Defines an asynchronous function `get_model_a()` that takes a required string argument `name`.
+- Optionally accepts another parameter `model_c`, which is retrieved using the `get_model_c()` dependency function provided by FastAPI's Dependency Injection system (Pydantic Settings).
+- Returns a dictionary with keys 'name', 'description', and 'foo'. The value for 'foo' is obtained from the optional `model_c` parameter passed to this function.

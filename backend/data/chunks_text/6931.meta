@@ -1,0 +1,1 @@
+{"original_code": "    def __tablename__(cls) -> str:\n        return humps.depascalize(cls.__name__)"}

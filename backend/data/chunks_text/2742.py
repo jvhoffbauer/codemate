@@ -1,0 +1,1 @@
+- Tests if a ResponseModel annotation is missing, which should raise a `ResponseValidationError`. - Uses PyTest's `with` statement to catch and raise the error explicitly for testing purposes. - Checks that the error message contains the string'missing'.

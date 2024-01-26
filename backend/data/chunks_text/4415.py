@@ -1,0 +1,3 @@
+- Retrieves OpenAPI schema from `/openapi.json` endpoint using FastAPI's built-in testing client
+- Asserts that HTTP status code is 200 and checks for expected text in case of failure
+- Verifies that returned JSON matches expected structure with specific keys and values

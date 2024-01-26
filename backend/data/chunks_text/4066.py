@@ -1,0 +1,3 @@
+- Defines a unit test for retrieving the OpenAPI schema using FastAPI's built-in `client` object
+- Asserts that the status code is 200 and checks the text content if necessary (not shown here)
+- Verifies that the JSON response matches the expected structure of an OpenAPI v3.1 specification with specific components such as paths, info, schemas, etc.

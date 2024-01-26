@@ -1,0 +1,1 @@
+- Defines a function `get_client()` that returns an instance of Flask's test client, initialized with the application defined in `docs_src/body_updates/tutorial001_py310`. - Imports the necessary components from the specified file to initialize and use the Flask test client for testing purposes within this function.

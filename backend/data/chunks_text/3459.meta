@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/{item_id}\")\nasync def read_item(item_id: str):\n    if item_id not in items:\n        raise HTTPException(\n            status_code=404,\n            detail=\"Item not found\",\n            headers={\"X-Error\": \"Some custom header\"},\n        )\n    return {\"item\": items[item_id]}"}

@@ -1,0 +1,3 @@
+- Registers static files for development mode using FastAPI's `StaticFiles` middleware
+- Uses local file system to serve static resources during development
+- Encourages use of NGINX or other production-grade web servers for serving static assets in production environments

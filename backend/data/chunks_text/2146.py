@@ -1,0 +1,3 @@
+- Defines a GET request for the path `"/path/param-le-ge/{item_id}"`, where `{item_id}` is a required parameter of type `float`.
+- Uses Pydantic's `Path` class to add constraints on the value of the `item_id` parameter using the `le` (less than or equal) and `ge` (greater than or equal) parameters. In this case, the `item_id` must be between 1 and 3 (inclusive).
+- Returns the value of the `item_id` parameter as the response body.

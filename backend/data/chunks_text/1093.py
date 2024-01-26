@@ -1,0 +1,1 @@
+- Retrieves user information for the currently authenticated user using FastAPI's `Depends()` decorator to pass the user object from the authentication middleware (implemented by `get_current_active_user`) as an argument to this function. - Returns the retrieved user data in JSON format with a `response_model` of type `User`.

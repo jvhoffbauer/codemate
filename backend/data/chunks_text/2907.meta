@@ -1,0 +1,1 @@
+{"original_code": "def get_something_else(*, someheader: str = Depends(get_header)):\n    return f\"{someheader}123\""}

@@ -1,0 +1,4 @@
+- Retrieves access token for first superuser using POST request to `/api/v1/login/access-token` with username and password as parameters
+- Saves access token in variable 'a_token'
+- Creates dictionary of authorization header with Bearer token value from 'a_token'
+- Returns dictionary containing authorization header

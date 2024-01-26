@@ -1,0 +1,1 @@
+- Creates a new user with email 'johndoe@example.com' and password'secret' using POST request to '/users'. - Verifies that the server returns JSON containing only the 'email' field of the newly created user, as expected for top-level models filtering behavior.

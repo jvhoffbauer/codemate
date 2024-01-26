@@ -1,0 +1,3 @@
+- This test case is marked as needing Python 3.9 (`@needs_py39`) and clears SQLModel's session cache before running (`clear_sqlmodel`).
+- It imports a specific tutorial example from `docs_src/tutorial`, sets up its SQLAlchemy engine, and patches the built-in print function to capture output during testing.
+- The test then runs the application and checks that the captured prints match expected values stored in `expected_calls`.

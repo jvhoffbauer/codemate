@@ -1,0 +1,2 @@
+- Defines a GET request for an item with ID `item_id`.
+- Returns the requested item from the `items` dictionary using FastAPI's dependency injection mechanism (`@app.get`) and sets its response model to `Item` while excluding unset fields (`response_model`, `response_model_exclude_unset`).

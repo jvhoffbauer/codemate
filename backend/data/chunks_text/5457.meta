@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\n    \"/healthz\",\n    description=\"Health Check.\",\n    summary=\"Health Check.\",\n    operation_id=\"healthCheck\",\n    tags=[\"Health Check\"],\n)\ndef ping():\n    \"\"\"Health check.\"\"\"\n    return {\"ping\": \"pong!\"}"}

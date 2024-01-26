@@ -1,0 +1,1 @@
+- Sends a GET request to `/items/valid` using Flask's built-in testing client (client) and asserts that it returns an HTTP status of 2xx (success). - Extracts the JSON response body from the server and checks if its keys match the expected values ("aliased_name" and "price"). - Verifies that the optional "owner_ids" key is null or absent in this case.

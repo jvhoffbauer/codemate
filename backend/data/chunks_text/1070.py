@@ -1,0 +1,1 @@
+- This function updates a discussion comment using GraphQL API with provided `comment_id`, new `body`, and other settings from `Settings`. - It returns an updated `Comment` object after executing the mutation through `get_graphql_response()` helper method. - The returned `Comment` object contains all fields of the updated comment as defined in `UpdateCommentResponse` schema.

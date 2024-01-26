@@ -1,0 +1,1 @@
+{"original_code": "    def inner(client):\n        monkeypatch.setattr(\n            client, \"transport\", _TestTransport(check_event, check_envelope)\n        )"}

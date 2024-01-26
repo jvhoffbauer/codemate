@@ -1,0 +1,3 @@
+- Defines a fixture named `app_client` that takes an argument `app`.
+- Returns an instance of Flask's built-in test client, `TestClient`, initialized with the given Flask application (`app`) as its WSGI environment.
+- Allows for easy testing of Flask applications by providing a convenient way to make requests and assert responses without having to create a new server or use external tools like cURL or Postman.

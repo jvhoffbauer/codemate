@@ -1,0 +1,3 @@
+- Defines a function `requester()` that takes three arguments: `method`, `params`, and an optional `request_id`.
+- If `add_path_postfix` is true (default False), appends `/` followed by the method name to the URL path. Otherwise, leaves it empty.
+- Returns the result of calling `json_request()` with a dictionary containing the `id`, `jsonrpc`, `method`, and `params` keys, as well as the `path_postfix` argument set based on `add_path_postfix`.

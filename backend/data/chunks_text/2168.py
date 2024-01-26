@@ -1,0 +1,3 @@
+- Defines a GET request for the URL path `/query/int/default`.
+- Uses FastAPI's dependency injection to pass an integer parameter named `query`, with a default value of 10, to the function.
+- Returns a string that concatenates "foo bar", the value of the `query` parameter, and a newline character (\n).

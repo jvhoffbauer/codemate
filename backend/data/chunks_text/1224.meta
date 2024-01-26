@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/user/\", response_model=UserOut)\nasync def create_user(user: UserIn) -> Any:\n    return user"}

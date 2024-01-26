@@ -1,0 +1,3 @@
+- Tests creating a hero with missing required field (secret_name)
+- Sends POST request to /heroes endpoint without providing secret_name in JSON body
+- Asserts that server returns HTTP status code 422 (Unprocessable Entity) indicating invalid input

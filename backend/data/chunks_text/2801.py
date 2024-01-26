@@ -1,0 +1,2 @@
+- Tests if a query parameter 'not_declared' with value 'baz' is not declared in the model and raises a validation error with status code 422 (Unprocessable Entity)
+- Asserts that the JSON response contains an error message indicating that the field is required and provides details about its location and type of error

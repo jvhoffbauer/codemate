@@ -1,0 +1,1 @@
+- Defines a GET route for `"/no-alias/dict"` with a response model of type `ModelNoAlias`. - Returns a dictionary with a single key-value pair where the value is the string "Foo". - Does not use aliasing (i.e., the keys in the returned dictionary are used directly as the JSON property names).

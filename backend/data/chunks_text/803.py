@@ -1,0 +1,2 @@
+- Updates a specific refresh token with an updated `expires_at` value, setting it to one day before the current time using SQLAlchemy's `update()` method and filtering by the provided `UUID4`.
+- The function is asynchronous due to the use of the `asyncio` module's `await` keyword in front of executing the query.

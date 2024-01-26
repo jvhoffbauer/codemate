@@ -1,0 +1,2 @@
+- Defines a GET endpoint for `/foo` using FastAPI's decorator syntax
+- Returns an object with a single key-value pair, where the value is a string and the key is 'name', as defined by the `response_model` parameter (which specifies that the returned JSON should conform to the structure of the `Item` class)

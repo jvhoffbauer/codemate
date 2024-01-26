@@ -1,0 +1,1 @@
+- Defines a function `simple_exclude_dict()` that returns a dictionary with nested dictionaries containing string values. - The outer dictionary has keys'ref' and 'baz'. - The key'ref' contains two subkeys ('foo' and 'bar') with corresponding string values, while 'baz' is not included in this dictionary.

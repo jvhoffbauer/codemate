@@ -1,0 +1,1 @@
+{"original_code": "    def __repr__(self) -> str:\n        return f\"{self.__class__.__name__}({self.default})\""}

@@ -1,0 +1,1 @@
+{"original_code": "@app.put(\"/items/{item_id}\")\nasync def create_item(item_id: int, item: Item, q: Union[str, None] = None):\n    result = {\"item_id\": item_id, **item.dict()}\n    if q:\n        result.update({\"q\": q})\n    return result"}

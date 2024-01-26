@@ -1,0 +1,2 @@
+- Defines a function `read_items` that takes in a list of items with IDs as its argument (`id`)
+- The function body is currently empty and marked as not to be executed during testing using the `pragma: no cover` directive

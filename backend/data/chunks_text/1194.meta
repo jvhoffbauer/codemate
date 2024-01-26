@@ -1,0 +1,1 @@
+{"original_code": "    def get(self, key: Any, default: Any = None):\n        res = getattr(self._obj, key, default)\n        if isinstance(res, peewee.ModelSelect):\n            return list(res)\n        return res"}

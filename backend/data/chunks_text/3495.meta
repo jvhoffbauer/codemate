@@ -1,0 +1,1 @@
+{"original_code": "def get_valid_none(send_none: bool = False):\n    if send_none:\n        return None\n    else:\n        return {\"name\": \"invalid\", \"price\": 3.2}"}

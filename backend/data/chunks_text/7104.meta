@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/job/del\", tags=[\"schedule\"], summary=\"\u79fb\u9664\u4efb\u52a1\")\nasync def remove_schedule(job_id: str = Body(..., title=\"\u4efb\u52a1id\", embed=True)):\n    res = Schedule.get_job(job_id=job_id)\n    if not res:\n        return resp_fail(msg=f\"not found job {job_id}\")\n    Schedule.remove_job(job_id)\n    return resp_ok()"}

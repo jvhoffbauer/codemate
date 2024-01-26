@@ -1,0 +1,4 @@
+- Defines a function `send_test_email` that takes an email address (`email_to`) and returns nothing (`None`)
+- Sets up variables for the project name (`project_name`) and email subject (`subject`) using the `settings` module
+- Reads the HTML content of the test email from a file in the `EMAIL_TEMPLATES_DIR` directory
+- Calls the `send_email` function to actually send the email, passing in the necessary arguments including the email recipient (`email_to`), subject (`subject_template`), HTML body (`html_template`), and any additional context needed by the email templates (`environment`)

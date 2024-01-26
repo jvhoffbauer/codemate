@@ -1,0 +1,1 @@
+- Initializes a new object of this class with given parameters (ID, state, county, etc.) and calls the parent constructor `super().__init__(...)`. - Sets the values of instance variables `state` and `county`, which are specific to COVID-19 cases in counties within states.

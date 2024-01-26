@@ -1,0 +1,1 @@
+- Defines a method `my_method__with_mergeable_errors` with two mergeable errors (`FirstError`, `SecondError`) using the `@ep.method` decorator from the `easy_prometheus` library. - The returned value is `None`.

@@ -1,0 +1,3 @@
+- Defines a function `fmt()` that formats Python source code and sorts imports using Black library.
+- Takes an optional argument `targets`, which is the directory or file to format (default is current directory).
+- Runs the Black command with arguments passed as list of strings using `subprocess.run()`.

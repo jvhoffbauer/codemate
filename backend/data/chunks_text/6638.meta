@@ -1,0 +1,1 @@
+{"original_code": "def test_middleware_no_auth(ep_middleware_auth, raw_request, body):\n    resp = raw_request(body)\n    assert resp.status_code == 401\n    assert resp.json() == {\"detail\": \"Not authenticated\"}"}

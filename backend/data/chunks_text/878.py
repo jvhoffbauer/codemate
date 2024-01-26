@@ -1,0 +1,2 @@
+- Defines a method called `__repr__()` for the current class (implicitly bound to self).
+- The returned string is formatted using an f-string, where `self.__class__.__name__` represents the name of the class and `self.default` represents its default value. This allows for easy debugging by printing out the object's type and contents when it is printed or passed as an argument to functions like eval().

@@ -1,0 +1,5 @@
+- Defines a function `test_invalid_tuple` using PyTest's `pytest.fixture`.
+- Uses PyTest's `with` statement to raise an AssertionError if the function being tested raises it.
+- Initializes a new instance of FastAPI called `app`.
+- Creates a custom model `Item` that inherits from Pydantic's BaseModel and has a required field `title` of type string.
+- Defines a route handler for GET requests at the root URL (/) named `read_items`, which takes a query parameter `q` of type tuple containing two instances of the `Item` model as its default value. The route handler is marked as uncovered by pylint's `pragma: no cover` directive.

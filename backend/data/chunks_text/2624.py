@@ -1,0 +1,2 @@
+- Defines a GET request handler for the root URL of router C using FastAPI's decorator syntax (@).
+- Returns a JSON response with a message "C".

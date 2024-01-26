@@ -1,0 +1,4 @@
+- Defines a FastAPI PostProcess dependency called `dependency()`.
+- Takes two query parameters (`post()` method argument), `algorithm` and `algorithm_params`, to specify which data transformation function should be applied and its arguments respectively.
+- Returns an optional instance of the selected BaseAlgorithm class after validating user input using PyYAML's `json.load()` and raising a `ValidationError` exception for invalid inputs.
+- Handles errors by returning a `HTTPException` with status code 400 and detailed error message.

@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_login_incorrect_password(client: TestClient):\n    response = client.post(\n        \"/token\", data={\"username\": \"johndoe\", \"password\": \"incorrect\"}\n    )\n    assert response.status_code == 400, response.text\n    assert response.json() == {\"detail\": \"Incorrect username or password\"}"}

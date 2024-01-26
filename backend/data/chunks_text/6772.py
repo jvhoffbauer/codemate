@@ -1,0 +1,3 @@
+- Sends a password reset email to a specified email address using Django's built-in `send_mail` function (aliased here as `send_email`)
+- The email contains a customized HTML message from a file located in the `templates/emails` directory
+- The email includes dynamic content such as the recipient's username and email address, the name of the project, an expiration time for the reset token, and a URL containing the reset token that allows the user to change their password on the website

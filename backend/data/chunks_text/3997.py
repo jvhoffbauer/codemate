@@ -1,0 +1,2 @@
+- Sends a GET request to the "/items/" endpoint using Flask's built-in `client` object
+- Asserts that the status code of the response is 200 (OK) and saves it in a variable called `response`. If the status code is not 200, an error message containing the text content of the response is printed instead.

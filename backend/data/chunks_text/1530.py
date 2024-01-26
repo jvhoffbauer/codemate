@@ -1,0 +1,3 @@
+- Defines an asynchronous function `read_items()` with a required query parameter called `hidden_query`.
+- The default value for this parameter is `None`, and it's not included in the schema by setting `include_in_schema=False`.
+- If the `hidden_query` parameter is provided, the function returns an object containing just that key-value pair. Otherwise, it returns an object with a different string value for the same key.

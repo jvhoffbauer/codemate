@@ -1,0 +1,1 @@
+{"original_code": "def doc_results_to_model(\n    results_from_couchbase: list, *, doc_model: Type[PydanticModel]\n) -> List[PydanticModel]:\n    items = []\n    for doc in results_from_couchbase:\n        data = doc[config.COUCHBASE_BUCKET_NAME]\n        doc = doc_model(**data)\n        items.append(doc)\n    return items"}

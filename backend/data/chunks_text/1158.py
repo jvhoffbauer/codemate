@@ -1,0 +1,3 @@
+- Defines a new item using POST method at `"/items/"`.
+- Requires JSON body with required fields 'name' and 'price', optional field 'description'.
+- Uses FastAPI's OpenAPI feature to document the endpoint and its parameters.

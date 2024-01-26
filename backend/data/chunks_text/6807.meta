@@ -1,0 +1,1 @@
+{"original_code": "@router.post(\"/\")\ndef create_item(\n    *, session: SessionDep, current_user: CurrentUser, item_in: ItemCreate\n) -> ItemOut:\n    \"\"\"\n    Create new item.\n    \"\"\"\n    item = Item.from_orm(item_in, update={\"owner_id\": current_user.id})\n    session.add(item)\n    session.commit()\n    session.refresh(item)\n    return item  # type: ignore"}

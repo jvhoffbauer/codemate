@@ -1,0 +1,1 @@
+{"original_code": "def test_security_oauth2_password_other_header():\n    response = client.get(\"/users/me\", headers={\"Authorization\": \"Other footokenbar\"})\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"username\": \"Other footokenbar\"}"}

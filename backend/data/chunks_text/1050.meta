@@ -1,0 +1,1 @@
+{"original_code": "def get_typed_return_annotation(call: Callable[..., Any]) -> Any:\n    signature = inspect.signature(call)\n    annotation = signature.return_annotation\n\n    if annotation is inspect.Signature.empty:\n        return None\n\n    globalns = getattr(call, \"__globals__\", {})\n    return get_typed_annotation(annotation, globalns)"}

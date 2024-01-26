@@ -1,0 +1,4 @@
+- Defines an endpoint called `map` that returns HTML content when accessed via GET requests.
+- Allows query parameters such as `src_path`, `TileMatrixSetId`, `tile_format`, etc., which can modify the behavior and output format of the viewer.
+- Uses FastAPI's dependency injection system to pass arguments between functions and avoid repetitive code.
+- Renders a template named `index.html` using Jinja2 templating language, passing relevant variables like `request`, `tilejson_endpoint`, and `resolutions`.

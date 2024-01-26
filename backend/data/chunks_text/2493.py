@@ -1,0 +1,2 @@
+- Attempts to create a FastAPI application and define an endpoint that returns a non-PyDantic model using `response_model`.
+- Raises a `FastAPIError` exception because FastAPI requires all models returned by endpoints to be PyDantic or PydanticBase subclasses.

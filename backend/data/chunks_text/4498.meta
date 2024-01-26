@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_post_body_form(client: TestClient):\n    response = client.post(\"/login/\", data={\"username\": \"Foo\", \"password\": \"secret\"})\n    assert response.status_code == 200\n    assert response.json() == {\"username\": \"Foo\"}"}

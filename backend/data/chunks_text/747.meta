@@ -1,0 +1,1 @@
+{"original_code": "    @validator(\"url\", always=True)\n    def build_url(cls, v: Any, field: Field, values: dict):\n        if isinstance(v, URL):\n            return v\n        args = {k: str(v) for k, v in values.items() if v is not None}\n        return URL(**args)"}

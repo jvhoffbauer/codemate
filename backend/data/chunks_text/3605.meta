@@ -1,0 +1,1 @@
+{"original_code": "def test_nested_exclude_simple_dict():\n    response = client.get(\"/simple_exclude_dict\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\n        \"baz\": \"simple_exclude_dict model2 baz\",\n        \"ref\": {\"foo\": \"simple_exclude_dict model foo\"},\n    }"}

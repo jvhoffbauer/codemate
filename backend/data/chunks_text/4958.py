@@ -1,0 +1,3 @@
+- Adds a new header "X-Process-Time" to the response with the value of the processing time in seconds
+- Wraps the original request handling function (call_next) and measures the time taken for it to complete using `time.time()`
+- Calculates the difference between the end and starting times to get the actual processing time

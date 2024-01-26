@@ -1,0 +1,4 @@
+- Defines a function `process_items` that takes a dictionary of string keys and float values as its argument (named `prices`)
+- Iterates over each key-value pair in the dictionary using a loop with two variables bound to the items extracted from the dictionary (named `item_name` and `item_price`, respectively)
+- Prints out the name of the current item being processed using the variable `item_name`
+- Prints out the price of the current item being processed using the variable `item_price`

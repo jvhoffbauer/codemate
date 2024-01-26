@@ -1,0 +1,3 @@
+- This function creates a new superhero object (represented by the `Hero` class) and adds it to the database using SQLAlchemy's `Session`.
+- The changes are committed to the database, and then the newly created hero is refreshed in memory to ensure its ID has been assigned correctly.
+- Finally, the newly created hero is returned as a response to the client.

@@ -1,0 +1,4 @@
+- Defines a function `echo` that returns an instance of `EchoInfo`. This object will keep track of all requests made to this endpoint.
+- Uses FastAPI's decorator syntax to define three different methods for handling requests with varying parameters and return types.
+- Utilizes FastAPI's request body parsing feature (`Body`) to extract input from requests in various formats, including strings, lists, and nested structures like `DataItem`.
+- Demonstrates how to handle optional arguments by specifying default values using keyword arguments inside parentheses after the parameter name.

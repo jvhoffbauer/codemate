@@ -1,0 +1,4 @@
+- Override `common_parameters` dependency with a subclass that adds an additional parameter 'k' in the context of `RouterDecoratorDepends`.
+- Make a GET request to the decorated endpoint and pass 'q=foo'.
+- Assert that the status code is 422 (Unprocessable Entity) and the error message contains a missing field for 'k'.
+- Clear the override at the end of the test case.

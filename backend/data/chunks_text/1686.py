@@ -1,0 +1,1 @@
+- Defines an asynchronous function named `create_user` that takes a single argument, `user`, of type `User`. - The function returns a dictionary with a key-value pair containing a message string and a value of "User received".

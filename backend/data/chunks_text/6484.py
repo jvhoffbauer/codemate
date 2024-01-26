@@ -1,0 +1,3 @@
+- Sets `dependency_overrides_provider` attribute of all routes to provided value (either True or False)
+- Used to enable/disable dependency overriding feature for specific routes during runtime
+- Allows fine-grained control over which dependencies should be automatically replaced with mocks or stubs by a provider class

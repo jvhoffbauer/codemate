@@ -1,0 +1,1 @@
+- Tests if the OpenAPI schema can be retrieved successfully with a status code of 200 and returns expected JSON format. - Verifies that the correct version (3.1.0) of OpenAPI is used in the returned JSON. - Checks that the paths object contains an entry for /typer with a GET method, which has a summary, operation ID, and successful response definition.

@@ -1,0 +1,3 @@
+- Defines a function `assemble_db_connection` that takes two arguments (a class and variables) from another function.
+- Checks whether the first argument is a string; if so, returns it directly. Otherwise, builds a connection string using the provided environment variables for username, password, server, and database name.
+- Returns the built connection string as any data type.

@@ -1,0 +1,1 @@
+{"original_code": "    @router.get(\"/afuture\")\n    async def home3():\n        \"\"\"Works and should return FALSE.\"\"\"\n        with futures.ThreadPoolExecutor() as executor:\n            res = list(executor.map(f, range(1)))[0]\n        return {\"env\": res}"}

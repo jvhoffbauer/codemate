@@ -1,0 +1,1 @@
+{"original_code": "def parse_img(content: bytes) -> Dict[Any, Any]:\n    \"\"\"Read tile image and return metadata.\"\"\"\n    with MemoryFile(content) as mem:\n        with mem.open() as dst:\n            return {**dst.profile, \"bounds\": list(dst.bounds)}"}

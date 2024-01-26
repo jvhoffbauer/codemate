@@ -1,0 +1,1 @@
+- Tests the `/tilejson` endpoint for different input parameters and verifies expected behavior such as tile format, color map, and zoom levels. - Uses a mock function to simulate opening a raster file (`mock_rasterio_open`) in order to avoid actually reading the file during testing.

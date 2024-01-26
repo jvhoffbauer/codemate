@@ -1,0 +1,1 @@
+{"original_code": "    async def get_form_item(\n        self, request: Request, modelfield: ModelField\n    ) -> Union[FormItem, SchemaNode]:\n        return self.site.amis_parser.as_form_item(modelfield, set_default=True)"}

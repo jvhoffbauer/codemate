@@ -1,0 +1,3 @@
+- Defines a GET request for items with an ID specified in the URL path (/items/{id}) using FastAPI's decorator syntax (@app.get)
+- The parameter id is passed as a dictionary containing a key-value pair of string and Item type (Dict[str, Item]) to be used within the function body
+- The pass statement is included here to avoid running any code during testing or debugging purposes (pragma: no cover)

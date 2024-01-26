@@ -1,0 +1,1 @@
+- Returns a `ModelDefaults` object with default values for missing fields using FastAPI's `response_model_exclude_unset` feature. - The `x` field is excluded from serialization since it has no value (i.e., `None`). - The `y` field is included in the response as expected.

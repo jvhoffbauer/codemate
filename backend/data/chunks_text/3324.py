@@ -1,0 +1,4 @@
+- Generates an OpenAPI schema for a FastAPI application using `pytest` and `fastapi`.
+- Retrieves the JSON representation of the schema by making a GET request to the `/openapi.json` endpoint.
+- Asserts that the status code is 200 and checks if the text content matches the expected string (optional).
+- Verifies that the returned dictionary contains the correct structure as defined in the OpenAPI specification version 3.1.0. Specifically, it checks the presence of keys such as 'openapi', 'info', 'paths', and 'components'. It also verifies the format of nested objects like'security' and'securitySchemes'.

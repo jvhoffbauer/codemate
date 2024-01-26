@@ -1,0 +1,4 @@
+- This function, `test_app`, is a unit test for an application using Flask's built-in testing client (client).
+- It makes a GET request to the root URL ("/") of the app and stores the response in the variable `response`.
+- The function asserts that the JSON response contains a key'msg' with value 'Hello World'.
+- Additionally, it checks if the content type header matches the expected format ('orjson_type') which could be set up elsewhere in the project.

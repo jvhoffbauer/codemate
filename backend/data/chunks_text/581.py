@@ -1,0 +1,7 @@
+- Imports `tutorial001_py310` module from `docs_src/tutorial` directory and assigns it to a variable named `mod`.
+- Sets SQLAlchemy connection URL for testing purposes using `sqlite://` syntax.
+- Creates an engine object using `create_engine()` function provided by SQLAlchemy library.
+- Initializes a list called `calls` which will be used later to verify that expected print statements were executed during tests.
+- Retrieves the built-in `print()` function, saves its original behavior in a variable (`new_print`) and replaces it with a custom implementation (`get_testing_print_function()`) that adds each printed statement to the `calls` list instead of actually printing them.
+- Calls the main function of the imported module inside a context manager that restores the original `print()` functionality after the execution is complete.
+- Verifies that all expected print statements have been recorded in the `calls` list using the `check_calls()` function provided by Pytest's plugin `pytest-mock`.

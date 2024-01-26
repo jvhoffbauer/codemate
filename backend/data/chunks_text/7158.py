@@ -1,0 +1,3 @@
+- Defines a function `ok()` that takes optional arguments for `data`, `pagination`, and `msg`.
+- Returns an HTTP response with status code 200 (OK), containing a dictionary with keys'status','msg', 'data' (optional), and 'pagination' (optional). The values of these keys are determined by the input arguments passed to the function.
+- Uses FastAPI's built-in functions `JSONResponse()` and `jsonable_encoder()` to format and encode the response body as JSON.

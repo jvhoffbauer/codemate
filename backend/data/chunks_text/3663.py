@@ -1,0 +1,1 @@
+- Tests the `GET /items/plumbus` endpoint with an invalid token (`'fake-super-secret-token'`) in the request header. - Verifies that a HTTP status code of 422 is returned and the error message contains a detail object with a missing field error for the 'token' query parameter. - Uses Pytest Fixtures to inject a mock Flask Client instance into the function under test.

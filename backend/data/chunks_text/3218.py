@@ -1,0 +1,3 @@
+- Defines a GET endpoint for retrieving ModelA with path parameter `name`.
+- Specifies that the response should be of type ModelA using the `response_model` decorator.
+- Accepts an optional query parameter `model_c`, which is obtained through the `get_model_c()` function using FastAPI's Dependency Injection feature.

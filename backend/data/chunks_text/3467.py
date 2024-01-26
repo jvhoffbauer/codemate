@@ -1,0 +1,1 @@
+- This function tests the `GET /items/{id}` endpoint by making a request to retrieve an item with ID 'foo'. - The expected status code is 200 and the response body should contain a JSON object with a key 'item' containing the value 'The Foo Wrestlers'. - If the actual status code or response text differs from what is expected, an AssertionError will be raised.

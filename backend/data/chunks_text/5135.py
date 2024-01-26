@@ -1,0 +1,3 @@
+- This function is called when a request is made to the server and handles the call by passing it on to another function `self.app`.
+- It checks whether the request type is HTTP or not. If it's not an HTTP request, it passes the request directly to `self.app`.
+- For HTTP requests, it measures the processing time using the `time` module and sets two headers for sending back to the client: `Server-Timing` and `Content-Length`. The former contains information about how long each stage of the request took, while the latter specifies the size of the response body in bytes. These headers are added to the response before sending it back to the client.

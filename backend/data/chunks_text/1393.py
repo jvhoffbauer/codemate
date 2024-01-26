@@ -1,0 +1,1 @@
+- Defines an asynchronous function `get_items()` that returns a list containing two strings ("Portal gun" and "Plumbus") when called.

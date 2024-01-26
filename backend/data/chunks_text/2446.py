@@ -1,0 +1,3 @@
+- Tests if `client.get("/async_raise")` raises an `AsyncDependencyError`.
+- Asserts that the expected response is returned and stored in `state`.
+- Checks if the request URL is added to a list of failed requests (`errors`) during testing.

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/float/{param:float}\")\ndef float_convertor(param: float = Path()):\n    return {\"float\": param}"}

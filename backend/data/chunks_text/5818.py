@@ -1,0 +1,4 @@
+- This function takes a `str` representing a database table name as input and returns an optional `ModelAdmin` object associated with that table.
+- It iterates over all registered administrators (i.e., classes derived from `ModelAdmin` or `AdminApp`) to find one whose bound model matches the given table name.
+- If no exact match is found, it recursively searches through any nested `AdminApp` objects until a matching `ModelAdmin` is located.
+- Returns `None` if no suitable `ModelAdmin` was found.

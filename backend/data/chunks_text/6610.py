@@ -1,0 +1,3 @@
+- Tests a batch request with multiple requests using `json_request()`.
+- Asserts that the response contains the expected results for each request.
+- Verifies that the echo function's history is updated correctly based on the input data.

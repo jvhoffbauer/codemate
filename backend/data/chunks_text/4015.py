@@ -1,0 +1,3 @@
+- Sends a POST request to /items with an empty JSON body using FastAPI's built-in testing client (TestClient)
+- Asserts that the server returns a HTTP status code of 422 (Unprocessable Entity), indicating invalid input data
+- Verifies that the server responds with a JSON error message containing two validation errors, one for missing 'name' field and another for missing 'price' field

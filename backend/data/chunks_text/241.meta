@@ -1,0 +1,1 @@
+{"original_code": "def create_team(*, session: Session = Depends(get_session), team: TeamCreate):\n    db_team = Team.model_validate(team)\n    session.add(db_team)\n    session.commit()\n    session.refresh(db_team)\n    return db_team"}

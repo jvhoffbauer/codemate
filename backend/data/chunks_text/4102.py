@@ -1,0 +1,4 @@
+- Tests simultaneous connections to two websockets (lines 1-2) and sends a message through one of them (line 9).
+- Receives confirmation that the first message was received by both clients (lines 10-12), including the original sender's ID in the message sent back (line 11).
+- Closes the second connection (line 15) and receives a notification about it on the first connection (line 18).
+- Receives another message confirming the disconnected client's departure (line 19).

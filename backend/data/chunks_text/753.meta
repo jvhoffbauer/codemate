@@ -1,0 +1,1 @@
+{"original_code": "def docs_redirect():\n    return RedirectResponse(f\"/docs\")"}

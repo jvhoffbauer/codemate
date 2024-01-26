@@ -1,0 +1,3 @@
+- This function is a FastAPI route with the `GET` method and endpoint `/items/`.
+- It takes a dependency of type `CommonsQueryParams`, which provides common query parameters like `q`, `skip`, and `limit`.
+- The function returns a dictionary containing either just the retrieved list of items (if no search term was provided) or also includes the search term as part of the returned data, depending on whether the `q` parameter was included in the request.

@@ -1,0 +1,1 @@
+- Tests that making a GET request to `/users/` without providing headers with 'X-Token' and 'X-Key' results in a HTTP status code of 422 (Unprocessable Entity) and an error message containing details about missing header fields. - The error message is formatted according to both current and future versions of Pydantic's validation errors.

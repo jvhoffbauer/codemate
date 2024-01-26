@@ -1,0 +1,1 @@
+{"original_code": "    def get_field_metadata(field: Any) -> Any:\n        for meta in field.metadata:\n            if isinstance(meta, PydanticMetadata):\n                return meta\n        return FakeMetadata()"}

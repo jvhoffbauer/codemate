@@ -1,0 +1,1 @@
+{"original_code": "    async def __call__(self, scope, receive, send):\n        if scope[\"type\"] != \"http\" or self.max_content_size is None:\n            await self.app(scope, receive, send)\n            return\n\n        wrapper = self.receive_wrapper(receive)\n        await self.app(scope, wrapper, send)"}

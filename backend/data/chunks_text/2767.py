@@ -1,0 +1,1 @@
+- Tests if a FastAPI error is raised when using an invalid response model field (i.e., `Union[Response, None]`) without proper validation. - Uses PyTest to raise and catch the exception for testing purposes. - Asserts that the error message contains specific strings related to validating the response model field's data type and usage context.

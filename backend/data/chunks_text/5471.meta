@@ -1,0 +1,1 @@
+{"original_code": "def test_bounds(rio, app):\n    \"\"\"test /bounds endpoint.\"\"\"\n    rio.open = mock_rasterio_open\n\n    response = app.get(\"/cog/bounds?url=https://myurl.com/cog.tif\")\n    assert response.status_code == 200\n    body = response.json()\n    assert len(body[\"bounds\"]) == 4\n    assert response.headers[\"Cache-Control\"] == \"private, max-age=3600\""}

@@ -1,0 +1,1 @@
+{"original_code": "    def get(self, db: Session, id: Any) -> ModelType | None:\n        return db.query(self.model).filter(self.model.id == id).first()"}

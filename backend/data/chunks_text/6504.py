@@ -1,0 +1,5 @@
+- Tests mixing of methods with the same name in a single OpenAPI JSON schema using FastAPI JSON RPC.
+- Creates an API object that binds two entrypoints with conflicting method names ("probe").
+- Uses Pytest fixtures to replace the default "app" fixture with the customized API object.
+- Verifies that both endpoints are present in the generated OpenAPI JSON document, but their response models are shared due to being identical.
+- Clears the FastAPI component cache by removing its module from Python's module dictionary before running tests again to ensure fresh results.

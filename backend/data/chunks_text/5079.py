@@ -1,0 +1,1 @@
+- Defines a function called `health_client` that returns an instance of Flask's `ApiClient` class with the current application (`app`) as its argument. - This function can be used to easily access the client for making health checks in other parts of the application without having to pass around the app object or create new instances of the API client every time it is needed.

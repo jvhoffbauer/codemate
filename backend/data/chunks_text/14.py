@@ -1,0 +1,1 @@
+- Defines a decorator called `Relationship` with three optional arguments: `back_populates`, `link_model`, and `sa_relationship`. - The purpose of this decorator is to create relationships between SQLAlchemy models using different ORM libraries (SQLAlchemy and Pydantic). - It returns an object that can be used as a property in one model to reference another related model.

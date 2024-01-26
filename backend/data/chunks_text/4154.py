@@ -1,0 +1,1 @@
+- This function is a unit test for the `/app` endpoint in our Flask application. - It uses the built-in Python `unittest` framework to run tests and asserts that the status code of the GET request is 200. - The text and JSON responses are also checked against expected values using assertions.

@@ -1,0 +1,1 @@
+{"original_code": "def test_response_model_none_annotation_return_invalid_model():\n    response = client.get(\"/response_model_none-annotation-return_invalid_model\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"name\": \"Foo\", \"price\": 42.0}"}

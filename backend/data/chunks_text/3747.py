@@ -1,0 +1,9 @@
+- Defines a function `client` that takes in a temporary directory factory and creates a new subdirectory within it called "data".
+- Changes the current working directory (CWD) to this newly created directory using `os.chdir`.
+- Creates a path object for the SQLite database file, checks if it already exists, and deletes it if so (using `os.unlink`).
+- Imports the `main` module from the package `docs_src.sql_databases.sql_app`, which is assumed to contain the Flask app being tested. This import also creates the SQLite database when the script starts running.
+- Reloads the imported `main` module to ensure any changes made during testing are reflected.
+- Initializes a Flask test client using the app defined by `main`.
+- Yields the test client to allow other functions to use it during their tests.
+- Deletes the SQLite database file again at the end of the test session (if it still exists).
+- Restores the original CWD before returning control back to PyTest.

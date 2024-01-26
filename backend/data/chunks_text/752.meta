@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/\", include_in_schema=False)\ndef docs_redirect():\n    return RedirectResponse(f\"/docs\")"}

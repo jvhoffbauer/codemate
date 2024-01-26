@@ -1,0 +1,4 @@
+- This function tests the GET request to the root URL (/) using Flask's built-in `client`.
+- It asserts that the status code of the response is 200 and saves it in a variable called `response_status`.
+- If the status code is not 200, an error message containing the text from the response body is displayed instead.
+- The JSON content of the response is also checked for emptiness by comparing it with an empty dictionary.

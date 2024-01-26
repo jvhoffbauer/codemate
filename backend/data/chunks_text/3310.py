@@ -1,0 +1,3 @@
+- Defines an asynchronous function `required` that takes a single argument `foo`, which is annotated with both `str` and `Query`.
+- The `Query` decorator specifies that the value of `foo` must have a minimum length of 1 (i.e., it's required).
+- Returns a dictionary containing just the key "foo" and its corresponding value from the input parameter `foo`.

@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using `client.get("/openapi.json")`.
+- The generated schema includes information about the API's title, version, and endpoints (in this case, just one endpoint).
+- Each endpoint is described with its HTTP method, summary, operation ID, responses, and any required request or response schemas. In this example, there are two possible responses: success (with no specific schema) and validation error (which references a more detailed error schema defined in the components section).

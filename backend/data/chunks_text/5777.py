@@ -1,0 +1,4 @@
+- Defines a method `get_create_action()` that returns an optional action object for creating new records in this page's schema (i.e., model).
+- Takes two arguments: `Request` and `bool` flag to indicate whether it is a single or bulk creation operation.
+- If it's a single creation, displays a primary-level dialog with a create form using `get_create_form()`.
+- If it's a bulk creation, displays a full-size dialog with a create form using `get_create_form()`.

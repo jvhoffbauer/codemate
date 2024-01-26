@@ -1,0 +1,2 @@
+- Defines a GET request with no path parameters (i.e., root URL) using FastAPI's `Router()`.
+- Returns an empty list containing a single string "OK" as response body.

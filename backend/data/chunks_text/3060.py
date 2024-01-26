@@ -1,0 +1,1 @@
+- Defines a function named `get_b_a_c()` that returns a string containing the characters 'B', 'A', and 'C' in order, separated by spaces (i.e., "Hello B A C")

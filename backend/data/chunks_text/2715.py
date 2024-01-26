@@ -1,0 +1,1 @@
+- This function returns a list of `DBUser` objects without specifying any response model annotation. - The returned list contains two instances of `DBUser`, each with name, surname, and password hash attributes. - Since there is no explicit response model annotation, FastAPI infers that the response type is a list of `DBUser`.

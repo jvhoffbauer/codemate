@@ -1,0 +1,3 @@
+- Endpoint for creating a new item using POST request with path `"/items/"`.
+- Request body should be of type `Item`, which is defined elsewhere in the application.
+- Returns a JSON response containing a message indicating that the item was successfully received. The response's schema is defined by `response_model=ResponseMessage`.

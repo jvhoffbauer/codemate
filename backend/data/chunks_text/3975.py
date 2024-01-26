@@ -1,0 +1,3 @@
+- Tests GET request to `/models/alexnet` endpoint
+- Verifies HTTP status code is 200 OK
+- Asserts that JSON response contains expected keys and values

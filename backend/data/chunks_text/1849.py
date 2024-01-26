@@ -1,0 +1,1 @@
+- Defines a function `shutdown_event()` that is executed when the Flask application shuts down (i.e., receives a SIGINT or SIGTERM signal). - Opens a file named "log.txt" in append mode and writes a message to it indicating that the application is being shut down. - Closes the file handle automatically after writing to the file.

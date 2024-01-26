@@ -1,0 +1,1 @@
+- Retrieves a list of heroes associated with the team named 'Preventers' using SQLAlchemy ORM and executing a SELECT query against the database. - Prints out each selected hero object, including its attributes from both the `Hero` and `Team` tables joined together.

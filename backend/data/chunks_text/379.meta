@@ -1,0 +1,1 @@
+{"original_code": "        def validate(cls, v):  # pragma: no cover\n            return v"}

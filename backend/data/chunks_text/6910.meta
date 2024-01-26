@@ -1,0 +1,1 @@
+{"original_code": "    def _predict(self, features: List) -> np.ndarray:\n        logger.debug(\"Predicting.\")\n        prediction_result = self.model.predict(features)\n        return prediction_result"}

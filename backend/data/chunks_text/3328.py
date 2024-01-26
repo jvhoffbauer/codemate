@@ -1,0 +1,1 @@
+- Retrieves a cookie named "hidden_cookie" using FastAPI's built-in `Cookie` decorator with default value of None and flag to exclude it from schema generation. - Returns a JSON response containing the retrieved "hidden_cookie".

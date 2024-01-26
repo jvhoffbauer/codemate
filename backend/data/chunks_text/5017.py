@@ -1,0 +1,2 @@
+- Initializes a new instance of the class with an `ASGIApp` object passed as argument
+- Assigns the received `ASGIApp` to the `self.app` attribute for future use within the class methods

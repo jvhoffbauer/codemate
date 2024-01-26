@@ -1,0 +1,2 @@
+- Defines a function named `invoice_notification` that takes an argument of type `InvoiceEvent`, called `body`.
+- The body of the function is empty, indicated by the `pass` statement and the comment `pragma: nocover`. This means that the function's implementation has not been written yet but it will be covered by tests in the future (the `nocover` flag tells pylint to ignore this).

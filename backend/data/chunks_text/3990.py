@@ -1,0 +1,3 @@
+- This function tests a broken YAML input for creating an item using the `TestClient`.
+- The YAML data contains duplicate keys ('x') in the 'tags' section.
+- If the server receives this invalid YAML request, it should return HTTP status code 422 and error message "Invalid YAML".

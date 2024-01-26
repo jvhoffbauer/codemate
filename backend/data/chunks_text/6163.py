@@ -1,0 +1,1 @@
+- This function adds a datasource to the request state using the value of the'source' parameter in the URL query string (defaulting to 'jhu'). - If the requested datasource is not available, it returns a 404 error message. - It logs the name of the selected datasource for debugging purposes before passing control to the next middleware or endpoint handler.

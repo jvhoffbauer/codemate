@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_foo_needy_very(client: TestClient):\n    response = client.get(\"/items/foo?needy=very\")\n    assert response.status_code == 200\n    assert response.json() == {\n        \"item_id\": \"foo\",\n        \"needy\": \"very\",\n        \"skip\": 0,\n        \"limit\": None,\n    }"}

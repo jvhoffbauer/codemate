@@ -1,0 +1,5 @@
+- This test uses `pytest-mock` to mock out the builtin print function and capture its output using a custom testing print function provided by `pytest`.
+- The `create_engine` function is called to connect to an SQLite database specified in the `sqlite_url` variable of the module being tested (`docs_src.tutorial.where.tutorial003_py310`).
+- A list named `calls` is initialized to store the captured printing statements during execution of the module's main function.
+- The `patch` decorator is used to replace the builtin `print` function with our custom testing print function, which captures each printed statement into the `calls` list instead of actually displaying it on the console.
+- Finally, we execute the module's main function within the context of these mocks and assertions are made about the contents of the `calls` list after execution completes.

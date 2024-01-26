@@ -1,0 +1,3 @@
+- Retrieves system status using an authenticated request with a bearer token
+- Sends GET request to `/status/` endpoint and checks for successful response (HTTP 200 OK)
+- Verifies that JSON response contains expected key-value pair ('status': 'ok')

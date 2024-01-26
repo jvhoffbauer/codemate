@@ -1,0 +1,3 @@
+- This function takes a `Request`, a `ModelField`, and an enum representing the CRUD operation as arguments. It returns either a `FormItem`, a `SchemaNode`, or `None`.
+- The boolean flag `is_filter` indicates whether this field is being used for filtering (in list view or search) or not. If it's being used for creating/editing, then `action` is `CrudEnum.create` and we want to set default values.
+- Firstly, we call another helper method called `get_form_item_on_foreign_key()` which handles foreign keys specifically. Otherwise, we pass the `ModelField` and relevant flags to the parser to generate a form item using its built-in schema parsing functionality.

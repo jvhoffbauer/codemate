@@ -1,0 +1,1 @@
+- Defines a fixture named `app` at module level using the `pytest.fixture()` decorator. - Uses the `with pytest.warns()` context manager to suppress DeprecationWarnings raised by importing the `app` object from the `docs_src.events.tutorial001` module. - Yields the imported `app` object, making it available for use in tests that call this fixture.

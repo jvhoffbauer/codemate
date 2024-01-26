@@ -1,0 +1,1 @@
+- Tests a POST request to create an item with just a name, expecting a validation error due to missing price field. - Uses Pytest and FastAPI's built-in testing framework for automated tests. - Asserts that the server returns HTTP status code 422 (Unprocessable Entity) and includes a JSON response containing a list of errors detailing the missing price field.

@@ -1,0 +1,1 @@
+- Defines a function `get_query_type_int_default` that takes an optional argument `query`, defaulting to 10 if not provided. - The function returns a string with the value of `query` concatenated with some fixed text ("foo bar").

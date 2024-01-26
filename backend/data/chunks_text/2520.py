@@ -1,0 +1,3 @@
+- Defines a web socket route for incoming connections on `/router`.
+- Accepts an incoming connection and sends a greeting message to the client.
+- Closes the connection after sending the greeting message.

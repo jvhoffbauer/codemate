@@ -1,0 +1,3 @@
+- This test uses `pytest-mock` to mock the builtin print function and capture its output during the execution of a specific module (`docs_src.tutorial.indexes.tutorial001_py310`)
+- The captured output is compared against an expected value using the `assert` statement
+- Additionally, the SQLAlchemy `Inspector` class is used to check if the expected indices were created in the database after running the module

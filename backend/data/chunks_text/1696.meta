@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/items/\", status_code=201)\nasync def create_item(name: str):\n    return {\"name\": name}"}

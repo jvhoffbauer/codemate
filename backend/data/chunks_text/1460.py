@@ -1,0 +1,2 @@
+- Endpoint for creating a new user with POST request to `"/user/"`.
+- Request body is expected in format of `UserIn`, which will be saved using `fake_save_user()` function and returned as `UserOut` response model.

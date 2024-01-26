@@ -1,0 +1,3 @@
+- Defines an asynchronous function `router_ws_depends_err` that takes a websocket object and optional dependency `data`.
+- The dependency is defined using the `Depends()` decorator with the argument `ws_dependency_err`, which raises an error when called to simulate a failed dependency.
+- The function body (`pass`) is skipped during testing due to the `pragma: no cover` directive.

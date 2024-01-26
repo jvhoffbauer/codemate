@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\nasync def async_client(site: AdminSite) -> AsyncGenerator[AsyncClient, None]:\n    async with AsyncClient(app=site.fastapi, base_url=\"http://testserver\") as c:\n        yield c"}

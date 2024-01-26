@@ -1,0 +1,1 @@
+{"original_code": "    def _create_schema_create(self) -> Type[SchemaCreateT]:\n        return create_model_by_model(\n            self.schema_model,\n            f\"{self.schema_name_prefix}Create\",\n            exclude={self.pk_name},\n        )"}

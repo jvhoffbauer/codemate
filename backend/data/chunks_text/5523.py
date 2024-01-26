@@ -1,0 +1,5 @@
+- Defines a method `__call__()` for the class (implicitly making it callable).
+- Accepts several arguments that customize pagination behavior, such as current page number, items per page, total item count display preference, sorting column name, and sorting direction.
+- Sets default values for missing or invalid arguments based on class attributes.
+- Limits maximum value of `itemsPerPage` to a predefined limit using Python's built-in function `min()`.
+- Returns the object itself after setting all parameters, allowing chained calls with fluent interface style.

@@ -1,0 +1,1 @@
+- Defines an asynchronous function named `create_multiple_images` that takes a parameter `images`, which is a list of Image objects. - The function returns the input list `images`. This indicates that it's not modifying or processing each image individually, but rather returning them all in their original form.

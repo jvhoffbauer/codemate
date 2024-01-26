@@ -1,0 +1,1 @@
+- Tests if `annotation_outer_type()` correctly identifies the outer type of a nested list with scalar element type (in this case, int) using Python's built-in typing module. - Verifies that the function returns 'list', which is the expected result for a list containing integers as elements.

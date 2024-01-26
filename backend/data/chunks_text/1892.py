@@ -1,0 +1,7 @@
+- Defines a method `get_route_handler` that returns a callable function (a route handler).
+- Saves the original route handler from the parent class using `super().get_route_handler()`.
+- Creates an asynchronous function called `custom_route_handler` which takes a request object and returns a response object.
+- Measures the execution time of the original route handler by saving the current time in `before`, executing it, and calculating the difference with `duration`.
+- Adds a new header to the response object containing the calculated duration.
+- Prints some debug information about the route's performance.
+- Returns the modified response object.

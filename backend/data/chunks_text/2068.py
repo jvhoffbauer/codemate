@@ -1,0 +1,3 @@
+- This function takes a `Playwright` object as an argument and performs some actions using it to generate a screenshot.
+- It launches a Chromium browser with headless mode disabled (for debugging purposes), creates a new context, opens a web page at http://localhost:8000/docs, clicks on a button labeled "Item," sets the viewport size, and saves a screenshot in the specified location.
+- The generated screenshot is used for documentation purposes, specifically illustrating how separate OpenAPI schemas are displayed in Swagger UI.

@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_get_password_hash():\n    from docs_src.security.tutorial005_an_py310 import get_password_hash\n\n    assert get_password_hash(\"secretalice\")"}

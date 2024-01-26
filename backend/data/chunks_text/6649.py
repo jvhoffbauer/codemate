@@ -1,0 +1,5 @@
+- Defines an asynchronous context manager using `@contextlib.asynccontextmanager`.
+- Initializes a global dictionary called `_calls` to store information about requests and responses.
+- Adds an entry to this dictionary for the current request ID with details including method name ('mw_first'), event type ('enter'), raw request data, raw response data, and any exceptions that occurred during execution.
+- Yields control back to the caller within a try/finally block.
+- Inside the finally block, adds another entry to the same dictionary for the current request ID with updated details including method name ('mw_first'), event type ('exit'), raw request data, raw response data, and any exceptions that occurred during cleanup or error handling.

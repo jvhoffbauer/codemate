@@ -1,0 +1,3 @@
+- Defines a function `get_param_sub_dependant()` that takes several arguments including `param_name`, `depends`, and `path`.
+- Asserts that `depends` has a dependency (i.e., is not empty).
+- Calls another helper function `get_sub_dependant()` with various parameters passed in from this function's arguments.

@@ -1,0 +1,5 @@
+- Defines an asynchronous context manager using `@contextlib.asynccontextmanager`.
+- Creates a dictionary called `_calls` to store information about requests and responses.
+- Inside the context manager, saves request and response data along with any exceptions that occur during execution in `_calls`.
+- Raises a `RuntimeError` at the end of the context manager to simulate an exception being thrown. This error is caught by the caller of this function.
+- The unique marker `unique_marker` is used to ensure that the raised exception is not swallowed by Python's default exception handling mechanism.

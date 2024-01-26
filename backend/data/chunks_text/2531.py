@@ -1,0 +1,4 @@
+- Defines a route for WebSockets using FastAPI's `@native_prefix_route` decorator and specifies the root path ("/").
+- Accepts an incoming WebSocket connection (represented by the `WebSocket` object).
+- Sends a text message to the client announcing that this is a WebSocket endpoint with a customized URL prefix.
+- Closes the WebSocket connection after sending the message.

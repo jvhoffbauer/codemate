@@ -1,0 +1,3 @@
+- Defines a function named `post_subrouter` that takes two arguments of type `Item`, called `item1` and `item2`.
+- Returns a tuple containing both items as its result.
+- The `pragma: nocover` statement is used to indicate that this function should not be covered by unit tests (i.e., it's an internal helper method).

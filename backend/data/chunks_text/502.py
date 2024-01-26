@@ -1,0 +1,4 @@
+- Imports `tutorial001` module from `docs_src.tutorial.select`.
+- Sets SQLAlchemy URL and creates engine for testing purposes.
+- Patches built-in print function to capture output during execution of `main()` method in `tutorial001` module.
+- Verifies that expected print statements were called using `check_calls()` function from unittest.mock library.

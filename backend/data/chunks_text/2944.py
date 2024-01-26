@@ -1,0 +1,1 @@
+- Tests the `/exclude_defaults` endpoint by making a GET request and checking that the returned JSON is an empty dictionary (i.e., no default values are included)

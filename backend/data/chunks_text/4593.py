@@ -1,0 +1,1 @@
+- Retrieves user information for the authenticated user with username 'johndoe' using a GET request to '/users/me'. - Verifies that the status code of the response is 200 and stores it in a variable called'response'. - Extracts the JSON data from the response body and compares it against an expected dictionary containing the relevant user attributes.

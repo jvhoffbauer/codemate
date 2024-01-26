@@ -1,0 +1,1 @@
+{"original_code": "def test_filter_adds_correlation_id(cid: str, log_record: LogRecord):\n    filter_ = CorrelationIdFilter()\n\n    assert not hasattr(log_record, \"correlation_id\")\n    filter_.filter(log_record)\n    assert log_record.correlation_id == cid"}

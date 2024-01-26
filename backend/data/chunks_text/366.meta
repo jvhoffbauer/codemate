@@ -1,0 +1,1 @@
+{"original_code": "def test_deprecated_from_orm_inheritance():\n    new_item = SubItem(name=\"Hello\", password=\"secret\")\n    with pytest.warns(DeprecationWarning):\n        item = Item.from_orm(new_item)\n    assert item.name == \"Hello\"\n    assert not hasattr(item, \"password\")"}

@@ -1,0 +1,3 @@
+- Defines a Pydantic model `Item` with fields `name` and `price`.
+- Uses FastAPI's decorator syntax to define an endpoint with path `/response_model_model1-annotation_Model2-return_invalid_model`, which returns an item of type `Item`.
+- Specifies that the returned value should be automatically converted into a JSON object using the `User` schema, even though it is actually returning an instance of `Item`. This is achieved by passing `User` as the `response_model` parameter in the decorator. However, since `Item` doesn't match the structure defined by `User`, this will raise a validation error at runtime.

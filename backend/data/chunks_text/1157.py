@@ -1,0 +1,3 @@
+- Defines a function `magic_data_reader` that takes in a byte string as an argument (`raw_body`) and returns a dictionary with two keys:'size' and 'content'.
+- The value for'size' is simply the length of the input byte string.
+- The value for 'content' is also a dictionary containing three key-value pairs ('name', 'price', and 'description'). These values are hardcoded into the function body.

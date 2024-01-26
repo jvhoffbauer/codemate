@@ -1,0 +1,1 @@
+{"original_code": "def check_no_errors(caplog):\n    yield\n    for when in (\"setup\", \"call\"):\n        messages = [\n            x.message for x in caplog.get_records(when) if x.levelno >= logging.ERROR\n        ]\n        if messages:\n            pytest.fail(f\"error messages encountered during testing: {messages!r}\")"}

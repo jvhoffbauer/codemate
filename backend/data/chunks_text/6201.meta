@@ -1,0 +1,1 @@
+{"original_code": "@V1.get(\"/confirmed\")\nasync def get_confirmed():\n    \"\"\"Confirmed cases.\"\"\"\n    confirmed_data = await get_category(\"confirmed\")\n\n    return confirmed_data"}

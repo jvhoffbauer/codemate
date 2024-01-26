@@ -1,0 +1,1 @@
+{"original_code": "def get_items(user_id: Optional[str] = None):\n    if user_id is None:\n        return [{\"item_id\": \"i1\", \"user_id\": \"u1\"}, {\"item_id\": \"i2\", \"user_id\": \"u2\"}]\n    else:\n        return [{\"item_id\": \"i2\", \"user_id\": user_id}]"}

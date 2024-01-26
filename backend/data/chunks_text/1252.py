@@ -1,0 +1,3 @@
+- Defines an asynchronous function `override_dependency` with a default argument `q`.
+- The returned value is a dictionary containing keys 'q','skip' and 'limit'.
+- This function can be used to override dependency values in other functions that use these arguments by passing it as an argument instead of separate parameters.

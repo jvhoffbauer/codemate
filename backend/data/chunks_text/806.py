@@ -1,0 +1,3 @@
+- This function is a dependency function that takes an optional `token` parameter and returns either a `JWTData` object or `None`.
+- If no token is provided, it immediately returns `None`. Otherwise, it attempts to decode the token using the specified secret key and algorithm.
+- The decoded payload is returned as a `JWTData` object with its contents extracted into keyword arguments (using **).

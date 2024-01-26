@@ -1,0 +1,1 @@
+{"original_code": "def test_path_param_maxlength_foo():\n    response = client.get(\"/path/param-maxlength/foo\")\n    assert response.status_code == 200\n    assert response.json() == \"foo\""}

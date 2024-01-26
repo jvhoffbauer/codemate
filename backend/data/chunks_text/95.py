@@ -1,0 +1,3 @@
+- Defines a function `extract` that takes two arguments `field` and `expr`.
+- Returns an instance of SQLAlchemy's `Extract` class with the given field name (`field`) and expression (`expr`).
+- The `Union` type hint allows either a column expression argument or any other value to be passed as the second argument for greater flexibility in usage.

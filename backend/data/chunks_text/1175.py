@@ -1,0 +1,4 @@
+- This function is a GET request for retrieving all users from the database using FastAPI's decorator `@app.get`.
+- The returned data type is defined as an array of User objects (defined in schemas.py), which is specified by the `response_model` parameter.
+- Two query parameters are accepted: `skip` and `limit`, both with default values provided. These parameters control how many records to skip and how many to retrieve respectively, allowing pagination functionality.
+- The `dependencies` parameter accepts a list of dependency functions that will be called before executing this endpoint. In this case, we pass our custom `get_db()` function to provide access to the SQLAlchemy session object.

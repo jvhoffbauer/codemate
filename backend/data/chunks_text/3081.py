@@ -1,0 +1,1 @@
+- This endpoint is used to create a new person using the `POST /people/` request method. - The incoming data is passed as an argument of type `PersonCreate`. - The function validates and converts this input into a database model object (`db_person`) before returning it in the response body.

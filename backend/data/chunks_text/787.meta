@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self) -> None:\n        super().__init__(headers={\"WWW-Authenticate\": \"Bearer\"})"}

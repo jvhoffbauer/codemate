@@ -1,0 +1,3 @@
+- Defines a FastAPI endpoint `probe2` that takes an optional parameter `jsonrpc_method`.
+- The value of this parameter is obtained using the `Depends` decorator and passed to the function as an argument.
+- The function returns the value of the `jsonrpc_method` parameter, which can be used for testing or debugging purposes.

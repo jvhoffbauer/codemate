@@ -1,0 +1,1 @@
+{"original_code": "def test_invalid_simple_set():\n    with pytest.raises(AssertionError):\n        app = FastAPI()\n\n        @app.get(\"/items/{id}\")\n        def read_items(id: set):\n            pass  # pragma: no cover"}

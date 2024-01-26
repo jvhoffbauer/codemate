@@ -1,0 +1,1 @@
+- Defines a dataclass `BandsExprParams` that inherits from both `ExpressionParams` and `BandsParams`. - The class has a constructor with keyword arguments for band names and expressions. - In the `__post_init__()` method, it checks whether at least one of the `bands` or `expression` attributes is set to avoid missing values errors during initialization.

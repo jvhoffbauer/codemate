@@ -1,0 +1,1 @@
+{"original_code": "def fake_answer_to_everything_ml_model(x: float):\n    return x * 42"}

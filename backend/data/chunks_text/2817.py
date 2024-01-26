@@ -1,0 +1,3 @@
+- Tests if query parameter 'query' with value '50' returns expected result (status code and JSON response)
+- Uses Flask's built-in `client` object to simulate a request from an external user
+- Asserts that the status code is 200 and the returned JSON matches the expected string ("foo bar 50")

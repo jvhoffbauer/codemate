@@ -1,0 +1,1 @@
+- Adds two new fields (state and county) to the serialization of the Location object. - Updates the serialized dictionary by merging it with a new dictionary containing the state and county values. - Returns the updated serialized dictionary.

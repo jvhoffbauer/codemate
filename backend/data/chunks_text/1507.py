@@ -1,0 +1,4 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's query parameter decorator to accept an optional query string (aliased as `item-query`) and assign it to the variable `q`.
+- If `q` is not `None`, updates the dictionary `results` with a new key-value pair containing the value of `q`.
+- Returns the updated `results` dictionary.

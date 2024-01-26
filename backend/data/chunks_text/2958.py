@@ -1,0 +1,1 @@
+- Defines an asynchronous method `asynchronous()` with a single required parameter `value` of type string. - Returns a string value that is equal to the input `value`. - Uses Python's built-in `async` and `await` keywords for asynchronous programming.

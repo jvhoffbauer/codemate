@@ -1,0 +1,1 @@
+{"original_code": "    def __post_init__(self):\n        \"\"\"Post Init: register route and configure specific options.\"\"\"\n        self.register_routes()"}

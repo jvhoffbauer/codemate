@@ -1,0 +1,3 @@
+- Defines a new route `/` with an HTTP POST method using FastAPI's decorator syntax
+- Accepts a list of integers as input through the request body, which is automatically parsed by Pydantic (via the `Body()` function) and assigned to the `numbers` parameter
+- Calculates the sum of all numbers in the list using Python's built-in `sum()` function and returns it as the response

@@ -1,0 +1,3 @@
+- This method is asynchronous and takes a `loc_id` argument (Python linter warning about arguments being different can be ignored).
+- It retrieves all locations using another asynchronous method called `get_all()`.
+- The location with the given ID is returned from the list of locations obtained earlier.

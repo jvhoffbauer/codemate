@@ -1,0 +1,2 @@
+- Sends a GET request to `/product` with a JSON body containing product information
+- Asserts that the server's response is equal to the original request body, indicating successful handling of the request and return of the requested data

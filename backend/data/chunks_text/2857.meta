@@ -1,0 +1,1 @@
+{"original_code": "def test_query_repr_ellipsis():\n    assert repr(Query(...)) == IsOneOf(\n        \"Query(PydanticUndefined)\",\n        # TODO: remove when deprecating Pydantic v1\n        \"Query(Ellipsis)\",\n    )"}

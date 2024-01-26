@@ -1,0 +1,5 @@
+- Defines a function `test_single` that tests a single RPC call with specific parameters and expected response
+- Makes an RPC call using the `method_request()` function provided by the library
+- Asserts that the returned response matches the expected result
+- Verifies that the middleware functions are called in order and pass appropriate arguments to them
+- Checks that the calls dictionary of the endpoint object contains the correct entries for each middleware invocation

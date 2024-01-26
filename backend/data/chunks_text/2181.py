@@ -1,0 +1,1 @@
+- Defines an asynchronous function `super_dep` that takes a positional argument `count` with a default value provided by the dependency resolver `Depends`. - The dependency used is `dep_counter`, which is assumed to be defined elsewhere in the program. - Returns the value of the `count` parameter, potentially modified or transformed by the dependency resolution process.

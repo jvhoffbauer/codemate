@@ -1,0 +1,2 @@
+- Initializes an empty dictionary `_locales` to store locales and their associated GNU translations sets.
+- Initializes a variable `_language` with the result of calling the method `set_language`. This method is not defined in this snippet but it's assumed that it returns the current language being used by the program or application.

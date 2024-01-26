@@ -1,0 +1,1 @@
+{"original_code": "def test_middleware_auth(ep_middleware_auth, raw_request, body):\n    resp = raw_request(body, auth=(\"user\", \"password\"))\n    assert resp.status_code == 200\n    assert resp.json() == {\"id\": 1, \"jsonrpc\": \"2.0\", \"result\": \"user\"}"}

@@ -1,0 +1,3 @@
+- Defines a method named `probe` using FastAPI's decorator `@app.method()`.
+- Accepts an optional parameter `jsonrpc_request_id`, which is retrieved from the request context using `Depends(get_jsonrpc_request_id)`.
+- Returns the value of `jsonrpc_request_id`.

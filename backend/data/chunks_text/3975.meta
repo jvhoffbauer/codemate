@@ -1,0 +1,1 @@
+{"original_code": "def test_get_enums_alexnet():\n    response = client.get(\"/models/alexnet\")\n    assert response.status_code == 200\n    assert response.json() == {\"model_name\": \"alexnet\", \"message\": \"Deep Learning FTW!\"}"}

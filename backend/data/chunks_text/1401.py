@@ -1,0 +1,2 @@
+- Defines a GET request for `"/items/"`, which returns a dictionary with a key called "ads_id".
+- The parameter `ads_id` is annotated as either a string or None using FastAPI's `Annotated` decorator and passed to the function via a cookie (stored in the browser) using PEP 625 type hinting syntax.

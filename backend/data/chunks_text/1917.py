@@ -1,0 +1,4 @@
+- Generates HTML for the Swagger UI page with customized settings
+- Customizes the title of the Swagger UI to include the app's name and version
+- Defines a URL for OAuth2 redirect in case authentication is required
+- Specifies URLs for JavaScript and CSS files that are included in the Swagger UI bundle

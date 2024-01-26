@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an optional header parameter named `x_token`, which can be either a list of strings or `None` by default, and is retrieved using FastAPI's built-in `Header()` function
+- Returns a dictionary containing the values of any `X-Token` headers received in the request

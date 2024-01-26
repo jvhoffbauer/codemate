@@ -1,0 +1,4 @@
+- Defines a method called `page()` that takes four arguments: `path`, `out`, `summary`, and an optional list of `tags`.
+- If the string `"-Page"` is not already present at the end of the `summary` argument, it adds it to the end.
+- Creates a new class named `PageXxx` (where `xxx` comes from `path`) using the `create_model()` function provided by FastAPI's ORM library Starlette. The class has three attributes: `items`, `page`, and `total`, all with default values specified as `Optional[T]` where `T` can be any Python data type. This allows for flexible handling of missing or null values.
+- Returns the result of calling `FastAPI.get()` on the given `path`, passing in the newly created `page_schema` as the `response_model` parameter, along with any other desired options like `tags` and `summary`.

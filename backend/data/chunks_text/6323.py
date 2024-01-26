@@ -1,0 +1,3 @@
+- Deletes the currently logged in user from the database using SQLAlchemy's `DELETE` statement.
+- Commits the changes to the database and returns a response with an empty body (status code 204 - No Content).
+- Uses FastAPI's dependency injection system to retrieve the current user and database connection.

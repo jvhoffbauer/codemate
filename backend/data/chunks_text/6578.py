@@ -1,0 +1,3 @@
+- Defines a function `get_auth_token()` that takes an optional argument `auth_token`.
+- Uses Pydantic's `Header` class to parse and validate the header named "auth-token".
+- Returns the parsed value of the header as a string.

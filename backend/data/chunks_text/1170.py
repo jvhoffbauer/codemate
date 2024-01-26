@@ -1,0 +1,1 @@
+- This function simplifies operation IDs by using route names as operation IDs. - It should be called after adding all routes to the application instance. - The `isinstance()` check ensures that we are modifying only FastAPI routes and not other types of routes (e.g., Starlette).

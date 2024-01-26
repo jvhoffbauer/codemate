@@ -1,0 +1,1 @@
+{"original_code": "    @app.on_event(\"shutdown\")\n    def app_shutdown() -> None:\n        state.app_shutdown = True"}

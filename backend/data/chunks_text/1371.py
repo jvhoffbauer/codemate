@@ -1,0 +1,1 @@
+- Defines a dataclass named `Item` with two attributes: `name` (required) and `description` (optional). - The optional attribute is defined using Python's built-in type annotation `Union`, which allows for either a string or `None`. This ensures that if no value is provided for `description`, it will be set to `None` by default when creating instances of this class.

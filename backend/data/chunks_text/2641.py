@@ -1,0 +1,2 @@
+- Defines a new endpoint `/body-embed` for POST requests using FastAPI's decorator syntax
+- Accepts an optional parameter `b` with default value of `None`, which is parsed from the request body using Pydantic's `Body()` function and decorated with the `Union[]` type hint to accept either a string or `None`. The `embed=True` argument specifies that the content should be embedded in the response body instead of being sent as separate headers. - Returns the parsed request body (if provided) as the response body.

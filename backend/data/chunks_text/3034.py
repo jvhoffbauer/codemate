@@ -1,0 +1,1 @@
+- Defines a method `render()` that takes in an argument `content` of any data type (`Any`) and returns its JSON representation using the `orjson` library's `dumps()` function as bytes.

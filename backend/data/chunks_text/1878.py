@@ -1,0 +1,3 @@
+- Defines a function called `flask_main()`.
+- Retrieves a query parameter named 'name' using the `request.args.get()` method and sets its default value to 'World'.
+- Returns an HTML string that includes the retrieved or default value of 'name', escaped for security purposes using the `escape()` function provided by Flask.

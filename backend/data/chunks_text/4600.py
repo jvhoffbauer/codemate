@@ -1,0 +1,4 @@
+- Tests login functionality by making a POST request to "/token" with username and password as parameters
+- Asserts that the status code is 200 (OK) and displays an error message if not
+- Extracts the JSON response and checks for the presence of "access_token" key
+- Checks that the token type is "bearer"

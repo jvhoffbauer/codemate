@@ -1,0 +1,1 @@
+{"original_code": "def _multiply_by_two(data, mask):\n    mask.fill(255)\n    data = data * 2\n    return data, mask"}

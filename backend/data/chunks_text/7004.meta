@@ -1,0 +1,1 @@
+{"original_code": "@router.post(\n    \"/test-celery\",\n    response_model=schemas.Msg,\n    status_code=201,\n    dependencies=[Depends(deps.get_current_active_superuser)],\n)\ndef test_celery(\n    msg: schemas.Msg,\n) -> Any:\n    \"\"\"Test Celery worker.\"\"\"\n    celery_app.send_task(\"app.worker.test_celery\", args=[msg.msg])\n    return {\"msg\": \"Word received\"}"}

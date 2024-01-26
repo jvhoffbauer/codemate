@@ -1,0 +1,1 @@
+{"original_code": "    def __init__(self, app: \"AdminApp\"):\n        super().__init__(app)\n        self.file_directory = self.file_directory or self.file_path\n        os.makedirs(self.file_directory, exist_ok=True)\n        self.static_path = self.mount_staticfile()"}

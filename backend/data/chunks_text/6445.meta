@@ -1,0 +1,1 @@
+{"original_code": "    @contextmanager\n    def _fix_sentry_scope(self):\n        hub = sentry_sdk.Hub.current\n        with sentry_sdk.Hub(hub) as hub:\n            with hub.configure_scope() as scope:\n                scope.clear_breadcrumbs()\n                scope.add_event_processor(self._make_sentry_event_processor())\n                yield"}

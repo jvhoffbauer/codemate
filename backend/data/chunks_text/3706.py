@@ -1,0 +1,3 @@
+- Tests creating a new user using FastAPI and Pydantic for request validation
+- Uses `@needs_py310` decorator to ensure Python 3.10 is used
+- Also uses `@needs_pydanticv1` decorator to specify that this test requires Pydantic version 1 (as opposed to version 2)

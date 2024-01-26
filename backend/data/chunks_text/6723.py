@@ -1,0 +1,5 @@
+- Defines a fixture `monkeypatch_test_transport` that takes a `monkeypatch` object as input and returns a function `inner`.
+- Inside `inner`, sets up a mock transport (`_TestTransport`) on the given `client` instance using `monkeypatch.setattr`.
+- The mock transport has two callback functions `check_event` and `check_envelope` passed to its constructor. These functions will be called by the transport during event processing and envelope sending respectively. They use `capture_internal_exceptions` context manager to catch any internal exceptions raised during validation of event/envelope data structures.
+- `check_event` checks whether all keys in the event dictionary are strings, recursively checking nested dictionaries as well.
+- `check_envelope` checks whether error events are not included in the envelope when they should not be (i.e., no attachments). It also checks whether items' get_event method is not called when it shouldn't be (i.e., no event IDs set).

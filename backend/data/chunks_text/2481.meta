@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/b\", responses={500: {\"description\": \"Error\", \"model\": Error}})\nasync def b():\n    pass  # pragma: no cover"}

@@ -1,0 +1,3 @@
+- Tests retrieving a list of users using the `GET /api/v1/users/` endpoint with an authenticated superuser token header.
+- Creates two new users and saves them to the database before making the request.
+- Asserts that there are more than one user returned from the API response and checks that each user object contains an 'email' key.

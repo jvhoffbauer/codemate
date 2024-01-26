@@ -1,0 +1,1 @@
+- Tests that sending a GET request to `/items/` without any headers raises a 422 Unprocessable Entity error with a detailed message about missing header fields 'X-Token' and 'X-Key'. - The error message is formatted according to both current (Pydantic v1.8) and future (Pydantic v2.0) conventions for validation errors.

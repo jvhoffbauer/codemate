@@ -1,0 +1,1 @@
+- Creates a Flask application called `app` using the `titiler.application.main` module. - Returns an instance of `TestClient`, which is used to test Flask applications in pytest. - The `set_env` parameter is not used in this function and can be ignored for testing purposes.

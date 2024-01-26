@@ -1,0 +1,9 @@
+- Retrieves English configuration from `get_en_config()`.
+- Initializes a list of language dictionaries with just English (`/`) as the URL path.
+- Gets an existing list of alternative links and names from the current configuration's 'extra' dictionary ('alternate').
+- Creates a dictionary mapping each link to its corresponding name using the 'alternate' list.
+- Loops through all available language directories except for English and adds them to the list of language dictionaries.
+- For each newly added language dictionary, retrieves its directory name and creates a URL path based on it.
+- Checks whether the URL path already exists in the dictionary created earlier; if so, uses the previously assigned name instead. Otherwise, adds the new language dictionary to the list.
+- Updates the 'alternate' list in the configuration dictionary with the updated list of alternatives.
+- Writes the modified configuration back to disk at the location specified by `en_config_path`.

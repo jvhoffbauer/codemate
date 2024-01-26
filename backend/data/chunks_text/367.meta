@@ -1,0 +1,1 @@
+{"original_code": "def test_deprecated_parse_obj():\n    with pytest.warns(DeprecationWarning):\n        item = Item.parse_obj({\"name\": \"Hello\"})\n    assert item.name == \"Hello\""}

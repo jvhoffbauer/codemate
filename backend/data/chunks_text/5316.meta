@@ -1,0 +1,1 @@
+{"original_code": "    @app.get(\"/all/{TileMatrixSetId}\")\n    def all(TileMatrixSetId: Literal[tuple(tms.list())] = Query(...)):\n        \"\"\"return tms id.\"\"\"\n        return TileMatrixSetId"}

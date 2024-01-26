@@ -1,0 +1,3 @@
+- Defines a function `get_or_create_task()` that takes two arguments - `task_id` and `response`.
+- Checks whether the given `task_id` is already present in a dictionary called `tasks`. If it isn't, adds an entry to this dictionary with the value "This didn't exist before". Also sets the HTTP status code of the `response` object to `201 CREATED`.
+- Returns the value associated with the `task_id` from the `tasks` dictionary.

@@ -1,0 +1,4 @@
+- Defines a fixture `ep_middleware_auth` that takes an endpoint (EP) as input and returns it with authentication middleware added.
+- Uses `contextvars` to store user credentials in a thread-local variable for easy access by other functions or methods within the EP's scope.
+- Adds a new middleware function called `ep_middleware` using `ep.middlewares`. This middleware retrieves user credentials from the request, authenticates them if necessary, stores them in the `contextvars` variable, and yields control back to the next middleware/handler. It also resets the `contextvars` variable at the end of the request.
+- Registers a new method `probe` on the EP that simply returns the username stored in the `contextvars` variable.

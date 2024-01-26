@@ -1,0 +1,1 @@
+{"original_code": "    @property\n    def choices(cls):\n        empty = [(None, cls.__empty__)] if hasattr(cls, \"__empty__\") else []\n        return empty + [(member.value, member.label) for member in cls]"}

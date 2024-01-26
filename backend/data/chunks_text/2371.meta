@@ -1,0 +1,1 @@
+{"original_code": "@router2_default.get(\"/default3\")\nasync def path3_default_router2_default(level3: str):\n    return level3"}

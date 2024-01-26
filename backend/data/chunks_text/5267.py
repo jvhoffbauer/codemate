@@ -1,0 +1,5 @@
+- This function takes an `ImageData` object as input and returns a new one with encoded DEM data using Mapbox's Terrain RGB encoding.
+- The implementation is based on the open-source library rio-rgbify by Mapbox (licensed under MIT).
+- The function first checks whether the data range falls within the precision limits required for 3-digit base 256 encoding. If not, it raises a `ValueError`.
+- It then converts the data to float64 type, subtracts the base value, divides by the interval, rounds to the nearest integer power of two, and multiplies back by that same power of two.
+- Finally, it creates a new `ImageData` object with the resulting RGB values and returns it.

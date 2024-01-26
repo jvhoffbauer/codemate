@@ -1,0 +1,1 @@
+{"original_code": "@app.exception_handler(StarletteHTTPException)\nasync def custom_http_exception_handler(request, exc):\n    print(f\"OMG! An HTTP error!: {repr(exc)}\")\n    return await http_exception_handler(request, exc)"}

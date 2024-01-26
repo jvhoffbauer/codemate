@@ -1,0 +1,2 @@
+- Takes an `item_id` and a new `Item` object as arguments
+- Returns a dictionary with the updated `item_id` and the entirety of the new `Item` object

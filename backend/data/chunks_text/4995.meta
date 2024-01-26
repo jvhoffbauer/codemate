@@ -1,0 +1,1 @@
+{"original_code": "    def get(cls, pk) -> Self:\n        return cls.objects.get(pk=pk)"}

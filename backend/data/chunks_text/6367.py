@@ -1,0 +1,3 @@
+- Retrieves logs from a specified Docker container using the `DockerClient` class and returns them as a string in UTF-8 format.
+- The method takes a single argument, which is an instance of the `DockerClient` class representing the connection to the Docker daemon.
+- The logs are retrieved by calling the `logs()` method on this client object, which returns a generator yielding lines of text. These lines are then decoded into a string using the `decode()` method with 'UTF-8' encoding.

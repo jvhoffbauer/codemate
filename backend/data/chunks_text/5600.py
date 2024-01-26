@@ -1,0 +1,4 @@
+- This function is a pre-save hook that runs before creating an object using FastAPI's SQLAlchemy integration (as indicated by `on_create_pre`)
+- It takes three arguments: the incoming request, the schema representing the new object being created, and any additional keyword arguments passed to the hook
+- The function returns a dictionary containing modified values for some of the fields in the original object (excluding the primary key field, as specified by `exclude=set(self.pk)`)
+- If the primary key value is present but empty or null, it will be removed from the returned dictionary

@@ -1,0 +1,2 @@
+- Tests a Flask route that returns a dictionary with extra data using None annotation for return type hinting in Python 3.7+
+- Verifies HTTP status code and JSON response body match expected values

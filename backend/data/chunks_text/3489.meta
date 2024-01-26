@@ -1,0 +1,1 @@
+{"original_code": "def test_index():\n    client = TestClient(app)\n    with client.websocket_connect(\"/\") as websocket:\n        data = json.loads(websocket.receive_text())\n        assert data == [\"app\", \"index\"]"}

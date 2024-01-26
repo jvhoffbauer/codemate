@@ -1,0 +1,3 @@
+- Updates a specific item with ID `id`.
+- Requires authentication and authorization as either a superuser or owner of the item being updated.
+- Accepts input data in the format defined by `ItemUpdate`, which is then applied to the existing item object using its `from_orm()` method. The changes are saved to the database and the updated object is returned.

@@ -1,0 +1,1 @@
+{"original_code": "def test_app():\n    from docs_src.app_testing.app_b_an_py39 import test_main\n\n    test_main.test_create_existing_item()\n    test_main.test_create_item()\n    test_main.test_create_item_bad_token()\n    test_main.test_read_inexistent_item()\n    test_main.test_read_item()\n    test_main.test_read_item_bad_token()"}

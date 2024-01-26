@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_items()` that returns a list of dictionaries containing item information. - Each dictionary in the returned list has a key 'item' with its corresponding value, which is a string representing the name of the item.

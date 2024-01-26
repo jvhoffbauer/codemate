@@ -1,0 +1,1 @@
+{"original_code": "async def create_upload_files(\n    files: Annotated[\n        list[UploadFile], File(description=\"Multiple files as UploadFile\")\n    ],\n):\n    return {\"filenames\": [file.filename for file in files]}"}

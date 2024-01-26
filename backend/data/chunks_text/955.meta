@@ -1,0 +1,1 @@
+{"original_code": "    def get_compat_model_name_map(fields: List[ModelField]) -> ModelNameMap:\n        return {}"}

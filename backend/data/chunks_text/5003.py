@@ -1,0 +1,4 @@
+- Defines a method `find_first` in the current class (self is implicitly passed as first argument)
+- Takes an optional list of strings for sorting and keyword arguments to filter results
+- If no sorting criteria are provided, defaults to sorting by ID in descending order (-id)
+- Returns either the first object that matches the given filters and sorting or None if none found

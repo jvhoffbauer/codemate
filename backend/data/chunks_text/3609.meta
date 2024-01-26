@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture\ndef state() -> State:\n    return State()"}

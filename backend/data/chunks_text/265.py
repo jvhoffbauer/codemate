@@ -1,0 +1,1 @@
+- Creates a list of seven heroes using the `Hero` class, each with their own name, secret identity (if provided), and age (for heroes 3-7). - Uses SQLAlchemy's `Session` context manager to add all seven heroes to the database in one transaction, then commits the changes.

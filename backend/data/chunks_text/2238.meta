@@ -1,0 +1,1 @@
+{"original_code": "def sub_duplicate_dependency(\n    item: Item, sub_item: Item = Depends(duplicate_dependency)\n):\n    return [item, sub_item]"}

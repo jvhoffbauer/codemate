@@ -1,0 +1,1 @@
+- Defines an asynchronous function `read_users` that takes a single argument, `user_id`, of type `int`. - The function's purpose is to retrieve user data based on the provided ID and return it in an asynchronous manner using Python's async/await syntax.

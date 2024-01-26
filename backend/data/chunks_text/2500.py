@@ -1,0 +1,3 @@
+- Tries to create a FastAPI application and defines a route `/`.
+- Sets up an invalid response model sub type for status code 500, which is not compatible with Pydantic's built-in models (represented by `NonPydanticModel`).
+- Raises a `FastAPIError`, indicating that the provided response schema is incorrect or incompatible with the framework's requirements.

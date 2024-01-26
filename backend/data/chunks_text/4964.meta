@@ -1,0 +1,1 @@
+{"original_code": "def gen_jwt(subject: Union[str, Any], minutes: int) -> str:\n    expire = datetime.datetime.now() + datetime.timedelta(minutes=minutes)\n    to_encode = {\"exp\": expire, \"sub\": str(subject)}\n    encoded_jwt = jwt.encode(to_encode, settings.SECRET_KEY, algorithm=ALGORITHM)\n    return encoded_jwt"}

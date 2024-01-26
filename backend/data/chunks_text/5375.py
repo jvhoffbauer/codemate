@@ -1,0 +1,3 @@
+- Uses `rasterio.Env` to set a GDAL environment variable that disables reading directory on open (which is false by default)
+- Creates a thread pool executor for parallel processing using Python's built-in `concurrent.futures` module
+- Maps a function `f` over a range of values in parallel using the thread pool executor and returns the first result obtained

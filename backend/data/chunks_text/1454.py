@@ -1,0 +1,3 @@
+- Endpoint to retrieve a dictionary of keyword weights with keys 'foo' and 'bar', where values are floats (2.3 and 3.4 respectively)
+- Uses FastAPI's `@app.get()` decorator for GET requests
+- Returns a JSON response using Pydantic's `response_model` feature

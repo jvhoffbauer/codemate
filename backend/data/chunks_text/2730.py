@@ -1,0 +1,2 @@
+- Defines a function called `no_response_model_annotation_json_response_class` that returns an instance of Django Rest Framework's `JSONResponse`.
+- The returned response object has a single key-value pair with the value 'bar' and the key 'foo'.

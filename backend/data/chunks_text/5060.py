@@ -1,0 +1,6 @@
+- Defines a function `import_submodules()` that takes two arguments `package` (a string or module object) and an optional boolean flag `recursive`.
+- Imports the specified `package` using Python's built-in `importlib` module.
+- Walks through all submodules of the imported `package`, using `pkgutil.walk_packages()`.
+- For each submodule found, imports it into a dictionary called `results` with its fully qualified name as key.
+- If `recursive` is True, calls itself recursively on the newly discovered submodule to find any further nested modules.
+- Returns the resulting dictionary containing all imported modules.

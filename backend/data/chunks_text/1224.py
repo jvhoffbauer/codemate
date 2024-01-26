@@ -1,0 +1,1 @@
+- Endpoint for creating a new user with PUT request method (POST is used here instead of PUT to follow RESTful API conventions). - Accepts JSON data in `user` parameter, which conforms to the `UserIn` model defined elsewhere. - Returns the newly created user as a JSON response, conforming to the `UserOut` model also defined elsewhere.

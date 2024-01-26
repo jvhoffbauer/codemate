@@ -1,0 +1,3 @@
+- Defines an asynchronous function called `home()`.
+- The function returns a string "Hello World!".
+- This function can be used to display a simple message on a web page or in response to an API request using Flask's routing mechanism.

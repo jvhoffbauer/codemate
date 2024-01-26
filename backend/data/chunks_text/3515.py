@@ -1,0 +1,1 @@
+- This function tests a GET request with query parameter 'q' set to 'fixedquery'. - The expected status code is 200 and the response body should be 'Hello fixedquery'. - It uses Flask Client to simulate HTTP requests against our Flask app running on localhost.

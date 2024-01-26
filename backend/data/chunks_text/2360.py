@@ -1,0 +1,1 @@
+- Defines a function called `callback5` that takes in a single argument, `level5`, of type string. - The function is marked asynchronous using the `async` keyword. - The body of the function is empty and includes a docstring with the `pragma: nocover` directive to indicate that this block should not be executed during testing or coverage analysis.

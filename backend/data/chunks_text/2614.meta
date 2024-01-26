@@ -1,0 +1,1 @@
+{"original_code": "def test_get_api_route_not_decorated():\n    response = client.get(\"/items-not-decorated/foo\")\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"item_id\": \"foo\"}"}

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\n    \"/a/{id}\",\n    response_class=JsonApiResponse,\n    responses={422: {\"description\": \"Error\", \"model\": JsonApiError}},\n)\nasync def a(id):\n    pass  # pragma: no cover"}

@@ -1,0 +1,2 @@
+- Defines a function `add_exception_handlers()` that takes an instance of `FastAPI` and a dictionary as arguments.
+- Loops through each key-value pair in the dictionary and adds an exception handler using the `app.add_exception_handler()` method provided by FastAPI. The exception is passed as the first argument, while the second argument is a factory function that returns a callback function used when handling the specific exception type.

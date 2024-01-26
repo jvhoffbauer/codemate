@@ -1,0 +1,1 @@
+{"original_code": "    @classmethod\n    def single_by_phone(cls, phone: int = 0):\n        db = User.select()\n\n        if phone != 0:\n            db = db.where(User.phone == phone)\n        return db.first()\n        # if db:\n        #     return model_to_dict(db)"}

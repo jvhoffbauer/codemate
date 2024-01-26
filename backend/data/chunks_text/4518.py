@@ -1,0 +1,1 @@
+- This function takes optional arguments for `username`, `password`, and `scope`. If a value is not provided for `scope`, it defaults to None. - The function makes an HTTP POST request to the "/token" endpoint with the specified parameters in the request body. - It parses the JSON response from the server and extracts the "access_token". - Finally, it returns the extracted token.

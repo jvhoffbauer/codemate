@@ -1,0 +1,1 @@
+- Enables automatic exclusion of None values from JSON serialization using FastAPI's `response_model_exclude_none` feature. - Returns a `ModelDefaults` object with an optional `x` field set to `None`, and a required `y` string field containing the value "y". - The returned data is automatically serialized without including the excluded `None` value in the resulting JSON response.

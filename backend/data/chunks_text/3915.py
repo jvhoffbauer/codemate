@@ -1,0 +1,3 @@
+- Generates an OpenAPI v3.1 JSON schema for a FastAPI application using Pytest and Pydantic validation.
+- Defines the API's endpoints (e.g., `GET /items`) with their corresponding responses, parameters, and operations.
+- Includes error handling by defining custom schemas for HTTP errors such as ValidationErrors and HTTPValidationErrors.

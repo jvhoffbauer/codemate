@@ -1,0 +1,1 @@
+{"original_code": "def test_param_repr_ellipsis():\n    assert repr(Param(...)) == IsOneOf(\n        \"Param(PydanticUndefined)\",\n        # TODO: remove when deprecating Pydantic v1\n        \"Param(Ellipsis)\",\n    )"}

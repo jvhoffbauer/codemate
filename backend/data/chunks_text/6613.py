@@ -1,0 +1,3 @@
+- This function tests for a JSON parsing error in response to an API request using `raw_request`.
+- The expected result is a dictionary with an error object containing a specific error message and code (-32700), as well as default values for other keys (None or '2.0').
+- No output should be printed by the `echo` mock object during this test case.

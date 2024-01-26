@@ -1,0 +1,3 @@
+- Defines a function `route_submit()` that returns an asynchronous function called `route()`.
+- The `route()` function takes two arguments - `Request` and `data`, which conforms to a schema defined by this class (stored in `self.schema`).
+- Inside the `route()` function, it calls another method `handle()` of this class with `Request` and `data` parameters, and returns its result.

@@ -1,0 +1,3 @@
+- Initializes an instance of the `OpenIdConnectModel` class with the given `openIdConnectUrl` and `description`.
+- Sets the security scheme name based on either user input or defaults to the class name.
+- Sets whether automatic errors should be raised when the authorization header is missing during OpenID Connect authentication. Defaults to true.

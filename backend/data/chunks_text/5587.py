@@ -1,0 +1,3 @@
+- This method takes a dictionary `values` as input and returns an instance of `SchemaListT`, which is parsed using the `parse_obj()` function from Pydantic's built-in `BaseModel`.
+- The returned object conforms to the structure defined by the `SchemaList` class, allowing for easy manipulation and further processing of the data in subsequent steps.
+- In summary, this method converts raw data retrieved from the database into a structured format that can be easily consumed by other parts of the application.

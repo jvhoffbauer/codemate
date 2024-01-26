@@ -1,0 +1,3 @@
+- This endpoint is named `/sync_async`.
+- It takes a dependency called `asyncgen_state`, which returns an asynchronous generator using FastAPI's `Depends()` decorator.
+- The returned value from this function is the result of iterating over the values produced by the asynchronous generator, and it can be used synchronously in the caller's context without blocking or waiting for completion.

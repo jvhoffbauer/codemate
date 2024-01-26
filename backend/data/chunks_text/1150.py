@@ -1,0 +1,3 @@
+- Creates a JSON Web Token (JWT) with user data and an optional expiration time using Flask-JWT-Extended library's `create_access_token()`.
+- Copies the input dictionary `data`, updates it with an "exp" key containing the token expiry timestamp, and passes it along with the secret key and encryption algorithm to JWT for encoding.
+- If no explicit expiration is provided, sets the default value of 15 minutes from current UTC time as the expiry.

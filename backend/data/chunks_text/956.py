@@ -1,0 +1,4 @@
+- Defines a function `get_definitions()` that takes several arguments and returns a tuple containing two dictionaries.
+- The function generates JSON schemas using the `GenerateJsonSchema` class provided as an argument.
+- It distinguishes between input and output schemas based on a boolean flag called `separate_input_output_schemas`. If this flag is true, it creates separate schemas for input and validation/serialization; otherwise, it uses the same schema for both purposes.
+- The function returns a dictionary of mappings between each field and its corresponding schema mode ("validation" or "serialization") and another dictionary with all generated definitions.

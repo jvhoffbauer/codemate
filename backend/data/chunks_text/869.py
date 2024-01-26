@@ -1,0 +1,3 @@
+- Takes a string representing a URL path as input (`path`)
+- Uses regular expressions to extract all parameter names enclosed in curly braces ({}) from the given path
+- Returns a set containing all extracted parameter names

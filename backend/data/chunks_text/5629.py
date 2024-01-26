@@ -1,0 +1,6 @@
+- Initializes a new instance of `PaginationMiddleware`.
+- Sets up an instance of `Paginator`, which will be used to manage paginated responses.
+- Optionally sets the `schema_model` attribute based on the provided argument (or falls back to its current value). This attribute represents the OpenAPI schema model for this middleware's endpoint(s).
+- Asserts that `schema_model` is not `None`, raising an exception if it is. This ensures that we have a valid schema model to work with.
+- Initializes the `router` attribute from the provided argument (if any), or uses the default value. The `router` object provides access to FastAPI's routing functionality and allows us to easily add our own routes.
+- Calls the constructor method of `RouterMixin`, which adds some common functionality related to routing and request/response handling.

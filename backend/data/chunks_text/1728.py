@@ -1,0 +1,3 @@
+- Defines a function `get_query()` that takes two arguments - `background_tasks` and an optional argument `q`.
+- If `q` is not `None`, it sets its value to a string concatenated with "found query:" and adds a new task to the `BackgroundTasks` queue using the `add_task()` method. The added task executes the `write_log()` function passing the message as an argument.
+- Returns the value of `q`.

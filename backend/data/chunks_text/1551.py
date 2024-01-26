@@ -1,0 +1,4 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in a query parameter (`q`) with default value of `None`, and validates it using Pydantic's `Annotated` decorator. The validation includes minimum length of 3 characters and a custom title ("Query string").
+- If `q` is not `None`, updates the response dictionary with an additional key-value pair containing the search term.
+- Returns the updated or original response dictionary depending on whether `q` was provided.

@@ -1,0 +1,3 @@
+- Defines a GET request for the `/items/` endpoint using FastAPI's decorator syntax (`@app.get`)
+- Accepts an argument named `commons`, which is annotated with both `Annotated` and `Depends`. This allows us to pass in a dictionary of common parameters that will be available throughout our application as a dependency injection mechanism.
+- Returns the value passed into `commons` via the function signature, making it easily accessible within this route handler.

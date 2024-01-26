@@ -1,0 +1,1 @@
+{"original_code": "    def _maxzoom(self):\n        return self.tms.maxzoom"}

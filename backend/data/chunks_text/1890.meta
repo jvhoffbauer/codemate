@@ -1,0 +1,1 @@
+{"original_code": "@app.post(\"/sum\")\nasync def sum_numbers(numbers: List[int] = Body()):\n    return {\"sum\": sum(numbers)}"}

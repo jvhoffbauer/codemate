@@ -1,0 +1,3 @@
+- Generates an HTML response containing a script that handles OAuth2 authentication redirects for Swagger UI.
+- Copied from the official Swagger UI repository.
+- Normally not needed to modify or call directly as it's called by Flask-Swagger-UI automatically during authentication flow.

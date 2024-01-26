@@ -1,0 +1,4 @@
+- Override `common_parameters` dependency with a custom implementation that returns different values for `"k"` and `"baz"` parameters using `sub_router_decorator`.
+- Make an HTTP GET request to the decorated route with `"k"` parameter set to `"bar"`.
+- Verify that the expected response is returned, indicating successful execution of the decorated function.
+- Clear the override dictionary after testing to restore original dependencies.

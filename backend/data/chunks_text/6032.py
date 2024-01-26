@@ -1,0 +1,3 @@
+- Registers a new admin for a custom `TmpAdmin` class that extends `admin.PageAdmin`.
+- Defines the path to access this admin as `/test`.
+- Provides an implementation of the `get_page()` method which returns a simple test page with title and content.

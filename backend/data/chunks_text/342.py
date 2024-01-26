@@ -1,0 +1,3 @@
+- Verifies the contents of `README.md` against the generated content from `index.md`.
+- Uses Typer's built-in functions for echoing messages and raising errors.
+- Raises an Abort exception with a red error message if there is a discrepancy between the two files, indicating that `README.md` needs to be updated manually.

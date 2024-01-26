@@ -1,0 +1,1 @@
+{"original_code": "def client() -> Generator:\n    with TestClient(app) as client:\n        yield client"}

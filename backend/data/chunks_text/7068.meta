@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(scope=\"module\")\ndef normal_user_token_headers(client: TestClient, db: Session) -> dict[str, str]:\n    return get_auth_header_from_email(\n        client=client, db=db, email=settings.EMAIL_TEST_USER\n    )"}

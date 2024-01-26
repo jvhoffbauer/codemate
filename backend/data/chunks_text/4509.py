@@ -1,0 +1,2 @@
+- Imports `pytest`, `httpx`, and `pydantic`.
+- Defines a function called `test_root` that uses `pytest`'s fixture `get_client` to obtain an HTTPX client, sends a GET request to the root URL using the client, asserts that the status code is 200 OK, and checks if the JSON body of the response matches the expected value.

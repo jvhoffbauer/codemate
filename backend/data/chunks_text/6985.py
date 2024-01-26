@@ -1,0 +1,3 @@
+- Imports Alembic module and defines a function `run_alembic_migrations()`.
+- Passes arguments to Alembic's main function using list comprehension, which executes database migrations defined in Alembic configuration files.
+- Raises an error if any migration fails during execution.

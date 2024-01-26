@@ -1,0 +1,2 @@
+- Tests the `MosaicTilerFactory` class by creating two instances with different pixel selection methods and including their routers in an application using FastAPI's `include_router`.
+- Uses temporary files to generate tiles for both factories and compares them to ensure that they are not identical due to the difference in pixel selection method.

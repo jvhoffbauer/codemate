@@ -1,0 +1,1 @@
+{"original_code": "@needs_py310\ndef test_query_params_str_validations_item_query_fixedquery(client: TestClient):\n    response = client.get(\"/items/\", params={\"item-query\": \"fixedquery\"})\n    assert response.status_code == 200\n    assert response.json() == {\n        \"items\": [{\"item_id\": \"Foo\"}, {\"item_id\": \"Bar\"}],\n        \"q\": \"fixedquery\",\n    }"}

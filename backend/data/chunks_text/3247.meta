@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/no-alias/list\", response_model=List[ModelNoAlias])\ndef no_alias_list():\n    return [{\"name\": \"Foo\"}, {\"name\": \"Bar\"}]"}

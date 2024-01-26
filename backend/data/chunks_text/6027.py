@@ -1,0 +1,3 @@
+- Defines a custom admin interface for a resource called `Tmp` using Flask-Admin's `RegisterModelMixin`.
+- Sets the prefix of the URL path to `/router` for this specific admin view.
+- Registers a new endpoint at `/router/hello` that returns a simple JSON response with a username key.

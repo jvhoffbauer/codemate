@@ -1,0 +1,4 @@
+- Retrieves a list of all items owned by the current user using the Google Drive API and an authenticated session with the specified scope (in this case,'me items')
+- Sends a GET request to the '/users/me/items/' endpoint with authorization header containing the obtained access token
+- Asserts that the status code returned is 200 OK and saves the response text for debugging purposes if necessary
+- Parses the JSON response body and asserts that it contains at least one item with the expected properties ('item_id' and 'owner')

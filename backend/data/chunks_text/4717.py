@@ -1,0 +1,4 @@
+- Tests creating a new file with JSON body using FastAPI's `TestClient`.
+- Asserts that the status code is 422 (Unprocessable Entity) and checks the error message in the response text.
+- Uses Pytest Fixtures to pass an instance of `FastAPI` as an argument to the function under test.
+- Verifies that the returned dictionary from the API call matches the expected structure defined by Pydantic validation errors.

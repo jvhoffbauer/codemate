@@ -1,0 +1,4 @@
+- Creates a new item with title 'Foo' and description 'Something that fights' using POST request to /users/1/items/ endpoint
+- Asserts that status code is 200 and checks that created item has expected fields (title, description, id, owner_id)
+- Retrieves user data from GET request to /users/1 endpoint and asserts that newly created item is included in list of items belonging to this user
+- Makes another GET request to /users/1 endpoint and again asserts that newly created item is still present in list of items belonging to this user

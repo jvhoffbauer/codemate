@@ -1,0 +1,1 @@
+{"original_code": "async def override_dependency(session: AsyncSession):\n    app.dependency_overrides[get_session] = lambda: session"}

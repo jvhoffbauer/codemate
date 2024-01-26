@@ -1,0 +1,1 @@
+{"original_code": "def test_invoke_list():\n    \"\"\"Test invoke --list\"\"\"\n    return_code = subprocess.call(\"invoke --list\", shell=True)\n\n    assert return_code == 0"}

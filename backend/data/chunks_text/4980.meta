@@ -1,0 +1,1 @@
+{"original_code": "@group_web.command(\"start\")\ndef start_tifa():\n    uvicorn.run(\n        \"tifa.app:create_app\",\n        factory=True,\n        reload=True,\n        host=\"0.0.0.0\",\n        port=8000,\n        log_level=\"info\",\n    )"}

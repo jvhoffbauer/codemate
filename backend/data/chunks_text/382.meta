@@ -1,0 +1,1 @@
+{"original_code": "def test_sa_column_no_sa_kargs() -> None:\n    with pytest.raises(RuntimeError):\n\n        class Item(SQLModel, table=True):\n            id: Optional[int] = Field(\n                default=None,\n                sa_column_kwargs={\"primary_key\": True},\n                sa_column=Column(Integer, primary_key=True),\n            )"}

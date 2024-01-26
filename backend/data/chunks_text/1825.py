@@ -1,0 +1,3 @@
+- Sends a given message to all active connections simultaneously using asynchronous I/O with `asyncio`.
+- Iterates through each connection object stored in the `active_connections` list and sends the specified message via the `send_text()` method of the `WebSocket` protocol class.
+- This function is likely used by an event loop or other asynchronous framework to efficiently distribute messages across multiple connected clients without blocking the main thread.

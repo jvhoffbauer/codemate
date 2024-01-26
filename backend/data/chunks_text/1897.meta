@@ -1,0 +1,1 @@
+{"original_code": "async def timed():\n    return {\"message\": \"It's the time of my life\"}"}

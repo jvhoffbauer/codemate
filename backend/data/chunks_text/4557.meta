@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_no_token(client: TestClient):\n    response = client.get(\"/items\")\n    assert response.status_code == 401, response.text\n    assert response.json() == {\"detail\": \"Not authenticated\"}\n    assert response.headers[\"WWW-Authenticate\"] == \"Bearer\""}

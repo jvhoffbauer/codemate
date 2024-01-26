@@ -1,0 +1,1 @@
+{"original_code": "    @DynamicClassAttribute\n    def profile(self):\n        \"\"\"Return rio-tiler image default profile.\"\"\"\n        return img_profiles.get(self._name_, {})"}

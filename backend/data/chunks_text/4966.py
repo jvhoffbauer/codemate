@@ -1,0 +1,2 @@
+- Defines a function `get_password_hash` that takes a password as an argument of type string and returns its hash using the PBKDF2WithHmacSHA256 algorithm with a salt from the OS's random number generator, as provided by the `Cryptography` library's `CryptoHash` context manager (`pwd_context`)
+- The returned hash is in base64 format

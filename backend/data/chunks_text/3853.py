@@ -1,0 +1,2 @@
+- Tests sending a PUT request to update an item with query parameter 'q' set to 'bar', without including a body in the request (i.e., `json=None`)
+- Verifies that the server returns a successful HTTP status code of 200 and includes both the original item ID and updated query parameter value in the response JSON

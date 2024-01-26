@@ -1,0 +1,1 @@
+{"original_code": "    def router_startup() -> None:\n        state.router_startup = True"}

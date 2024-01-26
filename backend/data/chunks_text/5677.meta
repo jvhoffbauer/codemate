@@ -1,0 +1,1 @@
+{"original_code": "def set_global(\n    name: str,\n    value: Any,\n    *,\n    alias: str = DEFAULT_ALIAS,\n    overwrite: bool = False,\n) -> bool:\n    \"\"\"Set global variable\"\"\"\n    if exists_global(name, alias=alias) and not overwrite:\n        return False\n    __globals__[(name, alias)] = value\n    return True"}

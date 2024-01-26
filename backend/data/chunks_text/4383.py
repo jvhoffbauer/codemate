@@ -1,0 +1,4 @@
+- Defines a parameterized test using `pytest.mark.parametrize`.
+- Tests different combinations of URL path, cookie values, and expected HTTP status codes and responses.
+- Uses Flask's built-in testing client to make requests with custom headers (i.e., cookies).
+- Asserts that the actual HTTP status code and JSON response match the expected ones for each case.

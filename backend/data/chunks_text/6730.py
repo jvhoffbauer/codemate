@@ -1,0 +1,4 @@
+- Initializes Sentry SDK and binds a custom transport function using MonkeyPatching
+- Checks whether the current test is being executed in an isolated environment (using `unittest.mock`)
+- If it's not, creates a new Hub instance without any context data and passes it as an argument to the custom initialization function
+- Otherwise, uses the existing Hub instance from the parent process and passes it directly to the initialization function

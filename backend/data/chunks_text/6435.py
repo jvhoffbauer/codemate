@@ -1,0 +1,1 @@
+- Sets a new value for the `raw_response` attribute of the class instance using the given dictionary (`value`) as input. - Calls an internal method named `on_raw_response` with the provided dictionary as argument to handle any necessary processing or actions based on the received response data.

@@ -1,0 +1,1 @@
+{"original_code": "@router.get(\"/users/{username}\", tags=[\"users\"])\nasync def read_user(username: str):\n    return {\"username\": username}"}

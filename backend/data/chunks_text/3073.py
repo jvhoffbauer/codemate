@@ -1,0 +1,2 @@
+- Tests a GET request to the "/b/a" endpoint on the router "B".
+- Verifies that the expected content and Content-Type header are returned by the server.

@@ -1,0 +1,1 @@
+- Defines a function `route1` with two optional parameters, `param1` and `param2`. The default values for these parameters are obtained from the current working directory using Python's pathlib module (Path). - Returns a dictionary containing the value of parameter `param2`, which can be accessed by making an HTTP GET request to this route in the application.

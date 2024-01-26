@@ -1,0 +1,1 @@
+{"original_code": "def _get_client_tag(client_id: Optional[str] = Query(None)) -> Optional[str]:\n    if client_id is None:\n        return None\n    return f\"{client_id}_tag\""}

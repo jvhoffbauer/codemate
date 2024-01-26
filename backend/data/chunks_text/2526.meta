@@ -1,0 +1,1 @@
+{"original_code": "@router.websocket(\"/router/{pathparam:path}\")\nasync def routerindexparams(websocket: WebSocket, pathparam: str, queryparam: str):\n    await websocket.accept()\n    await websocket.send_text(pathparam)\n    await websocket.send_text(queryparam)\n    await websocket.close()"}

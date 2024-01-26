@@ -1,0 +1,1 @@
+- This test uses `pytest-mocks` to mock environment variables during testing. - It tests the `main` function in the `docs_src/settings/app02.py` module, which returns an instance of a Pydantic Settings class. - The test sets the value of the `ADMIN_EMAIL` environment variable and asserts that the corresponding setting is correctly loaded into the returned Settings object.

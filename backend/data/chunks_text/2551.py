@@ -1,0 +1,5 @@
+- Defines a helper function `websocket_middleware()` that creates a Starlette pure websocket middleware.
+- Takes a callback function (`middleware_func`) as an argument and returns another function called `wrapped_app`.
+- The `wrapped_app()` function is a wrapper around the original application (`app`) and handles incoming web socket connections by creating a new instance of `WebSocket`, passing it the current request scope and receiving/sending functions from the original request.
+- Calls the provided middleware function with the newly created websocket object and the result of calling the original application with the same arguments.
+- If the request type is not a websocket connection, passes control directly to the original application without executing any further middleware or handling logic.

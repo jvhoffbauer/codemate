@@ -1,0 +1,1 @@
+{"original_code": "def test_openapi_schema():\n    with pytest.raises(ValueError):\n        client.get(\"/openapi.json\")"}

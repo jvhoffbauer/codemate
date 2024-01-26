@@ -1,0 +1,4 @@
+- This function returns a JSON response containing multi-band statistics for an asset based on user input parameters passed through various dependencies.
+- The `@self.router.get()` decorator is used to define a GET request endpoint at the specified URL path (`"/asset_statistics"`).
+- The `response_class` and `response_model` arguments are set to `JSONResponse` and `MultiBaseStatistics`, respectively, indicating that the API will respond in JSON format using the defined model class.
+- A dictionary of HTTP status codes and corresponding descriptions is provided via the `responses` argument, which allows for more detailed error messages to be returned by the server. In this case, a success message is included for the expected 200 OK response.

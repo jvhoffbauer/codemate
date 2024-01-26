@@ -1,0 +1,2 @@
+- Tests endpoint `/with-duplicates`, which should return an array with duplicate items when provided a single item in request body
+- Asserts that HTTP status code is 200 and returns expected JSON response containing duplicated data

@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/items/{item_id}\")\nasync def read_items(\n    item_id: Annotated[int, Path(title=\"The ID of the item to get\")],\n    q: Annotated[str | None, Query(alias=\"item-query\")] = None,\n):\n    results = {\"item_id\": item_id}\n    if q:\n        results.update({\"q\": q})\n    return results"}

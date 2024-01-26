@@ -1,0 +1,2 @@
+- Tests a Flask route with a ResponseModel annotation that returns an invalid model (missing required field)
+- Asserts that the HTTP status code is 200 and checks the response body for expected error message

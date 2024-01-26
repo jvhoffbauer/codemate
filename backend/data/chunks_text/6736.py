@@ -1,0 +1,4 @@
+- Defines a function `append_envelope` that takes an argument `envelope`.
+- Loops through each item (message) in the envelope using a list comprehension and checks whether its header's type is either 'event' or 'transaction'.
+- If so, it passes the message payload to another method called `capture_event`, which captures the event data from the message.
+- Finally, it calls the original capture_envelope() function with the same arguments passed to this one.

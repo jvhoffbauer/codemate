@@ -1,0 +1,1 @@
+- Sends a GET request to an invalid URL ("/foo"). - Expects a HTTP 422 Unprocessable Entity error (status code 422) in the server's response. - Asserts that the expected error is returned by comparing the actual status code with the expected one using Python's built-in `assert` statement.

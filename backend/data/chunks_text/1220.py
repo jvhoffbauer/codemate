@@ -1,0 +1,1 @@
+- This endpoint returns a specific item's data with an ID provided in the URL path (`{item_id}`). - The `response_model` parameter specifies that the returned JSON should conform to the structure defined by the `Item` class. - The `response_model_exclude` parameter excludes the "tax" field from being included in the JSON output.

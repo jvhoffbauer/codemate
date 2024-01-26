@@ -1,0 +1,4 @@
+- Defines an `async` function called `get_session` that returns a generator of type `AsyncGenerator`.
+- Inside the function, creates an instance of `async_session()`, which is assumed to be an asynchronous database connection manager.
+- Yields the created session object for use in other parts of the program using generators.
+- The `None` return value indicates that this function doesn't return any values directly but instead yields objects through its generator.

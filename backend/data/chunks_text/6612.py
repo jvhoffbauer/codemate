@@ -1,0 +1,3 @@
+- Tests parsing of non-JSON responses using `raw_request` and asserts that a parse error is returned with specific error message and JSONRPC version.
+- Uses `pytest.mark.parametrize` to run tests for both string and byte input types (identified by `ids`) and passes them into the function as arguments.
+- Asserts that the response history from `echo` remains empty after sending the request.

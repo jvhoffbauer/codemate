@@ -1,0 +1,6 @@
+- Defines a retry decorator using the `retry` function from the `aioretry` library
+- Sets up several parameters for the retry behavior:
+   - `stop` specifies when to stop retrying (in this case, after reaching the maximum number of attempts)
+   - `wait` sets the delay between each attempt
+   - `before` and `after` are callback functions that will be executed before and after each attempt respectively
+- Initializes a function called `init`, which tries to establish a database connection using SQLAlchemy's `Session`. If an exception occurs during initialization, it logs the error message and raises the original exception again. The `retry` decorator ensures that the function is automatically re-executed multiple times in case of failures until either success or the maximum number of attempts is reached.

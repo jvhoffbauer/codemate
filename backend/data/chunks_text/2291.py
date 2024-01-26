@@ -1,0 +1,1 @@
+- Defines a GET route with path parameter `/float/:param`, where `:param` is bound to a `float` type using FastAPI's Pydantic integration (Path). - If no value is provided for the parameter, it defaults to None and an error message will be raised by Pydantic during validation. - Returns a JSON response containing a key-value pair with the converted float as the value.

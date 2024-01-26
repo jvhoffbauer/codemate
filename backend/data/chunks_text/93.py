@@ -1,0 +1,3 @@
+- Applies SQL `DISTINCT` keyword to a given expression (column or value).
+- Returns a new SQLAlchemy expression that removes duplicate rows from the result set.
+- Type annotation specifies that input can be either a column expression argument or any scalar type T.

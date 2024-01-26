@@ -1,0 +1,3 @@
+- Defines a method called `create_permission_fields()` that creates permission fields for creating objects of this model's type.
+- Uses the `get_permission_fields()` helper function to retrieve the necessary permissions based on an "create" action.
+- Returns a dictionary containing the created permission field names as keys and their corresponding labels as values.

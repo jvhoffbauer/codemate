@@ -1,0 +1,3 @@
+- Tests Celery worker functionality by sending a message to a Celery task and verifying its successful execution using the `TestClient`.
+- Uses the `superuser_token_headers` fixture provided by Django Rest Framework for authentication purposes.
+- Asserts that the HTTP status code is 201 (Created), and checks if the returned JSON contains the expected message from the Celery task.

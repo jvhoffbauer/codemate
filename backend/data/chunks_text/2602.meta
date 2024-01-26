@@ -1,0 +1,1 @@
+{"original_code": "def get_not_decorated(item_id: str):\n    return {\"item_id\": item_id}"}

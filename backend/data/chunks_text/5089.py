@@ -1,0 +1,2 @@
+- Creates a new `ProductType` object with default settings and saves it to the database using `AsyncDal`.
+- Adds two attributes (represented by `AttributeProduct`) for color and size to the newly created `ProductType`. The `color_attribute` and `size_attribute` arguments are passed in as parameters.

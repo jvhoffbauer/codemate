@@ -1,0 +1,1 @@
+{"original_code": "    def sentry_dsn_can_be_blank(cls, v: str) -> str | None:\n        if len(v) == 0:\n            return None\n        return v"}

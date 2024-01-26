@@ -1,0 +1,2 @@
+- Defines an asynchronous function `create_item` that takes a `Item` object as input and returns its dictionary representation (`item.dict()`)
+- If the `Item` has a tax, calculates the total price with tax by adding it to the original price, and updates the resulting dictionary with this new key-value pair ("price_with_tax")

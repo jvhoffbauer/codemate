@@ -1,0 +1,3 @@
+- Retrieves two heroes from a database using SQLAlchemy's `Session` and `select()` functions, filtering by name
+- Prints out each selected hero object separately
+- Calculates and prints the sum of their respective'money' attributes

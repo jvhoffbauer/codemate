@@ -1,0 +1,4 @@
+- Initializes a new instance of the class with optional arguments for customizing the behavior of the field.
+- Sets the value of the `convert_underscores` attribute based on the argument passed to this constructor. This is used by Pydantic's model validator to automatically convert snake case input fields into camelCase attributes during deserialization (and vice versa).
+- Calls the parent constructor with most of the other arguments passed through. Some arguments are renamed or have different defaults due to compatibility reasons between Pydantic versions.
+- The remaining arguments are stored as keyword-only arguments (i.e., named parameters) and can be accessed using their names later. These include options related to schema generation, such as `json_schema_extra`, which allows adding extra properties to the generated JSON schema.

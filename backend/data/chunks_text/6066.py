@@ -1,0 +1,5 @@
+- Defines a `UserCreate` model for creating new users with just a `username`.
+- Registers a SQLAlchemy CRUD object (`UserCrud`) that uses this model and maps it to the database table `User`. The crud is registered as an API endpoint under the prefix `/user`.
+- Asserts that the expected fields are present or absent from the created models' schemas.
+- Makes a POST request to create a user using the provided `body`, which includes both `username` and `password`.
+- Verifies that the response contains the correct ID and `username`, but the password field should be empty since we didn't include it in our initial model definition.

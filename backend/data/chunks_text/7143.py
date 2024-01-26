@@ -1,0 +1,3 @@
+- Retrieves all scheduled jobs using `schedule.get_jobs()`.
+- Loops through each job and creates a dictionary with its details (ID, function name, arguments, cron model, next run time).
+- Returns a response object containing the list of dictionaries representing all scheduled jobs.

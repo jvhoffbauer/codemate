@@ -1,0 +1,3 @@
+- Sets environment variables for AWS access keys, region and removes `AWS_PROFILE`.
+- Delays deleting `AWS_PROFILE` to avoid an error when it doesn't exist.
+- Sets a non-existent configuration file path to simulate missing config files.

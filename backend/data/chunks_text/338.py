@@ -1,0 +1,3 @@
+- Generates content for the README file of a project using MkDocs, specifically adding a section with sponsored projects based on data from a YAML file
+- Searches for specific markdown tags to locate sections where the sponsored projects will be inserted
+- Raises an error if any required tag is missing or the sponsor section cannot be found

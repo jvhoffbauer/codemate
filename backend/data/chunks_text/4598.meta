@@ -1,0 +1,1 @@
+{"original_code": "def test_inactive_user(client: TestClient):\n    response = client.get(\"/users/me\", headers={\"Authorization\": \"Bearer alice\"})\n    assert response.status_code == 400, response.text\n    assert response.json() == {\"detail\": \"Inactive user\"}"}

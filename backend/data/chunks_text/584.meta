@@ -1,0 +1,1 @@
+{"original_code": "@pytest.fixture(name=\"prepare\")\ndef prepare_fixture(clear_sqlmodel):\n    # Trigger side effects of registering table models in SQLModel\n    # This has to be called after clear_sqlmodel, but before the session_fixture\n    # That's why the extra custom fixture here\n    importlib.reload(app_mod)"}

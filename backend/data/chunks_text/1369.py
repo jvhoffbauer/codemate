@@ -1,0 +1,3 @@
+- Defines a new endpoint `POST /items/` for creating an item using FastAPI's decorator syntax
+- Accepts a JSON request body in the format of an `Item` object, which is automatically parsed by FastAPI thanks to Pydantic's model validation and deserialization features
+- Returns the newly created item as a response

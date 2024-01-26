@@ -1,0 +1,1 @@
+{"original_code": "    @ep.method()\n    def my_method(inp: Input) -> Output:\n        return Output(result=[inp.x])"}

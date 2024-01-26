@@ -1,0 +1,3 @@
+- Creates a `SchemaReadT` class for reading data based on specified fields in `self.read_fields`.
+- Filters out non-model fields from `self.read_fields` using `parser.filter_modelfield()`.
+- Uses `create_model_by_fields()` to generate the `SchemaReadT` class with the filtered list of model fields and ORM mode enabled.

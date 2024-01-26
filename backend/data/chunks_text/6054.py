@@ -1,0 +1,4 @@
+- Defines a `User` model with three fields of different types (string list, string list with custom input widget, and plain list).
+- Uses the `model_fields()` function to extract metadata about each field's name, label, and default value.
+- Tests that the extracted metadata is correct for all three fields using the `assert` statement.
+- Demonstrates how to use the `amis_parser.as_form_item()` function to convert a ModelField object into an equivalent Amis FormItem object, which can be used in a web UI to display and edit data. The `set_default=True` argument is passed to this function to automatically populate the initial values of the FormItems based on their corresponding ModelFields.

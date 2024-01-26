@@ -1,0 +1,3 @@
+- Tests getting user information as a superuser using an authenticated request with the `superuser_token_headers`.
+- Uses the `get_server_api()` function to retrieve the base URL for making API calls.
+- Asserts that the response contains valid JSON data, and checks specific fields such as disabled status, admin roles, and username (which should match the first superuser).

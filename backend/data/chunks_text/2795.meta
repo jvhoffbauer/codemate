@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\"/{repeated_alias}\")\ndef get_parameters_with_repeated_aliases(\n    path: str = Path(..., alias=\"repeated_alias\"),\n    query: str = Query(..., alias=\"repeated_alias\"),\n):\n    return {\"path\": path, \"query\": query}"}

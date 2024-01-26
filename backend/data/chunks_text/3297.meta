@@ -1,0 +1,1 @@
+{"original_code": "        @app.get(\"/\")\n        async def get(item_id: Annotated[int, Query(default=1)]):\n            pass  # pragma: nocover"}

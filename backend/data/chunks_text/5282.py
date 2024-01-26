@@ -1,0 +1,2 @@
+- Defines a GET request for the URL `/route1` using FastAPI's decorator syntax
+- Returns the string 'yo' as the response body when the endpoint is accessed

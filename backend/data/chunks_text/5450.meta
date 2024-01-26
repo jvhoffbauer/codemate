@@ -1,0 +1,1 @@
+{"original_code": "@dataclass\nclass BackendParams(DefaultDependency):\n    \"\"\"Backend options to overwrite min/max zoom.\"\"\"\n\n    minzoom: int = 4\n    maxzoom: int = 8"}

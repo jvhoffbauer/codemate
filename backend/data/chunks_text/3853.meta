@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_post_no_body_q_bar(client: TestClient):\n    response = client.put(\"/items/5?q=bar\", json=None)\n    assert response.status_code == 200\n    assert response.json() == {\"item_id\": 5, \"q\": \"bar\"}"}

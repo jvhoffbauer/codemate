@@ -1,0 +1,1 @@
+- Tests a WebSocket connection using a custom header (query parameter `token`) to authenticate and authorize access. - Sends and receives messages through the WebSocket, verifying that the session information and message content are correctly transmitted and received. - Raises an exception when the authentication fails due to missing or invalid credentials in the request headers.

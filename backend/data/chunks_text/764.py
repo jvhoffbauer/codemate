@@ -1,0 +1,5 @@
+- Initializes an `Engine` object from configuration using SQLAlchemy's `engine_from_config()`.
+- Creates a null database connection pool (`pool.NullPool`) for online migration execution.
+- Establishes a connection to the database using `connectable.connect()`, which is configured with the specified section of the INI file.
+- Configures Alembic's context manager with the established connection and specifies the metadata that will be migrated during the process.
+- Begins a transaction within the context manager and runs the pending migrations using `context.run_migrations()`.

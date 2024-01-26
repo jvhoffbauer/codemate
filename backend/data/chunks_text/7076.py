@@ -1,0 +1,4 @@
+- Retrieves user information for a regular (non-admin) user using their access token and the API endpoints `GET /api/v1/users/me`.
+- Verifies that the request returns an HTTP status code of 200 OK.
+- Extracts the JSON data from the response body and asserts that it contains expected keys such as "is_active" and "is_superuser".
+- Confirms that the email address matches the value set in the Django project's configuration file.

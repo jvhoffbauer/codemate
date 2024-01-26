@@ -1,0 +1,2 @@
+- Initializes a function called `startup` that is asynchronous (marked with `async`)
+- The function connects to a database using the `database.connect()` method, which returns an object representing the connection. This operation is also asynchronous and waits for completion before continuing execution.

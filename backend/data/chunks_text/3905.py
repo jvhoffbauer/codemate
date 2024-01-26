@@ -1,0 +1,3 @@
+- Tests that making a GET request to `/items/` without any query parameters returns all items in JSON format with expected data structure.
+- Uses Pytest's `TestClient` fixture from Flask's testing module for integration testing of the API endpoints.
+- Verifies the HTTP status code and JSON response body using Python's built-in `assert` statement.

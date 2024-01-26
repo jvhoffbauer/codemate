@@ -1,0 +1,1 @@
+{"original_code": "def test_upload_file_invalid():\n    with pytest.raises(ValueError):\n        UploadFile.validate(\"not a Starlette UploadFile\")"}

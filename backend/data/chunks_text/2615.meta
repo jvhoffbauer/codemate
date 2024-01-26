@@ -1,0 +1,1 @@
+{"original_code": "def test_delete():\n    response = client.request(\"DELETE\", \"/items/foo\", json={\"name\": \"Foo\"})\n    assert response.status_code == 200, response.text\n    assert response.json() == {\"item_id\": \"foo\", \"item\": {\"name\": \"Foo\", \"price\": None}}"}

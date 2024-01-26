@@ -1,0 +1,1 @@
+{"original_code": "@needs_py39\ndef test_admin_invalid_header(client: TestClient):\n    response = client.post(\"/admin/\", headers={\"X-Token\": \"invalid\"})\n    assert response.status_code == 400, response.text\n    assert response.json() == {\"detail\": \"X-Token header invalid\"}"}

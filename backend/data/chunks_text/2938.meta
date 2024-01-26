@@ -1,0 +1,1 @@
+{"original_code": "@app.get(\n    \"/exclude_none\", response_model=ModelDefaults, response_model_exclude_none=True\n)\ndef get_exclude_none() -> ModelDefaults:\n    return ModelDefaults(x=None, y=\"y\")"}

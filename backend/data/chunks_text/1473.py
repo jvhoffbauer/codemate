@@ -1,0 +1,4 @@
+- Defines a GET request for `/items/`.
+- Uses FastAPI's dependency injection to pass in a query parameter (`q`) with a maximum length of 50 characters.
+- If `q` is not `None`, updates the response dictionary with a new key called `q` and its value.
+- Returns the updated or original response dictionary depending on whether `q` was provided.

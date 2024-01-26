@@ -1,0 +1,1 @@
+{"original_code": "    @event.listens_for(models.User.username, \"set\")\n    def receive_set(target, value, old, initiator):\n        \"listen for the 'set' event\"\n        assert isinstance(target, models.User)"}

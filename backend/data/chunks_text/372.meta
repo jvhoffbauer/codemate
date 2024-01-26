@@ -1,0 +1,1 @@
+{"original_code": "def test_equality() -> None:\n    value1 = Default(\"foo\")\n    value2 = Default(\"foo\")\n\n    assert value1 == value2"}

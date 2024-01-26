@@ -1,0 +1,5 @@
+- This function defines an asynchronous method called `routerprefixindex`.
+- It accepts a single argument of type `WebSocket`, which represents a WebSocket connection.
+- The function first calls the `accept()` method on the received WebSocket object to accept the incoming request.
+- After accepting the request, it sends a text message "Hello, router with prefix!" using the `send_text()` method provided by Pika's WebSocket API.
+- Finally, the function closes the WebSocket connection using the `close()` method.

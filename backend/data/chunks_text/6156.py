@@ -1,0 +1,3 @@
+- Defines a task called `test` using invoke's decorator syntax
+- Executes pytest with verbose output (-v flag) and passes arguments to the command as a list joined by space
+- Can be invoked from the CLI using `invoke test` or added to an existing task dependency chain (e.g., `my_task && invoke test`)

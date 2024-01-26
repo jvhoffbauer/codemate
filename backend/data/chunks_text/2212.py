@@ -1,0 +1,2 @@
+- Defines a function `broken_operation_id` that takes an argument `route` of type `APIRoute`.
+- The function returns the string literal 'foo' as the operation ID for the given route, which is not a valid or recommended practice in OpenAPI/Swagger specification.

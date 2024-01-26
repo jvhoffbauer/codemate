@@ -1,0 +1,1 @@
+- This method, `is_testing`, checks if an object's value matches a constant called `TESTING`. - The method returns True or False based on whether the object and `TESTING` are equal (i.e., they have the same value). - This pattern can be used to implement conditional behavior in tests versus production environments by setting `TESTING` to a different value during testing.

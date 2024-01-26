@@ -1,0 +1,2 @@
+- Imports a function `test_override_in_items` from another module and calls it to run its tests.
+- This is an example of how to override dependencies in items using the `tox -e <env> --recreate` command, as explained in tutorial001_an_py39.

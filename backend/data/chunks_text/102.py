@@ -1,0 +1,2 @@
+- Defines a function `tuple_` that takes variable number of arguments (`*`) and assigns them to a tuple using SQLAlchemy's built-in `sqlalchemy.tuple_()`.
+- Allows passing optional argument `types`, which is a sequence of type engines for each element in the resulting tuple. If not provided, defaults to inferring types from the first clause passed as an argument.
