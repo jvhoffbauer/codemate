@@ -42,7 +42,8 @@ Install dependencies
 
 ```
 cd extension
-npm i
+npm install
+npm compile
 ```
 
 Open the extension's code in VSCode
@@ -52,7 +53,7 @@ cd extension
 code .
 ```
 
-And launch the application using the run button (config "Run Extension") ![Run Button](./run_button.png)
+And launch the application by pressing `F5` or by using the run button (config "Run Extension") ![Run Button](./run_button.png)
 
 ## How things work
 

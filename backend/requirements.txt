@@ -12,3 +12,5 @@ tqdm==4.66.1
 transformers==4.36.2
 tree_sitter==0.20.4
 uvicorn==0.25.0
+nomic==3.0.6
+chromadb==0.4.22
