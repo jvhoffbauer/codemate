@@ -99,7 +99,7 @@ def main():
 
     # Load chunks from disk
     chunks = load_chunks("data/chunks")
-    chunks_text = None  # load_chunks("data/chunks_text")
+    chunks_text = load_chunks("data/chunks_text")
 
     # Run embedding
     embedd(
