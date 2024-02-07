@@ -71,7 +71,7 @@ def get_embedding_function(embedding_name):
             model_name="/workspaces/codemate/unixcoder-poj104-model"
         )
     elif embedding_name in ["openai", "openai_text"]:
-        embedding_function = OpenAIEmbeddings()
+        embedding_function = OpenAIEmbeddings(model="text-embedding-3-large")
     elif embedding_name in ["e5", "e5_text"]:
         embedding_function = DirectHfEmbedding(
             model_name="intfloat/e5-mistral-7b-instruct",
