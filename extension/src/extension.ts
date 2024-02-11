@@ -33,11 +33,10 @@ async function updateCursorPosition() {
         const position = editor.selection.active;
         const document = editor.document;
 
+        // Fetch the suggestion from the API
         const suggestion = await fetchData(document.getText(), position.line, position.character);
 
-		// panel.webview.html = getWebviewContent(event.context);
-
-        // Send a message to the webview
+        // Render the suggestion in the webview
         updateWebview(suggestion);
     }
 }

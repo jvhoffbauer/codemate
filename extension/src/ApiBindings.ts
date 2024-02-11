@@ -1,3 +1,5 @@
+// TODO: This should be configurable when deploying the extension, 
+// so that the extension can be used with different backends.
 const BASE_API_URL =  'http://127.0.0.1:8080';
 
 
@@ -25,8 +27,6 @@ async function fetchData(context: string, line: number, column: number) {
         line: line,
         column: column
     };
-
-    console.log(JSON.stringify(payload));
 
     try {
         // Make the request
