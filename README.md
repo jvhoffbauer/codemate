@@ -1,6 +1,6 @@
 # CodeMate 🚀
 
-CodeMate is a VSCode extension that helps you find helpful examples while you code using AI
+Code Mate is a VSCode Extension for Python FastAPI learners, providing examples and guidance within the IDE. It saves time by eliminating the need to search online. It fetches relevant examples using embedding models, primarily UniXCoder. The backend uses FastAPI, while the frontend uses Typescript for seamless integration. Users can download code from other repositories, offering flexibility for different projects.
 
 <p align="center">
     <img src="./demo_screenshot.png" width="90%" style="margin-left: auto; margin-right: auto" /> 
