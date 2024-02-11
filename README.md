@@ -16,6 +16,11 @@ To run this app locally, you need
 -   An OpenAI API key (get it here [here](https://platform.openai.com/api-keys) or reach out to me if you're testing)
 -   VSCode installed locally
 
+Set your OpenAI API key with
+```
+export OPENAI_API_KEY="YOUR_API_KEY"
+```
+
 ### Python Backend
 
 Create virtualenv and install requirements
@@ -50,7 +55,6 @@ First, you need to start the Python backend and then the TypeScript VSCode exten
 Start the backend
 
 ```
-export OPENAI_API_KEY="YOUR_API_KEY"
 python3 -m codemate.api.main
 ```
 
