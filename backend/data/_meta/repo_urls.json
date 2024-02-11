@@ -3,7 +3,7 @@
     "fastapi_production_template": "https://github.com/szto/fastapi_production_template/blob/main/",
     "full-stack-fastapi-postgresql": "https://github.com/tiangolo/full-stack-fastapi-postgresql/blob/master/",
     "uvicorn-gunicorn-fastapi-docker": "https://github.com/apachecn-archive/uvicorn-gunicorn-fastapi-docker/blob/master/",
-    "fastapi": "https://github.com/fehmikahraman/fastapi-socmedapi/blob/master/",
+    "fastapi": "https://github.com/tiangolo/fastapi/blob/master/",
     "cookiecutter-spacy-fastapi": "https://github.com/microsoft/cookiecutter-spacy-fastapi/blob/master/",
     "tifa": "https://github.com/yu-iskw/dbt-artifacts-loader/blob/master/",
     "fastapi-microservices": "https://github.com/ADv0rnik/fastapi-microservices/blob/main/",
@@ -17,6 +17,6 @@
     "titiler": "https://github.com/UNDP-Data/titiler-aks/blob/master/",
     "fastapi-gino-arq-uvicorn": "https://github.com/donniexyz/fastapi-gino-arq-uvicorn/blob/master/",
     "full-stack-fastapi-couchbase": "https://github.com/tiangolo/full-stack-fastapi-couchbase/blob/master/",
-    "sqlmodel": "https://github.com/Modif93/fastapi-sqlmodel-template/blob/main/",
+    "sqlmodel": "https://github.com/tiangolo/sqlmodel/blob/main/",
     "coronavirus-tracker-api": "https://github.com/mikeyhodl/coronavirus-tracker-api/blob/master/"
 }
