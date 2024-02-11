@@ -1,0 +1,1 @@
+You can find the licenses of the downloaded code [here](./licenses_of_downloaded_code.md).
