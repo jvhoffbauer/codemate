@@ -24,7 +24,8 @@ repo_urls = json.load(open("data/_meta/repo_urls.json"))
 
 
 def retrieve(text: str, cursor_line: int, cursor_column: int) -> schemas.Suggestion:
-    """_summary_
+    """
+    Retrieve relevant examples for the current cursor location in the file.
 
     Args:
         text (str): text of the current open file

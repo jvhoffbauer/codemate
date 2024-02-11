@@ -17,13 +17,13 @@ Bullet points:
 
 
 def get_pipeline(device: str = "cuda:0"):
-    pipe = pipeline(
-        "text-generation", model="HuggingFaceH4/zephyr-7b-beta", device=device
-    )
+    """Create a for text generation"""
+    pipe = pipeline("text-generation", model="HuggingFaceH4/zephyr-7b-beta", device=device)
     return pipe
 
 
 def explain_code(code: str, pipe):
+    """Explain the given code using a text-generation pipeline and the given prompt."""
     prompt = PROMPT.replace("%CODE", code)
     result = pipe(
         prompt,
@@ -40,6 +40,7 @@ def explain_code(code: str, pipe):
 
 
 if __name__ == "__main__":
+    # Mnaully test the pipeline
     print("Has GPU:", torch.cuda.is_available())
     pipe = get_pipeline()
     code = """

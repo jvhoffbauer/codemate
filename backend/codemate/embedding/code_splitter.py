@@ -20,11 +20,13 @@ class PythonCodeSplitter(TextSplitter):
     Custom text splitter that splits Python code into chunks. It works
     only with (mostly) syntactically correct Python code. Every code file
     will generate chunks for
+
      - every function
-     - every class
      - every method in a class
      - every indent block longer than x lines
-     Optionally, applies black formatting to the code before splitting.
+
+    according to what is enabled in the configuration.
+    Optionally, applies black formatting to the code before splitting.
     """
 
     def __init__(
@@ -34,9 +36,17 @@ class PythonCodeSplitter(TextSplitter):
         apply_black=True,
         skip_syntax_errors=False,
     ):
+        """Create the PythonCodeSplitter.
+
+        Args:
+            enabled_node_types (str, optional): The names of the node types we are returning when splitting. Defaults to ["function_definition", "class_definition", "block"]
+            min_block_lines (int, optional): Minimum size for code blocks to be returned. Defaults to 10.
+            apply_black (bool, optional): Whether black formatting should be applied to code before chunking. Defaults to True.
+            skip_syntax_errors (bool, optional): Whether we skip code with syntax errors. Defaults to False.
+        """
         super().__init__()
 
-        # Handle default values
+        # Handle default values. We need to do this because we can't use mutable default arguments.
         if enabled_node_types is None:
             enabled_node_types = [
                 "function_definition",
@@ -54,12 +64,15 @@ class PythonCodeSplitter(TextSplitter):
         """
         Split the text into chunks.
         """
+        # Apply black if necessary
         if self.apply_black:
             text = black.format_str(text, mode=black.Mode())
 
+        # Parse the code and get nodes
         tree = get_parser().parse(bytes(text, "utf8"))
         nodes = list(iter_nodes(tree))
 
+        # Check for syntax errors
         # if any(node.type == "ERROR" for node, _, _ in nodes):
         #     raise SyntaxError(f"Syntax error in code at {node}: {node.text}")
         if any(node.type == "ERROR" for node, _, _ in nodes):
@@ -67,6 +80,7 @@ class PythonCodeSplitter(TextSplitter):
             if self.skip_syntax_errors:
                 return []
 
+        # Get the chunks
         chunks = []
         for node, depth, _ in nodes:
             node_text = lambda: get_node_text_with_indent(node, depth)
@@ -74,10 +88,7 @@ class PythonCodeSplitter(TextSplitter):
                 # Add the node text to the chunks
                 if node.type != "block":
                     chunks.append(node_text())
-                elif (
-                    node.type == "block"
-                    and len(node.text.decode().split("\n")) > self.min_block_lines
-                ):
+                elif node.type == "block" and len(node.text.decode().split("\n")) > self.min_block_lines:
                     chunks.append(node_text())
 
         # Remove duplicates
@@ -87,6 +98,7 @@ class PythonCodeSplitter(TextSplitter):
 
 
 def get_parser():
+    """Create a treesitter parser for Python. We need to build the language first, but the result will be cached. once executed once."""
     Language.build_library(
         "../tree-sitter-languages/build/my-languages.so",
         ["../tree-sitter-languages/tree-sitter-python"],
@@ -125,6 +137,7 @@ def iter_nodes(tree):
 
 
 def get_node_text_with_indent(node, depth):
+    """Convert the node with given depth to a string with the correct indentation."""
     text = node.text.decode()
     preceding_whitespaces = node.start_point[1]
     result = " " * preceding_whitespaces + text

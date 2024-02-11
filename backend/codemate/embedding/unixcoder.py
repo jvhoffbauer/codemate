@@ -4,14 +4,36 @@ from langchain_core.embeddings import Embeddings
 from tqdm import tqdm
 from transformers import RobertaConfig, RobertaModel, RobertaTokenizer
 
+# Code copied from https://github.com/microsoft/CodeBERT/blob/master/UniXcoder/README.md
+#
+# Copyright (c) Microsoft Corporation.
 
+# MIT License
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+
+# THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
 class UniXcoder(nn.Module):
     def __init__(self, model_name):
         """
         Build UniXcoder.
 
         Parameters:
-
         * `model_name`- huggingface model card name. e.g. microsoft/unixcoder-base
         """
         super(UniXcoder, self).__init__()
@@ -24,9 +46,7 @@ class UniXcoder(nn.Module):
             "bias",
             torch.tril(torch.ones((1024, 1024), dtype=torch.uint8)).view(1, 1024, 1024),
         )
-        self.lm_head = nn.Linear(
-            self.config.hidden_size, self.config.vocab_size, bias=False
-        )
+        self.lm_head = nn.Linear(self.config.hidden_size, self.config.vocab_size, bias=False)
         self.lm_head.weight = self.model.embeddings.word_embeddings.weight
         self.lsm = nn.LogSoftmax(dim=-1)
 
@@ -53,27 +73,17 @@ class UniXcoder(nn.Module):
             tokens = tokenizer.tokenize(x)
             if mode == "<encoder-only>":
                 tokens = tokens[: max_length - 4]
-                tokens = (
-                    [tokenizer.cls_token, mode, tokenizer.sep_token]
-                    + tokens
-                    + [tokenizer.sep_token]
-                )
+                tokens = [tokenizer.cls_token, mode, tokenizer.sep_token] + tokens + [tokenizer.sep_token]
             elif mode == "<decoder-only>":
                 tokens = tokens[-(max_length - 3) :]
                 tokens = [tokenizer.cls_token, mode, tokenizer.sep_token] + tokens
             else:
                 tokens = tokens[: max_length - 5]
-                tokens = (
-                    [tokenizer.cls_token, mode, tokenizer.sep_token]
-                    + tokens
-                    + [tokenizer.sep_token]
-                )
+                tokens = [tokenizer.cls_token, mode, tokenizer.sep_token] + tokens + [tokenizer.sep_token]
 
             tokens_id = tokenizer.convert_tokens_to_ids(tokens)
             if padding:
-                tokens_id = tokens_id + [self.config.pad_token_id] * (
-                    max_length - len(tokens_id)
-                )
+                tokens_id = tokens_id + [self.config.pad_token_id] * (max_length - len(tokens_id))
             tokens_ids.append(tokens_id)
         return tokens_ids
 
@@ -95,17 +105,11 @@ class UniXcoder(nn.Module):
     def forward(self, source_ids):
         """Obtain token embeddings and sentence embeddings"""
         mask = source_ids.ne(self.config.pad_token_id)
-        token_embeddings = self.model(
-            source_ids, attention_mask=mask.unsqueeze(1) * mask.unsqueeze(2)
-        )[0]
-        sentence_embeddings = (token_embeddings * mask.unsqueeze(-1)).sum(1) / mask.sum(
-            -1
-        ).unsqueeze(-1)
+        token_embeddings = self.model(source_ids, attention_mask=mask.unsqueeze(1) * mask.unsqueeze(2))[0]
+        sentence_embeddings = (token_embeddings * mask.unsqueeze(-1)).sum(1) / mask.sum(-1).unsqueeze(-1)
         return token_embeddings, sentence_embeddings
 
-    def generate(
-        self, source_ids, decoder_only=True, eos_id=None, beam_size=5, max_length=64
-    ):
+    def generate(self, source_ids, decoder_only=True, eos_id=None, beam_size=5, max_length=64):
         """Generate sequence given context (source_ids)"""
 
         # Set encoder mask attention matrix: bidirectional for <encoder-decoder>, unirectional for <decoder-only>
@@ -134,9 +138,7 @@ class UniXcoder(nn.Module):
             beam = Beam(beam_size, eos_id, device)
             input_ids = beam.getCurrentState().clone()
             context_ids = source_ids[i : i + 1, : source_len[i]].repeat(beam_size, 1)
-            out = encoder_output.last_hidden_state[i : i + 1, : source_len[i]].repeat(
-                beam_size, 1, 1
-            )
+            out = encoder_output.last_hidden_state[i : i + 1, : source_len[i]].repeat(beam_size, 1, 1)
             for _ in range(max_length):
                 if beam.done():
                     break
@@ -144,36 +146,23 @@ class UniXcoder(nn.Module):
                     hidden_states = out[:, -1, :]
                     out = self.lsm(self.lm_head(hidden_states)).data
                     beam.advance(out)
-                    input_ids.data.copy_(
-                        input_ids.data.index_select(0, beam.getCurrentOrigin())
-                    )
+                    input_ids.data.copy_(input_ids.data.index_select(0, beam.getCurrentOrigin()))
                     input_ids = beam.getCurrentState().clone()
                 else:
                     length = context_ids.size(-1) + input_ids.size(-1)
                     out = self.model(
                         input_ids,
-                        attention_mask=self.bias[
-                            :, context_ids.size(-1) : length, :length
-                        ],
+                        attention_mask=self.bias[:, context_ids.size(-1) : length, :length],
                         past_key_values=context,
                     ).last_hidden_state
                     hidden_states = out[:, -1, :]
                     out = self.lsm(self.lm_head(hidden_states)).data
                     beam.advance(out)
-                    input_ids.data.copy_(
-                        input_ids.data.index_select(0, beam.getCurrentOrigin())
-                    )
-                    input_ids = torch.cat(
-                        (input_ids, beam.getCurrentState().clone()), -1
-                    )
+                    input_ids.data.copy_(input_ids.data.index_select(0, beam.getCurrentOrigin()))
+                    input_ids = torch.cat((input_ids, beam.getCurrentState().clone()), -1)
             hyp = beam.getHyp(beam.getFinal())
             pred = beam.buildTargetTokens(hyp)[:beam_size]
-            pred = [
-                torch.cat(
-                    [x.view(-1) for x in p] + [zero] * (max_length - len(p))
-                ).view(1, -1)
-                for p in pred
-            ]
+            pred = [torch.cat([x.view(-1) for x in p] + [zero] * (max_length - len(p))).view(1, -1) for p in pred]
             preds.append(torch.cat(pred, 0).unsqueeze(0))
 
         preds = torch.cat(preds, 0)
@@ -292,13 +281,12 @@ class Beam(object):
         return sentence
 
 
+# Code not included in the original file
 class UnixcoderEmbeddings(Embeddings):
-    """Interface for embedding models."""
+    """Langchain interface for unixcoder embedding models."""
 
     def __init__(self, model_name="microsoft/unixcoder-base"):
-        self.device = (
-            "cpu"  # torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        )
+        self.device = "cpu"  # torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model = UniXcoder(model_name=model_name)
         self.model = self.model.to(self.device)
 
@@ -314,9 +302,7 @@ class UnixcoderEmbeddings(Embeddings):
 
     def embed_query(self, text: str):
         """Embed query text."""
-        input_ids = self.model.tokenizer.encode(text, return_tensors="pt").to(
-            self.device
-        )
+        input_ids = self.model.tokenizer.encode(text, return_tensors="pt").to(self.device)
         if input_ids.shape[1] >= self.model.config.max_position_embeddings - 4:
             input_ids = input_ids[:, : self.model.config.max_position_embeddings - 4]
         _, embedding = self.model(input_ids)

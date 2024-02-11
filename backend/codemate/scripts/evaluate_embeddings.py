@@ -3,12 +3,11 @@ import os
 
 import dotenv
 import pandas as pd
+from langchain.vectorstores import Chroma
+
 from codemate.code2text import llm_code_description
 from codemate.embedding.code_splitter import PythonCodeSplitter
-from codemate.embedding.unixcoder import UnixcoderEmbeddings
 from codemate.scripts.create_embeddings import get_embedding_function
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
 
 dotenv.load_dotenv("../backend/.env")
 
@@ -79,9 +78,7 @@ def main():
 
         # Split the snippet using our code splitter to get relevant input
         # Heuristic: use the longest part of the snippet
-        splitter = PythonCodeSplitter(
-            enabled_node_types=["function_definition", "decorated_definition"]
-        )
+        splitter = PythonCodeSplitter(enabled_node_types=["function_definition", "decorated_definition"])
         parts = splitter.split_text(test_snippet)
         longest_part = max(parts, key=lambda x: len(x))
 
@@ -100,10 +97,7 @@ def main():
             # Search for the query in the vector db
             result = vector_db.similarity_search(query, k=TOP_K)
             result_str = [
-                r.page_content[:MAX_TEST_RESULT_LEN]
-                if not textmode
-                else r.metadata["original_code"]
-                for r in result
+                r.page_content[:MAX_TEST_RESULT_LEN] if not textmode else r.metadata["original_code"] for r in result
             ]
             retrieved_snippets[name] = result_str
 
